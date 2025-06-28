@@ -4,7 +4,7 @@
 
 # Introduction
 
-The CityGML Energy Application Domain Extension (or, in short: ADE) 2.0 offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
+The **CityGML Energy Application Domain Extension 2.0** (or, in short: Energy ADE 2.0) offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
 
 The current version is based on and builds upon the [previous version of the Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
 
