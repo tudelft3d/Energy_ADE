@@ -18,7 +18,7 @@ The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its develo
 
 # The Energy ADE 2.0 in a nutshell
 
-The Energy ADE 2.0 (currently: **$${\color{red}beta 7}$$**)has a modular structure. In short:
+The Energy ADE 2.0 (currently: **$${\color{red}beta 7}$$**) has a modular structure:
 - The **Core module** defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
 - The **Building physics module** defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
 - The **Occupancy module** defines classes to model different usage zones and how they are utilised by occupants;
