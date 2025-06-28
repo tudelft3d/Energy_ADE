@@ -84,17 +84,14 @@ If you use the Energy ADE 2.0 in scientific work, please cite one of our papers:
 - Agugiaro, G., Padsala, R.<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
-Link to [open-access PDF]().
 
 - Gao, W., León-Sánchez, C., Agugiaro, G.<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
-Link to [open-access PDF]().
 
 - Padsala, R., ....<br/> 
 **xxx**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
-Link to [open-access PDF]().
 
 - Gebetsroither-Geringer, E., Padsala, R., Hainoun, A., Agugiaro, G., Biernat, S., Reber, A., Smetschka, B., Gao, W., Horak, D., Falay, B., Coors, V.<br/>
 **A participatory planning framework using urban digital twins supporting the co-creation of flexible, Positive Energy Districts**.<br/>
@@ -111,4 +108,4 @@ Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=17
 
 Development of the Energy ADE 2.0 has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
 
-In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, testers, technology enthusiasts.
+In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, testers or technology enthusiasts.
