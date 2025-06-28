@@ -17,16 +17,16 @@ The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its develo
 # The Energy ADE 2.0 in a nutshell
 
 The Energy ADE 2.0 has a modular structure. In short:
-- The Core module defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
-- The Building physics module defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
-- The Occupancy module defines classes to model different usage zones and how they are utilised by occupants;
-- The Devices module provides classes to model different types of energy-related devices that are responsible for transforming or storing energy (e.g. solar collectors, storage devices, etc.);
-- The Layered construction module enables the modelling of the composition of construction surfaces through different layers and their physical properties;
-- The Resources module is new and allows to model resources (energy, water, food, etc.) that an urban object may need, produce or store;
-- The Urban function areas module is new and allows to define spatial entities that allow to aggregate values;
-- The WeatherStation module contains just a single class to model weather stations;
-- The Schedules module includes different types of schedules, the TimeSeries module contains classes for time series;
-- The CodeLists, Enumerations and DataTypes modules contain support classes that are needed by all other modules.
+- The *Core module* defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
+- The *Building physics module* defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
+- The *Occupancy module* defines classes to model different usage zones and how they are utilised by occupants;
+- The *Devices module* provides classes to model different types of energy-related devices that are responsible for transforming or storing energy (e.g. solar collectors, storage devices, etc.);
+- The *Layered construction* module enables the modelling of the composition of construction surfaces through different layers and their physical properties;
+- The *Resources module* is new and allows to model resources (energy, water, food, etc.) that an urban object may need, produce or store;
+- The *Urban function areas module* is new and allows to define spatial entities that allow to aggregate values;
+- The *WeatherStation module* contains just a single class to model weather stations;
+- The *Schedules module* includes different types of schedules, the TimeSeries module contains classes for time series;
+- The *CodeLists, Enumerations and DataTypes* modules contain support classes that are needed by all other modules.
 
 Please refer to the documentation for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
 Besides the conceptual model, available as UML diagrams (and the accompanying specifications), several resources are available, such as:
@@ -38,6 +38,11 @@ Besides the conceptual model, available as UML diagrams (and the accompanying sp
 
 Additionally, Java-based libraries are currently being developed to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter).
 
+# Further resources
+
+- Are you struggling to understand UML? Please checkuot this simple **[UML crash course]**(https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/UML_in_a_nuthshell.pdf) that provides you the basic to "survive" ;-)
+- Looking for a quick install guide to set up the 3DCityDB? Check you the 3DCityDB **Quick install guides** for [Windows](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_Windows.pdf), [Ubuntu Linux](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_Ubuntu.pdf) and [macOS](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_macOS.pdf)
+- Trying to understand how to use FME, especially with CityGML? Have a look at these **introductory tutorial** on [FME](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_Form_for_beginners.pdf) and [Reading and Writing CityGML data](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_CityGML.pdf)
 
 # Contact person:
 
