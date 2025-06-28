@@ -2,7 +2,9 @@
 
 This repository contains the data model and the associated resources of the CityGML **Energy ADE 2.0**.
 
-![Energy ADE 2.0](logos/energy_ade_2_logo.jpg)
+<img src="logos/energy_ade_2_logo.jpg" width="500">
+
+<!-- ![Energy ADE 2.0](logos/energy_ade_2_logo.jpg) -->
 
 # Introduction
 
@@ -48,7 +50,6 @@ Additionally, Java-based libraries are currently being developed to add support 
 
 - [Giorgio Agugiaro](mailto:g.agugiaro@tudelft.nl) @ TU Delft
 
-
 # Main developers and contributors 
 
 - Giorgio Agugiaro (TU Delft, The Netherlands)
@@ -70,7 +71,6 @@ Additionally, Java-based libraries are currently being developed to add support 
 - Municipality of Stuttgart, Germany
 - Municipality of Wien, Austria
 - Municipality of Wrozlaw, Poland
-
 
 # Citation
 
@@ -104,3 +104,5 @@ Development of the Energy ADE 2.0 has started in spring 2024 within the European
 
 In addition to the DigiTwins4PEDs consortium members, several other partners have joined as contributors, testers, technology enthusiasts on a volunteer basis.
 
+[//]: # (This is a comment.)
+[//]: # (This is a comment on a new line.)
