@@ -21,13 +21,14 @@ The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its develo
 The Energy ADE 2.0 (currently: **$${\color{red}beta 7}$$**) has a modular structure:
 - The **Core module** defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
 - The **Building physics module** defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
-- The **Occupancy module** defines classes to model different usage zones and how they are utilised by occupants;
-- The **Devices module** provides classes to model different types of energy-related devices that are responsible for transforming or storing energy (e.g. solar collectors, storage devices, etc.);
-- The **Layered construction** module enables the modelling of the composition of construction surfaces through different layers and their physical properties;
-- The **Resources module** is new and allows to model resources (energy, water, food, etc.) that an urban object may need, produce or store;
-- The **Urban function areas module** is new and allows to define spatial entities that allow to aggregate values;
-- The **WeatherStation module** contains just a single class to model weather stations;
-- The **Schedules module** includes different types of schedules, the TimeSeries module contains classes for time series;
+- The **Occupancy module** defines classes to model different usage zones and their occupants;
+- The **Devices module** provides classes to model different types of energy-related devices that transform or store energy (e.g. solar collectors, storage devices, etc.);
+- The **Layered construction module** enables the modelling of the composition of construction surfaces through different layers and their physical properties;
+- The **Resources module** allows to model resources (energy, water, food, etc.) that an urban object may need, produce or store;
+- The **Urban function areas module** allows to define spatial entities that allow to aggregate values;
+- The **WeatherStation module** contains a class to model weather stations;
+- The **Schedules module** includes different types of schedules;
+- The **TimeSeries module** contains classes for time series;
 - The **CodeLists, Enumerations and DataTypes** modules contain support classes that are needed by all other modules.
 
 Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE_2.0/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
