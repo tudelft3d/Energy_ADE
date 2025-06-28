@@ -27,6 +27,7 @@ The Energy ADE 2.0 has a modular structure. In short:
 - The *CodeLists, Enumerations and DataTypes* modules contain support classes that are needed by all other modules.
 
 Please refer to the documentation for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
+
 Besides the conceptual model, available as UML diagrams (and the accompanying specifications), several resources are available, such as:
 
 - DDL scripts to set up the 3D City Database using the ADE Manager
