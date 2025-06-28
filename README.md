@@ -1,5 +1,5 @@
 > [!NOTE]
-> This GitHub repository will become public short before the [3DGeoInfo/SDSC 2025 conference](https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html) in Japan at the beginning of September 2025.
+> This GitHub repository will become public shortly before the [3DGeoInfo/SDSC 2025 conference](https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html) in Japan at the beginning of September 2025.
 > Till then we will keep updating and improving it for the "great opening" 🎆
 
 <p align="center"><br/><br/><br/><img src="logos/energy_ade_2_logo.jpg" width="500"><br/><br/><br/></p>
