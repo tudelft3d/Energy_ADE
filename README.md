@@ -2,7 +2,7 @@
 
 This repository contains the data model and the associated resources of the CityGML **Energy ADE 2.0**.
 
-![Energy ADE 2.0 Logo](images/energy_ade_2_logo.jpg)
+![Energy ADE 2.0 Logo](logos/energy_ade_2_logo.jpg)
 
 # Introduction
 
