@@ -1,18 +1,14 @@
-# Energy ADE 2.0
-
-This repository contains the data model and the associated resources of the CityGML **Energy ADE 2.0**.
-
-<img src="logos/energy_ade_2_logo.jpg" width="500">
+<p align="center"><img src="logos/energy_ade_2_logo.jpg" width="500"></p>
 
 <!-- ![Energy ADE 2.0](logos/energy_ade_2_logo.jpg) -->
 
 # Introduction
 
-The CityGML Energy Application Domain Extension (ADE) 2.0 offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
+The CityGML Energy Application Domain Extension (or, in short: ADE) 2.0 offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
 
-The current version is based on and builds upon the previous version of the Energy ADE, released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
+The current version is based on and builds upon the [previous version of the Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
 
-The technological innovations (e.g. the release of CityGML 3.0 in 2021), as well as experiences and feedback collected its release, have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0.
+The technological innovations (e.g. the release of CityGML 3.0 in 2021), as well as experiences and feedback collected since its release, have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0.
 
 The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its development already keeps into consideration its future porting to CityGML 3.0.
 
@@ -97,12 +93,13 @@ Link to [open-access PDF]().
 REAL CORP 2025 Proceedings/Tagungsband, 2025, pp. 65-76. Graz, Austria, 14-16 April. ISBN 978-3-9504945-4-9.<br/>
 Link to [open-access PDF](https://archive.corp.at/cdrom2025/papers2025/CORP2025_115.pdf).
 
+- Bachert, C., León-Sánchez, C., Kutzner, T., Agugiaro, G.<br/>
+**Mapping the CityGML Energy ADE to CityGML 3.0 using a model-driven approach**.<br/>
+ISPRS Int. Journal of Geo-Information, MDPI, 2024, 13(4)
+Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=1712227125).
 
 # Disclaimer
 
 Development of the Energy ADE 2.0 has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
 
-In addition to the DigiTwins4PEDs consortium members, several other partners have joined as contributors, testers, technology enthusiasts on a volunteer basis.
-
-[//]: # (This is a comment.)
-[//]: # (This is a comment on a new line.)
+In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, testers, technology enthusiasts on a volunteer basis.
