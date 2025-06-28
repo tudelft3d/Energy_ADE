@@ -14,7 +14,7 @@ The current version is based on and builds upon the [previous version of the Ene
 
 The technological innovations (e.g. the release of CityGML 3.0 in 2021), as well as experiences and feedback collected since its release, have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0.
 
-The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its development already keeps into consideration its future porting to CityGML 3.0.
+The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its development already keeps in consideration its future porting to CityGML 3.0.
 
 # The Energy ADE 2.0 in a nutshell
 
