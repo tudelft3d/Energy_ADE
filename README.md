@@ -1,3 +1,22 @@
+| Left-aligned | Center-aligned | Right-aligned |
+| :---:        |     :---:      |         :---: |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
+
+
+
+
+<img src="logos/idiap_logo.png" width="200">
+<img src="logos/hft_logo.png" width="200">
+<img src="logos/rwth_logo.png" width="200">
+<img src="logos/tum_logo.png" width="200">
+
+
+<img src="logos/ait_logo.png" width="200">
+<img src="logos/irec_logo.png" width="200">
+<img src="logos/infosolutions_logo.png" width="200">
+<img src="logos/upwr_logo.png" width="200">
+
 > [!NOTE]
 > This GitHub repository will become public shortly before the [3DGeoInfo/SDSC 2025 conference](https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html) in Japan at the beginning of September 2025.
 > Till then we will keep updating and improving it before the "great opening" 🎆
