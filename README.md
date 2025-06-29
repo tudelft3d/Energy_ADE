@@ -1,32 +1,8 @@
-<table>
-  <tr>
-    <td align="center" valign="middle"><img src="logos/tudelft_logo.png" width="200"></td>
-    <td align="center" valign="middle"><img src="logos/hft_logo.png" width="200"></td>
-    <td align="center" valign="middle"><img src="logos/tum_logo.png" width="200"></td>
-  </tr>
-  <tr>
-    <td align="center" valign="middle"><img src="logos/rwth_logo.png" width="200"></td>
-    <td align="center" valign="middle"><img src="logos/idiap_logo.png" width="200"></td>
-    <td align="center" valign="middle"></td>
-  </tr>
-</table>
-
-
-
-<img src="logos/tudelft_logo.png" width="100"><img src="logos/hft_logo.png" width="100"><img src="logos/tum_logo.png" width="100"><br/>
-<img src="logos/rwth_logo.png" width="100"><img src="logos/idiap_logo.png" width="100"><br/>
-
-<img src="logos/uni_antwerpen_logo.png" width="100"><img src="logos/irec_logo.png" width="100"><img src="logos/infosolutions_logo.png" width="100"><br/>
-<img src="logos/upwroc_logo.png" width="100"><img src="logos/fbk_logo.png" width="100"><img src="logos/ait_logo.png" width="100">
-
-
-
 > [!NOTE]
 > This GitHub repository will become public shortly before the [3DGeoInfo/SDSC 2025 conference](https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html) in Japan at the beginning of September 2025.
 > Till then we will keep updating and improving it before the "great opening" 🎆
 
 <p align="center"><br/><br/><br/><img src="logos/energy_ade_2_logo.jpg" width="500"><br/><br/><br/></p>
-
 <!-- ![Energy ADE 2.0](logos/energy_ade_2_logo.jpg) -->
 
 # Introduction
@@ -82,22 +58,49 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Thomas Kolbe (TU Munich, Germany)
 - Camilo León-Sánchez (TU Delft, The Netherlands)
 - Rushikesh Padsala (HFT Stuttgart, Germany)
-- Simon, Ramingn (RWTH Aachen, Germany) 
+- Simon, Raming (RWTH Aachen, Germany) 
 - Maxim, Shamovich (RWTH Aachen, Germany)
 - Zhihang Yao (HFT Stuttgart, Germany)
 
+<table align="center">
+  <tr>
+    <td align="center" valign="middle"><img src="logos/tudelft_logo.png" width="150"></td>
+    <td align="center" valign="middle"><img src="logos/hft_logo.png" width="150"></td>
+    <td align="center" valign="middle"><img src="logos/tum_logo.png" width="150"></td>
+    <td align="center" valign="middle"><img src="logos/rwth_logo.png" width="150"></td>
+    <td align="center" valign="middle"><img src="logos/idiap_logo.png" width="150"></td>
+  </tr>
+</table>
+
 # Early testers and technology enthusiasts
 
-- IREC - Institut de Recerca en Energia de Catalunya, Barlellona, Spain
 - University of Antwerp, Belgium
+- IREC - Institut de Recerca en Energia de Catalunya, Barlellona, Spain
+- Infosolutions Sp. z o.o., Poland
+- Wroclaw University of Environmental and Life Sciences, Poland
 - FBK - Fondazione Bruno Kessler, Trento, Italy
 - AIT - Austrian Institute of Technology, Austria
-- Wroclaw University of Environmental and Life Sciences, Poland
-- Infosolutions Sp. z o.o., Poland
 - Municipality of Rotterdam, Netherlands
 - Municipality of Stuttgart, Germany
 - Municipality of Wien, Austria
 - Municipality of Wrozlaw, Poland
+
+<table align="center">
+  <tr>
+    <td align="center" valign="middle"><img src="logos/uni_antwerpen_logo.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/irec_logo.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/infosolutions_logo.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/upwroc_logo.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/fbk_logo.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/ait_logo.png" width="100"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><img src="logos/rotterdam.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/stuttgart.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/wien.png" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/wroclaw.png" width="100"></td>
+  </tr>
+</table>
 
 # License
 
