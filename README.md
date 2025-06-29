@@ -112,29 +112,32 @@ The documentation and the UML diagrams are released under the Creative Commons L
 If you use the Energy ADE 2.0 in scientific work, please cite one of our papers:
 
 <!--
-- Agugiaro, G., Padsala, R.<br/>
+- Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
+Link to [open-access PDF](...).<br/>
 
-- Gao, W., León-Sánchez, C., Agugiaro, G.<br/> 
+- Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx, 2025<br/>
+Link to [open-access PDF](...).<br/>
 
-- Padsala, R., ....<br/> 
+- Padsala, R., ...., 2025<br/> 
 **xxx**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx, 2025<br/>
+Link to [open-access PDF](...).<br/>
 -->
 
-- Gebetsroither-Geringer, E., Padsala, R., Hainoun, A., Agugiaro, G., Biernat, S., Reber, A., Smetschka, B., Gao, W., Horak, D., Falay, B., Coors, V.<br/>
+- Gebetsroither-Geringer, E., Padsala, R., Hainoun, A., Agugiaro, G., Biernat, S., Reber, A., Smetschka, B., Gao, W., Horak, D., Falay, B., Coors, V., 2025<br/>
 **A participatory planning framework using urban digital twins supporting the co-creation of flexible, Positive Energy Districts**.<br/>
 (Schrenk, M., Popovich, V.V., Zeile, P., Elisei, P., Beyer, C., Ryser, J., Trattnig, U., eds)<br/>
-REAL CORP 2025 Proceedings/Tagungsband, 2025, pp. 65-76. Graz, Austria, 14-16 April. ISBN 978-3-9504945-4-9.<br/>
-Link to [open-access PDF](https://archive.corp.at/cdrom2025/papers2025/CORP2025_115.pdf).
+REAL CORP 2025 Proceedings/Tagungsband, pp. 65-76. Graz, Austria, 14-16 April 2025. ISBN 978-3-9504945-4-9.<br/>
+Link to [open-access PDF](https://archive.corp.at/cdrom2025/papers2025/CORP2025_115.pdf).<br/>
 
-- Bachert, C., León-Sánchez, C., Kutzner, T., Agugiaro, G.<br/>
+- Bachert, C., León-Sánchez, C., Kutzner, T., Agugiaro, G., 2024<br/>
 **Mapping the CityGML Energy ADE to CityGML 3.0 using a model-driven approach**.<br/>
-ISPRS Int. Journal of Geo-Information, MDPI, 2024, 13(4)<br/>
-Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=1712227125).
+ISPRS Int. Journal of Geo-Information, MDPI, 13(4)<br/>
+Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=1712227125).<br/>
 
 # Funding
 
