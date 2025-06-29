@@ -55,7 +55,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Giorgio Agugiaro (TU Delft, The Netherlands)
 - Volker Coors (HFT Stuttgart, Germany)
 - Jérôme Kämpf (Idiap, Switzerland)
-- Thomas Kolbe (TU Munich, Germany)
+- Thomas H. Kolbe (TU Munich, Germany)
 - Camilo León-Sánchez (TU Delft, The Netherlands)
 - Rushikesh Padsala (HFT Stuttgart, Germany)
 - Simon, Raming (RWTH Aachen, Germany) 
