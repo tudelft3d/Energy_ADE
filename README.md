@@ -44,7 +44,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 
 - Are you struggling to read and understand UML? Download this **[UML crash course](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/UML_in_a_nuthshell.pdf)** providing you with the basics to "survive" 😉
 - Looking for a quick install guide to set up the 3DCityDB? Check out the **Quick install guides** for [Windows](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_Windows.pdf), [Ubuntu Linux](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_Ubuntu.pdf) and [macOS](https://github.com/tudelft3d/3DCityDB-Tools-for-QGIS/blob/master/manuals/3dcitydb_install/3DCityDB_Suite_QuickInstall_macOS.pdf)!
-- Trying to understand how to use FME with CityGML? Have a look at these **introductory tutorials** on [FME](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_Form_for_beginners.pdf) and [Reading and Writing CityGML data](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_CityGML.pdf) 💪
+- No idea on how to use FME with CityGML? Have a look at these **introductory tutorials** on [FME](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_Form_for_beginners.pdf) and [Reading and Writing CityGML data](https://3d.bk.tudelft.nl/gagugiaro/tutorials/pdf/FME_CityGML.pdf) 💪
 
 # Contact person:
 
@@ -105,7 +105,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 # License
 
 The software resources available on this repository adopt the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).<br/>
-The documentation and the accompanying resources (e.g. the UML diagrams) are released under the Creative Commons License [CC BY-NC-SA 4.0](https://github.com/user-attachments/assets/e124ad94-256d-4a5e-a42c-8b52b2ea9728)
+The documentation and the UML diagrams are released under the Creative Commons License [CC BY-NC-SA 4.0](https://github.com/user-attachments/assets/e124ad94-256d-4a5e-a42c-8b52b2ea9728)
 
 # Citation
 
