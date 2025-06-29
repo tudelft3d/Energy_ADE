@@ -63,7 +63,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Maxim, Shamovich (RWTH Aachen, Germany)
 - Zhihang Yao (HFT Stuttgart, Germany)
 
-# Testers and technology enthusiasts
+# Early testers and technology enthusiasts
 
 - IREC - Institut de Recerca en Energia de Catalunya, Barlellona, Spain
 - University of Antwerp, Belgium
