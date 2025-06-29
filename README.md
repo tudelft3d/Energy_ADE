@@ -111,6 +111,7 @@ The documentation and the accompanying resources (e.g. the UML diagrams) are rel
 
 If you use the Energy ADE 2.0 in scientific work, please cite one of our papers:
 
+<!--
 - Agugiaro, G., Padsala, R.<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
@@ -122,6 +123,7 @@ ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
 - Padsala, R., ....<br/> 
 **xxx**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci.<br/>
+-->
 
 - Gebetsroither-Geringer, E., Padsala, R., Hainoun, A., Agugiaro, G., Biernat, S., Reber, A., Smetschka, B., Gao, W., Horak, D., Falay, B., Coors, V.<br/>
 **A participatory planning framework using urban digital twins supporting the co-creation of flexible, Positive Energy Districts**.<br/>
