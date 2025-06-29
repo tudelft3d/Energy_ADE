@@ -58,6 +58,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Thomas H. Kolbe (TU Munich, Germany)
 - Camilo León-Sánchez (TU Delft, The Netherlands)
 - Rushikesh Padsala (HFT Stuttgart, Germany)
+- Prabitha Prabhakaran (HFT Stuttgart, Germany)
 - Simon, Raming (RWTH Aachen, Germany) 
 - Maxim, Shamovich (RWTH Aachen, Germany)
 - Zhihang Yao (HFT Stuttgart, Germany)
