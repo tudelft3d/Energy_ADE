@@ -133,7 +133,7 @@ Link to [open-access PDF](https://archive.corp.at/cdrom2025/papers2025/CORP2025_
 
 - Bachert, C., León-Sánchez, C., Kutzner, T., Agugiaro, G.<br/>
 **Mapping the CityGML Energy ADE to CityGML 3.0 using a model-driven approach**.<br/>
-ISPRS Int. Journal of Geo-Information, MDPI, 2024, 13(4)
+ISPRS Int. Journal of Geo-Information, MDPI, 2024, 13(4)<br/>
 Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=1712227125).
 
 # Funding
