@@ -14,11 +14,11 @@ The current version is based on and builds upon the [previous version of the Ene
 
 The technological innovations (e.g. the release of CityGML 3.0 in 2021), as well as experiences and feedback collected since its release, have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0.
 
-The Energy ADE 2.0 is currently based on and extends CityGML 2.0, but its development already keeps in consideration its future porting to CityGML 3.0.
+The Energy ADE 2.0 is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
 
 # The Energy ADE 2.0 in a nutshell
 
-The Energy ADE 2.0 (currently: **$${\color{red}beta 7}$$**) has a modular structure:
+The Energy ADE 2.0 has a modular structure:
 - The **Core module** defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
 - The **Building physics module** defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
 - The **Occupancy module** defines classes to model different usage zones and their occupants;
@@ -68,6 +68,9 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - IREC - Institut de Recerca en Energia de Catalunya, Barlellona, Spain
 - University of Antwerp, Belgium
 - FBK - Fondazione Bruno Kessler, Trento, Italy
+- AIT - Austrian Institute of Technology, Austria
+- Wroclaw University of Environmental and Life Sciences, Poland
+- Infosolutions Sp. z o.o., Poland
 - Municipality of Rotterdam, Netherlands
 - Municipality of Stuttgart, Germany
 - Municipality of Wien, Austria
@@ -109,4 +112,4 @@ Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=17
 
 Development of the Energy ADE 2.0 has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
 
-In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, testers or technology enthusiasts.
+In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
