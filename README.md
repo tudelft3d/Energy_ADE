@@ -52,16 +52,18 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 
 # Main developers and contributors 
 
-- Giorgio Agugiaro (TU Delft, The Netherlands)
-- Volker Coors (HFT Stuttgart, Germany)
-- Jérôme Kämpf (Idiap, Switzerland)
-- Thomas H. Kolbe (TU Munich, Germany)
-- Camilo León-Sánchez (TU Delft, The Netherlands)
-- Rushikesh Padsala (HFT Stuttgart, Germany)
-- Prabitha Prabhakaran (HFT Stuttgart, Germany)
-- Simon, Raming (RWTH Aachen, Germany) 
-- Maxim, Shamovich (RWTH Aachen, Germany)
-- Zhihang Yao (HFT Stuttgart, Germany)
+- Giorgio Agugiaro (TU Delft, The Netherlands): Main developer
+- Rushikesh Padsala (HFT Stuttgart, Germany): Main developer
+- Prabitha Prabhakaran (HFT Stuttgart, Germany): Main developer
+- Matthias Betz (HFT Stuttgart, Germany): Contributor
+- Zhihang Yao (HFT Stuttgart, Germany): Contributor
+- Volker Coors (HFT Stuttgart, Germany): Contributor
+- Camilo León-Sánchez (TU Delft, The Netherlands): Contributor
+- Thomas H. Kolbe (TU Munich, Germany): Contributor
+- Jérôme Kämpf (Idiap, Switzerland): Contributor
+- Simon  Raming (RWTH Aachen, Germany): Contributor
+- Maxim  Shamovich (RWTH Aachen, Germany): Contributor
+
 
 <table align="center">
   <tr>
