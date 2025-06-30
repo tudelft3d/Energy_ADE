@@ -11,7 +11,7 @@ The **CityGML Energy Application Domain Extension 2.0** (or, in short: Energy AD
 
 The current version is based on and builds upon the first version of the [Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
 
-The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the experiences and feedback collected since its release have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0.
+The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the experiences and feedback collected since its release have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0, with TU Delft and HFT Stuttgart being responsible for the first development "sprint" in terms of conceptual data model (TU Delft) and implementation of the Java libraries (HFT Stuttgart). In the meantime, and in addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
 
 The Energy ADE 2.0 is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
 
@@ -38,7 +38,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - An **FME Workbench** that allows to import CityGML + Energy ADE 2.0 data into the 3D City Database
 - **Test datasets** that focus on different aspects/modules of the Energy ADE 2.0
 - A **set of modelling rules and suggestions** explaining how to use certain classes of the Energy ADE (please refer to the documentation)
-- Additionally, **Java-based libraries** are currently being developed to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter).
+- Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted at ...XXX...XXX....
 
 # Further resources
 
@@ -56,14 +56,13 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Rushikesh Padsala (HFT Stuttgart, Germany): Main developer
 - Prabitha Prabhakaran (HFT Stuttgart, Germany): Main developer
 - Matthias Betz (HFT Stuttgart, Germany): Contributor
-- Zhihang Yao (HFT Stuttgart, Germany): Contributor
 - Volker Coors (HFT Stuttgart, Germany): Contributor
-- Camilo León-Sánchez (TU Delft, The Netherlands): Contributor
 - Thomas H. Kolbe (TU Munich, Germany): Contributor
 - Jérôme Kämpf (Idiap, Switzerland): Contributor
-- Simon  Raming (RWTH Aachen, Germany): Contributor
-- Maxim  Shamovich (RWTH Aachen, Germany): Contributor
-
+- Camilo León-Sánchez (TU Delft, The Netherlands): Contributor
+- Simon Raming (RWTH Aachen, Germany): Contributor
+- Maxim Shamovich (RWTH Aachen, Germany): Contributor
+- Zhihang Yao (HFT Stuttgart, Germany): Contributor
 
 <table align="center">
   <tr>
