@@ -9,15 +9,15 @@
 
 The **CityGML Energy Application Domain Extension 2.0** (or, in short: Energy ADE 2.0) offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
 
-The current version is based on and builds upon the first version of the [Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
+The current version is based on and builds upon version 1.0 of the [Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
 
-The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the experiences and feedback collected since its release have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, towards a so-called Energy ADE 2.0, with TU Delft and HFT Stuttgart being responsible for the first major development "sprint" in terms of conceptual data model (TU Delft) and implementation of the Java libraries (HFT Stuttgart). In the meantime, and in addition to the other DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
+The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the experiences and feedback collected since its release have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas towards an up-to-date version of the Energy ADE, with TU Delft and HFT Stuttgart being responsible for the first major development "sprint" in terms of conceptual data model (TU Delft) and implementation of the Java libraries (HFT Stuttgart). In the meantime, and in addition to the other DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
 
-The Energy ADE 2.0 is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
+This version of the Energy ADE is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
 
-# The Energy ADE 2.0 in a nutshell
+# The improved Energy ADE in a nutshell
 
-The Energy ADE 2.0 has a modular structure:
+The improved Energy ADE has a modular structure:
 - The **Core module** defines additional attributes for the CityGML core::_CityObject and bldg::_AbstractBuilding classes. It also provides new abstract base classes for the other modules;
 - The **Building physics module** defines additional attributes for the CityGML bldg::_BoundarySurface and bldg::_Opening classes. Additionally, it defines new classes to model the thermal hull of a building;
 - The **Occupancy module** defines classes to model different usage zones and their occupants;
@@ -30,13 +30,13 @@ The Energy ADE 2.0 has a modular structure:
 - The **TimeSeries module** contains classes for time series;
 - The **CodeLists, Enumerations and DataTypes** modules contain support classes that are needed by all other modules.
 
-Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE_2.0/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
+Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
 
-Besides the conceptual model, available as [UML diagrams](https://github.com/tudelft3d/Energy_ADE_2.0/blob/main/documentation/Energy_ADE_2.0_UML_diagrams.pdf) (and the accompanying specifications), additional resources are available, such as:
+Besides the conceptual model, available as [UML diagrams](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_UML_diagrams.pdf) (and the accompanying specifications), additional resources are available, such as:
 
 - **DDL scripts** to set up the 3D City Database automatically using the ADE Manager
-- An **FME Workbench** that allows to import CityGML + Energy ADE 2.0 data into the 3D City Database
-- **Test datasets** that focus on different aspects/modules of the Energy ADE 2.0
+- An **FME Workbench** that allows to import CityGML + Energy ADE data into the 3D City Database
+- **Test datasets** that focus on different aspects/modules of the Energy ADE
 - A **set of modelling rules and suggestions** explaining how to use certain classes of the Energy ADE (please refer to the documentation)
 - Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted at ...XXX...XXX....
 
@@ -111,7 +111,7 @@ The documentation and the UML diagrams are released under the Creative Commons L
 
 # Citation
 
-If you use the Energy ADE 2.0 in scientific work, please cite one of our papers:
+If you use the Energy ADE in scientific work, please cite one of our papers:
 
 <!--
 - Agugiaro, G., Padsala, R., 2025<br/>
