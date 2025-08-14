@@ -24,9 +24,9 @@ The improved Energy ADE has a modular structure:
 - The **Layered construction module** enables the modelling of the composition of construction surfaces through different layers and their physical properties;
 - The **Resources module** allows to model resources (energy, water, food, etc.) that an urban object may need, produce or store;
 - The **Urban function areas module** allows to define spatial entities that allow to aggregate values;
-- The **WeatherStation module** contains a class to model weather stations;
+- The **Weather station module** contains a class to model weather stations;
 - The **Schedules module** includes different types of schedules;
-- The **TimeSeries module** contains classes for time series;
+- The **Time series module** contains classes for time series;
 - The **CodeLists, Enumerations and DataTypes** modules contain support classes that are needed by all other modules.
 
 Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
