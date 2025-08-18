@@ -1,6 +1,3 @@
-> [!NOTE]
-> This GitHub repository will become public at the beginning of September 2025, shortly before the [3DGeoInfo/SDSC 2025 conference](https://www.csis.u-tokyo.ac.jp/3d_geoinfo_sdsc_2025/overview.html) in Japan.
-
 <p align="center"><br/><br/><br/><img src="logos/energy_ade_2_logo.jpg" width="600"><br/><br/><br/></p>
 <!-- ![Energy ADE 2.0](logos/energy_ade_2_logo.jpg) -->
 
@@ -29,7 +26,7 @@ The improved Energy ADE has a modular structure:
 - The **Time series module** contains classes for time series;
 - The **CodeLists, Enumerations and DataTypes** modules contain support classes that are needed by all other modules.
 
-Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the Energy ADE 2.0.
+Please refer to the [documentation](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_Specifications.pdf) for more details, as well as a detailed description of the changes between the Energy ADE 1.0 and the current version of the Energy ADE.
 
 Besides the conceptual model, available as [UML diagrams](https://github.com/tudelft3d/Energy_ADE/blob/main/documentation/Energy_ADE_2.0_UML_diagrams.pdf) (and the accompanying specifications), additional resources are available, such as:
 
@@ -37,7 +34,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - An **FME Workbench** that allows to import CityGML + Energy ADE data into the 3D City Database
 - **Test datasets** that focus on different aspects/modules of the Energy ADE
 - A **set of modelling rules and suggestions** explaining how to use certain classes of the Energy ADE (please refer to the documentation)
-- Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted at https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-citygml4j and https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-3dcitydb. The latest package, including the Energy ADE 2 Java libraries for citygml4j, the 3DCityDB Importer/Exporter API, and the DDL scripts with schema mappings for full 3DCityDB Importer/Exporter plugin support, can be downloaded from [here](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-releases).
+- Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted [here (citygml4j)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-citygml4j) and [here (citydb)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-3dcitydb). The latest package, including the Energy ADE 2.0 Java libraries for citygml4j, the 3DCityDB Importer/Exporter API, and the DDL scripts with schema mappings for full 3DCityDB Importer/Exporter plugin support, can be downloaded from [here](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-releases).
 
 # Further resources
 
@@ -120,12 +117,12 @@ Link to [open-access PDF](...).<br/>
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx, 2025<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
 Link to [open-access PDF](...).<br/>
 
 - Padsala, R., ...., 2025<br/> 
 **xxx**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx, 2025<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
 Link to [open-access PDF](...).<br/>
 -->
 
@@ -142,6 +139,6 @@ Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=17
 
 # Funding
 
-Development of the Energy ADE 2.0 has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
+Development of the new Energy ADE has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
 
 In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
