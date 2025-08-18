@@ -137,6 +137,11 @@ Link to [open-access PDF](https://archive.corp.at/cdrom2025/papers2025/CORP2025_
 ISPRS Int. Journal of Geo-Information, MDPI, 13(4)<br/>
 Link to [open-access PDF](https://www.mdpi.com/2220-9964/13/4/121/pdf?version=1712227125).<br/>
 
+- Agugiaro, G., Benner, J., Cipriano, P., Nouvel, R., 2018<br/>
+**The Energy Application Domain Extension for CityGML: Enhancing interoperability for urban energy simulations**.<br/>
+Open Geospatial Data, Software and Standards, 2018 3:2. SpringerOpen, United Kingdom<br/>
+Link to [open-access PDF](https://opengeospatialdata.springeropen.com/counter/pdf/10.1186/s40965-018-0042-y.pdf).<br/>
+
 # Funding
 
 Development of the new Energy ADE has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
