@@ -120,9 +120,9 @@ Link to [open-access PDF](...).<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
 Link to [open-access PDF](...).<br/>
 
-- Padsala, R., ...., 2025<br/> 
-**xxx**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
+- Padsala, R., Falay-Schweiger, B., Hainoun, A., Coors, V., 2025<br/> 
+**A Data-Driven Urban Digital Twin Approach for Evaluating Positive Energy District Potential Using OGC Standards in Stuttgart**.<br/>
+ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
 Link to [open-access PDF](...).<br/>
 -->
 
