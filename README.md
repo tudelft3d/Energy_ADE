@@ -113,7 +113,7 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
-<!--Link to [open-access PDF](...).<br/>-->
+Link to [open-access paper (PDF)](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_paper.pdf) and [presentation slides (PDF)](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_ppt.pdf)<br/>
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
