@@ -105,7 +105,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 The software resources available on this repository adopt the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).<br/>
 The documentation and the UML diagrams are released under the Creative Commons License [CC BY-NC-SA 4.0](https://github.com/user-attachments/assets/e124ad94-256d-4a5e-a42c-8b52b2ea9728)
 
-# Citation
+# Scientific publications and citation
 
 If you use the Energy ADE in scientific work, please cite one of our papers:
 
