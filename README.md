@@ -112,18 +112,18 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
-Link to [open-access paper (PDF)]([https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_paper.pdf](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025)) and [presentation slides (PDF)](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_ppt.pdf)<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W6-2025, pp. 1-8<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025) and [presentation slides (PDF)](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_ppt.pdf)<br/>
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
-ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
-<!--Link to [open-access PDF](...).<br/>-->
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W7-2025, pp. 25-32<br/>
+Link to [open-access PDF](https://doi.org/10.5194/isprs-annals-X-4-W7-2025-25-2025).<br/>
 
 - Padsala, R., Falay-Schweiger, B., Hainoun, A., Coors, V., 2025<br/> 
 **A Data-Driven Urban Digital Twin Approach for Evaluating Positive Energy District Potential Using OGC Standards in Stuttgart**.<br/>
-ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., Vol xxxx<br/>
-<!--Link to [open-access PDF](...).<br/>-->
+ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLVIII-4/W16-2025, pp. 67–74<br/>
+Link to [open-access PDF](https://doi.org/10.5194/isprs-archives-XLVIII-4-W16-2025-67-2025).<br/>
 
 - Gebetsroither-Geringer, E., Padsala, R., Hainoun, A., Agugiaro, G., Biernat, S., Reber, A., Smetschka, B., Gao, W., Horak, D., Falay, B., Coors, V., 2025<br/>
 **A participatory planning framework using urban digital twins supporting the co-creation of flexible, Positive Energy Districts**.<br/>
