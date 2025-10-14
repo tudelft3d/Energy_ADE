@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="OccupantsTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">OccupantsTypeValue</gml:identifier>
+  <gml:name>OccupantsTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1962">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">patients</gml:identifier>
+      <gml:name>patients</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1963">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">residents</gml:identifier>
+      <gml:name>residents</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1964">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">students</gml:identifier>
+      <gml:name>students</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1965">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">visitors</gml:identifier>
+      <gml:name>visitors</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1966">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">workers</gml:identifier>
+      <gml:name>workers</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1967">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1037_1968">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OccupantsTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

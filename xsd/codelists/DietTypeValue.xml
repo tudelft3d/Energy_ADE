@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="DietTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">DietTypeValue</gml:identifier>
+  <gml:name>DietTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1129_2204">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DietTypeValue">omnivorous</gml:identifier>
+      <gml:name>omnivorous</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1129_2205">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DietTypeValue">vegetarian</gml:identifier>
+      <gml:name>vegetarian</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1129_2206">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DietTypeValue">vegan</gml:identifier>
+      <gml:name>vegan</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1129_2207">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DietTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1129_2208">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DietTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

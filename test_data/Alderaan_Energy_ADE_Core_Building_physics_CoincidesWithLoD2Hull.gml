@@ -7,9 +7,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-21
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -23,7 +23,7 @@ There is one multi-part building, consisting of 2 building parts.
 
 There is a global appearances.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 All CityObjects are modelled also via a 3D reference point.
 The core buildings and their thematic surfaces
@@ -60,7 +60,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 *******************************************************
 *******************************************************
---><core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+--><core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This city model contains a set of "fantasy" buildings created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>CityGML city of Alderaan</gml:name>
 	<gml:boundedBy>
@@ -74,17 +74,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 1</gml:description>
 			<gml:name>Snoke's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -97,11 +97,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_1_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 1)</gml:description>
 					<gml:name>GroundSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -115,24 +115,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 1)</gml:description>
 					<gml:name>RoofSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -146,27 +146,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfHeatCapacity uom="kJ/(m^2*K)">1.26</nrg2:bdgBdrySurfHeatCapacity>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpaqueSurfaceArea uom="m^2">5</nrg2:bdgBdrySurfOpaqueSurfaceArea>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfThickness uom="mm">250</nrg2:bdgBdrySurfThickness>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfHeatCapacity uom="kJ/(m^2*K)">1.26</nrg3:bdgBdrySurfHeatCapacity>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">5</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfThickness uom="mm">250</nrg3:bdgBdrySurfThickness>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 1)</gml:description>
 					<gml:name>RoofSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -180,24 +180,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 1)</gml:description>
 					<gml:name>WallSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -211,24 +211,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 1)</gml:description>
 					<gml:name>WallSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -242,24 +242,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 1)</gml:description>
 					<gml:name>WallSurface 3 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -273,30 +273,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_1_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_1_partywallsurface_1">
 					<gml:description>This is WallSurface 8 (shared)</gml:description>
 					<gml:name>WallSurface 8 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -310,70 +310,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_1">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_1">
 					<gml:description>This is ThermalZone 1</gml:description>
 					<gml:name>ThermalZone 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -381,23 +381,23 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 2</gml:description>
 			<gml:name>Rey's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_1"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_1"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -410,11 +410,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_2_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 2)</gml:description>
 					<gml:name>GroundSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -428,24 +428,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 2)</gml:description>
 					<gml:name>RoofSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -459,24 +459,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 2)</gml:description>
 					<gml:name>RoofSurface 2 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -490,24 +490,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_1">
 					<gml:description>This is WallSurface 4 (split)</gml:description>
 					<gml:name>WallSurface 4 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -521,24 +521,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_2">
 					<gml:description>This is WallSurface 6 (split)</gml:description>
 					<gml:name>WallSurface 6 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -552,24 +552,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 2)</gml:description>
 					<gml:name>WallSurface 3 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -583,24 +583,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 2)</gml:description>
 					<gml:name>WallSurface 4 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -614,30 +614,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_2_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_2_partywallsurface_1">
 					<gml:description>This is WallSurface 12 (shared)</gml:description>
 					<gml:name>WallSurface 12 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -651,30 +651,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_2_partywallsurface_2">
+				<nrg3:PartyWallSurface gml:id="id_building_2_partywallsurface_2">
 					<gml:description>This is WallSurface 3 (shared)</gml:description>
 					<gml:name>WallSurface 3 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_partywallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -688,76 +688,76 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_2">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_2">
 					<gml:description>This is ThermalZone 2</gml:description>
 					<gml:name>ThermalZone 2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_3"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_3"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -765,23 +765,23 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 3</gml:description>
 			<gml:name>Poe's Hangar</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>25 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_4"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_4"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">traffic</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hangar</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -794,11 +794,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_3_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 3)</gml:description>
 					<gml:name>GroundSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -812,24 +812,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 3)</gml:description>
 					<gml:name>RoofSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -843,24 +843,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 3)</gml:description>
 					<gml:name>RoofSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -874,24 +874,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 3)</gml:description>
 					<gml:name>WallSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -905,24 +905,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 3)</gml:description>
 					<gml:name>WallSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -936,30 +936,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_3_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_3_partywallsurface_1">
 					<gml:description>This is WallSurface 9 (shared)</gml:description>
 					<gml:name>WallSurface 9 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_partywallsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_partywallsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -973,30 +973,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_3_partywallsurface_2">
+				<nrg3:PartyWallSurface gml:id="id_building_3_partywallsurface_2">
 					<gml:description>This is WallSurface 11 (shared)</gml:description>
 					<gml:name>WallSurface 11 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_4_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_4_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_partywallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1010,76 +1010,76 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_3">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_3">
 					<gml:description>This is ThermalZone 3</gml:description>
 					<gml:name>ThermalZone 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_4"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_4"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1087,17 +1087,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 4</gml:description>
 			<gml:name>Fin's Cabin</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>35 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1110,11 +1110,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_4_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 4)</gml:description>
 					<gml:name>GroundSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1128,24 +1128,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 4)</gml:description>
 					<gml:name>RoofSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1159,24 +1159,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 4)</gml:description>
 					<gml:name>RoofSurface 2 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1190,24 +1190,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 4)</gml:description>
 					<gml:name>WallSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>40 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1221,24 +1221,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_2">
 					<gml:description>This is WallSurface 8 (split)</gml:description>
 					<gml:name>WallSurface 8 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1252,24 +1252,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 4)</gml:description>
 					<gml:name>WallSurface 3 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1283,24 +1283,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 4)</gml:description>
 					<gml:name>WallSurface 4 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1314,30 +1314,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_4_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_4_partywallsurface_1">
 					<gml:description>This is WallSurface 6 (shared)</gml:description>
 					<gml:name>WallSurface 6 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_partywallsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_partywallsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1351,70 +1351,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_4">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_4">
 					<gml:description>This is ThermalZone 4</gml:description>
 					<gml:name>ThermalZone 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_3"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_3"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1422,17 +1422,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 5</gml:description>
 			<gml:name>Yoda's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>55 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_6"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_6"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">healthcare</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hospital</bldg:function>
 			<bldg:yearOfConstruction>1980</bldg:yearOfConstruction>
@@ -1445,11 +1445,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_5_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 5)</gml:description>
 					<gml:name>GroundSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1463,24 +1463,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 5)</gml:description>
 					<gml:name>RoofSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1494,24 +1494,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 5)</gml:description>
 					<gml:name>RoofSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1525,24 +1525,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_1">
 					<gml:description>This is WallSurface 9 (split)</gml:description>
 					<gml:name>WallSurface 9 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1556,24 +1556,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 5)</gml:description>
 					<gml:name>WallSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>50 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1587,24 +1587,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 5)</gml:description>
 					<gml:name>WallSurface 3 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1618,24 +1618,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 5)</gml:description>
 					<gml:name>WallSurface 4 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1649,30 +1649,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_5_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_5_partywallsurface_1">
 					<gml:description>This is WallSurface 5 (shared)</gml:description>
 					<gml:name>WallSurface 5 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 7.5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1686,70 +1686,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_5">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_5">
 					<gml:description>This is ThermalZone 5</gml:description>
 					<gml:name>ThermalZone 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_6"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_6"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1757,17 +1757,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 6</gml:description>
 			<gml:name>Amidala's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_5"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_5"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1997</bldg:yearOfConstruction>
@@ -1780,11 +1780,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_6_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 6)</gml:description>
 					<gml:name>GroundSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1798,24 +1798,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 6)</gml:description>
 					<gml:name>RoofSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1829,24 +1829,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 6)</gml:description>
 					<gml:name>RoofSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1860,24 +1860,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 6)</gml:description>
 					<gml:name>WallSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1891,24 +1891,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 6)</gml:description>
 					<gml:name>WallSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 15 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1922,24 +1922,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_3">
 					<gml:description>This is WallSurface 1 (split)</gml:description>
 					<gml:name>WallSurface 1 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1953,24 +1953,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 6)</gml:description>
 					<gml:name>WallSurface 4 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1984,30 +1984,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_6_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_6_partywallsurface_1">
 					<gml:description>This is WallSurface 1 (shared)</gml:description>
 					<gml:name>WallSurface 1 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 7.5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_5_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_5_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2021,70 +2021,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_6">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_6">
 					<gml:description>This is ThermalZone 6</gml:description>
 					<gml:name>ThermalZone 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_5"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_5"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2092,17 +2092,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 7</gml:description>
 			<gml:name>Palapatine's Residence</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_8"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_8"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>2005</bldg:yearOfConstruction>
@@ -2115,11 +2115,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_7_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 7)</gml:description>
 					<gml:name>GroundSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2133,24 +2133,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 7)</gml:description>
 					<gml:name>RoofSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2164,24 +2164,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 7)</gml:description>
 					<gml:name>RoofSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2195,24 +2195,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 7)</gml:description>
 					<gml:name>WallSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -30 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2226,24 +2226,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 7)</gml:description>
 					<gml:name>WallSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2257,24 +2257,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 7)</gml:description>
 					<gml:name>WallSurface 3 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2288,24 +2288,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_4">
 					<gml:description>This is WallSurface 3 (split)</gml:description>
 					<gml:name>WallSurface 3 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2319,30 +2319,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_7_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_7_partywallsurface_1">
 					<gml:description>This is WallSurface 4 (shared)</gml:description>
 					<gml:name>WallSurface 4 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -22.5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_8_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_8_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2356,70 +2356,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_7">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_7">
 					<gml:description>This is ThermalZone 7</gml:description>
 					<gml:name>ThermalZone 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_8"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_8"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2427,17 +2427,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 8</gml:description>
 			<gml:name>Darth Vader's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 -20 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_7"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_7"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -2450,11 +2450,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_8_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 8)</gml:description>
 					<gml:name>GroundSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2468,24 +2468,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 8)</gml:description>
 					<gml:name>RoofSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2499,24 +2499,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 8)</gml:description>
 					<gml:name>RoofSurface 2 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -17.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2530,24 +2530,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 8)</gml:description>
 					<gml:name>WallSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2561,24 +2561,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_2">
 					<gml:description>This is WallSurface 7 (split)</gml:description>
 					<gml:name>WallSurface 7 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2592,24 +2592,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 8)</gml:description>
 					<gml:name>WallSurface 3 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2623,24 +2623,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 8)</gml:description>
 					<gml:name>WallSurface 4 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2654,30 +2654,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
-				<nrg2:PartyWallSurface gml:id="id_building_8_partywallsurface_1">
+				<nrg3:PartyWallSurface gml:id="id_building_8_partywallsurface_1">
 					<gml:description>This is WallSurface 7 (shared)</gml:description>
 					<gml:name>WallSurface 7 (shared)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -22.5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_partywallsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_partywallsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2691,70 +2691,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg2:bdgBdrySurfTotalSurfaceArea>
-				</nrg2:PartyWallSurface>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+				</nrg3:PartyWallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_8">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_8">
 					<gml:description>This is ThermalZone 8</gml:description>
 					<gml:name>ThermalZone 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_thermal_zone_7"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_thermal_zone_7"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2775,17 +2775,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 9</gml:description>
 					<gml:name>Jabba's dungeon</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_10"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_10"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -2798,11 +2798,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_9_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 9)</gml:description>
 							<gml:name>GroundSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2816,24 +2816,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:GroundSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 9)</gml:description>
 							<gml:name>RoofSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2847,24 +2847,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 9)</gml:description>
 							<gml:name>RoofSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -17.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2878,24 +2878,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_1">
 							<gml:description>This is WallSurface 5 (split)</gml:description>
 							<gml:name>WallSurface 5 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2909,24 +2909,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_2">
 							<gml:description>This is WallSurface 2 (Building 9)</gml:description>
 							<gml:name>WallSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>30 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2940,24 +2940,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 9)</gml:description>
 							<gml:name>WallSurface 3 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -25 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -2971,24 +2971,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 9)</gml:description>
 							<gml:name>WallSurface 4 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -15 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3002,30 +3002,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
-						<nrg2:PartyWallSurface gml:id="id_buildingpart_9_partywallsurface_1">
+						<nrg3:PartyWallSurface gml:id="id_buildingpart_9_partywallsurface_1">
 							<gml:description>This is WallSurface 10 (shared)</gml:description>
 							<gml:name>WallSurface 10 (shared)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -22.5 6.25</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10_partywallsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10_partywallsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3039,70 +3039,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg2:bdgBdrySurfTotalSurfaceArea>
-						</nrg2:PartyWallSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:PartyWallSurface>
 					</bldg:boundedBy>
-					<nrg2:thermalZone>
-						<nrg2:ThermalZone gml:id="id_thermal_zone_9">
+					<nrg3:thermalZone>
+						<nrg3:ThermalZone gml:id="id_thermal_zone_9">
 							<gml:description>This is ThermalZone 9</gml:description>
 							<gml:name>ThermalZone 9</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">300</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-							<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-							<nrg2:isCooled>false</nrg2:isCooled>
-							<nrg2:isHeated>true</nrg2:isHeated>
-							<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-							<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-						</nrg2:ThermalZone>
-					</nrg2:thermalZone>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">300</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+							<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+							<nrg3:isCooled>false</nrg3:isCooled>
+							<nrg3:isHeated>true</nrg3:isHeated>
+							<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+							<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+						</nrg3:ThermalZone>
+					</nrg3:thermalZone>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
 			<bldg:consistsOfBuildingPart>
@@ -3110,17 +3110,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 10</gml:description>
 					<gml:name>The rancor's prison</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>45 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_9"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_9"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1940</bldg:yearOfConstruction>
@@ -3133,11 +3133,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_10_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 10)</gml:description>
 							<gml:name>GroundSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3151,24 +3151,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:GroundSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 10)</gml:description>
 							<gml:name>RoofSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -27.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3182,24 +3182,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 10)</gml:description>
 							<gml:name>RoofSurface 2 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3213,24 +3213,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_1">
 							<gml:description>This is WallSurface 1 (Building 10)</gml:description>
 							<gml:name>WallSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>50 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3244,24 +3244,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_2">
 							<gml:description>This is WallSurface 2 (split)</gml:description>
 							<gml:name>WallSurface 2 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3275,24 +3275,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 10)</gml:description>
 							<gml:name>WallSurface 3 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -30 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3306,24 +3306,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 10)</gml:description>
 							<gml:name>WallSurface 4 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -20 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3337,30 +3337,30 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
 					<bldg:boundedBy>
-						<nrg2:PartyWallSurface gml:id="id_buildingpart_10_partywallsurface_1">
+						<nrg3:PartyWallSurface gml:id="id_buildingpart_10_partywallsurface_1">
 							<gml:description>This is WallSurface 2 (shared)</gml:description>
 							<gml:name>WallSurface 2 (shared)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -22.5 6.25</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9_partywallsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9_partywallsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_partywallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3374,70 +3374,70 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
-							<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-							<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg2:bdgBdrySurfGroundViewFactor>
-							<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-							<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-							<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-							<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg2:bdgBdrySurfTotalSurfaceArea>
-						</nrg2:PartyWallSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:PartyWallSurface>
 					</bldg:boundedBy>
-					<nrg2:thermalZone>
-						<nrg2:ThermalZone gml:id="id_thermal_zone_10">
+					<nrg3:thermalZone>
+						<nrg3:ThermalZone gml:id="id_thermal_zone_10">
 							<gml:description>This is ThermalZone 10</gml:description>
 							<gml:name>ThermalZone 10</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">300</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-							<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-							<nrg2:isCooled>false</nrg2:isCooled>
-							<nrg2:isHeated>true</nrg2:isHeated>
-							<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-							<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-						</nrg2:ThermalZone>
-					</nrg2:thermalZone>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">300</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+							<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+							<nrg3:isCooled>false</nrg3:isCooled>
+							<nrg3:isHeated>true</nrg3:isHeated>
+							<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+							<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+						</nrg3:ThermalZone>
+					</nrg3:thermalZone>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
 		</bldg:Building>
@@ -3447,11 +3447,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 11</gml:description>
 			<gml:name>Death Star I</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -3464,11 +3464,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_11_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 11)</gml:description>
 					<gml:name>GroundSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3482,24 +3482,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 11)</gml:description>
 					<gml:name>RoofSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -27.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3513,24 +3513,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 11)</gml:description>
 					<gml:name>RoofSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3544,24 +3544,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 11)</gml:description>
 					<gml:name>WallSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3575,24 +3575,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 11)</gml:description>
 					<gml:name>WallSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3606,24 +3606,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 11)</gml:description>
 					<gml:name>WallSurface 3 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -30 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3637,24 +3637,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 11)</gml:description>
 					<gml:name>WallSurface 4 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -20 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3668,111 +3668,111 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_11_1">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_11_1">
 					<gml:description>This is ThermalZone 11_1</gml:description>
 					<gml:name>ThermalZone 11_1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 2.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">125</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">500</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_11_2">
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">125</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">500</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_11_2">
 					<gml:description>This is ThermalZone 11_2</gml:description>
 					<gml:name>ThermalZone 11_2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 10</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">125</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">750</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">525</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">125</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">750</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">525</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -3780,11 +3780,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 12</gml:description>
 			<gml:name>Death Star II</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1964</bldg:yearOfConstruction>
@@ -3797,11 +3797,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_12_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 12)</gml:description>
 					<gml:name>GroundSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3815,24 +3815,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">180</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 12)</gml:description>
 					<gml:name>RoofSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -12.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3846,24 +3846,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 12)</gml:description>
 					<gml:name>RoofSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3877,24 +3877,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">45</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 12)</gml:description>
 					<gml:name>WallSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3908,24 +3908,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">90</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 12)</gml:description>
 					<gml:name>WallSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3939,24 +3939,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">270</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 12)</gml:description>
 					<gml:name>WallSurface 3 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3970,24 +3970,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">180</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
 			<bldg:boundedBy>
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 12)</gml:description>
 					<gml:name>WallSurface 4 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4001,64 +4001,64 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</bldg:lod2MultiSurface>
-					<nrg2:bdgBdrySurfAzimuth uom="decimal degree">0</nrg2:bdgBdrySurfAzimuth>
-					<nrg2:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg2:bdgBdrySurfGroundViewFactor>
-					<nrg2:bdgBdrySurfInclination uom="decimal degree">90</nrg2:bdgBdrySurfInclination>
-					<nrg2:bdgBdrySurfIsAdiabatic>false</nrg2:bdgBdrySurfIsAdiabatic>
-					<nrg2:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg2:bdgBdrySurfOpeningToSurfaceRatio>
-					<nrg2:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg2:bdgBdrySurfSkyViewFactor>
-					<nrg2:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg2:bdgBdrySurfTotalSurfaceArea>
+					<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+					<nrg3:bdgBdrySurfIsAdiabatic>false</nrg3:bdgBdrySurfIsAdiabatic>
+					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:thermalZone>
-				<nrg2:ThermalZone gml:id="id_thermal_zone_12">
+			<nrg3:thermalZone>
+				<nrg3:ThermalZone gml:id="id_thermal_zone_12">
 					<gml:description>This is ThermalZone 12</gml:description>
 					<gml:name>ThermalZone 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:heatCapacity uom="J/K">500</nrg2:heatCapacity>
-					<nrg2:infiltrationRate uom="1/h">0.3</nrg2:infiltrationRate>
-					<nrg2:isCooled>false</nrg2:isCooled>
-					<nrg2:isHeated>true</nrg2:isHeated>
-					<nrg2:coincidesWithLod2Hull>true</nrg2:coincidesWithLod2Hull>
-					<nrg2:coincidesWithLod3Hull>false</nrg2:coincidesWithLod3Hull>
-				</nrg2:ThermalZone>
-			</nrg2:thermalZone>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:heatCapacity uom="J/K">500</nrg3:heatCapacity>
+					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:isCooled>false</nrg3:isCooled>
+					<nrg3:isHeated>true</nrg3:isHeated>
+					<nrg3:coincidesWithLod2Hull>true</nrg3:coincidesWithLod2Hull>
+					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+				</nrg3:ThermalZone>
+			</nrg3:thermalZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<app:appearanceMember>

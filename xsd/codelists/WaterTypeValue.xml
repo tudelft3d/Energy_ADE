@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WaterTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">WaterTypeValue</gml:identifier>
+  <gml:name>WaterTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_905_1548">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WaterTypeValue">drinkWater</gml:identifier>
+      <gml:name>drinkWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_905_1549">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WaterTypeValue">wasteWater</gml:identifier>
+      <gml:name>wasteWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_905_1560">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WaterTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_905_1943">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WaterTypeValue">rainWater</gml:identifier>
+      <gml:name>rainWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_905_2213">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WaterTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -8,9 +8,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -23,7 +23,7 @@ The CityObjectGroup consists of all trees.
 
 There is a global appearances.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 All CityObjects are modelled also via a 3D reference point.
 
@@ -56,7 +56,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This model contains some trees modelled in LoD1, LoD2 and LoD3 using implicit geometries.</gml:description>
 	<gml:name>Alderaan Trees</gml:name>
 	<gml:boundedBy>
@@ -69,47 +69,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<grp:CityObjectGroup gml:id="id_tree_group_1">
 			<gml:description>Group of all SingleVegetation objects in Alderaan</gml:description>
 			<gml:name>Alderaan tree group</gml:name>
-			<nrg2:resource>
-				<nrg2:Water gml:id="id_res_water_14">
+			<nrg3:resource>
+				<nrg3:Water gml:id="id_res_water_14">
 					<gml:description>This is Water 14</gml:description>
 					<gml:name>Water 14</gml:name>
-					<nrg2:status>actual</nrg2:status>
-					<nrg2:operationType codeSpace="resource-oper_codespace_20">demands</nrg2:operationType>
-					<nrg2:amountType codeSpace="amnt_type_codespace_20">measurement</nrg2:amountType>
-					<nrg2:year>2023</nrg2:year>
-					<nrg2:amount uom="m3/a">1200</nrg2:amount>
-					<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-					<nrg2:costsMoney uom="Euro">28</nrg2:costsMoney>
-					<nrg2:yieldsMoney uom="Euro">13</nrg2:yieldsMoney>
-					<nrg2:type codeSpace="wat_type_codespace_14">drinkWater</nrg2:type>
-					<nrg2:endUse codeSpace="wat_enduse_codespace_14">watering</nrg2:endUse>
-				</nrg2:Water>
-			</nrg2:resource>
+					<nrg3:status>actual</nrg3:status>
+					<nrg3:operationType codeSpace="resource-oper_codespace_20">demands</nrg3:operationType>
+					<nrg3:amountType codeSpace="amnt_type_codespace_20">measurement</nrg3:amountType>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:amount uom="m3/a">1200</nrg3:amount>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:costsMoney uom="Euro">28</nrg3:costsMoney>
+					<nrg3:yieldsMoney uom="Euro">13</nrg3:yieldsMoney>
+					<nrg3:type codeSpace="wat_type_codespace_14">drinkWater</nrg3:type>
+					<nrg3:endUse codeSpace="wat_enduse_codespace_14">watering</nrg3:endUse>
+				</nrg3:Water>
+			</nrg3:resource>
 			<grp:class>Vegetation</grp:class>
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_1">
 					<gml:name>Alderaan Tree 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-5 8 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_1">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_1">
 							<gml:description>This is Water 1</gml:description>
 							<gml:name>Water 1</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_7">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_7">simulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">15</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">15</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">0</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_1">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_1">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_7">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_7">simulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">15</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">15</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_1">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_1">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Populus I</veg:species>
 					<veg:height uom="m">9</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -1537,27 +1537,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_2">
 					<gml:name>Alderaan Tree 2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-5 3 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_2">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_2">
 							<gml:description>This is Water 2</gml:description>
 							<gml:name>Water 2</gml:name>
-							<nrg2:status>potential</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_8">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_8">calibratedSimulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">11</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">16</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">1</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_2">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_2">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>potential</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_8">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_8">calibratedSimulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">11</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">16</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">1</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_2">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_2">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Populus II</veg:species>
 					<veg:height uom="m">9</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -1599,27 +1599,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_3">
 					<gml:name>Alderaan Tree 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>1 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_3">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_3">
 							<gml:description>This is Water 3</gml:description>
 							<gml:name>Water 3</gml:name>
-							<nrg2:status>unknown</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_9">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_9">estimation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">15</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">17</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">2</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_3">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_3">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>unknown</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_9">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_9">estimation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">15</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">17</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_3">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_3">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer japonicum</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1661,27 +1661,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_4">
 					<gml:name>Alderaan Tree 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_4">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_4">
 							<gml:description>This is Water 4</gml:description>
 							<gml:name>Water 4</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_10">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_10">unknown</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">13</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">18</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">3</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_4">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_4">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_10">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_10">unknown</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">13</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">18</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">3</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_4">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_4">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer japonicum</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1723,27 +1723,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_5">
 					<gml:name>Alderaan Tree 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>9 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_5">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_5">
 							<gml:description>This is Water 5</gml:description>
 							<gml:name>Water 5</gml:name>
-							<nrg2:status>potential</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_11">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_11">measurement</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">17</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">19</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">4</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_5">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_5">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>potential</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_11">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_11">measurement</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">17</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">19</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">4</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_5">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_5">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer japonicum</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1785,27 +1785,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_6">
 					<gml:name>Alderaan Tree 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>12 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_6">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_6">
 							<gml:description>This is Water 6</gml:description>
 							<gml:name>Water 6</gml:name>
-							<nrg2:status>unknown</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_12">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_12">simulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">19</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">20</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">5</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_6">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_6">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>unknown</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_12">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_12">simulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">19</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">20</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">5</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_6">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_6">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer palmatum</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1847,27 +1847,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_7">
 					<gml:name>Alderaan Tree 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_7">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_7">
 							<gml:description>This is Water 7</gml:description>
 							<gml:name>Water 7</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_13">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">33</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">21</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">6</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_7">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_7">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_13">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">33</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">21</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">6</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_7">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_7">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer palmatum</veg:species>
 					<veg:height uom="m">7</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1909,27 +1909,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_8">
 					<gml:name>Alderaan Tree 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>18 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_8">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_8">
 							<gml:description>This is Water 8</gml:description>
 							<gml:name>Water 8</gml:name>
-							<nrg2:status>potential</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_14">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_14">estimation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">21</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">22</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">7</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_8">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_8">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>potential</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_14">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_14">estimation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">21</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">22</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">7</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_8">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_8">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer negundo</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -1971,27 +1971,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_9">
 					<gml:name>Alderaan Tree 9</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>3 -4 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_9">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_9">
 							<gml:description>This is Water 9</gml:description>
 							<gml:name>Water 9</gml:name>
-							<nrg2:status>unknown</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_15">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_15">unknown</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">33</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">23</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">8</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_9">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_9">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>unknown</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_15">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_15">unknown</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">33</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">23</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">8</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_9">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_9">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer negundo</veg:species>
 					<veg:height uom="m">4</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -2033,27 +2033,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_10">
 					<gml:name>Alderaan Tree 10</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7 -4 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_10">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_10">
 							<gml:description>This is Water 10</gml:description>
 							<gml:name>Water 10</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_16">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_16">measurement</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">57</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">24</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">9</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_10">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_10">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_16">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_16">measurement</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">57</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">24</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">9</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_10">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_10">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Acer negundo</veg:species>
 					<veg:height uom="m">4</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -2095,27 +2095,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_11">
 					<gml:name>Alderaan Tree 11</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>32 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_11">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_11">
 							<gml:description>This is Water 11</gml:description>
 							<gml:name>Water 11</gml:name>
-							<nrg2:status>potential</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_17">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_17">calibratedSimulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">78</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">25</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">10</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_11">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_11">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>potential</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_17">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_17">calibratedSimulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">78</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">25</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">10</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_11">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_11">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Abies nebrodensis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2157,27 +2157,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_12">
 					<gml:name>Alderaan Tree 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>38 -2 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_12">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_12">
 							<gml:description>This is Water 12</gml:description>
 							<gml:name>Water 12</gml:name>
-							<nrg2:status>unknown</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_18">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_18">estimation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">34</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">26</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">11</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_12">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_12">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>unknown</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_18">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_18">estimation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">34</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">26</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">11</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_12">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_12">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Abies nordmanniana</veg:species>
 					<veg:height uom="m">9</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2219,27 +2219,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_13">
 					<gml:name>Alderaan Tree 13</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>33 -6 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_res_water_13">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_res_water_13">
 							<gml:description>This is Water 13</gml:description>
 							<gml:name>Water 13</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_19">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_19">unknown</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">34</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">27</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">12</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_13">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_13">watering</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_19">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_19">unknown</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">34</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">27</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">12</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_13">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_13">watering</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<veg:species>Abies nebrodensis</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">3</veg:crownDiameter>
@@ -2281,11 +2281,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_14">
 					<gml:name>Alderaan Tree 14</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>36 -6 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Abies nordmanniana</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -2327,11 +2327,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_15">
 					<gml:name>Alderaan Tree 15</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>39 -6 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Abies nebrodensis</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">3</veg:crownDiameter>
@@ -2373,11 +2373,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_16">
 					<gml:name>Alderaan Tree 16</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 -6 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Abies nordmanniana</veg:species>
 					<veg:height uom="m">5</veg:height>
 					<veg:crownDiameter uom="m">2</veg:crownDiameter>
@@ -2419,11 +2419,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_17">
 					<gml:name>Alderaan Tree 17</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 -3 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Quercus petraea</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2465,11 +2465,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_18">
 					<gml:name>Alderaan Tree 18</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 -5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Quercus petraea</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">5</veg:crownDiameter>
@@ -2511,11 +2511,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_19">
 					<gml:name>Alderaan Tree 19</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 -8 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Quercus petraea</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">3</veg:crownDiameter>
@@ -2557,11 +2557,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_20">
 					<gml:name>Alderaan Tree 20</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 -10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Quercus petraea</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">5</veg:crownDiameter>
@@ -2603,11 +2603,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_21">
 					<gml:name>Alderaan Tree 21</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-4 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2649,11 +2649,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_22">
 					<gml:name>Alderaan Tree 22</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-1 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -2695,11 +2695,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_23">
 					<gml:name>Alderaan Tree 23</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2741,11 +2741,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_24">
 					<gml:name>Alderaan Tree 24</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -2787,11 +2787,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_25">
 					<gml:name>Alderaan Tree 25</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>8 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2833,11 +2833,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_26">
 					<gml:name>Alderaan Tree 26</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>11 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -2879,11 +2879,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_27">
 					<gml:name>Alderaan Tree 27</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>14 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -2925,11 +2925,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_28">
 					<gml:name>Alderaan Tree 28</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>17 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -2971,11 +2971,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_29">
 					<gml:name>Alderaan Tree 29</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -3017,11 +3017,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_30">
 					<gml:name>Alderaan Tree 30</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>23 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -3063,11 +3063,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_31">
 					<gml:name>Alderaan Tree 31</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>26 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>
@@ -3109,11 +3109,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_32">
 					<gml:name>Alderaan Tree 32</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>29 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus orientalis</veg:species>
 					<veg:height uom="m">8</veg:height>
 					<veg:crownDiameter uom="m">6</veg:crownDiameter>
@@ -3155,11 +3155,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:groupMember>
 				<veg:SolitaryVegetationObject gml:id="id_tree_33">
 					<gml:name>Alderaan Tree 33</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>32 -34 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<veg:species>Platanus occidentalis</veg:species>
 					<veg:height uom="m">6</veg:height>
 					<veg:crownDiameter uom="m">4</veg:crownDiameter>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WasteTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">WasteTypeValue</gml:identifier>
+  <gml:name>WasteTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1590">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">organic</gml:identifier>
+      <gml:name>organic</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1591">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">plastic</gml:identifier>
+      <gml:name>plastic</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1592">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">glass</gml:identifier>
+      <gml:name>glass</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1593">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">paper</gml:identifier>
+      <gml:name>paper</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1594">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">metal</gml:identifier>
+      <gml:name>metal</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_1595">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_2188">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">water</gml:identifier>
+      <gml:name>water</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_918_2211">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

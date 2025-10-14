@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FunctionAreaTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">FunctionAreaTypeValue</gml:identifier>
+  <gml:name>FunctionAreaTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1638">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">block</gml:identifier>
+      <gml:name>block</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1639">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">neighbourhood</gml:identifier>
+      <gml:name>neighbourhood</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1640">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">district</gml:identifier>
+      <gml:name>district</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1641">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">city</gml:identifier>
+      <gml:name>city</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1642">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">region</gml:identifier>
+      <gml:name>region</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1643">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">state</gml:identifier>
+      <gml:name>state</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1644">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">country</gml:identifier>
+      <gml:name>country</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1762">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">censusArea</gml:identifier>
+      <gml:name>censusArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1763">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">gridCell</gml:identifier>
+      <gml:name>gridCell</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_1764">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_934_2219">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionAreaTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

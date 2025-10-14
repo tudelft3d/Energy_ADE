@@ -8,9 +8,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-22
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -23,7 +23,7 @@ parts.
 
 There is finally a global appearance.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 All CityObjects are modelled through a 3D reference
 point.
@@ -66,7 +66,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This city model contains a set of "fantasy" buildings created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>CityGML city of Alderaan</gml:name>
 	<gml:boundedBy>
@@ -80,78 +80,78 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 1</gml:description>
 			<gml:name>Snoke's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:GenericDevice gml:id="id_generic_device_1">
+			<nrg3:device>
+				<nrg3:GenericDevice gml:id="id_generic_device_1">
 					<gml:description>This is GenericDevice 1</gml:description>
 					<gml:name>GenericDevice 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericDevice GenericDevice 1</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">6.3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_1</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">21</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericElectricalDevice gml:id="id_generic_electrical_device_2">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericDevice GenericDevice 1</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">6.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_1</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">21</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericElectricalDevice gml:id="id_generic_electrical_device_2">
 					<gml:description>This is GenericElectricalDevice 2</gml:description>
 					<gml:name>GenericElectricalDevice 2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericElectricalDevice GenericElectricalDevice 2</nrg2:model>
-					<nrg2:yearOfManufacture>2008</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">4.9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.1</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_2</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">14</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericElectricalDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_1">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericElectricalDevice GenericElectricalDevice 2</nrg3:model>
+					<nrg3:yearOfManufacture>2008</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">4.9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.1</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_2</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">14</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericElectricalDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_1">
 					<gml:description>This is GenericSolarCollector 1</gml:description>
 					<gml:name>GenericSolarCollector 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 1</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_1</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 1</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_1</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_23031319-a20b-40bf-b837-c2e3a6c89367" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_f9494fe2-5b8e-4441-8a19-c8ba606a2981">
@@ -163,39 +163,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_2">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_2">
 					<gml:description>This is GenericSolarCollector 2</gml:description>
 					<gml:name>GenericSolarCollector 2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 2</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_2</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 2</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_2</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_693e8f98-3861-4d9c-835e-eb22f1f66c10" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_ee92b2ce-08d0-4755-8f9f-d74e98090e18">
@@ -207,39 +207,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_17">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_17">
 					<gml:description>This is PhotoVoltaicCollector 17</gml:description>
 					<gml:name>PhotoVoltaicCollector 17</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 2.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 17</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_17</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 17</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_17</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_6a79532d-e982-42d5-8854-674c62bc7226" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_16e00f86-b41f-4f4c-a70c-f66f2a36b91a">
@@ -251,40 +251,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_18">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_18">
 					<gml:description>This is PhotoVoltaicCollector 18</gml:description>
 					<gml:name>PhotoVoltaicCollector 18</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 18</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_18</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 18</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_18</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_9760b7f7-c66f-492e-bfad-2e04ff9b36af" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_15ed8585-08cf-4d89-af51-2dcabf297edb">
@@ -296,40 +296,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_19">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_19">
 					<gml:description>This is PhotoVoltaicCollector 19</gml:description>
 					<gml:name>PhotoVoltaicCollector 19</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 7.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 19</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_19</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 19</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_19</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_ae6c6939-c8e8-477d-a5f0-9a6302de73be" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_a80e0eae-bdf4-4ce7-b96e-f439d89f4651">
@@ -341,40 +341,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_20">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_20">
 					<gml:description>This is PhotoVoltaicCollector 20</gml:description>
 					<gml:name>PhotoVoltaicCollector 20</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 2.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 20</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_20</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 20</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_20</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_1e947864-1f05-4578-b8fa-c7f965dd2efa" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_9d1f7611-3a3b-4803-a59c-774d88a40fb3">
@@ -386,40 +386,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_21">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_21">
 					<gml:description>This is PhotoVoltaicCollector 21</gml:description>
 					<gml:name>PhotoVoltaicCollector 21</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 21</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_21</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 21</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_21</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_9b25284d-4e04-4a2e-a9d1-d1f779bc135f" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_95fee2a3-9498-4ae5-958b-d077468d4639">
@@ -431,40 +431,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_22">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_22">
 					<gml:description>This is PhotoVoltaicCollector 22</gml:description>
 					<gml:name>PhotoVoltaicCollector 22</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 7.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 22</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_22</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_1_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 22</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_22</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_a77defd0-6081-4b66-8f67-0d6588bb78fd" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_2c696493-b80d-4f6c-bf0e-91f4b4b9019d">
@@ -476,21 +476,21 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -503,11 +503,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_1_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 1)</gml:description>
 					<gml:name>GroundSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -527,11 +527,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 1)</gml:description>
 					<gml:name>RoofSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -551,11 +551,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 1)</gml:description>
 					<gml:name>RoofSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -575,11 +575,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 1)</gml:description>
 					<gml:name>WallSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -599,11 +599,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 1)</gml:description>
 					<gml:name>WallSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -623,11 +623,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 1)</gml:description>
 					<gml:name>WallSurface 3 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -650,79 +650,79 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 2</gml:description>
 			<gml:name>Rey's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:Boiler gml:id="id_boiler_4">
+			<nrg3:device>
+				<nrg3:Boiler gml:id="id_boiler_4">
 					<gml:description>This is Boiler 4</gml:description>
 					<gml:name>Boiler 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>Boiler Boiler 4</nrg2:model>
-					<nrg2:yearOfManufacture>1992</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">9.8</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.2</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_4</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">10</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:hasCondensation>true</nrg2:hasCondensation>
-				</nrg2:Boiler>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:LightingDevice gml:id="id_lighting_device_3">
+					</nrg3:referencePoint>
+					<nrg3:model>Boiler Boiler 4</nrg3:model>
+					<nrg3:yearOfManufacture>1992</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">9.8</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.2</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_4</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">10</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:hasCondensation>true</nrg3:hasCondensation>
+				</nrg3:Boiler>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:LightingDevice gml:id="id_lighting_device_3">
 					<gml:description>This is LightingDevice 3</gml:description>
 					<gml:name>LightingDevice 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>LightingDevice LightingDevice 3</nrg2:model>
-					<nrg2:yearOfManufacture>1999</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">3.3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.7</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_3</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">1</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:LightingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_3">
+					</nrg3:referencePoint>
+					<nrg3:model>LightingDevice LightingDevice 3</nrg3:model>
+					<nrg3:yearOfManufacture>1999</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">3.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.7</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_3</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">1</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:LightingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_3">
 					<gml:description>This is GenericSolarCollector 3</gml:description>
 					<gml:name>GenericSolarCollector 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 3</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_3</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 3</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_3</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_14b3929e-522e-40d3-b35c-f5e76a544b5c" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_1903c512-2b40-4b3f-8031-d71717cba157">
@@ -734,39 +734,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_23">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_23">
 					<gml:description>This is PhotoVoltaicCollector 23</gml:description>
 					<gml:name>PhotoVoltaicCollector 23</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>12.333 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 23</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_23</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 23</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_23</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_2954e3a7-e08a-4ac7-9bab-d6e5d97cb4d6" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_eec105c0-f799-4dea-889a-0e05e850349d">
@@ -778,40 +778,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_24">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_24">
 					<gml:description>This is PhotoVoltaicCollector 24</gml:description>
 					<gml:name>PhotoVoltaicCollector 24</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 24</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_24</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 24</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_24</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_cff7dfea-28a8-4a78-8688-7802b5a750b9" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_fe51c611-6715-4feb-94cc-0b653d5924cf">
@@ -823,40 +823,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_25">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_25">
 					<gml:description>This is PhotoVoltaicCollector 25</gml:description>
 					<gml:name>PhotoVoltaicCollector 25</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>17.667 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 25</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_25</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_2_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 25</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_25</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_03cff5e7-8368-4c56-9086-3bb82ed2ba98" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_6a91b021-b41e-4de6-aa79-665e27e12fe5">
@@ -868,27 +868,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_1"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_1"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -901,11 +901,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_2_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 2)</gml:description>
 					<gml:name>GroundSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -925,11 +925,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 2)</gml:description>
 					<gml:name>RoofSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -949,11 +949,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 2)</gml:description>
 					<gml:name>RoofSurface 2 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -973,11 +973,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_1">
 					<gml:description>This is WallSurface 4 (split)</gml:description>
 					<gml:name>WallSurface 4 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -997,11 +997,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_2">
 					<gml:description>This is WallSurface 6 (split)</gml:description>
 					<gml:name>WallSurface 6 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1021,11 +1021,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 2)</gml:description>
 					<gml:name>WallSurface 3 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1045,11 +1045,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 2)</gml:description>
 					<gml:name>WallSurface 4 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1072,90 +1072,90 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 3</gml:description>
 			<gml:name>Poe's Hangar</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:HeatPump gml:id="id_heat_pump_5">
+			<nrg3:device>
+				<nrg3:HeatPump gml:id="id_heat_pump_5">
 					<gml:description>This is HeatPump 5</gml:description>
 					<gml:name>HeatPump 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>HeatPump HeatPump 5</nrg2:model>
-					<nrg2:yearOfManufacture>1996</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">5.5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.5</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_5</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">13</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg2:heatSource>
-					<nrg2:copSourceTemperature uom="degrees Celsius">5</nrg2:copSourceTemperature>
-					<nrg2:copOperationTemperature uom="degrees Celsius">10</nrg2:copOperationTemperature>
-				</nrg2:HeatPump>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:MovableShadingDevice gml:id="id_movable_shading_device_6">
+					</nrg3:referencePoint>
+					<nrg3:model>HeatPump HeatPump 5</nrg3:model>
+					<nrg3:yearOfManufacture>1996</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">5.5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.5</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_5</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">13</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg3:heatSource>
+					<nrg3:copSourceTemperature uom="degrees Celsius">5</nrg3:copSourceTemperature>
+					<nrg3:copOperationTemperature uom="degrees Celsius">10</nrg3:copOperationTemperature>
+				</nrg3:HeatPump>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:MovableShadingDevice gml:id="id_movable_shading_device_6">
 					<gml:description>This is MovableShadingDevice 6</gml:description>
 					<gml:name>MovableShadingDevice 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>MovableShadingDevice MovableShadingDevice 6</nrg2:model>
-					<nrg2:yearOfManufacture>2006</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">4</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.7</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_6</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">5</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:type codeSpace="shading_device_codeSpace">shutter</nrg2:type>
-					<nrg2:installationSide>outside</nrg2:installationSide>
-					<nrg2:maximumCoverRatio uom="unit inteval">0.7</nrg2:maximumCoverRatio>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit inteval">0.8</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-				</nrg2:MovableShadingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_4">
+					</nrg3:referencePoint>
+					<nrg3:model>MovableShadingDevice MovableShadingDevice 6</nrg3:model>
+					<nrg3:yearOfManufacture>2006</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">4</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.7</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_6</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">5</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:type codeSpace="shading_device_codeSpace">shutter</nrg3:type>
+					<nrg3:installationSide>outside</nrg3:installationSide>
+					<nrg3:maximumCoverRatio uom="unit inteval">0.7</nrg3:maximumCoverRatio>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit inteval">0.8</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+				</nrg3:MovableShadingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_4">
 					<gml:description>This is GenericSolarCollector 4</gml:description>
 					<gml:name>GenericSolarCollector 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.473 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 4</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_4</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 4</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_4</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_383e27b9-1d5a-4da8-b601-bb908f35bce3" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e7905990-7dab-4f9b-b50a-77370afcf370">
@@ -1167,39 +1167,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_5">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_5">
 					<gml:description>This is GenericSolarCollector 5</gml:description>
 					<gml:name>GenericSolarCollector 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.527 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 5</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_5</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 5</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_5</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_5b810bf0-2f75-4fc1-bea8-cd158759d186" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_d64257bf-a9b2-4eee-bd08-5d3d8c64f79b">
@@ -1211,39 +1211,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_26">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_26">
 					<gml:description>This is PhotoVoltaicCollector 26</gml:description>
 					<gml:name>PhotoVoltaicCollector 26</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.473 2.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 26</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_26</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 26</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_26</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_288b5675-ae2e-44c8-a89c-e838fee1b31e" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_41a04c6e-3fa2-4c81-a30e-9808f9a29496">
@@ -1255,40 +1255,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_27">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_27">
 					<gml:description>This is PhotoVoltaicCollector 27</gml:description>
 					<gml:name>PhotoVoltaicCollector 27</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.473 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 27</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_27</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 27</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_27</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_3e06b51d-662c-4af1-afc3-1fadd2b1b18d" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_58e1010b-c6e7-432e-a119-bfba13e84863">
@@ -1300,40 +1300,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_28">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_28">
 					<gml:description>This is PhotoVoltaicCollector 28</gml:description>
 					<gml:name>PhotoVoltaicCollector 28</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.473 7.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 28</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_28</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 28</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_28</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_422b8c24-e35e-4621-a682-6fd0e0e61bd1" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_19466fd8-1692-4ea1-98dd-3f333e4d13a9">
@@ -1345,40 +1345,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_29">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_29">
 					<gml:description>This is PhotoVoltaicCollector 29</gml:description>
 					<gml:name>PhotoVoltaicCollector 29</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.527 2.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 29</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_29</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 29</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_29</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_9c194f69-3ea3-46cd-a130-103ffc3c76e2" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e065d9cc-2e6f-4e02-a138-0392b5f4f9a7">
@@ -1390,40 +1390,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_30">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_30">
 					<gml:description>This is PhotoVoltaicCollector 30</gml:description>
 					<gml:name>PhotoVoltaicCollector 30</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.527 5 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 30</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_30</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 30</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_30</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_e3ff68dd-15bc-4d5a-adfc-9a23c838dd1c" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_9d38eda9-f92e-43b5-903d-07c1f3f84bd6">
@@ -1435,40 +1435,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_31">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_31">
 					<gml:description>This is PhotoVoltaicCollector 31</gml:description>
 					<gml:name>PhotoVoltaicCollector 31</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.527 7.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 31</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_31</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_3_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 31</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_31</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_cceaecfb-7324-49eb-a6af-05831432e64a" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_73f77de8-90cd-46fd-b80e-f999d544bc54">
@@ -1480,27 +1480,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>25 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_4"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_4"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">traffic</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hangar</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1513,11 +1513,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_3_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 3)</gml:description>
 					<gml:name>GroundSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1537,11 +1537,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 3)</gml:description>
 					<gml:name>RoofSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1561,11 +1561,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 3)</gml:description>
 					<gml:name>RoofSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1585,11 +1585,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 3)</gml:description>
 					<gml:name>WallSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1609,11 +1609,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 3)</gml:description>
 					<gml:name>WallSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1636,57 +1636,57 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 4</gml:description>
 			<gml:name>Fin's Cabin</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:LightingDevice gml:id="id_lighting_device_8">
+			<nrg3:device>
+				<nrg3:LightingDevice gml:id="id_lighting_device_8">
 					<gml:description>This is LightingDevice 8</gml:description>
 					<gml:name>LightingDevice 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>LightingDevice LightingDevice 8</nrg2:model>
-					<nrg2:yearOfManufacture>2004</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">2.6</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_8</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">22</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:LightingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_6">
+					</nrg3:referencePoint>
+					<nrg3:model>LightingDevice LightingDevice 8</nrg3:model>
+					<nrg3:yearOfManufacture>2004</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">2.6</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_8</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">22</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:LightingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_6">
 					<gml:description>This is GenericSolarCollector 6</gml:description>
 					<gml:name>GenericSolarCollector 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 6</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_6</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 6</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_6</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_1d2f3ad9-622d-4c55-81ca-a32fe7732239" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e7fc9381-5905-4885-8437-d695a71f7da1">
@@ -1698,39 +1698,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicCollector gml:id="id_pv_collector_32">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicCollector gml:id="id_pv_collector_32">
 					<gml:description>This is PhotoVoltaicCollector 32</gml:description>
 					<gml:name>PhotoVoltaicCollector 32</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>32.333 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 32</nrg2:model>
-					<nrg2:yearOfManufacture>2017</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_32</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotoVoltaicCollector Model PhotoVoltaicCollector 32</nrg3:model>
+					<nrg3:yearOfManufacture>2017</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_32</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_4ad82de0-9a20-45fb-b157-02a125ecc862" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_00336c44-30ff-49f7-abff-e473d571d18c">
@@ -1742,40 +1742,40 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg2:cellType>
-				</nrg2:PhotovoltaicCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_33">
+					</nrg3:lod3MultiSurface>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_1">polycristalline</nrg3:cellType>
+				</nrg3:PhotovoltaicCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_33">
 					<gml:description>This is SolarThermalCollector 33</gml:description>
 					<gml:name>SolarThermalCollector 33</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 33</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_33</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 33</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_33</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_1b3f20a7-95c0-445b-bf74-9dfe062dcd8d" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_76d12465-3358-4c1d-8e1b-cc9a5997cb5e">
@@ -1787,43 +1787,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_34">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_34">
 					<gml:description>This is SolarThermalCollector 34</gml:description>
 					<gml:name>SolarThermalCollector 34</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>37.667 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 34</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_34</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_4_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 34</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_34</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_0e99b91d-754c-4764-8fbf-5f8ac0e6a62a" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_c66a927e-66ec-451b-aa7b-59ffc09bdfaf">
@@ -1835,49 +1835,49 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:ThermalStorageDevice gml:id="id_thermal_storage_device_7">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalStorageDevice gml:id="id_thermal_storage_device_7">
 					<gml:description>This is ThermalStorageDevice 7</gml:description>
 					<gml:name>ThermalStorageDevice 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>ThermalStorageDevice ThermalStorageDevice 7</nrg2:model>
-					<nrg2:yearOfManufacture>1990</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">9.3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.2</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_7</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">27</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:preparationTemperature uom="degrees Celsius">80</nrg2:preparationTemperature>
-					<nrg2:medium codeSpace="medium_codeSpace">steam</nrg2:medium>
-					<nrg2:thermalLossesFactor uom="units no idea...">80</nrg2:thermalLossesFactor>
-					<nrg2:volume uom="m^3">50</nrg2:volume>
-				</nrg2:ThermalStorageDevice>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:referencePoint>
+					<nrg3:model>ThermalStorageDevice ThermalStorageDevice 7</nrg3:model>
+					<nrg3:yearOfManufacture>1990</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">9.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.2</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_7</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">27</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:preparationTemperature uom="degrees Celsius">80</nrg3:preparationTemperature>
+					<nrg3:medium codeSpace="medium_codeSpace">steam</nrg3:medium>
+					<nrg3:thermalLossesFactor uom="units no idea...">80</nrg3:thermalLossesFactor>
+					<nrg3:volume uom="m^3">50</nrg3:volume>
+				</nrg3:ThermalStorageDevice>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>35 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1890,11 +1890,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_4_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 4)</gml:description>
 					<gml:name>GroundSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1914,11 +1914,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 4)</gml:description>
 					<gml:name>RoofSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1938,11 +1938,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 4)</gml:description>
 					<gml:name>RoofSurface 2 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1962,11 +1962,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 4)</gml:description>
 					<gml:name>WallSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>40 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1986,11 +1986,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_2">
 					<gml:description>This is WallSurface 8 (split)</gml:description>
 					<gml:name>WallSurface 8 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2010,11 +2010,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 4)</gml:description>
 					<gml:name>WallSurface 3 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2034,11 +2034,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 4)</gml:description>
 					<gml:name>WallSurface 4 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2061,82 +2061,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 5</gml:description>
 			<gml:name>Yoda's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:Boiler gml:id="id_boiler_9">
+			<nrg3:device>
+				<nrg3:Boiler gml:id="id_boiler_9">
 					<gml:description>This is Boiler 9</gml:description>
 					<gml:name>Boiler 9</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>Boiler Boiler 9</nrg2:model>
-					<nrg2:yearOfManufacture>1992</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">7.1</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.2</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_9</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">18</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:hasCondensation>true</nrg2:hasCondensation>
-				</nrg2:Boiler>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:HeatPump gml:id="id_heat_pump_10">
+					</nrg3:referencePoint>
+					<nrg3:model>Boiler Boiler 9</nrg3:model>
+					<nrg3:yearOfManufacture>1992</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">7.1</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.2</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_9</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">18</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:hasCondensation>true</nrg3:hasCondensation>
+				</nrg3:Boiler>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:HeatPump gml:id="id_heat_pump_10">
 					<gml:description>This is HeatPump 10</gml:description>
 					<gml:name>HeatPump 10</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>HeatPump HeatPump 10</nrg2:model>
-					<nrg2:yearOfManufacture>2005</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">6.1</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.4</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_10</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg2:heatSource>
-					<nrg2:copSourceTemperature uom="degrees Celsius">5</nrg2:copSourceTemperature>
-					<nrg2:copOperationTemperature uom="degrees Celsius">10</nrg2:copOperationTemperature>
-				</nrg2:HeatPump>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_7">
+					</nrg3:referencePoint>
+					<nrg3:model>HeatPump HeatPump 10</nrg3:model>
+					<nrg3:yearOfManufacture>2005</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">6.1</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.4</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_10</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg3:heatSource>
+					<nrg3:copSourceTemperature uom="degrees Celsius">5</nrg3:copSourceTemperature>
+					<nrg3:copOperationTemperature uom="degrees Celsius">10</nrg3:copOperationTemperature>
+				</nrg3:HeatPump>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_7">
 					<gml:description>This is GenericSolarCollector 7</gml:description>
 					<gml:name>GenericSolarCollector 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 7</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_7</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 7</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_7</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_d6fd8594-42b6-48de-ae63-275dc52ea63b" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_5339f322-1f55-40d4-bfde-44d5771131ff">
@@ -2148,39 +2148,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_35">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_35">
 					<gml:description>This is SolarThermalCollector 35</gml:description>
 					<gml:name>SolarThermalCollector 35</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>52.333 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 35</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_35</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 35</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_35</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_94a90970-362b-4552-8156-4de4acfab250" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_c6f866b9-5130-4636-a476-d6ae234776f4">
@@ -2192,43 +2192,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_36">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_36">
 					<gml:description>This is SolarThermalCollector 36</gml:description>
 					<gml:name>SolarThermalCollector 36</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 36</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_36</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 36</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_36</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_8c861f6a-34b2-412d-8f09-0ce21f9ad9eb" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_032e8b96-b1ee-4e7c-a7fa-74675d91c7d8">
@@ -2240,43 +2240,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_37">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_37">
 					<gml:description>This is SolarThermalCollector 37</gml:description>
 					<gml:name>SolarThermalCollector 37</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>57.667 2.473 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 37</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_37</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_5_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 37</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_37</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_7a82a1eb-5d91-4d96-8311-d4477c6dc27b" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e76776dc-0f42-42bb-95f6-f20865a063b3">
@@ -2288,24 +2288,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>55 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_6"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_6"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">healthcare</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hospital</bldg:function>
 			<bldg:yearOfConstruction>1980</bldg:yearOfConstruction>
@@ -2318,11 +2318,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_5_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 5)</gml:description>
 					<gml:name>GroundSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2342,11 +2342,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 5)</gml:description>
 					<gml:name>RoofSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2366,11 +2366,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 5)</gml:description>
 					<gml:name>RoofSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2390,11 +2390,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_1">
 					<gml:description>This is WallSurface 9 (split)</gml:description>
 					<gml:name>WallSurface 9 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2414,11 +2414,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 5)</gml:description>
 					<gml:name>WallSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>50 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2438,11 +2438,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 5)</gml:description>
 					<gml:name>WallSurface 3 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2462,11 +2462,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 5)</gml:description>
 					<gml:name>WallSurface 4 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2489,80 +2489,80 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 6</gml:description>
 			<gml:name>Amidala's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:ElectricalStorageDevice gml:id="id_electrical_storage_device_11">
+			<nrg3:device>
+				<nrg3:ElectricalStorageDevice gml:id="id_electrical_storage_device_11">
 					<gml:description>This is ElectricalStorageDevice 11</gml:description>
 					<gml:name>ElectricalStorageDevice 11</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>ElectricalStorageDevice ElectricalStorageDevice 11</nrg2:model>
-					<nrg2:yearOfManufacture>2016</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">2.3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.8</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_11</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">17</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg2:batteryTechnology>
-					<nrg2:powerCapacity uom="VAh">600</nrg2:powerCapacity>
-				</nrg2:ElectricalStorageDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericDevice gml:id="id_generic_device_12">
+					</nrg3:referencePoint>
+					<nrg3:model>ElectricalStorageDevice ElectricalStorageDevice 11</nrg3:model>
+					<nrg3:yearOfManufacture>2016</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">2.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_11</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">17</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg3:batteryTechnology>
+					<nrg3:powerCapacity uom="VAh">600</nrg3:powerCapacity>
+				</nrg3:ElectricalStorageDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericDevice gml:id="id_generic_device_12">
 					<gml:description>This is GenericDevice 12</gml:description>
 					<gml:name>GenericDevice 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericDevice GenericDevice 12</nrg2:model>
-					<nrg2:yearOfManufacture>1998</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">5.4</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.4</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_12</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">21</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_8">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericDevice GenericDevice 12</nrg3:model>
+					<nrg3:yearOfManufacture>1998</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">5.4</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.4</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_12</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">21</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_8">
 					<gml:description>This is GenericSolarCollector 8</gml:description>
 					<gml:name>GenericSolarCollector 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.473 10 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 8</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_8</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 8</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_8</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_bed81d8c-0030-47a5-9b31-5b561242f55c" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_67c344e7-2983-4960-ba08-1814f088b9e7">
@@ -2574,39 +2574,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_9">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_9">
 					<gml:description>This is GenericSolarCollector 9</gml:description>
 					<gml:name>GenericSolarCollector 9</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.527 10 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 9</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_9</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 9</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_9</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_26c5335b-39ea-43aa-9882-e99dbbe967ca" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_062e5ac3-b60a-4f55-a116-8617e6608f02">
@@ -2618,39 +2618,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_38">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_38">
 					<gml:description>This is SolarThermalCollector 38</gml:description>
 					<gml:name>SolarThermalCollector 38</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.473 7.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 38</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_38</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 38</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_38</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f9d8a1e8-e41d-4b02-8c2a-e883b1ce1cdd" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_87966b21-b7c0-4c8d-9979-4c3e9c9e206e">
@@ -2662,43 +2662,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_39">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_39">
 					<gml:description>This is SolarThermalCollector 39</gml:description>
 					<gml:name>SolarThermalCollector 39</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.473 10 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 39</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_39</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 39</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_39</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f836e8e1-10ca-4e13-ac1d-4e934915e0a4" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_4bb044a9-ede3-4a79-91b0-51cad30d9296">
@@ -2710,43 +2710,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_40">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_40">
 					<gml:description>This is SolarThermalCollector 40</gml:description>
 					<gml:name>SolarThermalCollector 40</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.473 12.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 40</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_40</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 40</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_40</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_5683ef1b-3bd0-4e01-8b08-f0d7857e596f" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_154d4f1e-d34f-45f1-a84b-a8ec645a6dac">
@@ -2758,43 +2758,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_41">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_41">
 					<gml:description>This is SolarThermalCollector 41</gml:description>
 					<gml:name>SolarThermalCollector 41</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.527 7.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 41</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_41</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 41</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_41</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_1e4bb0aa-05f1-4702-ae6d-2aa8d56c898b" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_8c5e8f12-3742-4df2-8c9f-8505ca220f2c">
@@ -2806,43 +2806,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_42">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_42">
 					<gml:description>This is SolarThermalCollector 42</gml:description>
 					<gml:name>SolarThermalCollector 42</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.527 10 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 42</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_42</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 42</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_42</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_2c6a1372-4715-4124-87a4-956886fc8424" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_5c288cad-5f4d-45ae-9a65-7b89b23b02ac">
@@ -2854,43 +2854,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_43">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_43">
 					<gml:description>This is SolarThermalCollector 43</gml:description>
 					<gml:name>SolarThermalCollector 43</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.527 12.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 43</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_43</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_6_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 43</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_43</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_148cf03f-9a18-4329-8a6d-be79e648c0f9" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e65ede0e-bc1b-44bd-9d4d-877a33f05607">
@@ -2902,24 +2902,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_5"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_5"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1997</bldg:yearOfConstruction>
@@ -2932,11 +2932,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_6_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 6)</gml:description>
 					<gml:name>GroundSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2956,11 +2956,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 6)</gml:description>
 					<gml:name>RoofSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2980,11 +2980,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 6)</gml:description>
 					<gml:name>RoofSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3004,11 +3004,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 6)</gml:description>
 					<gml:name>WallSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3028,11 +3028,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 6)</gml:description>
 					<gml:name>WallSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 15 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3052,11 +3052,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_3">
 					<gml:description>This is WallSurface 1 (split)</gml:description>
 					<gml:name>WallSurface 1 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3076,11 +3076,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 6)</gml:description>
 					<gml:name>WallSurface 4 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3103,78 +3103,78 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 7</gml:description>
 			<gml:name>Palapatine's Residence</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:GenericElectricalDevice gml:id="id_generic_electrical_device_13">
+			<nrg3:device>
+				<nrg3:GenericElectricalDevice gml:id="id_generic_electrical_device_13">
 					<gml:description>This is GenericElectricalDevice 13</gml:description>
 					<gml:name>GenericElectricalDevice 13</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericElectricalDevice GenericElectricalDevice 13</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">9.2</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.6</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_13</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">3</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericElectricalDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:LightingDevice gml:id="id_lighting_device_14">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericElectricalDevice GenericElectricalDevice 13</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">9.2</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.6</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_13</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">3</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericElectricalDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:LightingDevice gml:id="id_lighting_device_14">
 					<gml:description>This is LightingDevice 14</gml:description>
 					<gml:name>LightingDevice 14</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>LightingDevice LightingDevice 14</nrg2:model>
-					<nrg2:yearOfManufacture>2006</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">4.9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">1</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_14</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">5</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:LightingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_10">
+					</nrg3:referencePoint>
+					<nrg3:model>LightingDevice LightingDevice 14</nrg3:model>
+					<nrg3:yearOfManufacture>2006</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">4.9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">1</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_14</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">5</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:LightingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_10">
 					<gml:description>This is GenericSolarCollector 10</gml:description>
 					<gml:name>GenericSolarCollector 10</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 -25 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 10</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_10</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 10</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_10</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_ec81dbc6-c5bc-469d-853a-d8562b793d2f" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_d12f9bb2-f6b5-4a56-93df-6a4a88bd0881">
@@ -3186,39 +3186,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_11">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_11">
 					<gml:description>This is GenericSolarCollector 11</gml:description>
 					<gml:name>GenericSolarCollector 11</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 -25 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 11</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_11</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 11</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_11</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_e3c5a9ff-130f-45fd-98f6-8c13bd2ca877" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_d00f8a6e-99b9-4822-a638-9a07ea0cbc0c">
@@ -3230,39 +3230,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_49">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_49">
 					<gml:description>This is PhotovoltaicThermalCollector 49</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 49</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 -22.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 49</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_49</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 49</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_49</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_aff422a0-b290-4d4a-b26f-ee85912085d5" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_f8ae03a5-48f3-4e58-b036-63d92f92c966">
@@ -3274,44 +3274,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_44">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_44">
 					<gml:description>This is SolarThermalCollector 44</gml:description>
 					<gml:name>SolarThermalCollector 44</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 -27.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 44</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_44</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 44</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_44</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f0821a16-fb4b-4cb4-93dc-f94097661d8a" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_8b1f6bf2-b2a3-4467-b1b1-927d9c0ff26d">
@@ -3323,43 +3323,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_45">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_45">
 					<gml:description>This is SolarThermalCollector 45</gml:description>
 					<gml:name>SolarThermalCollector 45</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 -25 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 45</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_45</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 45</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_45</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_5c1e63ab-33cb-43c1-bc30-bf8f0575ed6a" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_86661f3c-d748-447c-b76e-ff5e96bb3279">
@@ -3371,43 +3371,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_46">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_46">
 					<gml:description>This is SolarThermalCollector 46</gml:description>
 					<gml:name>SolarThermalCollector 46</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.473 -22.333 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 46</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_46</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">270</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 46</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_46</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">270</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_2142591d-2c34-4b86-b33b-d1e361d9b843" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_390b8561-9dfb-4740-bbbd-7817f72c2e2f">
@@ -3419,43 +3419,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_47">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_47">
 					<gml:description>This is SolarThermalCollector 47</gml:description>
 					<gml:name>SolarThermalCollector 47</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 -27.667 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 47</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_47</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 47</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_47</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_74f63225-cdea-4387-9a2f-957254c963ae" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_82a63108-558d-48bf-812a-e76e9f34cb65">
@@ -3467,43 +3467,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:SolarThermalCollector gml:id="id_solar_thermal_collector_48">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_collector_48">
 					<gml:description>This is SolarThermalCollector 48</gml:description>
 					<gml:name>SolarThermalCollector 48</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.527 -25 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>SolarThermalModel SolarThermalCollector 48</nrg2:model>
-					<nrg2:yearOfManufacture>2019</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_48</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">90</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_7_roofsurface_2"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>SolarThermalModel SolarThermalCollector 48</nrg3:model>
+					<nrg3:yearOfManufacture>2019</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_48</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">90</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_ebfd2c08-ffc5-42d8-8ee6-3e5491361f9b" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_80179833-6e73-445d-8d6c-e1cee53cd4d9">
@@ -3515,24 +3515,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg2:type>
-					<nrg2:opticalEfficiency uom="unit interval">0.4</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:SolarThermalCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_1">flatPlaneCollector</nrg3:type>
+					<nrg3:opticalEfficiency uom="unit interval">0.4</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:SolarThermalCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_8"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_8"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>2005</bldg:yearOfConstruction>
@@ -3545,11 +3545,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_7_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 7)</gml:description>
 					<gml:name>GroundSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3569,11 +3569,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 7)</gml:description>
 					<gml:name>RoofSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3593,11 +3593,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 7)</gml:description>
 					<gml:name>RoofSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3617,11 +3617,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 7)</gml:description>
 					<gml:name>WallSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -30 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3641,11 +3641,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 7)</gml:description>
 					<gml:name>WallSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3665,11 +3665,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 7)</gml:description>
 					<gml:name>WallSurface 3 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3689,11 +3689,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_4">
 					<gml:description>This is WallSurface 3 (split)</gml:description>
 					<gml:name>WallSurface 3 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3716,66 +3716,66 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 8</gml:description>
 			<gml:name>Darth Vader's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:MovableShadingDevice gml:id="id_movable_shading_device_15">
+			<nrg3:device>
+				<nrg3:MovableShadingDevice gml:id="id_movable_shading_device_15">
 					<gml:description>This is MovableShadingDevice 15</gml:description>
 					<gml:name>MovableShadingDevice 15</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>MovableShadingDevice MovableShadingDevice 15</nrg2:model>
-					<nrg2:yearOfManufacture>2012</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.1</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_15</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">23</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:type codeSpace="shading_device_codeSpace">shutter</nrg2:type>
-					<nrg2:installationSide>outside</nrg2:installationSide>
-					<nrg2:maximumCoverRatio uom="unit inteval">0.7</nrg2:maximumCoverRatio>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit inteval">0.8</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-				</nrg2:MovableShadingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_12">
+					</nrg3:referencePoint>
+					<nrg3:model>MovableShadingDevice MovableShadingDevice 15</nrg3:model>
+					<nrg3:yearOfManufacture>2012</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.1</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_15</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">23</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:type codeSpace="shading_device_codeSpace">shutter</nrg3:type>
+					<nrg3:installationSide>outside</nrg3:installationSide>
+					<nrg3:maximumCoverRatio uom="unit inteval">0.7</nrg3:maximumCoverRatio>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit inteval">0.8</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+				</nrg3:MovableShadingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_12">
 					<gml:description>This is GenericSolarCollector 12</gml:description>
 					<gml:name>GenericSolarCollector 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -22.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 12</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_12</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 12</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_12</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_5c11100e-c839-4b30-85a5-74b0cf0cbdba" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_b617957c-d5ce-4818-a326-448ab586e3d1">
@@ -3787,39 +3787,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_50">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_50">
 					<gml:description>This is PhotovoltaicThermalCollector 50</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 50</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>12.333 -22.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 50</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_50</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 50</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_50</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_e1269cd8-59dd-4d57-b103-dd4cef5a7b3b" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_075fda27-15d4-43ab-a9ed-a6e3f3086c71">
@@ -3831,44 +3831,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_51">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_51">
 					<gml:description>This is PhotovoltaicThermalCollector 51</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 51</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -22.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 51</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_51</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 51</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_51</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_4017f070-bb4d-4f1c-b0ec-924a4762e6cb" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_d63eacaa-379f-4c00-9304-6f02fa3624f1">
@@ -3880,44 +3880,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_52">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_52">
 					<gml:description>This is PhotovoltaicThermalCollector 52</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 52</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>17.667 -22.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 52</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_52</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_8_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 52</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_52</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_5b0471c3-ccee-4e7a-a632-9686ef7a53b9" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_2ffa1462-78d0-4884-bf76-b6c41bdaaf71">
@@ -3929,50 +3929,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:ThermalStorageDevice gml:id="id_thermal_storage_device_16">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalStorageDevice gml:id="id_thermal_storage_device_16">
 					<gml:description>This is ThermalStorageDevice 16</gml:description>
 					<gml:name>ThermalStorageDevice 16</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>ThermalStorageDevice ThermalStorageDevice 16</nrg2:model>
-					<nrg2:yearOfManufacture>2013</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.7</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_16</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">0</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:preparationTemperature uom="degrees Celsius">80</nrg2:preparationTemperature>
-					<nrg2:medium codeSpace="medium_codeSpace">steam</nrg2:medium>
-					<nrg2:thermalLossesFactor uom="units no idea...">80</nrg2:thermalLossesFactor>
-					<nrg2:volume uom="m^3">50</nrg2:volume>
-				</nrg2:ThermalStorageDevice>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:referencePoint>
+					<nrg3:model>ThermalStorageDevice ThermalStorageDevice 16</nrg3:model>
+					<nrg3:yearOfManufacture>2013</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.7</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_16</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">0</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:preparationTemperature uom="degrees Celsius">80</nrg3:preparationTemperature>
+					<nrg3:medium codeSpace="medium_codeSpace">steam</nrg3:medium>
+					<nrg3:thermalLossesFactor uom="units no idea...">80</nrg3:thermalLossesFactor>
+					<nrg3:volume uom="m^3">50</nrg3:volume>
+				</nrg3:ThermalStorageDevice>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 -20 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_7"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_7"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -3985,11 +3985,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_8_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 8)</gml:description>
 					<gml:name>GroundSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4009,11 +4009,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 8)</gml:description>
 					<gml:name>RoofSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4033,11 +4033,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 8)</gml:description>
 					<gml:name>RoofSurface 2 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -17.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4057,11 +4057,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 8)</gml:description>
 					<gml:name>WallSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4081,11 +4081,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_2">
 					<gml:description>This is WallSurface 7 (split)</gml:description>
 					<gml:name>WallSurface 7 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4105,11 +4105,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 8)</gml:description>
 					<gml:name>WallSurface 3 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4129,11 +4129,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 8)</gml:description>
 					<gml:name>WallSurface 4 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4156,41 +4156,41 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is multi-part Building 9-10</gml:description>
 			<gml:name>Jabba's multi-part Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:Boiler gml:id="id_boiler_18">
+			<nrg3:device>
+				<nrg3:Boiler gml:id="id_boiler_18">
 					<gml:description>This is Boiler 18</gml:description>
 					<gml:name>Boiler 18</gml:name>
-					<nrg2:model>Boiler Boiler 18</nrg2:model>
-					<nrg2:yearOfManufacture>2000</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">1.4</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.8</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_18</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">3</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:hasCondensation>true</nrg2:hasCondensation>
-				</nrg2:Boiler>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:ElectricalStorageDevice gml:id="id_electrical_storage_device_17">
+					<nrg3:model>Boiler Boiler 18</nrg3:model>
+					<nrg3:yearOfManufacture>2000</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.4</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_18</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">3</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:hasCondensation>true</nrg3:hasCondensation>
+				</nrg3:Boiler>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ElectricalStorageDevice gml:id="id_electrical_storage_device_17">
 					<gml:description>This is ElectricalStorageDevice 17</gml:description>
 					<gml:name>ElectricalStorageDevice 17</gml:name>
-					<nrg2:model>ElectricalStorageDevice ElectricalStorageDevice 17</nrg2:model>
-					<nrg2:yearOfManufacture>2008</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">9.1</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.9</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_17</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">30</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg2:batteryTechnology>
-					<nrg2:powerCapacity uom="VAh">600</nrg2:powerCapacity>
-				</nrg2:ElectricalStorageDevice>
-			</nrg2:device>
+					<nrg3:model>ElectricalStorageDevice ElectricalStorageDevice 17</nrg3:model>
+					<nrg3:yearOfManufacture>2008</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">9.1</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.9</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_17</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">30</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg3:batteryTechnology>
+					<nrg3:powerCapacity uom="VAh">600</nrg3:powerCapacity>
+				</nrg3:ElectricalStorageDevice>
+			</nrg3:device>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -4204,80 +4204,80 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 9</gml:description>
 					<gml:name>Jabba's dungeon</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:device>
-						<nrg2:ElectricalStorageDevice gml:id="id_electrical_storage_device_23">
+					<nrg3:device>
+						<nrg3:ElectricalStorageDevice gml:id="id_electrical_storage_device_23">
 							<gml:description>This is ElectricalStorageDevice 23</gml:description>
 							<gml:name>ElectricalStorageDevice 23</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:model>ElectricalStorageDevice ElectricalStorageDevice 23</nrg2:model>
-							<nrg2:yearOfManufacture>1999</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kW">3.5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.8</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_23</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">13</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg2:batteryTechnology>
-							<nrg2:powerCapacity uom="VAh">600</nrg2:powerCapacity>
-						</nrg2:ElectricalStorageDevice>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:GenericDevice gml:id="id_generic_device_24">
+							</nrg3:referencePoint>
+							<nrg3:model>ElectricalStorageDevice ElectricalStorageDevice 23</nrg3:model>
+							<nrg3:yearOfManufacture>1999</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kW">3.5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_23</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">13</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:batteryTechnology codeSpace="batt_tech_codeSpace">lithium</nrg3:batteryTechnology>
+							<nrg3:powerCapacity uom="VAh">600</nrg3:powerCapacity>
+						</nrg3:ElectricalStorageDevice>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:GenericDevice gml:id="id_generic_device_24">
 							<gml:description>This is GenericDevice 24</gml:description>
 							<gml:name>GenericDevice 24</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:model>GenericDevice GenericDevice 24</nrg2:model>
-							<nrg2:yearOfManufacture>1996</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kW">3.7</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.4</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_24</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">14</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-						</nrg2:GenericDevice>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_15">
+							</nrg3:referencePoint>
+							<nrg3:model>GenericDevice GenericDevice 24</nrg3:model>
+							<nrg3:yearOfManufacture>1996</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kW">3.7</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.4</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_24</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">14</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+						</nrg3:GenericDevice>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_15">
 							<gml:description>This is GenericSolarCollector 15</gml:description>
 							<gml:name>GenericSolarCollector 15</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -22.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>GenericSolarCollector Model GenericSolarCollector 15</nrg2:model>
-							<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_15</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod2MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>GenericSolarCollector Model GenericSolarCollector 15</nrg3:model>
+							<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_15</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod2MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_8e87632b-6398-4f2e-ba80-cf9da7c16e89" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_3044fdb5-243c-4c5a-ad81-3d7566170e8b">
@@ -4289,39 +4289,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod2MultiSurface>
-						</nrg2:GenericSolarCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_59">
+							</nrg3:lod2MultiSurface>
+						</nrg3:GenericSolarCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_59">
 							<gml:description>This is PhotovoltaicThermalCollector 59</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 59</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>32.333 -22.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 59</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_59</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 59</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_59</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_eb4df37b-5782-4702-912f-3f3c52633053" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_94519fdf-b09f-4dc4-a5dd-1d1e2c4acb42">
@@ -4333,44 +4333,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_60">
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_60">
 							<gml:description>This is PhotovoltaicThermalCollector 60</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 60</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -22.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 60</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_60</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 60</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_60</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f3f45bf6-c468-4a84-963b-f38f3e8ce7b4" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_c35a518f-2c49-4a0e-9dde-2f9b8eb40fc2">
@@ -4382,44 +4382,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_61">
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_61">
 							<gml:description>This is PhotovoltaicThermalCollector 61</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 61</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>37.667 -22.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 61</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_61</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_9_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 61</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_61</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f6d9e4f1-7565-45c1-8d6e-1e8a96f7f310" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_b35c12e8-7963-420a-8ad8-97b2c357c19b">
@@ -4431,25 +4431,25 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:referencePoint>
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_10"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_10"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -4462,11 +4462,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_9_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 9)</gml:description>
 							<gml:name>GroundSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4486,11 +4486,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 9)</gml:description>
 							<gml:name>RoofSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4510,11 +4510,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 9)</gml:description>
 							<gml:name>RoofSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -17.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4534,11 +4534,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_1">
 							<gml:description>This is WallSurface 5 (split)</gml:description>
 							<gml:name>WallSurface 5 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4558,11 +4558,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_2">
 							<gml:description>This is WallSurface 2 (Building 9)</gml:description>
 							<gml:name>WallSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>30 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4582,11 +4582,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 9)</gml:description>
 							<gml:name>WallSurface 3 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -25 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4606,11 +4606,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 9)</gml:description>
 							<gml:name>WallSurface 4 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -15 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4633,36 +4633,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 10</gml:description>
 					<gml:name>The rancor's prison</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:device>
-						<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_16">
+					<nrg3:device>
+						<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_16">
 							<gml:description>This is GenericSolarCollector 16</gml:description>
 							<gml:name>GenericSolarCollector 16</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -27.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>GenericSolarCollector Model GenericSolarCollector 16</nrg2:model>
-							<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_16</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod2MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>GenericSolarCollector Model GenericSolarCollector 16</nrg3:model>
+							<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_16</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod2MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_c082e872-1eb7-4c0b-8e94-ff2228cde335" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_e8a3836a-070d-4e19-beaa-630dcd106a07">
@@ -4674,39 +4674,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod2MultiSurface>
-						</nrg2:GenericSolarCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_62">
+							</nrg3:lod2MultiSurface>
+						</nrg3:GenericSolarCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_62">
 							<gml:description>This is PhotovoltaicThermalCollector 62</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 62</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>42.333 -27.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 62</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_62</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 62</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_62</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_af127221-9631-4551-8372-658d3c7af706" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_7e1a95b1-50ce-4adc-a103-723600032c60">
@@ -4718,44 +4718,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_63">
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_63">
 							<gml:description>This is PhotovoltaicThermalCollector 63</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 63</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -27.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 63</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_63</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 63</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_63</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_acbde47a-f6ab-4dc8-89da-e533f321c213" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_672ae0e6-a330-46ad-88c1-68b0dc849f59">
@@ -4767,44 +4767,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:device>
-						<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_64">
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_64">
 							<gml:description>This is PhotovoltaicThermalCollector 64</gml:description>
 							<gml:name>PhotovoltaicThermalCollector 64</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>47.667 -27.527 12.523</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:relatedTo>
-								<nrg2:CityObjectRelation>
-									<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-									<nrg2:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
-								</nrg2:CityObjectRelation>
-							</nrg2:relatedTo>
-							<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 64</nrg2:model>
-							<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-							<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-							<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-							<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-							<nrg2:efficiencyIndicator>eff_indic_string_64</nrg2:efficiencyIndicator>
-							<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-							<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-							<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-							<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-							<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-							<nrg2:lod3MultiSurface>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_buildingpart_10_roofsurface_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 64</nrg3:model>
+							<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_64</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+							<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+							<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+							<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+							<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+							<nrg3:lod3MultiSurface>
 								<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_7ac33358-10e9-4af6-ab2f-fe827e021ec4" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
 										<gml:Polygon gml:id="Polygon_UUID_e4b135af-79a1-481a-9528-30a7c4992e8f">
@@ -4816,25 +4816,25 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
-							</nrg2:lod3MultiSurface>
-							<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-							<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-							<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-							<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-							<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-						</nrg2:PhotovoltaicThermalCollector>
-					</nrg2:device>
-					<nrg2:referencePoint>
+							</nrg3:lod3MultiSurface>
+							<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+							<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+							<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+							<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+							<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+						</nrg3:PhotovoltaicThermalCollector>
+					</nrg3:device>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>45 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_9"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_9"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1940</bldg:yearOfConstruction>
@@ -4847,11 +4847,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_10_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 10)</gml:description>
 							<gml:name>GroundSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4871,11 +4871,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 10)</gml:description>
 							<gml:name>RoofSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -27.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4895,11 +4895,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 10)</gml:description>
 							<gml:name>RoofSurface 2 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4919,11 +4919,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_1">
 							<gml:description>This is WallSurface 1 (Building 10)</gml:description>
 							<gml:name>WallSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>50 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4943,11 +4943,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_2">
 							<gml:description>This is WallSurface 2 (split)</gml:description>
 							<gml:name>WallSurface 2 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4967,11 +4967,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 10)</gml:description>
 							<gml:name>WallSurface 3 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -30 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4991,11 +4991,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 10)</gml:description>
 							<gml:name>WallSurface 4 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -20 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -5020,78 +5020,78 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 11</gml:description>
 			<gml:name>Death Star I</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:GenericDevice gml:id="id_generic_device_19">
+			<nrg3:device>
+				<nrg3:GenericDevice gml:id="id_generic_device_19">
 					<gml:description>This is GenericDevice 19</gml:description>
 					<gml:name>GenericDevice 19</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericDevice GenericDevice 19</nrg2:model>
-					<nrg2:yearOfManufacture>2003</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">1.6</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">1</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_19</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">16</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericElectricalDevice gml:id="id_generic_electrical_device_20">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericDevice GenericDevice 19</nrg3:model>
+					<nrg3:yearOfManufacture>2003</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.6</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">1</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_19</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">16</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericElectricalDevice gml:id="id_generic_electrical_device_20">
 					<gml:description>This is GenericElectricalDevice 20</gml:description>
 					<gml:name>GenericElectricalDevice 20</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>GenericElectricalDevice GenericElectricalDevice 20</nrg2:model>
-					<nrg2:yearOfManufacture>2018</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">5.4</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_20</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">3</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:GenericElectricalDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_13">
+					</nrg3:referencePoint>
+					<nrg3:model>GenericElectricalDevice GenericElectricalDevice 20</nrg3:model>
+					<nrg3:yearOfManufacture>2018</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">5.4</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_20</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">3</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:GenericElectricalDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_13">
 					<gml:description>This is GenericSolarCollector 13</gml:description>
 					<gml:name>GenericSolarCollector 13</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -27.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 13</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_13</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 13</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_13</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_582cf8e1-a748-4bd2-ba1f-3eae8b30e8c5" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_9d1a8ca9-34d5-4a85-885b-88e6432c2140">
@@ -5103,39 +5103,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_53">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_53">
 					<gml:description>This is PhotovoltaicThermalCollector 53</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 53</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.333 -27.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 53</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_53</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 53</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_53</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_5eb9525c-654f-4f7b-a4a1-529dd12fb7b3" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_02b93c24-d454-4d53-9e77-bf988424ed65">
@@ -5147,44 +5147,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_54">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_54">
 					<gml:description>This is PhotovoltaicThermalCollector 54</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 54</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -27.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 54</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_54</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 54</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_54</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_80e225b5-2c27-40b7-8ef5-0bf104064b66" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_0bf45e9a-51aa-4455-9f16-5360f260fa0e">
@@ -5196,44 +5196,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_55">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_55">
 					<gml:description>This is PhotovoltaicThermalCollector 55</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 55</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.667 -27.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 55</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_55</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_11_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 55</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_55</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_d67afad6-3750-4728-a9b9-22e2dd7acdf7" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_4e5f46c8-b82a-4cf1-b39b-3cae882d9aca">
@@ -5245,19 +5245,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -5270,11 +5270,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_11_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 11)</gml:description>
 					<gml:name>GroundSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5294,11 +5294,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 11)</gml:description>
 					<gml:name>RoofSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -27.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5318,11 +5318,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 11)</gml:description>
 					<gml:name>RoofSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5342,11 +5342,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 11)</gml:description>
 					<gml:name>WallSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5366,11 +5366,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 11)</gml:description>
 					<gml:name>WallSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5390,11 +5390,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 11)</gml:description>
 					<gml:name>WallSurface 3 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -30 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5414,11 +5414,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 11)</gml:description>
 					<gml:name>WallSurface 4 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -20 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5441,81 +5441,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 12</gml:description>
 			<gml:name>Death Star II</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:device>
-				<nrg2:HeatPump gml:id="id_heat_pump_21">
+			<nrg3:device>
+				<nrg3:HeatPump gml:id="id_heat_pump_21">
 					<gml:description>This is HeatPump 21</gml:description>
 					<gml:name>HeatPump 21</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>HeatPump HeatPump 21</nrg2:model>
-					<nrg2:yearOfManufacture>1997</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">5.3</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.4</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_21</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">10</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-					<nrg2:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg2:heatSource>
-					<nrg2:copSourceTemperature uom="degrees Celsius">5</nrg2:copSourceTemperature>
-					<nrg2:copOperationTemperature uom="degrees Celsius">10</nrg2:copOperationTemperature>
-				</nrg2:HeatPump>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:LightingDevice gml:id="id_lighting_device_22">
+					</nrg3:referencePoint>
+					<nrg3:model>HeatPump HeatPump 21</nrg3:model>
+					<nrg3:yearOfManufacture>1997</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">5.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.4</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_21</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">10</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:heatSource codeSpace="heat_source_codeSpace">aquifer</nrg3:heatSource>
+					<nrg3:copSourceTemperature uom="degrees Celsius">5</nrg3:copSourceTemperature>
+					<nrg3:copOperationTemperature uom="degrees Celsius">10</nrg3:copOperationTemperature>
+				</nrg3:HeatPump>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:LightingDevice gml:id="id_lighting_device_22">
 					<gml:description>This is LightingDevice 22</gml:description>
 					<gml:name>LightingDevice 22</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:model>LightingDevice LightingDevice 22</nrg2:model>
-					<nrg2:yearOfManufacture>1996</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kW">2.2</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.2</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_22</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">14</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.3</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-				</nrg2:LightingDevice>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:GenericSolarCollector gml:id="id_generic_solar_collector_14">
+					</nrg3:referencePoint>
+					<nrg3:model>LightingDevice LightingDevice 22</nrg3:model>
+					<nrg3:yearOfManufacture>1996</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">2.2</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.2</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_22</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">14</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+				</nrg3:LightingDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericSolarCollector gml:id="id_generic_solar_collector_14">
 					<gml:description>This is GenericSolarCollector 14</gml:description>
 					<gml:name>GenericSolarCollector 14</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -12.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>GenericSolarCollector Model GenericSolarCollector 14</nrg2:model>
-					<nrg2:yearOfManufacture>2015</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>3</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">9</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_14</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">27.36</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">21.888</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod2MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>GenericSolarCollector Model GenericSolarCollector 14</nrg3:model>
+					<nrg3:yearOfManufacture>2015</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>3</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">9</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_14</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">27.36</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">21.888</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod2MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod2_UUID_bf0157b1-8bf8-455c-b613-ff156d2302bb" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_d50c8cb0-f70b-449e-8556-82870b33de43">
@@ -5527,39 +5527,39 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod2MultiSurface>
-				</nrg2:GenericSolarCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_56">
+					</nrg3:lod2MultiSurface>
+				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_56">
 					<gml:description>This is PhotovoltaicThermalCollector 56</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 56</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.333 -12.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 56</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_56</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 56</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_56</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_0c4aaa88-a767-4760-b240-bc43c5f9721a" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_a235b7ff-8033-42b5-9c2b-252ab4ff1fdd">
@@ -5571,44 +5571,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_57">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_57">
 					<gml:description>This is PhotovoltaicThermalCollector 57</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 57</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -12.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 57</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_57</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 57</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_57</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_5bcb079d-53b6-49e9-b136-edd7b652ca29" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e64df357-80de-4c4d-9401-d04622373112">
@@ -5620,44 +5620,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:device>
-				<nrg2:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_58">
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_collector_58">
 					<gml:description>This is PhotovoltaicThermalCollector 58</gml:description>
 					<gml:name>PhotovoltaicThermalCollector 58</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.667 -12.527 12.523</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="relation_codeSpace">installedOn</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 58</nrg2:model>
-					<nrg2:yearOfManufacture>2021</nrg2:yearOfManufacture>
-					<nrg2:numberOfDevices>1</nrg2:numberOfDevices>
-					<nrg2:installedPower uom="kWp">5</nrg2:installedPower>
-					<nrg2:nominalEfficiency uom="unit interval">0.3</nrg2:nominalEfficiency>
-					<nrg2:efficiencyIndicator>eff_indic_string_58</nrg2:efficiencyIndicator>
-					<nrg2:heatDissipation uom="W/m^2">15</nrg2:heatDissipation>
-					<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg2:heatDissipationConvectiveFraction>
-					<nrg2:heatDissipationLatentFraction uom="unit interval">0.5</nrg2:heatDissipationLatentFraction>
-					<nrg2:heatDissipationRadiantFraction uom="unit interval">0.4</nrg2:heatDissipationRadiantFraction>
-					<nrg2:moduleArea uom="m^2">8.16</nrg2:moduleArea>
-					<nrg2:apertureArea uom="m^2">7.752</nrg2:apertureArea>
-					<nrg2:azimuth uom="decimal degrees">180</nrg2:azimuth>
-					<nrg2:inclination uom="decimal degrees">45</nrg2:inclination>
-					<nrg2:lod3MultiSurface>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="relation_codeSpace">installedOn</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_building_12_roofsurface_1"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:model>PhotovoltaicThermalModel PhotovoltaicThermalCollector 58</nrg3:model>
+					<nrg3:yearOfManufacture>2021</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kWp">5</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.3</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_58</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">15</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.1</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.5</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.4</nrg3:heatDissipationRadiantFraction>
+					<nrg3:moduleArea uom="m^2">8.16</nrg3:moduleArea>
+					<nrg3:apertureArea uom="m^2">7.752</nrg3:apertureArea>
+					<nrg3:azimuth uom="decimal degrees">180</nrg3:azimuth>
+					<nrg3:inclination uom="decimal degrees">45</nrg3:inclination>
+					<nrg3:lod3MultiSurface>
 						<gml:MultiSurface gml:id="MultiSurf_lod3_UUID_f23b241a-3d99-4771-88ed-fdcffdc6f332" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
 								<gml:Polygon gml:id="Polygon_UUID_e770b71c-2ee4-43a3-ad8a-7eb618869e25">
@@ -5669,19 +5669,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:Polygon>
 							</gml:surfaceMember>
 						</gml:MultiSurface>
-					</nrg2:lod3MultiSurface>
-					<nrg2:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg2:type>
-					<nrg2:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg2:cellType>
-					<nrg2:opticalEfficiency uom="unit interval">0.8</nrg2:opticalEfficiency>
-					<nrg2:linearHeatLossCoefficient>10</nrg2:linearHeatLossCoefficient>
-					<nrg2:quadraticHeatLossCoefficient>0.68</nrg2:quadraticHeatLossCoefficient>
-				</nrg2:PhotovoltaicThermalCollector>
-			</nrg2:device>
-			<nrg2:referencePoint>
+					</nrg3:lod3MultiSurface>
+					<nrg3:type codeSpace="solar_coll_codeSpace_2">flatPlaneCollector</nrg3:type>
+					<nrg3:cellType codeSpace="cell_type_codeSpace_2">monocristalline</nrg3:cellType>
+					<nrg3:opticalEfficiency uom="unit interval">0.8</nrg3:opticalEfficiency>
+					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
+					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
+				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1964</bldg:yearOfConstruction>
@@ -5694,11 +5694,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_12_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 12)</gml:description>
 					<gml:name>GroundSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5718,11 +5718,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 12)</gml:description>
 					<gml:name>RoofSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -12.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5742,11 +5742,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 12)</gml:description>
 					<gml:name>RoofSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5766,11 +5766,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 12)</gml:description>
 					<gml:name>WallSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5790,11 +5790,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 12)</gml:description>
 					<gml:name>WallSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5814,11 +5814,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 12)</gml:description>
 					<gml:name>WallSurface 3 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -5838,11 +5838,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 12)</gml:description>
 					<gml:name>WallSurface 4 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>

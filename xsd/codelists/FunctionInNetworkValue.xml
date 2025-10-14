@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FunctionInNetworkValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">FunctionInNetworkValue</gml:identifier>
+  <gml:name>FunctionInNetworkValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_951_1696">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionInNetworkValue">producing</gml:identifier>
+      <gml:name>producing</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_951_1697">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionInNetworkValue">consuming</gml:identifier>
+      <gml:name>consuming</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_951_1698">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionInNetworkValue">storage</gml:identifier>
+      <gml:name>storage</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_951_1699">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionInNetworkValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_951_1700">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FunctionInNetworkValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

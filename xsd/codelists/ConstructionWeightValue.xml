@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ConstructionWeightValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:description>Construction weight</gml:description>
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ConstructionWeightValue</gml:identifier>
+  <gml:name>ConstructionWeightValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_804_1275">
+      <gml:description>Very light construction</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionWeightValue">veryLight</gml:identifier>
+      <gml:name>veryLight</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_804_1276">
+      <gml:description>Light construction</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionWeightValue">light</gml:identifier>
+      <gml:name>light</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_804_1277">
+      <gml:description>Medium construction</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionWeightValue">medium</gml:identifier>
+      <gml:name>medium</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_804_1278">
+      <gml:description>Heavy construction</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionWeightValue">heavy</gml:identifier>
+      <gml:name>heavy</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_804_2216">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionWeightValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EnergyCarrierValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">EnergyCarrierValue</gml:identifier>
+  <gml:name>EnergyCarrierValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1553">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">electricity</gml:identifier>
+      <gml:name>electricity</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1554">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">coal</gml:identifier>
+      <gml:name>coal</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1556">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">naturalGas</gml:identifier>
+      <gml:name>naturalGas</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1572">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">chilledAir</gml:identifier>
+      <gml:name>chilledAir</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1573">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">chilledWater</gml:identifier>
+      <gml:name>chilledWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1574">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">fuelOil</gml:identifier>
+      <gml:name>fuelOil</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1575">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">hotAir</gml:identifier>
+      <gml:name>hotAir</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1576">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">hotWater</gml:identifier>
+      <gml:name>hotWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1577">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">propane</gml:identifier>
+      <gml:name>propane</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1578">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">steam</gml:identifier>
+      <gml:name>steam</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1579">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">woodChips</gml:identifier>
+      <gml:name>woodChips</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1580">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">woodPallets</gml:identifier>
+      <gml:name>woodPallets</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1631">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">hydrogen</gml:identifier>
+      <gml:name>hydrogen</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_1637">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_916_2217">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyCarrierValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

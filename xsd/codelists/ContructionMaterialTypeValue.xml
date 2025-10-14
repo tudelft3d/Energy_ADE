@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ContructionMaterialTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ContructionMaterialTypeValue</gml:identifier>
+  <gml:name>ContructionMaterialTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1562">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">wood</gml:identifier>
+      <gml:name>wood</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1563">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">tiles</gml:identifier>
+      <gml:name>tiles</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1564">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">concrete</gml:identifier>
+      <gml:name>concrete</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1565">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">sand</gml:identifier>
+      <gml:name>sand</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1566">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">soil</gml:identifier>
+      <gml:name>soil</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1567">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1568">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">glass</gml:identifier>
+      <gml:name>glass</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_1581">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">bricks</gml:identifier>
+      <gml:name>bricks</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_907_2210">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ContructionMaterialTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="VolumeTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">VolumeTypeValue</gml:identifier>
+  <gml:name>VolumeTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_842_1478">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/VolumeTypeValue">netVolume</gml:identifier>
+      <gml:name>netVolume</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_842_1479">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/VolumeTypeValue">grossVolume</gml:identifier>
+      <gml:name>grossVolume</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_842_1480">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/VolumeTypeValue">energyReferenceVolume</gml:identifier>
+      <gml:name>energyReferenceVolume</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_842_1741">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/VolumeTypeValue">heatedVolume</gml:identifier>
+      <gml:name>heatedVolume</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_842_1742">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/VolumeTypeValue">cooledVolume</gml:identifier>
+      <gml:name>cooledVolume</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

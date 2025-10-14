@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="HeightTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">HeightTypeValue</gml:identifier>
+  <gml:name>HeightTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1362">
+      <gml:description>The elevation has been captured at the bottom of the usable part of the construction. NOTE: The bottom of usable part of a building is generally its lowest underground floor.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">bottomOfConstruction</gml:identifier>
+      <gml:name>bottomOfConstruction</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1363">
+      <gml:description>The elevation has been captured at the entrance of the construction, generally the bottom of entrance door.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">entrancePoint</gml:identifier>
+      <gml:name>entrancePoint</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1364">
+      <gml:description>The elevation has been captured at eave level, anywhere between the lowest and the highest eave levels of the construction. NOTE: in case of a roof having a symmetry axis, values generalEave, lowestEave and highestEave are equivalent.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">generalEave</gml:identifier>
+      <gml:name>generalEave</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1366">
+      <gml:description>The elevation has been captured at roof level, anywhere between the lowest edge roof level and the top of the construction.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">generalRoof</gml:identifier>
+      <gml:name>generalRoof</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1367">
+      <gml:description>The elevation has been captured at roof edge level, anywhere between the lowest and the highest roof edges of the construction. NOTE: in case of a roof having a symmetry axis, values generalRoofEdge, lowestRoofEdge and highestRoofEdge are equivalent.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">generalRoofEdge</gml:identifier>
+      <gml:name>generalRoofEdge</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1368">
+      <gml:description>The elevation has been captured at the highest eave level of the construction.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">highestEave</gml:identifier>
+      <gml:name>highestEave</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1370">
+      <gml:description>The elevation has been captured at the highest point of the construction, including the installations, such as chimneys and antennas.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">highestPoint</gml:identifier>
+      <gml:name>highestPoint</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1371">
+      <gml:description>The elevation has been captured at the highest roof edge level of the construction.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">highestRoofEdge</gml:identifier>
+      <gml:name>highestRoofEdge</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1372">
+      <gml:description>The elevation has been captured at the lowest eave level of the construction.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">lowestEave</gml:identifier>
+      <gml:name>lowestEave</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1373">
+      <gml:description>The elevation has been captured at the level of the lowest floor above ground. This value is of interest for over-hanging buildings or for buildings on pylons.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">lowestFloorAboveGround</gml:identifier>
+      <gml:name>lowestFloorAboveGround</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1375">
+      <gml:description>The elevation has been captured at the lowest roof edge level of the construction.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">lowestRoofEdge</gml:identifier>
+      <gml:name>lowestRoofEdge</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1376">
+      <gml:description>The elevation has been captured at the top level of the construction. NOTE: for buildings, it is generally top of the roof.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">topOfConstruction</gml:identifier>
+      <gml:name>topOfConstruction</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1377">
+      <gml:description>The elevation has been captured at the top of the highest Thermal Boundary.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">topThermalBoundary</gml:identifier>
+      <gml:name>topThermalBoundary</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_822_1378">
+      <gml:description>The elevation has been captured at the bottom of the lowest Thermal Boundary.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeightTypeValue">bottomThermalBoundary</gml:identifier>
+      <gml:name>bottomThermalBoundary</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

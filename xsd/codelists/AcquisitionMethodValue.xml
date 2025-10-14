@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="AcquisitionMethodValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">AcquisitionMethodValue</gml:identifier>
+  <gml:name>AcquisitionMethodValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1028_1924">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AcquisitionMethodValue">measurement</gml:identifier>
+      <gml:name>measurement</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1028_1925">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AcquisitionMethodValue">simulation</gml:identifier>
+      <gml:name>simulation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1028_1926">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AcquisitionMethodValue">calibratedSimulation</gml:identifier>
+      <gml:name>calibratedSimulation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1028_1927">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AcquisitionMethodValue">estimation</gml:identifier>
+      <gml:name>estimation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1028_1928">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AcquisitionMethodValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

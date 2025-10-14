@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="AreaTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">AreaTypeValue</gml:identifier>
+  <gml:name>AreaTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1189">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">netFloorArea</gml:identifier>
+      <gml:name>netFloorArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1190">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">grossFloorArea</gml:identifier>
+      <gml:name>grossFloorArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1191">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">energyReferenceArea</gml:identifier>
+      <gml:name>energyReferenceArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1721">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">footprintArea</gml:identifier>
+      <gml:name>footprintArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1732">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">heatedArea</gml:identifier>
+      <gml:name>heatedArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_1733">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">cooledArea</gml:identifier>
+      <gml:name>cooledArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_2180">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">totalRoofArea</gml:identifier>
+      <gml:name>totalRoofArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_2181">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">totalWallSurfaceArea</gml:identifier>
+      <gml:name>totalWallSurfaceArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_2182">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">totalPartyWallSurfaceArea</gml:identifier>
+      <gml:name>totalPartyWallSurfaceArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_2183">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">totalExteriorEnvelopeArea</gml:identifier>
+      <gml:name>totalExteriorEnvelopeArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_786_2184">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/AreaTypeValue">totalGroundSurfaceArea</gml:identifier>
+      <gml:name>totalGroundSurfaceArea</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

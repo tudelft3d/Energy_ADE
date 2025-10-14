@@ -7,9 +7,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -21,7 +21,7 @@ parts.
 
 There is a global appearance.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 UsageZone and BuildingUnit objects are modelled as:
 - LoD1 solid
@@ -66,7 +66,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 *******************************************************
 *******************************************************
---><core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+--><core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This city model contains a set of "fantasy" buildings created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>CityGML city of Alderaan</gml:name>
 	<gml:boundedBy>
@@ -76,166 +76,166 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		</gml:Envelope>
 	</gml:boundedBy>
 	<core:cityObjectMember>
-		<nrg2:ScheduleLibrary gml:id="id_schedule_library_1">
+		<nrg3:ScheduleLibrary gml:id="id_schedule_library_1">
 			<gml:description>This is Schedule Library 1</gml:description>
 			<gml:name>Schedule Library 1</gml:name>
-			<nrg2:type codeSpace="schedule_library_type_codeSpace">schedule_library_type</nrg2:type>
-			<nrg2:source>Coruscant Schedule Library</nrg2:source>
-			<nrg2:author>Giorgio Agugiaro</nrg2:author>
-			<nrg2:libraryMember>
-				<nrg2:CompositeSchedule gml:id="id_composite_schedule_1">
+			<nrg3:type codeSpace="schedule_library_type_codeSpace">schedule_library_type</nrg3:type>
+			<nrg3:source>Coruscant Schedule Library</nrg3:source>
+			<nrg3:author>Giorgio Agugiaro</nrg3:author>
+			<nrg3:libraryMember>
+				<nrg3:CompositeSchedule gml:id="id_composite_schedule_1">
 					<gml:description>This is CompositeSchedule 1, for 1 typical week, composed of 5 typical days and 2 weekend days</gml:description>
 					<gml:name>CompositeSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">week</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">7</nrg2:temporalExtent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_1">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">week</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_1">
 							<gml:description>This is ScheduleComponent 1</gml:description>
 							<gml:name>ScheduleComponent 1 containing a repetition of 5 times a daily schedule of timeseries of 24 hourly values for a week day</gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">weekDay</nrg2:type>
-							<nrg2:repetitions>5</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_6"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_2">
+							<nrg3:type codeSpace="schedule_type_codeSpace">weekDay</nrg3:type>
+							<nrg3:repetitions>5</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_6"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_2">
 							<gml:description>This is ScheduleComponent 2</gml:description>
 							<gml:name>ScheduleComponent 2 containing a repetition of 2 times a daily schedule of timeseries of 24 hourly values for a weekend day</gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">weekendDay</nrg2:type>
-							<nrg2:repetitions>2</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_7"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-				</nrg2:CompositeSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_1">
+							<nrg3:type codeSpace="schedule_type_codeSpace">weekendDay</nrg3:type>
+							<nrg3:repetitions>2</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_7"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+				</nrg3:CompositeSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_1">
 					<gml:description>This is DualValueSchedule 1 for a Monday</gml:description>
 					<gml:name>DualValueSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">monday</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="degrees Celsius">12</nrg2:idleValue>
-					<nrg2:usageValue uom="degrees Celsius">19</nrg2:usageValue>
-					<nrg2:startUsageTime>07:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>21:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_1">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">monday</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="degrees Celsius">12</nrg3:idleValue>
+					<nrg3:usageValue uom="degrees Celsius">19</nrg3:usageValue>
+					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>21:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_1">
 					<gml:description>This is AtomicSchedule 1 for a year, connected to a timeseries of 1 yearly value</gml:description>
 					<gml:name>AtomicSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_2">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_2">
 							<gml:description>This is DefaultValuesTimeSeries 2</gml:description>
 							<gml:name>DefaultValuesTimeSeries 2</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_18">calibratedSimulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>discontinuous</nrg2:interpolationType>
-							<nrg2:source>source_18</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">100</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_2">
+							<nrg3:acquisitionMethod codeSpace="codespace_18">calibratedSimulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_18</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">100</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_2">
 					<gml:description>This is AtomicSchedule 2 for a year, connected to a timeseries of 12 monthly values</gml:description>
 					<gml:name>AtomicSchedule 2</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_3">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_3">
 							<gml:description>This is DefaultValuesTimeSeries 3</gml:description>
 							<gml:name>DefaultValuesTimeSeries 3</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_19">estimation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>instantaneousTotal</nrg2:interpolationType>
-							<nrg2:source>source_19</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_6">
+							<nrg3:acquisitionMethod codeSpace="codespace_19">estimation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_19</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_6">
 					<gml:description>This is AtomicSchedule 6</gml:description>
 					<gml:name>AtomicSchedule 6</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_6</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_7">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_6</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_7">
 							<gml:description>This is DefaultValuesTimeSeries 7</gml:description>
 							<gml:name>DefaultValuesTimeSeries 7</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_23">estimation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>instantaneousTotal</nrg2:interpolationType>
-							<nrg2:source>source_23</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_7">
+							<nrg3:acquisitionMethod codeSpace="codespace_23">estimation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_23</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_7">
 					<gml:description>This is AtomicSchedule 7</gml:description>
 					<gml:name>AtomicSchedule 7</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_7</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekendDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_8">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_7</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekendDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_8">
 							<gml:description>This is DefaultValuesTimeSeries 8</gml:description>
 							<gml:name>DefaultValuesTimeSeries 8</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_24">unknown</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>maximumInPrecedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_24</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-		</nrg2:ScheduleLibrary>
+							<nrg3:acquisitionMethod codeSpace="codespace_24">unknown</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_24</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+		</nrg3:ScheduleLibrary>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
 		<bldg:Building gml:id="id_building_1">
 			<gml:description>This is Building 1</gml:description>
 			<gml:name>Snoke's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -275,48 +275,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_1">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_1">
 					<gml:description>This is BuildingUnit 1</gml:description>
 					<gml:name>BuildingUnit 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_1_lod1_CompSurf">
@@ -329,8 +329,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_1_lod2_CompSurf">
@@ -344,8 +344,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_1_lod3_CompSurf">
@@ -359,55 +359,55 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>4</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">corporation</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_1"/>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_1">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>4</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">corporation</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_1"/>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_1">
 					<gml:description>This is UsageZone 1</gml:description>
 					<gml:name>UsageZone 1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_1_lod1_CompSurf">
@@ -468,8 +468,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_1_lod2_CompSurf">
@@ -539,8 +539,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_1_lod3_CompSurf">
@@ -610,36 +610,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_1"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_1">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_1"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_1">
 							<gml:description>This is Occupants 1</gml:description>
 							<gml:name>Occupants 1</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">residents</nrg2:type>
-							<nrg2:numberOfOccupants>12</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+							<nrg3:type codeSpace="occ_codeSpace_xyz">residents</nrg3:type>
+							<nrg3:numberOfOccupants>12</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -647,23 +647,23 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 2</gml:description>
 			<gml:name>Rey's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_1"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_1"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -703,48 +703,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_2_1">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_2_1">
 					<gml:description>This is BuildingUnit 2_1</gml:description>
 					<gml:name>BuildingUnit 2_1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 1.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_2_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_1_lod1_CompSurf">
@@ -757,8 +757,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_2_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_1_lod2_CompSurf">
@@ -771,8 +771,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_2_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_1_lod3_CompSurf">
@@ -785,101 +785,101 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_2"/>
-					<nrg2:energyPerformanceCertificate>
-						<nrg2:EnergyPerformanceCertificate gml:id="id_epc_12">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_2"/>
+					<nrg3:energyPerformanceCertificate>
+						<nrg3:EnergyPerformanceCertificate gml:id="id_epc_12">
 							<gml:description>This is Energy Performance Certificate 12</gml:description>
 							<gml:name>Energy Performance Certificate 12</gml:name>
-							<nrg2:type codeSpace="epc_codeSpace_iop">heating</nrg2:type>
-							<nrg2:label>A+++</nrg2:label>
-							<nrg2:value uom="kWh/(m^2*a)">10</nrg2:value>
-							<nrg2:issueDate>2017-05-15</nrg2:issueDate>
-							<nrg2:expirationDate>2027-05-15</nrg2:expirationDate>
-							<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-							<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-						</nrg2:EnergyPerformanceCertificate>
-					</nrg2:energyPerformanceCertificate>
-					<nrg2:energyPerformanceCertificate>
-						<nrg2:EnergyPerformanceCertificate gml:id="id_epc_13">
+							<nrg3:type codeSpace="epc_codeSpace_iop">heating</nrg3:type>
+							<nrg3:label>A+++</nrg3:label>
+							<nrg3:value uom="kWh/(m^2*a)">10</nrg3:value>
+							<nrg3:issueDate>2017-05-15</nrg3:issueDate>
+							<nrg3:expirationDate>2027-05-15</nrg3:expirationDate>
+							<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+							<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+						</nrg3:EnergyPerformanceCertificate>
+					</nrg3:energyPerformanceCertificate>
+					<nrg3:energyPerformanceCertificate>
+						<nrg3:EnergyPerformanceCertificate gml:id="id_epc_13">
 							<gml:description>This is Energy Performance Certificate 13</gml:description>
 							<gml:name>Energy Performance Certificate 13</gml:name>
-							<nrg2:type codeSpace="epc_codeSpace_iop">DHW</nrg2:type>
-							<nrg2:label>B</nrg2:label>
-							<nrg2:value uom="kWh/(m^2*a)">50</nrg2:value>
-							<nrg2:issueDate>2018-05-15</nrg2:issueDate>
-							<nrg2:expirationDate>2027-05-16</nrg2:expirationDate>
-							<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-							<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-						</nrg2:EnergyPerformanceCertificate>
-					</nrg2:energyPerformanceCertificate>
-					<nrg2:refurbishmentMeasure>
-						<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_12">
+							<nrg3:type codeSpace="epc_codeSpace_iop">DHW</nrg3:type>
+							<nrg3:label>B</nrg3:label>
+							<nrg3:value uom="kWh/(m^2*a)">50</nrg3:value>
+							<nrg3:issueDate>2018-05-15</nrg3:issueDate>
+							<nrg3:expirationDate>2027-05-16</nrg3:expirationDate>
+							<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+							<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+						</nrg3:EnergyPerformanceCertificate>
+					</nrg3:energyPerformanceCertificate>
+					<nrg3:refurbishmentMeasure>
+						<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_12">
 							<gml:description>This is Refurbishment Measure 12</gml:description>
 							<gml:name>Refurbishment Measure 12</gml:name>
-							<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_12</nrg2:libraryCode>
-							<nrg2:type codeSpace="refurb_codeSpace">other</nrg2:type>
-							<nrg2:startDate>2020-02-12</nrg2:startDate>
-							<nrg2:endDate>2020-08-12</nrg2:endDate>
-						</nrg2:RefurbishmentMeasure>
-					</nrg2:refurbishmentMeasure>
-					<nrg2:refurbishmentMeasure>
-						<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_13">
+							<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_12</nrg3:libraryCode>
+							<nrg3:type codeSpace="refurb_codeSpace">other</nrg3:type>
+							<nrg3:startDate>2020-02-12</nrg3:startDate>
+							<nrg3:endDate>2020-08-12</nrg3:endDate>
+						</nrg3:RefurbishmentMeasure>
+					</nrg3:refurbishmentMeasure>
+					<nrg3:refurbishmentMeasure>
+						<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_13">
 							<gml:description>This is Refurbishment Measure 13</gml:description>
 							<gml:name>Refurbishment Measure 13</gml:name>
-							<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_13</nrg2:libraryCode>
-							<nrg2:type codeSpace="refurb_codeSpace">changedWindows</nrg2:type>
-							<nrg2:startDate>2020-02-13</nrg2:startDate>
-							<nrg2:endDate>2020-08-13</nrg2:endDate>
-						</nrg2:RefurbishmentMeasure>
-					</nrg2:refurbishmentMeasure>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_2_2">
+							<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_13</nrg3:libraryCode>
+							<nrg3:type codeSpace="refurb_codeSpace">changedWindows</nrg3:type>
+							<nrg3:startDate>2020-02-13</nrg3:startDate>
+							<nrg3:endDate>2020-08-13</nrg3:endDate>
+						</nrg3:RefurbishmentMeasure>
+					</nrg3:refurbishmentMeasure>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_2_2">
 					<gml:description>This is BuildingUnit 2_2</gml:description>
 					<gml:name>BuildingUnit 2_2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 4.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_2_2_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_2_lod1_CompSurf">
@@ -892,8 +892,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_2_2_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_2_lod2_CompSurf">
@@ -906,8 +906,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_2_2_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_2_lod3_CompSurf">
@@ -920,77 +920,77 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">commercial</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg2:ownershipType>
-					<nrg2:energyPerformanceCertificate>
-						<nrg2:EnergyPerformanceCertificate gml:id="id_epc_14">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">commercial</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg3:ownershipType>
+					<nrg3:energyPerformanceCertificate>
+						<nrg3:EnergyPerformanceCertificate gml:id="id_epc_14">
 							<gml:description>This is Energy Performance Certificate 14</gml:description>
 							<gml:name>Energy Performance Certificate 14</gml:name>
-							<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-							<nrg2:label>B</nrg2:label>
-							<nrg2:value uom="kWh/(m^2*a)">60</nrg2:value>
-							<nrg2:issueDate>2019-05-15</nrg2:issueDate>
-							<nrg2:expirationDate>2027-05-17</nrg2:expirationDate>
-							<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-							<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-						</nrg2:EnergyPerformanceCertificate>
-					</nrg2:energyPerformanceCertificate>
-					<nrg2:refurbishmentMeasure>
-						<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_14">
+							<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+							<nrg3:label>B</nrg3:label>
+							<nrg3:value uom="kWh/(m^2*a)">60</nrg3:value>
+							<nrg3:issueDate>2019-05-15</nrg3:issueDate>
+							<nrg3:expirationDate>2027-05-17</nrg3:expirationDate>
+							<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+							<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+						</nrg3:EnergyPerformanceCertificate>
+					</nrg3:energyPerformanceCertificate>
+					<nrg3:refurbishmentMeasure>
+						<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_14">
 							<gml:description>This is Refurbishment Measure 14</gml:description>
 							<gml:name>Refurbishment Measure 14</gml:name>
-							<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_14</nrg2:libraryCode>
-							<nrg2:type codeSpace="refurb_codeSpace">changedDoors</nrg2:type>
-							<nrg2:startDate>2020-02-14</nrg2:startDate>
-							<nrg2:endDate>2020-08-14</nrg2:endDate>
-						</nrg2:RefurbishmentMeasure>
-					</nrg2:refurbishmentMeasure>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_2_3">
+							<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_14</nrg3:libraryCode>
+							<nrg3:type codeSpace="refurb_codeSpace">changedDoors</nrg3:type>
+							<nrg3:startDate>2020-02-14</nrg3:startDate>
+							<nrg3:endDate>2020-08-14</nrg3:endDate>
+						</nrg3:RefurbishmentMeasure>
+					</nrg3:refurbishmentMeasure>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_2_3">
 					<gml:description>This is BuildingUnit 2_3</gml:description>
 					<gml:name>BuildingUnit 2_3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 10.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_2_3_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_3_lod1_CompSurf">
@@ -1003,8 +1003,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_2_3_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_3_lod2_CompSurf">
@@ -1018,8 +1018,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_2_3_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_2_3_lod3_CompSurf">
@@ -1033,54 +1033,54 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">office</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg2:ownershipType>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_2_1">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">office</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg3:ownershipType>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_2_1">
 					<gml:description>This is UsageZone 2_1</gml:description>
 					<gml:name>UsageZone 2_1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 1.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_2_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_1_lod1_CompSurf">
@@ -1141,8 +1141,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_2_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_1_lod2_CompSurf">
@@ -1203,8 +1203,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_2_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_1_lod3_CompSurf">
@@ -1265,78 +1265,78 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_2_1"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_2">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_2_1"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_2">
 							<gml:description>This is Occupants 2</gml:description>
 							<gml:name>Occupants 2</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">patients</nrg2:type>
-							<nrg2:numberOfOccupants>11</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_2_2">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">patients</nrg3:type>
+							<nrg3:numberOfOccupants>11</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_2_2">
 					<gml:description>This is UsageZone 2_2</gml:description>
 					<gml:name>UsageZone 2_2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 4.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_2_2_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_2_lod1_CompSurf">
@@ -1397,8 +1397,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_2_2_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_2_lod2_CompSurf">
@@ -1459,8 +1459,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_2_2_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_2_lod3_CompSurf">
@@ -1521,78 +1521,78 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_2_2"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">commercial</nrg2:type>
-					<nrg2:isPrimary>false</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_3">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_2_2"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">commercial</nrg3:type>
+					<nrg3:isPrimary>false</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_3">
 							<gml:description>This is Occupants 3</gml:description>
 							<gml:name>Occupants 3</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">students</nrg2:type>
-							<nrg2:numberOfOccupants>15</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_2_3">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">students</nrg3:type>
+							<nrg3:numberOfOccupants>15</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_2_3">
 					<gml:description>This is UsageZone 2_3</gml:description>
 					<gml:name>UsageZone 2_3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 10.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">75</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">300</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">210</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">75</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">300</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">210</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_2_3_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_3_lod1_CompSurf">
@@ -1653,8 +1653,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_2_3_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_3_lod2_CompSurf">
@@ -1724,8 +1724,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_2_3_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_2_3_lod3_CompSurf">
@@ -1795,36 +1795,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_2_3"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">office</nrg2:type>
-					<nrg2:isPrimary>false</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_4">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_2_3"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">office</nrg3:type>
+					<nrg3:isPrimary>false</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_4">
 							<gml:description>This is Occupants 4</gml:description>
 							<gml:name>Occupants 4</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">visitors</nrg2:type>
-							<nrg2:numberOfOccupants>46</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+							<nrg3:type codeSpace="occ_codeSpace_xyz">visitors</nrg3:type>
+							<nrg3:numberOfOccupants>46</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1832,23 +1832,23 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 3</gml:description>
 			<gml:name>Poe's Hangar</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>25 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_4"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_4"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">traffic</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hangar</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1888,48 +1888,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_3">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_3">
 					<gml:description>This is BuildingUnit 3</gml:description>
 					<gml:name>BuildingUnit 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_3_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_3_lod1_CompSurf">
@@ -1942,8 +1942,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_3_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_3_lod2_CompSurf">
@@ -1957,8 +1957,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_3_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_3_lod3_CompSurf">
@@ -1972,55 +1972,55 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_3"/>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_3">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_3"/>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_3">
 					<gml:description>This is UsageZone 3</gml:description>
 					<gml:name>UsageZone 3</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_3_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_3_lod1_CompSurf">
@@ -2081,8 +2081,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_3_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_3_lod2_CompSurf">
@@ -2152,8 +2152,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_3_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_3_lod3_CompSurf">
@@ -2223,36 +2223,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_3"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_5">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_3"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_5">
 							<gml:description>This is Occupants 5</gml:description>
 							<gml:name>Occupants 5</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">workers</nrg2:type>
-							<nrg2:numberOfOccupants>34</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+							<nrg3:type codeSpace="occ_codeSpace_xyz">workers</nrg3:type>
+							<nrg3:numberOfOccupants>34</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2260,17 +2260,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 4</gml:description>
 			<gml:name>Fin's Cabin</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>35 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -2310,48 +2310,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_4">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_4">
 					<gml:description>This is BuildingUnit 4</gml:description>
 					<gml:name>BuildingUnit 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_4_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_4_lod1_CompSurf">
@@ -2364,8 +2364,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_4_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_4_lod2_CompSurf">
@@ -2379,8 +2379,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_4_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_4_lod3_CompSurf">
@@ -2394,55 +2394,55 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_4"/>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_4">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">government</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_4"/>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_4">
 					<gml:description>This is UsageZone 4</gml:description>
 					<gml:name>UsageZone 4</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_4_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_4_lod1_CompSurf">
@@ -2503,8 +2503,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_4_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_4_lod2_CompSurf">
@@ -2574,8 +2574,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_4_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_4_lod3_CompSurf">
@@ -2645,36 +2645,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_4"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_6">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_4"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_6">
 							<gml:description>This is Occupants 6</gml:description>
 							<gml:name>Occupants 6</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">otherOrCombination</nrg2:type>
-							<nrg2:numberOfOccupants>22</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+							<nrg3:type codeSpace="occ_codeSpace_xyz">otherOrCombination</nrg3:type>
+							<nrg3:numberOfOccupants>22</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2682,17 +2682,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 5</gml:description>
 			<gml:name>Yoda's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>55 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_6"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_6"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">healthcare</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hospital</bldg:function>
 			<bldg:yearOfConstruction>1980</bldg:yearOfConstruction>
@@ -2732,48 +2732,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_5">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_5">
 					<gml:description>This is BuildingUnit 5</gml:description>
 					<gml:name>BuildingUnit 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_5_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_5_lod1_CompSurf">
@@ -2786,8 +2786,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_5_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_5_lod2_CompSurf">
@@ -2801,8 +2801,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_5_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_5_lod3_CompSurf">
@@ -2816,55 +2816,55 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_5"/>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_5">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_5"/>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_5">
 					<gml:description>This is UsageZone 5</gml:description>
 					<gml:name>UsageZone 5</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_5_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_5_lod1_CompSurf">
@@ -2925,8 +2925,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_5_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_5_lod2_CompSurf">
@@ -2996,8 +2996,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_5_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_5_lod3_CompSurf">
@@ -3067,36 +3067,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_5"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_7">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_5"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_7">
 							<gml:description>This is Occupants 7</gml:description>
 							<gml:name>Occupants 7</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">unknown</nrg2:type>
-							<nrg2:numberOfOccupants>4</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+							<nrg3:type codeSpace="occ_codeSpace_xyz">unknown</nrg3:type>
+							<nrg3:numberOfOccupants>4</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -3104,17 +3104,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 6</gml:description>
 			<gml:name>Amidala's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_5"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_5"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1997</bldg:yearOfConstruction>
@@ -3154,48 +3154,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_6">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_6">
 					<gml:description>This is BuildingUnit 6</gml:description>
 					<gml:name>BuildingUnit 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_6_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_6_lod1_CompSurf">
@@ -3208,8 +3208,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_6_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_6_lod2_CompSurf">
@@ -3223,8 +3223,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_6_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_6_lod3_CompSurf">
@@ -3238,71 +3238,71 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_6"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_8">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_6"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_8">
 							<gml:description>This is Occupants 8</gml:description>
 							<gml:name>Occupants 8</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">residents</nrg2:type>
-							<nrg2:numberOfOccupants>5</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_6">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">residents</nrg3:type>
+							<nrg3:numberOfOccupants>5</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_6">
 					<gml:description>This is UsageZone 6</gml:description>
 					<gml:name>UsageZone 6</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_6_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_6_lod1_CompSurf">
@@ -3363,8 +3363,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_6_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_6_lod2_CompSurf">
@@ -3434,8 +3434,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_6_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_6_lod3_CompSurf">
@@ -3505,20 +3505,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_6"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_6"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -3526,17 +3526,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 7</gml:description>
 			<gml:name>Palapatine's Residence</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_8"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_8"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>2005</bldg:yearOfConstruction>
@@ -3576,48 +3576,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_7">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_7">
 					<gml:description>This is BuildingUnit 7</gml:description>
 					<gml:name>BuildingUnit 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_7_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_7_lod1_CompSurf">
@@ -3630,8 +3630,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_7_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_7_lod2_CompSurf">
@@ -3645,8 +3645,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_7_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_7_lod3_CompSurf">
@@ -3660,71 +3660,71 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_7"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_9">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_7"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_9">
 							<gml:description>This is Occupants 9</gml:description>
 							<gml:name>Occupants 9</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">patients</nrg2:type>
-							<nrg2:numberOfOccupants>6</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_7">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">patients</nrg3:type>
+							<nrg3:numberOfOccupants>6</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_7">
 					<gml:description>This is UsageZone 7</gml:description>
 					<gml:name>UsageZone 7</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_7_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_7_lod1_CompSurf">
@@ -3785,8 +3785,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_7_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_7_lod2_CompSurf">
@@ -3856,8 +3856,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_7_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_7_lod3_CompSurf">
@@ -3927,20 +3927,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_7"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_7"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -3948,17 +3948,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 8</gml:description>
 			<gml:name>Darth Vader's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 -20 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_7"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_7"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -3998,48 +3998,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_8">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_8">
 					<gml:description>This is BuildingUnit 8</gml:description>
 					<gml:name>BuildingUnit 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_8_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_8_lod1_CompSurf">
@@ -4052,8 +4052,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_8_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_8_lod2_CompSurf">
@@ -4067,8 +4067,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_8_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_8_lod3_CompSurf">
@@ -4082,71 +4082,71 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>3</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_8"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_10">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">occupantPrivateOwner</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_8"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_10">
 							<gml:description>This is Occupants 10</gml:description>
 							<gml:name>Occupants 10</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">students</nrg2:type>
-							<nrg2:numberOfOccupants>2</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_8">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">students</nrg3:type>
+							<nrg3:numberOfOccupants>2</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_8">
 					<gml:description>This is UsageZone 8</gml:description>
 					<gml:name>UsageZone 8</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_8_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_8_lod1_CompSurf">
@@ -4207,8 +4207,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_8_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_8_lod2_CompSurf">
@@ -4278,8 +4278,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_8_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_8_lod3_CompSurf">
@@ -4349,20 +4349,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_8"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_8"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -4383,17 +4383,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 9</gml:description>
 					<gml:name>Jabba's dungeon</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_10"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_10"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -4433,48 +4433,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</core:multiPoint>
 						</core:Address>
 					</bldg:address>
-					<nrg2:buildingUnit>
-						<nrg2:BuildingUnit gml:id="id_building_unit_9">
+					<nrg3:buildingUnit>
+						<nrg3:BuildingUnit gml:id="id_building_unit_9">
 							<gml:description>This is BuildingUnit 9</gml:description>
 							<gml:name>BuildingUnit 9</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source</nrg2:source>
-									<nrg2:value uom="m^2">250</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:lod1Solid>
+							</nrg3:referencePoint>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source</nrg3:source>
+									<nrg3:value uom="m^2">250</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:lod1Solid>
 								<gml:Solid gml:id="id_building_unit_9_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_9_lod1_CompSurf">
@@ -4487,8 +4487,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod1Solid>
-							<nrg2:lod2Solid>
+							</nrg3:lod1Solid>
+							<nrg3:lod2Solid>
 								<gml:Solid gml:id="id_building_unit_9_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_9_lod2_CompSurf">
@@ -4502,8 +4502,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod2Solid>
-							<nrg2:lod3Solid>
+							</nrg3:lod2Solid>
+							<nrg3:lod3Solid>
 								<gml:Solid gml:id="id_building_unit_9_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_9_lod3_CompSurf">
@@ -4517,94 +4517,94 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod3Solid>
-							<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-							<nrg2:numberOfRooms>5</nrg2:numberOfRooms>
-							<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">unknown</nrg2:ownershipType>
-							<nrg2:address xlink:href="#id_address_9"/>
-							<nrg2:energyPerformanceCertificate>
-								<nrg2:EnergyPerformanceCertificate gml:id="id_epc_17">
+							</nrg3:lod3Solid>
+							<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+							<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
+							<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">unknown</nrg3:ownershipType>
+							<nrg3:address xlink:href="#id_address_9"/>
+							<nrg3:energyPerformanceCertificate>
+								<nrg3:EnergyPerformanceCertificate gml:id="id_epc_17">
 									<gml:description>This is Energy Performance Certificate 17</gml:description>
 									<gml:name>Energy Performance Certificate 17</gml:name>
-									<nrg2:type codeSpace="epc_codeSpace_iop">DHW</nrg2:type>
-									<nrg2:label>E</nrg2:label>
-									<nrg2:value uom="kWh/(m^2*a)">240</nrg2:value>
-									<nrg2:issueDate>2023-05-15</nrg2:issueDate>
-									<nrg2:expirationDate>2027-05-21</nrg2:expirationDate>
-									<nrg2:certificationMethod>Certification Method 3</nrg2:certificationMethod>
-									<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-								</nrg2:EnergyPerformanceCertificate>
-							</nrg2:energyPerformanceCertificate>
-							<nrg2:refurbishmentMeasure>
-								<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_17">
+									<nrg3:type codeSpace="epc_codeSpace_iop">DHW</nrg3:type>
+									<nrg3:label>E</nrg3:label>
+									<nrg3:value uom="kWh/(m^2*a)">240</nrg3:value>
+									<nrg3:issueDate>2023-05-15</nrg3:issueDate>
+									<nrg3:expirationDate>2027-05-21</nrg3:expirationDate>
+									<nrg3:certificationMethod>Certification Method 3</nrg3:certificationMethod>
+									<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+								</nrg3:EnergyPerformanceCertificate>
+							</nrg3:energyPerformanceCertificate>
+							<nrg3:refurbishmentMeasure>
+								<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_17">
 									<gml:description>This is Refurbishment Measure 17</gml:description>
 									<gml:name>Refurbishment Measure 17</gml:name>
-									<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_18</nrg2:libraryCode>
-									<nrg2:type codeSpace="refurb_codeSpace">changedWindows</nrg2:type>
-									<nrg2:startDate>2020-02-18</nrg2:startDate>
-									<nrg2:endDate>2020-08-18</nrg2:endDate>
-								</nrg2:RefurbishmentMeasure>
-							</nrg2:refurbishmentMeasure>
-							<nrg2:occupiedBy>
-								<nrg2:Occupants gml:id="id_occupants_11">
+									<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_18</nrg3:libraryCode>
+									<nrg3:type codeSpace="refurb_codeSpace">changedWindows</nrg3:type>
+									<nrg3:startDate>2020-02-18</nrg3:startDate>
+									<nrg3:endDate>2020-08-18</nrg3:endDate>
+								</nrg3:RefurbishmentMeasure>
+							</nrg3:refurbishmentMeasure>
+							<nrg3:occupiedBy>
+								<nrg3:Occupants gml:id="id_occupants_11">
 									<gml:description>This is Occupants 11</gml:description>
 									<gml:name>Occupants 11</gml:name>
-									<nrg2:type codeSpace="occ_codeSpace_xyz">visitors</nrg2:type>
-									<nrg2:numberOfOccupants>7</nrg2:numberOfOccupants>
-									<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-									<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-									<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-									<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-									<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-									<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-									<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-									<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-								</nrg2:Occupants>
-							</nrg2:occupiedBy>
-						</nrg2:BuildingUnit>
-					</nrg2:buildingUnit>
-					<nrg2:usageZone>
-						<nrg2:UsageZone gml:id="id_usage_zone_9">
+									<nrg3:type codeSpace="occ_codeSpace_xyz">visitors</nrg3:type>
+									<nrg3:numberOfOccupants>7</nrg3:numberOfOccupants>
+									<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+									<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+									<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+									<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+									<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+									<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+									<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+									<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+								</nrg3:Occupants>
+							</nrg3:occupiedBy>
+						</nrg3:BuildingUnit>
+					</nrg3:buildingUnit>
+					<nrg3:usageZone>
+						<nrg3:UsageZone gml:id="id_usage_zone_9">
 							<gml:description>This is UsageZone 9</gml:description>
 							<gml:name>UsageZone 9</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">250</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:lod1Solid>
+							</nrg3:referencePoint>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">250</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:lod1Solid>
 								<gml:Solid gml:id="id_usage_zone_9_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_9_lod1_CompSurf">
@@ -4665,8 +4665,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod1Solid>
-							<nrg2:lod2Solid>
+							</nrg3:lod1Solid>
+							<nrg3:lod2Solid>
 								<gml:Solid gml:id="id_usage_zone_9_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_9_lod2_CompSurf">
@@ -4736,8 +4736,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod2Solid>
-							<nrg2:lod3Solid>
+							</nrg3:lod2Solid>
+							<nrg3:lod3Solid>
 								<gml:Solid gml:id="id_usage_zone_9_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_9_lod3_CompSurf">
@@ -4807,20 +4807,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod3Solid>
-							<nrg2:buildingUnit xlink:href="#id_building_unit_9"/>
-							<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-							<nrg2:isPrimary>true</nrg2:isPrimary>
-							<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-							<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-							<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-							<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-							<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-							<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-							<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-							<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-						</nrg2:UsageZone>
-					</nrg2:usageZone>
+							</nrg3:lod3Solid>
+							<nrg3:buildingUnit xlink:href="#id_building_unit_9"/>
+							<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+							<nrg3:isPrimary>true</nrg3:isPrimary>
+							<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+							<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+							<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+							<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+							<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+							<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+							<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+							<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+						</nrg3:UsageZone>
+					</nrg3:usageZone>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
 			<bldg:consistsOfBuildingPart>
@@ -4828,17 +4828,17 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 10</gml:description>
 					<gml:name>The rancor's prison</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>45 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_9"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_9"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1940</bldg:yearOfConstruction>
@@ -4878,48 +4878,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</core:multiPoint>
 						</core:Address>
 					</bldg:address>
-					<nrg2:buildingUnit>
-						<nrg2:BuildingUnit gml:id="id_building_unit_10">
+					<nrg3:buildingUnit>
+						<nrg3:BuildingUnit gml:id="id_building_unit_10">
 							<gml:description>This is BuildingUnit 10</gml:description>
 							<gml:name>BuildingUnit 10</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source</nrg2:source>
-									<nrg2:value uom="m^2">250</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:lod1Solid>
+							</nrg3:referencePoint>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source</nrg3:source>
+									<nrg3:value uom="m^2">250</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:lod1Solid>
 								<gml:Solid gml:id="id_building_unit_10_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_10_lod1_CompSurf">
@@ -4932,8 +4932,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod1Solid>
-							<nrg2:lod2Solid>
+							</nrg3:lod1Solid>
+							<nrg3:lod2Solid>
 								<gml:Solid gml:id="id_building_unit_10_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_10_lod2_CompSurf">
@@ -4947,8 +4947,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod2Solid>
-							<nrg2:lod3Solid>
+							</nrg3:lod2Solid>
+							<nrg3:lod3Solid>
 								<gml:Solid gml:id="id_building_unit_10_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_building_unit_10_lod3_CompSurf">
@@ -4962,94 +4962,94 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod3Solid>
-							<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-							<nrg2:numberOfRooms>5</nrg2:numberOfRooms>
-							<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">unknown</nrg2:ownershipType>
-							<nrg2:address xlink:href="#id_address_10"/>
-							<nrg2:energyPerformanceCertificate>
-								<nrg2:EnergyPerformanceCertificate gml:id="id_epc_18">
+							</nrg3:lod3Solid>
+							<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+							<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
+							<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">unknown</nrg3:ownershipType>
+							<nrg3:address xlink:href="#id_address_10"/>
+							<nrg3:energyPerformanceCertificate>
+								<nrg3:EnergyPerformanceCertificate gml:id="id_epc_18">
 									<gml:description>This is Energy Performance Certificate 18</gml:description>
 									<gml:name>Energy Performance Certificate 18</gml:name>
-									<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-									<nrg2:label>F</nrg2:label>
-									<nrg2:value uom="kWh/(m^2*a)">260</nrg2:value>
-									<nrg2:issueDate>2024-05-15</nrg2:issueDate>
-									<nrg2:expirationDate>2027-05-22</nrg2:expirationDate>
-									<nrg2:certificationMethod>Certification Method 4</nrg2:certificationMethod>
-									<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-								</nrg2:EnergyPerformanceCertificate>
-							</nrg2:energyPerformanceCertificate>
-							<nrg2:refurbishmentMeasure>
-								<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_18">
+									<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+									<nrg3:label>F</nrg3:label>
+									<nrg3:value uom="kWh/(m^2*a)">260</nrg3:value>
+									<nrg3:issueDate>2024-05-15</nrg3:issueDate>
+									<nrg3:expirationDate>2027-05-22</nrg3:expirationDate>
+									<nrg3:certificationMethod>Certification Method 4</nrg3:certificationMethod>
+									<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+								</nrg3:EnergyPerformanceCertificate>
+							</nrg3:energyPerformanceCertificate>
+							<nrg3:refurbishmentMeasure>
+								<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_18">
 									<gml:description>This is Refurbishment Measure 18</gml:description>
 									<gml:name>Refurbishment Measure 18</gml:name>
-									<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_19</nrg2:libraryCode>
-									<nrg2:type codeSpace="refurb_codeSpace">changedDoors</nrg2:type>
-									<nrg2:startDate>2020-02-19</nrg2:startDate>
-									<nrg2:endDate>2020-08-19</nrg2:endDate>
-								</nrg2:RefurbishmentMeasure>
-							</nrg2:refurbishmentMeasure>
-							<nrg2:occupiedBy>
-								<nrg2:Occupants gml:id="id_occupants_12">
+									<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_19</nrg3:libraryCode>
+									<nrg3:type codeSpace="refurb_codeSpace">changedDoors</nrg3:type>
+									<nrg3:startDate>2020-02-19</nrg3:startDate>
+									<nrg3:endDate>2020-08-19</nrg3:endDate>
+								</nrg3:RefurbishmentMeasure>
+							</nrg3:refurbishmentMeasure>
+							<nrg3:occupiedBy>
+								<nrg3:Occupants gml:id="id_occupants_12">
 									<gml:description>This is Occupants 12</gml:description>
 									<gml:name>Occupants 12</gml:name>
-									<nrg2:type codeSpace="occ_codeSpace_xyz">workers</nrg2:type>
-									<nrg2:numberOfOccupants>5</nrg2:numberOfOccupants>
-									<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-									<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-									<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-									<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-									<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-									<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-									<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-									<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-								</nrg2:Occupants>
-							</nrg2:occupiedBy>
-						</nrg2:BuildingUnit>
-					</nrg2:buildingUnit>
-					<nrg2:usageZone>
-						<nrg2:UsageZone gml:id="id_usage_zone_10">
+									<nrg3:type codeSpace="occ_codeSpace_xyz">workers</nrg3:type>
+									<nrg3:numberOfOccupants>5</nrg3:numberOfOccupants>
+									<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+									<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+									<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+									<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+									<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+									<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+									<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+									<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+								</nrg3:Occupants>
+							</nrg3:occupiedBy>
+						</nrg3:BuildingUnit>
+					</nrg3:buildingUnit>
+					<nrg3:usageZone>
+						<nrg3:UsageZone gml:id="id_usage_zone_10">
 							<gml:description>This is UsageZone 10</gml:description>
 							<gml:name>UsageZone 10</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">250</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:area>
-								<nrg2:QualifiedArea>
-									<nrg2:description>This is a type of floor area</nrg2:description>
-									<nrg2:source>Area value source text</nrg2:source>
-									<nrg2:value uom="m^2">100</nrg2:value>
-									<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-								</nrg2:QualifiedArea>
-							</nrg2:area>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">1250</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:volume>
-								<nrg2:QualifiedVolume>
-									<nrg2:description>This is a type of volume</nrg2:description>
-									<nrg2:source>Volume value source text</nrg2:source>
-									<nrg2:value uom="m^3">875</nrg2:value>
-									<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-								</nrg2:QualifiedVolume>
-							</nrg2:volume>
-							<nrg2:lod1Solid>
+							</nrg3:referencePoint>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">250</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:area>
+								<nrg3:QualifiedArea>
+									<nrg3:description>This is a type of floor area</nrg3:description>
+									<nrg3:source>Area value source text</nrg3:source>
+									<nrg3:value uom="m^2">100</nrg3:value>
+									<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+								</nrg3:QualifiedArea>
+							</nrg3:area>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">1250</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:volume>
+								<nrg3:QualifiedVolume>
+									<nrg3:description>This is a type of volume</nrg3:description>
+									<nrg3:source>Volume value source text</nrg3:source>
+									<nrg3:value uom="m^3">875</nrg3:value>
+									<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+								</nrg3:QualifiedVolume>
+							</nrg3:volume>
+							<nrg3:lod1Solid>
 								<gml:Solid gml:id="id_usage_zone_10_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_10_lod1_CompSurf">
@@ -5110,8 +5110,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod1Solid>
-							<nrg2:lod2Solid>
+							</nrg3:lod1Solid>
+							<nrg3:lod2Solid>
 								<gml:Solid gml:id="id_usage_zone_10_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_10_lod2_CompSurf">
@@ -5181,8 +5181,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod2Solid>
-							<nrg2:lod3Solid>
+							</nrg3:lod2Solid>
+							<nrg3:lod3Solid>
 								<gml:Solid gml:id="id_usage_zone_10_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:exterior>
 										<gml:CompositeSurface gml:id="id_usage_zone_10_lod3_CompSurf">
@@ -5252,20 +5252,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 										</gml:CompositeSurface>
 									</gml:exterior>
 								</gml:Solid>
-							</nrg2:lod3Solid>
-							<nrg2:buildingUnit xlink:href="#id_building_unit_10"/>
-							<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-							<nrg2:isPrimary>true</nrg2:isPrimary>
-							<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-							<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-							<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-							<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-							<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-							<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-							<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-							<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-						</nrg2:UsageZone>
-					</nrg2:usageZone>
+							</nrg3:lod3Solid>
+							<nrg3:buildingUnit xlink:href="#id_building_unit_10"/>
+							<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+							<nrg3:isPrimary>true</nrg3:isPrimary>
+							<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+							<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+							<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+							<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+							<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+							<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+							<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+							<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+						</nrg3:UsageZone>
+					</nrg3:usageZone>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
 		</bldg:Building>
@@ -5275,11 +5275,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 11</gml:description>
 			<gml:name>Death Star I</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -5319,43 +5319,43 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_11_1_1">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_11_1_1">
 					<gml:description>This is BuildingUnit 11_1_1</gml:description>
 					<gml:name>BuildingUnit 11_1_1</gml:name>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">31.25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">87.5</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">31.25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">87.5</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_1_lod1_CompSurf">
@@ -5416,8 +5416,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_1_lod2_CompSurf">
@@ -5478,8 +5478,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_1_lod3_CompSurf">
@@ -5540,89 +5540,89 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>2</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_11"/>
-					<nrg2:energyPerformanceCertificate>
-						<nrg2:EnergyPerformanceCertificate gml:id="id_epc_15">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>2</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_11"/>
+					<nrg3:energyPerformanceCertificate>
+						<nrg3:EnergyPerformanceCertificate gml:id="id_epc_15">
 							<gml:description>This is Energy Performance Certificate 15</gml:description>
 							<gml:name>Energy Performance Certificate 15</gml:name>
-							<nrg2:type codeSpace="epc_codeSpace_iop">cooling</nrg2:type>
-							<nrg2:label>C</nrg2:label>
-							<nrg2:value uom="kWh/(m^2*a)">110</nrg2:value>
-							<nrg2:issueDate>2020-05-15</nrg2:issueDate>
-							<nrg2:expirationDate>2027-05-18</nrg2:expirationDate>
-							<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-							<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-						</nrg2:EnergyPerformanceCertificate>
-					</nrg2:energyPerformanceCertificate>
-					<nrg2:refurbishmentMeasure>
-						<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_15">
+							<nrg3:type codeSpace="epc_codeSpace_iop">cooling</nrg3:type>
+							<nrg3:label>C</nrg3:label>
+							<nrg3:value uom="kWh/(m^2*a)">110</nrg3:value>
+							<nrg3:issueDate>2020-05-15</nrg3:issueDate>
+							<nrg3:expirationDate>2027-05-18</nrg3:expirationDate>
+							<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+							<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+						</nrg3:EnergyPerformanceCertificate>
+					</nrg3:energyPerformanceCertificate>
+					<nrg3:refurbishmentMeasure>
+						<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_15">
 							<gml:description>This is Refurbishment Measure 15</gml:description>
 							<gml:name>Refurbishment Measure 15</gml:name>
-							<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_15</nrg2:libraryCode>
-							<nrg2:type codeSpace="refurb_codeSpace">installedFloorHeating</nrg2:type>
-							<nrg2:startDate>2020-02-15</nrg2:startDate>
-							<nrg2:endDate>2020-08-15</nrg2:endDate>
-						</nrg2:RefurbishmentMeasure>
-					</nrg2:refurbishmentMeasure>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_13">
+							<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_15</nrg3:libraryCode>
+							<nrg3:type codeSpace="refurb_codeSpace">installedFloorHeating</nrg3:type>
+							<nrg3:startDate>2020-02-15</nrg3:startDate>
+							<nrg3:endDate>2020-08-15</nrg3:endDate>
+						</nrg3:RefurbishmentMeasure>
+					</nrg3:refurbishmentMeasure>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_13">
 							<gml:description>This is Occupants 13</gml:description>
 							<gml:name>Occupants 13</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">otherOrCombination</nrg2:type>
-							<nrg2:numberOfOccupants>4</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_11_1_2">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">otherOrCombination</nrg3:type>
+							<nrg3:numberOfOccupants>4</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_11_1_2">
 					<gml:description>This is BuildingUnit 11_1_2</gml:description>
 					<gml:name>BuildingUnit 11_1_2</gml:name>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">31.25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">87.5</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">31.25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">87.5</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_2_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_2_lod1_CompSurf">
@@ -5683,8 +5683,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_2_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_2_lod2_CompSurf">
@@ -5745,8 +5745,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_2_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_2_lod3_CompSurf">
@@ -5807,49 +5807,49 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>2</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_11_1_3">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>2</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_11_1_3">
 					<gml:description>This is BuildingUnit 11_1_3</gml:description>
 					<gml:name>BuildingUnit 11_1_3</gml:name>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">31.25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">87.5</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">31.25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">87.5</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_3_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_3_lod1_CompSurf">
@@ -5910,8 +5910,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_3_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_3_lod2_CompSurf">
@@ -5972,8 +5972,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_3_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_3_lod3_CompSurf">
@@ -6034,49 +6034,49 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>2</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_11_1_4">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>2</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_11_1_4">
 					<gml:description>This is BuildingUnit 11_1_4</gml:description>
 					<gml:name>BuildingUnit 11_1_4</gml:name>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">31.25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">25</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">87.5</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">31.25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">25</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">87.5</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_4_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_4_lod1_CompSurf">
@@ -6137,8 +6137,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_4_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_4_lod2_CompSurf">
@@ -6199,8 +6199,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_11_1_4_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_1_4_lod3_CompSurf">
@@ -6261,54 +6261,54 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">school</nrg2:type>
-					<nrg2:numberOfRooms>2</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_11_2">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">school</nrg3:type>
+					<nrg3:numberOfRooms>2</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_11_2">
 					<gml:description>This is BuildingUnit 11_2</gml:description>
 					<gml:name>BuildingUnit 11_2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 10</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">125</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">750</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">525</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">125</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">750</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">525</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_11_2_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_2_lod1_CompSurf">
@@ -6321,8 +6321,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_11_2_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_2_lod2_CompSurf">
@@ -6336,8 +6336,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_11_2_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_11_2_lod3_CompSurf">
@@ -6351,93 +6351,93 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>5</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-					<nrg2:energyPerformanceCertificate>
-						<nrg2:EnergyPerformanceCertificate gml:id="id_epc_16">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+					<nrg3:energyPerformanceCertificate>
+						<nrg3:EnergyPerformanceCertificate gml:id="id_epc_16">
 							<gml:description>This is Energy Performance Certificate 16</gml:description>
 							<gml:name>Energy Performance Certificate 16</gml:name>
-							<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-							<nrg2:label>D</nrg2:label>
-							<nrg2:value uom="kWh/(m^2*a)">160</nrg2:value>
-							<nrg2:issueDate>2021-05-15</nrg2:issueDate>
-							<nrg2:expirationDate>2027-05-19</nrg2:expirationDate>
-							<nrg2:certificationMethod>Certification Method 1</nrg2:certificationMethod>
-							<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-						</nrg2:EnergyPerformanceCertificate>
-					</nrg2:energyPerformanceCertificate>
-					<nrg2:refurbishmentMeasure>
-						<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_16">
+							<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+							<nrg3:label>D</nrg3:label>
+							<nrg3:value uom="kWh/(m^2*a)">160</nrg3:value>
+							<nrg3:issueDate>2021-05-15</nrg3:issueDate>
+							<nrg3:expirationDate>2027-05-19</nrg3:expirationDate>
+							<nrg3:certificationMethod>Certification Method 1</nrg3:certificationMethod>
+							<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+						</nrg3:EnergyPerformanceCertificate>
+					</nrg3:energyPerformanceCertificate>
+					<nrg3:refurbishmentMeasure>
+						<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_16">
 							<gml:description>This is Refurbishment Measure 16</gml:description>
 							<gml:name>Refurbishment Measure 16</gml:name>
-							<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_16</nrg2:libraryCode>
-							<nrg2:type codeSpace="refurb_codeSpace">changedBoiler</nrg2:type>
-							<nrg2:startDate>2020-02-16</nrg2:startDate>
-							<nrg2:endDate>2020-08-16</nrg2:endDate>
-						</nrg2:RefurbishmentMeasure>
-					</nrg2:refurbishmentMeasure>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_14">
+							<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_16</nrg3:libraryCode>
+							<nrg3:type codeSpace="refurb_codeSpace">changedBoiler</nrg3:type>
+							<nrg3:startDate>2020-02-16</nrg3:startDate>
+							<nrg3:endDate>2020-08-16</nrg3:endDate>
+						</nrg3:RefurbishmentMeasure>
+					</nrg3:refurbishmentMeasure>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_14">
 							<gml:description>This is Occupants 14</gml:description>
 							<gml:name>Occupants 14</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">unknown</nrg2:type>
-							<nrg2:numberOfOccupants>33</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_11_1">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">unknown</nrg3:type>
+							<nrg3:numberOfOccupants>33</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_11_1">
 					<gml:description>This is UsageZone 11_1</gml:description>
 					<gml:name>UsageZone 11_1</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 2.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">125</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">500</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">350</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">125</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">500</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">350</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_11_1_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_1_lod1_CompSurf">
@@ -6498,8 +6498,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_11_1_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_1_lod2_CompSurf">
@@ -6560,8 +6560,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_11_1_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_1_lod3_CompSurf">
@@ -6622,65 +6622,65 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_11_1_1"/>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_11_1_2"/>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_11_1_3"/>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_11_1_4"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">school</nrg2:type>
-					<nrg2:isPrimary>false</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_11_2">
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_11_1_1"/>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_11_1_2"/>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_11_1_3"/>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_11_1_4"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">school</nrg3:type>
+					<nrg3:isPrimary>false</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_11_2">
 					<gml:description>This is UsageZone 11_2</gml:description>
 					<gml:name>UsageZone 11_2</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 10</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">125</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">750</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">525</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">125</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">750</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">525</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_11_2_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_2_lod1_CompSurf">
@@ -6741,8 +6741,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_11_2_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_2_lod2_CompSurf">
@@ -6812,8 +6812,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_11_2_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_11_2_lod3_CompSurf">
@@ -6883,20 +6883,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_11_2"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_11_2"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -6904,11 +6904,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 12</gml:description>
 			<gml:name>Death Star II</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1964</bldg:yearOfConstruction>
@@ -6948,48 +6948,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</core:multiPoint>
 				</core:Address>
 			</bldg:address>
-			<nrg2:buildingUnit>
-				<nrg2:BuildingUnit gml:id="id_building_unit_12">
+			<nrg3:buildingUnit>
+				<nrg3:BuildingUnit gml:id="id_building_unit_12">
 					<gml:description>This is BuildingUnit 12</gml:description>
 					<gml:name>BuildingUnit 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_building_unit_12_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_12_lod1_CompSurf">
@@ -7002,8 +7002,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_building_unit_12_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_12_lod2_CompSurf">
@@ -7017,8 +7017,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_building_unit_12_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_building_unit_12_lod3_CompSurf">
@@ -7032,71 +7032,71 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:type codeSpace="buildingUnit_codeSpace_123">residential</nrg2:type>
-					<nrg2:numberOfRooms>5</nrg2:numberOfRooms>
-					<nrg2:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg2:ownershipType>
-					<nrg2:address xlink:href="#id_address_12"/>
-					<nrg2:occupiedBy>
-						<nrg2:Occupants gml:id="id_occupants_15">
+					</nrg3:lod3Solid>
+					<nrg3:type codeSpace="buildingUnit_codeSpace_123">residential</nrg3:type>
+					<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
+					<nrg3:ownershipType codeSpace="ownership_type_codeSpace_abc">propertyManagementCompany</nrg3:ownershipType>
+					<nrg3:address xlink:href="#id_address_12"/>
+					<nrg3:occupiedBy>
+						<nrg3:Occupants gml:id="id_occupants_15">
 							<gml:description>This is Occupants 15</gml:description>
 							<gml:name>Occupants 15</gml:name>
-							<nrg2:type codeSpace="occ_codeSpace_xyz">residents</nrg2:type>
-							<nrg2:numberOfOccupants>23</nrg2:numberOfOccupants>
-							<nrg2:heatDissipation uom="W/m^2">100</nrg2:heatDissipation>
-							<nrg2:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg2:heatDissipationConvectiveFraction>
-							<nrg2:heatDissipationLatentFraction uom="unit interval">0.2</nrg2:heatDissipationLatentFraction>
-							<nrg2:heatDissipationRadiantFraction uom="unit interval">0.5</nrg2:heatDissipationRadiantFraction>
-							<nrg2:occupancyRate xlink:href="#id_atomic_schedule_2"/>
-							<nrg2:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg2:averageDietType>
-							<nrg2:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg2:averageIncomeLevel>
-							<nrg2:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg2:averageInstructionLevel>
-						</nrg2:Occupants>
-					</nrg2:occupiedBy>
-				</nrg2:BuildingUnit>
-			</nrg2:buildingUnit>
-			<nrg2:usageZone>
-				<nrg2:UsageZone gml:id="id_usage_zone_12">
+							<nrg3:type codeSpace="occ_codeSpace_xyz">residents</nrg3:type>
+							<nrg3:numberOfOccupants>23</nrg3:numberOfOccupants>
+							<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:occupancyRate xlink:href="#id_atomic_schedule_2"/>
+							<nrg3:averageDietType codeSpace="diet_codeSpace">omnivorous</nrg3:averageDietType>
+							<nrg3:averageIncomeLevel codeSpace="income_level codeSpace">middle</nrg3:averageIncomeLevel>
+							<nrg3:averageInstructionLevel codeSpace="instruction_level_codeSpace">university</nrg3:averageInstructionLevel>
+						</nrg3:Occupants>
+					</nrg3:occupiedBy>
+				</nrg3:BuildingUnit>
+			</nrg3:buildingUnit>
+			<nrg3:usageZone>
+				<nrg3:UsageZone gml:id="id_usage_zone_12">
 					<gml:description>This is UsageZone 12</gml:description>
 					<gml:name>UsageZone 12</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">250</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:area>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">energyReferenceArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:area>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:volume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:volume>
-					<nrg2:lod1Solid>
+					</nrg3:referencePoint>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">250</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:area>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">energyReferenceArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:area>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:volume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">energyReferenceVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:volume>
+					<nrg3:lod1Solid>
 						<gml:Solid gml:id="id_usage_zone_12_lod1_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_12_lod1_CompSurf">
@@ -7157,8 +7157,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod1Solid>
-					<nrg2:lod2Solid>
+					</nrg3:lod1Solid>
+					<nrg3:lod2Solid>
 						<gml:Solid gml:id="id_usage_zone_12_lod2_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_12_lod2_CompSurf">
@@ -7228,8 +7228,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod2Solid>
-					<nrg2:lod3Solid>
+					</nrg3:lod2Solid>
+					<nrg3:lod3Solid>
 						<gml:Solid gml:id="id_usage_zone_12_lod3_Solid" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:exterior>
 								<gml:CompositeSurface gml:id="id_usage_zone_12_lod3_CompSurf">
@@ -7299,20 +7299,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:CompositeSurface>
 							</gml:exterior>
 						</gml:Solid>
-					</nrg2:lod3Solid>
-					<nrg2:buildingUnit xlink:href="#id_building_unit_12"/>
-					<nrg2:type codeSpace="usageZone_codeSpace_123">residential</nrg2:type>
-					<nrg2:isPrimary>true</nrg2:isPrimary>
-					<nrg2:numberOfBuildingUnits>1</nrg2:numberOfBuildingUnits>
-					<nrg2:internalHeatGains uom="W/m^2">100</nrg2:internalHeatGains>
-					<nrg2:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg2:internalHeatGainsConvectiveFraction>
-					<nrg2:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg2:internalHeatGainsLatentFraction>
-					<nrg2:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg2:internalHeatGainsRadiantFraction>
-					<nrg2:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
-					<nrg2:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
-					<nrg2:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
-				</nrg2:UsageZone>
-			</nrg2:usageZone>
+					</nrg3:lod3Solid>
+					<nrg3:buildingUnit xlink:href="#id_building_unit_12"/>
+					<nrg3:type codeSpace="usageZone_codeSpace_123">residential</nrg3:type>
+					<nrg3:isPrimary>true</nrg3:isPrimary>
+					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
+					<nrg3:coolingSchedule xlink:href="#id_atomic_schedule_1"/>
+					<nrg3:heatingSchedule xlink:href="#id_dual_value_schedule_1"/>
+					<nrg3:ventilationSchedule xlink:href="#id_composite_schedule_1"/>
+				</nrg3:UsageZone>
+			</nrg3:usageZone>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<app:appearanceMember>

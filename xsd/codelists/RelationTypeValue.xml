@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RelationTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">RelationTypeValue</gml:identifier>
+  <gml:name>RelationTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1031_2001">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RelationTypeValue">adjacentTo</gml:identifier>
+      <gml:name>adjacentTo</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1031_2002">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RelationTypeValue">installedOn</gml:identifier>
+      <gml:name>installedOn</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1031_2003">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RelationTypeValue">sharedWith</gml:identifier>
+      <gml:name>sharedWith</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

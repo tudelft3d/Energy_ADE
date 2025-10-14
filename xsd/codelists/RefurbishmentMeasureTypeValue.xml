@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="RefurbishmentMeasureTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">RefurbishmentMeasureTypeValue</gml:identifier>
+  <gml:name>RefurbishmentMeasureTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1715">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">installedSolarPanels</gml:identifier>
+      <gml:name>installedSolarPanels</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1716">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">changedBoiler</gml:identifier>
+      <gml:name>changedBoiler</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1717">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">insulatedWholeThermalHull</gml:identifier>
+      <gml:name>insulatedWholeThermalHull</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1718">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">installedFloorHeating</gml:identifier>
+      <gml:name>installedFloorHeating</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1720">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1749">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">installedPVPanels</gml:identifier>
+      <gml:name>installedPVPanels</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1750">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">installedHeatPump</gml:identifier>
+      <gml:name>installedHeatPump</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1931">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">changedWindows</gml:identifier>
+      <gml:name>changedWindows</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1932">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">changedDoors</gml:identifier>
+      <gml:name>changedDoors</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1933">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">insulatedRoof</gml:identifier>
+      <gml:name>insulatedRoof</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1934">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">insulatedExteriorWalls</gml:identifier>
+      <gml:name>insulatedExteriorWalls</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_1935">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">insulatedGroundFloor</gml:identifier>
+      <gml:name>insulatedGroundFloor</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_783_2214">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/RefurbishmentMeasureTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

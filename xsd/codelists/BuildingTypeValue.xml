@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BuildingTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:description>Building classification based on building size, situation and function</gml:description>
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">BuildingTypeValue</gml:identifier>
+  <gml:name>BuildingTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2133">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">single-family house</gml:identifier>
+      <gml:name>single-family house</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2134">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">terraced house</gml:identifier>
+      <gml:name>terraced house</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2135">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">multi-family house</gml:identifier>
+      <gml:name>multi-family house</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2136">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">apartment block</gml:identifier>
+      <gml:name>apartment block</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2137">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">commercial building</gml:identifier>
+      <gml:name>commercial building</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2138">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">industrial building</gml:identifier>
+      <gml:name>industrial building</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2139">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">office building</gml:identifier>
+      <gml:name>office building</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2140">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">religious building</gml:identifier>
+      <gml:name>religious building</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2141">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">hospital</gml:identifier>
+      <gml:name>hospital</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2142">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/BuildingTypeValue">leisure activity building</gml:identifier>
+      <gml:name>leisure activity building</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
