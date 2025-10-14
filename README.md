@@ -34,7 +34,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - An **FME Workbench** that allows to import CityGML + Energy ADE data into the 3D City Database
 - **Test datasets** that focus on different aspects/modules of the Energy ADE
 - A **set of modelling rules and suggestions** explaining how to use certain classes of the Energy ADE (please refer to the documentation)
-- Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted [here (citygml4j)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-citygml4j) and [here (citydb)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-3dcitydb). The latest package, including the Energy ADE 2.0 Java libraries for citygml4j, the 3DCityDB Importer/Exporter API, and the DDL scripts with schema mappings for full 3DCityDB Importer/Exporter plugin support, can be downloaded from [here](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-2-releases).
+- Additionally, **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted [here (citygml4j)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-citygml4j) and [here (citydb)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-3dcitydb). The latest package, including the Energy ADE 2.0 Java libraries for citygml4j, the 3DCityDB Importer/Exporter API, and the DDL scripts with schema mappings for full 3DCityDB Importer/Exporter plugin support, can be downloaded from [here](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-releases).
 
 # Further resources
 
@@ -48,9 +48,9 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 
 # Main developers and contributors 
 
-- Giorgio Agugiaro (TU Delft, The Netherlands): Main developer
-- Rushikesh Padsala (HFT Stuttgart, Germany): Main developer
-- Prabitha Prabhakaran (HFT Stuttgart, Germany): Main developer
+- Giorgio Agugiaro (TU Delft, The Netherlands): **Main developer**
+- Rushikesh Padsala (HFT Stuttgart, Germany): **Main developer**
+- Prabitha Prabhakaran (HFT Stuttgart, Germany): **Main developer**
 - Matthias Betz (HFT Stuttgart, Germany): Contributor
 - Volker Coors (HFT Stuttgart, Germany): Contributor
 - Thomas H. Kolbe (TU Munich, Germany): Contributor
