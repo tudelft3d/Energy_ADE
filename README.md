@@ -1,11 +1,10 @@
-<p align="center"><br/><br/><br/><img src="logos/energy_ade_2_logo.jpg" width="600"><br/><br/><br/></p>
-<!-- ![Energy ADE 2.0](logos/energy_ade_2_logo.jpg) -->
+<p align="center"><br/><br/><br/><img src="logos/energy_ade_logo.jpg" width="600"><br/><br/><br/></p>
 
 # Introduction
 
 The **CityGML Energy Application Domain Extension** (or, in short: Energy ADE) offers an open and standardised data model to facilitate multi-scale Urban Energy Modelling applications.
 
-The current version, which is still in active development and at the moment is identified as version 2.0, is based on and builds upon version 1.0 of the [Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
+The current version, which is still in active development and at the moment is temporarily identified as version 2.0, is based on and builds mainly upon version 1.0 of the [Energy ADE](https://www.citygmlwiki.org/index.php/CityGML_Energy_ADE), released in 2018, which has been already used in several national and international projects, mainly focusing on the simulation and computation of the building energy performance based on the integration of semantic 3D city models and other sources of information.
 
 The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the experiences and feedback collected since its release have contributed to forge several new ideas to improve and update the Energy ADE. Since 2024, work has been going on to harmonise and implement such ideas, with TU Delft and HFT Stuttgart being responsible for the first major development "sprint" in terms of conceptual data model (TU Delft) and implementation of the Java libraries (HFT Stuttgart). In the meantime, and in addition to the other DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
 
