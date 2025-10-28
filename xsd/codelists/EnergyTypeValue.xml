@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EnergyTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">EnergyTypeValue</gml:identifier>
+  <gml:name>EnergyTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1628">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">net</gml:identifier>
+      <gml:name>net</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1629">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">primary</gml:identifier>
+      <gml:name>primary</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1630">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">actual</gml:identifier>
+      <gml:name>actual</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1634">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">secondary</gml:identifier>
+      <gml:name>secondary</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1635">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">final</gml:identifier>
+      <gml:name>final</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_939_1636">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyTypeValue">useful</gml:identifier>
+      <gml:name>useful</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

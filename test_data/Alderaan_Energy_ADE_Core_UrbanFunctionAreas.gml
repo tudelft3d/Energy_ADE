@@ -8,11 +8,11 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 This file contains:
 - 1 first-level UrbanFunctionArea object, which contains
@@ -58,7 +58,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:boundedBy>
 		<gml:Envelope srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 			<gml:lowerCorner>-80 -100 0</gml:lowerCorner>
@@ -66,50 +66,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		</gml:Envelope>
 	</gml:boundedBy>
 	<core:cityObjectMember>
-		<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1">
+		<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1">
 			<gml:description>This is an UrbanFunctionArea of first level</gml:description>
 			<gml:name>UrbanFunctionArea of first level</gml:name>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>40 0 0</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:resource>
-				<nrg2:Energy gml:id="id_uaf_res_energy_1">
+			</nrg3:referencePoint>
+			<nrg3:resource>
+				<nrg3:Energy gml:id="id_uaf_res_energy_1">
 					<gml:description>This is EnergyDemand 1 of id_urban_function_area_1</gml:description>
 					<gml:name>Energy 1</gml:name>
-					<nrg2:status>actual</nrg2:status>
-					<nrg2:operationType codeSpace="resource-oper_codespace_1">demands</nrg2:operationType>
-					<nrg2:amountType codeSpace="amnt_type_codespace_1">measurement</nrg2:amountType>
-					<nrg2:year>2023</nrg2:year>
-					<nrg2:amount uom="kWh/a">1000</nrg2:amount>
-					<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-					<nrg2:co2Equivalent uom="kg/a">12</nrg2:co2Equivalent>
-					<nrg2:costsMoney uom="Euro">50</nrg2:costsMoney>
-					<nrg2:yieldsMoney uom="Euro">0</nrg2:yieldsMoney>
-					<nrg2:type codeSpace="eng_type_codespace_1">primary</nrg2:type>
-					<nrg2:endUse codeSpace="nrg_enduse_codespace_1">electricalAppliances</nrg2:endUse>
-					<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg2:energyCarrier>
-					<nrg2:maximumLoad uom="kW">4</nrg2:maximumLoad>
-					<nrg2:source codeSpace="nrg_source_codespace_1">powerGrid</nrg2:source>
-				</nrg2:Energy>
-			</nrg2:resource>
-			<nrg2:resource>
-				<nrg2:Water gml:id="id_uaf_res_water_1">
+					<nrg3:status>actual</nrg3:status>
+					<nrg3:operationType codeSpace="resource-oper_codespace_1">demands</nrg3:operationType>
+					<nrg3:amountType codeSpace="amnt_type_codespace_1">measurement</nrg3:amountType>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:amount uom="kWh/a">1000</nrg3:amount>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:co2Equivalent uom="kg/a">12</nrg3:co2Equivalent>
+					<nrg3:costsMoney uom="Euro">50</nrg3:costsMoney>
+					<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
+					<nrg3:type codeSpace="eng_type_codespace_1">primary</nrg3:type>
+					<nrg3:endUse codeSpace="nrg_enduse_codespace_1">electricalAppliances</nrg3:endUse>
+					<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg3:energyCarrier>
+					<nrg3:maximumLoad uom="kW">4</nrg3:maximumLoad>
+					<nrg3:source codeSpace="nrg_source_codespace_1">powerGrid</nrg3:source>
+				</nrg3:Energy>
+			</nrg3:resource>
+			<nrg3:resource>
+				<nrg3:Water gml:id="id_uaf_res_water_1">
 					<gml:description>This is WaterDemand 1 of id_urban_function_area_1</gml:description>
 					<gml:name>WaterDemand 1</gml:name>
-					<nrg2:status>actual</nrg2:status>
-					<nrg2:operationType codeSpace="resource-oper_codespace_13">demands</nrg2:operationType>
-					<nrg2:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg2:amountType>
-					<nrg2:year>2023</nrg2:year>
-					<nrg2:amount uom="m3/a">33</nrg2:amount>
-					<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-					<nrg2:costsMoney uom="Euro">21</nrg2:costsMoney>
-					<nrg2:yieldsMoney uom="Euro">6</nrg2:yieldsMoney>
-					<nrg2:type codeSpace="wat_type_codespace_7">drinkWater</nrg2:type>
-					<nrg2:endUse codeSpace="wat_enduse_codespace_7">washing</nrg2:endUse>
-				</nrg2:Water>
-			</nrg2:resource>
+					<nrg3:status>actual</nrg3:status>
+					<nrg3:operationType codeSpace="resource-oper_codespace_13">demands</nrg3:operationType>
+					<nrg3:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg3:amountType>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:amount uom="m3/a">33</nrg3:amount>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:costsMoney uom="Euro">21</nrg3:costsMoney>
+					<nrg3:yieldsMoney uom="Euro">6</nrg3:yieldsMoney>
+					<nrg3:type codeSpace="wat_type_codespace_7">drinkWater</nrg3:type>
+					<nrg3:endUse codeSpace="wat_enduse_codespace_7">washing</nrg3:endUse>
+				</nrg3:Water>
+			</nrg3:resource>
 <!-- BEGIN Please note: local appearances are not supported by FME -->
 <!-- 			<app:appearance>
 				<app:Appearance gml:id="id_app_urbanfunction_areas_2">
@@ -138,26 +138,26 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<grp:function>UrbanFuncionArea_function</grp:function>
 			<grp:usage>UrbanFuncionArea_usage</grp:usage>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_1">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_1">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-40 50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_1_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_1_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-20 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -174,19 +174,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_1_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_1_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-60 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -203,19 +203,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_1_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_1_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-20 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -232,19 +232,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_1_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_1_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-60 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -261,9 +261,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_1" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -278,31 +278,31 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_2">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_2">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>40 50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_2_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_2_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>20 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -319,19 +319,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_2_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_2_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>60 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -348,19 +348,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_2_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_2_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>20 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -377,19 +377,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_2_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_2_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>60 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -406,9 +406,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_2" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -423,91 +423,91 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_3">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_3">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>120 50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Energy gml:id="id_uaf_res_energy_2">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Energy gml:id="id_uaf_res_energy_2">
 							<gml:description>This is EnergyDemand 2 of id_urban_function_area_1_3</gml:description>
 							<gml:name>Energy 2</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_1">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_1">calibratedSimulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="kWh/a">50</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:co2Equivalent uom="kg/a">1</nrg2:co2Equivalent>
-							<nrg2:costsMoney uom="Euro">56</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">2</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="eng_type_codespace_1">primary</nrg2:type>
-							<nrg2:endUse codeSpace="nrg_enduse_codespace_1">heating</nrg2:endUse>
-							<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg2:energyCarrier>
-							<nrg2:maximumLoad uom="kW">4</nrg2:maximumLoad>
-							<nrg2:source codeSpace="nrg_source_codespace_1">powerGrid</nrg2:source>
-						</nrg2:Energy>
-					</nrg2:resource>
-					<nrg2:resource>
-						<nrg2:Energy gml:id="id_uaf_res_energy_3">
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_1">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_1">calibratedSimulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="kWh/a">50</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:co2Equivalent uom="kg/a">1</nrg3:co2Equivalent>
+							<nrg3:costsMoney uom="Euro">56</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="eng_type_codespace_1">primary</nrg3:type>
+							<nrg3:endUse codeSpace="nrg_enduse_codespace_1">heating</nrg3:endUse>
+							<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg3:energyCarrier>
+							<nrg3:maximumLoad uom="kW">4</nrg3:maximumLoad>
+							<nrg3:source codeSpace="nrg_source_codespace_1">powerGrid</nrg3:source>
+						</nrg3:Energy>
+					</nrg3:resource>
+					<nrg3:resource>
+						<nrg3:Energy gml:id="id_uaf_res_energy_3">
 							<gml:description>This is EnergyDemand 3 of id_urban_function_area_1_3</gml:description>
 							<gml:name>Energy 3</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_1">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_1">measurement</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="kWh/a">200</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:co2Equivalent uom="kg/a">5</nrg2:co2Equivalent>
-							<nrg2:costsMoney uom="Euro">12</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">5</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="eng_type_codespace_1">primary</nrg2:type>
-							<nrg2:endUse codeSpace="nrg_enduse_codespace_1">cooking</nrg2:endUse>
-							<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg2:energyCarrier>
-							<nrg2:maximumLoad uom="kW">4</nrg2:maximumLoad>
-							<nrg2:source codeSpace="nrg_source_codespace_1">powerGrid</nrg2:source>
-						</nrg2:Energy>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_1">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_1">measurement</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="kWh/a">200</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:co2Equivalent uom="kg/a">5</nrg3:co2Equivalent>
+							<nrg3:costsMoney uom="Euro">12</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">5</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="eng_type_codespace_1">primary</nrg3:type>
+							<nrg3:endUse codeSpace="nrg_enduse_codespace_1">cooking</nrg3:endUse>
+							<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg3:energyCarrier>
+							<nrg3:maximumLoad uom="kW">4</nrg3:maximumLoad>
+							<nrg3:source codeSpace="nrg_source_codespace_1">powerGrid</nrg3:source>
+						</nrg3:Energy>
+					</nrg3:resource>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_3_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_3_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>140 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
-							<nrg2:resource>
-								<nrg2:Energy gml:id="id_uaf_res_energy_4">
+							</nrg3:referencePoint>
+							<nrg3:resource>
+								<nrg3:Energy gml:id="id_uaf_res_energy_4">
 									<gml:description>This is EnergyDemand 4 of id_urban_function_area_1_3_1</gml:description>
 									<gml:name>Energy 4</gml:name>
-									<nrg2:status>actual</nrg2:status>
-									<nrg2:operationType codeSpace="resource-oper_codespace_1">demands</nrg2:operationType>
-									<nrg2:amountType codeSpace="amnt_type_codespace_1">measurement</nrg2:amountType>
-									<nrg2:year>2023</nrg2:year>
-									<nrg2:amount uom="kWh/a">3200</nrg2:amount>
-									<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-									<nrg2:co2Equivalent uom="kg/a">45</nrg2:co2Equivalent>
-									<nrg2:costsMoney uom="Euro">112</nrg2:costsMoney>
-									<nrg2:yieldsMoney uom="Euro">53</nrg2:yieldsMoney>
-									<nrg2:type codeSpace="eng_type_codespace_1">primary</nrg2:type>
-									<nrg2:endUse codeSpace="nrg_enduse_codespace_1">cooling</nrg2:endUse>
-									<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg2:energyCarrier>
-									<nrg2:maximumLoad uom="kW">4</nrg2:maximumLoad>
-									<nrg2:source codeSpace="nrg_source_codespace_1">powerGrid</nrg2:source>
-								</nrg2:Energy>
-							</nrg2:resource>
+									<nrg3:status>actual</nrg3:status>
+									<nrg3:operationType codeSpace="resource-oper_codespace_1">demands</nrg3:operationType>
+									<nrg3:amountType codeSpace="amnt_type_codespace_1">measurement</nrg3:amountType>
+									<nrg3:year>2023</nrg3:year>
+									<nrg3:amount uom="kWh/a">3200</nrg3:amount>
+									<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+									<nrg3:co2Equivalent uom="kg/a">45</nrg3:co2Equivalent>
+									<nrg3:costsMoney uom="Euro">112</nrg3:costsMoney>
+									<nrg3:yieldsMoney uom="Euro">53</nrg3:yieldsMoney>
+									<nrg3:type codeSpace="eng_type_codespace_1">primary</nrg3:type>
+									<nrg3:endUse codeSpace="nrg_enduse_codespace_1">cooling</nrg3:endUse>
+									<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg3:energyCarrier>
+									<nrg3:maximumLoad uom="kW">4</nrg3:maximumLoad>
+									<nrg3:source codeSpace="nrg_source_codespace_1">powerGrid</nrg3:source>
+								</nrg3:Energy>
+							</nrg3:resource>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -524,19 +524,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_3_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_3_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>100 75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -553,19 +553,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_3_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_3_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>140 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -582,19 +582,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_3_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_3_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>100 25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -611,9 +611,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_3" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -628,47 +628,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_4">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_4">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-40 -50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:resource>
-						<nrg2:Water gml:id="id_uaf_res_water_2">
+					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Water gml:id="id_uaf_res_water_2">
 							<gml:description>This is WaterDemand 2 of id_urban_function_area_1_4</gml:description>
 							<gml:name>WaterDemand 2</gml:name>
-							<nrg2:status>actual</nrg2:status>
-							<nrg2:operationType codeSpace="resource-oper_codespace_13">demands</nrg2:operationType>
-							<nrg2:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg2:amountType>
-							<nrg2:year>2023</nrg2:year>
-							<nrg2:amount uom="m3/a">12</nrg2:amount>
-							<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-							<nrg2:costsMoney uom="Euro">11</nrg2:costsMoney>
-							<nrg2:yieldsMoney uom="Euro">2</nrg2:yieldsMoney>
-							<nrg2:type codeSpace="wat_type_codespace_7">drinkWater</nrg2:type>
-							<nrg2:endUse codeSpace="wat_enduse_codespace_7">washing</nrg2:endUse>
-						</nrg2:Water>
-					</nrg2:resource>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="resource-oper_codespace_13">demands</nrg3:operationType>
+							<nrg3:amountType codeSpace="amnt_type_codespace_13">calibratedSimulation</nrg3:amountType>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:amount uom="m3/a">12</nrg3:amount>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:costsMoney uom="Euro">11</nrg3:costsMoney>
+							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
+							<nrg3:type codeSpace="wat_type_codespace_7">drinkWater</nrg3:type>
+							<nrg3:endUse codeSpace="wat_enduse_codespace_7">washing</nrg3:endUse>
+						</nrg3:Water>
+					</nrg3:resource>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_4_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_4_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-60 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -685,19 +685,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_4_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_4_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-60 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -714,19 +714,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_4_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_4_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-20 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -743,19 +743,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_4_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_4_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>-20 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -772,9 +772,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_4" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -789,31 +789,31 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_5">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_5">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>40 -50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_5_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_5_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>60 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -830,19 +830,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_5_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_5_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>20 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -859,19 +859,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_5_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_5_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>60 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -888,19 +888,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_5_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_5_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>20 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -917,9 +917,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_5" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -934,31 +934,31 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:groupMember>
-				<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_6">
+				<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_6">
 					<gml:description>This is an UrbanFunctionArea of second level</gml:description>
 					<gml:name>UrbanFunctionArea of second level</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>120 -50 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<grp:class>UrbanFuncionArea_class</grp:class>
 					<grp:function>UrbanFuncionArea_function</grp:function>
 					<grp:usage>UrbanFuncionArea_usage</grp:usage>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_6_1">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_6_1">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>100 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -975,19 +975,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_6_2">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_6_2">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>140 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -1004,19 +1004,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_6_3">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_6_3">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>100 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -1033,19 +1033,19 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:groupMember>
-						<nrg2:UrbanFunctionArea gml:id="id_urban_function_area_1_6_4">
+						<nrg3:UrbanFunctionArea gml:id="id_urban_function_area_1_6_4">
 							<gml:description>This is an UrbanFunctionArea of third level</gml:description>
 							<gml:name>UrbanFunctionArea of third level</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>140 -75 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<grp:class>UrbanFuncionArea_class</grp:class>
 							<grp:function>UrbanFuncionArea_function</grp:function>
 							<grp:usage>UrbanFuncionArea_usage</grp:usage>
@@ -1062,9 +1062,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</grp:geometry>
-							<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg2:type>
-							<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg2:code>
-						</nrg2:UrbanFunctionArea>
+							<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_13</nrg3:type>
+							<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_13</nrg3:code>
+						</nrg3:UrbanFunctionArea>
 					</grp:groupMember>
 					<grp:geometry>
 						<gml:MultiSurface gml:id="id_MultiSurf_ufa_1_6" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -1079,9 +1079,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:surfaceMember>
 						</gml:MultiSurface>
 					</grp:geometry>
-					<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg2:type>
-					<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg2:code>
-				</nrg2:UrbanFunctionArea>
+					<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_12</nrg3:type>
+					<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_12</nrg3:code>
+				</nrg3:UrbanFunctionArea>
 			</grp:groupMember>
 			<grp:geometry>
 				<gml:MultiSurface gml:id="id_MultiSurf_ufa_1" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
@@ -1096,9 +1096,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</gml:surfaceMember>
 				</gml:MultiSurface>
 			</grp:geometry>
-			<nrg2:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_1</nrg2:type>
-			<nrg2:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_1</nrg2:code>
-		</nrg2:UrbanFunctionArea>
+			<nrg3:type codeSpace="urbfuncarea_type_codeSpace">urbfuncarea_type_1</nrg3:type>
+			<nrg3:code codeSpace="urbfuncarea_code_codeSpace">urbfuncarea_code_1</nrg3:code>
+		</nrg3:UrbanFunctionArea>
 	</core:cityObjectMember>
 	<app:appearanceMember>
 		<app:Appearance gml:id="id_appearance_1">

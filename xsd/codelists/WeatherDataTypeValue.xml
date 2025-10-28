@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WeatherDataTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">WeatherDataTypeValue</gml:identifier>
+  <gml:name>WeatherDataTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1348">
+      <gml:description>Temparature of air</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">airTemperature</gml:identifier>
+      <gml:name>airTemperature</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1349">
+      <gml:description>Relative air humidity</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">humidity</gml:identifier>
+      <gml:name>humidity</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1350">
+      <gml:description>Speed of wind</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">windSpeed</gml:identifier>
+      <gml:name>windSpeed</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1351">
+      <gml:description>Cloud amount in eights.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">cloudiness</gml:identifier>
+      <gml:name>cloudiness</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1352">
+      <gml:description>Total solar irradiance (Energy per area) on a horizontal area.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">globalSolarIrradiance</gml:identifier>
+      <gml:name>globalSolarIrradiance</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1353">
+      <gml:description>Direct solar irradiance (energy per area) on a horizontal surface.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">directSolarIrradiance</gml:identifier>
+      <gml:name>directSolarIrradiance</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1354">
+      <gml:description>Diffuse solar irradiance (energy per area) on a horizontal surface.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">diffuseSolarIrradiance</gml:identifier>
+      <gml:name>diffuseSolarIrradiance</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1355">
+      <gml:description>Long wave emission of the earth*s surface (energy per area).</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">terrestrialEmission</gml:identifier>
+      <gml:name>terrestrialEmission</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1356">
+      <gml:description>Downwards directed, long wave atmospheric re-emission.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">downwardTerrestrialRadiation</gml:identifier>
+      <gml:name>downwardTerrestrialRadiation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1357">
+      <gml:description>Daylight illuminance</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">daylightIlluminance</gml:identifier>
+      <gml:name>daylightIlluminance</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_1665">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">shadowingFactor</gml:identifier>
+      <gml:name>shadowingFactor</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_2025">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">windDirection</gml:identifier>
+      <gml:name>windDirection</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_820_2026">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherDataTypeValue">precipitation</gml:identifier>
+      <gml:name>precipitation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

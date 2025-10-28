@@ -8,9 +8,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-22
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -23,7 +23,7 @@ This file contains 11 buildings, which contain each:
 There is one multi-part building, consisting of 2 building
 parts.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 All CityObjects are modelled through a 3D reference
 point. The buildings possess some ADE attributes.
@@ -59,7 +59,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This city model contains a set of "fantasy" buildings created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>CityGML city of Alderaan</gml:name>
 	<gml:boundedBy>
@@ -73,74 +73,74 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 1</gml:description>
 			<gml:name>Snoke's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 1</nrg2:reason>
-					<nrg2:description>suitability description 1</nrg2:description>
-					<nrg2:value uom="unit interval">0</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 2</nrg2:reason>
-					<nrg2:description>suitability description 2</nrg2:description>
-					<nrg2:value uom="unit interval">0.3</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 3</nrg2:reason>
-					<nrg2:description>suitability description 3</nrg2:description>
-					<nrg2:value uom="unit interval">0.6</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_1">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 1</nrg3:reason>
+					<nrg3:description>suitability description 1</nrg3:description>
+					<nrg3:value uom="unit interval">0</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 2</nrg3:reason>
+					<nrg3:description>suitability description 2</nrg3:description>
+					<nrg3:value uom="unit interval">0.3</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 3</nrg3:reason>
+					<nrg3:description>suitability description 3</nrg3:description>
+					<nrg3:value uom="unit interval">0.6</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_1">
 					<gml:description>This is UtilityNetworkConnection 1</gml:description>
 					<gml:name>UtilityNetworkConnection 1</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_2">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_2">
 					<gml:description>This is UtilityNetworkConnection 2</gml:description>
 					<gml:name>UtilityNetworkConnection 2</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_3">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_3">
 					<gml:description>This is UtilityNetworkConnection 3</gml:description>
 					<gml:name>UtilityNetworkConnection 3</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -247,11 +247,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_1_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 1)</gml:description>
 					<gml:name>GroundSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -271,11 +271,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 1)</gml:description>
 					<gml:name>RoofSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -295,11 +295,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_1_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 1)</gml:description>
 					<gml:name>RoofSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -319,11 +319,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 1)</gml:description>
 					<gml:name>WallSurface 1 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -343,11 +343,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 1)</gml:description>
 					<gml:name>WallSurface 2 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -367,11 +367,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_1_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 1)</gml:description>
 					<gml:name>WallSurface 3 (Building 1)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_1_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -387,128 +387,128 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyCooled</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_1">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyCooled</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_1">
 					<gml:description>This is Energy Performance Certificate 1</gml:description>
 					<gml:name>Energy Performance Certificate 1</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">heating</nrg2:type>
-					<nrg2:label>A+++</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">10</nrg2:value>
-					<nrg2:issueDate>2017-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-15</nrg2:expirationDate>
-					<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_2">
+					<nrg3:type codeSpace="epc_codeSpace_iop">heating</nrg3:type>
+					<nrg3:label>A+++</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">10</nrg3:value>
+					<nrg3:issueDate>2017-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-15</nrg3:expirationDate>
+					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_2">
 					<gml:description>This is Energy Performance Certificate 2</gml:description>
 					<gml:name>Energy Performance Certificate 2</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">DHW</nrg2:type>
-					<nrg2:label>A</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">50</nrg2:value>
-					<nrg2:issueDate>2018-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-16</nrg2:expirationDate>
-					<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_3">
+					<nrg3:type codeSpace="epc_codeSpace_iop">DHW</nrg3:type>
+					<nrg3:label>A</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">50</nrg3:value>
+					<nrg3:issueDate>2018-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-16</nrg3:expirationDate>
+					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_3">
 					<gml:description>This is Energy Performance Certificate 3</gml:description>
 					<gml:name>Energy Performance Certificate 3</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-					<nrg2:label>B</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">60</nrg2:value>
-					<nrg2:issueDate>2019-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-17</nrg2:expirationDate>
-					<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_1">
+					<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+					<nrg3:label>B</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">60</nrg3:value>
+					<nrg3:issueDate>2019-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-17</nrg3:expirationDate>
+					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_1">
 					<gml:description>This is Refurbishment Measure 1</gml:description>
 					<gml:name>Refurbishment Measure 1</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">insulatedExteriorWalls</nrg2:type>
-					<nrg2:startDate>2020-02-01</nrg2:startDate>
-					<nrg2:endDate>2020-08-01</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_2">
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">insulatedExteriorWalls</nrg3:type>
+					<nrg3:startDate>2020-02-01</nrg3:startDate>
+					<nrg3:endDate>2020-08-01</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_2">
 					<gml:description>This is Refurbishment Measure 2</gml:description>
 					<gml:name>Refurbishment Measure 2</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">insulatedGroundFloor</nrg2:type>
-					<nrg2:startDate>2020-02-02</nrg2:startDate>
-					<nrg2:endDate>2020-08-02</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_3">
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">insulatedGroundFloor</nrg3:type>
+					<nrg3:startDate>2020-02-02</nrg3:startDate>
+					<nrg3:endDate>2020-08-02</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_3">
 					<gml:description>This is Refurbishment Measure 3</gml:description>
 					<gml:name>Refurbishment Measure 3</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_3</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">installedHeatPump</nrg2:type>
-					<nrg2:startDate>2020-02-03</nrg2:startDate>
-					<nrg2:endDate>2020-08-03</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_3</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">installedHeatPump</nrg3:type>
+					<nrg3:startDate>2020-02-03</nrg3:startDate>
+					<nrg3:endDate>2020-08-03</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -516,73 +516,73 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 2</gml:description>
 			<gml:name>Rey's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_1"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 4</nrg2:reason>
-					<nrg2:description>suitability description 4</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 5</nrg2:reason>
-					<nrg2:description>suitability description 5</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_4">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_1"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 4</nrg3:reason>
+					<nrg3:description>suitability description 4</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 5</nrg3:reason>
+					<nrg3:description>suitability description 5</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_4">
 					<gml:description>This is UtilityNetworkConnection 4</gml:description>
 					<gml:name>UtilityNetworkConnection 4</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_5">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_5">
 					<gml:description>This is UtilityNetworkConnection 5</gml:description>
 					<gml:name>UtilityNetworkConnection 5</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_6">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_6">
 					<gml:description>This is UtilityNetworkConnection 6</gml:description>
 					<gml:name>UtilityNetworkConnection 6</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -697,11 +697,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_2_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 2)</gml:description>
 					<gml:name>GroundSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -721,11 +721,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 2)</gml:description>
 					<gml:name>RoofSurface 1 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -745,11 +745,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_2_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 2)</gml:description>
 					<gml:name>RoofSurface 2 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -769,11 +769,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_1">
 					<gml:description>This is WallSurface 4 (split)</gml:description>
 					<gml:name>WallSurface 4 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -793,11 +793,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_2">
 					<gml:description>This is WallSurface 6 (split)</gml:description>
 					<gml:name>WallSurface 6 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -817,11 +817,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 2)</gml:description>
 					<gml:name>WallSurface 3 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -841,11 +841,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_2_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 2)</gml:description>
 					<gml:name>WallSurface 4 (Building 2)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_2_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -861,82 +861,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyCooled</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_4">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyCooled</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_4">
 					<gml:description>This is Energy Performance Certificate 4</gml:description>
 					<gml:name>Energy Performance Certificate 4</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">cooling</nrg2:type>
-					<nrg2:label>C</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">110</nrg2:value>
-					<nrg2:issueDate>2020-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-18</nrg2:expirationDate>
-					<nrg2:certificationMethod>CasaClima</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_4">
+					<nrg3:type codeSpace="epc_codeSpace_iop">cooling</nrg3:type>
+					<nrg3:label>C</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">110</nrg3:value>
+					<nrg3:issueDate>2020-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-18</nrg3:expirationDate>
+					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_4">
 					<gml:description>This is Refurbishment Measure 4</gml:description>
 					<gml:name>Refurbishment Measure 4</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_4</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">changedBoiler</nrg2:type>
-					<nrg2:startDate>2020-02-04</nrg2:startDate>
-					<nrg2:endDate>2020-08-04</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_4</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">changedBoiler</nrg3:type>
+					<nrg3:startDate>2020-02-04</nrg3:startDate>
+					<nrg3:endDate>2020-08-04</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -944,66 +944,66 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 3</gml:description>
 			<gml:name>Poe's Hangar</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>25 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_4"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 6</nrg2:reason>
-					<nrg2:description>suitability description 6</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_7">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_4"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 6</nrg3:reason>
+					<nrg3:description>suitability description 6</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_7">
 					<gml:description>This is UtilityNetworkConnection 7</gml:description>
 					<gml:name>UtilityNetworkConnection 7</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_8">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_8">
 					<gml:description>This is UtilityNetworkConnection 8</gml:description>
 					<gml:name>UtilityNetworkConnection 8</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_9">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_9">
 					<gml:description>This is UtilityNetworkConnection 9</gml:description>
 					<gml:name>UtilityNetworkConnection 9</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">traffic</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hangar</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1118,11 +1118,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_3_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 3)</gml:description>
 					<gml:name>GroundSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1142,11 +1142,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 3)</gml:description>
 					<gml:name>RoofSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>22.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1166,11 +1166,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_3_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 3)</gml:description>
 					<gml:name>RoofSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>27.5 5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1190,11 +1190,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 3)</gml:description>
 					<gml:name>WallSurface 1 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 0 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1214,11 +1214,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_3_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 3)</gml:description>
 					<gml:name>WallSurface 2 (Building 3)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>25 10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_3_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1234,82 +1234,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyCooled</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_5">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyCooled</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_5">
 					<gml:description>This is Energy Performance Certificate 5</gml:description>
 					<gml:name>Energy Performance Certificate 5</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-					<nrg2:label>D</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">160</nrg2:value>
-					<nrg2:issueDate>2021-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-19</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 1</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_5">
+					<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+					<nrg3:label>D</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">160</nrg3:value>
+					<nrg3:issueDate>2021-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-19</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 1</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_5">
 					<gml:description>This is Refurbishment Measure 5</gml:description>
 					<gml:name>Refurbishment Measure 5</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_5</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">insulatedWholeThermalHull</nrg2:type>
-					<nrg2:startDate>2020-02-05</nrg2:startDate>
-					<nrg2:endDate>2020-08-05</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_5</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">insulatedWholeThermalHull</nrg3:type>
+					<nrg3:startDate>2020-02-05</nrg3:startDate>
+					<nrg3:endDate>2020-08-05</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1317,60 +1317,60 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 4</gml:description>
 			<gml:name>Fin's Cabin</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>35 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_3"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 7</nrg2:reason>
-					<nrg2:description>suitability description 7</nrg2:description>
-					<nrg2:value uom="unit interval">0</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_10">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_3"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 7</nrg3:reason>
+					<nrg3:description>suitability description 7</nrg3:description>
+					<nrg3:value uom="unit interval">0</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_10">
 					<gml:description>This is UtilityNetworkConnection 10</gml:description>
 					<gml:name>UtilityNetworkConnection 10</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_11">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_11">
 					<gml:description>This is UtilityNetworkConnection 11</gml:description>
 					<gml:name>UtilityNetworkConnection 11</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_12">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_12">
 					<gml:description>This is UtilityNetworkConnection 12</gml:description>
 					<gml:name>UtilityNetworkConnection 12</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1955</bldg:yearOfConstruction>
@@ -1477,11 +1477,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_4_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 4)</gml:description>
 					<gml:name>GroundSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1501,11 +1501,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 4)</gml:description>
 					<gml:name>RoofSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1525,11 +1525,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_4_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 4)</gml:description>
 					<gml:name>RoofSurface 2 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1549,11 +1549,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 4)</gml:description>
 					<gml:name>WallSurface 1 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>40 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1573,11 +1573,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_2">
 					<gml:description>This is WallSurface 8 (split)</gml:description>
 					<gml:name>WallSurface 8 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1597,11 +1597,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 4)</gml:description>
 					<gml:name>WallSurface 3 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1621,11 +1621,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_4_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 4)</gml:description>
 					<gml:name>WallSurface 4 (Building 4)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_4_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1641,82 +1641,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyCooled</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_6">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyCooled</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_6">
 					<gml:description>This is Energy Performance Certificate 6</gml:description>
 					<gml:name>Energy Performance Certificate 6</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">heating</nrg2:type>
-					<nrg2:label>D</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">170</nrg2:value>
-					<nrg2:issueDate>2022-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-20</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 2</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_6">
+					<nrg3:type codeSpace="epc_codeSpace_iop">heating</nrg3:type>
+					<nrg3:label>D</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">170</nrg3:value>
+					<nrg3:issueDate>2022-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-20</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 2</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_6">
 					<gml:description>This is Refurbishment Measure 6</gml:description>
 					<gml:name>Refurbishment Measure 6</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_6</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">installedFloorHeating</nrg2:type>
-					<nrg2:startDate>2020-02-06</nrg2:startDate>
-					<nrg2:endDate>2020-08-06</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_6</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">installedFloorHeating</nrg3:type>
+					<nrg3:startDate>2020-02-06</nrg3:startDate>
+					<nrg3:endDate>2020-08-06</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -1724,60 +1724,60 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 5</gml:description>
 			<gml:name>Yoda's Hut</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>55 5 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_6"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 8</nrg2:reason>
-					<nrg2:description>suitability description 8</nrg2:description>
-					<nrg2:value uom="unit interval">0.5</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_13">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_6"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 8</nrg3:reason>
+					<nrg3:description>suitability description 8</nrg3:description>
+					<nrg3:value uom="unit interval">0.5</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_13">
 					<gml:description>This is UtilityNetworkConnection 13</gml:description>
 					<gml:name>UtilityNetworkConnection 13</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_14">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_14">
 					<gml:description>This is UtilityNetworkConnection 14</gml:description>
 					<gml:name>UtilityNetworkConnection 14</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_15">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_15">
 					<gml:description>This is UtilityNetworkConnection 15</gml:description>
 					<gml:name>UtilityNetworkConnection 15</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">healthcare</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">hospital</bldg:function>
 			<bldg:yearOfConstruction>1980</bldg:yearOfConstruction>
@@ -1884,11 +1884,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_5_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 5)</gml:description>
 					<gml:name>GroundSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 5 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1908,11 +1908,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 5)</gml:description>
 					<gml:name>RoofSurface 1 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 2.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1932,11 +1932,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_5_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 5)</gml:description>
 					<gml:name>RoofSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1956,11 +1956,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_1">
 					<gml:description>This is WallSurface 9 (split)</gml:description>
 					<gml:name>WallSurface 9 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -1980,11 +1980,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 5)</gml:description>
 					<gml:name>WallSurface 2 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>50 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2004,11 +2004,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 5)</gml:description>
 					<gml:name>WallSurface 3 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2028,11 +2028,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_5_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 5)</gml:description>
 					<gml:name>WallSurface 4 (Building 5)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>55 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_5_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2048,82 +2048,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>unknown</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>unknown</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">singleFamilyHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_7">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>unknown</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>unknown</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">singleFamilyHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_7">
 					<gml:description>This is Energy Performance Certificate 7</gml:description>
 					<gml:name>Energy Performance Certificate 7</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">DHW</nrg2:type>
-					<nrg2:label>E</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">240</nrg2:value>
-					<nrg2:issueDate>2023-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-21</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 3</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_7">
+					<nrg3:type codeSpace="epc_codeSpace_iop">DHW</nrg3:type>
+					<nrg3:label>E</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">240</nrg3:value>
+					<nrg3:issueDate>2023-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-21</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 3</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_7">
 					<gml:description>This is Refurbishment Measure 7</gml:description>
 					<gml:name>Refurbishment Measure 7</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_7</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">changedWindows</nrg2:type>
-					<nrg2:startDate>2020-02-07</nrg2:startDate>
-					<nrg2:endDate>2020-08-07</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_7</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">changedWindows</nrg3:type>
+					<nrg3:startDate>2020-02-07</nrg3:startDate>
+					<nrg3:endDate>2020-08-07</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2131,60 +2131,60 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 6</gml:description>
 			<gml:name>Amidala's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_5"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 9</nrg2:reason>
-					<nrg2:description>suitability description 9</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_16">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_5"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 9</nrg3:reason>
+					<nrg3:description>suitability description 9</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_16">
 					<gml:description>This is UtilityNetworkConnection 16</gml:description>
 					<gml:name>UtilityNetworkConnection 16</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_17">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_17">
 					<gml:description>This is UtilityNetworkConnection 17</gml:description>
 					<gml:name>UtilityNetworkConnection 17</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_18">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_18">
 					<gml:description>This is UtilityNetworkConnection 18</gml:description>
 					<gml:name>UtilityNetworkConnection 18</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1997</bldg:yearOfConstruction>
@@ -2291,11 +2291,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_6_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 6)</gml:description>
 					<gml:name>GroundSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2315,11 +2315,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 6)</gml:description>
 					<gml:name>RoofSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>62.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2339,11 +2339,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_6_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 6)</gml:description>
 					<gml:name>RoofSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>67.5 10 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2363,11 +2363,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 6)</gml:description>
 					<gml:name>WallSurface 1 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 5 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2387,11 +2387,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 6)</gml:description>
 					<gml:name>WallSurface 2 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 15 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2411,11 +2411,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_3">
 					<gml:description>This is WallSurface 1 (split)</gml:description>
 					<gml:name>WallSurface 1 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2435,11 +2435,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_6_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 6)</gml:description>
 					<gml:name>WallSurface 4 (Building 6)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_6_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2455,82 +2455,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>unknown</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>unknown</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">singleFamilyHouse</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_8">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>unknown</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>unknown</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">singleFamilyHouse</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_8">
 					<gml:description>This is Energy Performance Certificate 8</gml:description>
 					<gml:name>Energy Performance Certificate 8</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-					<nrg2:label>F</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">260</nrg2:value>
-					<nrg2:issueDate>2024-05-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-22</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 4</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_8">
+					<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+					<nrg3:label>F</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">260</nrg3:value>
+					<nrg3:issueDate>2024-05-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-22</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 4</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_8">
 					<gml:description>This is Refurbishment Measure 8</gml:description>
 					<gml:name>Refurbishment Measure 8</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_8</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">changedDoors</nrg2:type>
-					<nrg2:startDate>2020-02-08</nrg2:startDate>
-					<nrg2:endDate>2020-08-08</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_8</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">changedDoors</nrg3:type>
+					<nrg3:startDate>2020-02-08</nrg3:startDate>
+					<nrg3:endDate>2020-08-08</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2538,60 +2538,60 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 7</gml:description>
 			<gml:name>Palapatine's Residence</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>5 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_8"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 10</nrg2:reason>
-					<nrg2:description>suitability description 10</nrg2:description>
-					<nrg2:value uom="unit interval">0</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_19">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_8"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 10</nrg3:reason>
+					<nrg3:description>suitability description 10</nrg3:description>
+					<nrg3:value uom="unit interval">0</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_19">
 					<gml:description>This is UtilityNetworkConnection 19</gml:description>
 					<gml:name>UtilityNetworkConnection 19</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_20">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_20">
 					<gml:description>This is UtilityNetworkConnection 20</gml:description>
 					<gml:name>UtilityNetworkConnection 20</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_21">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_21">
 					<gml:description>This is UtilityNetworkConnection 21</gml:description>
 					<gml:name>UtilityNetworkConnection 21</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>2005</bldg:yearOfConstruction>
@@ -2698,11 +2698,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_7_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 7)</gml:description>
 					<gml:name>GroundSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2722,11 +2722,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 7)</gml:description>
 					<gml:name>RoofSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>2.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2746,11 +2746,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_7_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 7)</gml:description>
 					<gml:name>RoofSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>7.5 -25 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2770,11 +2770,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 7)</gml:description>
 					<gml:name>WallSurface 1 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -30 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2794,11 +2794,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 7)</gml:description>
 					<gml:name>WallSurface 2 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>5 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2818,11 +2818,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 7)</gml:description>
 					<gml:name>WallSurface 3 (Building 7)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2842,11 +2842,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_7_wallsurface_4">
 					<gml:description>This is WallSurface 3 (split)</gml:description>
 					<gml:name>WallSurface 3 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_7_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -2862,82 +2862,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_9">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_9">
 					<gml:description>This is Energy Performance Certificate 9</gml:description>
 					<gml:name>Energy Performance Certificate 9</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">cooling</nrg2:type>
-					<nrg2:label>G</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">280</nrg2:value>
-					<nrg2:issueDate>2017-01-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-23</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 5</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_9">
+					<nrg3:type codeSpace="epc_codeSpace_iop">cooling</nrg3:type>
+					<nrg3:label>G</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">280</nrg3:value>
+					<nrg3:issueDate>2017-01-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-23</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 5</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_9">
 					<gml:description>This is Refurbishment Measure 9</gml:description>
 					<gml:name>Refurbishment Measure 9</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_9</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">insulatedRoof</nrg2:type>
-					<nrg2:startDate>2020-02-09</nrg2:startDate>
-					<nrg2:endDate>2020-08-09</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_9</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">insulatedRoof</nrg3:type>
+					<nrg3:startDate>2020-02-09</nrg3:startDate>
+					<nrg3:endDate>2020-08-09</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -2945,60 +2945,60 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 8</gml:description>
 			<gml:name>Darth Vader's Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>15 -20 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_building_7"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 11</nrg2:reason>
-					<nrg2:description>suitability description 11</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_22">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_building_7"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 11</nrg3:reason>
+					<nrg3:description>suitability description 11</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_22">
 					<gml:description>This is UtilityNetworkConnection 22</gml:description>
 					<gml:name>UtilityNetworkConnection 22</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_23">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_23">
 					<gml:description>This is UtilityNetworkConnection 23</gml:description>
 					<gml:name>UtilityNetworkConnection 23</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_24">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_24">
 					<gml:description>This is UtilityNetworkConnection 24</gml:description>
 					<gml:name>UtilityNetworkConnection 24</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -3105,11 +3105,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_8_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 8)</gml:description>
 					<gml:name>GroundSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -20 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3129,11 +3129,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 8)</gml:description>
 					<gml:name>RoofSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3153,11 +3153,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_8_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 8)</gml:description>
 					<gml:name>RoofSurface 2 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -17.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3177,11 +3177,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 8)</gml:description>
 					<gml:name>WallSurface 1 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>20 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3201,11 +3201,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_2">
 					<gml:description>This is WallSurface 7 (split)</gml:description>
 					<gml:name>WallSurface 7 (split)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>10 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3225,11 +3225,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 8)</gml:description>
 					<gml:name>WallSurface 3 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3249,11 +3249,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_8_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 8)</gml:description>
 					<gml:name>WallSurface 4 (Building 8)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>15 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_8_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -3269,82 +3269,82 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_10">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_10">
 					<gml:description>This is Energy Performance Certificate 10</gml:description>
 					<gml:name>Energy Performance Certificate 10</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">total</nrg2:type>
-					<nrg2:label>B</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">50</nrg2:value>
-					<nrg2:issueDate>2018-01-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-24</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 6</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_10">
+					<nrg3:type codeSpace="epc_codeSpace_iop">total</nrg3:type>
+					<nrg3:label>B</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">50</nrg3:value>
+					<nrg3:issueDate>2018-01-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-24</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 6</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_10">
 					<gml:description>This is Refurbishment Measure 10</gml:description>
 					<gml:name>Refurbishment Measure 10</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_10</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">installedSolarPanels</nrg2:type>
-					<nrg2:startDate>2020-02-10</nrg2:startDate>
-					<nrg2:endDate>2020-08-10</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_10</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">installedSolarPanels</nrg3:type>
+					<nrg3:startDate>2020-02-10</nrg3:startDate>
+					<nrg3:endDate>2020-08-10</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -3352,42 +3352,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is multi-part Building 9-10</gml:description>
 			<gml:name>Jabba's multi-part Palace</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_31">
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_31">
 					<gml:description>This is UtilityNetworkConnection 31</gml:description>
 					<gml:name>UtilityNetworkConnection 31</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_32">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_32">
 					<gml:description>This is UtilityNetworkConnection 32</gml:description>
 					<gml:name>UtilityNetworkConnection 32</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_33">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_33">
 					<gml:description>This is UtilityNetworkConnection 33</gml:description>
 					<gml:name>UtilityNetworkConnection 33</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -3401,53 +3401,53 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 9</gml:description>
 					<gml:name>Jabba's dungeon</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>35 -20 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_10"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_28">
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_10"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_28">
 							<gml:description>This is UtilityNetworkConnection 28</gml:description>
 							<gml:name>UtilityNetworkConnection 28</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-							<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_29">
+							<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+							<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_29">
 							<gml:description>This is UtilityNetworkConnection 29</gml:description>
 							<gml:name>UtilityNetworkConnection 29</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-							<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_30">
+							<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+							<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_30">
 							<gml:description>This is UtilityNetworkConnection 30</gml:description>
 							<gml:name>UtilityNetworkConnection 30</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-							<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
+							<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+							<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1965</bldg:yearOfConstruction>
@@ -3554,11 +3554,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_9_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 9)</gml:description>
 							<gml:name>GroundSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -20 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3578,11 +3578,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 9)</gml:description>
 							<gml:name>RoofSurface 1 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3602,11 +3602,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_9_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 9)</gml:description>
 							<gml:name>RoofSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -17.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3626,11 +3626,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_1">
 							<gml:description>This is WallSurface 5 (split)</gml:description>
 							<gml:name>WallSurface 5 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3650,11 +3650,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_2">
 							<gml:description>This is WallSurface 2 (Building 9)</gml:description>
 							<gml:name>WallSurface 2 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>30 -20 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3674,11 +3674,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 9)</gml:description>
 							<gml:name>WallSurface 3 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -25 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3698,11 +3698,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_9_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 9)</gml:description>
 							<gml:name>WallSurface 4 (Building 9)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>35 -15 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_9_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3718,59 +3718,59 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</bldg:lod2MultiSurface>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
-					<nrg2:bdgArea>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:bdgArea>
-					<nrg2:bdgArea>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:bdgArea>
-					<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-					<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-					<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">light</nrg2:bdgConstructionWeight>
-					<nrg2:bdgHeight>
-						<nrg2:QualifiedHeight>
-							<nrg2:description>This is a type of height</nrg2:description>
-							<nrg2:source>Height value source text</nrg2:source>
-							<nrg2:value uom="m">15</nrg2:value>
-							<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-						</nrg2:QualifiedHeight>
-					</nrg2:bdgHeight>
-					<nrg2:bdgHeight>
-						<nrg2:QualifiedHeight>
-							<nrg2:description>This is a type of height</nrg2:description>
-							<nrg2:source>Height value source text</nrg2:source>
-							<nrg2:value uom="m">0</nrg2:value>
-							<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-						</nrg2:QualifiedHeight>
-					</nrg2:bdgHeight>
-					<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-					<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-					<nrg2:bdgVolume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:bdgVolume>
-					<nrg2:bdgVolume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:bdgVolume>
+					<nrg3:bdgArea>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:bdgArea>
+					<nrg3:bdgArea>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:bdgArea>
+					<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+					<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+					<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">light</nrg3:bdgConstructionWeight>
+					<nrg3:bdgHeight>
+						<nrg3:QualifiedHeight>
+							<nrg3:description>This is a type of height</nrg3:description>
+							<nrg3:source>Height value source text</nrg3:source>
+							<nrg3:value uom="m">15</nrg3:value>
+							<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+						</nrg3:QualifiedHeight>
+					</nrg3:bdgHeight>
+					<nrg3:bdgHeight>
+						<nrg3:QualifiedHeight>
+							<nrg3:description>This is a type of height</nrg3:description>
+							<nrg3:source>Height value source text</nrg3:source>
+							<nrg3:value uom="m">0</nrg3:value>
+							<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+						</nrg3:QualifiedHeight>
+					</nrg3:bdgHeight>
+					<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+					<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+					<nrg3:bdgVolume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:bdgVolume>
+					<nrg3:bdgVolume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:bdgVolume>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
 			<bldg:consistsOfBuildingPart>
@@ -3778,53 +3778,53 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 10</gml:description>
 					<gml:name>The rancor's prison</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>45 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
-					<nrg2:relatedTo>
-						<nrg2:CityObjectRelation>
-							<nrg2:relationType codeSpace="adjacent_codeList">adjacent</nrg2:relationType>
-							<nrg2:relatedTo xlink:href="#id_buildingpart_9"/>
-						</nrg2:CityObjectRelation>
-					</nrg2:relatedTo>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_25">
+					</nrg3:referencePoint>
+					<nrg3:relatedTo>
+						<nrg3:CityObjectRelation>
+							<nrg3:relationType codeSpace="adjacent_codeList">adjacent</nrg3:relationType>
+							<nrg3:relatedTo xlink:href="#id_buildingpart_9"/>
+						</nrg3:CityObjectRelation>
+					</nrg3:relatedTo>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_25">
 							<gml:description>This is UtilityNetworkConnection 25</gml:description>
 							<gml:name>UtilityNetworkConnection 25</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-							<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_26">
+							<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+							<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_26">
 							<gml:description>This is UtilityNetworkConnection 26</gml:description>
 							<gml:name>UtilityNetworkConnection 26</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-							<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
-					<nrg2:utilityNetworkConnection>
-						<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_27">
+							<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+							<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
+					<nrg3:utilityNetworkConnection>
+						<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_27">
 							<gml:description>This is UtilityNetworkConnection 27</gml:description>
 							<gml:name>UtilityNetworkConnection 27</gml:name>
-							<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-							<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-							<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-							<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-							<nrg2:networkID>network_id</nrg2:networkID>
-							<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-						</nrg2:UtilityNetworkConnection>
-					</nrg2:utilityNetworkConnection>
+							<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+							<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+							<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+							<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+							<nrg3:networkID>network_id</nrg3:networkID>
+							<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+						</nrg3:UtilityNetworkConnection>
+					</nrg3:utilityNetworkConnection>
 					<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 					<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 					<bldg:yearOfConstruction>1940</bldg:yearOfConstruction>
@@ -3931,11 +3931,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:GroundSurface gml:id="id_buildingpart_10_groundsurface_1">
 							<gml:description>This is GroundSurface 1 (Building 10)</gml:description>
 							<gml:name>GroundSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -25 0</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3955,11 +3955,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_1">
 							<gml:description>This is RoofSurface 1 (Building 10)</gml:description>
 							<gml:name>RoofSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -27.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -3979,11 +3979,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:RoofSurface gml:id="id_buildingpart_10_roofsurface_2">
 							<gml:description>This is RoofSurface 2 (Building 10)</gml:description>
 							<gml:name>RoofSurface 2 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -22.5 12.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4003,11 +4003,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_1">
 							<gml:description>This is WallSurface 1 (Building 10)</gml:description>
 							<gml:name>WallSurface 1 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>50 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4027,11 +4027,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_2">
 							<gml:description>This is WallSurface 2 (split)</gml:description>
 							<gml:name>WallSurface 2 (split)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>40 -25 7.5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4051,11 +4051,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_3">
 							<gml:description>This is WallSurface 3 (Building 10)</gml:description>
 							<gml:name>WallSurface 3 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -30 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4075,11 +4075,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						<bldg:WallSurface gml:id="id_buildingpart_10_wallsurface_4">
 							<gml:description>This is WallSurface 4 (Building 10)</gml:description>
 							<gml:name>WallSurface 4 (Building 10)</gml:name>
-							<nrg2:referencePoint>
+							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:pos>45 -20 5</gml:pos>
 								</gml:Point>
-							</nrg2:referencePoint>
+							</nrg3:referencePoint>
 							<bldg:lod2MultiSurface>
 								<gml:MultiSurface gml:id="id_buildingpart_10_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
@@ -4095,136 +4095,136 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</bldg:lod2MultiSurface>
 						</bldg:WallSurface>
 					</bldg:boundedBy>
-					<nrg2:bdgArea>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">300</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:bdgArea>
-					<nrg2:bdgArea>
-						<nrg2:QualifiedArea>
-							<nrg2:description>This is a type of floor area</nrg2:description>
-							<nrg2:source>Area value source text</nrg2:source>
-							<nrg2:value uom="m^2">100</nrg2:value>
-							<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-						</nrg2:QualifiedArea>
-					</nrg2:bdgArea>
-					<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-					<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-					<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">light</nrg2:bdgConstructionWeight>
-					<nrg2:bdgHeight>
-						<nrg2:QualifiedHeight>
-							<nrg2:description>This is a type of height</nrg2:description>
-							<nrg2:source>Height value source text</nrg2:source>
-							<nrg2:value uom="m">15</nrg2:value>
-							<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-						</nrg2:QualifiedHeight>
-					</nrg2:bdgHeight>
-					<nrg2:bdgHeight>
-						<nrg2:QualifiedHeight>
-							<nrg2:description>This is a type of height</nrg2:description>
-							<nrg2:source>Height value source text</nrg2:source>
-							<nrg2:value uom="m">0</nrg2:value>
-							<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-						</nrg2:QualifiedHeight>
-					</nrg2:bdgHeight>
-					<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-					<nrg2:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg2:bdgType>
-					<nrg2:bdgVolume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">1250</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:bdgVolume>
-					<nrg2:bdgVolume>
-						<nrg2:QualifiedVolume>
-							<nrg2:description>This is a type of volume</nrg2:description>
-							<nrg2:source>Volume value source text</nrg2:source>
-							<nrg2:value uom="m^3">875</nrg2:value>
-							<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-						</nrg2:QualifiedVolume>
-					</nrg2:bdgVolume>
+					<nrg3:bdgArea>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">300</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:bdgArea>
+					<nrg3:bdgArea>
+						<nrg3:QualifiedArea>
+							<nrg3:description>This is a type of floor area</nrg3:description>
+							<nrg3:source>Area value source text</nrg3:source>
+							<nrg3:value uom="m^2">100</nrg3:value>
+							<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+						</nrg3:QualifiedArea>
+					</nrg3:bdgArea>
+					<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+					<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+					<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">light</nrg3:bdgConstructionWeight>
+					<nrg3:bdgHeight>
+						<nrg3:QualifiedHeight>
+							<nrg3:description>This is a type of height</nrg3:description>
+							<nrg3:source>Height value source text</nrg3:source>
+							<nrg3:value uom="m">15</nrg3:value>
+							<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+						</nrg3:QualifiedHeight>
+					</nrg3:bdgHeight>
+					<nrg3:bdgHeight>
+						<nrg3:QualifiedHeight>
+							<nrg3:description>This is a type of height</nrg3:description>
+							<nrg3:source>Height value source text</nrg3:source>
+							<nrg3:value uom="m">0</nrg3:value>
+							<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+						</nrg3:QualifiedHeight>
+					</nrg3:bdgHeight>
+					<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+					<nrg3:bdgType codeSpace="bdgType_codeSpace">terracedHouse</nrg3:bdgType>
+					<nrg3:bdgVolume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">1250</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:bdgVolume>
+					<nrg3:bdgVolume>
+						<nrg3:QualifiedVolume>
+							<nrg3:description>This is a type of volume</nrg3:description>
+							<nrg3:source>Volume value source text</nrg3:source>
+							<nrg3:value uom="m^3">875</nrg3:value>
+							<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+						</nrg3:QualifiedVolume>
+					</nrg3:bdgVolume>
 				</bldg:BuildingPart>
 			</bldg:consistsOfBuildingPart>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isHeatedAndCooled</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isNeitherHeatedNorCooled</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:energyPerformanceCertificate>
-				<nrg2:EnergyPerformanceCertificate gml:id="id_epc_11">
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isHeatedAndCooled</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isNeitherHeatedNorCooled</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:energyPerformanceCertificate>
+				<nrg3:EnergyPerformanceCertificate gml:id="id_epc_11">
 					<gml:description>This is Energy Performance Certificate 11</gml:description>
 					<gml:name>Energy Performance Certificate 11</gml:name>
-					<nrg2:type codeSpace="epc_codeSpace_iop">heating</nrg2:type>
-					<nrg2:label>A</nrg2:label>
-					<nrg2:value uom="kWh/(m^2*a)">20</nrg2:value>
-					<nrg2:issueDate>2019-01-15</nrg2:issueDate>
-					<nrg2:expirationDate>2027-05-25</nrg2:expirationDate>
-					<nrg2:certificationMethod>Certification Method 7</nrg2:certificationMethod>
-					<nrg2:certificationURI>http://www.epc.nl</nrg2:certificationURI>
-				</nrg2:EnergyPerformanceCertificate>
-			</nrg2:energyPerformanceCertificate>
-			<nrg2:refurbishmentMeasure>
-				<nrg2:RefurbishmentMeasure gml:id="id_refurbishment_11">
+					<nrg3:type codeSpace="epc_codeSpace_iop">heating</nrg3:type>
+					<nrg3:label>A</nrg3:label>
+					<nrg3:value uom="kWh/(m^2*a)">20</nrg3:value>
+					<nrg3:issueDate>2019-01-15</nrg3:issueDate>
+					<nrg3:expirationDate>2027-05-25</nrg3:expirationDate>
+					<nrg3:certificationMethod>Certification Method 7</nrg3:certificationMethod>
+					<nrg3:certificationURI>http://www.epc.nl</nrg3:certificationURI>
+				</nrg3:EnergyPerformanceCertificate>
+			</nrg3:energyPerformanceCertificate>
+			<nrg3:refurbishmentMeasure>
+				<nrg3:RefurbishmentMeasure gml:id="id_refurbishment_11">
 					<gml:description>This is Refurbishment Measure 11</gml:description>
 					<gml:name>Refurbishment Measure 11</gml:name>
-					<nrg2:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_11</nrg2:libraryCode>
-					<nrg2:type codeSpace="refurb_codeSpace">installedPVPanels</nrg2:type>
-					<nrg2:startDate>2020-02-11</nrg2:startDate>
-					<nrg2:endDate>2020-08-11</nrg2:endDate>
-				</nrg2:RefurbishmentMeasure>
-			</nrg2:refurbishmentMeasure>
+					<nrg3:libraryCode codeSpace="refurb_lib_codeSpace">refurb_code_11</nrg3:libraryCode>
+					<nrg3:type codeSpace="refurb_codeSpace">installedPVPanels</nrg3:type>
+					<nrg3:startDate>2020-02-11</nrg3:startDate>
+					<nrg3:endDate>2020-08-11</nrg3:endDate>
+				</nrg3:RefurbishmentMeasure>
+			</nrg3:refurbishmentMeasure>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -4232,47 +4232,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 11</gml:description>
 			<gml:name>Death Star I</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -25 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_34">
+			</nrg3:referencePoint>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_34">
 					<gml:description>This is UtilityNetworkConnection 34</gml:description>
 					<gml:name>UtilityNetworkConnection 34</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_35">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_35">
 					<gml:description>This is UtilityNetworkConnection 35</gml:description>
 					<gml:name>UtilityNetworkConnection 35</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_36">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_36">
 					<gml:description>This is UtilityNetworkConnection 36</gml:description>
 					<gml:name>UtilityNetworkConnection 36</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1920</bldg:yearOfConstruction>
@@ -4371,11 +4371,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_11_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 11)</gml:description>
 					<gml:name>GroundSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -25 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4395,11 +4395,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 11)</gml:description>
 					<gml:name>RoofSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -27.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4419,11 +4419,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_11_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 11)</gml:description>
 					<gml:name>RoofSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -22.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4443,11 +4443,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 11)</gml:description>
 					<gml:name>WallSurface 1 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4467,11 +4467,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 11)</gml:description>
 					<gml:name>WallSurface 2 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -25 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4491,11 +4491,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 11)</gml:description>
 					<gml:name>WallSurface 3 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -30 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4515,11 +4515,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_11_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 11)</gml:description>
 					<gml:name>WallSurface 4 (Building 11)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -20 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_11_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4535,59 +4535,59 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
@@ -4595,54 +4595,54 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 12</gml:description>
 			<gml:name>Death Star II</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>65 -10 7.5</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:suitability>
-				<nrg2:Suitability>
-					<nrg2:reason codeSpace="suitability_reason_codespace">suitability reason 14</nrg2:reason>
-					<nrg2:description>suitability description 14</nrg2:description>
-					<nrg2:value uom="unit interval">1</nrg2:value>
-				</nrg2:Suitability>
-			</nrg2:suitability>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_37">
+			</nrg3:referencePoint>
+			<nrg3:suitability>
+				<nrg3:Suitability>
+					<nrg3:reason codeSpace="suitability_reason_codespace">suitability reason 14</nrg3:reason>
+					<nrg3:description>suitability description 14</nrg3:description>
+					<nrg3:value uom="unit interval">1</nrg3:value>
+				</nrg3:Suitability>
+			</nrg3:suitability>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_37">
 					<gml:description>This is UtilityNetworkConnection 37</gml:description>
 					<gml:name>UtilityNetworkConnection 37</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">electricity</nrg2:networkType>
-					<nrg2:connectionStatus>connected</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_38">
+					<nrg3:networkType codeSpace="network_conn_codespace">electricity</nrg3:networkType>
+					<nrg3:connectionStatus>connected</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_38">
 					<gml:description>This is UtilityNetworkConnection 38</gml:description>
 					<gml:name>UtilityNetworkConnection 38</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">districtHeating</nrg2:networkType>
-					<nrg2:connectionStatus>disconnectedButConnectable</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
-			<nrg2:utilityNetworkConnection>
-				<nrg2:UtilityNetworkConnection gml:id="id_util_network_conn_39">
+					<nrg3:networkType codeSpace="network_conn_codespace">districtHeating</nrg3:networkType>
+					<nrg3:connectionStatus>disconnectedButConnectable</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
+			<nrg3:utilityNetworkConnection>
+				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_39">
 					<gml:description>This is UtilityNetworkConnection 39</gml:description>
 					<gml:name>UtilityNetworkConnection 39</gml:name>
-					<nrg2:networkType codeSpace="network_conn_codespace">sewage</nrg2:networkType>
-					<nrg2:connectionStatus>unknown</nrg2:connectionStatus>
-					<nrg2:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg2:functionInNetwork>
-					<nrg2:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg2:usageInNetwork>
-					<nrg2:networkID>network_id</nrg2:networkID>
-					<nrg2:networkNodeID>network_node_id</nrg2:networkNodeID>
-				</nrg2:UtilityNetworkConnection>
-			</nrg2:utilityNetworkConnection>
+					<nrg3:networkType codeSpace="network_conn_codespace">sewage</nrg3:networkType>
+					<nrg3:connectionStatus>unknown</nrg3:connectionStatus>
+					<nrg3:functionInNetwork codeSpace="function_in_network_codespace">function in network</nrg3:functionInNetwork>
+					<nrg3:usageInNetwork codeSpace="usage_in_network_codespace">usage in network</nrg3:usageInNetwork>
+					<nrg3:networkID>network_id</nrg3:networkID>
+					<nrg3:networkNodeID>network_node_id</nrg3:networkNodeID>
+				</nrg3:UtilityNetworkConnection>
+			</nrg3:utilityNetworkConnection>
 			<bldg:class codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_class.xml">habitation</bldg:class>
 			<bldg:function codeSpace="http://www.sig3d.org/codelists/standard/building/2.0/_AbstractBuilding_function.xml">residential building</bldg:function>
 			<bldg:yearOfConstruction>1964</bldg:yearOfConstruction>
@@ -4741,11 +4741,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:GroundSurface gml:id="id_building_12_groundsurface_1">
 					<gml:description>This is GroundSurface 1 (Building 12)</gml:description>
 					<gml:name>GroundSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -10 0</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_groundsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4765,11 +4765,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_1">
 					<gml:description>This is RoofSurface 1 (Building 12)</gml:description>
 					<gml:name>RoofSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -12.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4789,11 +4789,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:RoofSurface gml:id="id_building_12_roofsurface_2">
 					<gml:description>This is RoofSurface 2 (Building 12)</gml:description>
 					<gml:name>RoofSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -7.5 12.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_roofsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4813,11 +4813,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_1">
 					<gml:description>This is WallSurface 1 (Building 12)</gml:description>
 					<gml:name>WallSurface 1 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>70 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4837,11 +4837,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_2">
 					<gml:description>This is WallSurface 2 (Building 12)</gml:description>
 					<gml:name>WallSurface 2 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>60 -10 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4861,11 +4861,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_3">
 					<gml:description>This is WallSurface 3 (Building 12)</gml:description>
 					<gml:name>WallSurface 3 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -15 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4885,11 +4885,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				<bldg:WallSurface gml:id="id_building_12_wallsurface_4">
 					<gml:description>This is WallSurface 4 (Building 12)</gml:description>
 					<gml:name>WallSurface 4 (Building 12)</gml:name>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -5 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod2MultiSurface>
 						<gml:MultiSurface gml:id="id_building_12_wallsurface_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -4905,59 +4905,59 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</bldg:lod2MultiSurface>
 				</bldg:WallSurface>
 			</bldg:boundedBy>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">300</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">grossFloorArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgArea>
-				<nrg2:QualifiedArea>
-					<nrg2:description>This is a type of floor area</nrg2:description>
-					<nrg2:source>Area value source text</nrg2:source>
-					<nrg2:value uom="m^2">100</nrg2:value>
-					<nrg2:type codeSpace="area_codeSpace">footprintArea</nrg2:type>
-				</nrg2:QualifiedArea>
-			</nrg2:bdgArea>
-			<nrg2:bdgAtticThermalStatus>isOnlyHeated</nrg2:bdgAtticThermalStatus>
-			<nrg2:bdgBasementThermalStatus>isOnlyHeated</nrg2:bdgBasementThermalStatus>
-			<nrg2:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg2:bdgConstructionWeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">15</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">highestRoofEdge</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgHeight>
-				<nrg2:QualifiedHeight>
-					<nrg2:description>This is a type of height</nrg2:description>
-					<nrg2:source>Height value source text</nrg2:source>
-					<nrg2:value uom="m">0</nrg2:value>
-					<nrg2:type codeSpace="height_codeSpace">bottomOfConstruction</nrg2:type>
-				</nrg2:QualifiedHeight>
-			</nrg2:bdgHeight>
-			<nrg2:bdgIsProtected>false</nrg2:bdgIsProtected>
-			<nrg2:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg2:bdgType>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">1250</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">grossVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
-			<nrg2:bdgVolume>
-				<nrg2:QualifiedVolume>
-					<nrg2:description>This is a type of volume</nrg2:description>
-					<nrg2:source>Volume value source text</nrg2:source>
-					<nrg2:value uom="m^3">875</nrg2:value>
-					<nrg2:type codeSpace="volume_codeSpace">netVolume</nrg2:type>
-				</nrg2:QualifiedVolume>
-			</nrg2:bdgVolume>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">300</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">grossFloorArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgArea>
+				<nrg3:QualifiedArea>
+					<nrg3:description>This is a type of floor area</nrg3:description>
+					<nrg3:source>Area value source text</nrg3:source>
+					<nrg3:value uom="m^2">100</nrg3:value>
+					<nrg3:type codeSpace="area_codeSpace">footprintArea</nrg3:type>
+				</nrg3:QualifiedArea>
+			</nrg3:bdgArea>
+			<nrg3:bdgAtticThermalStatus>isOnlyHeated</nrg3:bdgAtticThermalStatus>
+			<nrg3:bdgBasementThermalStatus>isOnlyHeated</nrg3:bdgBasementThermalStatus>
+			<nrg3:bdgConstructionWeight codeSpace="constrWeight_codeSpace">heavy</nrg3:bdgConstructionWeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">15</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">highestRoofEdge</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgHeight>
+				<nrg3:QualifiedHeight>
+					<nrg3:description>This is a type of height</nrg3:description>
+					<nrg3:source>Height value source text</nrg3:source>
+					<nrg3:value uom="m">0</nrg3:value>
+					<nrg3:type codeSpace="height_codeSpace">bottomOfConstruction</nrg3:type>
+				</nrg3:QualifiedHeight>
+			</nrg3:bdgHeight>
+			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
+			<nrg3:bdgType codeSpace="bdgType_codeSpace">apartmentBlock</nrg3:bdgType>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">1250</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">grossVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
+			<nrg3:bdgVolume>
+				<nrg3:QualifiedVolume>
+					<nrg3:description>This is a type of volume</nrg3:description>
+					<nrg3:source>Volume value source text</nrg3:source>
+					<nrg3:value uom="m^3">875</nrg3:value>
+					<nrg3:type codeSpace="volume_codeSpace">netVolume</nrg3:type>
+				</nrg3:QualifiedVolume>
+			</nrg3:bdgVolume>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<app:appearanceMember>

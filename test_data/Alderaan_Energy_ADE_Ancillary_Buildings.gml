@@ -8,9 +8,9 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
@@ -24,7 +24,7 @@ extents).
 
 There is a global appearance.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 The city object group and all buildings are modelled
 also through a 3D reference point.
@@ -55,7 +55,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This city model contains a set of "fantasy" buildings created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>CityGML city of Alderaan</gml:name>
 	<gml:boundedBy>
@@ -68,21 +68,21 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<grp:CityObjectGroup gml:id="id_group_1">
 			<gml:description>This group contains all "ancillary" buildings of CityGML city Alderaan</gml:description>
 			<gml:name>Ancillary buildings group</gml:name>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>35 -5 0</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<grp:groupMember>
 				<bldg:Building gml:id="id_box_building_20">
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 20</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-15 10 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_20" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -165,11 +165,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 21</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-15 -5 10</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_21" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -252,11 +252,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 22</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-25 -25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_22" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -339,11 +339,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 23</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>-25 -40 15</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_23" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -426,11 +426,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 24</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>65 -45 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_24" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -513,11 +513,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 25</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>50 -45 7.5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_25" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -600,11 +600,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 26</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>85 0 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_26" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -687,11 +687,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 27</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>0 25 5</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_27" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -774,11 +774,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 28</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>50 35 15</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_28" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -861,11 +861,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 29</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>30 -45 15</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_29" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>
@@ -948,11 +948,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is a simple, primastic building meant to provide shadowing and occlusions</gml:description>
 					<gml:name>Box building 30</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg2:referencePoint>
+					<nrg3:referencePoint>
 						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:pos>95 -30 25</gml:pos>
 						</gml:Point>
-					</nrg2:referencePoint>
+					</nrg3:referencePoint>
 					<bldg:lod0FootPrint>
 						<gml:MultiSurface gml:id="id_lod0_MultiSurf_30" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 							<gml:surfaceMember>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="NetworkTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">NetworkTypeValue</gml:identifier>
+  <gml:name>NetworkTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1687">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">gas</gml:identifier>
+      <gml:name>gas</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1688">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">districtHeating</gml:identifier>
+      <gml:name>districtHeating</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1689">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">districtCooling</gml:identifier>
+      <gml:name>districtCooling</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1690">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">wasteWater</gml:identifier>
+      <gml:name>wasteWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1691">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">data</gml:identifier>
+      <gml:name>data</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1692">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1693">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_1694">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/NetworkTypeValue">electicalGrid</gml:identifier>
+      <gml:name>electicalGrid</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

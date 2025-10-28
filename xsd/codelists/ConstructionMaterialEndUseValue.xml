@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ConstructionMaterialEndUseValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ConstructionMaterialEndUseValue</gml:identifier>
+  <gml:name>ConstructionMaterialEndUseValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_913_1569">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionMaterialEndUseValue">construction</gml:identifier>
+      <gml:name>construction</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_913_1570">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionMaterialEndUseValue">refurbishment</gml:identifier>
+      <gml:name>refurbishment</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_913_1571">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionMaterialEndUseValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_913_2215">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ConstructionMaterialEndUseValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

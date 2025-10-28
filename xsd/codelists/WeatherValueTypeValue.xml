@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WeatherValueTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">WeatherValueTypeValue</gml:identifier>
+  <gml:name>WeatherValueTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2064">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">average maximum</gml:identifier>
+      <gml:name>average maximum</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2065">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">average</gml:identifier>
+      <gml:name>average</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2066">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">average minimum</gml:identifier>
+      <gml:name>average minimum</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2067">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2068">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">absolute maximum</gml:identifier>
+      <gml:name>absolute maximum</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1102_2069">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WeatherValueTypeValue">absolute minimum</gml:identifier>
+      <gml:name>absolute minimum</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

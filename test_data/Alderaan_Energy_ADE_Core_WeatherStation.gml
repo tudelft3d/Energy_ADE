@@ -8,16 +8,16 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
 ** CityGML 2.0 **
 
 This file contains:
 - 2 CityFurniture objects.
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 This file contains additionally:
 - 2 WeatherStation objects
@@ -61,7 +61,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:boundedBy>
 		<gml:Envelope srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 			<gml:lowerCorner>-10.25 -50.25 0</gml:lowerCorner>
@@ -69,346 +69,346 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		</gml:Envelope>
 	</gml:boundedBy>
 	<core:cityObjectMember>
-		<nrg2:WeatherStation gml:id="id_weather_station_1">
+		<nrg3:WeatherStation gml:id="id_weather_station_1">
 			<gml:description>This is Weather Station 1</gml:description>
 			<gml:name>Weather Station 1</gml:name>
 			<core:relativeToTerrain>entirelyAboveTerrain</core:relativeToTerrain>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>-10 -50 10</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="relation_codespace">installedOn</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_city_furniture_1"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:resource>
-				<nrg2:Energy gml:id="id_res_energy_1">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="relation_codespace">installedOn</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_city_furniture_1"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:resource>
+				<nrg3:Energy gml:id="id_res_energy_1">
 					<gml:description>This is Energy 1</gml:description>
 					<gml:name>Energy 1</gml:name>
-					<nrg2:status>actual</nrg2:status>
-					<nrg2:operationType codeSpace="resource-oper_codespace_1">demands</nrg2:operationType>
-					<nrg2:amountType codeSpace="amnt_type_codespace_1">measurement</nrg2:amountType>
-					<nrg2:year>2023</nrg2:year>
-					<nrg2:amount uom="kWh/a">100</nrg2:amount>
-					<nrg2:timeDependentAmount>
-						<nrg2:RegularTimeSeriesFile gml:id="id_regular_time_series_file_2">
+					<nrg3:status>actual</nrg3:status>
+					<nrg3:operationType codeSpace="resource-oper_codespace_1">demands</nrg3:operationType>
+					<nrg3:amountType codeSpace="amnt_type_codespace_1">measurement</nrg3:amountType>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:amount uom="kWh/a">100</nrg3:amount>
+					<nrg3:timeDependentAmount>
+						<nrg3:RegularTimeSeriesFile gml:id="id_regular_time_series_file_2">
 							<gml:description>This is a RegularTimeSeriesFile 2</gml:description>
 							<gml:name>RegularTimeSeriesFile 2</gml:name>
-							<nrg2:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_2</nrg2:source>
-							<nrg2:uom uom="kWh/(m2*day)"/>
-							<nrg2:fileURI>//giorgio/results_irradiation.csv</nrg2:fileURI>
-							<nrg2:temporalExtent>
+							<nrg3:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_2</nrg3:source>
+							<nrg3:uom uom="kWh/(m2*day)"/>
+							<nrg3:fileURI>//giorgio/results_irradiation.csv</nrg3:fileURI>
+							<nrg3:temporalExtent>
 								<gml:TimePeriod>
 									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
 									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
 								</gml:TimePeriod>
-							</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">1</nrg2:timeInterval>
-							<nrg2:numberOfHeaderLines>10</nrg2:numberOfHeaderLines>
-							<nrg2:fieldSeparator>,</nrg2:fieldSeparator>
-							<nrg2:recordSeparator>;</nrg2:recordSeparator>
-							<nrg2:decimalSymbol>.</nrg2:decimalSymbol>
-							<nrg2:valueColumnNumber>5</nrg2:valueColumnNumber>
-						</nrg2:RegularTimeSeriesFile>
-					</nrg2:timeDependentAmount>
-					<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-					<nrg2:co2Equivalent uom="kg/a">12</nrg2:co2Equivalent>
-					<nrg2:costsMoney uom="Euro">50</nrg2:costsMoney>
-					<nrg2:yieldsMoney uom="Euro">0</nrg2:yieldsMoney>
-					<nrg2:type codeSpace="eng_type_codespace_1">primary</nrg2:type>
-					<nrg2:endUse codeSpace="nrg_enduse_codespace_1">electricalAppliances</nrg2:endUse>
-					<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg2:energyCarrier>
-					<nrg2:maximumLoad uom="kW">4</nrg2:maximumLoad>
-					<nrg2:source codeSpace="nrg_source_codespace_1">powerGrid</nrg2:source>
-				</nrg2:Energy>
-			</nrg2:resource>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_1">
+							</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:numberOfHeaderLines>10</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>;</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>5</nrg3:valueColumnNumber>
+						</nrg3:RegularTimeSeriesFile>
+					</nrg3:timeDependentAmount>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:co2Equivalent uom="kg/a">12</nrg3:co2Equivalent>
+					<nrg3:costsMoney uom="Euro">50</nrg3:costsMoney>
+					<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
+					<nrg3:type codeSpace="eng_type_codespace_1">primary</nrg3:type>
+					<nrg3:endUse codeSpace="nrg_enduse_codespace_1">electricalAppliances</nrg3:endUse>
+					<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_1">electricity</nrg3:energyCarrier>
+					<nrg3:maximumLoad uom="kW">4</nrg3:maximumLoad>
+					<nrg3:source codeSpace="nrg_source_codespace_1">powerGrid</nrg3:source>
+				</nrg3:Energy>
+			</nrg3:resource>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_1">
 					<gml:description>This is WeatherData 1</gml:description>
 					<gml:name>WeatherData 1</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">airTemperature</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">minimum</nrg2:valueType>
-					<nrg2:yearlyValue uom="Degrees Celsius">12</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:RegularTimeSeries gml:id="id_regular_time_series_1">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">airTemperature</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">minimum</nrg3:valueType>
+					<nrg3:yearlyValue uom="Degrees Celsius">12</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:RegularTimeSeries gml:id="id_regular_time_series_1">
 							<gml:description>This is RegularTimeSeries 1</gml:description>
 							<gml:name>RegularTimeSeries 1</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_2">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_1</nrg2:source>
-							<nrg2:temporalExtent>
+							<nrg3:acquisitionMethod codeSpace="codespace_2">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_1</nrg3:source>
+							<nrg3:temporalExtent>
 								<gml:TimePeriod>
 									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
 									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
 								</gml:TimePeriod>
-							</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="Degrees Celsius">5 6 7 10 15 18 19 20 18 10 2 -1</nrg2:valuesList>
-						</nrg2:RegularTimeSeries>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_2">
+							</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="Degrees Celsius">5 6 7 10 15 18 19 20 18 10 2 -1</nrg3:valuesList>
+						</nrg3:RegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_2">
 					<gml:description>This is WeatherData 2</gml:description>
 					<gml:name>WeatherData 2</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">humidity</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="Scale">0.6</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_typical_values_time_series_4">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">humidity</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="Scale">0.6</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_typical_values_time_series_4">
 							<gml:description>This is TypicalValuesTimeSeries 4</gml:description>
 							<gml:name>TypicalValuesTimeSeries 4</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_4">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_4</nrg2:source>
-							<nrg2:startTime>00:00:00</nrg2:startTime>
-							<nrg2:startDay>1</nrg2:startDay>
-							<nrg2:startMonth>1</nrg2:startMonth>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="Scale">0.5 0.6 0.7 0.8 0.9 1.0 1.0 0.9 0.8 0.7 0.6 0.5</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-		</nrg2:WeatherStation>
+							<nrg3:acquisitionMethod codeSpace="codespace_4">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_4</nrg3:source>
+							<nrg3:startTime>00:00:00</nrg3:startTime>
+							<nrg3:startDay>1</nrg3:startDay>
+							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="Scale">0.5 0.6 0.7 0.8 0.9 1.0 1.0 0.9 0.8 0.7 0.6 0.5</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+		</nrg3:WeatherStation>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
-		<nrg2:WeatherStation gml:id="id_weather_station_2">
+		<nrg3:WeatherStation gml:id="id_weather_station_2">
 			<gml:description>This is Weather Station 2</gml:description>
 			<gml:name>Weather Station 2</gml:name>
 			<core:relativeToTerrain>entirelyAboveTerrain</core:relativeToTerrain>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>70 30 15</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
-			<nrg2:relatedTo>
-				<nrg2:CityObjectRelation>
-					<nrg2:relationType codeSpace="relation_codespace">installedOn</nrg2:relationType>
-					<nrg2:relatedTo xlink:href="#id_city_furniture_2"/>
-				</nrg2:CityObjectRelation>
-			</nrg2:relatedTo>
-			<nrg2:resource>
-				<nrg2:Energy gml:id="id_res_energy_2">
+			</nrg3:referencePoint>
+			<nrg3:relatedTo>
+				<nrg3:CityObjectRelation>
+					<nrg3:relationType codeSpace="relation_codespace">installedOn</nrg3:relationType>
+					<nrg3:relatedTo xlink:href="#id_city_furniture_2"/>
+				</nrg3:CityObjectRelation>
+			</nrg3:relatedTo>
+			<nrg3:resource>
+				<nrg3:Energy gml:id="id_res_energy_2">
 					<gml:description>This is Energy 2</gml:description>
 					<gml:name>Energy 2</gml:name>
-					<nrg2:status>actual</nrg2:status>
-					<nrg2:operationType codeSpace="resource-oper_codespace_2">demands</nrg2:operationType>
-					<nrg2:amountType codeSpace="amnt_type_codespace_2">simulation</nrg2:amountType>
-					<nrg2:year>2024</nrg2:year>
-					<nrg2:amount uom="kWh/a">60</nrg2:amount>
-					<nrg2:isAmountNormalized>false</nrg2:isAmountNormalized>
-					<nrg2:co2Equivalent uom="kg/a">6</nrg2:co2Equivalent>
-					<nrg2:costsMoney uom="Dollar">20</nrg2:costsMoney>
-					<nrg2:yieldsMoney uom="Dollar">0</nrg2:yieldsMoney>
-					<nrg2:type codeSpace="eng_type_codespace_2">primary</nrg2:type>
-					<nrg2:endUse codeSpace="nrg_enduse_codespace_2">electricalAppliances</nrg2:endUse>
-					<nrg2:energyCarrier codeSpace="nrg_carrier_codespace_2">electricity</nrg2:energyCarrier>
-					<nrg2:maximumLoad uom="kW">3</nrg2:maximumLoad>
-					<nrg2:source codeSpace="nrg_source_codespace_2">photovoltaicPanels</nrg2:source>
-				</nrg2:Energy>
-			</nrg2:resource>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_3">
+					<nrg3:status>actual</nrg3:status>
+					<nrg3:operationType codeSpace="resource-oper_codespace_2">demands</nrg3:operationType>
+					<nrg3:amountType codeSpace="amnt_type_codespace_2">simulation</nrg3:amountType>
+					<nrg3:year>2024</nrg3:year>
+					<nrg3:amount uom="kWh/a">60</nrg3:amount>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:co2Equivalent uom="kg/a">6</nrg3:co2Equivalent>
+					<nrg3:costsMoney uom="Dollar">20</nrg3:costsMoney>
+					<nrg3:yieldsMoney uom="Dollar">0</nrg3:yieldsMoney>
+					<nrg3:type codeSpace="eng_type_codespace_2">primary</nrg3:type>
+					<nrg3:endUse codeSpace="nrg_enduse_codespace_2">electricalAppliances</nrg3:endUse>
+					<nrg3:energyCarrier codeSpace="nrg_carrier_codespace_2">electricity</nrg3:energyCarrier>
+					<nrg3:maximumLoad uom="kW">3</nrg3:maximumLoad>
+					<nrg3:source codeSpace="nrg_source_codespace_2">photovoltaicPanels</nrg3:source>
+				</nrg3:Energy>
+			</nrg3:resource>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_3">
 					<gml:description>This is WeatherData 3</gml:description>
 					<gml:name>WeatherData 3</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_3</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">windSpeed</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="m/s">112</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:RegularTimeSeries gml:id="id_regular_time_series_3">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_3</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">windSpeed</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="m/s">112</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:RegularTimeSeries gml:id="id_regular_time_series_3">
 							<gml:description>This is RegularTimeSeries 3</gml:description>
 							<gml:name>RegularTimeSeries 3</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_2">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_3</nrg2:source>
-							<nrg2:temporalExtent>
+							<nrg3:acquisitionMethod codeSpace="codespace_2">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_3</nrg3:source>
+							<nrg3:temporalExtent>
 								<gml:TimePeriod>
 									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
 									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
 								</gml:TimePeriod>
-							</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">111 112 113 114 115 116 117 118 119 110 111 112</nrg2:valuesList>
-						</nrg2:RegularTimeSeries>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_4">
+							</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">111 112 113 114 115 116 117 118 119 110 111 112</nrg3:valuesList>
+						</nrg3:RegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_4">
 					<gml:description>This is WeatherData 4</gml:description>
 					<gml:name>WeatherData 4</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_4</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">cloudiness</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="Scale">0.7</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_typical_values_time_series_5">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_4</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">cloudiness</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="Scale">0.7</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_typical_values_time_series_5">
 							<gml:description>This is TypicalValuesTimeSeries 5</gml:description>
 							<gml:name>TypicalValuesTimeSeries 5</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_5">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_4</nrg2:source>
-							<nrg2:startTime>00:00:00</nrg2:startTime>
-							<nrg2:startDay>1</nrg2:startDay>
-							<nrg2:startMonth>1</nrg2:startMonth>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="Scale">0.51 0.61 0.71 0.81 0.91 1.01 1.01 0.91 0.81 0.71 0.61 0.51</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_5">
+							<nrg3:acquisitionMethod codeSpace="codespace_5">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_4</nrg3:source>
+							<nrg3:startTime>00:00:00</nrg3:startTime>
+							<nrg3:startDay>1</nrg3:startDay>
+							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="Scale">0.51 0.61 0.71 0.81 0.91 1.01 1.01 0.91 0.81 0.71 0.61 0.51</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_5">
 					<gml:description>This is WeatherData 5</gml:description>
 					<gml:name>WeatherData 5</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_5</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">globalSolarIrradiance</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="kW/(m2.a)">4000</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:RegularTimeSeriesFile gml:id="id_regular_time_series_file_1">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_5</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">globalSolarIrradiance</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="kW/(m2.a)">4000</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:RegularTimeSeriesFile gml:id="id_regular_time_series_file_1">
 							<gml:description>This is a RegularTimeSeriesFile 1</gml:description>
 							<gml:name>RegularTimeSeriesFile 1</gml:name>
-							<nrg2:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_1</nrg2:source>
-							<nrg2:uom uom="kWh/(m2*day)"/>
-							<nrg2:fileURI>//giorgio/results_irradiation.csv</nrg2:fileURI>
-							<nrg2:temporalExtent>
+							<nrg3:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_1</nrg3:source>
+							<nrg3:uom uom="kWh/(m2*day)"/>
+							<nrg3:fileURI>//giorgio/results_irradiation.csv</nrg3:fileURI>
+							<nrg3:temporalExtent>
 								<gml:TimePeriod>
 									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
 									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
 								</gml:TimePeriod>
-							</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">1</nrg2:timeInterval>
-							<nrg2:numberOfHeaderLines>10</nrg2:numberOfHeaderLines>
-							<nrg2:fieldSeparator>,</nrg2:fieldSeparator>
-							<nrg2:recordSeparator>;</nrg2:recordSeparator>
-							<nrg2:decimalSymbol>.</nrg2:decimalSymbol>
-							<nrg2:valueColumnNumber>5</nrg2:valueColumnNumber>
-						</nrg2:RegularTimeSeriesFile>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_6">
+							</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:numberOfHeaderLines>10</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>;</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>5</nrg3:valueColumnNumber>
+						</nrg3:RegularTimeSeriesFile>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_6">
 					<gml:description>This is WeatherData 6</gml:description>
 					<gml:name>WeatherData 6</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_6</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">cloudiness</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="Scale">0.7</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:TypicalValuesTimeSeriesFile gml:id="id_typical_values_time_series_file_1">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_6</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">cloudiness</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="Scale">0.7</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesTimeSeriesFile gml:id="id_typical_values_time_series_file_1">
 							<gml:description>This is a TypicalValuesTimeSeriesFile 1</gml:description>
 							<gml:name>TypicalValuesTimeSeriesFile 1</gml:name>
-							<nrg2:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_1</nrg2:source>
-							<nrg2:startTime>00:00:00</nrg2:startTime>
-							<nrg2:startDay>1</nrg2:startDay>
-							<nrg2:startMonth>1</nrg2:startMonth>
-							<nrg2:uom uom="Scale"/>
-							<nrg2:fileURI>//giorgio/results_cloudiness.csv</nrg2:fileURI>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">1</nrg2:timeInterval>
-							<nrg2:numberOfHeaderLines>3</nrg2:numberOfHeaderLines>
-							<nrg2:fieldSeparator>,</nrg2:fieldSeparator>
-							<nrg2:recordSeparator>;</nrg2:recordSeparator>
-							<nrg2:decimalSymbol>.</nrg2:decimalSymbol>
-							<nrg2:valueColumnNumber>2</nrg2:valueColumnNumber>
-						</nrg2:TypicalValuesTimeSeriesFile>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_7">
+							<nrg3:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_1</nrg3:source>
+							<nrg3:startTime>00:00:00</nrg3:startTime>
+							<nrg3:startDay>1</nrg3:startDay>
+							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>;</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesTimeSeriesFile>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_7">
 					<gml:description>This is WeatherData 7</gml:description>
 					<gml:name>WeatherData 7</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_7</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">cloudiness</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">maximum</nrg2:valueType>
-					<nrg2:yearlyValue uom="Scale">0.99</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:TypicalValuesTimeSeriesFile gml:id="id_typical_values_time_series_file_2">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_7</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">cloudiness</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">maximum</nrg3:valueType>
+					<nrg3:yearlyValue uom="Scale">0.99</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesTimeSeriesFile gml:id="id_typical_values_time_series_file_2">
 							<gml:description>This is a TypicalValuesTimeSeriesFile 2</gml:description>
 							<gml:name>TypicalValuesTimeSeriesFile 2</gml:name>
-							<nrg2:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_2</nrg2:source>
-							<nrg2:startTime>00:00:00</nrg2:startTime>
-							<nrg2:startDay>1</nrg2:startDay>
-							<nrg2:startMonth>1</nrg2:startMonth>
-							<nrg2:uom uom="Scale"/>
-							<nrg2:fileURI>//giorgio/results_cloudiness.csv</nrg2:fileURI>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">1</nrg2:timeInterval>
-							<nrg2:numberOfHeaderLines>3</nrg2:numberOfHeaderLines>
-							<nrg2:fieldSeparator>,</nrg2:fieldSeparator>
-							<nrg2:recordSeparator>;</nrg2:recordSeparator>
-							<nrg2:decimalSymbol>.</nrg2:decimalSymbol>
-							<nrg2:valueColumnNumber>2</nrg2:valueColumnNumber>
-						</nrg2:TypicalValuesTimeSeriesFile>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-			<nrg2:weatherData>
-				<nrg2:WeatherData gml:id="id_weather_data_8">
+							<nrg3:acquisitionMethod codeSpace="simulation_codespace">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_2</nrg3:source>
+							<nrg3:startTime>00:00:00</nrg3:startTime>
+							<nrg3:startDay>1</nrg3:startDay>
+							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>;</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesTimeSeriesFile>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+			<nrg3:weatherData>
+				<nrg3:WeatherData gml:id="id_weather_data_8">
 					<gml:description>This is WeatherData 8</gml:description>
 					<gml:name>WeatherData 8</gml:name>
-					<nrg2:libraryCode codeSpace="url_to_a_library">library_code_8</nrg2:libraryCode>
-					<nrg2:type codeSpace="giorgio's codespace">temperature</nrg2:type>
-					<nrg2:valueType codeSpace="weather_type_codeSpace_1">average</nrg2:valueType>
-					<nrg2:yearlyValue uom="Scale">18</nrg2:yearlyValue>
-					<nrg2:timeDependentValues>
-						<nrg2:SensorConnection gml:id="id_sensor_connection_1">
+					<nrg3:libraryCode codeSpace="url_to_a_library">library_code_8</nrg3:libraryCode>
+					<nrg3:type codeSpace="giorgio's codespace">temperature</nrg3:type>
+					<nrg3:valueType codeSpace="weather_type_codeSpace_1">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="Scale">18</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:SensorConnection gml:id="id_sensor_connection_1">
 							<gml:description>This is a SensorConnection 1</gml:description>
 							<gml:name>SensorConnection 1</gml:name>
-							<nrg2:acquisitionMethod codeSpace="measurement_codespace">measurement</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>averageInSucceedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_1</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:connectionType codeSpace="conn-type_codespace">connection type</nrg2:connectionType>
-							<nrg2:observationProperty>observation property</nrg2:observationProperty>
-							<nrg2:uom uom="units"/>
-							<nrg2:sensorID>sensor_id</nrg2:sensorID>
-							<nrg2:sensorName>sensor name</nrg2:sensorName>
-							<nrg2:observationID>observation_id</nrg2:observationID>
-							<nrg2:datastreamID>datastream_id</nrg2:datastreamID>
-							<nrg2:baseURL>base url</nrg2:baseURL>
-							<nrg2:authType codeSpace="auth_type_codespace">auth type</nrg2:authType>
-							<nrg2:mqttServer>mqtt server</nrg2:mqttServer>
-							<nrg2:mqttTopic>mqtt topic</nrg2:mqttTopic>
-							<nrg2:linkToObservation>ling to observation</nrg2:linkToObservation>
-							<nrg2:linkToSensorDescription>link to sensor description</nrg2:linkToSensorDescription>
-						</nrg2:SensorConnection>
-					</nrg2:timeDependentValues>
-				</nrg2:WeatherData>
-			</nrg2:weatherData>
-		</nrg2:WeatherStation>
+							<nrg3:acquisitionMethod codeSpace="measurement_codespace">measurement</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_1</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:connectionType codeSpace="conn-type_codespace">connection type</nrg3:connectionType>
+							<nrg3:observationProperty>observation property</nrg3:observationProperty>
+							<nrg3:uom uom="units"/>
+							<nrg3:sensorID>sensor_id</nrg3:sensorID>
+							<nrg3:sensorName>sensor name</nrg3:sensorName>
+							<nrg3:observationID>observation_id</nrg3:observationID>
+							<nrg3:datastreamID>datastream_id</nrg3:datastreamID>
+							<nrg3:baseURL>base url</nrg3:baseURL>
+							<nrg3:authType codeSpace="auth_type_codespace">auth type</nrg3:authType>
+							<nrg3:mqttServer>mqtt server</nrg3:mqttServer>
+							<nrg3:mqttTopic>mqtt topic</nrg3:mqttTopic>
+							<nrg3:linkToObservation>ling to observation</nrg3:linkToObservation>
+							<nrg3:linkToSensorDescription>link to sensor description</nrg3:linkToSensorDescription>
+						</nrg3:SensorConnection>
+					</nrg3:timeDependentValues>
+				</nrg3:WeatherData>
+			</nrg3:weatherData>
+		</nrg3:WeatherStation>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
 		<frn:CityFurniture gml:id="id_city_furniture_1">
 			<gml:description>Pole upon which WeatherStation 1 is placed</gml:description>
 			<gml:name>Weather station pole 1</gml:name>
 			<core:relativeToTerrain>entirelyAboveTerrain</core:relativeToTerrain>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>-10 -50 0</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<frn:class>Pole</frn:class>
 			<frn:function>Mounting Pole</frn:function>
 			<frn:usage>Mounting Pole</frn:usage>
@@ -477,11 +477,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>Pole upon which WeatherStation 2 is placed</gml:description>
 			<gml:name>Weather station pole 2</gml:name>
 			<core:relativeToTerrain>entirelyAboveTerrain</core:relativeToTerrain>
-			<nrg2:referencePoint>
+			<nrg3:referencePoint>
 				<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 					<gml:pos>70 30 0</gml:pos>
 				</gml:Point>
-			</nrg2:referencePoint>
+			</nrg3:referencePoint>
 			<frn:class>Pole</frn:class>
 			<frn:function>Mounting Pole</frn:function>
 			<frn:usage>Mounting Pole</frn:usage>

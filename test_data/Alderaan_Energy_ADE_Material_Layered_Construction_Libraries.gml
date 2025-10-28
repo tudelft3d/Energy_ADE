@@ -8,11 +8,11 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 This file contains 1 MaterialLibrary object
 which contains:
@@ -51,660 +51,660 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This file contains an example of a library containing layered constructions, and a library containing materials. Created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>Material and Layered Construction Libraries</gml:name>
 	<core:cityObjectMember>
-		<nrg2:MaterialLibrary gml:id="id_material_library_1">
+		<nrg3:MaterialLibrary gml:id="id_material_library_1">
 			<gml:description>This is Material Library 1</gml:description>
 			<gml:name>Material Library 1</gml:name>
-			<nrg2:type codeSpace="material_library_type_codeSpace">material_library_type</nrg2:type>
-			<nrg2:source>TABULA</nrg2:source>
-			<nrg2:author>Giorgio Agugiaro</nrg2:author>
-			<nrg2:libraryMember>
-				<nrg2:Gas gml:id="id_gas_1">
+			<nrg3:type codeSpace="material_library_type_codeSpace">material_library_type</nrg3:type>
+			<nrg3:source>TABULA</nrg3:source>
+			<nrg3:author>Giorgio Agugiaro</nrg3:author>
+			<nrg3:libraryMember>
+				<nrg3:Gas gml:id="id_gas_1">
 					<gml:description>This is Gas 1</gml:description>
 					<gml:name>Gas 1</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">gas_code_1</nrg2:libraryCode>
-					<nrg2:isVentilated>false</nrg2:isVentilated>
-					<nrg2:rValue uom="J/K/mol">8.314</nrg2:rValue>
-				</nrg2:Gas>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:Gas gml:id="id_gas_2">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">gas_code_1</nrg3:libraryCode>
+					<nrg3:isVentilated>false</nrg3:isVentilated>
+					<nrg3:rValue uom="J/K/mol">8.314</nrg3:rValue>
+				</nrg3:Gas>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:Gas gml:id="id_gas_2">
 					<gml:description>This is Gas 2</gml:description>
 					<gml:name>Gas 2</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">gas_code_2</nrg2:libraryCode>
-					<nrg2:isVentilated>false</nrg2:isVentilated>
-					<nrg2:rValue uom="J/K/mol">8.314</nrg2:rValue>
-				</nrg2:Gas>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_1">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">gas_code_2</nrg3:libraryCode>
+					<nrg3:isVentilated>false</nrg3:isVentilated>
+					<nrg3:rValue uom="J/K/mol">8.314</nrg3:rValue>
+				</nrg3:Gas>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_1">
 					<gml:description>This is SolidMaterial 1</gml:description>
 					<gml:name>SolidMaterial 1</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_1</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">3.5</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">2500</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">15.4</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">1.9</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_2">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_1</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">3.5</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">2500</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">15.4</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">1.9</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_2">
 					<gml:description>This is SolidMaterial 2</gml:description>
 					<gml:name>SolidMaterial 2</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_2</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">1.4</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">2000</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.1</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">15.1</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">1.2</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_3">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_2</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">1.4</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">2000</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.1</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">15.1</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">1.2</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_3">
 					<gml:description>This is SolidMaterial 3</gml:description>
 					<gml:name>SolidMaterial 3</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_3</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.04</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">20</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.01</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">2.1</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">2.1</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_4">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_3</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.04</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">20</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.01</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">2.1</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">2.1</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_4">
 					<gml:description>This is SolidMaterial 4</gml:description>
 					<gml:name>SolidMaterial 4</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_4</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.23</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1100</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.01</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">9.8</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">7.3</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_5">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_4</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.23</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1100</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.01</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">9.8</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">7.3</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_5">
 					<gml:description>This is SolidMaterial 5</gml:description>
 					<gml:name>SolidMaterial 5</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_5</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">2.3</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">2300</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.1</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">0</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">2.8</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_6">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_5</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">2.3</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">2300</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.1</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">0</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">2.8</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_6">
 					<gml:description>This is SolidMaterial 6</gml:description>
 					<gml:name>SolidMaterial 6</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_6</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.7</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1400</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">8</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">3.3</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_7">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_6</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.7</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1400</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">8</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">3.3</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_7">
 					<gml:description>This is SolidMaterial 7</gml:description>
 					<gml:name>SolidMaterial 7</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_7</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.8</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1800</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">2.2</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">1.4</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_9">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_7</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.8</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1800</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">2.2</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">1.4</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_9">
 					<gml:description>This is SolidMaterial 9</gml:description>
 					<gml:name>SolidMaterial 9</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_9</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.035</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">20</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.01</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">6.9</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">6.7</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_10">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_9</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.035</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">20</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.01</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">6.9</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">6.7</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_10">
 					<gml:description>This is SolidMaterial 10</gml:description>
 					<gml:name>SolidMaterial 10</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_10</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.87</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1800</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">6.7</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">6.9</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_11">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_10</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.87</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1800</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">6.7</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">6.9</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_11">
 					<gml:description>This is SolidMaterial 11</gml:description>
 					<gml:name>SolidMaterial 11</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_11</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.7</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1400</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">14.9</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">3.4</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_12">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_11</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.7</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1400</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">14.9</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">3.4</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_12">
 					<gml:description>This is SolidMaterial 12</gml:description>
 					<gml:name>SolidMaterial 12</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_12</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">2.3</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">2400</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.1</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">11.9</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">1.7</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_14">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_12</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">2.3</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">2400</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.1</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">11.9</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">1.7</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_14">
 					<gml:description>This is SolidMaterial 14</gml:description>
 					<gml:name>SolidMaterial 14</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_14</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.04</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">110</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.01</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">19.9</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">1.4</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_15">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_14</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.04</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">110</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.01</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">19.9</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">1.4</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_15">
 					<gml:description>This is SolidMaterial 15</gml:description>
 					<gml:name>SolidMaterial 15</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_15</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.23</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1100</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">19.2</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">9.8</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_16">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_15</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.23</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1100</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">19.2</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">9.8</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_16">
 					<gml:description>This is SolidMaterial 16</gml:description>
 					<gml:name>SolidMaterial 16</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_16</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.7</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1400</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">14.1</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">3.9</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_17">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_16</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.7</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1400</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">14.1</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">3.9</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_17">
 					<gml:description>This is SolidMaterial 17</gml:description>
 					<gml:name>SolidMaterial 17</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_17</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.8</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1800</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">1.1</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">5.2</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:SolidMaterial gml:id="id_solid_material_18">
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_17</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.8</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1800</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">1.1</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">5.2</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:SolidMaterial gml:id="id_solid_material_18">
 					<gml:description>This is SolidMaterial 18</gml:description>
 					<gml:name>SolidMaterial 18</gml:name>
-					<nrg2:libraryCode codeSpace="gascode_codeSpace">solid_material_code_18</nrg2:libraryCode>
-					<nrg2:thermalConductivity uom="W/(K*m)">0.7</nrg2:thermalConductivity>
-					<nrg2:density uom="kg/m^3">1400</nrg2:density>
-					<nrg2:specificHeatCapacity uom="J/(kg*K)">0.9</nrg2:specificHeatCapacity>
-					<nrg2:permeance uom="xxx">0.9</nrg2:permeance>
-					<nrg2:porosity uom="ratio">0.05</nrg2:porosity>
-					<nrg2:embodiedEnergy uom="kWh/kg">9.4</nrg2:embodiedEnergy>
-					<nrg2:embodiedCarbon uom="kgCO2/kg">0.5</nrg2:embodiedCarbon>
-				</nrg2:SolidMaterial>
-			</nrg2:libraryMember>
-		</nrg2:MaterialLibrary>
+					<nrg3:libraryCode codeSpace="gascode_codeSpace">solid_material_code_18</nrg3:libraryCode>
+					<nrg3:thermalConductivity uom="W/(K*m)">0.7</nrg3:thermalConductivity>
+					<nrg3:density uom="kg/m^3">1400</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg*K)">0.9</nrg3:specificHeatCapacity>
+					<nrg3:permeance uom="xxx">0.9</nrg3:permeance>
+					<nrg3:porosity uom="ratio">0.05</nrg3:porosity>
+					<nrg3:embodiedEnergy uom="kWh/kg">9.4</nrg3:embodiedEnergy>
+					<nrg3:embodiedCarbon uom="kgCO2/kg">0.5</nrg3:embodiedCarbon>
+				</nrg3:SolidMaterial>
+			</nrg3:libraryMember>
+		</nrg3:MaterialLibrary>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
-		<nrg2:LayeredConstructionLibrary gml:id="id_layered_construction_library_1">
+		<nrg3:LayeredConstructionLibrary gml:id="id_layered_construction_library_1">
 			<gml:description>This is Layered Construction Library 1</gml:description>
 			<gml:name>Layered Construction Library 1</gml:name>
-			<nrg2:type codeSpace="layered_construction_library_type_codeSpace">layered_construction_library_type</nrg2:type>
-			<nrg2:source>TABULA</nrg2:source>
-			<nrg2:author>Giorgio Agugiaro</nrg2:author>
-			<nrg2:libraryMember>
-				<nrg2:LayeredConstruction gml:id="id_layered_construction_glazing_5">
+			<nrg3:type codeSpace="layered_construction_library_type_codeSpace">layered_construction_library_type</nrg3:type>
+			<nrg3:source>TABULA</nrg3:source>
+			<nrg3:author>Giorgio Agugiaro</nrg3:author>
+			<nrg3:libraryMember>
+				<nrg3:LayeredConstruction gml:id="id_layered_construction_glazing_5">
 					<gml:description>This is LayeredConstruction Glazing 5 (without layers as children objects)</gml:description>
 					<gml:name>LayeredConstruction Glazing 5 (no layers)</gml:name>
-					<nrg2:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_5</nrg2:libraryCode>
-					<nrg2:uValue uom="W/(K*m^2)">1.9</nrg2:uValue>
-					<nrg2:glazingRatio uom="unit interval">0.95</nrg2:glazingRatio>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.1</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.3</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.7</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.5</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-				</nrg2:LayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:LayeredConstruction gml:id="id_layered_construction_ground_1">
+					<nrg3:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_5</nrg3:libraryCode>
+					<nrg3:uValue uom="W/(K*m^2)">1.9</nrg3:uValue>
+					<nrg3:glazingRatio uom="unit interval">0.95</nrg3:glazingRatio>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.1</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.3</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.7</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.5</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+				</nrg3:LayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:LayeredConstruction gml:id="id_layered_construction_ground_1">
 					<gml:description>This is LayeredConstruction Ground 1 (from inside to outside)</gml:description>
 					<gml:name>LayeredConstruction Ground 1</gml:name>
-					<nrg2:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_1</nrg2:libraryCode>
-					<nrg2:uValue uom="W/(K*m^2)">0.42</nrg2:uValue>
-					<nrg2:glazingRatio uom="unit interval">0.95</nrg2:glazingRatio>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.1</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.3</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.7</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.5</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_1">
+					<nrg3:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_1</nrg3:libraryCode>
+					<nrg3:uValue uom="W/(K*m^2)">0.42</nrg3:uValue>
+					<nrg3:glazingRatio uom="unit interval">0.95</nrg3:glazingRatio>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.1</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.3</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.7</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.5</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_1">
 							<gml:description>This is Layer 1</gml:description>
 							<gml:name>Layer 1</gml:name>
-							<nrg2:thickness uom="mm">40</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_1"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_2">
+							<nrg3:thickness uom="mm">40</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_1"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_2">
 							<gml:description>This is Layer 2</gml:description>
 							<gml:name>Layer 2</gml:name>
-							<nrg2:thickness uom="mm">45</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_2"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_3">
+							<nrg3:thickness uom="mm">45</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_2"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_3">
 							<gml:description>This is Layer 3</gml:description>
 							<gml:name>Layer 3</gml:name>
-							<nrg2:thickness uom="mm">80</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_3"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_4">
+							<nrg3:thickness uom="mm">80</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_3"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_4">
 							<gml:description>This is Layer 4</gml:description>
 							<gml:name>Layer 4</gml:name>
-							<nrg2:thickness uom="mm">5</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_4"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_5">
+							<nrg3:thickness uom="mm">5</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_4"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_5">
 							<gml:description>This is Layer 5</gml:description>
 							<gml:name>Layer 5</gml:name>
-							<nrg2:thickness uom="mm">300</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_5"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-				</nrg2:LayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:LayeredConstruction gml:id="id_layered_construction_iwall_4">
+							<nrg3:thickness uom="mm">300</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_5"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+				</nrg3:LayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:LayeredConstruction gml:id="id_layered_construction_iwall_4">
 					<gml:description>This is LayeredConstruction Internal Wall 4 (from inside to outside)</gml:description>
 					<gml:name>LayeredConstruction Internal Wall 4</gml:name>
-					<nrg2:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_4</nrg2:libraryCode>
-					<nrg2:uValue uom="W/(K*m^2)">0.42</nrg2:uValue>
-					<nrg2:glazingRatio uom="unit interval">0.95</nrg2:glazingRatio>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.1</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.3</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.7</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.5</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_16">
+					<nrg3:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_4</nrg3:libraryCode>
+					<nrg3:uValue uom="W/(K*m^2)">0.42</nrg3:uValue>
+					<nrg3:glazingRatio uom="unit interval">0.95</nrg3:glazingRatio>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.1</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.3</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.7</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.5</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_16">
 							<gml:description>This is Layer 16</gml:description>
 							<gml:name>Layer 16</gml:name>
-							<nrg2:thickness uom="mm">10</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_16"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_17">
+							<nrg3:thickness uom="mm">10</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_16"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_17">
 							<gml:description>This is Layer 17</gml:description>
 							<gml:name>Layer 17</gml:name>
-							<nrg2:thickness uom="mm">200</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_17"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_18">
+							<nrg3:thickness uom="mm">200</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_17"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_18">
 							<gml:description>This is Layer 18</gml:description>
 							<gml:name>Layer 18</gml:name>
-							<nrg2:thickness uom="mm">120</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_18"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-				</nrg2:LayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:LayeredConstruction gml:id="id_layered_construction_roof_3">
+							<nrg3:thickness uom="mm">120</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_18"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+				</nrg3:LayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:LayeredConstruction gml:id="id_layered_construction_roof_3">
 					<gml:description>This is LayeredConstruction Roof 3 (from inside to outside)</gml:description>
 					<gml:name>LayeredConstruction Roof 3</gml:name>
-					<nrg2:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_3</nrg2:libraryCode>
-					<nrg2:uValue uom="W/(K*m^2)">0.39</nrg2:uValue>
-					<nrg2:glazingRatio uom="unit interval">0.95</nrg2:glazingRatio>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.1</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.3</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.7</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.5</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_11">
+					<nrg3:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_3</nrg3:libraryCode>
+					<nrg3:uValue uom="W/(K*m^2)">0.39</nrg3:uValue>
+					<nrg3:glazingRatio uom="unit interval">0.95</nrg3:glazingRatio>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.1</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.3</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.7</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.5</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_11">
 							<gml:description>This is Layer 11</gml:description>
 							<gml:name>Layer 11</gml:name>
-							<nrg2:thickness uom="mm">10</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_11"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_12">
+							<nrg3:thickness uom="mm">10</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_11"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_12">
 							<gml:description>This is Layer 12</gml:description>
 							<gml:name>Layer 12</gml:name>
-							<nrg2:thickness uom="mm">200</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_12"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_13">
+							<nrg3:thickness uom="mm">200</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_12"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_13">
 							<gml:description>This is Layer 13</gml:description>
 							<gml:name>Layer 13</gml:name>
-							<nrg2:thickness uom="mm">30</nrg2:thickness>
-							<nrg2:material xlink:href="id_gas_2"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_14">
+							<nrg3:thickness uom="mm">30</nrg3:thickness>
+							<nrg3:material xlink:href="id_gas_2"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_14">
 							<gml:description>This is Layer 14</gml:description>
 							<gml:name>Layer 14</gml:name>
-							<nrg2:thickness uom="mm">120</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_14"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_15">
+							<nrg3:thickness uom="mm">120</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_14"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_15">
 							<gml:description>This is Layer 15</gml:description>
 							<gml:name>Layer 15</gml:name>
-							<nrg2:thickness uom="mm">5</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_15"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-				</nrg2:LayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:LayeredConstruction gml:id="id_layered_construction_wall_2">
+							<nrg3:thickness uom="mm">5</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_15"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+				</nrg3:LayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:LayeredConstruction gml:id="id_layered_construction_wall_2">
 					<gml:description>This is LayeredConstruction Wall 2 (from inside to outside)</gml:description>
 					<gml:name>LayeredConstruction Wall 2</gml:name>
-					<nrg2:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_2</nrg2:libraryCode>
-					<nrg2:uValue uom="W/(K*m^2)">0.31</nrg2:uValue>
-					<nrg2:glazingRatio uom="unit interval">0.95</nrg2:glazingRatio>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.1</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:emissivity>
-						<nrg2:Emissivity>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-						</nrg2:Emissivity>
-					</nrg2:emissivity>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.2</nrg2:fraction>
-							<nrg2:surface>outside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:reflectance>
-						<nrg2:Reflectance>
-							<nrg2:fraction uom="unit interval">0.3</nrg2:fraction>
-							<nrg2:surface>inside</nrg2:surface>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Reflectance>
-					</nrg2:reflectance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.7</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:transmittance>
-						<nrg2:Transmittance>
-							<nrg2:fraction uom="unit interval">0.5</nrg2:fraction>
-							<nrg2:wavelengthRange>solar</nrg2:wavelengthRange>
-						</nrg2:Transmittance>
-					</nrg2:transmittance>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_6">
+					<nrg3:libraryCode codeSpace="layered_constr_library_codeSpace">layered_constr_library_code_2</nrg3:libraryCode>
+					<nrg3:uValue uom="W/(K*m^2)">0.31</nrg3:uValue>
+					<nrg3:glazingRatio uom="unit interval">0.95</nrg3:glazingRatio>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.1</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:emissivity>
+						<nrg3:Emissivity>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+						</nrg3:Emissivity>
+					</nrg3:emissivity>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.2</nrg3:fraction>
+							<nrg3:surface>outside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:reflectance>
+						<nrg3:Reflectance>
+							<nrg3:fraction uom="unit interval">0.3</nrg3:fraction>
+							<nrg3:surface>inside</nrg3:surface>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Reflectance>
+					</nrg3:reflectance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.7</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:transmittance>
+						<nrg3:Transmittance>
+							<nrg3:fraction uom="unit interval">0.5</nrg3:fraction>
+							<nrg3:wavelengthRange>solar</nrg3:wavelengthRange>
+						</nrg3:Transmittance>
+					</nrg3:transmittance>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_6">
 							<gml:description>This is Layer 6</gml:description>
 							<gml:name>Layer 6</gml:name>
-							<nrg2:thickness uom="mm">10</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_6"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_7">
+							<nrg3:thickness uom="mm">10</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_6"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_7">
 							<gml:description>This is Layer 7</gml:description>
 							<gml:name>Layer 7</gml:name>
-							<nrg2:thickness uom="mm">300</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_7"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_8">
+							<nrg3:thickness uom="mm">300</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_7"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_8">
 							<gml:description>This is Layer 8</gml:description>
 							<gml:name>Layer 8</gml:name>
-							<nrg2:thickness uom="mm">30</nrg2:thickness>
-							<nrg2:material xlink:href="id_gas_1"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_9">
+							<nrg3:thickness uom="mm">30</nrg3:thickness>
+							<nrg3:material xlink:href="id_gas_1"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_9">
 							<gml:description>This is Layer 9</gml:description>
 							<gml:name>Layer 9</gml:name>
-							<nrg2:thickness uom="mm">80</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_9"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-					<nrg2:layer>
-						<nrg2:Layer gml:id="id_layer_10">
+							<nrg3:thickness uom="mm">80</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_9"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+					<nrg3:layer>
+						<nrg3:Layer gml:id="id_layer_10">
 							<gml:description>This is Layer 10</gml:description>
 							<gml:name>Layer 10</gml:name>
-							<nrg2:thickness uom="mm">20</nrg2:thickness>
-							<nrg2:material xlink:href="id_solid_material_10"/>
-						</nrg2:Layer>
-					</nrg2:layer>
-				</nrg2:LayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:ReverseLayeredConstruction gml:id="id_reverse_layered_construction_ground_1">
+							<nrg3:thickness uom="mm">20</nrg3:thickness>
+							<nrg3:material xlink:href="id_solid_material_10"/>
+						</nrg3:Layer>
+					</nrg3:layer>
+				</nrg3:LayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ReverseLayeredConstruction gml:id="id_reverse_layered_construction_ground_1">
 					<gml:description>ReverseLayeredConstruction Ground 1 (from inside to outside) (reverse the order of the layers of the linked LayeredConstruction)</gml:description>
 					<gml:name>ReverseLayeredConstruction Ground 1</gml:name>
-					<nrg2:baseLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-				</nrg2:ReverseLayeredConstruction>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:ReverseLayeredConstruction gml:id="id_reverse_layered_construction_iwall_4">
+					<nrg3:baseLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+				</nrg3:ReverseLayeredConstruction>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ReverseLayeredConstruction gml:id="id_reverse_layered_construction_iwall_4">
 					<gml:description>ReverseLayeredConstruction Internal Wall 4 (from inside to outside) (reverse the order of the layers of the linked LayeredConstruction)</gml:description>
 					<gml:name>ReverseLayeredConstruction Internal Wall 4</gml:name>
-					<nrg2:baseLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-				</nrg2:ReverseLayeredConstruction>
-			</nrg2:libraryMember>
-		</nrg2:LayeredConstructionLibrary>
+					<nrg3:baseLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+				</nrg3:ReverseLayeredConstruction>
+			</nrg3:libraryMember>
+		</nrg3:LayeredConstructionLibrary>
 	</core:cityObjectMember>
 </core:CityModel>

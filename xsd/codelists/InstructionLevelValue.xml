@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="InstructionLevelValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">InstructionLevelValue</gml:identifier>
+  <gml:name>InstructionLevelValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2190">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">no formal education</gml:identifier>
+      <gml:name>no formal education</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2194">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">primary school</gml:identifier>
+      <gml:name>primary school</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2195">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">secondary school</gml:identifier>
+      <gml:name>secondary school</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2196">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">university</gml:identifier>
+      <gml:name>university</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2197">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">postGraduate</gml:identifier>
+      <gml:name>postGraduate</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1127_2198">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/InstructionLevelValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

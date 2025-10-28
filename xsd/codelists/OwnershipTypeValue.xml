@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="OwnershipTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:description>The type of organization, association, or business, that owns the premises.</gml:description>
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">OwnershipTypeValue</gml:identifier>
+  <gml:name>OwnershipTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1953">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">corporation</gml:identifier>
+      <gml:name>corporation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1954">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">government</gml:identifier>
+      <gml:name>government</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1955">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">nonOccupantPrivateOwner</gml:identifier>
+      <gml:name>nonOccupantPrivateOwner</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1956">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">nonProfitOrganisation</gml:identifier>
+      <gml:name>nonProfitOrganisation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1957">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">occupantPrivateOwner</gml:identifier>
+      <gml:name>occupantPrivateOwner</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1958">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">propertyManagementCompany</gml:identifier>
+      <gml:name>propertyManagementCompany</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1959">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_308_1960">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/OwnershipTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

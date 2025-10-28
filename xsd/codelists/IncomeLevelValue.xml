@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="IncomeLevelValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">IncomeLevelValue</gml:identifier>
+  <gml:name>IncomeLevelValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2199">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">low</gml:identifier>
+      <gml:name>low</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2200">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">middle</gml:identifier>
+      <gml:name>middle</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2201">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">high</gml:identifier>
+      <gml:name>high</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2202">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">very high</gml:identifier>
+      <gml:name>very high</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2203">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">very low</gml:identifier>
+      <gml:name>very low</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1128_2209">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/IncomeLevelValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

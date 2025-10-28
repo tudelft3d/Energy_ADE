@@ -8,11 +8,11 @@
 *******************************************************
 
 CityGML 2.0 Test dataset "Alderaan"
-with Energy ADE 2.0 Beta 7
+with Energy ADE 3.0 Beta 7
 
-Last update: 2025-05-11
+Last update: 2025-10-14
 
-** Energy ADE 2.0 **
+** Energy ADE 3.0 **
 
 This file contains 1 ScheduleLibrary object
 which contains:
@@ -52,485 +52,485 @@ https://3d.bk.tudelft.nl/gagugiaro/
 *******************************************************
 *******************************************************
 -->
-<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<core:CityModel xmlns:app="http://www.opengis.net/citygml/appearance/2.0" xmlns:bldg="http://www.opengis.net/citygml/building/2.0" xmlns:brid="http://www.opengis.net/citygml/bridge/2.0" xmlns:core="http://www.opengis.net/citygml/2.0" xmlns:dem="http://www.opengis.net/citygml/relief/2.0" xmlns:frn="http://www.opengis.net/citygml/cityfurniture/2.0" xmlns:gen="http://www.opengis.net/citygml/generics/2.0" xmlns:gml="http://www.opengis.net/gml" xmlns:grp="http://www.opengis.net/citygml/cityobjectgroup/2.0" xmlns:luse="http://www.opengis.net/citygml/landuse/2.0" xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" xmlns:pbase="http://www.opengis.net/citygml/profiles/base/2.0" xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:smil20="http://www.w3.org/2001/SMIL20/" xmlns:smil20lang="http://www.w3.org/2001/SMIL20/Language" xmlns:tex="http://www.opengis.net/citygml/texturedsurface/2.0" xmlns:tran="http://www.opengis.net/citygml/transportation/2.0" xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0" xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0" xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0" xmlns:xAL="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<gml:description>This file contains an example of a library containing different schedules. Created by Giorgio Agugiaro (g.agugiaro@tudelft.nl)</gml:description>
 	<gml:name>Schedule Libraries</gml:name>
 	<core:cityObjectMember>
-		<nrg2:ScheduleLibrary gml:id="id_schedule_library_1">
+		<nrg3:ScheduleLibrary gml:id="id_schedule_library_1">
 			<gml:description>This is Schedule Library 1</gml:description>
 			<gml:name>Schedule Library 1</gml:name>
-			<nrg2:type codeSpace="schedule_library_type_codeSpace">schedule_library_type</nrg2:type>
-			<nrg2:source>Coruscant Schedule Library</nrg2:source>
-			<nrg2:author>Giorgio Agugiaro</nrg2:author>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_1">
+			<nrg3:type codeSpace="schedule_library_type_codeSpace">schedule_library_type</nrg3:type>
+			<nrg3:source>Coruscant Schedule Library</nrg3:source>
+			<nrg3:author>Giorgio Agugiaro</nrg3:author>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_1">
 					<gml:description>This is AtomicSchedule 1 for a year, connected to a timeseries of 1 yearly value</gml:description>
 					<gml:name>AtomicSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_2">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_2">
 							<gml:description>This is DefaultValuesTimeSeries 2</gml:description>
 							<gml:name>DefaultValuesTimeSeries 2</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_18">calibratedSimulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>discontinuous</nrg2:interpolationType>
-							<nrg2:source>source_18</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">100</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_2">
+							<nrg3:acquisitionMethod codeSpace="codespace_18">calibratedSimulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_18</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">100</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_2">
 					<gml:description>This is AtomicSchedule 2 for a year, connected to a timeseries of 12 monthly values</gml:description>
 					<gml:name>AtomicSchedule 2</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_3">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_3">
 							<gml:description>This is DefaultValuesTimeSeries 3</gml:description>
 							<gml:name>DefaultValuesTimeSeries 3</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_19">estimation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>instantaneousTotal</nrg2:interpolationType>
-							<nrg2:source>source_19</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="year">0.083</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_3">
+							<nrg3:acquisitionMethod codeSpace="codespace_19">estimation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_19</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">0.083</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_3">
 					<gml:description>This is AtomicSchedule 3 for a year, connected to a timeseries of 52 weekly values</gml:description>
 					<gml:name>AtomicSchedule 3</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_3</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_4">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_3</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_4">
 							<gml:description>This is DefaultValuesTimeSeries 4</gml:description>
 							<gml:name>DefaultValuesTimeSeries 4</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_20">unknown</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>maximumInPrecedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_20</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">7</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_4">
+							<nrg3:acquisitionMethod codeSpace="codespace_20">unknown</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_20</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_4">
 					<gml:description>This is AtomicSchedule 4 for a year, connected to a timeseries of 365 daily values</gml:description>
 					<gml:name>AtomicSchedule 4</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_4</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_5">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_4</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_5">
 							<gml:description>This is DefaultValuesTimeSeries 5</gml:description>
 							<gml:name>DefaultValuesTimeSeries 5</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_21">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>continuous</nrg2:interpolationType>
-							<nrg2:source>source_21</nrg2:source>
-							<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="day">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_5">
+							<nrg3:acquisitionMethod codeSpace="codespace_21">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>source_21</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_5">
 					<gml:description>This is AtomicSchedule 5 for a day, connected to a timeseries of 24 hourly values</gml:description>
 					<gml:name>AtomicSchedule 5</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_5</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_6">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_5</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_6">
 							<gml:description>This is DefaultValuesTimeSeries 6</gml:description>
 							<gml:name>DefaultValuesTimeSeries 6</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_22">calibratedSimulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>discontinuous</nrg2:interpolationType>
-							<nrg2:source>source_22</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_6">
+							<nrg3:acquisitionMethod codeSpace="codespace_22">calibratedSimulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_22</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_6">
 					<gml:description>This is AtomicSchedule 6</gml:description>
 					<gml:name>AtomicSchedule 6</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_6</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_7">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_6</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_7">
 							<gml:description>This is DefaultValuesTimeSeries 7</gml:description>
 							<gml:name>DefaultValuesTimeSeries 7</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_23">estimation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>instantaneousTotal</nrg2:interpolationType>
-							<nrg2:source>source_23</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_7">
+							<nrg3:acquisitionMethod codeSpace="codespace_23">estimation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_23</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_7">
 					<gml:description>This is AtomicSchedule 7</gml:description>
 					<gml:name>AtomicSchedule 7</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_7</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekendDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_8">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_7</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekendDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_8">
 							<gml:description>This is DefaultValuesTimeSeries 8</gml:description>
 							<gml:name>DefaultValuesTimeSeries 8</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_24">unknown</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>maximumInPrecedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_24</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_8">
+							<nrg3:acquisitionMethod codeSpace="codespace_24">unknown</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_24</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_8">
 					<gml:description>This is AtomicSchedule 8</gml:description>
 					<gml:name>AtomicSchedule 8</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_8</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">typicalDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_9">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_8</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">typicalDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_9">
 							<gml:description>This is DefaultValuesTimeSeries 9</gml:description>
 							<gml:name>DefaultValuesTimeSeries 9</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_25">simulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>continuous</nrg2:interpolationType>
-							<nrg2:source>source_25</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_9">
+							<nrg3:acquisitionMethod codeSpace="codespace_25">simulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>source_25</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_9">
 					<gml:description>This is AtomicSchedule 9</gml:description>
 					<gml:name>AtomicSchedule 9</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_9</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">typicalDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_10">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_9</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">typicalDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_10">
 							<gml:description>This is DefaultValuesTimeSeries 10</gml:description>
 							<gml:name>DefaultValuesTimeSeries 10</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_26">calibratedSimulation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>discontinuous</nrg2:interpolationType>
-							<nrg2:source>source_26</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">21 22 23 24 25 26 27 28 29 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_10">
+							<nrg3:acquisitionMethod codeSpace="codespace_26">calibratedSimulation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_26</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">21 22 23 24 25 26 27 28 29 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_10">
 					<gml:description>This is AtomicSchedule 10</gml:description>
 					<gml:name>AtomicSchedule 10</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_10</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">typicalDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_11">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_10</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">typicalDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_11">
 							<gml:description>This is DefaultValuesTimeSeries 11</gml:description>
 							<gml:name>DefaultValuesTimeSeries 11</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_27">estimation</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>instantaneousTotal</nrg2:interpolationType>
-							<nrg2:source>source_27</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">31 32 33 34 35 36 37 38 39 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:AtomicSchedule gml:id="id_atomic_schedule_11">
+							<nrg3:acquisitionMethod codeSpace="codespace_27">estimation</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_27</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">31 32 33 34 35 36 37 38 39 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:AtomicSchedule gml:id="id_atomic_schedule_11">
 					<gml:description>This is AtomicSchedule 11</gml:description>
 					<gml:name>AtomicSchedule 11</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_11</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">typicalDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:timeSeries>
-						<nrg2:TypicalValuesTimeSeries gml:id="id_default_values_time_series_12">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">atom_sched_code_11</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">typicalDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeSeries>
+						<nrg3:TypicalValuesTimeSeries gml:id="id_default_values_time_series_12">
 							<gml:description>This is DefaultValuesTimeSeries 12</gml:description>
 							<gml:name>DefaultValuesTimeSeries 12</gml:name>
-							<nrg2:acquisitionMethod codeSpace="codespace_28">unknown</nrg2:acquisitionMethod>
-							<nrg2:interpolationType>maximumInPrecedingInterval</nrg2:interpolationType>
-							<nrg2:source>source_28</nrg2:source>
-							<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-							<nrg2:timeInterval unit="hour">1</nrg2:timeInterval>
-							<nrg2:valuesList uom="unit">41 42 43 44 45 46 47 48 49 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424</nrg2:valuesList>
-						</nrg2:TypicalValuesTimeSeries>
-					</nrg2:timeSeries>
-				</nrg2:AtomicSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:CompositeSchedule gml:id="id_composite_schedule_1">
+							<nrg3:acquisitionMethod codeSpace="codespace_28">unknown</nrg3:acquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_28</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">41 42 43 44 45 46 47 48 49 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424</nrg3:valuesList>
+						</nrg3:TypicalValuesTimeSeries>
+					</nrg3:timeSeries>
+				</nrg3:AtomicSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:CompositeSchedule gml:id="id_composite_schedule_1">
 					<gml:description>This is CompositeSchedule 1, for 1 typical week, composed of 5 typical days and 2 weekend days</gml:description>
 					<gml:name>CompositeSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">week</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">7</nrg2:temporalExtent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_1">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">week</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_1">
 							<gml:description>This is ScheduleComponent 1</gml:description>
 							<gml:name>ScheduleComponent 1 containing a repetition of 5 times a daily schedule of timeseries of 24 hourly values for a week day</gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">weekDay</nrg2:type>
-							<nrg2:repetitions>5</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_6"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_2">
+							<nrg3:type codeSpace="schedule_type_codeSpace">weekDay</nrg3:type>
+							<nrg3:repetitions>5</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_6"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_2">
 							<gml:description>This is ScheduleComponent 2</gml:description>
 							<gml:name>ScheduleComponent 2 containing a repetition of 2 times a daily schedule of timeseries of 24 hourly values for a weekend day</gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">weekendDay</nrg2:type>
-							<nrg2:repetitions>2</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_7"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-				</nrg2:CompositeSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:CompositeSchedule gml:id="id_composite_schedule_2">
+							<nrg3:type codeSpace="schedule_type_codeSpace">weekendDay</nrg3:type>
+							<nrg3:repetitions>2</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_7"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+				</nrg3:CompositeSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:CompositeSchedule gml:id="id_composite_schedule_2">
 					<gml:description>This is CompositeSchedule 2, for 1 year, composed of 4 seasons</gml:description>
 					<gml:name>CompositeSchedule 2</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">week</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">7</nrg2:temporalExtent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_3">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">week</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_3">
 							<gml:description>This is ScheduleComponent 3</gml:description>
 							<gml:name>ScheduleComponent 3, for the winter season, containing a repetition of 91 times of a typical day schedule of timeseries of 24 hourly values </gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">winter</nrg2:type>
-							<nrg2:repetitions>91</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_8"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_4">
+							<nrg3:type codeSpace="schedule_type_codeSpace">winter</nrg3:type>
+							<nrg3:repetitions>91</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_8"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_4">
 							<gml:description>This is ScheduleComponent 4</gml:description>
 							<gml:name>ScheduleComponent 4, for the spring season, containing a repetition of 91 times of a typical day schedule of timeseries of 24 hourly values </gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">spring</nrg2:type>
-							<nrg2:repetitions>91</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_9"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_5">
+							<nrg3:type codeSpace="schedule_type_codeSpace">spring</nrg3:type>
+							<nrg3:repetitions>91</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_9"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_5">
 							<gml:description>This is ScheduleComponent 5</gml:description>
 							<gml:name>ScheduleComponent 5, for the summer season, containing a repetition of 92 times of a typical day schedule of timeseries of 24 hourly values </gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">summer</nrg2:type>
-							<nrg2:repetitions>92</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_10"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_6">
+							<nrg3:type codeSpace="schedule_type_codeSpace">summer</nrg3:type>
+							<nrg3:repetitions>92</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_10"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_6">
 							<gml:description>This is ScheduleComponent 6</gml:description>
 							<gml:name>ScheduleComponent 6, for the autumn season, containing a repetition of 91 times of a typical day schedule of timeseries of 24 hourly values </gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">autumn</nrg2:type>
-							<nrg2:repetitions>91</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_atomic_schedule_11"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-				</nrg2:CompositeSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:CompositeSchedule gml:id="id_composite_schedule_3">
+							<nrg3:type codeSpace="schedule_type_codeSpace">autumn</nrg3:type>
+							<nrg3:repetitions>91</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_atomic_schedule_11"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+				</nrg3:CompositeSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:CompositeSchedule gml:id="id_composite_schedule_3">
 					<gml:description>This is CompositeSchedule 3, for 1 year, composed of 52 typical weeks, and using Xlinks</gml:description>
 					<gml:name>CompositeSchedule 3</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_3</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:scheduleComponent>
-						<nrg2:ScheduleComponent gml:id="id_schedule_component_7">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">comp_sched_code_3</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:scheduleComponent>
+						<nrg3:ScheduleComponent gml:id="id_schedule_component_7">
 							<gml:description>This is ScheduleComponent 7</gml:description>
 							<gml:name>ScheduleComponent 7, for 1 year, composed of 52 typical weeks</gml:name>
-							<nrg2:type codeSpace="schedule_type_codeSpace">typicalWeek</nrg2:type>
-							<nrg2:repetitions>52</nrg2:repetitions>
-							<nrg2:additionalGap unit="day">0</nrg2:additionalGap>
-							<nrg2:scheduleComponentMember xlink:href="#id_composite_schedule_1"/>
-						</nrg2:ScheduleComponent>
-					</nrg2:scheduleComponent>
-				</nrg2:CompositeSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_1">
+							<nrg3:type codeSpace="schedule_type_codeSpace">typicalWeek</nrg3:type>
+							<nrg3:repetitions>52</nrg3:repetitions>
+							<nrg3:additionalGap unit="day">0</nrg3:additionalGap>
+							<nrg3:scheduleComponentMember xlink:href="#id_composite_schedule_1"/>
+						</nrg3:ScheduleComponent>
+					</nrg3:scheduleComponent>
+				</nrg3:CompositeSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_1">
 					<gml:description>This is DualValueSchedule 1 for a Monday</gml:description>
 					<gml:name>DualValueSchedule 1</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_1</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">monday</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="degrees Celsius">12</nrg2:idleValue>
-					<nrg2:usageValue uom="degrees Celsius">19</nrg2:usageValue>
-					<nrg2:startUsageTime>07:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>21:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_2">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_1</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">monday</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="degrees Celsius">12</nrg3:idleValue>
+					<nrg3:usageValue uom="degrees Celsius">19</nrg3:usageValue>
+					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>21:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_2">
 					<gml:description>This is DualValueSchedule 2 for a typical day</gml:description>
 					<gml:name>DualValueSchedule 2</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_2</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">typicalDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="degrees Celsius">12</nrg2:idleValue>
-					<nrg2:usageValue uom="degrees Celsius">19</nrg2:usageValue>
-					<nrg2:startUsageTime>07:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>14:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_3">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_2</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">typicalDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="degrees Celsius">12</nrg3:idleValue>
+					<nrg3:usageValue uom="degrees Celsius">19</nrg3:usageValue>
+					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>14:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_3">
 					<gml:description>This is DualValueSchedule 3 for a week day</gml:description>
 					<gml:name>DualValueSchedule 3</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_3</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="degrees Celsius">35</nrg2:idleValue>
-					<nrg2:usageValue uom="degrees Celsius">25</nrg2:usageValue>
-					<nrg2:startUsageTime>07:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>21:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_4">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_3</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="degrees Celsius">35</nrg3:idleValue>
+					<nrg3:usageValue uom="degrees Celsius">25</nrg3:usageValue>
+					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>21:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_4">
 					<gml:description>This is DualValueSchedule 4 for a weekend day</gml:description>
 					<gml:name>DualValueSchedule 4</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_4</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">weekendDay</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:temporalExtent unit="day">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="degrees Celsius">35</nrg2:idleValue>
-					<nrg2:usageValue uom="degrees Celsius">25</nrg2:usageValue>
-					<nrg2:startUsageTime>07:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>14:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_5">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_4</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">weekendDay</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="degrees Celsius">35</nrg3:idleValue>
+					<nrg3:usageValue uom="degrees Celsius">25</nrg3:usageValue>
+					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>14:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_5">
 					<gml:description>This is DualValueSchedule 5 for a week</gml:description>
 					<gml:name>DualValueSchedule 5</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_5</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">week</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:temporalExtent unit="day">7</nrg2:temporalExtent>
-					<nrg2:idleValue uom="unit interval">0</nrg2:idleValue>
-					<nrg2:usageValue uom="unit interval">1</nrg2:usageValue>
-					<nrg2:startUsageTime>09:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>18:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_6">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_5</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">week</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
+					<nrg3:idleValue uom="unit interval">0</nrg3:idleValue>
+					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
+					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_6">
 					<gml:description>This is DualValueSchedule 6 for August</gml:description>
 					<gml:name>DualValueSchedule 6</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_6</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">august</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>8</nrg2:startMonth>
-					<nrg2:temporalExtent unit="day">31</nrg2:temporalExtent>
-					<nrg2:idleValue uom="unit interval">0.5</nrg2:idleValue>
-					<nrg2:usageValue uom="unit interval">1</nrg2:usageValue>
-					<nrg2:startUsageTime>09:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>18:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_7">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_6</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">august</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>8</nrg3:startMonth>
+					<nrg3:temporalExtent unit="day">31</nrg3:temporalExtent>
+					<nrg3:idleValue uom="unit interval">0.5</nrg3:idleValue>
+					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
+					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_7">
 					<gml:description>This is DualValueSchedule 7 for spring</gml:description>
 					<gml:name>DualValueSchedule 7</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_7</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">spring</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>22</nrg2:startDay>
-					<nrg2:startMonth>3</nrg2:startMonth>
-					<nrg2:temporalExtent unit="day">122</nrg2:temporalExtent>
-					<nrg2:idleValue uom="unit interval">0</nrg2:idleValue>
-					<nrg2:usageValue uom="unit interval">1</nrg2:usageValue>
-					<nrg2:startUsageTime>09:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>18:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-			<nrg2:libraryMember>
-				<nrg2:DualValueSchedule gml:id="id_dual_value_schedule_8">
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_7</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">spring</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>22</nrg3:startDay>
+					<nrg3:startMonth>3</nrg3:startMonth>
+					<nrg3:temporalExtent unit="day">122</nrg3:temporalExtent>
+					<nrg3:idleValue uom="unit interval">0</nrg3:idleValue>
+					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
+					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:DualValueSchedule gml:id="id_dual_value_schedule_8">
 					<gml:description>This is DualValueSchedule 8 for a year</gml:description>
 					<gml:name>DualValueSchedule 8</gml:name>
-					<nrg2:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_8</nrg2:libraryCode>
-					<nrg2:type codeSpace="schedule_type_codeSpace">year</nrg2:type>
-					<nrg2:startTime>00:00:00</nrg2:startTime>
-					<nrg2:startDay>1</nrg2:startDay>
-					<nrg2:startMonth>1</nrg2:startMonth>
-					<nrg2:temporalExtent unit="year">1</nrg2:temporalExtent>
-					<nrg2:idleValue uom="unit interval">0.5</nrg2:idleValue>
-					<nrg2:usageValue uom="unit interval">1</nrg2:usageValue>
-					<nrg2:startUsageTime>09:00:00</nrg2:startUsageTime>
-					<nrg2:endUsageTime>18:00:00</nrg2:endUsageTime>
-				</nrg2:DualValueSchedule>
-			</nrg2:libraryMember>
-		</nrg2:ScheduleLibrary>
+					<nrg3:libraryCode codeSpace="schedule_library_codeSpace">dual_value_sched_code_8</nrg3:libraryCode>
+					<nrg3:type codeSpace="schedule_type_codeSpace">year</nrg3:type>
+					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:idleValue uom="unit interval">0.5</nrg3:idleValue>
+					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
+					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
+				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+		</nrg3:ScheduleLibrary>
 	</core:cityObjectMember>
 </core:CityModel>

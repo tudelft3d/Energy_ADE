@@ -5,9 +5,9 @@
 
 XML Schema Definition (XSD) file for the
 
-CityGML Energy ADE 2.0 (beta 7)
+CityGML Energy ADE 3.0 (beta 7)
 
-Last update: 2025-06-25
+Last update: 2025-09-23
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -84,13 +84,13 @@ xmlns:tran="http://www.opengis.net/citygml/transportation/2.0"
 xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0"
 xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0"
 xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0"
-xmlns:nrg2="http://www.citygml.org/ade/energy/2.0" 
+xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" 
 elementFormDefault="qualified" 
-targetNamespace="http://www.citygml.org/ade/energy/2.0" 
-version="2.0"
+targetNamespace="http://www.citygml.org/ade/energy/3.0" 
+version="3.0"
 >
   <annotation>
-    <documentation>Energy ADE 2.0 beta 7 (2025-06-25) for CityGML 2.0</documentation>
+    <documentation>Energy ADE 3.0 beta 7 (2025-09-23) for CityGML 2.0</documentation>
   </annotation>
 
   <!-- All CityGML modules added manually, in case they are not written automatically by ShapeChange -->
@@ -187,7 +187,7 @@ version="2.0"
   <!-- ********************* -->
 
 
-  <element abstract="true" name="AbstractOpticalProperty" substitutionGroup="gml:_Object" type="nrg2:AbstractOpticalProperty_Type"></element>
+  <element abstract="true" name="AbstractOpticalProperty" substitutionGroup="gml:_Object" type="nrg3:AbstractOpticalProperty_Type"></element>
   <complexType abstract="true" name="AbstractOpticalProperty_Type">
     <sequence>
       <element name="fraction" type="gml:ScaleType"></element>
@@ -195,35 +195,35 @@ version="2.0"
   </complexType>
   <complexType name="AbstractOpticalProperty_PropertyType">
     <sequence>
-      <element ref="nrg2:AbstractOpticalProperty"/>
+      <element ref="nrg3:AbstractOpticalProperty"/>
     </sequence>
   </complexType>
 
 
-  <element name="Emissivity" substitutionGroup="nrg2:AbstractOpticalProperty" type="nrg2:EmissivityType"></element>
+  <element name="Emissivity" substitutionGroup="nrg3:AbstractOpticalProperty" type="nrg3:EmissivityType"></element>
   <complexType name="EmissivityType">
     <complexContent>
-      <extension base="nrg2:AbstractOpticalProperty_Type">
+      <extension base="nrg3:AbstractOpticalProperty_Type">
         <sequence>
-          <element name="surface" type="nrg2:SurfaceSideType"></element>
+          <element name="surface" type="nrg3:SurfaceSideType"></element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="EmissivityPropertyType">
     <sequence>
-      <element ref="nrg2:Emissivity"/>
+      <element ref="nrg3:Emissivity"/>
     </sequence>
   </complexType>
 
 
-  <element name="Reflectance" substitutionGroup="nrg2:AbstractOpticalProperty" type="nrg2:ReflectanceType"></element>
+  <element name="Reflectance" substitutionGroup="nrg3:AbstractOpticalProperty" type="nrg3:ReflectanceType"></element>
   <complexType name="ReflectanceType">
     <complexContent>
-      <extension base="nrg2:AbstractOpticalProperty_Type">
+      <extension base="nrg3:AbstractOpticalProperty_Type">
         <sequence>
-          <element name="surface" type="nrg2:SurfaceSideType"/>
-          <element name="wavelengthRange" type="nrg2:WavelengthRangeType">
+          <element name="surface" type="nrg3:SurfaceSideType"/>
+          <element name="wavelengthRange" type="nrg3:WavelengthRangeType">
           </element>
         </sequence>
       </extension>
@@ -231,29 +231,29 @@ version="2.0"
   </complexType>
   <complexType name="ReflectancePropertyType">
     <sequence>
-      <element ref="nrg2:Reflectance"/>
+      <element ref="nrg3:Reflectance"/>
     </sequence>
   </complexType>
 
 
-  <element name="Transmittance" substitutionGroup="nrg2:AbstractOpticalProperty" type="nrg2:TransmittanceType"></element>
+  <element name="Transmittance" substitutionGroup="nrg3:AbstractOpticalProperty" type="nrg3:TransmittanceType"></element>
   <complexType name="TransmittanceType">
     <complexContent>
-      <extension base="nrg2:AbstractOpticalProperty_Type">
+      <extension base="nrg3:AbstractOpticalProperty_Type">
         <sequence>
-          <element name="wavelengthRange" type="nrg2:WavelengthRangeType"></element>
+          <element name="wavelengthRange" type="nrg3:WavelengthRangeType"></element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="TransmittancePropertyType">
     <sequence>
-      <element ref="nrg2:Transmittance"/>
+      <element ref="nrg3:Transmittance"/>
     </sequence>
   </complexType>
 
 
-  <element abstract="true" name="AbstractQualifiedAttribute" substitutionGroup="gml:_Object" type="nrg2:AbstractQualifiedAttributeType"></element>
+  <element abstract="true" name="AbstractQualifiedAttribute" substitutionGroup="gml:_Object" type="nrg3:AbstractQualifiedAttributeType"></element>
   <complexType abstract="true" name="AbstractQualifiedAttributeType">
     <sequence>
       <element minOccurs="0" name="description" type="string"/>
@@ -263,15 +263,15 @@ version="2.0"
   </complexType>
   <complexType name="AbstractQualifiedAttributePropertyType">
     <sequence>
-      <element ref="nrg2:AbstractQualifiedAttribute"/>
+      <element ref="nrg3:AbstractQualifiedAttribute"/>
     </sequence>
   </complexType>
 
 
-  <element name="QualifiedArea" substitutionGroup="nrg2:AbstractQualifiedAttribute" type="nrg2:QualifiedAreaType"></element>
+  <element name="QualifiedArea" substitutionGroup="nrg3:AbstractQualifiedAttribute" type="nrg3:QualifiedAreaType"></element>
   <complexType name="QualifiedAreaType">
     <complexContent>
-      <extension base="nrg2:AbstractQualifiedAttributeType">
+      <extension base="nrg3:AbstractQualifiedAttributeType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
         </sequence>
@@ -280,15 +280,15 @@ version="2.0"
   </complexType>
   <complexType name="QualifiedAreaPropertyType">
     <sequence>
-      <element ref="nrg2:QualifiedArea"/>
+      <element ref="nrg3:QualifiedArea"/>
     </sequence>
   </complexType>
 
 
-  <element name="QualifiedHeight" substitutionGroup="nrg2:AbstractQualifiedAttribute" type="nrg2:QualifiedHeightType"></element>
+  <element name="QualifiedHeight" substitutionGroup="nrg3:AbstractQualifiedAttribute" type="nrg3:QualifiedHeightType"></element>
   <complexType name="QualifiedHeightType">
     <complexContent>
-      <extension base="nrg2:AbstractQualifiedAttributeType">
+      <extension base="nrg3:AbstractQualifiedAttributeType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
         </sequence>
@@ -297,15 +297,15 @@ version="2.0"
   </complexType>
   <complexType name="QualifiedHeightPropertyType">
     <sequence>
-      <element ref="nrg2:QualifiedHeight"/>
+      <element ref="nrg3:QualifiedHeight"/>
     </sequence>
   </complexType>
 
 
-  <element name="QualifiedVolume" substitutionGroup="nrg2:AbstractQualifiedAttribute" type="nrg2:QualifiedVolumeType"></element>
+  <element name="QualifiedVolume" substitutionGroup="nrg3:AbstractQualifiedAttribute" type="nrg3:QualifiedVolumeType"></element>
   <complexType name="QualifiedVolumeType">
     <complexContent>
-      <extension base="nrg2:AbstractQualifiedAttributeType">
+      <extension base="nrg3:AbstractQualifiedAttributeType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
         </sequence>
@@ -314,18 +314,18 @@ version="2.0"
   </complexType>
   <complexType name="QualifiedVolumePropertyType">
     <sequence>
-      <element ref="nrg2:QualifiedVolume"/>
+      <element ref="nrg3:QualifiedVolume"/>
     </sequence>
   </complexType>
 
 
-  <element name="Suitability" substitutionGroup="gml:_Object" type="nrg2:SuitabilityType"/>
+  <element name="Suitability" substitutionGroup="gml:_Object" type="nrg3:SuitabilityType"/>
   <complexType name="SuitabilityType">
     <sequence>
       <element name="reason" type="gml:CodeType"/>
       <element minOccurs="0" name="description" type="string"/>
       <element name="value" type="gml:ScaleType"/>
-      <element minOccurs="0" name="schedule" type="nrg2:AbstractSchedulePropertyType">
+      <element minOccurs="0" name="schedule" type="nrg3:AbstractSchedulePropertyType">
 		 <annotation>
 		   <appinfo>
 			<taggedValue tag="relationType">aggregation</taggedValue>
@@ -336,7 +336,7 @@ version="2.0"
   </complexType>
   <complexType name="SuitabilityPropertyType">
     <sequence>
-      <element ref="nrg2:Suitability"/>
+      <element ref="nrg3:Suitability"/>
     </sequence>
   </complexType>
 
@@ -346,13 +346,13 @@ version="2.0"
   <!-- ****************************************** -->
 
 
-  <element abstract="true" name="AbstractTimeSeries" substitutionGroup="gml:_Feature" type="nrg2:AbstractTimeSeriesType"></element>
+  <element abstract="true" name="AbstractTimeSeries" substitutionGroup="gml:_Feature" type="nrg3:AbstractTimeSeriesType"></element>
   <complexType abstract="true" name="AbstractTimeSeriesType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="acquisitionMethod" type="gml:CodeType"></element>
-          <element name="interpolationType" type="nrg2:InterpolationTypeValueType"></element>
+          <element name="interpolationType" type="nrg3:InterpolationTypeValueType"></element>
           <element minOccurs="0" name="source" type="string"></element>
         </sequence>
       </extension>
@@ -360,16 +360,16 @@ version="2.0"
   </complexType>
   <complexType name="AbstractTimeSeriesPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractTimeSeries"/>
+      <element ref="nrg3:AbstractTimeSeries"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="RegularTimeSeries" substitutionGroup="nrg2:AbstractTimeSeries" type="nrg2:RegularTimeSeriesType"></element>
+  <element name="RegularTimeSeries" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:RegularTimeSeriesType"></element>
   <complexType name="RegularTimeSeriesType">
     <complexContent>
-      <extension base="nrg2:AbstractTimeSeriesType">
+      <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
           <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element>
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
@@ -380,16 +380,16 @@ version="2.0"
   </complexType>
   <complexType name="RegularTimeSeriesPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:RegularTimeSeries"/>
+      <element ref="nrg3:RegularTimeSeries"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="RegularTimeSeriesFile" substitutionGroup="nrg2:AbstractTimeSeries" type="nrg2:RegularTimeSeriesFileType"></element>
+  <element name="RegularTimeSeriesFile" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:RegularTimeSeriesFileType"></element>
   <complexType name="RegularTimeSeriesFileType">
     <complexContent>
-      <extension base="nrg2:AbstractTimeSeriesType">
+      <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
           <element name="uom" type="gml:UnitOfMeasureType"></element>
           <element name="fileURI" type="anyURI"></element>
@@ -406,16 +406,16 @@ version="2.0"
   </complexType>
   <complexType name="RegularTimeSeriesFilePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:RegularTimeSeriesFile"/>
+      <element ref="nrg3:RegularTimeSeriesFile"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="TypicalValuesTimeSeries" substitutionGroup="nrg2:AbstractTimeSeries" type="nrg2:TypicalValuesTimeSeriesType"></element>
+  <element name="TypicalValuesTimeSeries" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesTimeSeriesType"></element>
   <complexType name="TypicalValuesTimeSeriesType">
     <complexContent>
-      <extension base="nrg2:AbstractTimeSeriesType">
+      <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
           <element minOccurs="0" name="startTime" type="time"/>
           <element minOccurs="0" name="startDay" type="integer"/>
@@ -429,16 +429,16 @@ version="2.0"
   </complexType>
   <complexType name="TypicalValuesTimeSeriesPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:TypicalValuesTimeSeries"/>
+      <element ref="nrg3:TypicalValuesTimeSeries"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="TypicalValuesTimeSeriesFile" substitutionGroup="nrg2:AbstractTimeSeries" type="nrg2:TypicalValuesTimeSeriesFileType"></element>
+  <element name="TypicalValuesTimeSeriesFile" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesTimeSeriesFileType"></element>
   <complexType name="TypicalValuesTimeSeriesFileType">
     <complexContent>
-      <extension base="nrg2:AbstractTimeSeriesType">
+      <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
           <element minOccurs="0" name="startTime" type="time"/>
           <element minOccurs="0" name="startDay" type="integer"/>
@@ -458,16 +458,16 @@ version="2.0"
   </complexType>
   <complexType name="TypicalValuesTimeSeriesFilePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:TypicalValuesTimeSeriesFile"/>
+      <element ref="nrg3:TypicalValuesTimeSeriesFile"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="SensorConnection" substitutionGroup="nrg2:AbstractTimeSeries" type="nrg2:SensorConnectionType"></element>
+  <element name="SensorConnection" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:SensorConnectionType"></element>
   <complexType name="SensorConnectionType">
     <complexContent>
-      <extension base="nrg2:AbstractTimeSeriesType">
+      <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element name="connectionType" type="gml:CodeType"></element>
@@ -489,7 +489,7 @@ version="2.0"
   </complexType>
   <complexType name="SensorConnectionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:SensorConnection"/>
+      <element ref="nrg3:SensorConnection"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -500,7 +500,7 @@ version="2.0"
   <!-- ****************************************** -->
 
   
-  <element abstract="true" name="AbstractSchedule" substitutionGroup="gml:_Feature" type="nrg2:AbstractScheduleType"></element>
+  <element abstract="true" name="AbstractSchedule" substitutionGroup="gml:_Feature" type="nrg3:AbstractScheduleType"></element>
   <complexType abstract="true" name="AbstractScheduleType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -518,16 +518,16 @@ version="2.0"
   </complexType>
   <complexType name="AbstractSchedulePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractSchedule"/>
+      <element ref="nrg3:AbstractSchedule"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="DualValueSchedule" substitutionGroup="nrg2:AbstractSchedule" type="nrg2:DualValueScheduleType"/>
+  <element name="DualValueSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:DualValueScheduleType"/>
   <complexType name="DualValueScheduleType">
     <complexContent>
-      <extension base="nrg2:AbstractScheduleType">
+      <extension base="nrg3:AbstractScheduleType">
         <sequence>
           <element name="idleValue" type="gml:MeasureType"/>
           <element name="usageValue" type="gml:MeasureType"/>
@@ -539,19 +539,19 @@ version="2.0"
   </complexType>
   <complexType name="DualValueSchedulePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:DualValueSchedule"/>
+      <element ref="nrg3:DualValueSchedule"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="AtomicSchedule" substitutionGroup="nrg2:AbstractSchedule" type="nrg2:AtomicScheduleType"></element>
+  <element name="AtomicSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:AtomicScheduleType"></element>
   <complexType name="AtomicScheduleType">
     <complexContent>
-      <extension base="nrg2:AbstractScheduleType">
+      <extension base="nrg3:AbstractScheduleType">
         <sequence>
           <element minOccurs="0" name="constantValue" type="gml:MeasureType"/>
-          <element minOccurs="0" name="timeSeries" type="nrg2:AbstractTimeSeriesPropertyType">
+          <element minOccurs="0" name="timeSeries" type="nrg3:AbstractTimeSeriesPropertyType">
              <annotation>
                <appinfo>
              	<taggedValue tag="relationType">composition</taggedValue>
@@ -564,18 +564,18 @@ version="2.0"
   </complexType>
   <complexType name="AtomicSchedulePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AtomicSchedule"/>
+      <element ref="nrg3:AtomicSchedule"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="CompositeSchedule" substitutionGroup="nrg2:AbstractSchedule" type="nrg2:CompositeScheduleType"></element>
+  <element name="CompositeSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:CompositeScheduleType"></element>
   <complexType name="CompositeScheduleType">
     <complexContent>
-      <extension base="nrg2:AbstractScheduleType">
+      <extension base="nrg3:AbstractScheduleType">
         <sequence>
-          <element maxOccurs="unbounded" name="scheduleComponent" type="nrg2:ScheduleComponentPropertyType">
+          <element maxOccurs="unbounded" name="scheduleComponent" type="nrg3:ScheduleComponentPropertyType">
              <annotation>
                <appinfo>
              	<taggedValue tag="relationType">composition</taggedValue>
@@ -588,13 +588,13 @@ version="2.0"
   </complexType>
   <complexType name="CompositeSchedulePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:CompositeSchedule"/>
+      <element ref="nrg3:CompositeSchedule"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ScheduleComponent" substitutionGroup="gml:_Feature" type="nrg2:ScheduleComponentType"></element>
+  <element name="ScheduleComponent" substitutionGroup="gml:_Feature" type="nrg3:ScheduleComponentType"></element>
   <complexType name="ScheduleComponentType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -602,7 +602,7 @@ version="2.0"
           <element name="type" type="gml:CodeType"/>
           <element default="1" name="repetitions" type="integer"/>
           <element minOccurs="0" name="additionalGap" type="gml:TimeIntervalLengthType"/>
-          <element name="scheduleComponentMember" type="nrg2:AbstractSchedulePropertyType">
+          <element name="scheduleComponentMember" type="nrg3:AbstractSchedulePropertyType">
              <annotation>
                <appinfo>
              	<taggedValue tag="relationType">association</taggedValue>
@@ -615,13 +615,13 @@ version="2.0"
   </complexType>
   <complexType name="ScheduleComponentPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ScheduleComponent"/>
+      <element ref="nrg3:ScheduleComponent"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ScheduleLibrary" substitutionGroup="nrg2:AbstractLibrary" type="nrg2:ScheduleLibraryType">
+  <element name="ScheduleLibrary" substitutionGroup="nrg3:AbstractLibrary" type="nrg3:ScheduleLibraryType">
     <annotation>
       <appinfo>
         <taggedValue tag="topLevel">true</taggedValue>
@@ -630,9 +630,9 @@ version="2.0"
   </element>
   <complexType name="ScheduleLibraryType">
     <complexContent>
-      <extension base="nrg2:AbstractLibraryType">
+      <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg2:AbstractSchedulePropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -645,7 +645,7 @@ version="2.0"
   </complexType>
   <complexType name="ScheduleLibraryPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ScheduleLibrary"/>
+      <element ref="nrg3:ScheduleLibrary"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -656,13 +656,13 @@ version="2.0"
   <!-- ************************ -->
 
 
-  <element abstract="true" name="AbstractBuildingPartition" substitutionGroup="core:_CityObject" type="nrg2:AbstractBuildingPartitionType"/>
+  <element abstract="true" name="AbstractBuildingPartition" substitutionGroup="core:_CityObject" type="nrg3:AbstractBuildingPartitionType"/>
   <complexType abstract="true" name="AbstractBuildingPartitionType">
     <complexContent>
       <extension base="core:AbstractCityObjectType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="area" type="nrg2:QualifiedAreaPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="volume" type="nrg2:QualifiedVolumePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="area" type="nrg3:QualifiedAreaPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="volume" type="nrg3:QualifiedVolumePropertyType"/>
           <element minOccurs="0" name="lod1Solid" type="gml:SolidPropertyType">
             <annotation>
               <appinfo>
@@ -690,29 +690,29 @@ version="2.0"
   </complexType>
   <complexType name="AbstractBuildingPartitionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractBuildingPartition"/>
+      <element ref="nrg3:AbstractBuildingPartition"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractBuildingUnit" substitutionGroup="nrg2:AbstractBuildingPartition" type="nrg2:AbstractBuildingUnitType"/>
+  <element abstract="true" name="AbstractBuildingUnit" substitutionGroup="nrg3:AbstractBuildingPartition" type="nrg3:AbstractBuildingUnitType"/>
   <complexType abstract="true" name="AbstractBuildingUnitType">
     <complexContent>
-      <extension base="nrg2:AbstractBuildingPartitionType">
+      <extension base="nrg3:AbstractBuildingPartitionType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="AbstractBuildingUnitPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractBuildingUnit"/>
+      <element ref="nrg3:AbstractBuildingUnit"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractDevice" substitutionGroup="core:_CityObject" type="nrg2:AbstractDeviceType"/>
+  <element abstract="true" name="AbstractDevice" substitutionGroup="core:_CityObject" type="nrg3:AbstractDeviceType"/>
   <complexType abstract="true" name="AbstractDeviceType">
     <complexContent>
       <extension base="core:AbstractCityObjectType">
@@ -727,7 +727,7 @@ version="2.0"
           <element minOccurs="0" name="heatDissipationConvectiveFraction" type="gml:ScaleType"/>
           <element minOccurs="0" name="heatDissipationLatentFraction" type="gml:ScaleType"/>
           <element minOccurs="0" name="heatDissipationRadiantFraction" type="gml:ScaleType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="deviceOperation" type="nrg2:DeviceOperationPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="deviceOperation" type="nrg3:DeviceOperationPropertyType">
 		    <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -740,13 +740,13 @@ version="2.0"
   </complexType>
   <complexType name="AbstractDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractDevice"/>
+      <element ref="nrg3:AbstractDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractLibrary" substitutionGroup="core:_CityObject" type="nrg2:AbstractLibraryType"/>
+  <element abstract="true" name="AbstractLibrary" substitutionGroup="core:_CityObject" type="nrg3:AbstractLibraryType"/>
   <complexType abstract="true" name="AbstractLibraryType">
     <complexContent>
       <extension base="core:AbstractCityObjectType">
@@ -760,13 +760,13 @@ version="2.0"
   </complexType>
   <complexType name="AbstractLibraryPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractLibrary"/>
+      <element ref="nrg3:AbstractLibrary"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractLayeredConstruction" substitutionGroup="gml:_Feature" type="nrg2:AbstractLayeredConstructionType"></element>
+  <element abstract="true" name="AbstractLayeredConstruction" substitutionGroup="gml:_Feature" type="nrg3:AbstractLayeredConstructionType"></element>
   <complexType abstract="true" name="AbstractLayeredConstructionType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -776,23 +776,23 @@ version="2.0"
   </complexType>
   <complexType name="AbstractLayeredConstructionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractLayeredConstruction"/>
+      <element ref="nrg3:AbstractLayeredConstruction"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractResource" substitutionGroup="gml:_Feature" type="nrg2:AbstractResourceType"/>
+  <element abstract="true" name="AbstractResource" substitutionGroup="gml:_Feature" type="nrg3:AbstractResourceType"/>
   <complexType abstract="true" name="AbstractResourceType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
-          <element name="status" type="nrg2:ResourceStatusValueType"/>
+          <element name="status" type="nrg3:ResourceStatusValueType"/>
           <element name="operationType" type="gml:CodeType"/>
           <element name="amountType" type="gml:CodeType"/>
           <element minOccurs="0" name="year" type="integer"/>
           <element minOccurs="0" name="amount" type="gml:MeasureType"/>
-          <element minOccurs="0" name="timeDependentAmount" type="nrg2:AbstractTimeSeriesPropertyType">
+          <element minOccurs="0" name="timeDependentAmount" type="nrg3:AbstractTimeSeriesPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -811,18 +811,18 @@ version="2.0"
   </complexType>
   <complexType name="AbstractResourcePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractResource"/>
+      <element ref="nrg3:AbstractResource"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractThermalZone" substitutionGroup="nrg2:AbstractBuildingPartition" type="nrg2:AbstractThermalZoneType"/>
+  <element abstract="true" name="AbstractThermalZone" substitutionGroup="nrg3:AbstractBuildingPartition" type="nrg3:AbstractThermalZoneType"/>
   <complexType abstract="true" name="AbstractThermalZoneType">
     <complexContent>
-      <extension base="nrg2:AbstractBuildingPartitionType">
+      <extension base="nrg3:AbstractBuildingPartitionType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="usageZone" type="nrg2:AbstractUsageZonePropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="usageZone" type="nrg3:AbstractUsageZonePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">association</taggedValue>
@@ -835,18 +835,18 @@ version="2.0"
   </complexType>
   <complexType name="AbstractThermalZonePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractThermalZone"/>
+      <element ref="nrg3:AbstractThermalZone"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element abstract="true" name="AbstractUsageZone" substitutionGroup="nrg2:AbstractBuildingPartition" type="nrg2:AbstractUsageZoneType"/>
+  <element abstract="true" name="AbstractUsageZone" substitutionGroup="nrg3:AbstractBuildingPartition" type="nrg3:AbstractUsageZoneType"/>
   <complexType abstract="true" name="AbstractUsageZoneType">
     <complexContent>
-      <extension base="nrg2:AbstractBuildingPartitionType">
+      <extension base="nrg3:AbstractBuildingPartitionType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="buildingUnit" type="nrg2:AbstractBuildingUnitPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="buildingUnit" type="nrg3:AbstractBuildingUnitPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">association</taggedValue>
@@ -859,13 +859,13 @@ version="2.0"
   </complexType>
   <complexType name="AbstractUsageZonePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractUsageZone"/>
+      <element ref="nrg3:AbstractUsageZone"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="EnergyPerformanceCertificate" substitutionGroup="gml:_Feature" type="nrg2:EnergyPerformanceCertificateType"></element>
+  <element name="EnergyPerformanceCertificate" substitutionGroup="gml:_Feature" type="nrg3:EnergyPerformanceCertificateType"></element>
   <complexType name="EnergyPerformanceCertificateType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -884,13 +884,13 @@ version="2.0"
   </complexType>
   <complexType name="EnergyPerformanceCertificatePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:EnergyPerformanceCertificate"/>
+      <element ref="nrg3:EnergyPerformanceCertificate"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="RefurbishmentMeasure" substitutionGroup="gml:_Feature" type="nrg2:RefurbishmentMeasureType"></element>
+  <element name="RefurbishmentMeasure" substitutionGroup="gml:_Feature" type="nrg3:RefurbishmentMeasureType"></element>
   <complexType name="RefurbishmentMeasureType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -905,19 +905,19 @@ version="2.0"
   </complexType>
   <complexType name="RefurbishmentMeasurePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:RefurbishmentMeasure"/>
+      <element ref="nrg3:RefurbishmentMeasure"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="UtilityNetworkConnection" substitutionGroup="gml:_Feature" type="nrg2:UtilityNetworkConnectionType"></element>
+  <element name="UtilityNetworkConnection" substitutionGroup="gml:_Feature" type="nrg3:UtilityNetworkConnectionType"></element>
   <complexType name="UtilityNetworkConnectionType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="networkType" type="gml:CodeType"></element>
-          <element name="connectionStatus" type="nrg2:NetworkConnectionStatusValueType"></element>
+          <element name="connectionStatus" type="nrg3:NetworkConnectionStatusValueType"></element>
           <element minOccurs="0" name="functionInNetwork" type="gml:CodeType"></element>
           <element minOccurs="0" name="usageInNetwork" type="gml:CodeType"></element>
           <element minOccurs="0" name="networkID" type="string"></element>
@@ -928,13 +928,13 @@ version="2.0"
   </complexType>
   <complexType name="UtilityNetworkConnectionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:UtilityNetworkConnection"/>
+      <element ref="nrg3:UtilityNetworkConnection"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="WeatherData" substitutionGroup="gml:_Feature" type="nrg2:WeatherDataType"></element>
+  <element name="WeatherData" substitutionGroup="gml:_Feature" type="nrg3:WeatherDataType"></element>
   <complexType name="WeatherDataType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -943,7 +943,7 @@ version="2.0"
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="valueType" type="gml:CodeType"/>
           <element minOccurs="0" name="yearlyValue" type="gml:MeasureType"/>
-          <element minOccurs="0" name="timeDependentValues" type="nrg2:AbstractTimeSeriesPropertyType">
+          <element minOccurs="0" name="timeDependentValues" type="nrg3:AbstractTimeSeriesPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -957,21 +957,21 @@ version="2.0"
   </complexType>
   <complexType name="WeatherDataPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:WeatherData"/>
+      <element ref="nrg3:WeatherData"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
   <!-- ADE Extension of bldg:_AbstractBuilding -->
-  <element name="bdgAtticThermalStatus" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:ThermalStatusValueType">
+  <element name="bdgAtticThermalStatus" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:ThermalStatusValueType">
     <annotation>
       <appinfo>
         <taggedValue tag="maxOccurs">1</taggedValue>
       </appinfo>
     </annotation>
   </element>
-  <element name="bdgBasementThermalStatus" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:ThermalStatusValueType">
+  <element name="bdgBasementThermalStatus" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:ThermalStatusValueType">
     <annotation>
       <appinfo>
         <taggedValue tag="maxOccurs">1</taggedValue>
@@ -985,9 +985,9 @@ version="2.0"
       </appinfo>
     </annotation>
   </element>
-  <element name="bdgArea" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:QualifiedAreaPropertyType"></element>
-  <element name="bdgHeight" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:QualifiedHeightPropertyType"></element> 
-  <element name="bdgVolume" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:QualifiedVolumePropertyType"></element>
+  <element name="bdgArea" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:QualifiedAreaPropertyType"></element>
+  <element name="bdgHeight" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:QualifiedHeightPropertyType"></element> 
+  <element name="bdgVolume" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:QualifiedVolumePropertyType"></element>
   <element name="bdgIsProtected" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="boolean">
     <annotation>
       <appinfo>
@@ -1002,35 +1002,35 @@ version="2.0"
       </appinfo>
     </annotation>
   </element>
-  <element name="buildingUnit" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:AbstractBuildingUnitPropertyType">
+  <element name="buildingUnit" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:AbstractBuildingUnitPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>  
   </element>
-  <element name="energyPerformanceCertificate" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:EnergyPerformanceCertificatePropertyType">
+  <element name="energyPerformanceCertificate" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:EnergyPerformanceCertificatePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>  
   </element>
-  <element name="refurbishmentMeasure" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:RefurbishmentMeasurePropertyType">
+  <element name="refurbishmentMeasure" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:RefurbishmentMeasurePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>
   </element>
-  <element name="thermalZone" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:AbstractThermalZonePropertyType">
+  <element name="thermalZone" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:AbstractThermalZonePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>
   </element>
-  <element name="usageZone" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg2:AbstractUsageZonePropertyType">
+  <element name="usageZone" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:AbstractUsageZonePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
@@ -1040,11 +1040,11 @@ version="2.0"
 
 
   <!-- BEGIN: Manually converted Association class "CityObjectRelation" -->
-  <element name="CityObjectRelation" substitutionGroup="gml:_Object" type="nrg2:CityObjectRelationType"></element>
+  <element name="CityObjectRelation" substitutionGroup="gml:_Object" type="nrg3:CityObjectRelationType"></element>
   <complexType name="CityObjectRelationType">
     <sequence>
       <element name="relationType" type="gml:CodeType"/>
-      <element name="relatedTo" type="nrg2:RelatedToPropertyType">
+      <element name="relatedTo" type="nrg3:RelatedToPropertyType">
         <annotation>
           <appinfo>
             <taggedValue tag="relationType">association</taggedValue>
@@ -1055,7 +1055,7 @@ version="2.0"
   </complexType>
   <complexType name="CityObjectRelationPropertyType">
     <sequence>
-      <element minOccurs="0" ref="nrg2:CityObjectRelation"/>
+      <element minOccurs="0" ref="nrg3:CityObjectRelation"/>
     </sequence>
   </complexType>
 
@@ -1069,7 +1069,7 @@ version="2.0"
 
   <!-- ADE Extension of core:_CityObject -->
   <!-- BEGIN: Manually edited type of relatedTo property -->
-  <element name="relatedTo" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:CityObjectRelationPropertyType">
+  <element name="relatedTo" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:CityObjectRelationPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
@@ -1077,14 +1077,14 @@ version="2.0"
     </annotation>
   </element>
   <!-- END: Manually edited type of relatedTo property -->
-  <element name="device" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:AbstractDevicePropertyType">
+  <element name="device" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractDevicePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">aggregation</taggedValue>
       </appinfo>
     </annotation>    
   </element>
-  <element name="layeredConstruction" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:AbstractLayeredConstructionPropertyType">
+  <element name="layeredConstruction" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractLayeredConstructionPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">association</taggedValue>
@@ -1094,28 +1094,28 @@ version="2.0"
       </appinfo>
     </annotation>
   </element>
-  <element name="resource" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:AbstractResourcePropertyType">
+  <element name="resource" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractResourcePropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>  
   </element>
-  <element name="suitability" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:SuitabilityPropertyType">
+  <element name="suitability" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:SuitabilityPropertyType">
       <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>  
   </element>
-  <element name="utilityNetworkConnection" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:UtilityNetworkConnectionPropertyType">
+  <element name="utilityNetworkConnection" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:UtilityNetworkConnectionPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
       </appinfo>
     </annotation>  
   </element>
-  <element name="weatherData" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg2:WeatherDataPropertyType">
+  <element name="weatherData" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:WeatherDataPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">composition</taggedValue>
@@ -1136,10 +1136,10 @@ version="2.0"
   <!-- *************************** -->
 
 
-  <element name="ConstructionMaterial" substitutionGroup="nrg2:AbstractResource" type="nrg2:ConstructionMaterialType"></element>
+  <element name="ConstructionMaterial" substitutionGroup="nrg3:AbstractResource" type="nrg3:ConstructionMaterialType"></element>
   <complexType name="ConstructionMaterialType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1149,16 +1149,16 @@ version="2.0"
   </complexType>
   <complexType name="ConstructionMaterialPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ConstructionMaterial"/>
+      <element ref="nrg3:ConstructionMaterial"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Energy" substitutionGroup="nrg2:AbstractResource" type="nrg2:EnergyType"></element>
+  <element name="Energy" substitutionGroup="nrg3:AbstractResource" type="nrg3:EnergyType"></element>
   <complexType name="EnergyType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1171,16 +1171,16 @@ version="2.0"
   </complexType>
   <complexType name="EnergyPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Energy"/>
+      <element ref="nrg3:Energy"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Food" substitutionGroup="nrg2:AbstractResource" type="nrg2:FoodType"></element>
+  <element name="Food" substitutionGroup="nrg3:AbstractResource" type="nrg3:FoodType"></element>
   <complexType name="FoodType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1190,16 +1190,16 @@ version="2.0"
   </complexType>
   <complexType name="FoodPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Food"/>
+      <element ref="nrg3:Food"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="OtherResource" substitutionGroup="nrg2:AbstractResource" type="nrg2:OtherResourceType"></element>
+  <element name="OtherResource" substitutionGroup="nrg3:AbstractResource" type="nrg3:OtherResourceType"></element>
   <complexType name="OtherResourceType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1209,16 +1209,16 @@ version="2.0"
   </complexType>
   <complexType name="OtherResourcePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:OtherResource"/>
+      <element ref="nrg3:OtherResource"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="UrbanSpace" substitutionGroup="nrg2:AbstractResource" type="nrg2:UrbanSpaceType"></element>
+  <element name="UrbanSpace" substitutionGroup="nrg3:AbstractResource" type="nrg3:UrbanSpaceType"></element>
   <complexType name="UrbanSpaceType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1228,16 +1228,16 @@ version="2.0"
   </complexType>
   <complexType name="UrbanSpacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:UrbanSpace"/>
+      <element ref="nrg3:UrbanSpace"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Waste" substitutionGroup="nrg2:AbstractResource" type="nrg2:WasteType"></element>
+  <element name="Waste" substitutionGroup="nrg3:AbstractResource" type="nrg3:WasteType"></element>
   <complexType name="WasteType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1249,16 +1249,16 @@ version="2.0"
   </complexType>
   <complexType name="WastePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Waste"/>
+      <element ref="nrg3:Waste"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Water" substitutionGroup="nrg2:AbstractResource" type="nrg2:WaterType"></element>
+  <element name="Water" substitutionGroup="nrg3:AbstractResource" type="nrg3:WaterType"></element>
   <complexType name="WaterType">
     <complexContent>
-      <extension base="nrg2:AbstractResourceType">
+      <extension base="nrg3:AbstractResourceType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="endUse" type="gml:CodeType"></element>
@@ -1268,7 +1268,7 @@ version="2.0"
   </complexType>
   <complexType name="WaterPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Water"/>
+      <element ref="nrg3:Water"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1279,7 +1279,7 @@ version="2.0"
   <!-- ********************************************* -->
 
 
-  <element abstract="true" name="AbstractMaterial" substitutionGroup="gml:_Feature" type="nrg2:AbstractMaterialType"></element>
+  <element abstract="true" name="AbstractMaterial" substitutionGroup="gml:_Feature" type="nrg3:AbstractMaterialType"></element>
   <complexType abstract="true" name="AbstractMaterialType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -1291,16 +1291,16 @@ version="2.0"
   </complexType>
   <complexType name="AbstractMaterialPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractMaterial"/>
+      <element ref="nrg3:AbstractMaterial"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Gas" substitutionGroup="nrg2:AbstractMaterial" type="nrg2:GasType"></element>
+  <element name="Gas" substitutionGroup="nrg3:AbstractMaterial" type="nrg3:GasType"></element>
   <complexType name="GasType">
     <complexContent>
-      <extension base="nrg2:AbstractMaterialType">
+      <extension base="nrg3:AbstractMaterialType">
         <sequence>
           <element default="false" minOccurs="0" name="isVentilated" type="boolean"></element>
           <element minOccurs="0" name="rValue" type="gml:MeasureType"></element>
@@ -1310,13 +1310,13 @@ version="2.0"
   </complexType>
   <complexType name="GasPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Gas"/>
+      <element ref="nrg3:Gas"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="LayeredConstructionLibrary" substitutionGroup="nrg2:AbstractLibrary" type="nrg2:LayeredConstructionLibraryType">
+  <element name="LayeredConstructionLibrary" substitutionGroup="nrg3:AbstractLibrary" type="nrg3:LayeredConstructionLibraryType">
     <annotation>
       <appinfo>
         <taggedValue tag="topLevel">true</taggedValue>
@@ -1325,9 +1325,9 @@ version="2.0"
   </element>
   <complexType name="LayeredConstructionLibraryType">
     <complexContent>
-      <extension base="nrg2:AbstractLibraryType">
+      <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg2:AbstractLayeredConstructionPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg3:AbstractLayeredConstructionPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -1340,19 +1340,19 @@ version="2.0"
   </complexType>
   <complexType name="LayeredConstructionLibraryPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:LayeredConstructionLibrary"/>
+      <element ref="nrg3:LayeredConstructionLibrary"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Layer" substitutionGroup="gml:_Feature" type="nrg2:LayerType"></element>
+  <element name="Layer" substitutionGroup="gml:_Feature" type="nrg3:LayerType"></element>
   <complexType name="LayerType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="thickness" type="gml:MeasureType"/>
-          <element name="material" type="nrg2:AbstractMaterialPropertyType">
+          <element name="material" type="nrg3:AbstractMaterialPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -1365,25 +1365,25 @@ version="2.0"
   </complexType>
   <complexType name="LayerPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Layer"/>
+      <element ref="nrg3:Layer"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="LayeredConstruction" substitutionGroup="nrg2:AbstractLayeredConstruction" type="nrg2:LayeredConstructionType"></element>
+  <element name="LayeredConstruction" substitutionGroup="nrg3:AbstractLayeredConstruction" type="nrg3:LayeredConstructionType"></element>
   <complexType name="LayeredConstructionType">
     <complexContent>
-      <extension base="nrg2:AbstractLayeredConstructionType">
+      <extension base="nrg3:AbstractLayeredConstructionType">
         <sequence>
           <element minOccurs="0" name="libraryCode" type="gml:CodeType"></element>
           <element minOccurs="0" name="uValue" type="gml:MeasureType"></element>
           <element minOccurs="0" name="gValue" type="gml:ScaleType"></element>
           <element minOccurs="0" name="glazingRatio" type="gml:ScaleType"></element>
-          <element maxOccurs="unbounded" minOccurs="0" name="emissivity" type="nrg2:EmissivityPropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="reflectance" type="nrg2:ReflectancePropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="transmittance" type="nrg2:TransmittancePropertyType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="layer" type="nrg2:LayerPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="emissivity" type="nrg3:EmissivityPropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="reflectance" type="nrg3:ReflectancePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="transmittance" type="nrg3:TransmittancePropertyType"/>
+          <element maxOccurs="unbounded" minOccurs="0" name="layer" type="nrg3:LayerPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -1396,13 +1396,13 @@ version="2.0"
   </complexType>
   <complexType name="LayeredConstructionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:LayeredConstruction"/>
+      <element ref="nrg3:LayeredConstruction"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="MaterialLibrary" substitutionGroup="nrg2:AbstractLibrary" type="nrg2:MaterialLibraryType">
+  <element name="MaterialLibrary" substitutionGroup="nrg3:AbstractLibrary" type="nrg3:MaterialLibraryType">
     <annotation>
       <appinfo>
         <taggedValue tag="topLevel">true</taggedValue>
@@ -1411,9 +1411,9 @@ version="2.0"
   </element>
   <complexType name="MaterialLibraryType">
     <complexContent>
-      <extension base="nrg2:AbstractLibraryType">
+      <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg2:AbstractMaterialPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg3:AbstractMaterialPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -1426,18 +1426,18 @@ version="2.0"
   </complexType>
   <complexType name="MaterialLibraryPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:MaterialLibrary"/>
+      <element ref="nrg3:MaterialLibrary"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ReverseLayeredConstruction" substitutionGroup="nrg2:AbstractLayeredConstruction" type="nrg2:ReverseLayeredConstructionType"/>
+  <element name="ReverseLayeredConstruction" substitutionGroup="nrg3:AbstractLayeredConstruction" type="nrg3:ReverseLayeredConstructionType"/>
   <complexType name="ReverseLayeredConstructionType">
     <complexContent>
-      <extension base="nrg2:AbstractLayeredConstructionType">
+      <extension base="nrg3:AbstractLayeredConstructionType">
         <sequence>
-          <element name="baseLayeredConstruction" type="nrg2:LayeredConstructionPropertyType">
+          <element name="baseLayeredConstruction" type="nrg3:LayeredConstructionPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">association</taggedValue>
@@ -1450,16 +1450,16 @@ version="2.0"
   </complexType>
   <complexType name="ReverseLayeredConstructionPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ReverseLayeredConstruction"/>
+      <element ref="nrg3:ReverseLayeredConstruction"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="SolidMaterial" substitutionGroup="nrg2:AbstractMaterial" type="nrg2:SolidMaterialType"></element>
+  <element name="SolidMaterial" substitutionGroup="nrg3:AbstractMaterial" type="nrg3:SolidMaterialType"></element>
   <complexType name="SolidMaterialType">
     <complexContent>
-      <extension base="nrg2:AbstractMaterialType">
+      <extension base="nrg3:AbstractMaterialType">
         <sequence>
           <element minOccurs="0" name="thermalConductivity" type="gml:MeasureType"></element>
           <element minOccurs="0" name="density" type="gml:MeasureType"></element>
@@ -1474,7 +1474,7 @@ version="2.0"
   </complexType>
   <complexType name="SolidMaterialPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:SolidMaterial"/>
+      <element ref="nrg3:SolidMaterial"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1485,7 +1485,7 @@ version="2.0"
   <!-- ************************************ -->
 
 
-  <element name="AtticFloorSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg2:AtticFloorSurfaceType"/>
+  <element name="AtticFloorSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg3:AtticFloorSurfaceType"/>
   <complexType name="AtticFloorSurfaceType">
     <complexContent>
       <extension base="bldg:AbstractBoundarySurfaceType">
@@ -1495,13 +1495,13 @@ version="2.0"
   </complexType>
   <complexType name="AtticFloorSurfacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AtticFloorSurface"/>
+      <element ref="nrg3:AtticFloorSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="BasementCeilingSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg2:BasementCeilingSurfaceType"/>
+  <element name="BasementCeilingSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg3:BasementCeilingSurfaceType"/>
   <complexType name="BasementCeilingSurfaceType">
     <complexContent>
       <extension base="bldg:AbstractBoundarySurfaceType">
@@ -1511,13 +1511,13 @@ version="2.0"
   </complexType>
   <complexType name="BasementCeilingSurfacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:BasementCeilingSurface"/>
+      <element ref="nrg3:BasementCeilingSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="IntermediateFloorSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg2:IntermediateFloorSurfaceType"/>
+  <element name="IntermediateFloorSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg3:IntermediateFloorSurfaceType"/>
   <complexType name="IntermediateFloorSurfaceType">
     <complexContent>
       <extension base="bldg:AbstractBoundarySurfaceType">
@@ -1527,13 +1527,13 @@ version="2.0"
   </complexType>
   <complexType name="IntermediateFloorSurfacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:IntermediateFloorSurface"/>
+      <element ref="nrg3:IntermediateFloorSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="PartyWallSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg2:PartyWallSurfaceType"/>
+  <element name="PartyWallSurface" substitutionGroup="bldg:_BoundarySurface" type="nrg3:PartyWallSurfaceType"/>
   <complexType name="PartyWallSurfaceType">
     <complexContent>
       <extension base="bldg:AbstractBoundarySurfaceType">
@@ -1543,16 +1543,16 @@ version="2.0"
   </complexType>
   <complexType name="PartyWallSurfacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:PartyWallSurface"/>
+      <element ref="nrg3:PartyWallSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ThermalZone" substitutionGroup="nrg2:AbstractThermalZone" type="nrg2:ThermalZoneType"></element>
+  <element name="ThermalZone" substitutionGroup="nrg3:AbstractThermalZone" type="nrg3:ThermalZoneType"></element>
   <complexType name="ThermalZoneType">
     <complexContent>
-      <extension base="nrg2:AbstractThermalZoneType">
+      <extension base="nrg3:AbstractThermalZoneType">
         <sequence>
           <element minOccurs="0" name="heatCapacity" type="gml:MeasureType"/>
 		  <element minOccurs="0" name="infiltrationRate" type="gml:MeasureType"></element>
@@ -1573,7 +1573,7 @@ version="2.0"
   </complexType>
   <complexType name="ThermalZonePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ThermalZone"/>
+      <element ref="nrg3:ThermalZone"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1695,10 +1695,10 @@ version="2.0"
   <!-- *************************** -->
 
 
-  <element name="BuildingUnit" substitutionGroup="nrg2:AbstractBuildingUnit" type="nrg2:BuildingUnitType"></element>
+  <element name="BuildingUnit" substitutionGroup="nrg3:AbstractBuildingUnit" type="nrg3:BuildingUnitType"></element>
   <complexType name="BuildingUnitType">
     <complexContent>
-      <extension base="nrg2:AbstractBuildingUnitType">
+      <extension base="nrg3:AbstractBuildingUnitType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="numberOfRooms" type="integer"></element>
@@ -1711,21 +1711,21 @@ version="2.0"
               </appinfo>
             </annotation>
 		  </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="energyPerformanceCertificate" type="nrg2:EnergyPerformanceCertificatePropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="energyPerformanceCertificate" type="nrg3:EnergyPerformanceCertificatePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
               </appinfo>
             </annotation>
 		  </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="refurbishmentMeasure" type="nrg2:RefurbishmentMeasurePropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="refurbishmentMeasure" type="nrg3:RefurbishmentMeasurePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
               </appinfo>
             </annotation>
 		  </element>		  
-          <element maxOccurs="unbounded" minOccurs="0" name="occupiedBy" type="nrg2:OccupantsPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="occupiedBy" type="nrg3:OccupantsPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -1738,13 +1738,13 @@ version="2.0"
   </complexType>
   <complexType name="BuildingUnitPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:BuildingUnit"/>
+      <element ref="nrg3:BuildingUnit"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Occupants" substitutionGroup="gml:_Feature" type="nrg2:OccupantsType"></element>
+  <element name="Occupants" substitutionGroup="gml:_Feature" type="nrg3:OccupantsType"></element>
   <complexType name="OccupantsType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
@@ -1755,7 +1755,7 @@ version="2.0"
           <element minOccurs="0" name="heatDissipationConvectiveFraction" type="gml:ScaleType"/>
           <element minOccurs="0" name="heatDissipationLatentFraction" type="gml:ScaleType"/>
           <element minOccurs="0" name="heatDissipationRadiantFraction" type="gml:ScaleType"/>
-          <element minOccurs="0" name="occupancyRate" type="nrg2:AbstractSchedulePropertyType">
+          <element minOccurs="0" name="occupancyRate" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -1771,16 +1771,16 @@ version="2.0"
   </complexType>
   <complexType name="OccupantsPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Occupants"/>
+      <element ref="nrg3:Occupants"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="UsageZone" substitutionGroup="nrg2:AbstractUsageZone" type="nrg2:UsageZoneType"></element>
+  <element name="UsageZone" substitutionGroup="nrg3:AbstractUsageZone" type="nrg3:UsageZoneType"></element>
   <complexType name="UsageZoneType">
     <complexContent>
-      <extension base="nrg2:AbstractUsageZoneType">
+      <extension base="nrg3:AbstractUsageZoneType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element minOccurs="0" name="isPrimary" type="boolean"></element>
@@ -1789,28 +1789,28 @@ version="2.0"
           <element minOccurs="0" name="internalHeatGainsConvectiveFraction" type="gml:ScaleType"></element>
           <element minOccurs="0" name="internalHeatGainsLatentFraction" type="gml:ScaleType"></element>
           <element minOccurs="0" name="internalHeatGainsRadiantFraction" type="gml:ScaleType"></element>
-          <element minOccurs="0" name="coolingSchedule" type="nrg2:AbstractSchedulePropertyType">
+          <element minOccurs="0" name="coolingSchedule" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
               </appinfo>
             </annotation>	
 		  </element>
-          <element minOccurs="0" name="heatingSchedule" type="nrg2:AbstractSchedulePropertyType">
+          <element minOccurs="0" name="heatingSchedule" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
               </appinfo>
             </annotation>	
 		  </element>
-          <element minOccurs="0" name="ventilationSchedule" type="nrg2:AbstractSchedulePropertyType">
+          <element minOccurs="0" name="ventilationSchedule" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
               </appinfo>
             </annotation>	
 		  </element>
-          <element maxOccurs="unbounded" minOccurs="0" name="occupiedBy" type="nrg2:OccupantsPropertyType">
+          <element maxOccurs="unbounded" minOccurs="0" name="occupiedBy" type="nrg3:OccupantsPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -1823,7 +1823,7 @@ version="2.0"
   </complexType>
   <complexType name="UsageZonePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:UsageZone"/>
+      <element ref="nrg3:UsageZone"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1834,10 +1834,10 @@ version="2.0"
   <!-- ******************************** -->
 
 
-  <element abstract="true" name="AbstractSolarCollector" substitutionGroup="nrg2:AbstractDevice" type="nrg2:AbstractSolarCollectorType"></element>
+  <element abstract="true" name="AbstractSolarCollector" substitutionGroup="nrg3:AbstractDevice" type="nrg3:AbstractSolarCollectorType"></element>
   <complexType abstract="true" name="AbstractSolarCollectorType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element minOccurs="0" name="moduleArea" type="gml:AreaType"/>
           <element minOccurs="0" name="apertureArea" type="gml:AreaType"/>
@@ -1863,16 +1863,16 @@ version="2.0"
   </complexType>
   <complexType name="AbstractSolarCollectorPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:AbstractSolarCollector"/>
+      <element ref="nrg3:AbstractSolarCollector"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="Boiler" substitutionGroup="nrg2:AbstractDevice" type="nrg2:BoilerType"></element>
+  <element name="Boiler" substitutionGroup="nrg3:AbstractDevice" type="nrg3:BoilerType"></element>
   <complexType name="BoilerType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element name="hasCondensation" type="boolean"></element>
         </sequence>
@@ -1881,36 +1881,36 @@ version="2.0"
   </complexType>
   <complexType name="BoilerPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:Boiler"/>
+      <element ref="nrg3:Boiler"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="DeviceOperation" substitutionGroup="gml:_Feature" type="nrg2:DeviceOperationType"></element>
+  <element name="DeviceOperation" substitutionGroup="gml:_Feature" type="nrg3:DeviceOperationType"></element>
   <complexType name="DeviceOperationType">
     <complexContent>
       <extension base="gml:AbstractFeatureType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element minOccurs="0" name="yearlyGlobalEfficiency" type="double"/>
-          <element minOccurs="0" name="schedule" type="nrg2:AbstractSchedulePropertyType"></element>
+          <element minOccurs="0" name="schedule" type="nrg3:AbstractSchedulePropertyType"></element>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="DeviceOperationPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:DeviceOperation"/>
+      <element ref="nrg3:DeviceOperation"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ElectricalStorageDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:ElectricalStorageDeviceType"/>
+  <element name="ElectricalStorageDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:ElectricalStorageDeviceType"/>
   <complexType name="ElectricalStorageDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element minOccurs="0" name="batteryTechnology" type="gml:CodeType"/>
           <element minOccurs="0" name="powerCapacity" type="gml:MeasureType"/>
@@ -1920,64 +1920,64 @@ version="2.0"
   </complexType>
   <complexType name="ElectricalStorageDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ElectricalStorageDevice"/>
+      <element ref="nrg3:ElectricalStorageDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="GenericDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:GenericDeviceType"/>
+  <element name="GenericDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:GenericDeviceType"/>
   <complexType name="GenericDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="GenericDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:GenericDevice"/>
+      <element ref="nrg3:GenericDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="GenericElectricalDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:GenericElectricalDeviceType"/>
+  <element name="GenericElectricalDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:GenericElectricalDeviceType"/>
   <complexType name="GenericElectricalDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="GenericElectricalDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:GenericElectricalDevice"/>
+      <element ref="nrg3:GenericElectricalDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="GenericSolarCollector" substitutionGroup="nrg2:AbstractSolarCollector" type="nrg2:GenericSolarCollectorType"/>
+  <element name="GenericSolarCollector" substitutionGroup="nrg3:AbstractSolarCollector" type="nrg3:GenericSolarCollectorType"/>
   <complexType name="GenericSolarCollectorType">
     <complexContent>
-      <extension base="nrg2:AbstractSolarCollectorType">
+      <extension base="nrg3:AbstractSolarCollectorType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="GenericSolarCollectorPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:GenericSolarCollector"/>
+      <element ref="nrg3:GenericSolarCollector"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="HeatPump" substitutionGroup="nrg2:AbstractDevice" type="nrg2:HeatPumpType"/>
+  <element name="HeatPump" substitutionGroup="nrg3:AbstractDevice" type="nrg3:HeatPumpType"/>
   <complexType name="HeatPumpType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element name="heatSource" type="gml:CodeType"/>
           <element minOccurs="0" name="copSourceTemperature" type="gml:MeasureType"></element>
@@ -1988,53 +1988,53 @@ version="2.0"
   </complexType>
   <complexType name="HeatPumpPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:HeatPump"/>
+      <element ref="nrg3:HeatPump"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="LightingDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:LightingDeviceType"/>
+  <element name="LightingDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:LightingDeviceType"/>
   <complexType name="LightingDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="LightingDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:LightingDevice"/>
+      <element ref="nrg3:LightingDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="MovableShadingDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:MovableShadingDeviceType"/>
+  <element name="MovableShadingDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:MovableShadingDeviceType"/>
   <complexType name="MovableShadingDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
-          <element name="installationSide" type="nrg2:SurfaceSideType"/>
+          <element name="installationSide" type="nrg3:SurfaceSideType"/>
           <element minOccurs="0" name="maximumCoverRatio" type="gml:ScaleType"/>
-          <element minOccurs="0" name="transmittance" type="nrg2:TransmittancePropertyType"/>
+          <element minOccurs="0" name="transmittance" type="nrg3:TransmittancePropertyType"/>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
   <complexType name="MovableShadingDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:MovableShadingDevice"/>
+      <element ref="nrg3:MovableShadingDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="PhotovoltaicCollector" substitutionGroup="nrg2:AbstractSolarCollector" type="nrg2:PhotovoltaicCollectorType"/>
+  <element name="PhotovoltaicCollector" substitutionGroup="nrg3:AbstractSolarCollector" type="nrg3:PhotovoltaicCollectorType"/>
   <complexType name="PhotovoltaicCollectorType">
     <complexContent>
-      <extension base="nrg2:AbstractSolarCollectorType">
+      <extension base="nrg3:AbstractSolarCollectorType">
         <sequence>
           <element name="cellType" type="gml:CodeType"/>
         </sequence>
@@ -2043,16 +2043,16 @@ version="2.0"
   </complexType>
   <complexType name="PhotovoltaicCollectorPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:PhotovoltaicCollector"/>
+      <element ref="nrg3:PhotovoltaicCollector"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="PhotovoltaicThermalCollector" substitutionGroup="nrg2:AbstractSolarCollector" type="nrg2:PhotovoltaicThermalCollectorType"></element>
+  <element name="PhotovoltaicThermalCollector" substitutionGroup="nrg3:AbstractSolarCollector" type="nrg3:PhotovoltaicThermalCollectorType"></element>
   <complexType name="PhotovoltaicThermalCollectorType">
     <complexContent>
-      <extension base="nrg2:AbstractSolarCollectorType">
+      <extension base="nrg3:AbstractSolarCollectorType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element name="cellType" type="gml:CodeType"/>
@@ -2065,16 +2065,16 @@ version="2.0"
   </complexType>
   <complexType name="PhotovoltaicThermalCollectorPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:PhotovoltaicThermalCollector"/>
+      <element ref="nrg3:PhotovoltaicThermalCollector"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="SolarThermalCollector" substitutionGroup="nrg2:AbstractSolarCollector" type="nrg2:SolarThermalCollectorType"></element>
+  <element name="SolarThermalCollector" substitutionGroup="nrg3:AbstractSolarCollector" type="nrg3:SolarThermalCollectorType"></element>
   <complexType name="SolarThermalCollectorType">
     <complexContent>
-      <extension base="nrg2:AbstractSolarCollectorType">
+      <extension base="nrg3:AbstractSolarCollectorType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="opticalEfficiency" type="gml:ScaleType"/>
@@ -2086,16 +2086,16 @@ version="2.0"
   </complexType>
   <complexType name="SolarThermalCollectorPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:SolarThermalCollector"/>
+      <element ref="nrg3:SolarThermalCollector"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ThermalStorageDevice" substitutionGroup="nrg2:AbstractDevice" type="nrg2:ThermalStorageDeviceType"/>
+  <element name="ThermalStorageDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:ThermalStorageDeviceType"/>
   <complexType name="ThermalStorageDeviceType">
     <complexContent>
-      <extension base="nrg2:AbstractDeviceType">
+      <extension base="nrg3:AbstractDeviceType">
         <sequence>
           <element minOccurs="0" name="preparationTemperature" type="gml:MeasureType"/>
           <element minOccurs="0" name="medium" type="gml:CodeType"/>
@@ -2107,7 +2107,7 @@ version="2.0"
   </complexType>
   <complexType name="ThermalStorageDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:ThermalStorageDevice"/>
+      <element ref="nrg3:ThermalStorageDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -2118,7 +2118,7 @@ version="2.0"
   <!-- *************************************** -->
 
 
-  <element name="UrbanFunctionArea" substitutionGroup="grp:CityObjectGroup" type="nrg2:UrbanFunctionAreaType">
+  <element name="UrbanFunctionArea" substitutionGroup="grp:CityObjectGroup" type="nrg3:UrbanFunctionAreaType">
     <annotation>
       <appinfo>
         <taggedValue tag="topLevel">true</taggedValue>
@@ -2137,7 +2137,7 @@ version="2.0"
   </complexType>
   <complexType name="UrbanFunctionAreaPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:UrbanFunctionArea"/>
+      <element ref="nrg3:UrbanFunctionArea"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -2148,7 +2148,7 @@ version="2.0"
   <!-- ********************************* -->
 
 
-  <element name="WeatherStation" substitutionGroup="core:_CityObject" type="nrg2:WeatherStationType">
+  <element name="WeatherStation" substitutionGroup="core:_CityObject" type="nrg3:WeatherStationType">
     <annotation>
       <appinfo>
         <taggedValue tag="topLevel">true</taggedValue>
@@ -2164,7 +2164,7 @@ version="2.0"
   </complexType>
   <complexType name="WeatherStationPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg2:WeatherStation"/>
+      <element ref="nrg3:WeatherStation"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>

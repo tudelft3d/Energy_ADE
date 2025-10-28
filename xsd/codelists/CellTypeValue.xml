@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="CellTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">CellTypeValue</gml:identifier>
+  <gml:name>CellTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1029_1299">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/CellTypeValue">monocrystalline</gml:identifier>
+      <gml:name>monocrystalline</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1029_1300">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/CellTypeValue">polycrystalline</gml:identifier>
+      <gml:name>polycrystalline</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1029_1301">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/CellTypeValue">amorphous</gml:identifier>
+      <gml:name>amorphous</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1029_1646">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/CellTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
