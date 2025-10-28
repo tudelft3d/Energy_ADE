@@ -1,11 +1,11 @@
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 --
--- CityGML Energy ADE 3.0 (beta 7)
+-- CityGML Energy ADE 2.0 (beta 7)
 --
--- Last update: 2025-10-14
+-- Last update: 2025-06-25
 --
--- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
+-- This DDL script installs the 3DCityDB schema for the Energy ADE 2.0. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
 --
 -- This script was first automatically generated using the 3DCityDB ADE Manager
@@ -26,28 +26,28 @@
 -- *********************************** Create Sequences *********************************** 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-CREATE SEQUENCE ng3_ctyobj_relation_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
-CREATE SEQUENCE ng3_optical_property_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
-CREATE SEQUENCE ng3_qualified_attribute_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
-CREATE SEQUENCE ng3_suitability_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
+CREATE SEQUENCE ng2_ctyobj_relation_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
+CREATE SEQUENCE ng2_optical_property_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
+CREATE SEQUENCE ng2_qualified_attribute_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
+CREATE SEQUENCE ng2_suitability_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 9223372036854775807 START WITH 1 CACHE 1 NO CYCLE OWNED BY NONE;
 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 -- *********************************** Create tables ************************************** 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 -- -------------------------------------------------------------------- 
--- ng3_address_to_building_unit 
+-- ng2_address_to_building_unit 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_address_to_building_unit (
+CREATE TABLE ng2_address_to_building_unit (
     address_id       BIGINT NOT NULL,
     building_unit_id BIGINT NOT NULL,
     PRIMARY KEY (address_id, building_unit_id)
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_building - extends building table
+-- ng2_building - extends building table
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_building (
+CREATE TABLE ng2_building (
     id                      BIGINT PRIMARY KEY,
     type                    VARCHAR,
     type_codespace          VARCHAR,
@@ -59,9 +59,9 @@ CREATE TABLE ng3_building (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_building_partition
+-- ng2_building_partition
 -- --------------------------------------------------------------------
-CREATE TABLE ng3_building_partition (
+CREATE TABLE ng2_building_partition (
     id                        BIGINT PRIMARY KEY,
     objectclass_id            INTEGER,
 -- Thermal Zone attributes
@@ -109,21 +109,21 @@ CREATE TABLE ng3_building_partition (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_cityobject - extends cityobject table
+-- ng2_cityobject - extends cityobject table
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_cityobject (
+CREATE TABLE ng2_cityobject (
     id                      BIGINT PRIMARY KEY,
     layered_construction_id BIGINT,
     ref_point               geometry(POINTZ)
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_ctyobj_relation
+-- ng2_ctyobj_relation
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_ctyobj_relation (
-    id                      BIGINT PRIMARY KEY DEFAULT nextval('ng3_ctyobj_relation_seq'::regclass),
--- this refers to ng3_cityobject (id), i.e. the source
-    ng3_cityobject_id       BIGINT,
+CREATE TABLE ng2_ctyobj_relation (
+    id                      BIGINT PRIMARY KEY DEFAULT nextval('ng2_ctyobj_relation_seq'::regclass),
+-- this refers to ng2_cityobject (id), i.e. the source
+    ng2_cityobject_id       BIGINT,
 -- this refers to cityobject (id), i.e. the target
     cityobject_id           BIGINT,
     relation_type           VARCHAR,
@@ -131,9 +131,9 @@ CREATE TABLE ng3_ctyobj_relation (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_device 
+-- ng2_device 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_device (
+CREATE TABLE ng2_device (
     id                     BIGINT PRIMARY KEY,
     objectclass_id         INTEGER,
 -- AbstractDevice attributes (also for LightingDevice, GenericDevice, GenericElectricalDevice)
@@ -173,9 +173,9 @@ CREATE TABLE ng3_device (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_device_operation 
+-- ng2_device_operation 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_device_operation (
+CREATE TABLE ng2_device_operation (
     id                       BIGINT PRIMARY KEY,
     type                     VARCHAR,
     type_codespace           VARCHAR,
@@ -186,9 +186,9 @@ CREATE TABLE ng3_device_operation (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_energy_perf_cert 
+-- ng2_energy_perf_cert 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_energy_perf_cert (
+CREATE TABLE ng2_energy_perf_cert (
     id                    BIGINT PRIMARY KEY,
     type                  VARCHAR,
     type_codespace        VARCHAR,
@@ -205,9 +205,9 @@ CREATE TABLE ng3_energy_perf_cert (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_layer 
+-- ng2_layer 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_layer (
+CREATE TABLE ng2_layer (
     id                      BIGINT PRIMARY KEY,
     thickness               NUMERIC,
     thickness_uom           VARCHAR,
@@ -217,9 +217,9 @@ CREATE TABLE ng3_layer (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_layered_construction
+-- ng2_layered_construction
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_layered_construction (
+CREATE TABLE ng2_layered_construction (
     id                      BIGINT PRIMARY KEY,
     objectclass_id          INTEGER,
     u_value                 NUMERIC,
@@ -236,9 +236,9 @@ CREATE TABLE ng3_layered_construction (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_library 
+-- ng2_library 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_library (
+CREATE TABLE ng2_library (
     id                     BIGINT PRIMARY KEY,
     objectclass_id         INTEGER,
     type                   VARCHAR,
@@ -248,9 +248,9 @@ CREATE TABLE ng3_library (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_material 
+-- ng2_material 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_material (
+CREATE TABLE ng2_material (
     id                     BIGINT PRIMARY KEY,
     objectclass_id         INTEGER,
 -- Abstract library attributes
@@ -280,9 +280,9 @@ CREATE TABLE ng3_material (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_occupants 
+-- ng2_occupants 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_occupants (
+CREATE TABLE ng2_occupants (
     id                         BIGINT PRIMARY KEY,
     type                       VARCHAR,
     type_codespace             VARCHAR,
@@ -307,9 +307,9 @@ CREATE TABLE ng3_occupants (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_opening - extends (building) opening table
+-- ng2_opening - extends (building) opening table
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_opening (
+CREATE TABLE ng2_opening (
     id                     BIGINT PRIMARY KEY,
     area                   NUMERIC,
     area_uom               VARCHAR,
@@ -324,10 +324,10 @@ CREATE TABLE ng3_opening (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_optical_property 
+-- ng2_optical_property 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_optical_property (
-    id                      BIGINT PRIMARY KEY DEFAULT nextval('ng3_optical_property_seq'::regclass),
+CREATE TABLE ng2_optical_property (
+    id                      BIGINT PRIMARY KEY DEFAULT nextval('ng2_optical_property_seq'::regclass),
     objectclass_id          INTEGER,
     fraction                NUMERIC,
     fraction_uom            VARCHAR,
@@ -338,10 +338,10 @@ CREATE TABLE ng3_optical_property (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_qualified_attribute
+-- ng2_qualified_attribute
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_qualified_attribute (
-    id                    BIGINT PRIMARY KEY DEFAULT nextval('ng3_qualified_attribute_seq'::regclass),
+CREATE TABLE ng2_qualified_attribute (
+    id                    BIGINT PRIMARY KEY DEFAULT nextval('ng2_qualified_attribute_seq'::regclass),
     objectclass_id        INTEGER,
     type                  VARCHAR,
     type_codespace        VARCHAR,
@@ -355,9 +355,9 @@ CREATE TABLE ng3_qualified_attribute (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_refurbishment_measure 
+-- ng2_refurbishment_measure 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_refurbishment_measure (
+CREATE TABLE ng2_refurbishment_measure (
     id                     BIGINT PRIMARY KEY,
     type                   VARCHAR,
     type_codespace         VARCHAR,
@@ -371,9 +371,9 @@ CREATE TABLE ng3_refurbishment_measure (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_resource 
+-- ng2_resource 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_resource (
+CREATE TABLE ng2_resource (
     id                       BIGINT PRIMARY KEY,
     objectclass_id           INTEGER,
     type                     VARCHAR,
@@ -414,9 +414,9 @@ CREATE TABLE ng3_resource (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule 
+-- ng2_schedule 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_schedule (
+CREATE TABLE ng2_schedule (
     id                     BIGINT PRIMARY KEY,
     objectclass_id         INTEGER,
     library_code           VARCHAR,
@@ -447,9 +447,9 @@ CREATE TABLE ng3_schedule (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule_component
+-- ng2_schedule_component
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_schedule_component (
+CREATE TABLE ng2_schedule_component (
     id                     BIGINT PRIMARY KEY,
     type                   VARCHAR,
     type_codespace         VARCHAR,
@@ -464,9 +464,9 @@ CREATE TABLE ng3_schedule_component (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_solar_collector
+-- ng2_solar_collector
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_solar_collector (
+CREATE TABLE ng2_solar_collector (
     id                    BIGINT PRIMARY KEY,
     objectclass_id        INTEGER,
 	type                  VARCHAR,
@@ -491,9 +491,9 @@ CREATE TABLE ng3_solar_collector (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_storage_device
+-- ng2_storage_device
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_storage_device (
+CREATE TABLE ng2_storage_device (
     id                    BIGINT PRIMARY KEY,
     objectclass_id        INTEGER,
 	medium                VARCHAR,
@@ -511,10 +511,10 @@ CREATE TABLE ng3_storage_device (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_suitability 
+-- ng2_suitability 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_suitability (
-    id               BIGINT PRIMARY KEY DEFAULT nextval('ng3_suitability_seq'::regclass),
+CREATE TABLE ng2_suitability (
+    id               BIGINT PRIMARY KEY DEFAULT nextval('ng2_suitability_seq'::regclass),
     reason           VARCHAR,
     reason_codespace VARCHAR,
     value            NUMERIC,
@@ -526,18 +526,18 @@ CREATE TABLE ng3_suitability (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_them_surf_to_thermal_zone
+-- ng2_them_surf_to_thermal_zone
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_them_surf_to_thermal_zone (
+CREATE TABLE ng2_them_surf_to_thermal_zone (
     thematic_surface_id BIGINT NOT NULL,
     thermal_zone_id     BIGINT NOT NULL,
     PRIMARY KEY (thematic_surface_id, thermal_zone_id)
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_thematic_surface - extends (building) thematic_surface table
+-- ng2_thematic_surface - extends (building) thematic_surface table
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_thematic_surface (
+CREATE TABLE ng2_thematic_surface (
     id                     BIGINT PRIMARY KEY,
     total_surf_area        NUMERIC,
     total_surf_area_uom    VARCHAR,
@@ -561,9 +561,9 @@ CREATE TABLE ng3_thematic_surface (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_time_series 
+-- ng2_time_series 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_time_series (
+CREATE TABLE ng2_time_series (
     id                           BIGINT PRIMARY KEY,
     objectclass_id               INTEGER,
 -- AbstractTieSeries attributes
@@ -611,9 +611,9 @@ CREATE TABLE ng3_time_series (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_urban_function_area 
+-- ng2_urban_function_area 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_urban_function_area (
+CREATE TABLE ng2_urban_function_area (
     id             BIGINT PRIMARY KEY,
     type           VARCHAR,
     type_codespace VARCHAR,
@@ -622,9 +622,9 @@ CREATE TABLE ng3_urban_function_area (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_utl_ntw_connection 
+-- ng2_utl_ntw_connection 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_utl_ntw_connection (
+CREATE TABLE ng2_utl_ntw_connection (
     id                            BIGINT PRIMARY KEY,
     network_type                  VARCHAR,
     network_type_codespace        VARCHAR,
@@ -640,9 +640,9 @@ CREATE TABLE ng3_utl_ntw_connection (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_weather_data 
+-- ng2_weather_data 
 -- -------------------------------------------------------------------- 
-CREATE TABLE ng3_weather_data (
+CREATE TABLE ng2_weather_data (
     id                     BIGINT PRIMARY KEY,
     type                   VARCHAR,
     type_codespace         VARCHAR,
@@ -664,201 +664,201 @@ CREATE TABLE ng3_weather_data (
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 -- -------------------------------------------------------------------- 
--- ng3_address_to_building_unit 
+-- ng2_address_to_building_unit 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_address_to_building_unit ADD CONSTRAINT ng3_addr_to_bdgu_fk1 FOREIGN KEY (address_id) REFERENCES address (id) ON DELETE CASCADE;
-ALTER TABLE ng3_address_to_building_unit ADD CONSTRAINT ng3_addr_to_bdgu_fk2 FOREIGN KEY (building_unit_id) REFERENCES ng3_building_partition (id) ON DELETE CASCADE;
+ALTER TABLE ng2_address_to_building_unit ADD CONSTRAINT ng2_addr_to_bdgu_fk1 FOREIGN KEY (address_id) REFERENCES address (id) ON DELETE CASCADE;
+ALTER TABLE ng2_address_to_building_unit ADD CONSTRAINT ng2_addr_to_bdgu_fk2 FOREIGN KEY (building_unit_id) REFERENCES ng2_building_partition (id) ON DELETE CASCADE;
 
 -- -------------------------------------------------------------------- 
--- ng3_building 
+-- ng2_building 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_building ADD CONSTRAINT ng3_bdg_fk FOREIGN KEY (id) REFERENCES building (id);
+ALTER TABLE ng2_building ADD CONSTRAINT ng2_bdg_fk FOREIGN KEY (id) REFERENCES building (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_building_partition 
+-- ng2_building_partition 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_lod1_fk FOREIGN KEY (lod1_solid_id) REFERENCES surface_geometry (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_lod2_fk FOREIGN KEY (lod2_solid_id) REFERENCES surface_geometry (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_lod3_fk FOREIGN KEY (lod3_solid_id) REFERENCES surface_geometry (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_uz_fk FOREIGN KEY (usage_zone_id) REFERENCES ng3_building_partition (id) ON DELETE SET NULL;
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_tz_fk FOREIGN KEY (thermal_zone_id) REFERENCES ng3_building_partition (id) ON DELETE SET NULL;
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_bdg_fk FOREIGN KEY (building_id) REFERENCES ng3_building (id);
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_sched_fk1 FOREIGN KEY (cooling_schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_sched_fk2 FOREIGN KEY (heating_schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
-ALTER TABLE ng3_building_partition ADD CONSTRAINT ng3_bdgp_sched_fk3 FOREIGN KEY (ventilation_schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_lod1_fk FOREIGN KEY (lod1_solid_id) REFERENCES surface_geometry (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_lod2_fk FOREIGN KEY (lod2_solid_id) REFERENCES surface_geometry (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_lod3_fk FOREIGN KEY (lod3_solid_id) REFERENCES surface_geometry (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_uz_fk FOREIGN KEY (usage_zone_id) REFERENCES ng2_building_partition (id) ON DELETE SET NULL;
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_tz_fk FOREIGN KEY (thermal_zone_id) REFERENCES ng2_building_partition (id) ON DELETE SET NULL;
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_bdg_fk FOREIGN KEY (building_id) REFERENCES ng2_building (id);
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_sched_fk1 FOREIGN KEY (cooling_schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_sched_fk2 FOREIGN KEY (heating_schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_building_partition ADD CONSTRAINT ng2_bdgp_sched_fk3 FOREIGN KEY (ventilation_schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_cityobject 
+-- ng2_cityobject 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_cityobject ADD CONSTRAINT ng3_cto_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_cityobject ADD CONSTRAINT ng3_cto_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng3_layered_construction (id) ON DELETE SET NULL;
+ALTER TABLE ng2_cityobject ADD CONSTRAINT ng2_cto_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_cityobject ADD CONSTRAINT ng2_cto_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng2_layered_construction (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_ctyobj_relation 
+-- ng2_ctyobj_relation 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_ctyobj_relation ADD CONSTRAINT ng3_cto_rel_fk2 FOREIGN KEY (cityobject_id) REFERENCES cityobject (id) ON DELETE SET NULL;
-ALTER TABLE ng3_ctyobj_relation ADD CONSTRAINT ng3_cto_rel_fk1 FOREIGN KEY (ng3_cityobject_id) REFERENCES ng3_cityobject (id);
+ALTER TABLE ng2_ctyobj_relation ADD CONSTRAINT ng2_cto_rel_fk2 FOREIGN KEY (cityobject_id) REFERENCES cityobject (id) ON DELETE SET NULL;
+ALTER TABLE ng2_ctyobj_relation ADD CONSTRAINT ng2_cto_rel_fk1 FOREIGN KEY (ng2_cityobject_id) REFERENCES ng2_cityobject (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_device
+-- ng2_device
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_device ADD CONSTRAINT ng3_dev_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_device ADD CONSTRAINT ng3_dev_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_device ADD CONSTRAINT ng3_dev_opt_fk FOREIGN KEY (transmittance_id) REFERENCES ng3_optical_property (id) ON DELETE SET NULL;
-ALTER TABLE ng3_device ADD CONSTRAINT ng3_dev_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id) ON DELETE SET NULL;
+ALTER TABLE ng2_device ADD CONSTRAINT ng2_dev_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_device ADD CONSTRAINT ng2_dev_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_device ADD CONSTRAINT ng2_dev_opt_fk FOREIGN KEY (transmittance_id) REFERENCES ng2_optical_property (id) ON DELETE SET NULL;
+ALTER TABLE ng2_device ADD CONSTRAINT ng2_dev_ng2_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng2_cityobject (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_device_operation 
+-- ng2_device_operation 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
-ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_dev_fk FOREIGN KEY (device_id) REFERENCES ng3_device (id) ON DELETE SET NULL;
+ALTER TABLE ng2_device_operation ADD CONSTRAINT ng2_dev_opr_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_device_operation ADD CONSTRAINT ng2_dev_opr_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_device_operation ADD CONSTRAINT ng2_dev_opr_dev_fk FOREIGN KEY (device_id) REFERENCES ng2_device (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_energy_perf_cert 
+-- ng2_energy_perf_cert 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_bdg_fk FOREIGN KEY (building_id) REFERENCES ng3_building (id) ON DELETE SET NULL;
-ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng3_building_partition (id) ON DELETE SET NULL;
+ALTER TABLE ng2_energy_perf_cert ADD CONSTRAINT ng2_epc_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_energy_perf_cert ADD CONSTRAINT ng2_epc_bdg_fk FOREIGN KEY (building_id) REFERENCES ng2_building (id) ON DELETE SET NULL;
+ALTER TABLE ng2_energy_perf_cert ADD CONSTRAINT ng2_epc_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng2_building_partition (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_layer 
+-- ng2_layer 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_mat_fk FOREIGN KEY (material_id) REFERENCES ng3_material (id) ON DELETE SET NULL;
-ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng3_layered_construction (id) ON DELETE SET NULL;
+ALTER TABLE ng2_layer ADD CONSTRAINT ng2_lyr_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_layer ADD CONSTRAINT ng2_lyr_mat_fk FOREIGN KEY (material_id) REFERENCES ng2_material (id) ON DELETE SET NULL;
+ALTER TABLE ng2_layer ADD CONSTRAINT ng2_lyr_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng2_layered_construction (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_layered_construction
+-- ng2_layered_construction
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng3_layered_construction (id) ON DELETE SET NULL;
-ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_lib_fk FOREIGN KEY (library_id) REFERENCES ng3_library (id) ON DELETE SET NULL;
+ALTER TABLE ng2_layered_construction ADD CONSTRAINT ng2_lcns_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_layered_construction ADD CONSTRAINT ng2_lcns_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_layered_construction ADD CONSTRAINT ng2_lcns_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng2_layered_construction (id) ON DELETE SET NULL;
+ALTER TABLE ng2_layered_construction ADD CONSTRAINT ng2_lcns_lib_fk FOREIGN KEY (library_id) REFERENCES ng2_library (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_library 
+-- ng2_library 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_library ADD CONSTRAINT ng3_lib_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_library ADD CONSTRAINT ng3_lib_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_library ADD CONSTRAINT ng2_lib_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_library ADD CONSTRAINT ng2_lib_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_material 
+-- ng2_material 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_material ADD CONSTRAINT ng3_mat_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_material ADD CONSTRAINT ng3_mat_lib_fk FOREIGN KEY (library_id) REFERENCES ng3_library (id) ON DELETE SET NULL;
+ALTER TABLE ng2_material ADD CONSTRAINT ng2_mat_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_material ADD CONSTRAINT ng2_mat_lib_fk FOREIGN KEY (library_id) REFERENCES ng2_library (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_occupants 
+-- ng2_occupants 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_occupants ADD CONSTRAINT ng3_occ_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_occupants ADD CONSTRAINT ng3_occ_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
-ALTER TABLE ng3_occupants ADD CONSTRAINT ng3_occ_ng3_bdgp_fk FOREIGN KEY (building_partition_id) REFERENCES ng3_building_partition (id) ON DELETE SET NULL;
+ALTER TABLE ng2_occupants ADD CONSTRAINT ng2_occ_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_occupants ADD CONSTRAINT ng2_occ_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_occupants ADD CONSTRAINT ng2_occ_ng2_bdgp_fk FOREIGN KEY (building_partition_id) REFERENCES ng2_building_partition (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_opening
+-- ng2_opening
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_opening ADD CONSTRAINT ng3_opn_fk FOREIGN KEY (id) REFERENCES opening (id);
+ALTER TABLE ng2_opening ADD CONSTRAINT ng2_opn_fk FOREIGN KEY (id) REFERENCES opening (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_optical_property
+-- ng2_optical_property
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_optical_property ADD CONSTRAINT ng3_optpty_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id); 
-ALTER TABLE ng3_optical_property ADD CONSTRAINT ng3_optpty_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng3_layered_construction (id);
+ALTER TABLE ng2_optical_property ADD CONSTRAINT ng2_optpty_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id); 
+ALTER TABLE ng2_optical_property ADD CONSTRAINT ng2_optpty_lcns_fk FOREIGN KEY (layered_construction_id) REFERENCES ng2_layered_construction (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_qualified_attribute
+-- ng2_qualified_attribute
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_qualified_attribute ADD CONSTRAINT ng3_qatt_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id); 
-ALTER TABLE ng3_qualified_attribute ADD CONSTRAINT ng3_qatt_bdg_fk FOREIGN KEY (building_id) REFERENCES ng3_building (id);
-ALTER TABLE ng3_qualified_attribute ADD CONSTRAINT ng3_qatt_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng3_building_partition (id);
+ALTER TABLE ng2_qualified_attribute ADD CONSTRAINT ng2_qatt_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id); 
+ALTER TABLE ng2_qualified_attribute ADD CONSTRAINT ng2_qatt_bdg_fk FOREIGN KEY (building_id) REFERENCES ng2_building (id);
+ALTER TABLE ng2_qualified_attribute ADD CONSTRAINT ng2_qatt_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng2_building_partition (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_refurbishment_measure 
+-- ng2_refurbishment_measure 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_refurbishment_measure ADD CONSTRAINT ng3_refurb_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_refurbishment_measure ADD CONSTRAINT ng3_refurb_bdg_fk FOREIGN KEY (building_id) REFERENCES ng3_building (id) ON DELETE SET NULL;
-ALTER TABLE ng3_refurbishment_measure ADD CONSTRAINT ng3_refurb_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng3_building_partition (id) ON DELETE SET NULL;
+ALTER TABLE ng2_refurbishment_measure ADD CONSTRAINT ng2_refurb_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_refurbishment_measure ADD CONSTRAINT ng2_refurb_bdg_fk FOREIGN KEY (building_id) REFERENCES ng2_building (id) ON DELETE SET NULL;
+ALTER TABLE ng2_refurbishment_measure ADD CONSTRAINT ng2_refurb_bdg_part_fk FOREIGN KEY (building_partition_id) REFERENCES ng2_building_partition (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_resource 
+-- ng2_resource 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id) ON DELETE SET NULL;
+ALTER TABLE ng2_resource ADD CONSTRAINT ng2_res_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_resource ADD CONSTRAINT ng2_res_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_resource ADD CONSTRAINT ng2_res_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng2_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng2_resource ADD CONSTRAINT ng2_res_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng2_cityobject (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule 
+-- ng2_schedule 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_lib_fk FOREIGN KEY (library_id) REFERENCES ng3_library (id) ON DELETE SET NULL;
+ALTER TABLE ng2_schedule ADD CONSTRAINT ng2_sched_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_schedule ADD CONSTRAINT ng2_sched_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_schedule ADD CONSTRAINT ng2_sched_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng2_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng2_schedule ADD CONSTRAINT ng2_sched_lib_fk FOREIGN KEY (library_id) REFERENCES ng2_library (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule_component 
+-- ng2_schedule_component 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_sched_fk1 FOREIGN KEY (parent_schedule_id) REFERENCES ng3_schedule (id);
-ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_sched_fk2 FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_schedule_component ADD CONSTRAINT ng2_sched_comp_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_schedule_component ADD CONSTRAINT ng2_sched_comp_sched_fk1 FOREIGN KEY (parent_schedule_id) REFERENCES ng2_schedule (id);
+ALTER TABLE ng2_schedule_component ADD CONSTRAINT ng2_sched_comp_sched_fk2 FOREIGN KEY (schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_solar_collector
+-- ng2_solar_collector
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_solar_collector ADD CONSTRAINT ng3_sol_coll_fk FOREIGN KEY (id) REFERENCES ng3_device (id);
-ALTER TABLE ng3_solar_collector ADD CONSTRAINT ng3_sol_coll_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_solar_collector ADD CONSTRAINT ng3_sol_coll_lod2_fk FOREIGN KEY (lod2_multi_surface_id) REFERENCES surface_geometry (id);
-ALTER TABLE ng3_solar_collector ADD CONSTRAINT ng3_sol_coll_lod3_fk FOREIGN KEY (lod3_multi_surface_id) REFERENCES surface_geometry (id);
+ALTER TABLE ng2_solar_collector ADD CONSTRAINT ng2_sol_coll_fk FOREIGN KEY (id) REFERENCES ng2_device (id);
+ALTER TABLE ng2_solar_collector ADD CONSTRAINT ng2_sol_coll_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_solar_collector ADD CONSTRAINT ng2_sol_coll_lod2_fk FOREIGN KEY (lod2_multi_surface_id) REFERENCES surface_geometry (id);
+ALTER TABLE ng2_solar_collector ADD CONSTRAINT ng2_sol_coll_lod3_fk FOREIGN KEY (lod3_multi_surface_id) REFERENCES surface_geometry (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_storage_device
+-- ng2_storage_device
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_storage_device ADD CONSTRAINT ng3_sto_dev_fk FOREIGN KEY (id) REFERENCES ng3_device (id);
-ALTER TABLE ng3_storage_device ADD CONSTRAINT ng3_sto_dev_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_storage_device ADD CONSTRAINT ng2_sto_dev_fk FOREIGN KEY (id) REFERENCES ng2_device (id);
+ALTER TABLE ng2_storage_device ADD CONSTRAINT ng2_sto_dev_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_suitability
+-- ng2_suitability
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_suitability ADD CONSTRAINT ng3_suit_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
-ALTER TABLE ng3_suitability ADD CONSTRAINT ng3_suit_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
+ALTER TABLE ng2_suitability ADD CONSTRAINT ng2_suit_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng2_cityobject (id);
+ALTER TABLE ng2_suitability ADD CONSTRAINT ng2_suit_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng2_schedule (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_them_surf_to_thermal_zone
+-- ng2_them_surf_to_thermal_zone
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_them_surf_to_thermal_zone ADD CONSTRAINT ng3_thm_surf_to_tz_fk2 FOREIGN KEY (thermal_zone_id) REFERENCES ng3_building_partition (id);
-ALTER TABLE ng3_them_surf_to_thermal_zone ADD CONSTRAINT ng3_thm_surf_to_tz_fk1 FOREIGN KEY (thematic_surface_id) REFERENCES thematic_surface (id) ON DELETE CASCADE;
+ALTER TABLE ng2_them_surf_to_thermal_zone ADD CONSTRAINT ng2_thm_surf_to_tz_fk2 FOREIGN KEY (thermal_zone_id) REFERENCES ng2_building_partition (id);
+ALTER TABLE ng2_them_surf_to_thermal_zone ADD CONSTRAINT ng2_thm_surf_to_tz_fk1 FOREIGN KEY (thematic_surface_id) REFERENCES thematic_surface (id) ON DELETE CASCADE;
 
 -- -------------------------------------------------------------------- 
--- ng3_thematic_surface 
+-- ng2_thematic_surface 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_thematic_surface ADD CONSTRAINT ng3_them_surf_fk FOREIGN KEY (id) REFERENCES thematic_surface (id);
+ALTER TABLE ng2_thematic_surface ADD CONSTRAINT ng2_them_surf_fk FOREIGN KEY (id) REFERENCES thematic_surface (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_time_series 
+-- ng2_time_series 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_time_series ADD CONSTRAINT ng3_ts_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_time_series ADD CONSTRAINT ng3_ts_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng2_time_series ADD CONSTRAINT ng2_ts_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_time_series ADD CONSTRAINT ng2_ts_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_urban_function_area
+-- ng2_urban_function_area
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_urban_function_area ADD CONSTRAINT ng3_ufa_fk FOREIGN KEY (id) REFERENCES cityobjectgroup (id);
+ALTER TABLE ng2_urban_function_area ADD CONSTRAINT ng2_ufa_fk FOREIGN KEY (id) REFERENCES cityobjectgroup (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_utl_ntw_connection 
+-- ng2_utl_ntw_connection 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_utl_ntw_connection ADD CONSTRAINT ng3_utl_ntw_con_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_utl_ntw_connection ADD CONSTRAINT ng3_utl_ntw_con_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id) ON DELETE SET NULL;
+ALTER TABLE ng2_utl_ntw_connection ADD CONSTRAINT ng2_utl_ntw_con_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_utl_ntw_connection ADD CONSTRAINT ng2_utl_ntw_con_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng2_cityobject (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_weather_data 
+-- ng2_weather_data 
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_weather_data ADD CONSTRAINT ng3_wth_data_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_weather_data ADD CONSTRAINT ng3_wth_data_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_weather_data ADD CONSTRAINT ng3_wth_data_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id) ON DELETE SET NULL;
+ALTER TABLE ng2_weather_data ADD CONSTRAINT ng2_wth_data_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng2_weather_data ADD CONSTRAINT ng2_wth_data_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng2_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng2_weather_data ADD CONSTRAINT ng2_wth_data_ng2_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng2_cityobject (id) ON DELETE SET NULL;
 
 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
@@ -866,183 +866,183 @@ ALTER TABLE ng3_weather_data ADD CONSTRAINT ng3_wth_data_ng3_cto_fk FOREIGN KEY 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 -- -------------------------------------------------------------------- 
--- ng3_address_to_building_unit
+-- ng2_address_to_building_unit
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_address_to_bdgu_fk1x ON ng3_address_to_building_unit USING btree (address_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_address_to_bdgu_fk2x ON ng3_address_to_building_unit USING btree (building_unit_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_address_to_bdgu_fk1x ON ng2_address_to_building_unit USING btree (address_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_address_to_bdgu_fk2x ON ng2_address_to_building_unit USING btree (building_unit_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_building
+-- ng2_building
 -- -------------------------------------------------------------------- 
 -- no indices needed
 
 -- -------------------------------------------------------------------- 
--- ng3_building_partition 
+-- ng2_building_partition 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_bdgp_oc_fkx       ON ng3_building_partition USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_sched_fk1x   ON ng3_building_partition USING btree (cooling_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_sched_fk2x   ON ng3_building_partition USING btree (heating_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_sched_fk3x   ON ng3_building_partition USING btree (ventilation_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_uz_fkx       ON ng3_building_partition USING btree (usage_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_tz_fkx       ON ng3_building_partition USING btree (thermal_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_bdg_fkx      ON ng3_building_partition USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_solid1_fkx   ON ng3_building_partition USING btree (lod1_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_solid2_fkx   ON ng3_building_partition USING btree (lod2_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_bdgp_solid3_fkx   ON ng3_building_partition USING btree (lod3_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_oc_fkx       ON ng2_building_partition USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_sched_fk1x   ON ng2_building_partition USING btree (cooling_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_sched_fk2x   ON ng2_building_partition USING btree (heating_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_sched_fk3x   ON ng2_building_partition USING btree (ventilation_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_uz_fkx       ON ng2_building_partition USING btree (usage_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_tz_fkx       ON ng2_building_partition USING btree (thermal_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_bdg_fkx      ON ng2_building_partition USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_solid1_fkx   ON ng2_building_partition USING btree (lod1_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_solid2_fkx   ON ng2_building_partition USING btree (lod2_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_bdgp_solid3_fkx   ON ng2_building_partition USING btree (lod3_solid_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_cityobject 
+-- ng2_cityobject 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_cto_ref_point_spx ON ng3_cityobject USING gist (ref_point);
-CREATE INDEX ng3_cto_lcns_fkx      ON ng3_cityobject USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_cto_ref_point_spx ON ng2_cityobject USING gist (ref_point);
+CREATE INDEX ng2_cto_lcns_fkx      ON ng2_cityobject USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_ctyobj_relation 
+-- ng2_ctyobj_relation 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_cto_rel_fk1x ON ng3_ctyobj_relation USING btree (ng3_cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_cto_rel_fk2x ON ng3_ctyobj_relation USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_cto_rel_fk1x ON ng2_ctyobj_relation USING btree (ng2_cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_cto_rel_fk2x ON ng2_ctyobj_relation USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_device
+-- ng2_device
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_dev_oc_fkx       ON ng3_device USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_dev_opt_fkx      ON ng3_device USING btree (transmittance_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_dev_cto_fkx      ON ng3_device USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_dev_oc_fkx       ON ng2_device USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_dev_opt_fkx      ON ng2_device USING btree (transmittance_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_dev_cto_fkx      ON ng2_device USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_device_operation
+-- ng2_device_operation
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_dev_opr_sched_fkx ON ng3_device_operation USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_dev_opr_dev_fkx   ON ng3_device_operation USING btree (device_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_dev_opr_sched_fkx ON ng2_device_operation USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_dev_opr_dev_fkx   ON ng2_device_operation USING btree (device_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_energy_perf_cert 
+-- ng2_energy_perf_cert 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_epc_bdg_fkx      ON ng3_energy_perf_cert USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_epc_bdg_part_fkx ON ng3_energy_perf_cert USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_epc_bdg_fkx      ON ng2_energy_perf_cert USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_epc_bdg_part_fkx ON ng2_energy_perf_cert USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_layer 
+-- ng2_layer 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_lyr_mat_fkx  ON ng3_layer USING btree (material_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_lyr_lcns_fkx ON ng3_layer USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lyr_mat_fkx  ON ng2_layer USING btree (material_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lyr_lcns_fkx ON ng2_layer USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_layered_constr
+-- ng2_layered_constr
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_lcns_oc_fkx       ON ng3_layered_construction USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_lcns_lcns_fkx     ON ng3_layered_construction USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_lcns_lib_fkx      ON ng3_layered_construction USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lcns_oc_fkx       ON ng2_layered_construction USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lcns_lcns_fkx     ON ng2_layered_construction USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lcns_lib_fkx      ON ng2_layered_construction USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_library
+-- ng2_library
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_lib_oc_fkx ON ng3_library USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_lib_oc_fkx ON ng2_library USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_material 
+-- ng2_material 
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_mat_oc_fkx  ON ng3_material USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_mat_lib_fkx ON ng3_material USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_mat_oc_fkx  ON ng2_material USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_mat_lib_fkx ON ng2_material USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_occupants 
+-- ng2_occupants 
 -- --------------------------------------------------------------------
-CREATE INDEX ng3_occ_sched_fkx    ON ng3_occupants USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_occ_ng3_bdgp_fkx ON ng3_occupants USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_occ_sched_fkx    ON ng2_occupants USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_occ_ng2_bdgp_fkx ON ng2_occupants USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_opening
--- --------------------------------------------------------------------
--- no indices needed
-
--- -------------------------------------------------------------------- 
--- ng3_optical_property
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_optpty_oc_fkx   ON ng3_optical_property USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_optpty_lcns_fkx ON ng3_optical_property USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_qualified_attribute
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_qual_attr_oc_fkx       ON ng3_qualified_attribute USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_qual_attr_bdg_fkx      ON ng3_qualified_attribute USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_qual_attr_bdg_part_fkx ON ng3_qualified_attribute USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_qual_attr_type_idx     ON ng3_qualified_attribute USING btree (type ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_refurbishment_measure 
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_ref_meas_bdg_fkx      ON ng3_refurbishment_measure USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_ref_meas_bdg_part_fkx ON ng3_refurbishment_measure USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_resource 
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_res_oc_fkx  ON ng3_resource USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_res_ts_fkx  ON ng3_resource USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_res_cto_fkx ON ng3_resource USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_schedule 
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_sched_oc_fkx  ON ng3_schedule USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sched_ts_fkx  ON ng3_schedule USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sched_lib_fkx ON ng3_schedule USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_schedule_component
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_sched_comp_sched_fk1x ON ng3_schedule_component USING btree (parent_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sched_comp_sched_fk2x ON ng3_schedule_component USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_solar_collector
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_sol_col_oc_fkx   ON ng3_solar_collector USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sol_col_lod2_fkx ON ng3_solar_collector USING btree (lod2_multi_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sol_col_lod3_fkx ON ng3_solar_collector USING btree (lod2_multi_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_storage_device
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_sto_dev_oc_fkx ON ng3_storage_device USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_suitability 
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_suit_cto_fkx   ON ng3_suitability USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_suit_sched_fkx ON ng3_suitability USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_suit_reas_fkx  ON ng3_suitability USING btree (reason ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_them_surf_to_thermal_zone
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_thm_surf_to_tz_fk1x ON ng3_them_surf_to_thermal_zone USING btree (thematic_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_thm_surf_to_tz_fk2x ON ng3_them_surf_to_thermal_zone USING btree (thermal_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_thematic_surface
--- -------------------------------------------------------------------- 
--- no indices needed
-
--- -------------------------------------------------------------------- 
--- ng3_time_series 
--- -------------------------------------------------------------------- 
-CREATE INDEX ng3_ts_oc_fkx  ON ng3_time_series USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-
--- -------------------------------------------------------------------- 
--- ng3_urban_function_area 
+-- ng2_opening
 -- --------------------------------------------------------------------
 -- no indices needed
 
 -- -------------------------------------------------------------------- 
--- ng3_utl_ntw_connection 
+-- ng2_optical_property
 -- -------------------------------------------------------------------- 
-CREATE INDEX ng3_utl_ntw_conn_cto_fkx ON ng3_utl_ntw_connection USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_optpty_oc_fkx   ON ng2_optical_property USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_optpty_lcns_fkx ON ng2_optical_property USING btree (layered_construction_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_weather_data 
+-- ng2_qualified_attribute
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_qual_attr_oc_fkx       ON ng2_qualified_attribute USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_qual_attr_bdg_fkx      ON ng2_qualified_attribute USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_qual_attr_bdg_part_fkx ON ng2_qualified_attribute USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_qual_attr_type_idx     ON ng2_qualified_attribute USING btree (type ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_refurbishment_measure 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_ref_meas_bdg_fkx      ON ng2_refurbishment_measure USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_ref_meas_bdg_part_fkx ON ng2_refurbishment_measure USING btree (building_partition_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_resource 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_res_oc_fkx  ON ng2_resource USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_res_ts_fkx  ON ng2_resource USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_res_cto_fkx ON ng2_resource USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_schedule 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_sched_oc_fkx  ON ng2_schedule USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_sched_ts_fkx  ON ng2_schedule USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_sched_lib_fkx ON ng2_schedule USING btree (library_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_schedule_component
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_sched_comp_sched_fk1x ON ng2_schedule_component USING btree (parent_schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_sched_comp_sched_fk2x ON ng2_schedule_component USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_solar_collector
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_sol_col_oc_fkx   ON ng2_solar_collector USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_sol_col_lod2_fkx ON ng2_solar_collector USING btree (lod2_multi_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_sol_col_lod3_fkx ON ng2_solar_collector USING btree (lod2_multi_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_storage_device
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_sto_dev_oc_fkx ON ng2_storage_device USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_suitability 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_suit_cto_fkx   ON ng2_suitability USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_suit_sched_fkx ON ng2_suitability USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_suit_reas_fkx  ON ng2_suitability USING btree (reason ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_them_surf_to_thermal_zone
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_thm_surf_to_tz_fk1x ON ng2_them_surf_to_thermal_zone USING btree (thematic_surface_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_thm_surf_to_tz_fk2x ON ng2_them_surf_to_thermal_zone USING btree (thermal_zone_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_thematic_surface
+-- -------------------------------------------------------------------- 
+-- no indices needed
+
+-- -------------------------------------------------------------------- 
+-- ng2_time_series 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_ts_oc_fkx  ON ng2_time_series USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_urban_function_area 
 -- --------------------------------------------------------------------
-CREATE INDEX ng3_wht_data_ts_fkx  ON ng3_weather_data USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_wht_data_cto_fkx ON ng3_weather_data USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+-- no indices needed
+
+-- -------------------------------------------------------------------- 
+-- ng2_utl_ntw_connection 
+-- -------------------------------------------------------------------- 
+CREATE INDEX ng2_utl_ntw_conn_cto_fkx ON ng2_utl_ntw_connection USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+
+-- -------------------------------------------------------------------- 
+-- ng2_weather_data 
+-- --------------------------------------------------------------------
+CREATE INDEX ng2_wht_data_ts_fkx  ON ng2_weather_data USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng2_wht_data_cto_fkx ON ng2_weather_data USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
