@@ -1,4 +1,4 @@
-<p align="center"><br/><br/><br/><img src="logos/energy_ade_logo.jpg" width="600"><br/><br/><br/></p>
+<p align="center"><br/><br/><br/><img src="logos/energy_ade_3_logo.jpg" width="600"><br/><br/><br/></p>
 
 # Introduction
 
