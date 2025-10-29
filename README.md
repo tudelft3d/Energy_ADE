@@ -110,12 +110,14 @@ The documentation and the UML diagrams are released under the Creative Commons L
 
 If you use the Energy ADE in scientific work, please cite one of our papers:
 
+> [!NOTE]
+> Till September 2025, the internal development version of the updated Energy ADE was called v. 2.0.<br/>
+> Since October 2025, we use to v. 3.0.
+ 
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W6-2025, pp. 1-8<br/>
 Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025)<br/>
-$${\color{red}*Please note that in this paper we are still using version 2.0 to indicate the updated Energy ADE*}$$<br/>
-
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
