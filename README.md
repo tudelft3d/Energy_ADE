@@ -10,6 +10,8 @@ The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the 
 
 This version of the Energy ADE 3.0 is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
 
+The Energy ADE 3.0 has been recently presented at the 133rd OGC Member Meeting in October 2025. You can download the slides [here](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_10_OGC_Energy_ADE_3.0.pdf):
+
 # The Energy ADE 3.0 in a nutshell
 
 The  Energy ADE 3.0 has a modular structure:
@@ -104,15 +106,14 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 The software resources available on this repository adopt the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).<br/>
 The documentation and the UML diagrams are released under the Creative Commons License [CC BY-NC-SA 4.0](https://github.com/user-attachments/assets/e124ad94-256d-4a5e-a42c-8b52b2ea9728)
 
-# Scientific publications and citation
+# Scientific dissemination and citation
 
 If you use the Energy ADE in scientific work, please cite one of our papers:
-
 
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W6-2025, pp. 1-8<br/>
-Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025) and [presentation slides (PDF)](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_09_New_Energy_ADE_proposal_ppt.pdf)<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025)<br/> 
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
