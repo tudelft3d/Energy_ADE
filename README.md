@@ -10,7 +10,7 @@ The technological innovations (e.g. the release of CityGML 3.0 in 2021) and the 
 
 This version of the Energy ADE 3.0 is currently based on and extends [CityGML 2.0](https://portal.ogc.org/files/?artifact_id=47842), but its development already keeps in consideration its future porting to [CityGML 3.0](https://docs.ogc.org/is/20-010/20-010.html)
 
-The Energy ADE 3.0 has been recently presented at the 133rd OGC Member Meeting in October 2025. You can download the slides [here](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_10_OGC_Energy_ADE_3.0.pdf):
+The Energy ADE 3.0 has been recently presented at the **133rd OGC Member Meeting** in October 2025. You can download the slides [here](https://3d.bk.tudelft.nl/gagugiaro/pdf/2025_10_OGC_Energy_ADE_3.0.pdf).
 
 # The Energy ADE 3.0 in a nutshell
 
