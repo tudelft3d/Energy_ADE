@@ -114,7 +114,8 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W6-2025, pp. 1-8<br/>
 Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025)<br/>
-<span style="color:red"> *some emphasized markdown text*</span> 
+$${\color{red}*Please note that in this paper we are still using version 2.0 to indicate the updated Energy ADE*}$$<br/>
+
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
