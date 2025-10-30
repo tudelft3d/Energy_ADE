@@ -112,7 +112,7 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 
 > [!NOTE]
 > Till September 2025, the internal development version of the updated Energy ADE was called v. 2.0.<br/>
-> Since October 2025, we use to v. 3.0.
+> Since October 2025, we use v. 3.0.
  
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
