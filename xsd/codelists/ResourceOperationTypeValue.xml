@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ResourceOperationTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ResourceOperationTypeValue</gml:identifier>
+  <gml:name>ResourceOperationTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_1706">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ResourceOperationTypeValue">produces</gml:identifier>
+      <gml:name>produces</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_1707">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ResourceOperationTypeValue">demands</gml:identifier>
+      <gml:name>demands</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_1708">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ResourceOperationTypeValue">hasBalanceOf</gml:identifier>
+      <gml:name>hasBalanceOf</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_1944">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ResourceOperationTypeValue">stores</gml:identifier>
+      <gml:name>stores</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_2185">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ResourceOperationTypeValue">has</gml:identifier>
+      <gml:name>has</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

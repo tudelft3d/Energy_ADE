@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="DeviceOperationTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:description>Category of end use related to a building energy use.</gml:description>
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">DeviceOperationTypeValue</gml:identifier>
+  <gml:name>DeviceOperationTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_1210">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">process</gml:identifier>
+      <gml:name>process</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_1768">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_2052">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">shading</gml:identifier>
+      <gml:name>shading</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_693">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">cooking</gml:identifier>
+      <gml:name>cooking</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_694">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">domesticHotWater</gml:identifier>
+      <gml:name>domesticHotWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_695">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">electricalAppliances</gml:identifier>
+      <gml:name>electricalAppliances</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_696">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">lighting</gml:identifier>
+      <gml:name>lighting</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_697">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">otherOrCombination</gml:identifier>
+      <gml:name>otherOrCombination</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_698">
+      <gml:description>Processes of cooling down the space.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">spaceCooling</gml:identifier>
+      <gml:name>spaceCooling</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_699">
+      <gml:description>Processes of heating up the space.</gml:description>
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">spaceHeating</gml:identifier>
+      <gml:name>spaceHeating</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_700">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/DeviceOperationTypeValue">ventilation</gml:identifier>
+      <gml:name>ventilation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

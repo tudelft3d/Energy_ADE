@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="WasteEndUseValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">WasteEndUseValue</gml:identifier>
+  <gml:name>WasteEndUseValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1035_1946">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteEndUseValue">landFilling</gml:identifier>
+      <gml:name>landFilling</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1035_1947">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteEndUseValue">incineration</gml:identifier>
+      <gml:name>incineration</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1035_1948">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteEndUseValue">recycling</gml:identifier>
+      <gml:name>recycling</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1035_1949">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteEndUseValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1035_1950">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/WasteEndUseValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="HeatSourceTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:description>Note: May be converted to CodeList in next version.</gml:description>
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">HeatSourceTypeValue</gml:identifier>
+  <gml:name>HeatSourceTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_1769">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_436">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">ambientAir</gml:identifier>
+      <gml:name>ambientAir</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_437">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">aquifer</gml:identifier>
+      <gml:name>aquifer</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_438">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">exhaustAir</gml:identifier>
+      <gml:name>exhaustAir</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_439">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">horizontalGroundCollector</gml:identifier>
+      <gml:name>horizontalGroundCollector</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_245_440">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/HeatSourceTypeValue">verticalGroundCollector</gml:identifier>
+      <gml:name>verticalGroundCollector</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

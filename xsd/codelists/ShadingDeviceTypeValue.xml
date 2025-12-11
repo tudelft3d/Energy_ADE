@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ShadingDeviceTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ShadingDeviceTypeValue</gml:identifier>
+  <gml:name>ShadingDeviceTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1080_2043">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ShadingDeviceTypeValue">curtain</gml:identifier>
+      <gml:name>curtain</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1080_2044">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ShadingDeviceTypeValue">shutter</gml:identifier>
+      <gml:name>shutter</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1080_2045">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ShadingDeviceTypeValue">blind</gml:identifier>
+      <gml:name>blind</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1080_2046">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ShadingDeviceTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1080_2047">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ShadingDeviceTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

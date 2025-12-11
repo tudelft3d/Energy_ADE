@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ScheduleTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ScheduleTypeValue</gml:identifier>
+  <gml:name>ScheduleTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2093">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">monday</gml:identifier>
+      <gml:name>monday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2094">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">tuesday</gml:identifier>
+      <gml:name>tuesday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2095">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">wednesday</gml:identifier>
+      <gml:name>wednesday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2096">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">thursday</gml:identifier>
+      <gml:name>thursday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2097">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">friday</gml:identifier>
+      <gml:name>friday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2098">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">saturday</gml:identifier>
+      <gml:name>saturday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2099">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">sunday</gml:identifier>
+      <gml:name>sunday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2100">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">weekDay</gml:identifier>
+      <gml:name>weekDay</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2101">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">weekendDay</gml:identifier>
+      <gml:name>weekendDay</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2102">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">typicalDay</gml:identifier>
+      <gml:name>typicalDay</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2103">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">holiday</gml:identifier>
+      <gml:name>holiday</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2104">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">january</gml:identifier>
+      <gml:name>january</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2105">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">february</gml:identifier>
+      <gml:name>february</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2106">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">march</gml:identifier>
+      <gml:name>march</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2107">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">april</gml:identifier>
+      <gml:name>april</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2108">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">may</gml:identifier>
+      <gml:name>may</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2109">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">june</gml:identifier>
+      <gml:name>june</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2110">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">july</gml:identifier>
+      <gml:name>july</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2111">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">august</gml:identifier>
+      <gml:name>august</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2112">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">september</gml:identifier>
+      <gml:name>september</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2113">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">october</gml:identifier>
+      <gml:name>october</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2114">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">november</gml:identifier>
+      <gml:name>november</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2115">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">december</gml:identifier>
+      <gml:name>december</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2116">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">typicalMonth</gml:identifier>
+      <gml:name>typicalMonth</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2117">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">week</gml:identifier>
+      <gml:name>week</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2118">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">typicalWeek</gml:identifier>
+      <gml:name>typicalWeek</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2119">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">month</gml:identifier>
+      <gml:name>month</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2120">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">winter</gml:identifier>
+      <gml:name>winter</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2121">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">spring</gml:identifier>
+      <gml:name>spring</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2122">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">summer</gml:identifier>
+      <gml:name>summer</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2123">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">autumn</gml:identifier>
+      <gml:name>autumn</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2124">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">typicalSeason</gml:identifier>
+      <gml:name>typicalSeason</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2125">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">year</gml:identifier>
+      <gml:name>year</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2126">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">typicalYear</gml:identifier>
+      <gml:name>typicalYear</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2127">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2128">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">beerDay</gml:identifier>
+      <gml:name>beerDay</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2129">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">day</gml:identifier>
+      <gml:name>day</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2130">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">season</gml:identifier>
+      <gml:name>season</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1105_2131">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ScheduleTypeValue">hour</gml:identifier>
+      <gml:name>hour</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

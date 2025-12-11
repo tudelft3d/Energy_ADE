@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="ReferencePeriodValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">ReferencePeriodValue</gml:identifier>
+  <gml:name>ReferencePeriodValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2267">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">hour</gml:identifier>
+      <gml:name>hour</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2268">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">day</gml:identifier>
+      <gml:name>day</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2269">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">week</gml:identifier>
+      <gml:name>week</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2270">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">month</gml:identifier>
+      <gml:name>month</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2271">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">hot season</gml:identifier>
+      <gml:name>hot season</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2272">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">year</gml:identifier>
+      <gml:name>year</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2305">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2318">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">minute</gml:identifier>
+      <gml:name>minute</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1287_2320">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/ReferencePeriodValue">cold season</gml:identifier>
+      <gml:name>cold season</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

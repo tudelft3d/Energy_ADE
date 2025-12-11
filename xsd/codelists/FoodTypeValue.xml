@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="FoodTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">FoodTypeValue</gml:identifier>
+  <gml:name>FoodTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1582">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">greeneries</gml:identifier>
+      <gml:name>greeneries</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1583">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">meat</gml:identifier>
+      <gml:name>meat</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1584">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">cereals</gml:identifier>
+      <gml:name>cereals</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1585">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">cheese</gml:identifier>
+      <gml:name>cheese</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1586">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">milk</gml:identifier>
+      <gml:name>milk</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1632">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">wine</gml:identifier>
+      <gml:name>wine</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_1633">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">beer</gml:identifier>
+      <gml:name>beer</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_904_2218">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/FoodTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

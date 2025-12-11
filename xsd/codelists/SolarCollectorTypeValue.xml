@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="SolarCollectorTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">SolarCollectorTypeValue</gml:identifier>
+  <gml:name>SolarCollectorTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_812_1304">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/SolarCollectorTypeValue">flatPlaneCollector</gml:identifier>
+      <gml:name>flatPlaneCollector</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_812_1305">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/SolarCollectorTypeValue">evacuatedTubeCollector</gml:identifier>
+      <gml:name>evacuatedTubeCollector</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_812_1765">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/SolarCollectorTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
