@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2025-12-11
+-- Last update: 2026-01-26
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -36,7 +36,7 @@ CREATE SEQUENCE ng3_suitability_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 922337203
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 -- -------------------------------------------------------------------- 
--- ng3_cityobject (also for ade feature and feature with lifespan
+-- ng3_cityobject (also for ade feature and feature with lifespan)
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_cityobject (
     id BIGINT             PRIMARY KEY,

@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2025-12-11
+Last update: 2026-01-26
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2025-12-11)</version>
+        <version>3.0 beta 8 (2026-01-26)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -185,8 +185,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Abstract ADE Feature -->
         <featureType abstract="true" id="ng3_AbstractADEFeatureType" table="cityobject" objectClassId="11051" path="AbstractADEFeature" schema="ng3">
             <extension base="AbstractCityObjectType"/>
-            <attribute column="creationdate" type="timestamp" maxOccurs="1" path="creationDate" schema="ng3"/>
-            <attribute column="terminationdate" type="timestamp" maxOccurs="1" path="terminationDate" schema="ng3"/>
+            <attribute column="creation_date" type="timestamp" maxOccurs="1" path="creationDate" schema="ng3"/>
+            <attribute column="termination_date" type="timestamp" maxOccurs="1" path="terminationDate" schema="ng3"/>
             <complexAttribute type="ExternalReferenceType" path="externalReference" schema="ng3"/>
         </featureType>
 
@@ -1584,8 +1584,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="identifier" type="string" path="." schema="ng3"/>
                 <attribute column="identifier_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute maxOccurs="1" column="validfrom" type="timestamp" path="validFrom" schema="ng3"/>
-            <attribute maxOccurs="1" column="validto" type="timestamp" path="validTo" schema="ng3"/>
+            <attribute maxOccurs="1" column="valid_from" type="timestamp" path="validFrom" schema="ng3"/>
+            <attribute maxOccurs="1" column="valid_to" type="timestamp" path="validTo" schema="ng3"/>
             <complexProperty refType="ng3_CityObjectRelationType" path="relatedTo" schema="ng3">
                 <join table="ng3_ctyobj_relation" fromColumn="id" toColumn="ng3_cityobject_id" toRole="child"/>
             </complexProperty>
