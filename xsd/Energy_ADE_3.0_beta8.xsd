@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2025-12-11
+Last update: 2026-01-28
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -101,7 +101,7 @@ targetNamespace="http://www.citygml.org/ade/energy/3.0"
 version="3.0"
 >
   <annotation>
-    <documentation>Energy ADE 3.0 beta 8 (2025-12-11) for CityGML 2.0</documentation>
+    <documentation>Energy ADE 3.0 beta 8 (2026-01-28) for CityGML 2.0</documentation>
   </annotation>
 
   <!-- All CityGML modules added manually, in case they are not written automatically by ShapeChange -->
@@ -678,8 +678,8 @@ version="3.0"
 
 
   <!-- TYPICAL VALUES TIME SERIES -->
-  <element name="TypicalValuesTimeSeries" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesTimeSeriesType"></element>
-  <complexType name="TypicalValuesTimeSeriesType">
+  <element name="TypicalValuesRegularTimeSeries" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesRegularTimeSeriesType"></element>
+  <complexType name="TypicalValuesRegularTimeSeriesType">
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
@@ -693,17 +693,17 @@ version="3.0"
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="TypicalValuesTimeSeriesPropertyType">
+  <complexType name="TypicalValuesRegularTimeSeriesPropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:TypicalValuesTimeSeries"/>
+      <element ref="nrg3:TypicalValuesRegularTimeSeries"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
   <!-- TYPICAL VALUES TIME SERIES FILE -->
-  <element name="TypicalValuesTimeSeriesFile" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesTimeSeriesFileType"></element>
-  <complexType name="TypicalValuesTimeSeriesFileType">
+  <element name="TypicalValuesRegularTimeSeriesFile" substitutionGroup="nrg3:AbstractTimeSeries" type="nrg3:TypicalValuesRegularTimeSeriesFileType"></element>
+  <complexType name="TypicalValuesRegularTimeSeriesFileType">
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
@@ -723,9 +723,9 @@ version="3.0"
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="TypicalValuesTimeSeriesFilePropertyType">
+  <complexType name="TypicalValuesRegularTimeSeriesFilePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:TypicalValuesTimeSeriesFile"/>
+      <element ref="nrg3:TypicalValuesRegularTimeSeriesFile"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1243,10 +1243,11 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractFeatureWithLifeSpanType">
         <sequence>
+          <element name="type" type="gml:CodeType"></element>
+          <element name="status" type="gml:CodeType"></element>		  
+          <element name="label" type="string"></element>
           <element minOccurs="0" name="value" type="gml:MeasureType"/>
           <element minOccurs="0" name="certificationMethod" type="string"/>
-          <element name="label" type="string"></element>
-          <element name="type" type="gml:CodeType"></element>
         </sequence>
       </extension>
     </complexContent>
