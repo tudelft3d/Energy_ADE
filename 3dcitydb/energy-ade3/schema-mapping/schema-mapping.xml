@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-01-26
+Last update: 2026-01-28
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-01-26)</version>
+        <version>3.0 beta 8 (2026-01-28)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -506,7 +506,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Typical Values Time Series -->
-        <featureType id="ng3_TypicalValuesTimeSeriesType" table="ng3_time_series" objectClassId="11083" path="TypicalValuesTimeSeries" schema="ng3">
+        <featureType id="ng3_TypicalValuesRegularTimeSeriesType" table="ng3_time_series" objectClassId="11083" path="TypicalValuesRegularTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
             <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
@@ -531,7 +531,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Typical Values Time Series File -->
-        <featureType id="ng3_TypicalValuesTimeSeriesFileType" table="ng3_time_series" objectClassId="11084" path="TypicalValuesTimeSeriesFile" schema="ng3">
+        <featureType id="ng3_TypicalValuesRegularTimeSeriesFileType" table="ng3_time_series" objectClassId="11084" path="TypicalValuesRegularTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
             <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
@@ -1075,6 +1075,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
             <complexAttribute minOccurs="1" maxOccurs="1" path="type" schema="ng3">
                 <attribute column="type" type="string" path="." schema="ng3"/>
                 <attribute column="type_codespace" type="string" path="@codespace" schema="gml"/>
+            </complexAttribute>
+            <complexAttribute minOccurs="1" maxOccurs="1" path="status" schema="ng3">
+                <attribute column="status" type="string" path="." schema="ng3"/>
+                <attribute column="status_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
             <complexAttribute maxOccurs="1" path="value" schema="ng3">
                 <attribute column="value" type="double" path="." schema="ng3"/>
