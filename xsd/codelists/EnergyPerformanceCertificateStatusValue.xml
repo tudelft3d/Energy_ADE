@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EnergyPerformanceCertificateStatusValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">EnergyPerformanceCertificateStatusValue</gml:identifier>
+  <gml:name>EnergyPerformanceCertificateStatusValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1350_2906">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyPerformanceCertificateStatusValue">planned</gml:identifier>
+      <gml:name>measured</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1350_2907">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyPerformanceCertificateStatusValue">suggested</gml:identifier>
+      <gml:name>estimated</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1350_2908">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyPerformanceCertificateStatusValue">completed</gml:identifier>
+      <gml:name>simulated</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1350_2905">
+      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/EnergyPerformanceCertificateStatusValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
