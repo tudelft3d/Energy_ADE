@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-01-28
+Last update: 2026-01-30
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -187,7 +187,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
             <extension base="AbstractCityObjectType"/>
             <attribute column="creation_date" type="timestamp" maxOccurs="1" path="creationDate" schema="ng3"/>
             <attribute column="termination_date" type="timestamp" maxOccurs="1" path="terminationDate" schema="ng3"/>
-            <complexAttribute type="ExternalReferenceType" path="externalReference" schema="ng3"/>
+<!--             <complexAttribute type="ExternalReferenceType" path="externalReference" schema="ng3"/> -->
         </featureType>
 
 
