@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-01-30
+Last update: 2026-02-02
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-01-28)</version>
+        <version>3.0 beta 8 (2026-02-02)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -187,7 +187,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
             <extension base="AbstractCityObjectType"/>
             <attribute column="creation_date" type="timestamp" maxOccurs="1" path="creationDate" schema="ng3"/>
             <attribute column="termination_date" type="timestamp" maxOccurs="1" path="terminationDate" schema="ng3"/>
-<!--             <complexAttribute type="ExternalReferenceType" path="externalReference" schema="ng3"/> -->
+            <!-- <complexAttribute type="ExternalReferenceType" path="externalReference" schema="ng3"/> -->
         </featureType>
 
 
@@ -506,7 +506,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Typical Values Time Series -->
-        <featureType id="ng3_TypicalValuesRegularTimeSeriesType" table="ng3_time_series" objectClassId="11083" path="TypicalValuesRegularTimeSeries" schema="ng3">
+        <featureType id="ng3_TypicalValuesTimeSeriesType" table="ng3_time_series" objectClassId="11083" path="TypicalValuesTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
             <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
@@ -531,7 +531,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Typical Values Time Series File -->
-        <featureType id="ng3_TypicalValuesRegularTimeSeriesFileType" table="ng3_time_series" objectClassId="11084" path="TypicalValuesRegularTimeSeriesFile" schema="ng3">
+        <featureType id="ng3_TypicalValuesTimeSeriesFileType" table="ng3_time_series" objectClassId="11084" path="TypicalValuesTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
             <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
@@ -1080,11 +1080,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="status" type="string" path="." schema="ng3"/>
                 <attribute column="status_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
+            <attribute minOccurs="1" maxOccurs="1" column="label" type="string" path="label" schema="ng3"/>
             <complexAttribute maxOccurs="1" path="value" schema="ng3">
                 <attribute column="value" type="double" path="." schema="ng3"/>
                 <attribute column="value_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
-            <attribute minOccurs="1" maxOccurs="1" column="label" type="string" path="label" schema="ng3"/>
             <attribute maxOccurs="1" column="cert_method" type="string" path="certificationMethod" schema="ng3"/>
         </featureType>
 
@@ -1305,6 +1305,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="int_heat_gains_rad" type="double" path="." schema="ng3"/>
                 <attribute column="int_heat_gains_rad_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
+            <attribute maxOccurs="1" column="num_building_units" type="integer" path="numberOfBuildingUnits" schema="ng3"/>
             <attribute minOccurs="1" maxOccurs="1" column="coincides_with_lod2_hull" type="boolean" path="coincidesWithLod2Hull" schema="ng3"/>
             <attribute minOccurs="1" maxOccurs="1" column="coincides_with_lod3_hull" type="boolean" path="coincidesWithLod3Hull" schema="ng3"/>
             <featureProperty target="ng3_AbstractScheduleType" maxOccurs="1" path="heatingSchedule" schema="ng3" relationType="aggregation">
@@ -1638,13 +1639,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="ownership_type" type="string" path="." schema="ng3"/>
                 <attribute column="ownership_type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
+            <attribute maxOccurs="1" column="num_of_building_units" type="integer" path="bdgNumberOfBuildingUnits" schema="ng3"/>
+            <attribute maxOccurs="1" column="is_protected" type="boolean" path="bdgIsProtected" schema="ng3"/>
+            <attribute maxOccurs="1" column="attic_thm_status" type="string" path="bdgAtticThermalStatus" schema="ng3"/>
+            <attribute maxOccurs="1" column="basement_thm_status" type="string" path="bdgBasementThermalStatus" schema="ng3"/>
             <complexAttribute maxOccurs="1" path="bdgConstructionWeight" schema="ng3">
                 <attribute column="constr_weight" type="string" path="." schema="ng3"/>
                 <attribute column="constr_weight_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute maxOccurs="1" column="is_protected" type="boolean" path="bdgIsProtected" schema="ng3"/>
-            <attribute maxOccurs="1" column="attic_thm_status" type="string" path="bdgAtticThermalStatus" schema="ng3"/>
-            <attribute maxOccurs="1" column="basement_thm_status" type="string" path="bdgBasementThermalStatus" schema="ng3"/>
             <complexProperty refType="ng3_QualifiedHeightType" path="bdgHeight" schema="ng3">
                 <join table="ng3_qualified_attribute" fromColumn="id" toColumn="building_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
