@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-01-28
+-- Last update: 2026-02-02
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -65,6 +65,7 @@ CREATE TABLE ng3_building (
     owner_name               VARCHAR,
     ownership_type           VARCHAR,
     ownership_type_codespace VARCHAR,
+	num_of_building_units    INTEGER,
     is_protected             NUMERIC,
     constr_weight            VARCHAR,
     constr_weight_codespace  VARCHAR,
@@ -581,16 +582,16 @@ CREATE INDEX ng3_epc_bdg_fkx   ON ng3_energy_perf_cert USING btree (building_id 
 -- ng3_refurbishment_measure 
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_refurbishment_measure (
-    id                     BIGINT PRIMARY KEY,
-    type                   VARCHAR,
-    type_codespace         VARCHAR,
-	status                 VARCHAR,
-    status_codespace       VARCHAR,
-    start_date             DATE,
-    end_date               DATE,	
+    id               BIGINT PRIMARY KEY,
+    type             VARCHAR,
+    type_codespace   VARCHAR,
+	status           VARCHAR,
+    status_codespace VARCHAR,
+    start_date       DATE,
+    end_date         DATE,	
 -- FK
-	space_id               BIGINT,
-    building_id            BIGINT
+	space_id         BIGINT,
+    building_id      BIGINT
 );
 CREATE INDEX ng3_ref_meas_bdgsp_fkx ON ng3_refurbishment_measure USING btree (space_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 CREATE INDEX ng3_ref_meas_bdg_fkx   ON ng3_refurbishment_measure USING btree (building_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
@@ -657,6 +658,7 @@ CREATE TABLE ng3_space (
     int_heat_gains_lat_uom   VARCHAR,
     int_heat_gains_rad       NUMERIC,
     int_heat_gains_rad_uom   VARCHAR,
+	num_of_building_units    INTEGER,
     coincides_with_lod2_hull NUMERIC,
     coincides_with_lod3_hull NUMERIC,
 -- FK
