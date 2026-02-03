@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-02
+Last update: 2026-02-03
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-02-02)</version>
+        <version>3.0 beta 8 (2026-02-03)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -160,20 +160,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </complexType>
 
 
-		<!-- Atomic Schedule Value (union) -->
-        <complexType id="ng3_AtomicScheduleValueType" table="ng3_schedule" objectClassId="11040" path="AtomicScheduleValue" schema="ng3">
-            <complexAttribute minOccurs="1" maxOccurs="1" path="constantValue" schema="ng3">
-                <attribute column="constant_value" type="double" path="." schema="ng3"/>
-                <attribute column="constant_value_uom" type="string" path="@uom" schema="gml"/>
-            </complexAttribute>
-            <featureProperty target="ng3_AbstractTimeSeriesType" minOccurs="1" maxOccurs="1" path="timeDependentValues" schema="ng3" relationType="composition">
-                <join table="ng3_time_series" fromColumn="time_series_id" toColumn="id" toRole="parent">
-                    <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
-                </join>
-            </featureProperty>
-        </complexType>
+		<!-- External Reference -->
+		<!-- TO DO -->	
+
+		<!-- External Reference Object -->
+		<!-- TO DO -->
 
     </complexTypes>
+
 
 <!-- Features and new CityObjects -->
     <featureTypes>
@@ -664,15 +658,46 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- Schedule Module               -->
 <!-- ***************************** -->
 
-		<!-- Atomic Schedule -->
-        <featureType id="ng3_AtomicScheduleType" table="ng3_schedule" objectClassId="11091" path="AtomicSchedule" schema="ng3">
+		<!-- Schedule Library -->
+        <featureType topLevel="true" id="ng3_ScheduleLibraryType" table="ng3_library" objectClassId="11091" path="ScheduleLibrary" schema="ng3">
+            <extension base="ng3_AbstractLibraryType"/>
+            <featureProperty minOccurs="1" target="ng3_AbstractScheduleType" path="libraryMember" schema="ng3" relationType="composition">
+                <join table="ng3_schedule" fromColumn="id" toColumn="library_id" toRole="child">
+                    <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
+                </join>
+            </featureProperty>
+        </featureType>
+
+
+		<!-- Abstract Atomic Schedule -->
+        <featureType abstract="true" id="ng3_AbstractAtomicScheduleType" table="ng3_schedule" objectClassId="11092" path="AbstractAtomicSchedule" schema="ng3">
             <extension base="ng3_AbstractScheduleType"/>
-            <complexProperty minOccurs="1" maxOccurs="1" refType="ng3_AtomicScheduleValueType" path="value" schema="ng3"/>
+        </featureType>
+
+
+		<!-- Constant Value Schedule -->
+        <featureType id="ng3_ConstantValueScheduleType" table="ng3_schedule" objectClassId="11093" path="ConstantValueSchedule" schema="ng3">
+            <extension base="ng3_AbstractAtomicScheduleType"/>
+            <complexAttribute minOccurs="1" maxOccurs="1" path="value" schema="ng3">
+                <attribute column="value" type="double" path="." schema="ng3"/>
+                <attribute column="value_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute>
+        </featureType>
+
+
+		<!-- TimeSeries Schedule -->
+        <featureType id="ng3_TimeSeriesScheduleType" table="ng3_schedule" objectClassId="11094" path="TimeSeriesSchedule" schema="ng3">
+            <extension base="ng3_AbstractAtomicScheduleType"/>
+            <featureProperty minOccurs="1" maxOccurs="1" target="ng3_AbstractTimeSeriesType" path="timeDependentValues" schema="ng3" relationType="composition">
+                <join table="ng3_time_series" fromColumn="time_series_id" toColumn="id" toRole="parent">
+                    <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
+                </join>
+            </featureProperty>
         </featureType>
 
 
 		<!-- Dual Value Schedule -->
-        <featureType id="ng3_DualValueScheduleType" table="ng3_schedule" objectClassId="11092" path="DualValueSchedule" schema="ng3">
+        <featureType id="ng3_DualValueScheduleType" table="ng3_schedule" objectClassId="11095" path="DualValueSchedule" schema="ng3">
             <extension base="ng3_AbstractScheduleType"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="idleValue" schema="ng3">
                 <attribute column="idle_value" type="double" path="." schema="ng3"/>
@@ -688,7 +713,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Schedule Component -->
-        <featureType id="ng3_ScheduleComponentType" table="ng3_schedule_component" objectClassId="11094" path="ScheduleComponent" schema="ng3">
+        <featureType id="ng3_ScheduleComponentType" table="ng3_schedule_component" objectClassId="11096" path="ScheduleComponent" schema="ng3">
             <extension base="ng3_AbstractADEFeatureType">
                 <join table="cityobject" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
@@ -712,7 +737,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Composite Schedule -->
-        <featureType id="ng3_CompositeScheduleType" table="ng3_schedule" objectClassId="11093" path="CompositeSchedule" schema="ng3">
+        <featureType id="ng3_CompositeScheduleType" table="ng3_schedule" objectClassId="11097" path="CompositeSchedule" schema="ng3">
             <extension base="ng3_AbstractScheduleType"/>
             <featureProperty minOccurs="1" target="ng3_ScheduleComponentType" path="scheduleComponent" schema="ng3" relationType="composition">
                 <join table="ng3_schedule_component" fromColumn="id" toColumn="parent_schedule_id" toRole="child">
@@ -721,16 +746,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
             </featureProperty>
         </featureType>
 
-
-		<!-- Schedule Library -->
-        <featureType topLevel="true" id="ng3_ScheduleLibraryType" table="ng3_library" objectClassId="11095" path="ScheduleLibrary" schema="ng3">
-            <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty target="ng3_AbstractScheduleType" path="libraryMember" schema="ng3" relationType="composition">
-                <join table="ng3_schedule" fromColumn="id" toColumn="library_id" toRole="child">
-                    <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
-                </join>
-            </featureProperty>
-        </featureType>
 
 <!-- ***************************** -->
 <!-- Resources Module              -->
@@ -1043,7 +1058,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Material Library -->
         <featureType topLevel="true" id="ng3_MaterialLibraryType" table="ng3_library" objectClassId="11118" path="MaterialLibrary" schema="ng3">
             <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty target="ng3_AbstractMaterialType" path="libraryMember" schema="ng3" relationType="composition">
+            <featureProperty minOccurs="1" target="ng3_AbstractMaterialType" path="libraryMember" schema="ng3" relationType="composition">
                 <join table="ng3_material" fromColumn="id" toColumn="library_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
@@ -1054,7 +1069,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Layered Construction Library -->
         <featureType topLevel="true" id="ng3_LayeredConstructionLibraryType" table="ng3_library" objectClassId="11119" path="LayeredConstructionLibrary" schema="ng3">
             <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty target="ng3_AbstractLayeredConstructionType" path="libraryMember" schema="ng3" relationType="composition">
+            <featureProperty minOccurs="1" target="ng3_AbstractLayeredConstructionType" path="libraryMember" schema="ng3" relationType="composition">
                 <join table="ng3_layered_construction" fromColumn="id" toColumn="library_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
@@ -1241,8 +1256,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 
-		<!-- Zone Exterior Wall Surface -->
-        <featureType id="ng3_ZoneExteriorWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11145" path="ZoneExteriorWallSurface" schema="ng3">
+		<!-- Zone Wall Surface -->
+        <featureType id="ng3_ZoneWallWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11145" path="ZoneWallWallSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>		
 
