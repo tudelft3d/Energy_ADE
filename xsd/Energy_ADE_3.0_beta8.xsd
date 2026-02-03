@@ -378,11 +378,6 @@ version="3.0"
   </complexType>
 
 
-  <!-- ****************************************** -->
-  <!-- Energy ADE Core Module: Abstract ADE Feature  -->
-  <!-- ****************************************** -->
-
-
   <!-- EXTERNAL REFERENCE -->
   <!-- <element name="ExternalReference" substitutionGroup="gml:_Object" type="nrg3:ExternalReferenceType"/> -->
 <!--   <complexType name="ExternalReferenceType">
@@ -396,6 +391,7 @@ version="3.0"
       <element ref="nrg3:ExternalReference"/>
     </sequence>
   </complexType> -->
+
 
   <!-- EXTERNAL REFERENCE OBJECT -->
   <!-- <element name="ExternalObjectReference" substitutionGroup="gml:_Object" type="nrg3:ExternalObjectReferenceType"/> -->
@@ -412,6 +408,11 @@ version="3.0"
   </complexType> -->
 
 
+  <!-- ****************************************** -->
+  <!-- Energy ADE Core Module: Abstract ADE Feature  -->
+  <!-- ****************************************** -->
+
+
   <!-- ABSTRACT ADE FEATURE -->
   <element abstract="true" name="AbstractADEFeature" substitutionGroup="gml:_Feature" type="nrg3:AbstractADEFeatureType"/>
   <complexType abstract="true" name="AbstractADEFeatureType">
@@ -422,13 +423,13 @@ version="3.0"
           <element minOccurs="0" name="terminationDate" type="dateTime"/>
 
 		  <!-- This one is written by FME, but causes a validation error -->
-          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="core:ExternalReferenceType"></element> -->
+          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="core:ExternalReferenceType"/> -->
 
 		  <!-- This one works, but it is not what we want -->
-          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="nrg3:ExternalReferencePropertyType"></element> -->
+          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="nrg3:ExternalReferencePropertyType"/> -->
 
 		  <!-- This one works, does not require the Element and ...PropertyType, but causes an error in the ADE Manager -->
-          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="nrg3:ExternalReferenceType"></element> -->
+          <!-- <element minOccurs="0" maxOccurs="unbounded" name="externalReference" type="nrg3:ExternalReferenceType"/> -->
 
         </sequence>
       </extension>
@@ -894,41 +895,62 @@ version="3.0"
   <!-- ****************************************** -->
 
 
-  <!-- ATOMIC SCHEDULE VALUE (Union) -->
-  <element name="AtomicScheduleValue" substitutionGroup="gml:_Object" type="nrg3:AtomicScheduleValueType"/>
-  <complexType name="AtomicScheduleValueType">
-    <choice>
-      <element name="constantValue" type="gml:MeasureType"/>
-      <element name="timeDependentValues" type="nrg3:AbstractTimeSeriesPropertyType">
-        <annotation>
-          <appinfo>
-            <taggedValue tag="relationType">composition</taggedValue>
-          </appinfo>
-        </annotation>
-      </element>
-    </choice>
-  </complexType>
-  <complexType name="AtomicScheduleValuePropertyType">
-    <sequence>
-      <element ref="nrg3:AtomicScheduleValue"/>
-    </sequence>
-  </complexType>
-
-
-  <!-- ATOMIC SCHEDULE -->
-  <element name="AtomicSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:AtomicScheduleType"/>
-  <complexType name="AtomicScheduleType">
+  <!-- ABSTRACT ATOMIC SCHEDULE -->
+  <element abstract="true" name="AbstractAtomicSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:AbstractAtomicScheduleType"/>
+  <complexType abstract="true" name="AbstractAtomicScheduleType">
     <complexContent>
       <extension base="nrg3:AbstractScheduleType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="AbstractAtomicSchedulePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nrg3:AbstractAtomicSchedule"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+
+
+  <!-- CONSTANCT VALUE SCHEDULE -->
+  <element name="ConstantValueSchedule" substitutionGroup="nrg3:AbstractAtomicSchedule" type="nrg3:ConstantValueScheduleType"/>
+  <complexType name="ConstantValueScheduleType">
+    <complexContent>
+      <extension base="nrg3:AbstractAtomicScheduleType">
         <sequence>
-          <element name="value" type="nrg3:AtomicScheduleValuePropertyType"/>
+          <element name="value" type="gml:MeasureType"/>
         </sequence>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="AtomicSchedulePropertyType">
+  <complexType name="ConstantValueSchedulePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:AtomicSchedule"/>
+      <element ref="nrg3:ConstantValueSchedule"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+
+
+  <!-- TIME SERIES SCHEDULE -->
+  <element name="TimeSeriesSchedule" substitutionGroup="nrg3:AbstractAtomicSchedule" type="nrg3:TimeSeriesScheduleType"/>
+  <complexType name="TimeSeriesScheduleType">
+    <complexContent>
+      <extension base="nrg3:AbstractAtomicScheduleType">
+        <sequence>
+          <element name="timeDependentValues" type="nrg3:AbstractTimeSeriesPropertyType">
+            <annotation>
+              <appinfo>
+                <taggedValue tag="relationType">composition</taggedValue>
+              </appinfo>
+            </annotation>
+          </element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="TimeSeriesSchedulePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nrg3:TimeSeriesSchedule"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -1021,7 +1043,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="libraryMember" type="nrg3:AbstractSchedulePropertyType">
+          <element minOccurs="1" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -1618,17 +1640,17 @@ version="3.0"
 
 
   <!-- ZONE EXTERIOR WALL SURFACE -->
-  <element name="ZoneExteriorWallSurface" substitutionGroup="nrg3:AbstractZoneBoundarySurface" type="nrg3:ZoneExteriorWallSurfaceType"/>
-  <complexType name="ZoneExteriorWallSurfaceType">
+  <element name="ZoneWallSurface" substitutionGroup="nrg3:AbstractZoneBoundarySurface" type="nrg3:ZoneWallSurfaceType"/>
+  <complexType name="ZoneWallSurfaceType">
     <complexContent>
       <extension base="nrg3:AbstractZoneBoundarySurfaceType">
         <sequence/>
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="ZoneExteriorWallSurfacePropertyType">
+  <complexType name="ZoneWallSurfacePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:ZoneExteriorWallSurface"/>
+      <element ref="nrg3:ZoneWallSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
