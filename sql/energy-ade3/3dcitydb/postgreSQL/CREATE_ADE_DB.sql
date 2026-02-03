@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-02-02
+-- Last update: 2026-02-03
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -266,6 +266,9 @@ CREATE TABLE ng3_schedule (
     time_interval_unit     VARCHAR,
 --    time_interval_factor   INTEGER, -- used for temporalExtent
 --    time_interval_radix    INTEGER, -- used for temporalExtent
+-- Constant Value Schedule
+    value                  NUMERIC,
+    value_uom              VARCHAR,	
 -- DualValue Schedule
     idle_value             NUMERIC,
     idle_value_uom         VARCHAR,
@@ -273,11 +276,10 @@ CREATE TABLE ng3_schedule (
     usage_value_uom        VARCHAR,
     start_usage_time       TIME WITHOUT TIME ZONE,
     end_usage_time         TIME WITHOUT TIME ZONE,
--- Atomic Schedule
-    constant_value         NUMERIC,
-    constant_value_uom     VARCHAR,	
 -- FK
+-- TimeSeries Schedule
     time_series_id         BIGINT,
+--
     library_id             BIGINT
 );
 CREATE INDEX ng3_sched_oc_fkx  ON ng3_schedule USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
