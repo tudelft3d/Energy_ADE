@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-01-28
+Last update: 2026-02-07
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -1685,6 +1685,40 @@ version="3.0"
   <complexType name="ZoneIntermediateFloorSurfacePropertyType">
     <sequence minOccurs="0">
       <element ref="nrg3:ZoneIntermediateFloorSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+
+
+  <!-- ZONE OUTER CEILING SURFACE -->
+  <element name="ZoneOuterCeilingSurface" substitutionGroup="nrg3:AbstractZoneBoundarySurface" type="nrg3:ZoneOuterCeilingSurfaceType"/>
+  <complexType name="ZoneOuterCeilingSurfaceType">
+    <complexContent>
+      <extension base="nrg3:AbstractZoneBoundarySurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ZoneOuterCeilingSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nrg3:ZoneOuterCeilingSurface"/>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType>
+
+
+  <!-- ZONE OUTER FLOOR SURFACE -->
+  <element name="ZoneOuterFloorSurface" substitutionGroup="nrg3:AbstractZoneBoundarySurface" type="nrg3:ZoneOuterFloorSurfaceType"/>
+  <complexType name="ZoneOuterFloorSurfaceType">
+    <complexContent>
+      <extension base="nrg3:AbstractZoneBoundarySurfaceType">
+        <sequence/>
+      </extension>
+    </complexContent>
+  </complexType>
+  <complexType name="ZoneOuterFloorSurfacePropertyType">
+    <sequence minOccurs="0">
+      <element ref="nrg3:ZoneOuterFloorSurface"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
