@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-03
+Last update: 2026-02-07
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-02-03)</version>
+        <version>3.0 beta 8 (2026-02-07)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -1274,20 +1274,32 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 
+		<!-- Zone Outer Ceiling Surface -->
+        <featureType id="ng3_ZoneOuterCeilingSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11148" path="ZoneOuterCeilingSurface" schema="ng3">
+            <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
+        </featureType>
+
+
+		<!-- Zone Outer Floor Surface -->
+        <featureType id="ng3_ZoneOuterFloorSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11149" path="ZoneOuterFloorSurface" schema="ng3">
+            <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
+        </featureType>
+
+
 		<!-- Zone Roof Surface -->
-        <featureType id="ng3_ZoneRoofSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11148" path="ZoneRoofSurface" schema="ng3">
+        <featureType id="ng3_ZoneRoofSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11150" path="ZoneRoofSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>
 
 
 		<!-- Zone Underground Wall Surface -->
-        <featureType id="ng3_ZoneUndergroundWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11149" path="ZoneUndergroundWallSurface" schema="ng3">
+        <featureType id="ng3_ZoneUndergroundWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11151" path="ZoneUndergroundWallSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>
 
 
 		<!-- Abstract Zone -->
-        <featureType abstract="true" id="ng3_AbstractZoneType" table="ng3_space" objectClassId="11151" path="AbstractZone" schema="ng3">
+        <featureType abstract="true" id="ng3_AbstractZoneType" table="ng3_space" objectClassId="11152" path="AbstractZone" schema="ng3">
             <extension base="ng3_AbstractBuildingSpaceType"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="type" schema="ng3">
                 <attribute column="type" type="string" path="." schema="ng3"/>
@@ -1350,7 +1362,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Zone -->
-        <featureType id="ng3_ZoneType" table="ng3_space" objectClassId="11152" path="Zone" schema="ng3">
+        <featureType id="ng3_ZoneType" table="ng3_space" objectClassId="11153" path="Zone" schema="ng3">
             <extension base="ng3_AbstractZoneType"/>
             <featureProperty target="ng3_ZonePartType" path="zonePart" schema="ng3">
                 <join table="ng3_space" fromColumn="id" toColumn="space_id" toRole="child">
@@ -1361,7 +1373,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Zone Part -->
-        <featureType id="ng3_ZonePartType" table="ng3_space" objectClassId="11153" path="ZonePart" schema="ng3">
+        <featureType id="ng3_ZonePartType" table="ng3_space" objectClassId="11154" path="ZonePart" schema="ng3">
             <extension base="ng3_AbstractZoneType"/>
         </featureType>
 
