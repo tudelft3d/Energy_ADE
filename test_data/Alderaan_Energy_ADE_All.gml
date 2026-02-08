@@ -12,7 +12,7 @@ with Energy ADE 3.0 (Beta 8)
 
 Last update: 2026-02-08
 
-This dataset contain several object covering (nearly) 
+This dataset contain several object covering (nearly)
 all classes of the Energy ADE.
 
 ** CityGML 2.0 **
@@ -24,7 +24,7 @@ This file contains objects from classes:
 - CityFurniture
 - ReliefFeature, TINRelief
 
-There is finally a global appearance.
+There is a global appearance.
 
 ** Energy ADE 3.0 **
 
