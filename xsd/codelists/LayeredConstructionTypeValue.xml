@@ -1,4 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LayeredConstructionTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
-  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">LayeredConstructionTypeValue</gml:identifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LayeredConstructionTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">LayeredConstructionTypeValue</gml:identifier>
   <gml:name>LayeredConstructionTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2449">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">singleGlazedWindow</gml:identifier>
+      <gml:name>singleGlazedWindow</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2450">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">doubleGlazedWindow</gml:identifier>
+      <gml:name>doubleGlazedWindow</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2451">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">tripleGlazedWindow</gml:identifier>
+      <gml:name>tripleGlazedWindow</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2452">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">stoneWall</gml:identifier>
+      <gml:name>stoneWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2453">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">precastConcreteWall</gml:identifier>
+      <gml:name>precastConcreteWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2454">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">masonryWall</gml:identifier>
+      <gml:name>masonryWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2455">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2456">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">woodenWall</gml:identifier>
+      <gml:name>woodenWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2457">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">insulatedStoneWall</gml:identifier>
+      <gml:name>insulatedStoneWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2458">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">insulatedMasonryWall</gml:identifier>
+      <gml:name>insulatedMasonryWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2459">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">insulatedWoodenWall</gml:identifier>
+      <gml:name>insulatedWoodenWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2460">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">insulatedPrecastConcreteWall</gml:identifier>
+      <gml:name>insulatedPrecastConcreteWall</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2461">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">tiledRoof</gml:identifier>
+      <gml:name>tiledRoof</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1353_2462">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LayeredConstructionTypeValue">insulatedTiledRoof</gml:identifier>
+      <gml:name>insulatedTiledRoof</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

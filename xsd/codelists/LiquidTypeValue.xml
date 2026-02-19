@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LiquidTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
-  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">LiquidTypeValue</gml:identifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="LiquidTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">LiquidTypeValue</gml:identifier>
   <gml:name>LiquidTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2434">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">water</gml:identifier>
+      <gml:name>water</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2436">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">alcohol</gml:identifier>
+      <gml:name>alcohol</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2437">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2438">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">wine</gml:identifier>
+      <gml:name>wine</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2439">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">oil</gml:identifier>
+      <gml:name>oil</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1338_2440">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/LiquidTypeValue">gasoline</gml:identifier>
+      <gml:name>gasoline</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

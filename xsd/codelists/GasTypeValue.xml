@@ -1,39 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GasTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
-  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">GasTypeValue</gml:identifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="GasTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">GasTypeValue</gml:identifier>
   <gml:name>GasTypeValue</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2342">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">air</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">air</gml:identifier>
       <gml:name>air</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2343">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">argon</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">argon</gml:identifier>
       <gml:name>argon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2344">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">krypton</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">krypton</gml:identifier>
       <gml:name>krypton</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2345">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">xenon</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">xenon</gml:identifier>
       <gml:name>xenon</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2346">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">other</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">other</gml:identifier>
       <gml:name>other</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_1336_2347">
-      <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0/GasTypeValue">unknown</gml:identifier>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/GasTypeValue">unknown</gml:identifier>
       <gml:name>unknown</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>

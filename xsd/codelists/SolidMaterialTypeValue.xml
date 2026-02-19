@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='./CodelistDictionary-v32.xsl'?><gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="SolidMaterialTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
-  <gml:identifier codeSpace="http://www.sig3d.org/citygml/2.0/energy/3.0">SolidMaterialTypeValue</gml:identifier>
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="SolidMaterialTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">SolidMaterialTypeValue</gml:identifier>
   <gml:name>SolidMaterialTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2441">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">steel</gml:identifier>
+      <gml:name>steel</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2442">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">wood</gml:identifier>
+      <gml:name>wood</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2443">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">concrete</gml:identifier>
+      <gml:name>concrete</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2444">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">chalk</gml:identifier>
+      <gml:name>chalk</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2445">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">glass</gml:identifier>
+      <gml:name>glass</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2446">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2447">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">copper</gml:identifier>
+      <gml:name>copper</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1340_2448">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SolidMaterialTypeValue">zink</gml:identifier>
+      <gml:name>zink</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>
