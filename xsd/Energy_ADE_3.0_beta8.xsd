@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-07
+Last update: 2026-02-19
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -95,17 +95,16 @@ xmlns:tran="http://www.opengis.net/citygml/transportation/2.0"
 xmlns:tun="http://www.opengis.net/citygml/tunnel/2.0"
 xmlns:veg="http://www.opengis.net/citygml/vegetation/2.0"
 xmlns:wtr="http://www.opengis.net/citygml/waterbody/2.0"
-xmlns:nrg3="http://www.citygml.org/ade/energy/3.0" 
-elementFormDefault="qualified" 
-targetNamespace="http://www.citygml.org/ade/energy/3.0" 
+elementFormDefault="qualified"
+xmlns:nrg3="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0"
+targetNamespace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0" 
 version="3.0"
 >
   <annotation>
-    <documentation>Energy ADE 3.0 beta 8 (2026-01-28) for CityGML 2.0</documentation>
+    <documentation>Energy ADE 3.0 (beta 8) for CityGML 2.0</documentation>
   </annotation>
 
   <!-- All CityGML modules added manually, in case they are not written automatically by ShapeChange -->
-
   <import namespace="http://www.opengis.net/gml" schemaLocation="http://schemas.opengis.net/gml/3.1.1/base/gml.xsd"/>
   <import namespace="http://www.opengis.net/citygml/2.0" schemaLocation="http://schemas.opengis.net/citygml/2.0/cityGMLBase.xsd"/>
   <import namespace="http://www.opengis.net/citygml/appearance/2.0" schemaLocation="http://schemas.opengis.net/citygml/appearance/2.0/appearance.xsd"/> 
@@ -120,6 +119,11 @@ version="3.0"
   <import namespace="http://www.opengis.net/citygml/tunnel/2.0" schemaLocation="http://schemas.opengis.net/citygml/tunnel/2.0/tunnel.xsd"/>
   <import namespace="http://www.opengis.net/citygml/vegetation/2.0" schemaLocation="http://schemas.opengis.net/citygml/vegetation/2.0/vegetation.xsd"/>
   <import namespace="http://www.opengis.net/citygml/waterbody/2.0" schemaLocation="http://schemas.opengis.net/citygml/waterbody/2.0/waterBody.xsd"/>
+
+  <!-- ********************* -->
+  <!-- Energy ADE  CodeLists -->
+  <!-- NOTA BENE: For CodeLists, external XML files are generated. In this XSD file, they are all assigned the type gml:CodeType -->
+  <!-- ********************* -->
 
   <!-- *********************** -->
   <!-- Energy ADE Enumerations -->
@@ -186,16 +190,9 @@ version="3.0"
     </restriction>
   </simpleType>
 
-
-  <!-- ********************* -->
-  <!-- Energy ADE  CodeLists -->
-  <!-- NOTA BENE: For CodeLists, external XML files are generated. In this XSD file, they are all assigned the type gml:CodeType -->
-  <!-- ********************* -->
-
   <!-- ********************* -->
   <!-- Energy ADE DataTypes Module -->
   <!-- ********************* -->
-
 
   <!-- ABSTRACT OPTICAL PROPERTY -->
   <element abstract="true" name="AbstractOpticalProperty" substitutionGroup="gml:_Object" type="nrg3:AbstractOpticalProperty_Type"></element>
@@ -1348,6 +1345,15 @@ version="3.0"
   </complexType>
 
 
+<!--   <complexType name="AppliesToPropertyType">
+    <sequence> -->
+      <!-- <element minOccurs="0" ref="core:_CityObject"></element> -->
+<!--       <element minOccurs="0" ref="gml:_Feature"></element>
+    </sequence>
+    <attributeGroup ref="gml:AssociationAttributeGroup"/>
+  </complexType> -->
+
+
   <!-- REFURBISHMENT MEASURE -->
   <element name="RefurbishmentMeasure" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:RefurbishmentMeasureType"></element>
   <complexType name="RefurbishmentMeasureType">
@@ -1358,6 +1364,13 @@ version="3.0"
           <element name="status" type="gml:CodeType"/>
           <element minOccurs="0" name="refurbishmentStartDate" type="date"/>
           <element minOccurs="0" name="refurbishmentEndDate" type="date"/>
+<!--           <element minOccurs="0" maxOccurs="unbounded" name="appliesTo" type="nrg3:AppliesToPropertyType">
+            <annotation>
+              <appinfo>
+                <taggedValue tag="relationType">association</taggedValue>
+              </appinfo>
+            </annotation>
+          </element> -->
         </sequence>
       </extension>
     </complexContent>
@@ -1402,9 +1415,11 @@ version="3.0"
       <extension base="nrg3:AbstractBuildingSpaceType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
-          <element minOccurs="0" name="numberOfRooms" type="integer"></element>
+          <element minOccurs="0" name="floorNumberFrom" type="double"/>
+          <element minOccurs="0" name="floorNumberTo" type="double"/>
           <element minOccurs="0" name="ownerName" type="string"></element>
           <element minOccurs="0" name="ownershipType" type="gml:CodeType"></element>
+          <element minOccurs="0" name="numberOfRooms" type="integer"></element>
           <element maxOccurs="unbounded" minOccurs="0" name="address" type="core:AddressPropertyType">
             <annotation>
               <appinfo>
