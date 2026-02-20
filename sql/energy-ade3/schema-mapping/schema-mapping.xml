@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-19
+Last update: 2026-02-20
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,13 +27,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-02-19)</version>
+        <version>3.0 beta 8 (2026-02-20)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
     <applicationSchemas>
         <schema id="ng3" isADERoot="true">
-            <namespace context="citygml-2.0">http://www.citygml.org/ade/energy/3.0</namespace>
+            <namespace context="citygml-2.0">http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0</namespace>
         </schema>
     </applicationSchemas>
 
@@ -190,12 +190,12 @@ https://3d.bk.tudelft.nl/gagugiaro/
             <extension base="ng3_AbstractADEFeatureType">
                 <join table="cityobject" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
-            <complexAttribute maxOccurs="1" path="acquisitionMethod" schema="ng3">
-                <attribute column="acquisition_method" type="string" path="." schema="ng3"/>
-                <attribute column="acquisition_method_codespace" type="string" path="@codespace" schema="gml"/>
+            <complexAttribute minOccurs="1" maxOccurs="1" path="dataAcquisitionMethod" schema="ng3">
+                <attribute column="data_acq_method" type="string" path="." schema="ng3"/>
+                <attribute column="data_acq_method_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute maxOccurs="1" column="interpolation_type" type="string" path="interpolationType" schema="ng3"/>
-            <attribute maxOccurs="1" column="source" type="string" path="source" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="interpolation_type" type="string" path="interpolationType" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="source" type="string" path="source" schema="ng3"/>
         </featureType>
 
 
@@ -208,10 +208,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="type" type="string" path="." schema="ng3"/>
                 <attribute column="type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_month" type="integer" path="startMonth" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_year" type="integer" path="startYear" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_time" type="timestamp" path="beginTime" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_day" type="integer" path="beginDay" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_month" type="integer" path="beginMonth" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_year" type="integer" path="beginYear" schema="ng3"/>
             <complexAttribute maxOccurs="1" path="temporalExtent" schema="ng3">
                 <attribute column="time_interval" type="double" path="." schema="ng3"/>
                 <attribute column="time_interval_unit" type="string" path="@unit" schema="gml"/>
@@ -320,49 +320,49 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="operation_type" type="string" path="." schema="ng3"/>
                 <attribute column="operation_type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <complexAttribute minOccurs="1" maxOccurs="1" path="amountType" schema="ng3">
-                <attribute column="amount_type" type="string" path="." schema="ng3"/>
-                <attribute column="amount_type_codespace" type="string" path="@codespace" schema="gml"/>
+            <complexAttribute maxOccurs="1" path="referencePeriod" schema="ng3">
+                <attribute column="ref_period" type="string" path="." schema="ng3"/>
+                <attribute column="ref_period_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <complexAttribute maxOccurs="1" path="amount" schema="ng3">
+            <complexAttribute minOccurs="0" maxOccurs="1" path="amount" schema="ng3">
                 <attribute column="amount" type="double" path="." schema="ng3"/>
                 <attribute column="amount_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute>
+            <complexAttribute minOccurs="0" maxOccurs="1" path="dataAcquisitionMethod" schema="ng3">
+                <attribute column="data_acq_method" type="string" path="." schema="ng3"/>
+                <attribute column="data_acq_method_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
             <attribute minOccurs="1" maxOccurs="1" column="is_amount_normalized" type="boolean" path="isAmountNormalized" schema="ng3"/>
             <complexAttribute maxOccurs="1" path="normalizationValue" schema="ng3">
                 <attribute column="normalization_value" type="double" path="." schema="ng3"/>
                 <attribute column="normalization_value_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
-            <attribute column="normalization_param" type="string" maxOccurs="1" path="normalizationParameter" schema="ng3"/>
-            <complexAttribute maxOccurs="1" path="referencePeriod" schema="ng3">
-                <attribute column="ref_period" type="string" path="." schema="ng3"/>
-                <attribute column="ref_period_codespace" type="string" path="@codespace" schema="gml"/>
-            </complexAttribute>
-            <complexAttribute maxOccurs="1" path="co2Equivalent" schema="ng3">
+            <attribute minOccurs="0" maxOccurs="1" column="normalization_param" type="string" path="normalizationParameter" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="year" type="integer" path="year" schema="ng3"/>
+            <complexAttribute minOccurs="0" maxOccurs="1" path="expense" schema="ng3">
+                <attribute column="expense" type="double" path="." schema="ng3"/>
+                <attribute column="expense_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute>			
+            <complexAttribute minOccurs="0" maxOccurs="1" path="revenue" schema="ng3">
+                <attribute column="revenue" type="double" path="." schema="ng3"/>
+                <attribute column="revenue_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute>	
+            <complexAttribute minOccurs="0" maxOccurs="1" path="co2Equivalent" schema="ng3">
                 <attribute column="co2_equivalent" type="double" path="." schema="ng3"/>
                 <attribute column="co2_equivalent_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
-            <attribute maxOccurs="1" column="year" type="integer" path="year" schema="ng3"/>
-            <complexAttribute maxOccurs="1" path="costsMoney" schema="ng3">
-                <attribute column="costs_money" type="double" path="." schema="ng3"/>
-                <attribute column="co2_equivalent_uom" type="string" path="@uom" schema="gml"/>
-            </complexAttribute>			
-            <complexAttribute maxOccurs="1" path="yieldsMoney" schema="ng3">
-                <attribute column="yields_money" type="double" path="." schema="ng3"/>
-                <attribute column="yields_money_uom" type="string" path="@uom" schema="gml"/>
-            </complexAttribute>	
             <featureProperty target="ng3_AbstractTimeSeriesType" maxOccurs="1" path="timeDependentAmount" schema="ng3" relationType="composition">
                 <join table="ng3_time_series" fromColumn="amount_time_series_id" toColumn="id" toRole="parent">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
-            <featureProperty target="ng3_AbstractTimeSeriesType" maxOccurs="1" path="timeDependentCosts" schema="ng3" relationType="composition">
-                <join table="ng3_time_series" fromColumn="costs_time_series_id" toColumn="id" toRole="parent">
+            <featureProperty target="ng3_AbstractTimeSeriesType" maxOccurs="1" path="timeDependentExpense" schema="ng3" relationType="composition">
+                <join table="ng3_time_series" fromColumn="expense_time_series_id" toColumn="id" toRole="parent">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
-            <featureProperty target="ng3_AbstractTimeSeriesType" maxOccurs="1" path="timeDependentYields" schema="ng3" relationType="composition">
-                <join table="ng3_time_series" fromColumn="yields_time_series_id" toColumn="id" toRole="parent">
+            <featureProperty target="ng3_AbstractTimeSeriesType" maxOccurs="1" path="timeDependentRevenue" schema="ng3" relationType="composition">
+                <join table="ng3_time_series" fromColumn="revenue_time_series_id" toColumn="id" toRole="parent">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
@@ -455,19 +455,21 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Regular Time Series -->
         <featureType id="ng3_RegularTimeSeriesType" table="ng3_time_series" objectClassId="11081" path="RegularTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
+            <attribute minOccurs="1" maxOccurs="1" column="begin_timestamp" type="timestamp"  path="beginTimeStamp" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="end_timestamp" type="timestamp" path="endTimeStamp" schema="ng3"/>
+<!--             <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
+                <type path="TimePeriod" schema="ng3">
+                    <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
+                    <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
+                </type>
+            </complexProperty> -->
             <complexAttribute minOccurs="1" maxOccurs="1" path="timeInterval" schema="ng3">
                 <attribute column="time_interval" type="double" path="." schema="ng3"/>
                 <attribute column="time_interval_unit" type="string" path="@unit" schema="gml"/>
                 <!-- <attribute column="time_interval_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="time_interval_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
-                <type path="TimePeriod" schema="ng3">
-                    <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
-                    <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
-                </type>
-            </complexProperty>
-            <complexAttribute minOccurs="1" maxOccurs="1" path="values" schema="ng3">
+            <complexAttribute minOccurs="1" maxOccurs="1" path="valuesList" schema="ng3">
                 <attribute column="values_list" type="clob" path="." schema="ng3"/>
                 <attribute column="values_list_uom" type="string" path="@uom" schema="ng3"/>
             </complexAttribute>
@@ -477,34 +479,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Regular Time Series File -->
         <featureType id="ng3_RegularTimeSeriesFileType" table="ng3_time_series" objectClassId="11082" path="RegularTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="begin_timestamp" type="timestamp"  path="beginTimeStamp" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="end_timestamp" type="timestamp" path="endTimeStamp" schema="ng3"/>
+<!--             <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
+                <type path="TimePeriod" schema="ng3">
+                    <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
+                    <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
+                </type>
+            </complexProperty> -->
             <complexAttribute minOccurs="1" maxOccurs="1" path="timeInterval" schema="ng3">
                 <attribute column="time_interval" type="double" path="." schema="ng3"/>
                 <attribute column="time_interval_unit" type="string" path="@unit" schema="gml"/>
                 <!-- <attribute column="time_interval_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="time_interval_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <attribute maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
-            <attribute maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
-            <attribute maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
-            <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
-                <type path="TimePeriod" schema="ng3">
-                    <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
-                    <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
-                </type>
-            </complexProperty>
+            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
         </featureType>
 
 
 		<!-- Typical Values Time Series -->
         <featureType id="ng3_TypicalValuesTimeSeriesType" table="ng3_time_series" objectClassId="11083" path="TypicalValuesTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_month" type="integer" path="startMonth" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_time" type="timestamp" path="beginTime" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_day" type="integer" path="beginDay" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_month" type="integer" path="beginMonth" schema="ng3"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <attribute column="temporal_extent" type="double" path="." schema="ng3"/>
                 <attribute column="temporal_extent_unit" type="string" path="@unit" schema="gml"/>
@@ -517,7 +521,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <!-- <attribute column="time_interval_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="time_interval_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <complexAttribute minOccurs="1" maxOccurs="1" path="values" schema="ng3">
+            <complexAttribute minOccurs="1" maxOccurs="1" path="valuesList" schema="ng3">
                 <attribute column="values_list" type="clob" path="." schema="ng3"/>
                 <attribute column="values_list_uom" type="string" path="@uom" schema="ng3"/>
             </complexAttribute>
@@ -527,11 +531,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Typical Values Time Series File -->
         <featureType id="ng3_TypicalValuesTimeSeriesFileType" table="ng3_time_series" objectClassId="11084" path="TypicalValuesTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_day" type="integer" path="startDay" schema="ng3"/>
-            <attribute maxOccurs="1" column="start_month" type="integer" path="startMonth" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_time" type="timestamp" path="beginTime" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_day" type="integer" path="beginDay" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_month" type="integer" path="beginMonth" schema="ng3"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <attribute column="temporal_extent" type="double" path="." schema="ng3"/>
                 <attribute column="temporal_extent_unit" type="string" path="@unit" schema="gml"/>
@@ -544,24 +546,28 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <!-- <attribute column="time_interval_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="time_interval_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <attribute maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
             <attribute minOccurs="1" maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
-            <attribute maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
         </featureType>
 
 
 		<!-- Monthly Time Series -->
         <featureType id="ng3_MonthlyTimeSeriesType" table="ng3_time_series" objectClassId="11085" path="MonthlyTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
+            <attribute minOccurs="1" maxOccurs="1" column="begin_timestamp" type="timestamp"  path="beginTimeStamp" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="end_timestamp" type="timestamp" path="endTimeStamp" schema="ng3"/>
+<!--             <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <type path="TimePeriod" schema="ng3">
                     <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
                     <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
                 </type>
-            </complexProperty>
-            <complexAttribute minOccurs="1" maxOccurs="1" path="values" schema="ng3">
+            </complexProperty> -->
+            <complexAttribute minOccurs="1" maxOccurs="1" path="valuesList" schema="ng3">
                 <attribute column="values_list" type="clob" path="." schema="ng3"/>
                 <attribute column="values_list_uom" type="string" path="@uom" schema="ng3"/>
             </complexAttribute>
@@ -571,33 +577,35 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Monthly Time Series File -->
         <featureType id="ng3_MonthlyTimeSeriesFileType" table="ng3_time_series" objectClassId="11086" path="MonthlyTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
-            <attribute maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
-            <attribute maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
-            <attribute maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
-            <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
+            <attribute minOccurs="1" maxOccurs="1" column="begin_timestamp" type="timestamp"  path="beginTimeStamp" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="end_timestamp" type="timestamp" path="endTimeStamp" schema="ng3"/>
+<!--             <complexProperty minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <type path="TimePeriod" schema="ng3">
                     <attribute minOccurs="1" maxOccurs="1" column="period_begin" type="timestamp" path="beginPosition" schema="ng3"/>
                     <attribute minOccurs="1" maxOccurs="1" column="period_end" type="timestamp" path="endPosition" schema="ng3"/>
                 </type>
-            </complexProperty>
+            </complexProperty> -->
+            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
         </featureType>
 
 
 		<!-- Typical Values Time Series -->
         <featureType id="ng3_TypicalValuesMonthlyTimeSeriesType" table="ng3_time_series" objectClassId="11087" path="TypicalValuesMonthlyTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute maxOccurs="1" column="start_month" type="integer" path="startMonth" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_month" type="integer" path="beginMonth" schema="ng3"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <attribute column="temporal_extent" type="double" path="." schema="ng3"/>
                 <attribute column="temporal_extent_unit" type="string" path="@unit" schema="gml"/>
                 <!-- <attribute column="temporal_extent_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="temporal_extent_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <complexAttribute minOccurs="1" maxOccurs="1" path="values" schema="ng3">
+            <complexAttribute minOccurs="1" maxOccurs="1" path="valuesList" schema="ng3">
                 <attribute column="values_list" type="clob" path="." schema="ng3"/>
                 <attribute column="values_list_uom" type="string" path="@uom" schema="ng3"/>
             </complexAttribute>
@@ -607,20 +615,20 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Typical Values Time Series File -->
         <featureType id="ng3_TypicalValuesMonthlyTimeSeriesFileType" table="ng3_time_series" objectClassId="11088" path="TypicalValuesMonthlyTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
-            <attribute maxOccurs="1" column="start_month" type="integer" path="startMonth" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute maxOccurs="1" column="begin_month" type="integer" path="beginMonth" schema="ng3"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="temporalExtent" schema="ng3">
                 <attribute column="temporal_extent" type="double" path="." schema="ng3"/>
                 <attribute column="temporal_extent_unit" type="string" path="@unit" schema="gml"/>
                 <!-- <attribute column="temporal_extent_radix" type="integer" path="@radix" schema="gml"/> -->
                 <!-- <attribute column="temporal_extent_factor" type="integer" path="@factor" schema="gml"/> -->
             </complexAttribute>
-            <attribute maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="uom" type="string" path="uom" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="file_uri" type="string" path="file" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="num_of_header_lines" type="integer" path="numberOfHeaderLines" schema="ng3"/>
             <attribute minOccurs="1" maxOccurs="1" column="field_separator" type="string" path="fieldSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
-            <attribute maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
-            <attribute maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="record_separator" type="string" path="recordSeparator" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="decimal_symbol" type="string" path="decimalSymbol" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="value_column_number" type="integer" path="valueColumnNumber" schema="ng3"/>
         </featureType>
 
 
@@ -698,7 +706,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 		<!-- Dual Value Schedule -->
         <featureType id="ng3_DualValueScheduleType" table="ng3_schedule" objectClassId="11095" path="DualValueSchedule" schema="ng3">
-            <extension base="ng3_AbstractScheduleType"/>
+            <extension base="ng3_AbstractAtomicScheduleType"/>
+            <attribute minOccurs="1" maxOccurs="1" column="begin_usage_time" type="timestamp"  path="beginUsageTime" schema="ng3"/>
+            <attribute minOccurs="1" maxOccurs="1" column="end_usage_time" type="timestamp" path="endUsageTime" schema="ng3"/>
             <complexAttribute minOccurs="1" maxOccurs="1" path="idleValue" schema="ng3">
                 <attribute column="idle_value" type="double" path="." schema="ng3"/>
                 <attribute column="idle_value_uom" type="string" path="@uom" schema="gml"/>
@@ -707,8 +717,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="usage_value" type="double" path="." schema="ng3"/>
                 <attribute column="usage_value_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
-            <attribute minOccurs="1" maxOccurs="1" column="start_usage_time" type="timestamp"  path="startUsageTime" schema="ng3"/>
-            <attribute minOccurs="1" maxOccurs="1" column="end_usage_time" type="timestamp" path="endUsageTime" schema="ng3"/>
         </featureType>
 
 
@@ -1117,7 +1125,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="status" type="string" path="." schema="ng3"/>
                 <attribute column="status_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute column="start_date" type="date" maxOccurs="1" path="refurbishmentStartDate" schema="ng3"/>
+            <attribute column="begin_date" type="date" maxOccurs="1" path="refurbishmentBeginDate" schema="ng3"/>
             <attribute column="end_date" type="date" maxOccurs="1" path="refurbishmentEndDate" schema="ng3"/>
         </featureType>
 
@@ -1456,8 +1464,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="batt_techn_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
             <complexAttribute maxOccurs="1" path="powerCapacity" schema="ng3">
-                <attribute column="power_capacity" type="double" path="." schema="ng3"/>
-                <attribute column="power_capacity_uom" type="string" path="@uom" schema="gml"/>
+                <attribute column="capacity" type="double" path="." schema="ng3"/>
+                <attribute column="capacity_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
         </featureType>
 
@@ -1488,7 +1496,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 		<!-- Generic Storage Device -->
         <featureType id="ng3_GenericStorageDeviceType" table="ng3_storage_device" objectClassId="11169" path="GenericStorageDevice" schema="ng3">
-            <extension base="ng3_AbstractDeviceType"/>
+            <extension base="ng3_AbstractDeviceType">
+                <join table="ng3_device" fromColumn="id" toColumn="id" toRole="parent"/>
+            </extension>
+            <complexAttribute minOccurs="0" maxOccurs="1" path="capacity" schema="ng3">
+                <attribute column="capacity" type="double" path="." schema="ng3"/>
+                <attribute column="capacity_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute>
         </featureType>
 
 
