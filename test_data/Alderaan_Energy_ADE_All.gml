@@ -10,7 +10,7 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-19
+Last update: 2026-02-20
 
 This dataset contain several object covering (nearly)
 all classes of the Energy ADE.
@@ -623,6 +623,114 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:relatedTo xlink:href="#id_building_2"/>
 				</nrg3:CityObjectRelation>
 			</nrg3:relatedTo>
+			<nrg3:sensorData>
+				<nrg3:SensorData gml:id="id_seonsor_data_1">
+					<gml:description>This is SensorData 1</gml:description>
+					<gml:name>SensorData 1</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataTypeValue.xml">proximityAndDistance</nrg3:type>
+					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataValueTypeValue.xml">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="m">15</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesMonthlyTimeSeriesFile gml:id="id_sensor_data_1_typical_values_monthly_time_series_file">
+							<gml:description>This is TypicalValuesMonthlyTimeSeriesFile1</gml:description>
+							<gml:name>TypicalValuesMonthlyTimeSeriesFile1</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>A force sensitive sensor</nrg3:source>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>/sensor_data_1_typical_monthly_time_series.csv</nrg3:fileURI>
+							<nrg3:numberOfHeaderLines>2</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>;</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
+					</nrg3:timeDependentValues>
+					<nrg3:position>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 12</gml:pos>
+						</gml:Point>
+					</nrg3:position>
+				</nrg3:SensorData>
+			</nrg3:sensorData>
+			<nrg3:sensorData>
+				<nrg3:SensorData gml:id="id_seonsor_data_2">
+					<gml:description>This is SensorData 2</gml:description>
+					<gml:name>SensorData 2</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataTypeValue.xml">chemicalAndGas</nrg3:type>
+					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataValueTypeValue.xml">average</nrg3:valueType>
+					<nrg3:yearlyValue uom="ppm (CO2)">1000</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesMonthlyTimeSeriesFile gml:id="id_sensor_data_2_typical_values_monthly_time_series_file">
+							<gml:description>This is TypicalValuesMonthlyTimeSeriesFile2</gml:description>
+							<gml:name>TypicalValuesMonthlyTimeSeriesFile2</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>A force sensitive sensor</nrg3:source>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>/sensor_data_2_typical_monthly_time_series.csv</nrg3:fileURI>
+							<nrg3:numberOfHeaderLines>2</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>;</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
+					</nrg3:timeDependentValues>
+					<nrg3:position>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 9</gml:pos>
+						</gml:Point>
+					</nrg3:position>
+				</nrg3:SensorData>
+			</nrg3:sensorData>
+			<nrg3:sensorData>
+				<nrg3:SensorData gml:id="id_seonsor_data_3">
+					<gml:description>This is SensorData 3</gml:description>
+					<gml:name>SensorData 3</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataTypeValue.xml">motionAndPosition</nrg3:type>
+					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SensorDataValueTypeValue.xml">maximum</nrg3:valueType>
+					<nrg3:yearlyValue uom="people">6</nrg3:yearlyValue>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesMonthlyTimeSeriesFile gml:id="id_sensor_data_3_typical_values_monthly_time_series_file">
+							<gml:description>This is TypicalValuesMonthlyTimeSeriesFile3</gml:description>
+							<gml:name>TypicalValuesMonthlyTimeSeriesFile3</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>A force sensitive sensor</nrg3:source>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>/sensor_data_3_typical_monthly_time_series.csv</nrg3:fileURI>
+							<nrg3:numberOfHeaderLines>2</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>;</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
+					</nrg3:timeDependentValues>
+					<nrg3:position>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 6</gml:pos>
+						</gml:Point>
+					</nrg3:position>
+				</nrg3:SensorData>
+			</nrg3:sensorData>
 			<nrg3:suitability>
 				<nrg3:Suitability>
 					<nrg3:reason codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/SuitabilityReasonValue.xml">suitability reason 1</nrg3:reason>
@@ -1149,6 +1257,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85855 448705 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_4">
+							<gml:description>This is Waste 4</gml:description>
+							<gml:name>Waste 4</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_4</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">59.28</nrg3:amount>
+							<nrg3:year>2009</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">332.48</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_4">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2009-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2010-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -1229,7 +1373,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">corporation</nrg3:ownershipType>
 					<nrg3:numberOfRooms>4</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_1"/>
@@ -1294,7 +1438,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">insulatedExteriorWalls</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-01</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-01</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-01</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -1309,7 +1453,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">insulatedGroundFloor</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-02</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-02</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-02</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -1324,7 +1468,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">installedHeatPump</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-03</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-03</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-03</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -1615,6 +1759,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_1_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85855 448705 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_1_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_4a5ef73e-04b2-4e8e-81f5-1ddb2838823e">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85850 448700 2 85850 448710 2 85860 448710 2 85860 448700 2 85850 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_1_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85852.5 448705 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_1_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_9454055e-f9f2-46c6-8c3d-f1de8e5b54ce">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85850 448700 12 85855 448700 17 85855 448710 17 85850 448710 12 85850 448700 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_1_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85857.5 448705 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_1_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_e8e3d62c-1bb4-48d2-8415-346cb2dff634">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85855 448700 17 85860 448700 12 85860 448710 12 85855 448710 17 85855 448700 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_1_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -1691,64 +1955,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_1_zonewallsurf_4">
-							<gml:description>This is ZoneWallSurface 4</gml:description>
-							<gml:name>ZoneWallSurface 4</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zonewallwallsurf_4</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85860 448705 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_1_zonewallsurf_4"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_2_zonewallsurf_4"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_3_zonewallsurf_4"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zonewallsurf_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_1_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zonewallsurf_4_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_5931fe6f-0875-464c-a020-17addd8f9fe5">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448710 12 85860 448700 12 85860 448700 2 85860 448710 2 85860 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -1910,70 +2116,48 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_1_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_1_zonewallsurf_4">
+							<gml:description>This is ZoneWallSurface 4</gml:description>
+							<gml:name>ZoneWallSurface 4</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zonewallwallsurf_4</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85852.5 448705 14.5</gml:pos>
+									<gml:pos>85860 448705 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_1_zonewallsurf_4"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_2_zonewallsurf_4"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_3_zonewallsurf_4"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_1_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_1_zonewallsurf_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_1_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_1_zonewallsurf_4_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_9454055e-f9f2-46c6-8c3d-f1de8e5b54ce">
+										<gml:Polygon gml:id="Polygon_UUID_5931fe6f-0875-464c-a020-17addd8f9fe5">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85850 448700 12 85855 448700 17 85855 448710 17 85850 448710 12 85850 448700 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_1_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85857.5 448705 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_1_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_e8e3d62c-1bb4-48d2-8415-346cb2dff634">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85855 448700 17 85860 448700 12 85860 448710 12 85855 448710 17 85855 448700 17</gml:posList>
+													<gml:posList>85860 448710 12 85860 448700 12 85860 448700 2 85860 448710 2 85860 448710 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -1981,53 +2165,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
 							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_1_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_1_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85855 448705 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_1_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_4a5ef73e-04b2-4e8e-81f5-1ddb2838823e">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85850 448700 2 85850 448710 2 85860 448710 2 85860 448700 2 85850 448700 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -2962,6 +3106,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85865 448705 3.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_5">
+							<gml:description>This is Waste 5</gml:description>
+							<gml:name>Waste 5</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_5</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">55.5</nrg3:amount>
+							<nrg3:year>2010</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">302.83</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_5">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2010-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2011-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -3087,7 +3267,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">other</nrg3:type>
 							<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-							<nrg3:refurbishmentStartDate>2020-02-12</nrg3:refurbishmentStartDate>
+							<nrg3:refurbishmentBeginDate>2020-02-12</nrg3:refurbishmentBeginDate>
 							<nrg3:refurbishmentEndDate>2020-08-12</nrg3:refurbishmentEndDate>
 						</nrg3:RefurbishmentMeasure>
 					</nrg3:refurbishmentMeasure>
@@ -3102,7 +3282,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedWindows</nrg3:type>
 							<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-							<nrg3:refurbishmentStartDate>2020-02-13</nrg3:refurbishmentStartDate>
+							<nrg3:refurbishmentBeginDate>2020-02-13</nrg3:refurbishmentBeginDate>
 							<nrg3:refurbishmentEndDate>2020-08-13</nrg3:refurbishmentEndDate>
 						</nrg3:RefurbishmentMeasure>
 					</nrg3:refurbishmentMeasure>
@@ -3118,6 +3298,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85865 448705 6.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_6">
+							<gml:description>This is Waste 6</gml:description>
+							<gml:name>Waste 6</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_6</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">55.35</nrg3:amount>
+							<nrg3:year>2011</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">398.15999999999997</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_6">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2011-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2012-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -3195,8 +3411,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</gml:Solid>
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">commercial</nrg3:type>
-					<nrg3:floorNumberFrom>2</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>2</nrg3:floorNumberTo>
+					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">government</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:energyPerformanceCertificate>
@@ -3226,7 +3442,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedDoors</nrg3:type>
 							<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-							<nrg3:refurbishmentStartDate>2020-02-14</nrg3:refurbishmentStartDate>
+							<nrg3:refurbishmentBeginDate>2020-02-14</nrg3:refurbishmentBeginDate>
 							<nrg3:refurbishmentEndDate>2020-08-14</nrg3:refurbishmentEndDate>
 						</nrg3:RefurbishmentMeasure>
 					</nrg3:refurbishmentMeasure>
@@ -3242,6 +3458,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85865 448705 12.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_7">
+							<gml:description>This is Waste 7</gml:description>
+							<gml:name>Waste 7</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_7</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">59.14</nrg3:amount>
+							<nrg3:year>2012</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">322.54</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_7">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2012-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2013-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -3321,8 +3573,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</gml:Solid>
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">office</nrg3:type>
-					<nrg3:floorNumberFrom>3</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">government</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 				</nrg3:BuildingUnit>
@@ -3375,7 +3627,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedBoiler</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-04</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-04</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-04</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -3647,6 +3899,112 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_2_1_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448705 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_6cf01382-2c71-47ac-aa0f-f455eaaaf49c">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448700 2 85860 448700 2 85860 448710 2 85870 448710 2 85870 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_20885a07-75e6-4e6d-ae72-421c04f11f28">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448700 2 85860 448700 2 85860 448710 2 85870 448710 2 85870 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.4</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1">
+							<gml:description>This is ZoneIntermediateFloorSurface 2</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 2</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448705 5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_2_zoneintermediatefloorsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_ada15925-5f94-4624-9077-4adc005f4ccc">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448703 5 85860 448700.833 5 85860 448700 5 85867 448700 5 85870 448700 5 85870 448707 5 85870 448709.167 5 85870 448710 5 85867 448710 5 85860 448710 5 85860 448703 5</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_9c49a4d0-9026-412d-9e80-cdc259a0457c">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448703 5 85860 448700.833 5 85860 448700 5 85867 448700 5 85870 448700 5 85870 448707 5 85870 448709.167 5 85870 448710 5 85867 448710 5 85860 448710 5 85860 448703 5</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_2_1_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -4087,112 +4445,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_2_1_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448705 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_6cf01382-2c71-47ac-aa0f-f455eaaaf49c">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448700 2 85860 448700 2 85860 448710 2 85870 448710 2 85870 448700 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_20885a07-75e6-4e6d-ae72-421c04f11f28">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448700 2 85860 448700 2 85860 448710 2 85870 448710 2 85870 448700 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.4</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1">
-							<gml:description>This is ZoneIntermediateFloorSurface 2</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 2</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448705 5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_2_zoneintermediatefloorsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_ada15925-5f94-4624-9077-4adc005f4ccc">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448703 5 85860 448700.833 5 85860 448700 5 85867 448700 5 85870 448700 5 85870 448707 5 85870 448709.167 5 85870 448710 5 85867 448710 5 85860 448710 5 85860 448703 5</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_1_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_9c49a4d0-9026-412d-9e80-cdc259a0457c">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448703 5 85860 448700.833 5 85860 448700 5 85867 448700 5 85870 448700 5 85870 448707 5 85870 448709.167 5 85870 448710 5 85867 448710 5 85860 448710 5 85860 448703 5</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
-					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
 			<nrg3:zone>
@@ -4463,6 +4715,118 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1">
+							<gml:description>This is ZoneIntermediateFloorSurface 2</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 2</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448705 5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_1_zoneintermediatefloorsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_5ca3def6-d012-4b61-8ddb-06b26d192aa6">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85867 448700 5 85860 448700 5 85860 448703 5 85860 448709.167 5 85860 448710 5 85867 448710 5 85870 448710 5 85870 448707 5 85870 448700.833 5 85870 448700 5 85867 448700 5</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_73bcd52a-45a6-427c-8876-4f81a447dbc0">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85867 448700 5 85860 448700 5 85860 448703 5 85860 448709.167 5 85860 448710 5 85867 448710 5 85870 448710 5 85870 448707 5 85870 448700.833 5 85870 448700 5 85867 448700 5</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2">
+							<gml:description>This is ZoneIntermediateFloorSurface 3</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 3</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448705 8</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_3_zoneintermediatefloorsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_ff683a1a-072e-4da9-a01a-5cc5b90d7780">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448706 8 85860 448700.833 8 85860 448700 8 85864 448700 8 85870 448700 8 85870 448704 8 85870 448709.167 8 85870 448710 8 85864 448710 8 85860 448710 8 85860 448706 8</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_bd5260fe-e718-4c19-bd92-b5f03b399180">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448706 8 85860 448700.833 8 85860 448700 8 85864 448700 8 85870 448700 8 85870 448704 8 85870 448709.167 8 85870 448710 8 85864 448710 8 85860 448710 8 85860 448706 8</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_2_2_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -4903,118 +5267,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1">
-							<gml:description>This is ZoneIntermediateFloorSurface 2</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 2</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448705 5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_1_zoneintermediatefloorsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_5ca3def6-d012-4b61-8ddb-06b26d192aa6">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85867 448700 5 85860 448700 5 85860 448703 5 85860 448709.167 5 85860 448710 5 85867 448710 5 85870 448710 5 85870 448707 5 85870 448700.833 5 85870 448700 5 85867 448700 5</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_73bcd52a-45a6-427c-8876-4f81a447dbc0">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85867 448700 5 85860 448700 5 85860 448703 5 85860 448709.167 5 85860 448710 5 85867 448710 5 85870 448710 5 85870 448707 5 85870 448700.833 5 85870 448700 5 85867 448700 5</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2">
-							<gml:description>This is ZoneIntermediateFloorSurface 3</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 3</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448705 8</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_3_zoneintermediatefloorsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_ff683a1a-072e-4da9-a01a-5cc5b90d7780">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448706 8 85860 448700.833 8 85860 448700 8 85864 448700 8 85870 448700 8 85870 448704 8 85870 448709.167 8 85870 448710 8 85864 448710 8 85860 448710 8 85860 448706 8</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_2_zoneintermediatefloorsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_bd5260fe-e718-4c19-bd92-b5f03b399180">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448706 8 85860 448700.833 8 85860 448700 8 85864 448700 8 85870 448700 8 85870 448704 8 85870 448709.167 8 85870 448710 8 85864 448710 8 85860 448710 8 85860 448706 8</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
-					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
 			<nrg3:zone>
@@ -5303,6 +5555,162 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1">
+							<gml:description>This is ZoneIntermediateFloorSurface 4</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 4</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448705 8</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_2_zoneintermediatefloorsurf_2"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_e406b768-a345-4872-a2d4-d66c1769a22c">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85864 448700 8 85860 448700 8 85860 448706 8 85860 448709.167 8 85860 448710 8 85864 448710 8 85870 448710 8 85870 448704 8 85870 448700.833 8 85870 448700 8 85864 448700 8</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_745ce1db-d331-4aa6-9bbc-bd72bedb28d0">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85864 448700 8 85860 448700 8 85860 448706 8 85860 448709.167 8 85860 448710 8 85864 448710 8 85870 448710 8 85870 448704 8 85870 448700.833 8 85870 448700 8 85864 448700 8</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_2_3_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448707.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_42d94bb9-b8ea-439c-852d-7ba10730ac71">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448710 12 85860 448710 12 85860 448705 17 85870 448705 17 85870 448710 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_eada86ec-df7b-492c-a0e1-1502c9e87f45">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448710 12 85860 448710 12 85860 448705 17 85870 448705 17 85870 448710 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_2_3_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448702.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_eb4507a6-d056-48d7-a559-5c968525d91b">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448705 17 85860 448700 12 85870 448700 12 85870 448705 17 85860 448705 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_55262181-33de-4d78-8aa7-d26a0cdf3e6b">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85860 448705 17 85860 448700 12 85870 448700 12 85870 448705 17 85860 448705 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_2_3_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -5924,162 +6332,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
 						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_2_3_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448707.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_42d94bb9-b8ea-439c-852d-7ba10730ac71">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448710 12 85860 448710 12 85860 448705 17 85870 448705 17 85870 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_eada86ec-df7b-492c-a0e1-1502c9e87f45">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448710 12 85860 448710 12 85860 448705 17 85870 448705 17 85870 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_2_3_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448702.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_eb4507a6-d056-48d7-a559-5c968525d91b">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448705 17 85860 448700 12 85870 448700 12 85870 448705 17 85860 448705 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_55262181-33de-4d78-8aa7-d26a0cdf3e6b">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448705 17 85860 448700 12 85870 448700 12 85870 448705 17 85860 448705 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1">
-							<gml:description>This is ZoneIntermediateFloorSurface 4</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 4</gml:name>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448705 8</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_2_zoneintermediatefloorsurf_2"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_e406b768-a345-4872-a2d4-d66c1769a22c">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85864 448700 8 85860 448700 8 85860 448706 8 85860 448709.167 8 85860 448710 8 85864 448710 8 85870 448710 8 85870 448704 8 85870 448700.833 8 85870 448700 8 85864 448700 8</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_2_3_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_745ce1db-d331-4aa6-9bbc-bd72bedb28d0">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85864 448700 8 85860 448700 8 85860 448706 8 85860 448709.167 8 85860 448710 8 85864 448710 8 85870 448710 8 85870 448704 8 85870 448700.833 8 85870 448700 8 85864 448700 8</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfHeatCapacity uom="xxx">100</nrg3:bdgBdrySurfHeatCapacity>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -7183,6 +7435,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85875 448705 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_8">
+							<gml:description>This is Waste 8</gml:description>
+							<gml:name>Waste 8</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_8</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">51.89</nrg3:amount>
+							<nrg3:year>2013</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">302.5</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_8">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2013-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2014-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -7263,7 +7551,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">government</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_3"/>
@@ -7296,7 +7584,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">insulatedWholeThermalHull</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-05</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-05</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-05</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -7587,266 +7875,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_1">
-							<gml:description>This is ZoneWallSurface 1</gml:description>
-							<gml:name>ZoneWallSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_3_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85875 448700 9.5</gml:pos>
+									<gml:pos>85875 448705 2</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_3_polygon_5"/>
+								<gml:MultiSurface gml:id="id_zone_3_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_3_polygon_3"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_3_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_8cc1a1a1-88b1-4c1a-b7be-6e8e3037d5cb">
+										<gml:Polygon gml:id="Polygon_UUID_b89310e5-31b1-4ad1-b901-75dc495bd2b2">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85870 448700 2 85880 448700 2 85880 448700 12 85875 448700 17 85870 448700 12 85870 448700 2</gml:posList>
+													<gml:posList>85870 448700 2 85870 448710 2 85880 448710 2 85880 448700 2 85870 448700 2</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
-											<gml:interior>
-												<gml:LinearRing>
-													<gml:posList>85873 448700 5 85873 448700 10.757 85875 448700 12.757 85877 448700 10.757 85877 448700 5 85873 448700 5</gml:posList>
-												</gml:LinearRing>
-											</gml:interior>
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
-							<nrg3:zoneOpening>
-								<nrg3:ZoneWindow gml:id="id_zone_3_zonewallsurf_1_zonewindow_8">
-									<gml:description>This is Zone Window 8</gml:description>
-									<gml:name>Zone Window 8</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_1_zonewindow_8</nrg3:identifier>
-									<nrg3:layeredConstruction xlink:href="#id_layered_construction_glazing_5"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85875 448700 8.879</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_zonewindow_8_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_78748e73-bac6-4c84-9286-4c0adf82f1ea">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85873 448700 5 85877 448700 5 85877 448700 10.757 85875 448700 12.757 85873 448700 10.757 85873 448700 5</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgOpnArea uom="m^2">27.0294</nrg3:bdgOpnArea>
-									<nrg3:bdgOpnAzimuth uom="decimal degree">180</nrg3:bdgOpnAzimuth>
-									<nrg3:bdgOpnGroundViewFactor uom="unit interval">0.5</nrg3:bdgOpnGroundViewFactor>
-									<nrg3:bdgOpnInclination uom="decimal degree">90</nrg3:bdgOpnInclination>
-									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
-								</nrg3:ZoneWindow>
-							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_3">
-							<gml:description>This is ZoneWallSurface 3</gml:description>
-							<gml:name>ZoneWallSurface 3</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_3</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85870 448705 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_1_zonewallsurf_3"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_2_zonewallsurf_3"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_2_3_zonewallsurf_3"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_3_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_3_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_b2467493-b0c6-4e24-98d1-fa1ab1757d98">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448710 12 85870 448710 2 85870 448700 2 85870 448700 12 85870 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_2">
-							<gml:description>This is ZoneWallSurface 2</gml:description>
-							<gml:name>ZoneWallSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85875 448710 9.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_3_polygon_4"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_ab624f83-6b4a-40f1-b140-7ee5a42e0fde">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448710 2 85870 448710 12 85875 448710 17 85880 448710 12 85880 448710 2 85870 448710 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-											<gml:interior>
-												<gml:LinearRing>
-													<gml:posList>85873 448710 5 85877 448710 5 85877 448710 10.757 85875 448710 12.757 85873 448710 10.757 85873 448710 5</gml:posList>
-												</gml:LinearRing>
-											</gml:interior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
-							<nrg3:zoneOpening>
-								<nrg3:ZoneWindow gml:id="id_zone_3_zonewallsurf_2_zonewindow_9">
-									<gml:description>This is Zone Window 9</gml:description>
-									<gml:name>Zone Window 9</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_2_zonewindow_9</nrg3:identifier>
-									<nrg3:layeredConstruction xlink:href="#id_layered_construction_glazing_5"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85875 448710 8.879</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_zonewindow_9_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_68780e9f-4084-419d-94c3-c00e90f88b25">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85873 448710 5 85873 448710 10.757 85875 448710 12.757 85877 448710 10.757 85877 448710 5 85873 448710 5</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgOpnArea uom="m^2">27.0294</nrg3:bdgOpnArea>
-									<nrg3:bdgOpnAzimuth uom="decimal degree">0</nrg3:bdgOpnAzimuth>
-									<nrg3:bdgOpnGroundViewFactor uom="unit interval">0.5</nrg3:bdgOpnGroundViewFactor>
-									<nrg3:bdgOpnInclination uom="decimal degree">90</nrg3:bdgOpnInclination>
-									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
-								</nrg3:ZoneWindow>
-							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_4">
-							<gml:description>This is ZoneWallSurface 4</gml:description>
-							<gml:name>ZoneWallSurface 4</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_4</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85880 448705 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_4_zonewallsurf_6"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_3_polygon_cs2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_4_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_0dac9b9c-680b-4027-8cb5-2e30043ddce7">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85880 448710 12 85880 448700 12 85880 448700 2 85880 448710 2 85880 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneWallSurface>
+						</nrg3:ZoneGroundSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneRoofSurface gml:id="id_zone_3_zoneroofsurf_1">
@@ -7929,44 +7995,266 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneRoofSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_3_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_1">
+							<gml:description>This is ZoneWallSurface 1</gml:description>
+							<gml:name>ZoneWallSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85875 448705 2</gml:pos>
+									<gml:pos>85875 448700 9.5</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_3_polygon_3"/>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_3_polygon_5"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_3_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_b89310e5-31b1-4ad1-b901-75dc495bd2b2">
+										<gml:Polygon gml:id="Polygon_UUID_8cc1a1a1-88b1-4c1a-b7be-6e8e3037d5cb">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85870 448700 2 85870 448710 2 85880 448710 2 85880 448700 2 85870 448700 2</gml:posList>
+													<gml:posList>85870 448700 2 85880 448700 2 85880 448700 12 85875 448700 17 85870 448700 12 85870 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+											<gml:interior>
+												<gml:LinearRing>
+													<gml:posList>85873 448700 5 85873 448700 10.757 85875 448700 12.757 85877 448700 10.757 85877 448700 5 85873 448700 5</gml:posList>
+												</gml:LinearRing>
+											</gml:interior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:zoneOpening>
+								<nrg3:ZoneWindow gml:id="id_zone_3_zonewallsurf_1_zonewindow_8">
+									<gml:description>This is Zone Window 8</gml:description>
+									<gml:name>Zone Window 8</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_1_zonewindow_8</nrg3:identifier>
+									<nrg3:layeredConstruction xlink:href="#id_layered_construction_glazing_5"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85875 448700 8.879</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_1_zonewindow_8_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_78748e73-bac6-4c84-9286-4c0adf82f1ea">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85873 448700 5 85877 448700 5 85877 448700 10.757 85875 448700 12.757 85873 448700 10.757 85873 448700 5</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgOpnArea uom="m^2">27.0294</nrg3:bdgOpnArea>
+									<nrg3:bdgOpnAzimuth uom="decimal degree">180</nrg3:bdgOpnAzimuth>
+									<nrg3:bdgOpnGroundViewFactor uom="unit interval">0.5</nrg3:bdgOpnGroundViewFactor>
+									<nrg3:bdgOpnInclination uom="decimal degree">90</nrg3:bdgOpnInclination>
+									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
+								</nrg3:ZoneWindow>
+							</nrg3:zoneOpening>
+						</nrg3:ZoneWallSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_2">
+							<gml:description>This is ZoneWallSurface 2</gml:description>
+							<gml:name>ZoneWallSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85875 448710 9.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_3_polygon_4"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_ab624f83-6b4a-40f1-b140-7ee5a42e0fde">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448710 2 85870 448710 12 85875 448710 17 85880 448710 12 85880 448710 2 85870 448710 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+											<gml:interior>
+												<gml:LinearRing>
+													<gml:posList>85873 448710 5 85877 448710 5 85877 448710 10.757 85875 448710 12.757 85873 448710 10.757 85873 448710 5</gml:posList>
+												</gml:LinearRing>
+											</gml:interior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
+							<nrg3:zoneOpening>
+								<nrg3:ZoneWindow gml:id="id_zone_3_zonewallsurf_2_zonewindow_9">
+									<gml:description>This is Zone Window 9</gml:description>
+									<gml:name>Zone Window 9</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_2_zonewindow_9</nrg3:identifier>
+									<nrg3:layeredConstruction xlink:href="#id_layered_construction_glazing_5"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85875 448710 8.879</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_2_zonewindow_9_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_68780e9f-4084-419d-94c3-c00e90f88b25">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85873 448710 5 85873 448710 10.757 85875 448710 12.757 85877 448710 10.757 85877 448710 5 85873 448710 5</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgOpnArea uom="m^2">27.0294</nrg3:bdgOpnArea>
+									<nrg3:bdgOpnAzimuth uom="decimal degree">0</nrg3:bdgOpnAzimuth>
+									<nrg3:bdgOpnGroundViewFactor uom="unit interval">0.5</nrg3:bdgOpnGroundViewFactor>
+									<nrg3:bdgOpnInclination uom="decimal degree">90</nrg3:bdgOpnInclination>
+									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
+								</nrg3:ZoneWindow>
+							</nrg3:zoneOpening>
+						</nrg3:ZoneWallSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_3">
+							<gml:description>This is ZoneWallSurface 3</gml:description>
+							<gml:name>ZoneWallSurface 3</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_3</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85870 448705 7</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_1_zonewallsurf_3"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_2_zonewallsurf_3"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_2_3_zonewallsurf_3"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_3_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_3_polygon_cs1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_3_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_b2467493-b0c6-4e24-98d1-fa1ab1757d98">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448710 12 85870 448710 2 85870 448700 2 85870 448700 12 85870 448710 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+						</nrg3:ZoneWallSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneWallSurface gml:id="id_zone_3_zonewallsurf_4">
+							<gml:description>This is ZoneWallSurface 4</gml:description>
+							<gml:name>ZoneWallSurface 4</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_3_zonewallsurf_4</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85880 448705 7</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_4_zonewallsurf_6"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_4_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_3_polygon_cs2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_3_zonewallsurf_4_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_0dac9b9c-680b-4027-8cb5-2e30043ddce7">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85880 448710 12 85880 448700 12 85880 448700 2 85880 448710 2 85880 448710 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -8848,6 +9136,42 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85885 448705 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_9">
+							<gml:description>This is Waste 9</gml:description>
+							<gml:name>Waste 9</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_9</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">52.68</nrg3:amount>
+							<nrg3:year>2014</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">361.67</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:RegularTimeSeries gml:id="id_waste_regular_timeseries_9">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2014-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2015-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+								</nrg3:RegularTimeSeries>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -8928,7 +9252,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">government</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_4"/>
@@ -8961,7 +9285,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">installedFloorHeating</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-06</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-06</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-06</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -9252,6 +9576,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_4_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85885 448705 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_4_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_af3ff229-e35f-4e96-a026-49a83b4dccb9">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85890 448700 2 85880 448700 2 85880 448710 2 85890 448710 2 85890 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_4_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85885 448702.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_4_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_111e47ae-ba84-4040-8564-c9e0dafe79e7">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85890 448700 12 85890 448705 17 85880 448705 17 85880 448700 12 85890 448700 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_4_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85885 448707.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_4_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_2991ae4b-dafb-4627-b0a8-96ce71ecb4f5">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85890 448705 17 85890 448710 12 85880 448710 12 85880 448705 17 85890 448705 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_4_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -9328,52 +9772,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_4_zonewallsurf_6">
-							<gml:description>This is ZoneWallSurface 6</gml:description>
-							<gml:name>ZoneWallSurface 6</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zonewallsurf_6</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85880 448705 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_3_zonewallsurf_4"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zonewallsurf_6_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_4_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zonewallsurf_6_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_1166b21d-8996-4aa1-9220-859eff8f9c0a">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85880 448710 12 85880 448710 2 85880 448700 2 85880 448700 12 85880 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -9614,124 +10012,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_4_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_4_zonewallsurf_6">
+							<gml:description>This is ZoneWallSurface 6</gml:description>
+							<gml:name>ZoneWallSurface 6</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zonewallsurf_6</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85885 448702.5 14.5</gml:pos>
+									<gml:pos>85880 448705 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_3_zonewallsurf_4"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_4_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_4_zonewallsurf_6_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_4_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_4_zonewallsurf_6_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_111e47ae-ba84-4040-8564-c9e0dafe79e7">
+										<gml:Polygon gml:id="Polygon_UUID_1166b21d-8996-4aa1-9220-859eff8f9c0a">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85890 448700 12 85890 448705 17 85880 448705 17 85880 448700 12 85890 448700 12</gml:posList>
+													<gml:posList>85880 448710 12 85880 448710 2 85880 448700 2 85880 448700 12 85880 448710 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_4_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85885 448707.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_4_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_2991ae4b-dafb-4627-b0a8-96ce71ecb4f5">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85890 448705 17 85890 448710 12 85880 448710 12 85880 448705 17 85890 448705 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_4_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_4_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85885 448705 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_4_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_4_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_af3ff229-e35f-4e96-a026-49a83b4dccb9">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85890 448700 2 85880 448700 2 85880 448710 2 85890 448710 2 85890 448700 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -10616,6 +10940,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85905 448705 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_10">
+							<gml:description>This is Waste 10</gml:description>
+							<gml:name>Waste 10</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_10</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">50.04</nrg3:amount>
+							<nrg3:year>2015</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">394.7</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_10">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2015-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2016-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_10_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -10696,7 +11061,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:lod3Solid>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">occupantPrivateOwner</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_5"/>
@@ -10729,7 +11094,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedWindows</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-07</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-07</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-07</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -11020,6 +11385,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_5_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85905 448705 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_5_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_2678c740-bdc9-4dcb-80e8-79615fb56de5">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448700 2 85900 448700 2 85900 448710 2 85910 448710 2 85910 448700 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_5_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85905 448702.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_5_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_fb0040c8-237b-4e98-a9ad-356b6486f224">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448700 12 85910 448705 17 85900 448705 17 85900 448700 12 85910 448700 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_5_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85905 448707.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_5_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_a09d1c36-18b5-4d66-8015-26b7c5441d61">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448705 17 85910 448710 12 85900 448710 12 85900 448705 17 85910 448705 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_5_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -11096,52 +11581,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_5_zonewallsurf_5">
-							<gml:description>This is ZoneWallSurface 5</gml:description>
-							<gml:name>ZoneWallSurface 5</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zonewallsurf_5</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85910 448707.5 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_6_zonewallsurf_5"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_5_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_639151a8-9576-47d2-9c02-8ea5f8462aa9">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448710 12 85910 448705 12 85910 448705 2 85910 448710 2 85910 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -11382,124 +11821,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_5_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_5_zonewallsurf_5">
+							<gml:description>This is ZoneWallSurface 5</gml:description>
+							<gml:name>ZoneWallSurface 5</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zonewallsurf_5</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85905 448702.5 14.5</gml:pos>
+									<gml:pos>85910 448707.5 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_6_zonewallsurf_5"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_5_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_5_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_5_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_5_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_fb0040c8-237b-4e98-a9ad-356b6486f224">
+										<gml:Polygon gml:id="Polygon_UUID_639151a8-9576-47d2-9c02-8ea5f8462aa9">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85910 448700 12 85910 448705 17 85900 448705 17 85900 448700 12 85910 448700 12</gml:posList>
+													<gml:posList>85910 448710 12 85910 448705 12 85910 448705 2 85910 448710 2 85910 448710 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_5_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85905 448707.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_5_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_a09d1c36-18b5-4d66-8015-26b7c5441d61">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448705 17 85910 448710 12 85900 448710 12 85900 448705 17 85910 448705 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_5_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_5_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85905 448705 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_5_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_5_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_2678c740-bdc9-4dcb-80e8-79615fb56de5">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448700 2 85900 448700 2 85900 448710 2 85910 448710 2 85910 448700 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -11510,30 +11875,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is Building 6</gml:description>
 			<gml:name>Building 6 (Amidala's Palace)</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg3:device>
-				<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_100">
-					<gml:description>This is GenericStorageDevice 100</gml:description>
-					<gml:name>GenericStorageDevice 100</gml:name>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_11</nrg3:identifier>
-					<nrg3:referencePoint>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85915 448710 9.5</gml:pos>
-						</gml:Point>
-					</nrg3:referencePoint>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:model>GenericStorageDevice model 11</nrg3:model>
-					<nrg3:yearOfManufacture>2016</nrg3:yearOfManufacture>
-					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
-					<nrg3:installedPower uom="kW">2.3</nrg3:installedPower>
-					<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
-					<nrg3:efficiencyIndicator>eff_indic_string_11</nrg3:efficiencyIndicator>
-					<nrg3:heatDissipation uom="W/m^2">17</nrg3:heatDissipation>
-					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
-					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
-					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
-				</nrg3:GenericStorageDevice>
-			</nrg3:device>
 			<nrg3:device>
 				<nrg3:ElectricalStorageDevice gml:id="id_elect_storage_dev_11">
 					<gml:description>This is ElectricalStorageDevice 11</gml:description>
@@ -11721,6 +12062,31 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</gml:MultiSurface>
 					</nrg3:lod2MultiSurface>
 				</nrg3:GenericSolarCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_100">
+					<gml:description>This is GenericStorageDevice 100</gml:description>
+					<gml:name>GenericStorageDevice 100</gml:name>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_11</nrg3:identifier>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85915 448710 9.5</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:model>GenericStorageDevice model 11</nrg3:model>
+					<nrg3:yearOfManufacture>2016</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">2.3</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_11</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">17</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:capacity uom="MWh">2.5</nrg3:capacity>
+				</nrg3:GenericStorageDevice>
 			</nrg3:device>
 			<nrg3:device>
 				<nrg3:SolarThermalCollector gml:id="id_solar_thermal_coll_38">
@@ -12650,6 +13016,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85915 448710 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_11">
+							<gml:description>This is Waste 11</gml:description>
+							<gml:name>Waste 11</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_11</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">58.14</nrg3:amount>
+							<nrg3:year>2016</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">333.21</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_11">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2016-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2017-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_11_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -12751,7 +13158,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:occupiedBy>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">occupantPrivateOwner</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_6"/>
@@ -12784,7 +13191,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedDoors</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-08</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-08</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-08</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -13054,6 +13461,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_6_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448710 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_6_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_9a4a99a6-bb03-4e29-a5a8-44e81be8eb2d">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448705 2 85910 448715 2 85920 448715 2 85920 448705 2 85910 448705 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_6_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85912.5 448710 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_6_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_671241a4-cdc0-4728-8c14-58e40405f7ba">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448705 12 85915 448705 17 85915 448715 17 85910 448715 12 85910 448705 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_6_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85917.5 448710 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_6_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_5bd1afcd-3dff-4b7b-8fda-a38514f3b38b">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448705 17 85920 448705 12 85920 448715 12 85915 448715 17 85915 448705 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_6_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -13130,52 +13657,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_6_zonewallsurf_5">
-							<gml:description>This is ZoneWallSurface 5</gml:description>
-							<gml:name>ZoneWallSurface 5</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zonewallsurf_5</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85910 448707.5 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_5_zonewallsurf_5"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_6_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_eb57f026-d957-4901-b8fb-c53a2e9d3ea6">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448710 12 85910 448710 2 85910 448705 2 85910 448705 12 85910 448710 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -13416,30 +13897,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_6_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_6_zonewallsurf_5">
+							<gml:description>This is ZoneWallSurface 5</gml:description>
+							<gml:name>ZoneWallSurface 5</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zonewallsurf_5</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85912.5 448710 14.5</gml:pos>
+									<gml:pos>85910 448707.5 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_5_zonewallsurf_5"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_6_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_6_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_6_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_6_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_671241a4-cdc0-4728-8c14-58e40405f7ba">
+										<gml:Polygon gml:id="Polygon_UUID_eb57f026-d957-4901-b8fb-c53a2e9d3ea6">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85910 448705 12 85915 448705 17 85915 448715 17 85910 448715 12 85910 448705 12</gml:posList>
+													<gml:posList>85910 448710 12 85910 448710 2 85910 448705 2 85910 448705 12 85910 448710 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -13447,93 +13934,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
 							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_6_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85917.5 448710 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_6_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_5bd1afcd-3dff-4b7b-8fda-a38514f3b38b">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448705 17 85920 448705 12 85920 448715 12 85915 448715 17 85915 448705 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_6_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_6_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448710 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_6_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_6_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_9a4a99a6-bb03-4e29-a5a8-44e81be8eb2d">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448705 2 85910 448715 2 85920 448715 2 85920 448705 2 85910 448705 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -14659,6 +15066,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85855 448675 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_12">
+							<gml:description>This is Waste 12</gml:description>
+							<gml:name>Waste 12</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_12</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">58.82</nrg3:amount>
+							<nrg3:year>2017</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">371.27</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_12">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2017-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2018-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_12_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -14760,7 +15208,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:occupiedBy>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">occupantPrivateOwner</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_7"/>
@@ -14793,7 +15241,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">insulatedRoof</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-09</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-09</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-09</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -15063,6 +15511,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_7_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85855 448675 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_7_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_4f00de5d-6843-4d81-ba06-82705fa6b4cb">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85850 448670 2 85850 448680 2 85860 448680 2 85860 448670 2 85850 448670 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_7_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85852.5 448675 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_7_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_dcd56740-10b8-49cb-bd82-3ab5f74b4c74">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85850 448670 12 85855 448670 17 85855 448680 17 85850 448680 12 85850 448670 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_7_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85857.5 448675 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_7_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_e5e90518-4a89-468f-bb92-8a42e811a470">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85855 448670 17 85860 448670 12 85860 448680 12 85855 448680 17 85855 448670 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_7_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -15139,52 +15707,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_7_zonewallsurf_5">
-							<gml:description>This is ZoneWallSurface 5</gml:description>
-							<gml:name>ZoneWallSurface 5</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zonewallsurf_5</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85860 448677.5 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_8_zonewallsurf_5"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_7_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_a8c27406-94f8-4170-a353-4d203bf667e8">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448680 12 85860 448675 12 85860 448675 2 85860 448680 2 85860 448680 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -15425,70 +15947,36 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_7_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_7_zonewallsurf_5">
+							<gml:description>This is ZoneWallSurface 5</gml:description>
+							<gml:name>ZoneWallSurface 5</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zonewallsurf_5</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85852.5 448675 14.5</gml:pos>
+									<gml:pos>85860 448677.5 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_8_zonewallsurf_5"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_7_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_7_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_7_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_7_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_dcd56740-10b8-49cb-bd82-3ab5f74b4c74">
+										<gml:Polygon gml:id="Polygon_UUID_a8c27406-94f8-4170-a353-4d203bf667e8">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85850 448670 12 85855 448670 17 85855 448680 17 85850 448680 12 85850 448670 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_7_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85857.5 448675 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_7_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_e5e90518-4a89-468f-bb92-8a42e811a470">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85855 448670 17 85860 448670 12 85860 448680 12 85855 448680 17 85855 448670 17</gml:posList>
+													<gml:posList>85860 448680 12 85860 448675 12 85860 448675 2 85860 448680 2 85860 448680 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
@@ -15496,53 +15984,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
 							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_7_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_7_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85855 448675 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_7_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_7_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_4f00de5d-6843-4d81-ba06-82705fa6b4cb">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85850 448670 2 85850 448680 2 85860 448680 2 85860 448670 2 85850 448670 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -16439,6 +16887,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85865 448680 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_13">
+							<gml:description>This is Waste 13</gml:description>
+							<gml:name>Waste 13</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_13</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">52.82</nrg3:amount>
+							<nrg3:year>2018</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">324.97</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_13">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2018-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2019-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_13_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -16540,7 +17029,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:occupiedBy>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">occupantPrivateOwner</nrg3:ownershipType>
 					<nrg3:numberOfRooms>3</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_8"/>
@@ -16573,7 +17062,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">installedSolarPanels</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-10</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-10</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-10</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -16843,6 +17332,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_8_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448680 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_8_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_af58fc65-25f5-46cd-a226-fbde4a9915ad">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448675 2 85860 448675 2 85860 448685 2 85870 448685 2 85870 448675 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_8_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448677.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_8_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_51f2b129-4a1e-4f64-9a2f-90acd09f4c20">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448675 12 85870 448680 17 85860 448680 17 85860 448675 12 85870 448675 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_8_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85865 448682.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_8_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_2f2e6c09-ea22-416f-acc5-d2b3415a9471">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85870 448680 17 85870 448685 12 85860 448685 12 85860 448680 17 85870 448680 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_8_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
 							<gml:name>ZoneWallSurface 1</gml:name>
@@ -16919,52 +17528,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
-						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneWallSurface gml:id="id_zone_8_zonewallsurf_5">
-							<gml:description>This is ZoneWallSurface 5</gml:description>
-							<gml:name>ZoneWallSurface 5</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zonewallsurf_5</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85860 448677.5 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_7_zonewallsurf_5"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_8_polygon_cs1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_9cfc159b-01f0-43ec-b06e-eb39714ab741">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85860 448680 12 85860 448680 2 85860 448675 2 85860 448675 12 85860 448680 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
@@ -17205,124 +17768,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_8_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+						<nrg3:ZoneWallSurface gml:id="id_zone_8_zonewallsurf_5">
+							<gml:description>This is ZoneWallSurface 5</gml:description>
+							<gml:name>ZoneWallSurface 5</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zonewallsurf_5</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 							<nrg3:referencePoint>
 								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448677.5 14.5</gml:pos>
+									<gml:pos>85860 448677.5 7</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_7_zonewallsurf_5"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_8_polygon_1"/>
+								<gml:MultiSurface gml:id="id_zone_8_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_8_polygon_cs1"/>
 								</gml:MultiSurface>
 							</bldg:lod2MultiSurface>
 							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+								<gml:MultiSurface gml:id="id_zone_8_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_51f2b129-4a1e-4f64-9a2f-90acd09f4c20">
+										<gml:Polygon gml:id="Polygon_UUID_9cfc159b-01f0-43ec-b06e-eb39714ab741">
 											<gml:exterior>
 												<gml:LinearRing>
-													<gml:posList>85870 448675 12 85870 448680 17 85860 448680 17 85860 448675 12 85870 448675 12</gml:posList>
+													<gml:posList>85860 448680 12 85860 448680 2 85860 448675 2 85860 448675 12 85860 448680 12</gml:posList>
 												</gml:LinearRing>
 											</gml:exterior>
 										</gml:Polygon>
 									</gml:surfaceMember>
 								</gml:MultiSurface>
 							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_8_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448682.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_8_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_2f2e6c09-ea22-416f-acc5-d2b3415a9471">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448680 17 85870 448685 12 85860 448685 12 85860 448680 17 85870 448680 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_8_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_8_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85865 448680 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_8_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_8_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_af58fc65-25f5-46cd-a226-fbde4a9915ad">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85870 448675 2 85860 448675 2 85860 448685 2 85870 448685 2 85870 448675 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -17333,25 +17822,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:description>This is multi-part Building 9-10</gml:description>
 			<gml:name>Multi-part Building 9-10 (Jabba's Palace)</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
-			<nrg3:device>
-				<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_101">
-					<gml:description>This is GenericStorageDevice 101</gml:description>
-					<gml:name>GenericStorageDevice 101</gml:name>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_17</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:model>GenericStorageDevice model 17</nrg3:model>
-					<nrg3:yearOfManufacture>2008</nrg3:yearOfManufacture>
-					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
-					<nrg3:installedPower uom="kW">9.1</nrg3:installedPower>
-					<nrg3:nominalEfficiency uom="unit interval">0.9</nrg3:nominalEfficiency>
-					<nrg3:efficiencyIndicator>eff_indic_string_17</nrg3:efficiencyIndicator>
-					<nrg3:heatDissipation uom="W/m^2">30</nrg3:heatDissipation>
-					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
-					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
-					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
-				</nrg3:GenericStorageDevice>
-			</nrg3:device>
 			<nrg3:device>
 				<nrg3:Boiler gml:id="id_boiler_18">
 					<gml:description>This is Boiler 18</gml:description>
@@ -17414,6 +17884,26 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:batteryTechnology codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/BatteryTechnologyTypeValue.xml">lithium</nrg3:batteryTechnology>
 					<nrg3:powerCapacity uom="VAh">600</nrg3:powerCapacity>
 				</nrg3:ElectricalStorageDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_101">
+					<gml:description>This is GenericStorageDevice 101</gml:description>
+					<gml:name>GenericStorageDevice 101</gml:name>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_17</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:model>GenericStorageDevice model 17</nrg3:model>
+					<nrg3:yearOfManufacture>2008</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">9.1</nrg3:installedPower>
+					<nrg3:nominalEfficiency uom="unit interval">0.9</nrg3:nominalEfficiency>
+					<nrg3:efficiencyIndicator>eff_indic_string_17</nrg3:efficiencyIndicator>
+					<nrg3:heatDissipation uom="W/m^2">30</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:capacity uom="MWh">2.5</nrg3:capacity>
+				</nrg3:GenericStorageDevice>
 			</nrg3:device>
 			<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_9-10</nrg3:identifier>
 			<nrg3:utilityNetworkConnection>
@@ -17482,30 +17972,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingPart 9</gml:description>
 					<gml:name>BuildingPart 9 (Jabba's dungeon)</gml:name>
 					<core:creationDate>2024-09-25</core:creationDate>
-					<nrg3:device>
-						<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_102">
-							<gml:description>This is GenericStorageDevice 102</gml:description>
-							<gml:name>GenericStorageDevice 102</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_23</nrg3:identifier>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85885 448680 9.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<nrg3:model>GenericStorageDevice model 23</nrg3:model>
-							<nrg3:yearOfManufacture>1999</nrg3:yearOfManufacture>
-							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
-							<nrg3:installedPower uom="kW">3.5</nrg3:installedPower>
-							<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
-							<nrg3:efficiencyIndicator>eff_indic_string_23</nrg3:efficiencyIndicator>
-							<nrg3:heatDissipation uom="W/m^2">13</nrg3:heatDissipation>
-							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
-							<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
-							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
-						</nrg3:GenericStorageDevice>
-					</nrg3:device>
 					<nrg3:device>
 						<nrg3:ElectricalStorageDevice gml:id="id_elect_storage_dev_23">
 							<gml:description>This is ElectricalStorageDevice 23</gml:description>
@@ -17635,6 +18101,31 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</gml:MultiSurface>
 							</nrg3:lod2MultiSurface>
 						</nrg3:GenericSolarCollector>
+					</nrg3:device>
+					<nrg3:device>
+						<nrg3:GenericStorageDevice gml:id="id_gen_storage_dev_102">
+							<gml:description>This is GenericStorageDevice 102</gml:description>
+							<gml:name>GenericStorageDevice 102</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_electrl_storage_dev_23</nrg3:identifier>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85885 448680 9.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<nrg3:model>GenericStorageDevice model 23</nrg3:model>
+							<nrg3:yearOfManufacture>1999</nrg3:yearOfManufacture>
+							<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+							<nrg3:installedPower uom="kW">3.5</nrg3:installedPower>
+							<nrg3:nominalEfficiency uom="unit interval">0.8</nrg3:nominalEfficiency>
+							<nrg3:efficiencyIndicator>eff_indic_string_23</nrg3:efficiencyIndicator>
+							<nrg3:heatDissipation uom="W/m^2">13</nrg3:heatDissipation>
+							<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.2</nrg3:heatDissipationConvectiveFraction>
+							<nrg3:heatDissipationLatentFraction uom="unit interval">0.3</nrg3:heatDissipationLatentFraction>
+							<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+							<nrg3:capacity uom="MWh">2.5</nrg3:capacity>
+						</nrg3:GenericStorageDevice>
 					</nrg3:device>
 					<nrg3:device>
 						<nrg3:PhotovoltaicThermalCollector gml:id="id_pv_thermal_coll_59">
@@ -18339,6 +18830,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<gml:pos>85885 448680 9.5</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:resource>
+								<nrg3:Waste gml:id="id_waste_14">
+									<gml:description>This is Waste 14</gml:description>
+									<gml:name>Waste 14</gml:name>
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_14</nrg3:identifier>
+									<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+									<nrg3:status>actual</nrg3:status>
+									<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+									<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+									<nrg3:amount uom="kg/a">59.74</nrg3:amount>
+									<nrg3:year>2019</nrg3:year>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+									<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+									<nrg3:expense uom="Euro/a">301.13</nrg3:expense>
+									<nrg3:timeDependentExpense>
+										<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_14">
+											<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+											<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+											<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+											<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+											<nrg3:source>Data provided by HMS</nrg3:source>
+											<nrg3:beginTimeStamp>2019-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+											<nrg3:endTimeStamp>2020-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+											<nrg3:uom uom="Euro"/>
+											<nrg3:fileURI>/waste_14_time_series.csv</nrg3:fileURI>
+											<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+											<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+											<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+											<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+											<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+										</nrg3:MonthlyTimeSeriesFile>
+									</nrg3:timeDependentExpense>
+									<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+									<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+									<nrg3:isDangerous>false</nrg3:isDangerous>
+									<nrg3:isRecyclable>true</nrg3:isRecyclable>
+								</nrg3:Waste>
+							</nrg3:resource>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:area>
@@ -18440,7 +18972,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</nrg3:occupiedBy>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 							<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-							<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+							<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 							<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">unknown</nrg3:ownershipType>
 							<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
 							<nrg3:address xlink:href="#id_address_9"/>
@@ -18471,7 +19003,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 									<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedWindows</nrg3:type>
 									<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-									<nrg3:refurbishmentStartDate>2020-02-18</nrg3:refurbishmentStartDate>
+									<nrg3:refurbishmentBeginDate>2020-02-18</nrg3:refurbishmentBeginDate>
 									<nrg3:refurbishmentEndDate>2020-08-18</nrg3:refurbishmentEndDate>
 								</nrg3:RefurbishmentMeasure>
 							</nrg3:refurbishmentMeasure>
@@ -18743,6 +19275,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 							<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 							<nrg3:zoneBoundary>
+								<nrg3:ZoneGroundSurface gml:id="id_zone_9_zonegroundsurf_1">
+									<gml:description>This is ZoneGroundSurface 1</gml:description>
+									<gml:name>ZoneGroundSurface 1</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zonegroundsurf_1</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85885 448680 2</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_3"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_8a409fdb-73cc-479a-bf20-7b44aee2424b">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85890 448675 2 85880 448675 2 85880 448685 2 85890 448685 2 85890 448675 2</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneGroundSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
+								<nrg3:ZoneRoofSurface gml:id="id_zone_9_zoneroofsurf_1">
+									<gml:description>This is ZoneRoofSurface 1</gml:description>
+									<gml:name>ZoneRoofSurface 1</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zoneroofsurf_1</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85885 448677.5 14.5</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_1"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_00e67ccf-0da7-4b59-9c7d-bdd2b8d7995e">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85890 448675 12 85890 448680 17 85880 448680 17 85880 448675 12 85890 448675 12</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneRoofSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
+								<nrg3:ZoneRoofSurface gml:id="id_zone_9_zoneroofsurf_2">
+									<gml:description>This is ZoneRoofSurface 2</gml:description>
+									<gml:name>ZoneRoofSurface 2</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zoneroofsurf_2</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85885 448682.5 14.5</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_2"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_86637b83-7766-4ab0-8f81-c31750bdfd4b">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85890 448680 17 85890 448685 12 85880 448685 12 85880 448680 17 85890 448680 17</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneRoofSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
 								<nrg3:ZoneWallSurface gml:id="id_zone_9_zonewallsurf_1">
 									<gml:description>This is ZoneWallSurface 1</gml:description>
 									<gml:name>ZoneWallSurface 1</gml:name>
@@ -18819,52 +19471,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 											<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 										</nrg3:ZoneWindow>
 									</nrg3:zoneOpening>
-								</nrg3:ZoneWallSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneWallSurface gml:id="id_zone_9_zonewallsurf_5">
-									<gml:description>This is ZoneWallSurface 5</gml:description>
-									<gml:name>ZoneWallSurface 5</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zonewallsurf_5</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85890 448677.5 8.25</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:relatedTo>
-										<nrg3:CityObjectRelation>
-											<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-											<nrg3:relatedTo xlink:href="#id_zone_10_zonewallsurf_5"/>
-										</nrg3:CityObjectRelation>
-									</nrg3:relatedTo>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_cs1"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_e9e8c9f6-272a-4a88-aa0d-169eca4c1328">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85890 448680 12 85890 448677.5 14.5 85890 448675 12 85890 448675 2 85890 448680 2 85890 448680 12</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 							<nrg3:zoneBoundary>
@@ -19105,124 +19711,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 							<nrg3:zoneBoundary>
-								<nrg3:ZoneRoofSurface gml:id="id_zone_9_zoneroofsurf_1">
-									<gml:description>This is ZoneRoofSurface 1</gml:description>
-									<gml:name>ZoneRoofSurface 1</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zoneroofsurf_1</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+								<nrg3:ZoneWallSurface gml:id="id_zone_9_zonewallsurf_5">
+									<gml:description>This is ZoneWallSurface 5</gml:description>
+									<gml:name>ZoneWallSurface 5</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zonewallsurf_5</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 									<nrg3:referencePoint>
 										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85885 448677.5 14.5</gml:pos>
+											<gml:pos>85890 448677.5 8.25</gml:pos>
 										</gml:Point>
 									</nrg3:referencePoint>
+									<nrg3:relatedTo>
+										<nrg3:CityObjectRelation>
+											<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+											<nrg3:relatedTo xlink:href="#id_zone_10_zonewallsurf_5"/>
+										</nrg3:CityObjectRelation>
+									</nrg3:relatedTo>
 									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_1"/>
+										<gml:MultiSurface gml:id="id_zone_9_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_cs1"/>
 										</gml:MultiSurface>
 									</bldg:lod2MultiSurface>
 									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+										<gml:MultiSurface gml:id="id_zone_9_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_00e67ccf-0da7-4b59-9c7d-bdd2b8d7995e">
+												<gml:Polygon gml:id="Polygon_UUID_e9e8c9f6-272a-4a88-aa0d-169eca4c1328">
 													<gml:exterior>
 														<gml:LinearRing>
-															<gml:posList>85890 448675 12 85890 448680 17 85880 448680 17 85880 448675 12 85890 448675 12</gml:posList>
+															<gml:posList>85890 448680 12 85890 448677.5 14.5 85890 448675 12 85890 448675 2 85890 448680 2 85890 448680 12</gml:posList>
 														</gml:LinearRing>
 													</gml:exterior>
 												</gml:Polygon>
 											</gml:surfaceMember>
 										</gml:MultiSurface>
 									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneRoofSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneRoofSurface gml:id="id_zone_9_zoneroofsurf_2">
-									<gml:description>This is ZoneRoofSurface 2</gml:description>
-									<gml:name>ZoneRoofSurface 2</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zoneroofsurf_2</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85885 448682.5 14.5</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_2"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_86637b83-7766-4ab0-8f81-c31750bdfd4b">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85890 448680 17 85890 448685 12 85880 448685 12 85880 448680 17 85890 448680 17</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneRoofSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneGroundSurface gml:id="id_zone_9_zonegroundsurf_1">
-									<gml:description>This is ZoneGroundSurface 1</gml:description>
-									<gml:name>ZoneGroundSurface 1</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_9_zonegroundsurf_1</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85885 448680 2</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_9_polygon_3"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_9_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_8a409fdb-73cc-479a-bf20-7b44aee2424b">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85890 448675 2 85880 448675 2 85880 448685 2 85890 448685 2 85890 448675 2</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">90</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneGroundSurface>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 						</nrg3:Zone>
 					</nrg3:zone>
@@ -19994,6 +20526,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<gml:pos>85895 448675 9.5</gml:pos>
 								</gml:Point>
 							</nrg3:referencePoint>
+							<nrg3:resource>
+								<nrg3:Waste gml:id="id_waste_15">
+									<gml:description>This is Waste 15</gml:description>
+									<gml:name>Waste 15</gml:name>
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_15</nrg3:identifier>
+									<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+									<nrg3:status>actual</nrg3:status>
+									<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+									<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+									<nrg3:amount uom="kg/a">54.67</nrg3:amount>
+									<nrg3:year>2020</nrg3:year>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+									<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+									<nrg3:expense uom="Euro/a">318.1</nrg3:expense>
+									<nrg3:timeDependentExpense>
+										<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_15">
+											<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+											<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+											<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+											<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+											<nrg3:source>Data provided by HMS</nrg3:source>
+											<nrg3:beginTimeStamp>2020-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+											<nrg3:endTimeStamp>2021-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+											<nrg3:uom uom="Euro"/>
+											<nrg3:fileURI>/waste_15_time_series.csv</nrg3:fileURI>
+											<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+											<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+											<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+											<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+											<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+										</nrg3:MonthlyTimeSeriesFile>
+									</nrg3:timeDependentExpense>
+									<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+									<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+									<nrg3:isDangerous>false</nrg3:isDangerous>
+									<nrg3:isRecyclable>true</nrg3:isRecyclable>
+								</nrg3:Waste>
+							</nrg3:resource>
 							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:area>
@@ -20095,7 +20668,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</nrg3:occupiedBy>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 							<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-							<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+							<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 							<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">unknown</nrg3:ownershipType>
 							<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
 							<nrg3:address xlink:href="#id_address_10"/>
@@ -20126,7 +20699,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 									<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedDoors</nrg3:type>
 									<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-									<nrg3:refurbishmentStartDate>2020-02-19</nrg3:refurbishmentStartDate>
+									<nrg3:refurbishmentBeginDate>2020-02-19</nrg3:refurbishmentBeginDate>
 									<nrg3:refurbishmentEndDate>2020-08-19</nrg3:refurbishmentEndDate>
 								</nrg3:RefurbishmentMeasure>
 							</nrg3:refurbishmentMeasure>
@@ -20398,6 +20971,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 							<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 							<nrg3:zoneBoundary>
+								<nrg3:ZoneGroundSurface gml:id="id_zone_10_zonegroundsurf_1">
+									<gml:description>This is ZoneGroundSurface 1</gml:description>
+									<gml:name>ZoneGroundSurface 1</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zonegroundsurf_1</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85895 448675 2</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_3"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_c1671c17-774b-414b-be39-f510bfbc31c4">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85900 448670 2 85890 448670 2 85890 448680 2 85900 448680 2 85900 448670 2</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneGroundSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
+								<nrg3:ZoneRoofSurface gml:id="id_zone_10_zoneroofsurf_1">
+									<gml:description>This is ZoneRoofSurface 1</gml:description>
+									<gml:name>ZoneRoofSurface 1</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zoneroofsurf_1</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85895 448672.5 14.5</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_1"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_c1c0b625-20b8-4299-a422-a22bbec40fee">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85900 448670 12 85900 448675 17 85890 448675 17 85890 448670 12 85900 448670 12</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneRoofSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
+								<nrg3:ZoneRoofSurface gml:id="id_zone_10_zoneroofsurf_2">
+									<gml:description>This is ZoneRoofSurface 2</gml:description>
+									<gml:name>ZoneRoofSurface 2</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zoneroofsurf_2</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+									<nrg3:referencePoint>
+										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:pos>85895 448677.5 14.5</gml:pos>
+										</gml:Point>
+									</nrg3:referencePoint>
+									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+									<bldg:lod2MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_2"/>
+										</gml:MultiSurface>
+									</bldg:lod2MultiSurface>
+									<bldg:lod3MultiSurface>
+										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember>
+												<gml:Polygon gml:id="Polygon_UUID_078ce242-66ef-488d-9259-8bc3ebdaee52">
+													<gml:exterior>
+														<gml:LinearRing>
+															<gml:posList>85900 448675 17 85900 448680 12 85890 448680 12 85890 448675 17 85900 448675 17</gml:posList>
+														</gml:LinearRing>
+													</gml:exterior>
+												</gml:Polygon>
+											</gml:surfaceMember>
+										</gml:MultiSurface>
+									</bldg:lod3MultiSurface>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneRoofSurface>
+							</nrg3:zoneBoundary>
+							<nrg3:zoneBoundary>
 								<nrg3:ZoneWallSurface gml:id="id_zone_10_zonewallsurf_1">
 									<gml:description>This is ZoneWallSurface 1</gml:description>
 									<gml:name>ZoneWallSurface 1</gml:name>
@@ -20474,52 +21167,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 											<nrg3:bdgOpnSkyViewFactor uom="unit interval">0.6</nrg3:bdgOpnSkyViewFactor>
 										</nrg3:ZoneWindow>
 									</nrg3:zoneOpening>
-								</nrg3:ZoneWallSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneWallSurface gml:id="id_zone_10_zonewallsurf_5">
-									<gml:description>This is ZoneWallSurface 5</gml:description>
-									<gml:name>ZoneWallSurface 5</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zonewallsurf_5</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85890 448677.5 8.25</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:relatedTo>
-										<nrg3:CityObjectRelation>
-											<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-											<nrg3:relatedTo xlink:href="#id_zone_9_zonewallsurf_5"/>
-										</nrg3:CityObjectRelation>
-									</nrg3:relatedTo>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_cs1"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_cfda710c-460f-4257-8bf1-54f9d56b4100">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85890 448680 2 85890 448675 2 85890 448675 12 85890 448677.5 14.5 85890 448680 12 85890 448680 2</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 							<nrg3:zoneBoundary>
@@ -20760,124 +21407,50 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 							<nrg3:zoneBoundary>
-								<nrg3:ZoneRoofSurface gml:id="id_zone_10_zoneroofsurf_1">
-									<gml:description>This is ZoneRoofSurface 1</gml:description>
-									<gml:name>ZoneRoofSurface 1</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zoneroofsurf_1</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+								<nrg3:ZoneWallSurface gml:id="id_zone_10_zonewallsurf_5">
+									<gml:description>This is ZoneWallSurface 5</gml:description>
+									<gml:name>ZoneWallSurface 5</gml:name>
+									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zonewallsurf_5</nrg3:identifier>
+									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_wall_2"/>
 									<nrg3:referencePoint>
 										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85895 448672.5 14.5</gml:pos>
+											<gml:pos>85890 448677.5 8.25</gml:pos>
 										</gml:Point>
 									</nrg3:referencePoint>
+									<nrg3:relatedTo>
+										<nrg3:CityObjectRelation>
+											<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+											<nrg3:relatedTo xlink:href="#id_zone_9_zonewallsurf_5"/>
+										</nrg3:CityObjectRelation>
+									</nrg3:relatedTo>
 									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_1"/>
+										<gml:MultiSurface gml:id="id_zone_10_zonewallsurf_5_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_cs1"/>
 										</gml:MultiSurface>
 									</bldg:lod2MultiSurface>
 									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+										<gml:MultiSurface gml:id="id_zone_10_zonewallsurf_5_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
 											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_c1c0b625-20b8-4299-a422-a22bbec40fee">
+												<gml:Polygon gml:id="Polygon_UUID_cfda710c-460f-4257-8bf1-54f9d56b4100">
 													<gml:exterior>
 														<gml:LinearRing>
-															<gml:posList>85900 448670 12 85900 448675 17 85890 448675 17 85890 448670 12 85900 448670 12</gml:posList>
+															<gml:posList>85890 448680 2 85890 448675 2 85890 448675 12 85890 448677.5 14.5 85890 448680 12 85890 448680 2</gml:posList>
 														</gml:LinearRing>
 													</gml:exterior>
 												</gml:Polygon>
 											</gml:surfaceMember>
 										</gml:MultiSurface>
 									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneRoofSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneRoofSurface gml:id="id_zone_10_zoneroofsurf_2">
-									<gml:description>This is ZoneRoofSurface 2</gml:description>
-									<gml:name>ZoneRoofSurface 2</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zoneroofsurf_2</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85895 448677.5 14.5</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_2"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_078ce242-66ef-488d-9259-8bc3ebdaee52">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85900 448675 17 85900 448680 12 85890 448680 12 85890 448675 17 85900 448675 17</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneRoofSurface>
-							</nrg3:zoneBoundary>
-							<nrg3:zoneBoundary>
-								<nrg3:ZoneGroundSurface gml:id="id_zone_10_zonegroundsurf_1">
-									<gml:description>This is ZoneGroundSurface 1</gml:description>
-									<gml:name>ZoneGroundSurface 1</gml:name>
-									<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_10_zonegroundsurf_1</nrg3:identifier>
-									<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-									<nrg3:referencePoint>
-										<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:pos>85895 448675 2</gml:pos>
-										</gml:Point>
-									</nrg3:referencePoint>
-									<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-									<bldg:lod2MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember xlink:href="#id_buildingpart_10_polygon_3"/>
-										</gml:MultiSurface>
-									</bldg:lod2MultiSurface>
-									<bldg:lod3MultiSurface>
-										<gml:MultiSurface gml:id="id_zone_10_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-											<gml:surfaceMember>
-												<gml:Polygon gml:id="Polygon_UUID_c1671c17-774b-414b-be39-f510bfbc31c4">
-													<gml:exterior>
-														<gml:LinearRing>
-															<gml:posList>85900 448670 2 85890 448670 2 85890 448680 2 85900 448680 2 85900 448670 2</gml:posList>
-														</gml:LinearRing>
-													</gml:exterior>
-												</gml:Polygon>
-											</gml:surfaceMember>
-										</gml:MultiSurface>
-									</bldg:lod3MultiSurface>
-									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+									<nrg3:bdgBdrySurfAzimuth uom="decimal degree">270</nrg3:bdgBdrySurfAzimuth>
+									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
+									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-								</nrg3:ZoneGroundSurface>
+									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
+								</nrg3:ZoneWallSurface>
 							</nrg3:zoneBoundary>
 						</nrg3:Zone>
 					</nrg3:zone>
@@ -20964,7 +21537,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">installedPVPanels</nrg3:type>
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-					<nrg3:refurbishmentStartDate>2020-02-11</nrg3:refurbishmentStartDate>
+					<nrg3:refurbishmentBeginDate>2020-02-11</nrg3:refurbishmentBeginDate>
 					<nrg3:refurbishmentEndDate>2020-08-11</nrg3:refurbishmentEndDate>
 				</nrg3:RefurbishmentMeasure>
 			</nrg3:refurbishmentMeasure>
@@ -21781,6 +22354,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingUnit 11_2_1</gml:description>
 					<gml:name>BuildingUnit 11_2_1</gml:name>
 					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_unit_11_2_1</nrg3:identifier>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_16">
+							<gml:description>This is Waste 16</gml:description>
+							<gml:name>Waste 16</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_16</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">59.11</nrg3:amount>
+							<nrg3:year>2021</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">396.11</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_16">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2021-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2022-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_16_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -22055,7 +22669,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">installedFloorHeating</nrg3:type>
 							<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-							<nrg3:refurbishmentStartDate>2020-02-15</nrg3:refurbishmentStartDate>
+							<nrg3:refurbishmentBeginDate>2020-02-15</nrg3:refurbishmentBeginDate>
 							<nrg3:refurbishmentEndDate>2020-08-15</nrg3:refurbishmentEndDate>
 						</nrg3:RefurbishmentMeasure>
 					</nrg3:refurbishmentMeasure>
@@ -22066,6 +22680,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingUnit 11_2_2</gml:description>
 					<gml:name>BuildingUnit 11_2_2</gml:name>
 					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_unit_11_2_2</nrg3:identifier>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_17">
+							<gml:description>This is Waste 17</gml:description>
+							<gml:name>Waste 17</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_17</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">53.61</nrg3:amount>
+							<nrg3:year>2022</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">306.94</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_17">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2022-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2023-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_17_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -22298,6 +22953,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingUnit 11_2_3</gml:description>
 					<gml:name>BuildingUnit 11_2_3</gml:name>
 					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_unit_11_2_3</nrg3:identifier>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_18">
+							<gml:description>This is Waste 18</gml:description>
+							<gml:name>Waste 18</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_18</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">50.66</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">356.65999999999997</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_18">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2023-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2024-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_18_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -22530,6 +23226,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<gml:description>This is BuildingUnit 11_2_4</gml:description>
 					<gml:name>BuildingUnit 11_2_4</gml:name>
 					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_unit_11_2_4</nrg3:identifier>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_19">
+							<gml:description>This is Waste 19</gml:description>
+							<gml:name>Waste 19</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_19</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">53.15</nrg3:amount>
+							<nrg3:year>2024</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">378.67</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_19">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2024-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2025-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_19_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -22767,6 +23504,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85915 448675 12</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_20">
+							<gml:description>This is Waste 20</gml:description>
+							<gml:name>Waste 20</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_20</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">57.78</nrg3:amount>
+							<nrg3:year>2025</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">356.08</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_20">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2025-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2026-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_20_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -22867,8 +23645,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:Occupants>
 					</nrg3:occupiedBy>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
-					<nrg3:floorNumberFrom>2</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">propertyManagementCompany</nrg3:ownershipType>
 					<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
 					<nrg3:energyPerformanceCertificate>
@@ -22898,7 +23676,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureTypeValue.xml">changedBoiler</nrg3:type>
 							<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RefurbishmentMeasureStatusValue.xml">estimated</nrg3:status>
-							<nrg3:refurbishmentStartDate>2020-02-16</nrg3:refurbishmentStartDate>
+							<nrg3:refurbishmentBeginDate>2020-02-16</nrg3:refurbishmentBeginDate>
 							<nrg3:refurbishmentEndDate>2020-08-16</nrg3:refurbishmentEndDate>
 						</nrg3:RefurbishmentMeasure>
 					</nrg3:refurbishmentMeasure>
@@ -23141,9 +23919,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
 					<nrg3:coincidesWithLod2Hull>false</nrg3:coincidesWithLod2Hull>
 					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
-					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
-					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
-					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneUndergroundWallSurface gml:id="id_zone_11_1_zoneundergroundwallsurf_1">
 							<gml:description>This is ZoneUndergroundWallSurface 1</gml:description>
@@ -23345,56 +24120,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 						</nrg3:ZoneUndergroundWallSurface>
 					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_11_1_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_1_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448675 -1</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_8dd01f3c-2283-4c8f-aa8a-732a50a40f1d">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448670 -1 85910 448680 -1 85920 448680 -1 85920 448670 -1 85910 448670 -1</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_61567df0-22bc-4675-b8a9-53d743eec952">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448670 -1 85910 448680 -1 85920 448680 -1 85920 448670 -1 85910 448670 -1</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
 						<nrg3:ZoneBasementCeilingSurface gml:id="id_zone_11_1_zonebasementceilingsurf_1">
 							<gml:description>This is ZoneBasementCeilingSurface 1</gml:description>
 							<gml:name>ZoneBasementCeilingSurface 1</gml:name>
@@ -23449,6 +24174,56 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfThickness uom="m">0.4</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneBasementCeilingSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_11_1_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_1_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448675 -1</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_1_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_8dd01f3c-2283-4c8f-aa8a-732a50a40f1d">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448670 -1 85910 448680 -1 85920 448680 -1 85920 448670 -1 85910 448670 -1</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_1_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_61567df0-22bc-4675-b8a9-53d743eec952">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448670 -1 85910 448680 -1 85920 448680 -1 85920 448670 -1 85910 448670 -1</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -23687,6 +24462,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:isHeated>true</nrg3:isHeated>
 					<nrg3:isMechanicallyVentilated>true</nrg3:isMechanicallyVentilated>
 					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
 					<nrg3:numberOfBuildingUnits>4</nrg3:numberOfBuildingUnits>
 					<nrg3:coincidesWithLod2Hull>false</nrg3:coincidesWithLod2Hull>
 					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
@@ -23697,6 +24476,118 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneBasementCeilingSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1">
+							<gml:description>This is ZoneBasementCeilingSurface 1</gml:description>
+							<gml:name>ZoneBasementCeilingSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_2_zonebasementceilingsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_reverse_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448675 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_11_1_zonebasementceilingsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_8dd01f3c-0883-4c8f-aa8a-732a50a40f1d">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448670 2 85910 448680 2 85920 448680 2 85920 448670 2 85910 448670 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_61567df0-b5bc-4675-b8a9-53d743eec952">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448670 2 85910 448670 2 85910 448675 2 85910 448680 2 85915 448680 2 85920 448680 2 85920 448675 2 85920 448670 2 85915 448670 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneBasementCeilingSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1">
+							<gml:description>This is ZoneIntermediateFloorSurface 1</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_2_zoneintermediatefloorsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448675 7</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_11_3_zoneintermediatefloorsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_d61aa68d-d944-4d6d-9e10-70ecf9ef91e3">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448680 7 85910 448680 7 85910 448675 7 85910 448670 7 85915 448670 7 85920 448670 7 85920 448675 7 85920 448680 7 85915 448680 7</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_9ec8b35b-e8c7-48d2-900a-2db5a268814c">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448680 7 85910 448680 7 85910 448675 7 85910 448670 7 85915 448670 7 85920 448670 7 85920 448675 7 85920 448680 7 85915 448680 7</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_11_2_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -24049,118 +24940,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</nrg3:zoneOpening>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneBasementCeilingSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1">
-							<gml:description>This is ZoneBasementCeilingSurface 1</gml:description>
-							<gml:name>ZoneBasementCeilingSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_2_zonebasementceilingsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_reverse_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448675 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_11_1_zonebasementceilingsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_8dd01f3c-0883-4c8f-aa8a-732a50a40f1d">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448670 2 85910 448680 2 85920 448680 2 85920 448670 2 85910 448670 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_2_zonebasementceilingsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_61567df0-b5bc-4675-b8a9-53d743eec952">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448670 2 85910 448670 2 85910 448675 2 85910 448680 2 85915 448680 2 85920 448680 2 85920 448675 2 85920 448670 2 85915 448670 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneBasementCeilingSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1">
-							<gml:description>This is ZoneIntermediateFloorSurface 1</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_2_zoneintermediatefloorsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448675 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_11_3_zoneintermediatefloorsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_d61aa68d-d944-4d6d-9e10-70ecf9ef91e3">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448680 7 85910 448680 7 85910 448675 7 85910 448670 7 85915 448670 7 85920 448670 7 85920 448675 7 85920 448680 7 85915 448680 7</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_2_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_9ec8b35b-e8c7-48d2-900a-2db5a268814c">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448680 7 85910 448680 7 85910 448675 7 85910 448670 7 85915 448670 7 85920 448670 7 85920 448675 7 85920 448680 7 85915 448680 7</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
-					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
 			<nrg3:zone>
@@ -24416,6 +25195,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:isHeated>true</nrg3:isHeated>
 					<nrg3:isMechanicallyVentilated>true</nrg3:isMechanicallyVentilated>
 					<nrg3:infiltrationRate uom="1/h">0.3</nrg3:infiltrationRate>
+					<nrg3:internalHeatGains uom="W/m^2">100</nrg3:internalHeatGains>
+					<nrg3:internalHeatGainsConvectiveFraction uom="unit interval">0.3</nrg3:internalHeatGainsConvectiveFraction>
+					<nrg3:internalHeatGainsLatentFraction uom="unit interval">0.2</nrg3:internalHeatGainsLatentFraction>
+					<nrg3:internalHeatGainsRadiantFraction uom="unit interval">0.5</nrg3:internalHeatGainsRadiantFraction>
 					<nrg3:numberOfBuildingUnits>1</nrg3:numberOfBuildingUnits>
 					<nrg3:coincidesWithLod2Hull>false</nrg3:coincidesWithLod2Hull>
 					<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
@@ -24423,6 +25206,162 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1">
+							<gml:description>This is ZoneIntermediateFloorSurface 1</gml:description>
+							<gml:name>ZoneIntermediateFloorSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneintermediatefloorsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_reverse_layered_construction_iwall_4"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448675 7</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:relatedTo>
+								<nrg3:CityObjectRelation>
+									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
+									<nrg3:relatedTo xlink:href="#id_zone_11_2_zoneintermediatefloorsurf_1"/>
+								</nrg3:CityObjectRelation>
+							</nrg3:relatedTo>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_53793465-8390-4c25-bfb2-ef2ae04b497a">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448670 7 85910 448670 7 85910 448675 7 85910 448680 7 85915 448680 7 85920 448680 7 85920 448675 7 85920 448670 7 85915 448670 7</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_7e6c2589-544e-4582-b07e-de51670a69f0">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85915 448670 7 85910 448670 7 85910 448675 7 85910 448680 7 85915 448680 7 85920 448680 7 85920 448675 7 85920 448670 7 85915 448670 7</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneIntermediateFloorSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_11_3_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448672.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_3ff93a29-6e1e-4891-8220-907e83537dd1">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448674 16 85910 448670 12 85913.333 448670 12 85920 448670 12 85920 448675 17 85910 448675 17 85910 448674 16</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_27293208-de43-4e33-8ae5-2caa7508087f">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85910 448674 16 85910 448670 12 85913.333 448670 12 85920 448670 12 85920 448675 17 85910 448675 17 85910 448674 16</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_11_3_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448677.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_f304ea85-ba43-4966-ba37-0fcbef85248c">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85916.667 448680 12 85910 448680 12 85910 448675 17 85920 448675 17 85920 448676 16 85920 448680 12 85916.667 448680 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_1759fb24-f269-4a2e-a843-9906ffb1df60">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85916.667 448680 12 85910 448680 12 85910 448675 17 85920 448675 17 85920 448676 16 85920 448680 12 85916.667 448680 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_11_3_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -24774,162 +25713,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
 						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_11_3_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448672.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_3ff93a29-6e1e-4891-8220-907e83537dd1">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448674 16 85910 448670 12 85913.333 448670 12 85920 448670 12 85920 448675 17 85910 448675 17 85910 448674 16</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_27293208-de43-4e33-8ae5-2caa7508087f">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85910 448674 16 85910 448670 12 85913.333 448670 12 85920 448670 12 85920 448675 17 85910 448675 17 85910 448674 16</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_11_3_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448677.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_f304ea85-ba43-4966-ba37-0fcbef85248c">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85916.667 448680 12 85910 448680 12 85910 448675 17 85920 448675 17 85920 448676 16 85920 448680 12 85916.667 448680 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_1759fb24-f269-4a2e-a843-9906ffb1df60">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85916.667 448680 12 85910 448680 12 85910 448675 17 85920 448675 17 85920 448676 16 85920 448680 12 85916.667 448680 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.4</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneIntermediateFloorSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1">
-							<gml:description>This is ZoneIntermediateFloorSurface 1</gml:description>
-							<gml:name>ZoneIntermediateFloorSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_11_3_zoneintermediatefloorsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_reverse_layered_construction_iwall_4"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448675 7</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:relatedTo>
-								<nrg3:CityObjectRelation>
-									<nrg3:relationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/RelationTypeValue.xml">adjacent</nrg3:relationType>
-									<nrg3:relatedTo xlink:href="#id_zone_11_2_zoneintermediatefloorsurf_1"/>
-								</nrg3:CityObjectRelation>
-							</nrg3:relatedTo>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_53793465-8390-4c25-bfb2-ef2ae04b497a">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448670 7 85910 448670 7 85910 448675 7 85910 448680 7 85915 448680 7 85920 448680 7 85920 448675 7 85920 448670 7 85915 448670 7</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_11_3_zoneintermediatefloorsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_7e6c2589-544e-4582-b07e-de51670a69f0">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85915 448670 7 85910 448670 7 85910 448675 7 85910 448680 7 85915 448680 7 85920 448680 7 85920 448675 7 85920 448670 7 85915 448670 7</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneIntermediateFloorSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -25761,6 +26544,47 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:pos>85915 448690 9.5</gml:pos>
 						</gml:Point>
 					</nrg3:referencePoint>
+					<nrg3:resource>
+						<nrg3:Waste gml:id="id_waste_21">
+							<gml:description>This is Waste 21</gml:description>
+							<gml:name>Waste 21</gml:name>
+							<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_waste_21</nrg3:identifier>
+							<nrg3:validFrom>2026-02-20T21:30:17+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-20T21:30:17+01:00</nrg3:validTo>
+							<nrg3:status>actual</nrg3:status>
+							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DeviceOperationTypeValue.xml">produces</nrg3:operationType>
+							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kg/a">51.59</nrg3:amount>
+							<nrg3:year>2026</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measured</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro/a">302.45</nrg3:expense>
+							<nrg3:timeDependentExpense>
+								<nrg3:MonthlyTimeSeriesFile gml:id="id_waste_regular_timeseries_21">
+									<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+									<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+									<nrg3:source>Data provided by HMS</nrg3:source>
+									<nrg3:beginTimeStamp>2026-01-01T00:00:00+01:00</nrg3:beginTimeStamp>
+									<nrg3:endTimeStamp>2027-01-01T00:00:00+01:00</nrg3:endTimeStamp>
+									<nrg3:uom uom="Euro"/>
+									<nrg3:fileURI>/waste_21_time_series.csv</nrg3:fileURI>
+									<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
+									<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+									<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+									<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+									<nrg3:valueColumnNumber>2</nrg3:valueColumnNumber>
+								</nrg3:MonthlyTimeSeriesFile>
+							</nrg3:timeDependentExpense>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteTypeValue.xml">otherOrCombination</nrg3:type>
+							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WasteEndUseValue.xml">incineration</nrg3:endUse>
+							<nrg3:isDangerous>false</nrg3:isDangerous>
+							<nrg3:isRecyclable>true</nrg3:isRecyclable>
+						</nrg3:Waste>
+					</nrg3:resource>
 					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:area>
@@ -25862,7 +26686,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					</nrg3:occupiedBy>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
-					<nrg3:floorNumberTo>3</nrg3:floorNumberTo>
+					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
 					<nrg3:ownershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/OwnershipTypeValue.xml">propertyManagementCompany</nrg3:ownershipType>
 					<nrg3:numberOfRooms>5</nrg3:numberOfRooms>
 					<nrg3:address xlink:href="#id_address_12"/>
@@ -26133,6 +26957,126 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:heatingSchedule xlink:href="#id_dual_value_sched_1"/>
 					<nrg3:coolingSchedule xlink:href="#id_time_series_sched_1"/>
 					<nrg3:mechanicalVentilationSchedule xlink:href="#id_composite_sched_1"/>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneGroundSurface gml:id="id_zone_12_zonegroundsurf_1">
+							<gml:description>This is ZoneGroundSurface 1</gml:description>
+							<gml:name>ZoneGroundSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zonegroundsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448690 2</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_12_polygon_3"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_e9f149b3-9407-444a-ad4f-ab6bff3be2ac">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85920 448685 2 85910 448685 2 85910 448695 2 85920 448695 2 85920 448685 2</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneGroundSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_12_zoneroofsurf_1">
+							<gml:description>This is ZoneRoofSurface 1</gml:description>
+							<gml:name>ZoneRoofSurface 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zoneroofsurf_1</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448687.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_12_polygon_1"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_e7dab2a0-c4de-46f8-acb2-e166a4850bc7">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85920 448685 12 85920 448690 17 85910 448690 17 85910 448685 12 85920 448685 12</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
+					<nrg3:zoneBoundary>
+						<nrg3:ZoneRoofSurface gml:id="id_zone_12_zoneroofsurf_2">
+							<gml:description>This is ZoneRoofSurface 2</gml:description>
+							<gml:name>ZoneRoofSurface 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zoneroofsurf_2</nrg3:identifier>
+							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
+							<nrg3:referencePoint>
+								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:pos>85915 448692.5 14.5</gml:pos>
+								</gml:Point>
+							</nrg3:referencePoint>
+							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+							<bldg:lod2MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember xlink:href="#id_building_12_polygon_2"/>
+								</gml:MultiSurface>
+							</bldg:lod2MultiSurface>
+							<bldg:lod3MultiSurface>
+								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+									<gml:surfaceMember>
+										<gml:Polygon gml:id="Polygon_UUID_f202a922-5240-4500-beee-4bfe5e146e9f">
+											<gml:exterior>
+												<gml:LinearRing>
+													<gml:posList>85920 448690 17 85920 448695 12 85910 448695 12 85910 448690 17 85920 448690 17</gml:posList>
+												</gml:LinearRing>
+											</gml:exterior>
+										</gml:Polygon>
+									</gml:surfaceMember>
+								</gml:MultiSurface>
+							</bldg:lod3MultiSurface>
+							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
+							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
+							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
+							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
+							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
+							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
+						</nrg3:ZoneRoofSurface>
+					</nrg3:zoneBoundary>
 					<nrg3:zoneBoundary>
 						<nrg3:ZoneWallSurface gml:id="id_zone_12_zonewallsurf_1">
 							<gml:description>This is ZoneWallSurface 1</gml:description>
@@ -26448,126 +27392,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:ZoneWindow>
 							</nrg3:zoneOpening>
 						</nrg3:ZoneWallSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_12_zoneroofsurf_1">
-							<gml:description>This is ZoneRoofSurface 1</gml:description>
-							<gml:name>ZoneRoofSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zoneroofsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448687.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_12_polygon_1"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_e7dab2a0-c4de-46f8-acb2-e166a4850bc7">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85920 448685 12 85920 448690 17 85910 448690 17 85910 448685 12 85920 448685 12</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">180</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneRoofSurface gml:id="id_zone_12_zoneroofsurf_2">
-							<gml:description>This is ZoneRoofSurface 2</gml:description>
-							<gml:name>ZoneRoofSurface 2</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zoneroofsurf_2</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_roof_3"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448692.5 14.5</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_2_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_12_polygon_2"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zoneroofsurf_2_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_f202a922-5240-4500-beee-4bfe5e146e9f">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85920 448690 17 85920 448695 12 85910 448695 12 85910 448690 17 85920 448690 17</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">0</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneRoofSurface>
-					</nrg3:zoneBoundary>
-					<nrg3:zoneBoundary>
-						<nrg3:ZoneGroundSurface gml:id="id_zone_12_zonegroundsurf_1">
-							<gml:description>This is ZoneGroundSurface 1</gml:description>
-							<gml:name>ZoneGroundSurface 1</gml:name>
-							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_12_zonegroundsurf_1</nrg3:identifier>
-							<nrg3:libraryLayeredConstruction xlink:href="#id_layered_construction_ground_1"/>
-							<nrg3:referencePoint>
-								<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:pos>85915 448690 2</gml:pos>
-								</gml:Point>
-							</nrg3:referencePoint>
-							<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-							<bldg:lod2MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zonegroundsurf_1_lod2_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember xlink:href="#id_building_12_polygon_3"/>
-								</gml:MultiSurface>
-							</bldg:lod2MultiSurface>
-							<bldg:lod3MultiSurface>
-								<gml:MultiSurface gml:id="id_zone_12_zonegroundsurf_1_lod3_geom" srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-									<gml:surfaceMember>
-										<gml:Polygon gml:id="Polygon_UUID_e9f149b3-9407-444a-ad4f-ab6bff3be2ac">
-											<gml:exterior>
-												<gml:LinearRing>
-													<gml:posList>85920 448685 2 85910 448685 2 85910 448695 2 85920 448695 2 85920 448685 2</gml:posList>
-												</gml:LinearRing>
-											</gml:exterior>
-										</gml:Polygon>
-									</gml:surfaceMember>
-								</gml:MultiSurface>
-							</bldg:lod3MultiSurface>
-							<nrg3:bdgBdrySurfAzimuth uom="decimal degree">-1</nrg3:bdgBdrySurfAzimuth>
-							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
-							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
-							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
-							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
-							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
-						</nrg3:ZoneGroundSurface>
 					</nrg3:zoneBoundary>
 				</nrg3:Zone>
 			</nrg3:zone>
@@ -31408,13 +32232,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:status>actual</nrg3:status>
 					<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-					<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-					<nrg3:year>2023</nrg3:year>
-					<nrg3:amount uom="m3/a">1200</nrg3:amount>
-					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 					<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-					<nrg3:costsMoney uom="Euro">28</nrg3:costsMoney>
-					<nrg3:yieldsMoney uom="Euro">13</nrg3:yieldsMoney>
+					<nrg3:amount uom="m3/a">1200</nrg3:amount>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:expense uom="Euro">28</nrg3:expense>
+					<nrg3:revenue uom="Euro">13</nrg3:revenue>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 					<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 				</nrg3:Water>
@@ -31442,13 +32266,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">15</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">15</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">15</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">15</nrg3:expense>
+							<nrg3:revenue uom="Euro">0</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -32899,13 +33723,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>potential</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">11</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">16</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">1</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">11</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">16</nrg3:expense>
+							<nrg3:revenue uom="Euro">1</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -32970,13 +33794,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>unknown</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">15</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">17</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">15</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">17</nrg3:expense>
+							<nrg3:revenue uom="Euro">2</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33041,13 +33865,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">13</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">18</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">3</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">13</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">18</nrg3:expense>
+							<nrg3:revenue uom="Euro">3</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33112,13 +33936,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>potential</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">17</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">19</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">4</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">17</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">19</nrg3:expense>
+							<nrg3:revenue uom="Euro">4</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33183,13 +34007,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>unknown</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">19</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">20</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">5</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">19</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">20</nrg3:expense>
+							<nrg3:revenue uom="Euro">5</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33254,13 +34078,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">33</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">21</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">6</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">33</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">21</nrg3:expense>
+							<nrg3:revenue uom="Euro">6</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33325,13 +34149,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>potential</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">21</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">22</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">7</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">21</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">22</nrg3:expense>
+							<nrg3:revenue uom="Euro">7</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33396,13 +34220,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>unknown</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">33</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">23</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">8</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">33</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">23</nrg3:expense>
+							<nrg3:revenue uom="Euro">8</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33467,13 +34291,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">57</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">24</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">9</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">57</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">24</nrg3:expense>
+							<nrg3:revenue uom="Euro">9</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33538,13 +34362,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>potential</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">78</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">25</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">10</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">78</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">25</nrg3:expense>
+							<nrg3:revenue uom="Euro">10</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33609,13 +34433,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>unknown</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">34</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">26</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">11</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">34</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">26</nrg3:expense>
+							<nrg3:revenue uom="Euro">11</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -33680,13 +34504,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">34</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">27</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">12</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">34</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">27</nrg3:expense>
+							<nrg3:revenue uom="Euro">12</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">watering</nrg3:endUse>
 						</nrg3:Water>
@@ -35218,6 +36042,45 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<nrg3:source>TABULA</nrg3:source>
 			<nrg3:author>Giorgio Agugiaro</nrg3:author>
 			<nrg3:libraryMember>
+				<nrg3:Liquid gml:id="id_liquid_1">
+					<gml:description>This is Liquid 1</gml:description>
+					<gml:name>Liquid 1</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/LiquidTypeValue.xml">water</nrg3:type>
+					<nrg3:thermalConductivity uom="W/(m.K)">0.6</nrg3:thermalConductivity>
+					<nrg3:density uom="g/ml">1</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg.°C)">4184</nrg3:specificHeatCapacity>
+					<nrg3:viscosity uom="mPAs">1.002</nrg3:viscosity>
+				</nrg3:Liquid>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:Liquid gml:id="id_liquid_2">
+					<gml:description>This is Liquid 2</gml:description>
+					<gml:name>Liquid 2</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/LiquidTypeValue.xml">wine</nrg3:type>
+					<nrg3:thermalConductivity uom="W/(m.K)">0.48</nrg3:thermalConductivity>
+					<nrg3:density uom="g/ml">0.991</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg.°C)">4500</nrg3:specificHeatCapacity>
+					<nrg3:viscosity uom="mPAs">1.4</nrg3:viscosity>
+				</nrg3:Liquid>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:Liquid gml:id="id_liquid_3">
+					<gml:description>This is Liquid 3</gml:description>
+					<gml:name>Liquid 3</gml:name>
+					<nrg3:creationDate>2026-02-20T21:30:17+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-20T21:30:17+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/LiquidTypeValue.xml">oil</nrg3:type>
+					<nrg3:thermalConductivity uom="W/(m.K)">0.14</nrg3:thermalConductivity>
+					<nrg3:density uom="g/ml">0.8</nrg3:density>
+					<nrg3:specificHeatCapacity uom="J/(kg.K)">2000</nrg3:specificHeatCapacity>
+					<nrg3:viscosity uom="mPAs">150</nrg3:viscosity>
+				</nrg3:Liquid>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
 				<nrg3:Gas gml:id="id_gas_1">
 					<gml:description>This is Gas 1</gml:description>
 					<gml:name>Gas 1</gml:name>
@@ -35924,363 +36787,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<nrg3:source>Coruscant Schedule Library</nrg3:source>
 			<nrg3:author>Giorgio Agugiaro</nrg3:author>
 			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_1">
-					<gml:description>This is TimeSeriesSchedule 1 for a year, connected to a timeseries of 1 yearly value</gml:description>
-					<gml:name>TimeSeriesSchedule 1</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_2">
-							<gml:description>This is DefaultValuesTimeSeries 2</gml:description>
-							<gml:name>DefaultValuesTimeSeries 2</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
-							<nrg3:source>source_18</nrg3:source>
-							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="year">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">100</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_2">
-					<gml:description>This is TimeSeriesSchedule 2 for a year, connected to a timeseries of 12 monthly values</gml:description>
-					<gml:name>TimeSeriesSchedule 2</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesMonthlyTimeSeries gml:id="id_typical_values_monthly_time_series_2">
-							<gml:description>This is a TypicalValuesMonthlyTimeSeries 2</gml:description>
-							<gml:name>TypicalValuesMonthlyTimeSeries 2</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
-							<nrg3:source>source_19</nrg3:source>
-							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg3:valuesList>
-						</nrg3:TypicalValuesMonthlyTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_3">
-					<gml:description>This is TimeSeriesSchedule 3 for a year, connected to a timeseries of 52 weekly values</gml:description>
-					<gml:name>TimeSeriesSchedule 3</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_4">
-							<gml:description>This is DefaultValuesTimeSeries 4</gml:description>
-							<gml:name>DefaultValuesTimeSeries 4</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
-							<nrg3:source>source_20</nrg3:source>
-							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_4">
-					<gml:description>This is TimeSeriesSchedule 4 for a year, connected to a timeseries of 365 daily values</gml:description>
-					<gml:name>TimeSeriesSchedule 4</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_5">
-							<gml:description>This is DefaultValuesTimeSeries 5</gml:description>
-							<gml:name>DefaultValuesTimeSeries 5</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>continuous</nrg3:interpolationType>
-							<nrg3:source>source_21</nrg3:source>
-							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_5">
-					<gml:description>This is TimeSeriesSchedule 5 for a day, connected to a timeseries of 24 hourly values</gml:description>
-					<gml:name>TimeSeriesSchedule 5</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_6">
-							<gml:description>This is DefaultValuesTimeSeries 6</gml:description>
-							<gml:name>DefaultValuesTimeSeries 6</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
-							<nrg3:source>source_22</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_6">
-					<gml:description>This is TimeSeriesSchedule 6</gml:description>
-					<gml:name>TimeSeriesSchedule 6</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_7">
-							<gml:description>This is DefaultValuesTimeSeries 7</gml:description>
-							<gml:name>DefaultValuesTimeSeries 7</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
-							<nrg3:source>source_23</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_7">
-					<gml:description>This is TimeSeriesSchedule 7</gml:description>
-					<gml:name>TimeSeriesSchedule 7</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekendDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_8">
-							<gml:description>This is DefaultValuesTimeSeries 8</gml:description>
-							<gml:name>DefaultValuesTimeSeries 8</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
-							<nrg3:source>source_24</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_8">
-					<gml:description>This is TimeSeriesSchedule 8</gml:description>
-					<gml:name>TimeSeriesSchedule 8</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_9">
-							<gml:description>This is DefaultValuesTimeSeries 9</gml:description>
-							<gml:name>DefaultValuesTimeSeries 9</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>continuous</nrg3:interpolationType>
-							<nrg3:source>source_25</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_9">
-					<gml:description>This is TimeSeriesSchedule 9</gml:description>
-					<gml:name>TimeSeriesSchedule 9</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_10">
-							<gml:description>This is DefaultValuesTimeSeries 10</gml:description>
-							<gml:name>DefaultValuesTimeSeries 10</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
-							<nrg3:source>source_26</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">21 22 23 24 25 26 27 28 29 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_10">
-					<gml:description>This is TimeSeriesSchedule 10</gml:description>
-					<gml:name>TimeSeriesSchedule 10</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_11">
-							<gml:description>This is DefaultValuesTimeSeries 11</gml:description>
-							<gml:name>DefaultValuesTimeSeries 11</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
-							<nrg3:source>source_27</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">31 32 33 34 35 36 37 38 39 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_11">
-					<gml:description>This is TimeSeriesSchedule 11</gml:description>
-					<gml:name>TimeSeriesSchedule 11</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_12">
-							<gml:description>This is DefaultValuesTimeSeries 12</gml:description>
-							<gml:name>DefaultValuesTimeSeries 12</gml:name>
-							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:acquisitionMethod>
-							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
-							<nrg3:source>source_28</nrg3:source>
-							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">41 42 43 44 45 46 47 48 49 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424</nrg3:valuesList>
-						</nrg3:TypicalValuesRegularTimeSeries>
-					</nrg3:timeDependentValues>
-				</nrg3:TimeSeriesSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_1">
-					<gml:description>This is a ConstantValueSchedule 1</gml:description>
-					<gml:name>ConstantValueSchedule 1</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:value uom="uom">7.9</nrg3:value>
-				</nrg3:ConstantValueSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_3">
-					<gml:description>This is a ConstantValueSchedule 3</gml:description>
-					<gml:name>ConstantValueSchedule 3</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:value uom="uom">5.9</nrg3:value>
-				</nrg3:ConstantValueSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_4">
-					<gml:description>This is a ConstantValueSchedule 4</gml:description>
-					<gml:name>ConstantValueSchedule 4</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:value uom="uom">1.8</nrg3:value>
-				</nrg3:ConstantValueSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_5">
-					<gml:description>This is a ConstantValueSchedule 5</gml:description>
-					<gml:name>ConstantValueSchedule 5</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
-					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-					<nrg3:value uom="uom">8.2</nrg3:value>
-				</nrg3:ConstantValueSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
-				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_6">
-					<gml:description>This is a ConstantValueSchedule 6</gml:description>
-					<gml:name>ConstantValueSchedule 6</gml:name>
-					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
-					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
-					<nrg3:value uom="uom">9.4</nrg3:value>
-				</nrg3:ConstantValueSchedule>
-			</nrg3:libraryMember>
-			<nrg3:libraryMember>
 				<nrg3:CompositeSchedule gml:id="id_composite_sched_1">
 					<gml:description>This is CompositeSchedule 1, for 1 typical week, composed of 5 typical days and 2 weekend days</gml:description>
 					<gml:name>CompositeSchedule 1</gml:name>
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">week</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
 					<nrg3:scheduleComponent>
 						<nrg3:ScheduleComponent gml:id="id_sched_component_1">
@@ -36315,7 +36828,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">week</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
 					<nrg3:scheduleComponent>
 						<nrg3:ScheduleComponent gml:id="id_sched_component_3">
@@ -36374,7 +36887,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 					<nrg3:scheduleComponent>
 						<nrg3:ScheduleComponent gml:id="id_sched_component_7">
@@ -36397,7 +36910,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 					<nrg3:scheduleComponent>
 						<nrg3:ScheduleComponent gml:id="id_sched_component_8">
@@ -36414,17 +36927,85 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				</nrg3:CompositeSchedule>
 			</nrg3:libraryMember>
 			<nrg3:libraryMember>
+				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_1">
+					<gml:description>This is a ConstantValueSchedule 1</gml:description>
+					<gml:name>ConstantValueSchedule 1</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:value uom="uom">7.9</nrg3:value>
+				</nrg3:ConstantValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_3">
+					<gml:description>This is a ConstantValueSchedule 3</gml:description>
+					<gml:name>ConstantValueSchedule 3</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:value uom="uom">5.9</nrg3:value>
+				</nrg3:ConstantValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_4">
+					<gml:description>This is a ConstantValueSchedule 4</gml:description>
+					<gml:name>ConstantValueSchedule 4</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:value uom="uom">1.8</nrg3:value>
+				</nrg3:ConstantValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_5">
+					<gml:description>This is a ConstantValueSchedule 5</gml:description>
+					<gml:name>ConstantValueSchedule 5</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:value uom="uom">8.2</nrg3:value>
+				</nrg3:ConstantValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:ConstantValueSchedule gml:id="id_constant_value_sched_6">
+					<gml:description>This is a ConstantValueSchedule 6</gml:description>
+					<gml:name>ConstantValueSchedule 6</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:value uom="uom">9.4</nrg3:value>
+				</nrg3:ConstantValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
 				<nrg3:DualValueSchedule gml:id="id_dual_value_sched_1">
 					<gml:description>This is DualValueSchedule 1 for a Monday</gml:description>
 					<gml:name>DualValueSchedule 1</gml:name>
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">monday</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
 					<nrg3:idleValue uom="degrees Celsius">12</nrg3:idleValue>
 					<nrg3:usageValue uom="degrees Celsius">19</nrg3:usageValue>
-					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>07:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>21:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36435,11 +37016,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
 					<nrg3:idleValue uom="degrees Celsius">12</nrg3:idleValue>
 					<nrg3:usageValue uom="degrees Celsius">19</nrg3:usageValue>
-					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>07:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>14:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36450,11 +37031,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
 					<nrg3:idleValue uom="degrees Celsius">35</nrg3:idleValue>
 					<nrg3:usageValue uom="degrees Celsius">25</nrg3:usageValue>
-					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>07:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>21:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36465,11 +37046,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekendDay</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
 					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
 					<nrg3:idleValue uom="degrees Celsius">35</nrg3:idleValue>
 					<nrg3:usageValue uom="degrees Celsius">25</nrg3:usageValue>
-					<nrg3:startUsageTime>07:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>07:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>14:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36480,12 +37061,12 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">week</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
 					<nrg3:temporalExtent unit="day">7</nrg3:temporalExtent>
 					<nrg3:idleValue uom="unit interval">0</nrg3:idleValue>
 					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
-					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>09:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36496,13 +37077,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">august</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>8</nrg3:startMonth>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>8</nrg3:beginMonth>
 					<nrg3:temporalExtent unit="day">31</nrg3:temporalExtent>
 					<nrg3:idleValue uom="unit interval">0.5</nrg3:idleValue>
 					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
-					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>09:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36513,13 +37094,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">spring</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>22</nrg3:startDay>
-					<nrg3:startMonth>3</nrg3:startMonth>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>22</nrg3:beginDay>
+					<nrg3:beginMonth>3</nrg3:beginMonth>
 					<nrg3:temporalExtent unit="day">122</nrg3:temporalExtent>
 					<nrg3:idleValue uom="unit interval">0</nrg3:idleValue>
 					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
-					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>09:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
 			</nrg3:libraryMember>
@@ -36530,15 +37111,297 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
-					<nrg3:startTime>00:00:00</nrg3:startTime>
-					<nrg3:startDay>1</nrg3:startDay>
-					<nrg3:startMonth>1</nrg3:startMonth>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
 					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 					<nrg3:idleValue uom="unit interval">0.5</nrg3:idleValue>
 					<nrg3:usageValue uom="unit interval">1</nrg3:usageValue>
-					<nrg3:startUsageTime>09:00:00</nrg3:startUsageTime>
+					<nrg3:beginUsageTime>09:00:00</nrg3:beginUsageTime>
 					<nrg3:endUsageTime>18:00:00</nrg3:endUsageTime>
 				</nrg3:DualValueSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_1">
+					<gml:description>This is TimeSeriesSchedule 1 for a year, connected to a timeseries of 1 yearly value</gml:description>
+					<gml:name>TimeSeriesSchedule 1</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_2">
+							<gml:description>This is DefaultValuesTimeSeries 2</gml:description>
+							<gml:name>DefaultValuesTimeSeries 2</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_18</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="year">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">100</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_2">
+					<gml:description>This is TimeSeriesSchedule 2 for a year, connected to a timeseries of 12 monthly values</gml:description>
+					<gml:name>TimeSeriesSchedule 2</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesMonthlyTimeSeries gml:id="id_typical_values_monthly_time_series_2">
+							<gml:description>This is a TypicalValuesMonthlyTimeSeries 2</gml:description>
+							<gml:name>TypicalValuesMonthlyTimeSeries 2</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_19</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg3:valuesList>
+						</nrg3:TypicalValuesMonthlyTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_3">
+					<gml:description>This is TimeSeriesSchedule 3 for a year, connected to a timeseries of 52 weekly values</gml:description>
+					<gml:name>TimeSeriesSchedule 3</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_4">
+							<gml:description>This is DefaultValuesTimeSeries 4</gml:description>
+							<gml:name>DefaultValuesTimeSeries 4</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_20</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_4">
+					<gml:description>This is TimeSeriesSchedule 4 for a year, connected to a timeseries of 365 daily values</gml:description>
+					<gml:name>TimeSeriesSchedule 4</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:beginDay>1</nrg3:beginDay>
+					<nrg3:beginMonth>1</nrg3:beginMonth>
+					<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_5">
+							<gml:description>This is DefaultValuesTimeSeries 5</gml:description>
+							<gml:name>DefaultValuesTimeSeries 5</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>source_21</nrg3:source>
+							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167 168 169 170 171 172 173 174 175 176 177 178 179 180 181 182 183 184 185 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203 204 205 206 207 208 209 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224 225 226 227 228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 285 286 287 288 289 290 291 292 293 294 295 296 297 298 299 300 301 302 303 304 305 306 307 308 309 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324 325 326 327 328 329 330 331 332 333 334 335 336 337 338 339 340 341 342 343 344 345 346 347 348 349 350 351 352 353 354 355 356 357 358 359 360 361 362 363 364 365</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_5">
+					<gml:description>This is TimeSeriesSchedule 5 for a day, connected to a timeseries of 24 hourly values</gml:description>
+					<gml:name>TimeSeriesSchedule 5</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">year</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_6">
+							<gml:description>This is DefaultValuesTimeSeries 6</gml:description>
+							<gml:name>DefaultValuesTimeSeries 6</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_22</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_6">
+					<gml:description>This is TimeSeriesSchedule 6</gml:description>
+					<gml:name>TimeSeriesSchedule 6</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_7">
+							<gml:description>This is DefaultValuesTimeSeries 7</gml:description>
+							<gml:name>DefaultValuesTimeSeries 7</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_23</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_7">
+					<gml:description>This is TimeSeriesSchedule 7</gml:description>
+					<gml:name>TimeSeriesSchedule 7</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">weekendDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_8">
+							<gml:description>This is DefaultValuesTimeSeries 8</gml:description>
+							<gml:name>DefaultValuesTimeSeries 8</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_24</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_8">
+					<gml:description>This is TimeSeriesSchedule 8</gml:description>
+					<gml:name>TimeSeriesSchedule 8</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_9">
+							<gml:description>This is DefaultValuesTimeSeries 9</gml:description>
+							<gml:name>DefaultValuesTimeSeries 9</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>continuous</nrg3:interpolationType>
+							<nrg3:source>source_25</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">11 12 13 14 15 16 17 18 19 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_9">
+					<gml:description>This is TimeSeriesSchedule 9</gml:description>
+					<gml:name>TimeSeriesSchedule 9</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_10">
+							<gml:description>This is DefaultValuesTimeSeries 10</gml:description>
+							<gml:name>DefaultValuesTimeSeries 10</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>discontinuous</nrg3:interpolationType>
+							<nrg3:source>source_26</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">21 22 23 24 25 26 27 28 29 210 211 212 213 214 215 216 217 218 219 220 221 222 223 224</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_10">
+					<gml:description>This is TimeSeriesSchedule 10</gml:description>
+					<gml:name>TimeSeriesSchedule 10</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_11">
+							<gml:description>This is DefaultValuesTimeSeries 11</gml:description>
+							<gml:name>DefaultValuesTimeSeries 11</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">estimation</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:source>source_27</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">31 32 33 34 35 36 37 38 39 310 311 312 313 314 315 316 317 318 319 320 321 322 323 324</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
+			</nrg3:libraryMember>
+			<nrg3:libraryMember>
+				<nrg3:TimeSeriesSchedule gml:id="id_time_series_sched_11">
+					<gml:description>This is TimeSeriesSchedule 11</gml:description>
+					<gml:name>TimeSeriesSchedule 11</gml:name>
+					<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+					<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ScheduleTypeValue.xml">typicalDay</nrg3:type>
+					<nrg3:beginTime>00:00:00</nrg3:beginTime>
+					<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+					<nrg3:timeDependentValues>
+						<nrg3:TypicalValuesRegularTimeSeries gml:id="id_default_values_time_series_12">
+							<gml:description>This is DefaultValuesTimeSeries 12</gml:description>
+							<gml:name>DefaultValuesTimeSeries 12</gml:name>
+							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
+							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">unknown</nrg3:dataAcquisitionMethod>
+							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
+							<nrg3:source>source_28</nrg3:source>
+							<nrg3:temporalExtent unit="day">1</nrg3:temporalExtent>
+							<nrg3:timeInterval unit="hour">1</nrg3:timeInterval>
+							<nrg3:valuesList uom="unit">41 42 43 44 45 46 47 48 49 410 411 412 413 414 415 416 417 418 419 420 421 422 423 424</nrg3:valuesList>
+						</nrg3:TypicalValuesRegularTimeSeries>
+					</nrg3:timeDependentValues>
+				</nrg3:TimeSeriesSchedule>
 			</nrg3:libraryMember>
 		</nrg3:ScheduleLibrary>
 	</core:cityObjectMember>
@@ -36563,14 +37426,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:status>actual</nrg3:status>
 					<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-					<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-					<nrg3:year>2023</nrg3:year>
-					<nrg3:amount uom="kWh/a">1000</nrg3:amount>
-					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 					<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+					<nrg3:amount uom="kWh/a">1000</nrg3:amount>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:expense uom="Euro">50</nrg3:expense>
+					<nrg3:revenue uom="Euro">0</nrg3:revenue>
 					<nrg3:co2Equivalent uom="kg/a">12</nrg3:co2Equivalent>
-					<nrg3:costsMoney uom="Euro">50</nrg3:costsMoney>
-					<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyTypeValue.xml">primary</nrg3:type>
 					<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyEndUseValue.xml">electricalAppliances</nrg3:endUse>
 					<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
@@ -36589,13 +37452,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:status>actual</nrg3:status>
 					<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-					<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-					<nrg3:year>2023</nrg3:year>
-					<nrg3:amount uom="m3/a">33</nrg3:amount>
-					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 					<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-					<nrg3:costsMoney uom="Euro">21</nrg3:costsMoney>
-					<nrg3:yieldsMoney uom="Euro">6</nrg3:yieldsMoney>
+					<nrg3:amount uom="m3/a">33</nrg3:amount>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:expense uom="Euro">21</nrg3:expense>
+					<nrg3:revenue uom="Euro">6</nrg3:revenue>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 					<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">washing</nrg3:endUse>
 				</nrg3:Water>
@@ -36946,14 +37809,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="kWh/a">50</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kWh/a">50</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">56</nrg3:expense>
+							<nrg3:revenue uom="Euro">2</nrg3:revenue>
 							<nrg3:co2Equivalent uom="kg/a">1</nrg3:co2Equivalent>
-							<nrg3:costsMoney uom="Euro">56</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyTypeValue.xml">primary</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyEndUseValue.xml">heating</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
@@ -36972,14 +37835,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="kWh/a">200</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+							<nrg3:amount uom="kWh/a">200</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">12</nrg3:expense>
+							<nrg3:revenue uom="Euro">5</nrg3:revenue>
 							<nrg3:co2Equivalent uom="kg/a">5</nrg3:co2Equivalent>
-							<nrg3:costsMoney uom="Euro">12</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">5</nrg3:yieldsMoney>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyTypeValue.xml">primary</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyEndUseValue.xml">cooking</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
@@ -37013,14 +37876,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 									<nrg3:status>actual</nrg3:status>
 									<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-									<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-									<nrg3:year>2023</nrg3:year>
-									<nrg3:amount uom="kWh/a">3200</nrg3:amount>
-									<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 									<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+									<nrg3:amount uom="kWh/a">3200</nrg3:amount>
+									<nrg3:year>2023</nrg3:year>
+									<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+									<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+									<nrg3:expense uom="Euro">112</nrg3:expense>
+									<nrg3:revenue uom="Euro">53</nrg3:revenue>
 									<nrg3:co2Equivalent uom="kg/a">45</nrg3:co2Equivalent>
-									<nrg3:costsMoney uom="Euro">112</nrg3:costsMoney>
-									<nrg3:yieldsMoney uom="Euro">53</nrg3:yieldsMoney>
 									<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyTypeValue.xml">primary</nrg3:type>
 									<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyEndUseValue.xml">cooling</nrg3:endUse>
 									<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
@@ -37184,13 +38047,13 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 							<nrg3:status>actual</nrg3:status>
 							<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-							<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:amountType>
-							<nrg3:year>2023</nrg3:year>
-							<nrg3:amount uom="m3/a">12</nrg3:amount>
-							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 							<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
-							<nrg3:costsMoney uom="Euro">11</nrg3:costsMoney>
-							<nrg3:yieldsMoney uom="Euro">2</nrg3:yieldsMoney>
+							<nrg3:amount uom="m3/a">12</nrg3:amount>
+							<nrg3:year>2023</nrg3:year>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">calibratedSimulation</nrg3:dataAcquisitionMethod>
+							<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+							<nrg3:expense uom="Euro">11</nrg3:expense>
+							<nrg3:revenue uom="Euro">2</nrg3:revenue>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterTypeValue.xml">drinkWater</nrg3:type>
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WaterEndUseValue.xml">washing</nrg3:endUse>
 						</nrg3:Water>
@@ -37722,32 +38585,28 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:status>actual</nrg3:status>
 					<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-					<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:amountType>
-					<nrg3:year>2023</nrg3:year>
-					<nrg3:amount uom="kWh/a">100</nrg3:amount>
-					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 					<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+					<nrg3:amount uom="kWh/a">100</nrg3:amount>
+					<nrg3:year>2023</nrg3:year>
+					<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:expense uom="Euro">50</nrg3:expense>
+					<nrg3:revenue uom="Euro">0</nrg3:revenue>
 					<nrg3:co2Equivalent uom="kg/a">12</nrg3:co2Equivalent>
-					<nrg3:costsMoney uom="Euro">50</nrg3:costsMoney>
-					<nrg3:yieldsMoney uom="Euro">0</nrg3:yieldsMoney>
 					<nrg3:timeDependentAmount>
 						<nrg3:RegularTimeSeriesFile gml:id="id_regular_time_series_file_2">
 							<gml:description>This is a RegularTimeSeriesFile 2</gml:description>
 							<gml:name>RegularTimeSeriesFile 2</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_2</nrg3:source>
+							<nrg3:beginTimeStamp>2011-01-01T00:00:00</nrg3:beginTimeStamp>
+							<nrg3:endTimeStamp>2012-01-01T00:00:00</nrg3:endTimeStamp>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
 							<nrg3:uom uom="kWh/(m2*day)"/>
 							<nrg3:fileURI>//giorgio/results_irradiation.csv</nrg3:fileURI>
-							<nrg3:temporalExtent>
-								<gml:TimePeriod>
-									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
-									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
-								</gml:TimePeriod>
-							</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
 							<nrg3:numberOfHeaderLines>10</nrg3:numberOfHeaderLines>
 							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
 							<nrg3:recordSeparator>;</nrg3:recordSeparator>
@@ -37777,15 +38636,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>MonthlyTimeSeries 7</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_1</nrg3:source>
-							<nrg3:temporalExtent>
-								<gml:TimePeriod>
-									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
-									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
-								</gml:TimePeriod>
-							</nrg3:temporalExtent>
+							<nrg3:beginTimeStamp>2011-01-01T00:00:00</nrg3:beginTimeStamp>
+							<nrg3:endTimeStamp>2012-01-01T00:00:00</nrg3:endTimeStamp>
 							<nrg3:valuesList uom="Degrees Celsius">5 6 7 10 15 18 19 20 18 10 2 -1</nrg3:valuesList>
 						</nrg3:MonthlyTimeSeries>
 					</nrg3:timeDependentValues>
@@ -37806,10 +38661,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>TypicalValuesMonthlyTimeSeries 8</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_4</nrg3:source>
-							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 							<nrg3:valuesList uom="Scale">0.5 0.6 0.7 0.8 0.9 1.0 1.0 0.9 0.8 0.7 0.6 0.5</nrg3:valuesList>
 						</nrg3:TypicalValuesMonthlyTimeSeries>
@@ -37860,14 +38715,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
 					<nrg3:status>actual</nrg3:status>
 					<nrg3:operationType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ResourceOperationTypeValue.xml">demands</nrg3:operationType>
-					<nrg3:amountType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:amountType>
-					<nrg3:year>2024</nrg3:year>
-					<nrg3:amount uom="kWh/a">60</nrg3:amount>
-					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
 					<nrg3:referencePeriod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/ReferencePeriodValue.xml">year</nrg3:referencePeriod>
+					<nrg3:amount uom="kWh/a">60</nrg3:amount>
+					<nrg3:year>2024</nrg3:year>
+					<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
+					<nrg3:isAmountNormalized>false</nrg3:isAmountNormalized>
+					<nrg3:expense uom="Dollar">20</nrg3:expense>
+					<nrg3:revenue uom="Dollar">0</nrg3:revenue>
 					<nrg3:co2Equivalent uom="kg/a">6</nrg3:co2Equivalent>
-					<nrg3:costsMoney uom="Dollar">20</nrg3:costsMoney>
-					<nrg3:yieldsMoney uom="Dollar">0</nrg3:yieldsMoney>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyTypeValue.xml">primary</nrg3:type>
 					<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyEndUseValue.xml">electricalAppliances</nrg3:endUse>
 					<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
@@ -37890,15 +38745,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>MonthlyTimeSeries 9</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_3</nrg3:source>
-							<nrg3:temporalExtent>
-								<gml:TimePeriod>
-									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
-									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
-								</gml:TimePeriod>
-							</nrg3:temporalExtent>
+							<nrg3:beginTimeStamp>2011-01-01T00:00:00</nrg3:beginTimeStamp>
+							<nrg3:endTimeStamp>2012-01-01T00:00:00</nrg3:endTimeStamp>
 							<nrg3:valuesList uom="unit">111 112 113 114 115 116 117 118 119 110 111 112</nrg3:valuesList>
 						</nrg3:MonthlyTimeSeries>
 					</nrg3:timeDependentValues>
@@ -37914,18 +38765,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/WeatherDataTypeValue.xml">average</nrg3:valueType>
 					<nrg3:yearlyValue uom="Scale">0.7</nrg3:yearlyValue>
 					<nrg3:timeDependentValues>
-						<nrg3:TypicalValuesMonthlyTimeSeries gml:id="id_typical_values_monthly_time_series_10">
+						<nrg3:TypicalValuesMonthlyTimeSeriesFile gml:id="id_typical_values_monthly_time_series_file_10">
 							<gml:description>This is a TypicalValuesMonthlyTimeSeries 10</gml:description>
 							<gml:name>TypicalValuesMonthlyTimeSeries 10</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_4</nrg3:source>
-							<nrg3:startMonth>1</nrg3:startMonth>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:valuesList uom="Scale">0.51 0.61 0.71 0.81 0.91 1.01 1.01 0.91 0.81 0.71 0.61 0.51</nrg3:valuesList>
-						</nrg3:TypicalValuesMonthlyTimeSeries>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>/weather_data_4_typical_monthly_time_series.csv</nrg3:fileURI>
+							<nrg3:numberOfHeaderLines>4</nrg3:numberOfHeaderLines>
+							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
+							<nrg3:recordSeparator>CR</nrg3:recordSeparator>
+							<nrg3:decimalSymbol>.</nrg3:decimalSymbol>
+							<nrg3:valueColumnNumber>1</nrg3:valueColumnNumber>
+						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
 				</nrg3:WeatherData>
 			</nrg3:sensorData>
@@ -37944,18 +38801,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>RegularTimeSeriesFile 1</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_1</nrg3:source>
+							<nrg3:beginTimeStamp>2011-01-01T00:00:00</nrg3:beginTimeStamp>
+							<nrg3:endTimeStamp>2012-01-01T00:00:00</nrg3:endTimeStamp>
+							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
 							<nrg3:uom uom="kWh/(m2*day)"/>
 							<nrg3:fileURI>//giorgio/results_irradiation.csv</nrg3:fileURI>
-							<nrg3:temporalExtent>
-								<gml:TimePeriod>
-									<gml:beginPosition>2011-01-01T00:00:00</gml:beginPosition>
-									<gml:endPosition>2012-01-01T00:00:00</gml:endPosition>
-								</gml:TimePeriod>
-							</nrg3:temporalExtent>
-							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
 							<nrg3:numberOfHeaderLines>10</nrg3:numberOfHeaderLines>
 							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
 							<nrg3:recordSeparator>;</nrg3:recordSeparator>
@@ -37980,16 +38833,16 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>TypicalValuesRegularTimeSeriesFile 1</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_1</nrg3:source>
-							<nrg3:startTime>00:00:00</nrg3:startTime>
-							<nrg3:startDay>1</nrg3:startDay>
-							<nrg3:startMonth>1</nrg3:startMonth>
-							<nrg3:uom uom="Scale"/>
-							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
+							<nrg3:beginTime>00:00:00</nrg3:beginTime>
+							<nrg3:beginDay>1</nrg3:beginDay>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
 							<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
 							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
 							<nrg3:recordSeparator>;</nrg3:recordSeparator>
@@ -38014,16 +38867,16 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>TypicalValuesRegularTimeSeriesFile 2</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">simulation</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_2</nrg3:source>
-							<nrg3:startTime>00:00:00</nrg3:startTime>
-							<nrg3:startDay>1</nrg3:startDay>
-							<nrg3:startMonth>1</nrg3:startMonth>
-							<nrg3:uom uom="Scale"/>
-							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
+							<nrg3:beginTime>00:00:00</nrg3:beginTime>
+							<nrg3:beginDay>1</nrg3:beginDay>
+							<nrg3:beginMonth>1</nrg3:beginMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 							<nrg3:timeInterval unit="day">1</nrg3:timeInterval>
+							<nrg3:uom uom="Scale"/>
+							<nrg3:fileURI>//giorgio/results_cloudiness.csv</nrg3:fileURI>
 							<nrg3:numberOfHeaderLines>3</nrg3:numberOfHeaderLines>
 							<nrg3:fieldSeparator>,</nrg3:fieldSeparator>
 							<nrg3:recordSeparator>;</nrg3:recordSeparator>
@@ -38048,7 +38901,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<gml:name>SensorConnection 1</gml:name>
 							<nrg3:creationDate>2026-02-06T22:36:08+01:00</nrg3:creationDate>
 							<nrg3:terminationDate>2031-02-06T22:36:08+01:00</nrg3:terminationDate>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:dataAcquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/AcquisitionMethodValue.xml">measurement</nrg3:dataAcquisitionMethod>
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:source>source_1</nrg3:source>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
@@ -38074,465 +38927,1934 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		</nrg3:WeatherStation>
 	</core:cityObjectMember>
 	<app:appearanceMember>
-		<app:Appearance>
-			<app:theme>FMETheme</app:theme>
+		<app:Appearance gml:id="id_appearance_1">
+			<gml:description>This is a global appearance for the Alderaan dataset</gml:description>
+			<gml:name>Global Appearance of Alderaan test dataset</gml:name>
+			<app:theme>Alderaan Theme</app:theme>
 			<app:surfaceDataMember>
-				<app:X3DMaterial>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_78e44a83-b632-4a3d-8168-6b2f9187e793">
+					<gml:description>This is Colour Black (BACK) for Solar Devices LoD2-3</gml:description>
+					<gml:name>Colour Black (BACK) Solar Devices LoD2-3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 0 0</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#MultiSurf_lod2_UUID_1d2f3ad9-622d-4c55-81ca-a32fe7732239</app:target>
+					<app:target>#MultiSurf_lod2_UUID_5b810bf0-2f75-4fc1-bea8-cd158759d186</app:target>
+					<app:target>#MultiSurf_lod2_UUID_5c11100e-c839-4b30-85a5-74b0cf0cbdba</app:target>
+					<app:target>#MultiSurf_lod2_UUID_8e87632b-6398-4f2e-ba80-cf9da7c16e89</app:target>
+					<app:target>#MultiSurf_lod2_UUID_14b3929e-522e-40d3-b35c-f5e76a544b5c</app:target>
+					<app:target>#MultiSurf_lod2_UUID_26c5335b-39ea-43aa-9882-e99dbbe967ca</app:target>
+					<app:target>#MultiSurf_lod2_UUID_383e27b9-1d5a-4da8-b601-bb908f35bce3</app:target>
+					<app:target>#MultiSurf_lod2_UUID_582cf8e1-a748-4bd2-ba1f-3eae8b30e8c5</app:target>
+					<app:target>#MultiSurf_lod2_UUID_693e8f98-3861-4d9c-835e-eb22f1f66c10</app:target>
+					<app:target>#MultiSurf_lod2_UUID_23031319-a20b-40bf-b837-c2e3a6c89367</app:target>
+					<app:target>#MultiSurf_lod2_UUID_bed81d8c-0030-47a5-9b31-5b561242f55c</app:target>
+					<app:target>#MultiSurf_lod2_UUID_bf0157b1-8bf8-455c-b613-ff156d2302bb</app:target>
+					<app:target>#MultiSurf_lod2_UUID_c082e872-1eb7-4c0b-8e94-ff2228cde335</app:target>
+					<app:target>#MultiSurf_lod2_UUID_d6fd8594-42b6-48de-ae63-275dc52ea63b</app:target>
+					<app:target>#MultiSurf_lod2_UUID_e3c5a9ff-130f-45fd-98f6-8c13bd2ca877</app:target>
+					<app:target>#MultiSurf_lod2_UUID_ec81dbc6-c5bc-469d-853a-d8562b793d2f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_0c4aaa88-a767-4760-b240-bc43c5f9721a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_0e99b91d-754c-4764-8fbf-5f8ac0e6a62a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1b3f20a7-95c0-445b-bf74-9dfe062dcd8d</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1e4bb0aa-05f1-4702-ae6d-2aa8d56c898b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1e947864-1f05-4578-b8fa-c7f965dd2efa</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2c6a1372-4715-4124-87a4-956886fc8424</app:target>
+					<app:target>#MultiSurf_lod3_UUID_03cff5e7-8368-4c56-9086-3bb82ed2ba98</app:target>
+					<app:target>#MultiSurf_lod3_UUID_3e06b51d-662c-4af1-afc3-1fadd2b1b18d</app:target>
+					<app:target>#MultiSurf_lod3_UUID_4ad82de0-9a20-45fb-b157-02a125ecc862</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5b0471c3-ccee-4e7a-a632-9686ef7a53b9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5bcb079d-53b6-49e9-b136-edd7b652ca29</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5c1e63ab-33cb-43c1-bc30-bf8f0575ed6a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5eb9525c-654f-4f7b-a4a1-529dd12fb7b3</app:target>
+					<app:target>#MultiSurf_lod3_UUID_6a79532d-e982-42d5-8854-674c62bc7226</app:target>
+					<app:target>#MultiSurf_lod3_UUID_7a82a1eb-5d91-4d96-8311-d4477c6dc27b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_7ac33358-10e9-4af6-ab2f-fe827e021ec4</app:target>
+					<app:target>#MultiSurf_lod3_UUID_8c861f6a-34b2-412d-8f09-0ce21f9ad9eb</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9b25284d-4e04-4a2e-a9d1-d1f779bc135f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9c194f69-3ea3-46cd-a130-103ffc3c76e2</app:target>
+					<app:target>#MultiSurf_lod3_UUID_74f63225-cdea-4387-9a2f-957254c963ae</app:target>
+					<app:target>#MultiSurf_lod3_UUID_80e225b5-2c27-40b7-8ef5-0bf104064b66</app:target>
+					<app:target>#MultiSurf_lod3_UUID_94a90970-362b-4552-8156-4de4acfab250</app:target>
+					<app:target>#MultiSurf_lod3_UUID_148cf03f-9a18-4329-8a6d-be79e648c0f9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_288b5675-ae2e-44c8-a89c-e838fee1b31e</app:target>
+					<app:target>#MultiSurf_lod3_UUID_422b8c24-e35e-4621-a682-6fd0e0e61bd1</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2954e3a7-e08a-4ac7-9bab-d6e5d97cb4d6</app:target>
+					<app:target>#MultiSurf_lod3_UUID_4017f070-bb4d-4f1c-b0ec-924a4762e6cb</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5683ef1b-3bd0-4e01-8b08-f0d7857e596f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9760b7f7-c66f-492e-bfad-2e04ff9b36af</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2142591d-2c34-4b86-b33b-d1e361d9b843</app:target>
+					<app:target>#MultiSurf_lod3_UUID_a77defd0-6081-4b66-8f67-0d6588bb78fd</app:target>
+					<app:target>#MultiSurf_lod3_UUID_acbde47a-f6ab-4dc8-89da-e533f321c213</app:target>
+					<app:target>#MultiSurf_lod3_UUID_ae6c6939-c8e8-477d-a5f0-9a6302de73be</app:target>
+					<app:target>#MultiSurf_lod3_UUID_af127221-9631-4551-8372-658d3c7af706</app:target>
+					<app:target>#MultiSurf_lod3_UUID_aff422a0-b290-4d4a-b26f-ee85912085d5</app:target>
+					<app:target>#MultiSurf_lod3_UUID_cceaecfb-7324-49eb-a6af-05831432e64a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_cff7dfea-28a8-4a78-8688-7802b5a750b9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_d67afad6-3750-4728-a9b9-22e2dd7acdf7</app:target>
+					<app:target>#MultiSurf_lod3_UUID_e3ff68dd-15bc-4d5a-adfc-9a23c838dd1c</app:target>
+					<app:target>#MultiSurf_lod3_UUID_e1269cd8-59dd-4d57-b103-dd4cef5a7b3b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_eb4df37b-5782-4702-912f-3f3c52633053</app:target>
+					<app:target>#MultiSurf_lod3_UUID_ebfd2c08-ffc5-42d8-8ee6-3e5491361f9b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f3f45bf6-c468-4a84-963b-f38f3e8ce7b4</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f6d9e4f1-7565-45c1-8d6e-1e8a96f7f310</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f9d8a1e8-e41d-4b02-8c2a-e883b1ce1cdd</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f23b241a-3d99-4771-88ed-fdcffdc6f332</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f0821a16-fb4b-4cb4-93dc-f94097661d8a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f836e8e1-10ca-4e13-ac1d-4e934915e0a4</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_7d1d01e6-44fa-40dc-9247-91bbe77077e1">
+					<gml:description>This is Colour Black (FRONT) for Solar Devices LoD2-3</gml:description>
+					<gml:name>Colour Black (FRONT) Solar Devices LoD2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 0 0</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#MultiSurf_lod2_UUID_1d2f3ad9-622d-4c55-81ca-a32fe7732239</app:target>
+					<app:target>#MultiSurf_lod2_UUID_5b810bf0-2f75-4fc1-bea8-cd158759d186</app:target>
+					<app:target>#MultiSurf_lod2_UUID_5c11100e-c839-4b30-85a5-74b0cf0cbdba</app:target>
+					<app:target>#MultiSurf_lod2_UUID_8e87632b-6398-4f2e-ba80-cf9da7c16e89</app:target>
+					<app:target>#MultiSurf_lod2_UUID_14b3929e-522e-40d3-b35c-f5e76a544b5c</app:target>
+					<app:target>#MultiSurf_lod2_UUID_26c5335b-39ea-43aa-9882-e99dbbe967ca</app:target>
+					<app:target>#MultiSurf_lod2_UUID_383e27b9-1d5a-4da8-b601-bb908f35bce3</app:target>
+					<app:target>#MultiSurf_lod2_UUID_582cf8e1-a748-4bd2-ba1f-3eae8b30e8c5</app:target>
+					<app:target>#MultiSurf_lod2_UUID_693e8f98-3861-4d9c-835e-eb22f1f66c10</app:target>
+					<app:target>#MultiSurf_lod2_UUID_23031319-a20b-40bf-b837-c2e3a6c89367</app:target>
+					<app:target>#MultiSurf_lod2_UUID_bed81d8c-0030-47a5-9b31-5b561242f55c</app:target>
+					<app:target>#MultiSurf_lod2_UUID_bf0157b1-8bf8-455c-b613-ff156d2302bb</app:target>
+					<app:target>#MultiSurf_lod2_UUID_c082e872-1eb7-4c0b-8e94-ff2228cde335</app:target>
+					<app:target>#MultiSurf_lod2_UUID_d6fd8594-42b6-48de-ae63-275dc52ea63b</app:target>
+					<app:target>#MultiSurf_lod2_UUID_e3c5a9ff-130f-45fd-98f6-8c13bd2ca877</app:target>
+					<app:target>#MultiSurf_lod2_UUID_ec81dbc6-c5bc-469d-853a-d8562b793d2f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_0c4aaa88-a767-4760-b240-bc43c5f9721a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_0e99b91d-754c-4764-8fbf-5f8ac0e6a62a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1b3f20a7-95c0-445b-bf74-9dfe062dcd8d</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1e4bb0aa-05f1-4702-ae6d-2aa8d56c898b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_1e947864-1f05-4578-b8fa-c7f965dd2efa</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2c6a1372-4715-4124-87a4-956886fc8424</app:target>
+					<app:target>#MultiSurf_lod3_UUID_03cff5e7-8368-4c56-9086-3bb82ed2ba98</app:target>
+					<app:target>#MultiSurf_lod3_UUID_3e06b51d-662c-4af1-afc3-1fadd2b1b18d</app:target>
+					<app:target>#MultiSurf_lod3_UUID_4ad82de0-9a20-45fb-b157-02a125ecc862</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5b0471c3-ccee-4e7a-a632-9686ef7a53b9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5bcb079d-53b6-49e9-b136-edd7b652ca29</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5c1e63ab-33cb-43c1-bc30-bf8f0575ed6a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5eb9525c-654f-4f7b-a4a1-529dd12fb7b3</app:target>
+					<app:target>#MultiSurf_lod3_UUID_6a79532d-e982-42d5-8854-674c62bc7226</app:target>
+					<app:target>#MultiSurf_lod3_UUID_7a82a1eb-5d91-4d96-8311-d4477c6dc27b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_7ac33358-10e9-4af6-ab2f-fe827e021ec4</app:target>
+					<app:target>#MultiSurf_lod3_UUID_8c861f6a-34b2-412d-8f09-0ce21f9ad9eb</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9b25284d-4e04-4a2e-a9d1-d1f779bc135f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9c194f69-3ea3-46cd-a130-103ffc3c76e2</app:target>
+					<app:target>#MultiSurf_lod3_UUID_74f63225-cdea-4387-9a2f-957254c963ae</app:target>
+					<app:target>#MultiSurf_lod3_UUID_80e225b5-2c27-40b7-8ef5-0bf104064b66</app:target>
+					<app:target>#MultiSurf_lod3_UUID_94a90970-362b-4552-8156-4de4acfab250</app:target>
+					<app:target>#MultiSurf_lod3_UUID_148cf03f-9a18-4329-8a6d-be79e648c0f9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_288b5675-ae2e-44c8-a89c-e838fee1b31e</app:target>
+					<app:target>#MultiSurf_lod3_UUID_422b8c24-e35e-4621-a682-6fd0e0e61bd1</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2954e3a7-e08a-4ac7-9bab-d6e5d97cb4d6</app:target>
+					<app:target>#MultiSurf_lod3_UUID_4017f070-bb4d-4f1c-b0ec-924a4762e6cb</app:target>
+					<app:target>#MultiSurf_lod3_UUID_5683ef1b-3bd0-4e01-8b08-f0d7857e596f</app:target>
+					<app:target>#MultiSurf_lod3_UUID_9760b7f7-c66f-492e-bfad-2e04ff9b36af</app:target>
+					<app:target>#MultiSurf_lod3_UUID_2142591d-2c34-4b86-b33b-d1e361d9b843</app:target>
+					<app:target>#MultiSurf_lod3_UUID_a77defd0-6081-4b66-8f67-0d6588bb78fd</app:target>
+					<app:target>#MultiSurf_lod3_UUID_acbde47a-f6ab-4dc8-89da-e533f321c213</app:target>
+					<app:target>#MultiSurf_lod3_UUID_ae6c6939-c8e8-477d-a5f0-9a6302de73be</app:target>
+					<app:target>#MultiSurf_lod3_UUID_af127221-9631-4551-8372-658d3c7af706</app:target>
+					<app:target>#MultiSurf_lod3_UUID_aff422a0-b290-4d4a-b26f-ee85912085d5</app:target>
+					<app:target>#MultiSurf_lod3_UUID_cceaecfb-7324-49eb-a6af-05831432e64a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_cff7dfea-28a8-4a78-8688-7802b5a750b9</app:target>
+					<app:target>#MultiSurf_lod3_UUID_d67afad6-3750-4728-a9b9-22e2dd7acdf7</app:target>
+					<app:target>#MultiSurf_lod3_UUID_e3ff68dd-15bc-4d5a-adfc-9a23c838dd1c</app:target>
+					<app:target>#MultiSurf_lod3_UUID_e1269cd8-59dd-4d57-b103-dd4cef5a7b3b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_eb4df37b-5782-4702-912f-3f3c52633053</app:target>
+					<app:target>#MultiSurf_lod3_UUID_ebfd2c08-ffc5-42d8-8ee6-3e5491361f9b</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f3f45bf6-c468-4a84-963b-f38f3e8ce7b4</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f6d9e4f1-7565-45c1-8d6e-1e8a96f7f310</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f9d8a1e8-e41d-4b02-8c2a-e883b1ce1cdd</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f23b241a-3d99-4771-88ed-fdcffdc6f332</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f0821a16-fb4b-4cb4-93dc-f94097661d8a</app:target>
+					<app:target>#MultiSurf_lod3_UUID_f836e8e1-10ca-4e13-ac1d-4e934915e0a4</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_16a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Blue (BACK) UrbanFunctionArea Level 2-3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 0 1</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6</app:target>
+					<app:target>#id_MultiSurf_ufa_1_1_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_4</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_15a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Blue (FRONT) UrbanFunctionArea Level 2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 0 1</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6</app:target>
+					<app:target>#id_MultiSurf_ufa_1_1_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_4</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_4</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732160">
+					<gml:description>This is Tree Trunk Colour Brown (BACK)</gml:description>
+					<gml:name>Colour Brown (BACK) Tree Trunk LoD2</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0.666667 0.333333 0</app:diffuseColor>
+					<app:shininess>1</app:shininess>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod2_poly_tree_trunk_1</app:target>
+					<app:target>#id_lod2_poly_tree_trunk_2</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732161">
+					<gml:description>This is Tree Trunk Colour Brown (FRONT)</gml:description>
+					<gml:name>Colour Brown (FRONT) Tree Trunk LoD2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0.666667 0.333333 0</app:diffuseColor>
+					<app:shininess>1</app:shininess>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod2_poly_tree_trunk_1</app:target>
+					<app:target>#id_lod2_poly_tree_trunk_2</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_129</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_130</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_131</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_132</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_133</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_134</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_135</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_136</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_137</app:target>
+					<app:target>#id_lod3_poly_tree_trunk_138</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_67ca2e94-b751-4c84-bc73-c8f9f9745a16">
+					<gml:description>This is Colour Cyan (BACK) for Ancillary Buildings LoD0</gml:description>
+					<gml:name>Colour Cyan (BACK) Ancillary Buildings LoD0</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod0_MultiSurf_20</app:target>
+					<app:target>#id_lod0_MultiSurf_21</app:target>
+					<app:target>#id_lod0_MultiSurf_22</app:target>
+					<app:target>#id_lod0_MultiSurf_23</app:target>
+					<app:target>#id_lod0_MultiSurf_24</app:target>
+					<app:target>#id_lod0_MultiSurf_25</app:target>
+					<app:target>#id_lod0_MultiSurf_26</app:target>
+					<app:target>#id_lod0_MultiSurf_27</app:target>
+					<app:target>#id_lod0_MultiSurf_28</app:target>
+					<app:target>#id_lod0_MultiSurf_29</app:target>
+					<app:target>#id_lod0_MultiSurf_30</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0c2ec2a5-4c7e-451e-85c0-8c275dacdff5">
+					<gml:description>This is Colour Cyan (BACK) for Ancillary Buildings LoD1</gml:description>
+					<gml:name>Colour Cyan (BACK) Ancillary Buildings LoD1</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.7</app:transparency>
+					<app:target>#id_lod1_Solid_20</app:target>
+					<app:target>#id_lod1_Solid_21</app:target>
+					<app:target>#id_lod1_Solid_22</app:target>
+					<app:target>#id_lod1_Solid_23</app:target>
+					<app:target>#id_lod1_Solid_24</app:target>
+					<app:target>#id_lod1_Solid_25</app:target>
+					<app:target>#id_lod1_Solid_26</app:target>
+					<app:target>#id_lod1_Solid_27</app:target>
+					<app:target>#id_lod1_Solid_28</app:target>
+					<app:target>#id_lod1_Solid_29</app:target>
+					<app:target>#id_lod1_Solid_30</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732156">
+					<gml:description>This is Colour Cyan (BACK) for Building LoD0</gml:description>
+					<gml:name>Colour Cyan (BACK) Building LoD0</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_footprint_MultiSurf</app:target>
+					<app:target>#id_building_2_footprint_MultiSurf</app:target>
+					<app:target>#id_building_3_footprint_MultiSurf</app:target>
+					<app:target>#id_building_4_footprint_MultiSurf</app:target>
+					<app:target>#id_building_5_footprint_MultiSurf</app:target>
+					<app:target>#id_building_6_footprint_MultiSurf</app:target>
+					<app:target>#id_building_7_footprint_MultiSurf</app:target>
+					<app:target>#id_building_8_footprint_MultiSurf</app:target>
+					<app:target>#id_buildingpart_9_footprint_MultiSurf</app:target>
+					<app:target>#id_buildingpart_10_footprint_MultiSurf</app:target>
+					<app:target>#id_building_11_footprint_MultiSurf</app:target>
+					<app:target>#id_building_12_footprint_MultiSurf</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_efdf8b1e-06f8-47d0-a17a-93c9ef79dd66">
+					<gml:description>This is Colour Cyan (BACK) for Building LoD1</gml:description>
+					<gml:name>Colour Cyan (BACK) Building LoD1</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.7</app:transparency>
+					<app:target>#id_building_1_lod1_Solid</app:target>
+					<app:target>#id_building_2_lod1_Solid</app:target>
+					<app:target>#id_building_3_lod1_Solid</app:target>
+					<app:target>#id_building_4_lod1_Solid</app:target>
+					<app:target>#id_building_5_lod1_Solid</app:target>
+					<app:target>#id_building_6_lod1_Solid</app:target>
+					<app:target>#id_building_7_lod1_Solid</app:target>
+					<app:target>#id_building_8_lod1_Solid</app:target>
+					<app:target>#id_buildingpart_9_lod1_Solid</app:target>
+					<app:target>#id_buildingpart_10_lod1_Solid</app:target>
+					<app:target>#id_building_11_lod1_Solid</app:target>
+					<app:target>#id_building_12_lod1_Solid</app:target>
+					<app:target>#id_building_1_lod2_Solid</app:target>
+					<app:target>#id_building_2_lod2_Solid</app:target>
+					<app:target>#id_building_3_lod2_Solid</app:target>
+					<app:target>#id_building_4_lod2_Solid</app:target>
+					<app:target>#id_building_5_lod2_Solid</app:target>
+					<app:target>#id_building_6_lod2_Solid</app:target>
+					<app:target>#id_building_7_lod2_Solid</app:target>
+					<app:target>#id_building_8_lod2_Solid</app:target>
+					<app:target>#id_buildingpart_9_lod2_Solid</app:target>
+					<app:target>#id_buildingpart_10_lod2_Solid</app:target>
+					<app:target>#id_building_11_lod2_Solid</app:target>
+					<app:target>#id_building_12_lod2_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_9fb9040d-d52d-4856-993f-8b3b71b41888">
+					<gml:description>This is Colour Cyan (BACK) for Zone Window LoD3</gml:description>
+					<gml:name>Colour Cyan (BACK) Zone Window LoD3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_zone_1_zonewallsurf_1_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonedoor_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonedoor_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_zonewindow_8_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_zonewindow_9_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_zonewindow_10_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_zonewindow_11_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_zonewindow_12_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_zonewindow_13_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_zonewindow_14_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_zonewindow_15_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_zonewindow_16_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_zonewindow_17_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_zonewindow_18_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_zonewindow_19_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_zonewindow_20_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_zonewindow_21_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_zonewindow_22_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_zonewindow_23_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_zonewindow_24_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_zonewindow_25_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_zonewindow_26_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_zonewindow_27_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_zonewindow_28_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_zonewindow_29_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_zonewindow_42_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_zonewindow_43_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_zonewindow_44_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_zonewindow_45_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_zonewindow_46_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_zonewindow_47_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_zonewindow_48_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_zonewindow_49_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_zonewindow_30_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_zonewindow_31_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_zonewindow_32_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_zonewindow_33_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_zonewindow_34_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_zonewindow_35_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_zonewindow_36_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_zonewindow_37_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_zonewindow_38_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_zonewindow_39_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_zonewindow_40_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_zonewindow_41_lod3_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_c57c2767-406b-40d5-a806-b6bd99dfb513">
+					<gml:description>This is Colour Cyan (FRONT) for Ancillary Buildings LoD0</gml:description>
+					<gml:name>Colour Cyan (FRONT) Ancillary Buildings LoD0</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod0_MultiSurf_20</app:target>
+					<app:target>#id_lod0_MultiSurf_21</app:target>
+					<app:target>#id_lod0_MultiSurf_22</app:target>
+					<app:target>#id_lod0_MultiSurf_23</app:target>
+					<app:target>#id_lod0_MultiSurf_24</app:target>
+					<app:target>#id_lod0_MultiSurf_25</app:target>
+					<app:target>#id_lod0_MultiSurf_26</app:target>
+					<app:target>#id_lod0_MultiSurf_27</app:target>
+					<app:target>#id_lod0_MultiSurf_28</app:target>
+					<app:target>#id_lod0_MultiSurf_29</app:target>
+					<app:target>#id_lod0_MultiSurf_30</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_bc69ed4d-dee3-4530-af04-a52d1a3b7069">
+					<gml:description>This is Colour Cyan (FRONT) for Ancillary Buildings LoD1</gml:description>
+					<gml:name>Colour Cyan (FRONT) Ancillary Buildings LoD1</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.7</app:transparency>
+					<app:target>#id_lod1_Solid_20</app:target>
+					<app:target>#id_lod1_Solid_21</app:target>
+					<app:target>#id_lod1_Solid_22</app:target>
+					<app:target>#id_lod1_Solid_23</app:target>
+					<app:target>#id_lod1_Solid_24</app:target>
+					<app:target>#id_lod1_Solid_25</app:target>
+					<app:target>#id_lod1_Solid_26</app:target>
+					<app:target>#id_lod1_Solid_27</app:target>
+					<app:target>#id_lod1_Solid_28</app:target>
+					<app:target>#id_lod1_Solid_29</app:target>
+					<app:target>#id_lod1_Solid_30</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_cbc907fb-17fb-422d-a1ec-3977440cdb00">
+					<gml:description>This is Colour Cyan (FRONT) for Building LoD0</gml:description>
+					<gml:name>Colour Cyan (FRONT) Building LoD0</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_footprint_MultiSurf</app:target>
+					<app:target>#id_building_2_footprint_MultiSurf</app:target>
+					<app:target>#id_building_3_footprint_MultiSurf</app:target>
+					<app:target>#id_building_4_footprint_MultiSurf</app:target>
+					<app:target>#id_building_5_footprint_MultiSurf</app:target>
+					<app:target>#id_building_6_footprint_MultiSurf</app:target>
+					<app:target>#id_building_7_footprint_MultiSurf</app:target>
+					<app:target>#id_building_8_footprint_MultiSurf</app:target>
+					<app:target>#id_buildingpart_9_footprint_MultiSurf</app:target>
+					<app:target>#id_buildingpart_10_footprint_MultiSurf</app:target>
+					<app:target>#id_building_11_footprint_MultiSurf</app:target>
+					<app:target>#id_building_12_footprint_MultiSurf</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_31d8c272-d0d6-4813-af91-bb0e7fd720cd">
+					<gml:description>This is Colour Cyan (FRONT) for Building LoD1</gml:description>
+					<gml:name>Colour Cyan (FRONT) Building LoD1</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.7</app:transparency>
+					<app:target>#id_building_1_lod1_Solid</app:target>
+					<app:target>#id_building_2_lod1_Solid</app:target>
+					<app:target>#id_building_3_lod1_Solid</app:target>
+					<app:target>#id_building_4_lod1_Solid</app:target>
+					<app:target>#id_building_5_lod1_Solid</app:target>
+					<app:target>#id_building_6_lod1_Solid</app:target>
+					<app:target>#id_building_7_lod1_Solid</app:target>
+					<app:target>#id_building_8_lod1_Solid</app:target>
+					<app:target>#id_buildingpart_9_lod1_Solid</app:target>
+					<app:target>#id_buildingpart_10_lod1_Solid</app:target>
+					<app:target>#id_building_11_lod1_Solid</app:target>
+					<app:target>#id_building_12_lod1_Solid</app:target>
+					<app:target>#id_building_1_lod2_Solid</app:target>
+					<app:target>#id_building_2_lod2_Solid</app:target>
+					<app:target>#id_building_3_lod2_Solid</app:target>
+					<app:target>#id_building_4_lod2_Solid</app:target>
+					<app:target>#id_building_5_lod2_Solid</app:target>
+					<app:target>#id_building_6_lod2_Solid</app:target>
+					<app:target>#id_building_7_lod2_Solid</app:target>
+					<app:target>#id_building_8_lod2_Solid</app:target>
+					<app:target>#id_buildingpart_9_lod2_Solid</app:target>
+					<app:target>#id_buildingpart_10_lod2_Solid</app:target>
+					<app:target>#id_building_11_lod2_Solid</app:target>
+					<app:target>#id_building_12_lod2_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_6515291b-293f-4cc0-8926-70415893b8bd">
+					<gml:description>This is Colour Cyan (FRONT) for Zone Window LoD3</gml:description>
+					<gml:name>Colour Cyan (FRONT) Zone Window LoD3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 1</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_zone_1_zonewallsurf_1_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonedoor_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonedoor_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_zonewindow_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_zonewindow_6_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_zonewindow_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_zonewindow_8_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_zonewindow_9_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_zonewindow_10_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_zonewindow_11_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_zonewindow_12_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_zonewindow_13_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_zonewindow_14_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_zonewindow_15_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_zonewindow_16_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_zonewindow_17_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_zonewindow_18_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_zonewindow_19_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_zonewindow_20_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_zonewindow_21_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_zonewindow_22_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_zonewindow_23_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_zonewindow_24_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_zonewindow_25_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_zonewindow_26_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_zonewindow_27_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_zonewindow_28_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_zonewindow_29_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_zonewindow_42_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_zonewindow_43_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_zonewindow_44_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_zonewindow_45_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_zonewindow_46_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_zonewindow_47_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_zonewindow_48_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_zonewindow_49_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_zonewindow_30_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_zonewindow_31_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_zonewindow_32_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_zonewindow_33_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_zonewindow_34_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_zonewindow_35_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_zonewindow_36_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_zonewindow_37_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_zonewindow_38_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_zonewindow_39_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_zonewindow_40_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_zonewindow_41_lod3_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_6f90c368-8aee-44da-9e0e-92a722662237">
+					<gml:description>This is Colour Dark Gray (BACK) for Building Ground LoD2</gml:description>
+					<gml:name>Colour Dark Gray (BACK) Building Ground LoD2</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0.412 0.412 0.412</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_groundsurf_1_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_625d311f-fd6b-4183-84bf-93474b392388">
+					<gml:description>This is Colour Dark Gray (FRONT) for Building Ground LoD2</gml:description>
+					<gml:name>Colour Dark Gray (FRONT) Building Ground LoD2</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0.412 0.412 0.412</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_groundsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_groundsurf_1_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_545f4b77-b7d5-4ee2-a9ee-7100857c29f8">
+					<gml:description>This is Colour Green (BACK) for Building Unit LoD1-2-3</gml:description>
+					<gml:name>Colour Green (BACK) Building Unit LoD1-2-3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 0</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_building_unit_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_4_lod1_Solid</app:target>
+					<app:target>#id_building_unit_4_lod2_Solid</app:target>
+					<app:target>#id_building_unit_4_lod3_Solid</app:target>
+					<app:target>#id_building_unit_5_lod1_Solid</app:target>
+					<app:target>#id_building_unit_5_lod2_Solid</app:target>
+					<app:target>#id_building_unit_5_lod3_Solid</app:target>
+					<app:target>#id_building_unit_6_lod1_Solid</app:target>
+					<app:target>#id_building_unit_6_lod2_Solid</app:target>
+					<app:target>#id_building_unit_6_lod3_Solid</app:target>
+					<app:target>#id_building_unit_7_lod1_Solid</app:target>
+					<app:target>#id_building_unit_7_lod2_Solid</app:target>
+					<app:target>#id_building_unit_7_lod3_Solid</app:target>
+					<app:target>#id_building_unit_8_lod1_Solid</app:target>
+					<app:target>#id_building_unit_8_lod2_Solid</app:target>
+					<app:target>#id_building_unit_8_lod3_Solid</app:target>
+					<app:target>#id_building_unit_9_lod1_Solid</app:target>
+					<app:target>#id_building_unit_9_lod2_Solid</app:target>
+					<app:target>#id_building_unit_9_lod3_Solid</app:target>
+					<app:target>#id_building_unit_10_lod1_Solid</app:target>
+					<app:target>#id_building_unit_10_lod2_Solid</app:target>
+					<app:target>#id_building_unit_10_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_12_lod1_Solid</app:target>
+					<app:target>#id_building_unit_12_lod2_Solid</app:target>
+					<app:target>#id_building_unit_12_lod3_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732159">
+					<gml:description>This is Tree Colour Green (BACK)</gml:description>
+					<gml:name>Colour Green (BACK) Tree Crown LoD2</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 0.666667 0</app:diffuseColor>
+					<app:shininess>1</app:shininess>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod2_poly_tree_crown_2</app:target>
+					<app:target>#id_lod2_poly_tree_crown_1</app:target>
+					<app:target>#id_lod2_poly_tree_crown_h</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_14a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Green (BACK) UrbanFunctionArea Level 2-3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0 1 0</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5</app:target>
+					<app:target>#id_MultiSurf_ufa_1_1_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_3</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_8e28bccf-ca6d-4225-b98a-b37091fd5a3d">
+					<gml:description>This is Colour Green (FRONT) for Building Unit LoD1-2-3</gml:description>
+					<gml:name>Colour Green (FRONT) Building Unit LoD1-2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 0</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_building_unit_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_2_lod3_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_2_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_4_lod1_Solid</app:target>
+					<app:target>#id_building_unit_4_lod2_Solid</app:target>
+					<app:target>#id_building_unit_4_lod3_Solid</app:target>
+					<app:target>#id_building_unit_5_lod1_Solid</app:target>
+					<app:target>#id_building_unit_5_lod2_Solid</app:target>
+					<app:target>#id_building_unit_5_lod3_Solid</app:target>
+					<app:target>#id_building_unit_6_lod1_Solid</app:target>
+					<app:target>#id_building_unit_6_lod2_Solid</app:target>
+					<app:target>#id_building_unit_6_lod3_Solid</app:target>
+					<app:target>#id_building_unit_7_lod1_Solid</app:target>
+					<app:target>#id_building_unit_7_lod2_Solid</app:target>
+					<app:target>#id_building_unit_7_lod3_Solid</app:target>
+					<app:target>#id_building_unit_8_lod1_Solid</app:target>
+					<app:target>#id_building_unit_8_lod2_Solid</app:target>
+					<app:target>#id_building_unit_8_lod3_Solid</app:target>
+					<app:target>#id_building_unit_9_lod1_Solid</app:target>
+					<app:target>#id_building_unit_9_lod2_Solid</app:target>
+					<app:target>#id_building_unit_9_lod3_Solid</app:target>
+					<app:target>#id_building_unit_10_lod1_Solid</app:target>
+					<app:target>#id_building_unit_10_lod2_Solid</app:target>
+					<app:target>#id_building_unit_10_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_1_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_2_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_2_4_lod3_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod1_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod2_Solid</app:target>
+					<app:target>#id_building_unit_11_3_lod3_Solid</app:target>
+					<app:target>#id_building_unit_12_lod1_Solid</app:target>
+					<app:target>#id_building_unit_12_lod2_Solid</app:target>
+					<app:target>#id_building_unit_12_lod3_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732157">
+					<gml:description>This is DTM Colour Green (FRONT)</gml:description>
+					<gml:name>Colour Green (FRONT) TINRelief</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 0</app:diffuseColor>
+					<app:target>#id_tin_surf_0-0</app:target>
+					<app:target>#id_tin_surf_8-4</app:target>
+					<app:target>#id_tin_surf_5-6</app:target>
+					<app:target>#id_tin_surf_6-2</app:target>
+					<app:target>#id_tin_surf_7-9</app:target>
+					<app:target>#id_tin_surf_3-1</app:target>
+					<app:target>#id_tin_surf_2-10</app:target>
+					<app:target>#id_tin_surf_6-4</app:target>
+					<app:target>#id_tin_surf_2-5</app:target>
+					<app:target>#id_tin_surf_5-0</app:target>
+					<app:target>#id_tin_surf_3-0</app:target>
+					<app:target>#id_tin_surf_7-0</app:target>
+					<app:target>#id_tin_surf_7-2</app:target>
+					<app:target>#id_tin_surf_0-4</app:target>
+					<app:target>#id_tin_surf_8-11</app:target>
+					<app:target>#id_tin_surf_9-10</app:target>
+					<app:target>#id_tin_surf_9-2</app:target>
+					<app:target>#id_tin_surf_0-7</app:target>
+					<app:target>#id_tin_surf_5-10</app:target>
+					<app:target>#id_tin_surf_1-7</app:target>
+					<app:target>#id_tin_surf_7-4</app:target>
+					<app:target>#id_tin_surf_2-3</app:target>
+					<app:target>#id_tin_surf_9-8</app:target>
+					<app:target>#id_tin_surf_9-6</app:target>
+					<app:target>#id_tin_surf_0-10</app:target>
+					<app:target>#id_tin_surf_1-0</app:target>
+					<app:target>#id_tin_surf_1-5</app:target>
+					<app:target>#id_tin_surf_6-6</app:target>
+					<app:target>#id_tin_surf_7-8</app:target>
+					<app:target>#id_tin_surf_0-11</app:target>
+					<app:target>#id_tin_surf_6-9</app:target>
+					<app:target>#id_tin_surf_0-3</app:target>
+					<app:target>#id_tin_surf_2-0</app:target>
+					<app:target>#id_tin_surf_6-10</app:target>
+					<app:target>#id_tin_surf_0-5</app:target>
+					<app:target>#id_tin_surf_5-2</app:target>
+					<app:target>#id_tin_surf_7-6</app:target>
+					<app:target>#id_tin_surf_9-1</app:target>
+					<app:target>#id_tin_surf_2-11</app:target>
+					<app:target>#id_tin_surf_1-8</app:target>
+					<app:target>#id_tin_surf_8-5</app:target>
+					<app:target>#id_tin_surf_0-2</app:target>
+					<app:target>#id_tin_surf_4-0</app:target>
+					<app:target>#id_tin_surf_9-0</app:target>
+					<app:target>#id_tin_surf_3-10</app:target>
+					<app:target>#id_tin_surf_7-11</app:target>
+					<app:target>#id_tin_surf_4-2</app:target>
+					<app:target>#id_tin_surf_0-6</app:target>
+					<app:target>#id_tin_surf_8-1</app:target>
+					<app:target>#id_tin_surf_4-8</app:target>
+					<app:target>#id_tin_surf_8-2</app:target>
+					<app:target>#id_tin_surf_8-10</app:target>
+					<app:target>#id_tin_surf_4-5</app:target>
+					<app:target>#id_tin_surf_2-2</app:target>
+					<app:target>#id_tin_surf_6-5</app:target>
+					<app:target>#id_tin_surf_5-7</app:target>
+					<app:target>#id_tin_surf_7-10</app:target>
+					<app:target>#id_tin_surf_3-11</app:target>
+					<app:target>#id_tin_surf_8-3</app:target>
+					<app:target>#id_tin_surf_0-9</app:target>
+					<app:target>#id_tin_surf_4-9</app:target>
+					<app:target>#id_tin_surf_2-9</app:target>
+					<app:target>#id_tin_surf_3-8</app:target>
+					<app:target>#id_tin_surf_5-1</app:target>
+					<app:target>#id_tin_surf_4-4</app:target>
+					<app:target>#id_tin_surf_4-6</app:target>
+					<app:target>#id_tin_surf_1-4</app:target>
+					<app:target>#id_tin_surf_0-8</app:target>
+					<app:target>#id_tin_surf_8-6</app:target>
+					<app:target>#id_tin_surf_3-3</app:target>
+					<app:target>#id_tin_surf_3-6</app:target>
+					<app:target>#id_tin_surf_5-8</app:target>
+					<app:target>#id_tin_surf_8-8</app:target>
+					<app:target>#id_tin_surf_1-2</app:target>
+					<app:target>#id_tin_surf_5-9</app:target>
+					<app:target>#id_tin_surf_8-7</app:target>
+					<app:target>#id_tin_surf_6-11</app:target>
+					<app:target>#id_tin_surf_3-4</app:target>
+					<app:target>#id_tin_surf_7-5</app:target>
+					<app:target>#id_tin_surf_6-0</app:target>
+					<app:target>#id_tin_surf_1-10</app:target>
+					<app:target>#id_tin_surf_7-1</app:target>
+					<app:target>#id_tin_surf_3-7</app:target>
+					<app:target>#id_tin_surf_2-6</app:target>
+					<app:target>#id_tin_surf_1-3</app:target>
+					<app:target>#id_tin_surf_8-9</app:target>
+					<app:target>#id_tin_surf_6-3</app:target>
+					<app:target>#id_tin_surf_2-8</app:target>
+					<app:target>#id_tin_surf_7-3</app:target>
+					<app:target>#id_tin_surf_6-1</app:target>
+					<app:target>#id_tin_surf_4-11</app:target>
+					<app:target>#id_tin_surf_9-4</app:target>
+					<app:target>#id_tin_surf_2-1</app:target>
+					<app:target>#id_tin_surf_1-6</app:target>
+					<app:target>#id_tin_surf_6-8</app:target>
+					<app:target>#id_tin_surf_9-7</app:target>
+					<app:target>#id_tin_surf_2-7</app:target>
+					<app:target>#id_tin_surf_3-2</app:target>
+					<app:target>#id_tin_surf_4-1</app:target>
+					<app:target>#id_tin_surf_4-7</app:target>
+					<app:target>#id_tin_surf_6-7</app:target>
+					<app:target>#id_tin_surf_3-9</app:target>
+					<app:target>#id_tin_surf_1-1</app:target>
+					<app:target>#id_tin_surf_9-9</app:target>
+					<app:target>#id_tin_surf_9-3</app:target>
+					<app:target>#id_tin_surf_5-4</app:target>
+					<app:target>#id_tin_surf_1-11</app:target>
+					<app:target>#id_tin_surf_7-7</app:target>
+					<app:target>#id_tin_surf_5-11</app:target>
+					<app:target>#id_tin_surf_0-1</app:target>
+					<app:target>#id_tin_surf_5-5</app:target>
+					<app:target>#id_tin_surf_5-3</app:target>
+					<app:target>#id_tin_surf_1-9</app:target>
+					<app:target>#id_tin_surf_2-4</app:target>
+					<app:target>#id_tin_surf_4-10</app:target>
+					<app:target>#id_tin_surf_9-5</app:target>
+					<app:target>#id_tin_surf_8-0</app:target>
+					<app:target>#id_tin_surf_9-11</app:target>
+					<app:target>#id_tin_surf_4-3</app:target>
+					<app:target>#id_tin_surf_3-5</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_0b1ccf08-6da5-40e4-bb90-e4992c732158">
+					<gml:description>This is Tree Colour Green (FRONT)</gml:description>
+					<gml:name>Colour Green (FRONT) Tree Crown LoD1-2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 0.666667 0</app:diffuseColor>
+					<app:shininess>1</app:shininess>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_lod1_poly_tree_1</app:target>
+					<app:target>#id_lod1_poly_tree_2</app:target>
+					<app:target>#id_lod1_poly_tree_3</app:target>
+					<app:target>#id_lod1_poly_tree_4</app:target>
+					<app:target>#id_lod1_poly_tree_5</app:target>
+					<app:target>#id_lod1_poly_tree_6</app:target>
+					<app:target>#id_lod1_poly_tree_7</app:target>
+					<app:target>#id_lod1_poly_tree_8</app:target>
+					<app:target>#id_lod1_poly_tree_9</app:target>
+					<app:target>#id_lod1_poly_tree_10</app:target>
+					<app:target>#id_lod2_poly_tree_crown_2</app:target>
+					<app:target>#id_lod2_poly_tree_crown_1</app:target>
+					<app:target>#id_lod2_poly_tree_crown_h</app:target>
+					<app:target>#id_lod3_poly_tree_crown_1</app:target>
+					<app:target>#id_lod3_poly_tree_crown_2</app:target>
+					<app:target>#id_lod3_poly_tree_crown_3</app:target>
+					<app:target>#id_lod3_poly_tree_crown_4</app:target>
+					<app:target>#id_lod3_poly_tree_crown_5</app:target>
+					<app:target>#id_lod3_poly_tree_crown_6</app:target>
+					<app:target>#id_lod3_poly_tree_crown_7</app:target>
+					<app:target>#id_lod3_poly_tree_crown_8</app:target>
+					<app:target>#id_lod3_poly_tree_crown_9</app:target>
+					<app:target>#id_lod3_poly_tree_crown_10</app:target>
+					<app:target>#id_lod3_poly_tree_crown_11</app:target>
+					<app:target>#id_lod3_poly_tree_crown_12</app:target>
+					<app:target>#id_lod3_poly_tree_crown_13</app:target>
+					<app:target>#id_lod3_poly_tree_crown_14</app:target>
+					<app:target>#id_lod3_poly_tree_crown_15</app:target>
+					<app:target>#id_lod3_poly_tree_crown_16</app:target>
+					<app:target>#id_lod3_poly_tree_crown_17</app:target>
+					<app:target>#id_lod3_poly_tree_crown_18</app:target>
+					<app:target>#id_lod3_poly_tree_crown_19</app:target>
+					<app:target>#id_lod3_poly_tree_crown_20</app:target>
+					<app:target>#id_lod3_poly_tree_crown_21</app:target>
+					<app:target>#id_lod3_poly_tree_crown_22</app:target>
+					<app:target>#id_lod3_poly_tree_crown_23</app:target>
+					<app:target>#id_lod3_poly_tree_crown_24</app:target>
+					<app:target>#id_lod3_poly_tree_crown_25</app:target>
+					<app:target>#id_lod3_poly_tree_crown_26</app:target>
+					<app:target>#id_lod3_poly_tree_crown_27</app:target>
+					<app:target>#id_lod3_poly_tree_crown_28</app:target>
+					<app:target>#id_lod3_poly_tree_crown_29</app:target>
+					<app:target>#id_lod3_poly_tree_crown_30</app:target>
+					<app:target>#id_lod3_poly_tree_crown_31</app:target>
+					<app:target>#id_lod3_poly_tree_crown_32</app:target>
+					<app:target>#id_lod3_poly_tree_crown_33</app:target>
+					<app:target>#id_lod3_poly_tree_crown_34</app:target>
+					<app:target>#id_lod3_poly_tree_crown_35</app:target>
+					<app:target>#id_lod3_poly_tree_crown_36</app:target>
+					<app:target>#id_lod3_poly_tree_crown_37</app:target>
+					<app:target>#id_lod3_poly_tree_crown_38</app:target>
+					<app:target>#id_lod3_poly_tree_crown_39</app:target>
+					<app:target>#id_lod3_poly_tree_crown_40</app:target>
+					<app:target>#id_lod3_poly_tree_crown_41</app:target>
+					<app:target>#id_lod3_poly_tree_crown_42</app:target>
+					<app:target>#id_lod3_poly_tree_crown_43</app:target>
+					<app:target>#id_lod3_poly_tree_crown_44</app:target>
+					<app:target>#id_lod3_poly_tree_crown_45</app:target>
+					<app:target>#id_lod3_poly_tree_crown_46</app:target>
+					<app:target>#id_lod3_poly_tree_crown_47</app:target>
+					<app:target>#id_lod3_poly_tree_crown_48</app:target>
+					<app:target>#id_lod3_poly_tree_crown_49</app:target>
+					<app:target>#id_lod3_poly_tree_crown_50</app:target>
+					<app:target>#id_lod3_poly_tree_crown_51</app:target>
+					<app:target>#id_lod3_poly_tree_crown_52</app:target>
+					<app:target>#id_lod3_poly_tree_crown_53</app:target>
+					<app:target>#id_lod3_poly_tree_crown_54</app:target>
+					<app:target>#id_lod3_poly_tree_crown_55</app:target>
+					<app:target>#id_lod3_poly_tree_crown_56</app:target>
+					<app:target>#id_lod3_poly_tree_crown_57</app:target>
+					<app:target>#id_lod3_poly_tree_crown_58</app:target>
+					<app:target>#id_lod3_poly_tree_crown_59</app:target>
+					<app:target>#id_lod3_poly_tree_crown_60</app:target>
+					<app:target>#id_lod3_poly_tree_crown_61</app:target>
+					<app:target>#id_lod3_poly_tree_crown_62</app:target>
+					<app:target>#id_lod3_poly_tree_crown_63</app:target>
+					<app:target>#id_lod3_poly_tree_crown_64</app:target>
+					<app:target>#id_lod3_poly_tree_crown_65</app:target>
+					<app:target>#id_lod3_poly_tree_crown_66</app:target>
+					<app:target>#id_lod3_poly_tree_crown_67</app:target>
+					<app:target>#id_lod3_poly_tree_crown_68</app:target>
+					<app:target>#id_lod3_poly_tree_crown_69</app:target>
+					<app:target>#id_lod3_poly_tree_crown_70</app:target>
+					<app:target>#id_lod3_poly_tree_crown_71</app:target>
+					<app:target>#id_lod3_poly_tree_crown_72</app:target>
+					<app:target>#id_lod3_poly_tree_crown_73</app:target>
+					<app:target>#id_lod3_poly_tree_crown_74</app:target>
+					<app:target>#id_lod3_poly_tree_crown_75</app:target>
+					<app:target>#id_lod3_poly_tree_crown_76</app:target>
+					<app:target>#id_lod3_poly_tree_crown_77</app:target>
+					<app:target>#id_lod3_poly_tree_crown_78</app:target>
+					<app:target>#id_lod3_poly_tree_crown_79</app:target>
+					<app:target>#id_lod3_poly_tree_crown_80</app:target>
+					<app:target>#id_lod3_poly_tree_crown_81</app:target>
+					<app:target>#id_lod3_poly_tree_crown_82</app:target>
+					<app:target>#id_lod3_poly_tree_crown_83</app:target>
+					<app:target>#id_lod3_poly_tree_crown_84</app:target>
+					<app:target>#id_lod3_poly_tree_crown_85</app:target>
+					<app:target>#id_lod3_poly_tree_crown_86</app:target>
+					<app:target>#id_lod3_poly_tree_crown_87</app:target>
+					<app:target>#id_lod3_poly_tree_crown_88</app:target>
+					<app:target>#id_lod3_poly_tree_crown_89</app:target>
+					<app:target>#id_lod3_poly_tree_crown_90</app:target>
+					<app:target>#id_lod3_poly_tree_crown_91</app:target>
+					<app:target>#id_lod3_poly_tree_crown_92</app:target>
+					<app:target>#id_lod3_poly_tree_crown_93</app:target>
+					<app:target>#id_lod3_poly_tree_crown_94</app:target>
+					<app:target>#id_lod3_poly_tree_crown_95</app:target>
+					<app:target>#id_lod3_poly_tree_crown_96</app:target>
+					<app:target>#id_lod3_poly_tree_crown_97</app:target>
+					<app:target>#id_lod3_poly_tree_crown_98</app:target>
+					<app:target>#id_lod3_poly_tree_crown_99</app:target>
+					<app:target>#id_lod3_poly_tree_crown_100</app:target>
+					<app:target>#id_lod3_poly_tree_crown_101</app:target>
+					<app:target>#id_lod3_poly_tree_crown_102</app:target>
+					<app:target>#id_lod3_poly_tree_crown_103</app:target>
+					<app:target>#id_lod3_poly_tree_crown_104</app:target>
+					<app:target>#id_lod3_poly_tree_crown_105</app:target>
+					<app:target>#id_lod3_poly_tree_crown_106</app:target>
+					<app:target>#id_lod3_poly_tree_crown_107</app:target>
+					<app:target>#id_lod3_poly_tree_crown_108</app:target>
+					<app:target>#id_lod3_poly_tree_crown_109</app:target>
+					<app:target>#id_lod3_poly_tree_crown_110</app:target>
+					<app:target>#id_lod3_poly_tree_crown_111</app:target>
+					<app:target>#id_lod3_poly_tree_crown_112</app:target>
+					<app:target>#id_lod3_poly_tree_crown_113</app:target>
+					<app:target>#id_lod3_poly_tree_crown_114</app:target>
+					<app:target>#id_lod3_poly_tree_crown_115</app:target>
+					<app:target>#id_lod3_poly_tree_crown_116</app:target>
+					<app:target>#id_lod3_poly_tree_crown_117</app:target>
+					<app:target>#id_lod3_poly_tree_crown_118</app:target>
+					<app:target>#id_lod3_poly_tree_crown_119</app:target>
+					<app:target>#id_lod3_poly_tree_crown_120</app:target>
+					<app:target>#id_lod3_poly_tree_crown_121</app:target>
+					<app:target>#id_lod3_poly_tree_crown_122</app:target>
+					<app:target>#id_lod3_poly_tree_crown_123</app:target>
+					<app:target>#id_lod3_poly_tree_crown_124</app:target>
+					<app:target>#id_lod3_poly_tree_crown_125</app:target>
+					<app:target>#id_lod3_poly_tree_crown_126</app:target>
+					<app:target>#id_lod3_poly_tree_crown_127</app:target>
+					<app:target>#id_lod3_poly_tree_crown_128</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_13a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Green (FRONT) UrbanFunctionArea Level 2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0 1 0</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5</app:target>
+					<app:target>#id_MultiSurf_ufa_1_1_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_3</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_3</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_5f4c7071-f44c-48eb-85c7-44440e1e8729">
+					<gml:name>Colour Light Brown (BACK) CityFurniture LoD1</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0.8 0.7 0.4</app:diffuseColor>
+					<app:target>#id_cityfurniture_multiSurf_1</app:target>
+					<app:target>#id_cityfurniture_multiSurf_2</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_c87242ba-bc87-449a-ada7-57d73f58a065">
+					<gml:name>Colour Light Brown (FRONT) CityFurniture LoD1</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0.8 0.7 0.4</app:diffuseColor>
+					<app:target>#id_cityfurniture_multiSurf_1</app:target>
+					<app:target>#id_cityfurniture_multiSurf_2</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_6da34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:description>This is Colour Light Gray (BACK) for Building Wall LoD2</gml:description>
+					<gml:name>Colour Light Gray (BACK) Building Wall LoD2</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>0.863 0.863 0.863</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_6_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_4_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_d10eecb4-b17a-4b5a-b34f-8fef0a0e0d92">
+					<gml:description>This is Colour Light Gray (FRONT) for Building Wall LoD2</gml:description>
+					<gml:name>Colour Light Gray (FRONT) Building Wall LoD2</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>0.863 0.863 0.863</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_1_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_6_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_2_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_4_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_5_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_6_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_7_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_8_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_5_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_11_wallsurf_4_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_3_lod2_geom</app:target>
+					<app:target>#id_building_12_wallsurf_4_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_90730be6-ee89-4402-b15c-311ba4e1c42b">
+					<gml:description>This is Colour Orange (BACK) for Zone LoD1-2-3</gml:description>
+					<gml:name>Colour Orange (BACK) Zone LoD1-2-3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>1 0.647 0</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_zone_1_lod1_Solid</app:target>
+					<app:target>#id_zone_1_lod2_Solid</app:target>
+					<app:target>#id_zone_1_lod3_Solid</app:target>
+					<app:target>#id_zone_2_1_lod1_Solid</app:target>
+					<app:target>#id_zone_2_1_lod2_Solid</app:target>
+					<app:target>#id_zone_2_1_lod3_Solid</app:target>
+					<app:target>#id_zone_2_2_lod1_Solid</app:target>
+					<app:target>#id_zone_2_2_lod2_Solid</app:target>
+					<app:target>#id_zone_2_2_lod3_Solid</app:target>
+					<app:target>#id_zone_2_3_lod1_Solid</app:target>
+					<app:target>#id_zone_2_3_lod2_Solid</app:target>
+					<app:target>#id_zone_2_3_lod3_Solid</app:target>
+					<app:target>#id_zone_3_lod1_Solid</app:target>
+					<app:target>#id_zone_3_lod2_Solid</app:target>
+					<app:target>#id_zone_3_lod3_Solid</app:target>
+					<app:target>#id_zone_4_lod1_Solid</app:target>
+					<app:target>#id_zone_4_lod2_Solid</app:target>
+					<app:target>#id_zone_4_lod3_Solid</app:target>
+					<app:target>#id_zone_5_lod1_Solid</app:target>
+					<app:target>#id_zone_5_lod2_Solid</app:target>
+					<app:target>#id_zone_5_lod3_Solid</app:target>
+					<app:target>#id_zone_6_lod1_Solid</app:target>
+					<app:target>#id_zone_6_lod2_Solid</app:target>
+					<app:target>#id_zone_6_lod3_Solid</app:target>
+					<app:target>#id_zone_7_lod1_Solid</app:target>
+					<app:target>#id_zone_7_lod2_Solid</app:target>
+					<app:target>#id_zone_7_lod3_Solid</app:target>
+					<app:target>#id_zone_8_lod1_Solid</app:target>
+					<app:target>#id_zone_8_lod2_Solid</app:target>
+					<app:target>#id_zone_8_lod3_Solid</app:target>
+					<app:target>#id_zone_9_lod1_Solid</app:target>
+					<app:target>#id_zone_9_lod2_Solid</app:target>
+					<app:target>#id_zone_9_lod3_Solid</app:target>
+					<app:target>#id_zone_10_lod1_Solid</app:target>
+					<app:target>#id_zone_10_lod2_Solid</app:target>
+					<app:target>#id_zone_10_lod3_Solid</app:target>
+					<app:target>#id_zone_11_1_lod1_Solid</app:target>
+					<app:target>#id_zone_11_1_lod2_Solid</app:target>
+					<app:target>#id_zone_11_1_lod3_Solid</app:target>
+					<app:target>#id_zone_11_2_lod1_Solid</app:target>
+					<app:target>#id_zone_11_2_lod2_Solid</app:target>
+					<app:target>#id_zone_11_2_lod3_Solid</app:target>
+					<app:target>#id_zone_11_3_lod1_Solid</app:target>
+					<app:target>#id_zone_11_3_lod2_Solid</app:target>
+					<app:target>#id_zone_11_3_lod3_Solid</app:target>
+					<app:target>#id_zone_12_lod1_Solid</app:target>
+					<app:target>#id_zone_12_lod2_Solid</app:target>
+					<app:target>#id_zone_12_lod3_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_63282fbc-d3d3-4a8c-b9b6-81a0346b5acf">
+					<gml:description>This is Colour Orange (FRONT) for Zone LoD1-2-3</gml:description>
+					<gml:name>Colour Orange (FRONT) Zone LoD1-2-3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>1 0.647 0</app:diffuseColor>
+					<app:transparency>0.6</app:transparency>
+					<app:target>#id_zone_1_lod1_Solid</app:target>
+					<app:target>#id_zone_1_lod2_Solid</app:target>
+					<app:target>#id_zone_1_lod3_Solid</app:target>
+					<app:target>#id_zone_2_1_lod1_Solid</app:target>
+					<app:target>#id_zone_2_1_lod2_Solid</app:target>
+					<app:target>#id_zone_2_1_lod3_Solid</app:target>
+					<app:target>#id_zone_2_2_lod1_Solid</app:target>
+					<app:target>#id_zone_2_2_lod2_Solid</app:target>
+					<app:target>#id_zone_2_2_lod3_Solid</app:target>
+					<app:target>#id_zone_2_3_lod1_Solid</app:target>
+					<app:target>#id_zone_2_3_lod2_Solid</app:target>
+					<app:target>#id_zone_2_3_lod3_Solid</app:target>
+					<app:target>#id_zone_3_lod1_Solid</app:target>
+					<app:target>#id_zone_3_lod2_Solid</app:target>
+					<app:target>#id_zone_3_lod3_Solid</app:target>
+					<app:target>#id_zone_4_lod1_Solid</app:target>
+					<app:target>#id_zone_4_lod2_Solid</app:target>
+					<app:target>#id_zone_4_lod3_Solid</app:target>
+					<app:target>#id_zone_5_lod1_Solid</app:target>
+					<app:target>#id_zone_5_lod2_Solid</app:target>
+					<app:target>#id_zone_5_lod3_Solid</app:target>
+					<app:target>#id_zone_6_lod1_Solid</app:target>
+					<app:target>#id_zone_6_lod2_Solid</app:target>
+					<app:target>#id_zone_6_lod3_Solid</app:target>
+					<app:target>#id_zone_7_lod1_Solid</app:target>
+					<app:target>#id_zone_7_lod2_Solid</app:target>
+					<app:target>#id_zone_7_lod3_Solid</app:target>
+					<app:target>#id_zone_8_lod1_Solid</app:target>
+					<app:target>#id_zone_8_lod2_Solid</app:target>
+					<app:target>#id_zone_8_lod3_Solid</app:target>
+					<app:target>#id_zone_9_lod1_Solid</app:target>
+					<app:target>#id_zone_9_lod2_Solid</app:target>
+					<app:target>#id_zone_9_lod3_Solid</app:target>
+					<app:target>#id_zone_10_lod1_Solid</app:target>
+					<app:target>#id_zone_10_lod2_Solid</app:target>
+					<app:target>#id_zone_10_lod3_Solid</app:target>
+					<app:target>#id_zone_11_1_lod1_Solid</app:target>
+					<app:target>#id_zone_11_1_lod2_Solid</app:target>
+					<app:target>#id_zone_11_1_lod3_Solid</app:target>
+					<app:target>#id_zone_11_2_lod1_Solid</app:target>
+					<app:target>#id_zone_11_2_lod2_Solid</app:target>
+					<app:target>#id_zone_11_2_lod3_Solid</app:target>
+					<app:target>#id_zone_11_3_lod1_Solid</app:target>
+					<app:target>#id_zone_11_3_lod2_Solid</app:target>
+					<app:target>#id_zone_11_3_lod3_Solid</app:target>
+					<app:target>#id_zone_12_lod1_Solid</app:target>
+					<app:target>#id_zone_12_lod2_Solid</app:target>
+					<app:target>#id_zone_12_lod3_Solid</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_12a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Pink (BACK) UrbanFunctionArea Level 3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>1 0.75 0.79</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_2</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_11a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Pink (FRONT) UrbanFunctionArea Level 3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>1 0.75 0.79</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_2</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_2</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_e874ab1c-4f62-4cb4-a843-b70b8c5d7a53">
+					<gml:description>This is Colour Red (BACK) for Building Roof LoD2</gml:description>
+					<gml:name>Colour Red (BACK) Building Roof LoD2</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>1 0 0</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_1_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_2_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_3_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_5_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_6_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_7_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_8_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_11_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_12_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_roofsurf_2_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_10a34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Red (BACK) UrbanFunctionArea Level 3</gml:name>
+					<app:isFront>false</app:isFront>
+					<app:diffuseColor>1 0 0</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_1</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_118cde71-d173-4b52-bdad-f34018e456bf">
+					<gml:description>This is Colour Red (FRONT) for Building Roof LoD2</gml:description>
+					<gml:name>Colour Red (FRONT) Building Roof LoD2</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>1 0 0</app:diffuseColor>
+					<app:transparency>0</app:transparency>
+					<app:target>#id_building_1_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_1_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_2_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_2_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_3_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_3_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_4_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_4_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_5_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_5_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_6_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_6_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_7_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_7_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_8_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_8_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_9_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_buildingpart_10_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_11_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_11_roofsurf_2_lod2_geom</app:target>
+					<app:target>#id_building_12_roofsurf_1_lod2_geom</app:target>
+					<app:target>#id_building_12_roofsurf_2_lod2_geom</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_9da34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Red (FRONT) UrbanFunctionArea Level 3</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>1 0 0</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1_1_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_2_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_3_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_4_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_5_1</app:target>
+					<app:target>#id_MultiSurf_ufa_1_6_1</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_8da34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Yellow (BACK) UrbanFunctionArea Level 1</gml:name>
+					<app:isFront>true</app:isFront>
+					<app:diffuseColor>1 1 0</app:diffuseColor>
+					<app:target>#id_MultiSurf_ufa_1</app:target>
+				</app:X3DMaterial>
+			</app:surfaceDataMember>
+			<app:surfaceDataMember>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_efbaab86-3ba5-4b44-a37a-eb3efddd0998">
+					<gml:description>This is Colour Yellow (BACK) for Zone Boundary LoD2-3</gml:description>
+					<gml:name>Colour Yellow (BACK) Zone Boundary LoD2-3</gml:name>
 					<app:isFront>false</app:isFront>
 					<app:diffuseColor>1 1 0</app:diffuseColor>
 					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_5</app:target>
-					<app:target>#Polygon_UUID_2240fbcc-7699-48dd-93b4-1668ac44224f</app:target>
-					<app:target>#id_building_1_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_5931fe6f-0875-464c-a020-17addd8f9fe5</app:target>
-					<app:target>#id_building_1_polygon_4</app:target>
-					<app:target>#Polygon_UUID_1a85715e-a92d-405b-adf8-1e402415cc90</app:target>
-					<app:target>#id_building_1_polygon_7</app:target>
-					<app:target>#Polygon_UUID_148e7131-25d1-4de1-9092-c89d73a2b927</app:target>
-					<app:target>#Polygon_fd921190-6eb0-4f7e-a9bd-e8dc7d9580f8</app:target>
-					<app:target>#Polygon_a1129803-4dbe-466a-a969-d30519de5d04</app:target>
-					<app:target>#Polygon_0c1cc863-d675-47e9-b499-f84b5331bd7d</app:target>
-					<app:target>#Polygon_1d050015-cf5b-468e-b84d-27ce32cf2e46</app:target>
-					<app:target>#Polygon_120c20da-d5e9-4a72-bcd0-abed7f7e20fa</app:target>
-					<app:target>#Polygon_eb032174-9ad4-4ad0-9e2b-f00679155e9a</app:target>
-					<app:target>#Polygon_e9a57486-0001-46e7-95d6-24a234a3e525</app:target>
-					<app:target>#Polygon_1c5a3737-0d35-485e-bac9-3579e9394108</app:target>
-					<app:target>#Polygon_cfedd1d9-7507-47f1-ba4e-f67c8281c0e0</app:target>
-					<app:target>#Polygon_aea09bc0-627b-40fa-9d0a-62e9589b3cd0</app:target>
-					<app:target>#Polygon_9f127bbf-fad2-482e-9378-39defdc6d9b7</app:target>
-					<app:target>#Polygon_b2def432-da2e-492e-8629-061970997a37</app:target>
-					<app:target>#Polygon_b5aead5f-66ff-4ad7-9b12-a505c4f50c6a</app:target>
-					<app:target>#Polygon_19377c38-d150-4d73-b4af-aa983306d62b</app:target>
-					<app:target>#Polygon_75cdad99-7639-4672-8bdb-6e1301115b35</app:target>
-					<app:target>#Polygon_72a22c54-248f-4a82-91c1-bdb53f6f59a5</app:target>
-					<app:target>#Polygon_4b8441f3-50b7-47ea-9481-b2095cc5870d</app:target>
-					<app:target>#Polygon_7c4c2bf3-c921-4f64-bc5c-be0db1d55827</app:target>
-					<app:target>#Polygon_b685022c-530f-4f42-b7c2-2e16730b0cf5</app:target>
-					<app:target>#Polygon_fb5b6277-98c8-4d3b-acd4-120936b71cd0</app:target>
-					<app:target>#Polygon_91316cb1-5e9c-473b-8f9f-4999469c2f1e</app:target>
-					<app:target>#Polygon_d31e6c0c-b0f6-4297-b076-f1e74963995a</app:target>
-					<app:target>#Polygon_d9b13830-8815-4fa3-9b38-a76bfc0b3a19</app:target>
-					<app:target>#Polygon_f7bc2cb3-2515-4afd-9a3e-1b142e9dbde5</app:target>
-					<app:target>#Polygon_d9b13830-5515-4fa3-9b38-a76bfc0b3a19</app:target>
-					<app:target>#Polygon_f7bc2cb3-2515-4a55-9a3e-1b142e9dbde5</app:target>
-					<app:target>#Polygon_91316cb1-5e66-473b-8f9f-4999469c2f1e</app:target>
-					<app:target>#Polygon_d31e6c0c-b0f6-6697-b076-f1e74963995a</app:target>
-					<app:target>#id_building_3_polygon_5</app:target>
-					<app:target>#Polygon_UUID_8cc1a1a1-88b1-4c1a-b7be-6e8e3037d5cb</app:target>
-					<app:target>#id_building_3_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_b2467493-b0c6-4e24-98d1-fa1ab1757d98</app:target>
-					<app:target>#id_building_3_polygon_4</app:target>
-					<app:target>#Polygon_UUID_ab624f83-6b4a-40f1-b140-7ee5a42e0fde</app:target>
-					<app:target>#id_building_3_polygon_cs2</app:target>
-					<app:target>#Polygon_UUID_0dac9b9c-680b-4027-8cb5-2e30043ddce7</app:target>
-					<app:target>#id_building_4_polygon_5</app:target>
-					<app:target>#Polygon_UUID_76b6944e-9c5d-418d-bf98-75506d7a8fd2</app:target>
-					<app:target>#id_building_4_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_1166b21d-8996-4aa1-9220-859eff8f9c0a</app:target>
-					<app:target>#Polygon_UUID_2f5fa401-0cb3-49fd-9531-7ff5be802839</app:target>
-					<app:target>#id_zone_4_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_building_4_polygon_7</app:target>
-					<app:target>#Polygon_UUID_181b9143-cb3c-4c39-8249-19f17777d5e3</app:target>
-					<app:target>#id_building_4_polygon_6</app:target>
-					<app:target>#Polygon_UUID_f5f24fbb-6b42-4457-9490-0aef449cb122</app:target>
-					<app:target>#Polygon_UUID_f04fcb64-39fa-4f7b-8946-166bb0ccd1d5</app:target>
-					<app:target>#id_zone_5_zonewallsurf_1_lod3_polygon</app:target>
-					<app:target>#id_building_5_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_639151a8-9576-47d2-9c02-8ea5f8462aa9</app:target>
-					<app:target>#id_building_5_polygon_4</app:target>
-					<app:target>#Polygon_UUID_a4d0cf89-fb5f-4ddf-ab82-513880066dd7</app:target>
-					<app:target>#id_building_5_polygon_7</app:target>
-					<app:target>#Polygon_UUID_6544640e-f822-4e92-b1a3-ccc9e7e3c085</app:target>
-					<app:target>#id_building_5_polygon_6</app:target>
-					<app:target>#Polygon_UUID_46001dab-37eb-499f-a6c3-7fba34a7b9b1</app:target>
-					<app:target>#id_building_6_polygon_5</app:target>
-					<app:target>#Polygon_UUID_55b6b5cb-b3ad-404c-abde-6e71939124b2</app:target>
-					<app:target>#id_building_6_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_eb57f026-d957-4901-b8fb-c53a2e9d3ea6</app:target>
-					<app:target>#id_building_6_polygon_4</app:target>
-					<app:target>#Polygon_UUID_ec89d8a2-14ae-43b5-90f2-efd6b6a9f0bc</app:target>
-					<app:target>#Polygon_UUID_122cde24-42cb-4e4b-9a2e-de9c99d92a03</app:target>
-					<app:target>#id_zone_6_zonewallsurf_3_lod3_polygon</app:target>
-					<app:target>#id_building_6_polygon_6</app:target>
-					<app:target>#Polygon_UUID_cdc15711-82ad-42ad-acbe-2f9ea9ac87a3</app:target>
-					<app:target>#id_building_7_polygon_5</app:target>
-					<app:target>#Polygon_UUID_282024b9-20ea-41e8-b6b5-32077e56af53</app:target>
-					<app:target>#id_building_7_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_a8c27406-94f8-4170-a353-4d203bf667e8</app:target>
-					<app:target>#id_building_7_polygon_4</app:target>
-					<app:target>#Polygon_UUID_e6e7d9bc-b9da-4ee7-8e6f-376b132b6989</app:target>
-					<app:target>#id_building_7_polygon_7</app:target>
-					<app:target>#Polygon_UUID_26975881-ecc9-46da-a3e4-a877d793640a</app:target>
-					<app:target>#Polygon_UUID_64b01d61-889b-4fbb-8d53-6ff5ee903b62</app:target>
-					<app:target>#id_zone_7_zonewallsurf_4_lod3_polygon</app:target>
-					<app:target>#id_building_8_polygon_5</app:target>
-					<app:target>#Polygon_UUID_6894d9e7-8a15-4302-b288-c1e9eb019e7f</app:target>
-					<app:target>#id_building_8_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_9cfc159b-01f0-43ec-b06e-eb39714ab741</app:target>
-					<app:target>#Polygon_UUID_2d346acb-be04-468d-a859-33614889ece5</app:target>
-					<app:target>#id_zone_8_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_building_8_polygon_7</app:target>
-					<app:target>#Polygon_UUID_473371e6-89fa-4d2a-9b48-96c94db8c8df</app:target>
-					<app:target>#id_building_8_polygon_6</app:target>
-					<app:target>#Polygon_UUID_7a3a241b-ac3e-47a4-ae4b-cffd5abca358</app:target>
-					<app:target>#Polygon_UUID_8483ccec-3dcf-4185-b6d5-646cf4a298c5</app:target>
-					<app:target>#id_zone_9_zonewallsurf_1_lod3_polygon</app:target>
-					<app:target>#id_buildingpart_9_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_e9e8c9f6-272a-4a88-aa0d-169eca4c1328</app:target>
-					<app:target>#id_buildingpart_9_polygon_4</app:target>
-					<app:target>#Polygon_UUID_0980805a-70ec-451e-aa63-59e74f5e62be</app:target>
-					<app:target>#id_buildingpart_9_polygon_7</app:target>
-					<app:target>#Polygon_UUID_2e048c8a-449f-4257-90aa-e1ab39d2230f</app:target>
-					<app:target>#id_buildingpart_9_polygon_6</app:target>
-					<app:target>#Polygon_UUID_f3cba4c9-adaf-441c-9ef7-8f9d0c4387b4</app:target>
-					<app:target>#id_buildingpart_10_polygon_5</app:target>
-					<app:target>#Polygon_UUID_0838cbc3-e447-47f3-90bd-e20872c8c3be</app:target>
-					<app:target>#id_buildingpart_10_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_cfda710c-460f-4257-8bf1-54f9d56b4100</app:target>
-					<app:target>#Polygon_UUID_ce528f49-db3a-4697-aff3-57174323fc0d</app:target>
-					<app:target>#id_zone_10_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_buildingpart_10_polygon_7</app:target>
-					<app:target>#Polygon_UUID_3f9a50e5-e219-487c-9e10-c0c703eb3141</app:target>
-					<app:target>#id_buildingpart_10_polygon_6</app:target>
-					<app:target>#Polygon_UUID_750b74fb-001e-417c-8468-8ca5e3afeebf</app:target>
-					<app:target>#Polygon_UUID_02bc067f-143a-48a6-9b30-f204610669a0</app:target>
-					<app:target>#Polygon_UUID_5eb4cb53-5fa7-4831-8e7a-84cd0467ca8a</app:target>
-					<app:target>#Polygon_UUID_8014fd0a-715f-4b39-b05a-0247fd5ea985</app:target>
-					<app:target>#Polygon_UUID_c614b8ae-34e2-41db-b5c9-5c1db9ef29db</app:target>
-					<app:target>#Polygon_UUID_0b30a8f5-d9df-455e-8629-17e33fc55a54</app:target>
-					<app:target>#Polygon_UUID_5bbc40a9-f9c1-4d32-8302-8665270fbb8f</app:target>
-					<app:target>#Polygon_UUID_fce301b7-d1c0-4eff-a0f9-e116a41c9d6a</app:target>
-					<app:target>#Polygon_UUID_4344eb67-b368-4d44-98c6-3cb9af98eb3e</app:target>
-					<app:target>#Polygon_UUID_9420c3ad-46e9-49ff-8ca5-fac81b1f4dfd</app:target>
-					<app:target>#Polygon_UUID_f25d38e4-2e93-47d5-88da-6ca24e2071a6</app:target>
-					<app:target>#Polygon_UUID_1679c6fe-86fa-427a-b844-26c0e9ce90e6</app:target>
-					<app:target>#Polygon_UUID_fe5363ce-890d-4f9a-80ab-c0c830128cb6</app:target>
-					<app:target>#Polygon_UUID_18eff9aa-56a0-4c94-ba01-2338f8a4b6c0</app:target>
-					<app:target>#Polygon_UUID_a548a020-f3fd-48c9-b7b1-5ee3cc64e47f</app:target>
-					<app:target>#Polygon_UUID_66b4b690-9f4b-46e5-bd14-1e54d40fdb82</app:target>
-					<app:target>#Polygon_UUID_a67a0c00-990d-416f-9321-fba585a60f23</app:target>
-					<app:target>#id_building_12_polygon_5</app:target>
-					<app:target>#Polygon_UUID_f1bea6b4-ad11-4e8b-b230-5596226c9ea6</app:target>
-					<app:target>#id_building_12_polygon_4</app:target>
-					<app:target>#Polygon_UUID_32354be5-9027-46da-b00c-dbdca6d857da</app:target>
-					<app:target>#id_building_12_polygon_7</app:target>
-					<app:target>#Polygon_UUID_475e9135-25f1-410a-8723-ce2454b2bedf</app:target>
-					<app:target>#id_building_12_polygon_6</app:target>
-					<app:target>#Polygon_UUID_b49fd700-6b1f-43e4-88a7-637161034ccd</app:target>
+					<app:target>#id_zone_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_6_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_6_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zonebasementceilingsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zonebasementceilingsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonebasementceilingsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonebasementceilingsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_lod3_geom</app:target>
 				</app:X3DMaterial>
 			</app:surfaceDataMember>
 			<app:surfaceDataMember>
-				<app:X3DMaterial>
-					<app:diffuseColor>1 1 0</app:diffuseColor>
-					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_3</app:target>
-					<app:target>#Polygon_UUID_4a5ef73e-04b2-4e8e-81f5-1ddb2838823e</app:target>
-					<app:target>#Polygon_6cf01382-2c71-47ac-aa0f-f455eaaaf49c</app:target>
-					<app:target>#Polygon_20885a07-75e6-4e6d-ae72-421c04f11f28</app:target>
-					<app:target>#id_building_3_polygon_3</app:target>
-					<app:target>#Polygon_UUID_b89310e5-31b1-4ad1-b901-75dc495bd2b2</app:target>
-					<app:target>#id_building_4_polygon_3</app:target>
-					<app:target>#Polygon_UUID_af3ff229-e35f-4e96-a026-49a83b4dccb9</app:target>
-					<app:target>#id_building_5_polygon_3</app:target>
-					<app:target>#Polygon_UUID_2678c740-bdc9-4dcb-80e8-79615fb56de5</app:target>
-					<app:target>#id_building_6_polygon_3</app:target>
-					<app:target>#Polygon_UUID_9a4a99a6-bb03-4e29-a5a8-44e81be8eb2d</app:target>
-					<app:target>#id_building_7_polygon_3</app:target>
-					<app:target>#Polygon_UUID_4f00de5d-6843-4d81-ba06-82705fa6b4cb</app:target>
-					<app:target>#id_building_8_polygon_3</app:target>
-					<app:target>#Polygon_UUID_af58fc65-25f5-46cd-a226-fbde4a9915ad</app:target>
-					<app:target>#id_buildingpart_9_polygon_3</app:target>
-					<app:target>#Polygon_UUID_8a409fdb-73cc-479a-bf20-7b44aee2424b</app:target>
-					<app:target>#id_buildingpart_10_polygon_3</app:target>
-					<app:target>#Polygon_UUID_c1671c17-774b-414b-be39-f510bfbc31c4</app:target>
-					<app:target>#Polygon_UUID_8dd01f3c-2283-4c8f-aa8a-732a50a40f1d</app:target>
-					<app:target>#Polygon_UUID_61567df0-22bc-4675-b8a9-53d743eec952</app:target>
-					<app:target>#id_building_12_polygon_3</app:target>
-					<app:target>#Polygon_UUID_e9f149b3-9407-444a-ad4f-ab6bff3be2ac</app:target>
-				</app:X3DMaterial>
-			</app:surfaceDataMember>
-			<app:surfaceDataMember>
-				<app:X3DMaterial>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_7da34b5f-0db6-4829-8088-6f73a3007b6d">
+					<gml:name>Colour Yellow (FRONT) UrbanFunctionArea Level 1</gml:name>
 					<app:isFront>false</app:isFront>
 					<app:diffuseColor>1 1 0</app:diffuseColor>
-					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_1</app:target>
-					<app:target>#Polygon_UUID_9454055e-f9f2-46c6-8c3d-f1de8e5b54ce</app:target>
-					<app:target>#id_building_1_polygon_2</app:target>
-					<app:target>#Polygon_UUID_e8e3d62c-1bb4-48d2-8415-346cb2dff634</app:target>
-					<app:target>#Polygon_42d94bb9-b8ea-439c-852d-7ba10730ac71</app:target>
-					<app:target>#Polygon_eada86ec-df7b-492c-a0e1-1502c9e87f45</app:target>
-					<app:target>#Polygon_eb4507a6-d056-48d7-a559-5c968525d91b</app:target>
-					<app:target>#Polygon_55262181-33de-4d78-8aa7-d26a0cdf3e6b</app:target>
-					<app:target>#id_building_3_polygon_1</app:target>
-					<app:target>#Polygon_UUID_4a31d7c7-8875-4541-95e0-644f811ebf13</app:target>
-					<app:target>#id_building_3_polygon_2</app:target>
-					<app:target>#Polygon_UUID_8b27877f-6fd8-4936-8a3e-568ee7b034d1</app:target>
-					<app:target>#id_building_4_polygon_1</app:target>
-					<app:target>#Polygon_UUID_111e47ae-ba84-4040-8564-c9e0dafe79e7</app:target>
-					<app:target>#id_building_4_polygon_2</app:target>
-					<app:target>#Polygon_UUID_2991ae4b-dafb-4627-b0a8-96ce71ecb4f5</app:target>
-					<app:target>#id_building_5_polygon_1</app:target>
-					<app:target>#Polygon_UUID_fb0040c8-237b-4e98-a9ad-356b6486f224</app:target>
-					<app:target>#id_building_5_polygon_2</app:target>
-					<app:target>#Polygon_UUID_a09d1c36-18b5-4d66-8015-26b7c5441d61</app:target>
-					<app:target>#id_building_6_polygon_1</app:target>
-					<app:target>#Polygon_UUID_671241a4-cdc0-4728-8c14-58e40405f7ba</app:target>
-					<app:target>#id_building_6_polygon_2</app:target>
-					<app:target>#Polygon_UUID_5bd1afcd-3dff-4b7b-8fda-a38514f3b38b</app:target>
-					<app:target>#id_building_7_polygon_1</app:target>
-					<app:target>#Polygon_UUID_dcd56740-10b8-49cb-bd82-3ab5f74b4c74</app:target>
-					<app:target>#id_building_7_polygon_2</app:target>
-					<app:target>#Polygon_UUID_e5e90518-4a89-468f-bb92-8a42e811a470</app:target>
-					<app:target>#id_building_8_polygon_1</app:target>
-					<app:target>#Polygon_UUID_51f2b129-4a1e-4f64-9a2f-90acd09f4c20</app:target>
-					<app:target>#id_building_8_polygon_2</app:target>
-					<app:target>#Polygon_UUID_2f2e6c09-ea22-416f-acc5-d2b3415a9471</app:target>
-					<app:target>#id_buildingpart_9_polygon_1</app:target>
-					<app:target>#Polygon_UUID_00e67ccf-0da7-4b59-9c7d-bdd2b8d7995e</app:target>
-					<app:target>#id_buildingpart_9_polygon_2</app:target>
-					<app:target>#Polygon_UUID_86637b83-7766-4ab0-8f81-c31750bdfd4b</app:target>
-					<app:target>#id_buildingpart_10_polygon_1</app:target>
-					<app:target>#Polygon_UUID_c1c0b625-20b8-4299-a422-a22bbec40fee</app:target>
-					<app:target>#id_buildingpart_10_polygon_2</app:target>
-					<app:target>#Polygon_UUID_078ce242-66ef-488d-9259-8bc3ebdaee52</app:target>
-					<app:target>#Polygon_UUID_3ff93a29-6e1e-4891-8220-907e83537dd1</app:target>
-					<app:target>#Polygon_UUID_27293208-de43-4e33-8ae5-2caa7508087f</app:target>
-					<app:target>#Polygon_UUID_f304ea85-ba43-4966-ba37-0fcbef85248c</app:target>
-					<app:target>#Polygon_UUID_1759fb24-f269-4a2e-a843-9906ffb1df60</app:target>
-					<app:target>#id_building_12_polygon_1</app:target>
-					<app:target>#Polygon_UUID_e7dab2a0-c4de-46f8-acb2-e166a4850bc7</app:target>
-					<app:target>#id_building_12_polygon_2</app:target>
-					<app:target>#Polygon_UUID_f202a922-5240-4500-beee-4bfe5e146e9f</app:target>
+					<app:target>#id_MultiSurf_ufa_1</app:target>
 				</app:X3DMaterial>
 			</app:surfaceDataMember>
 			<app:surfaceDataMember>
-				<app:X3DMaterial>
+				<app:X3DMaterial gml:id="X3DMaterial_UUID_a54f7fa2-09b2-455d-9005-5fb4581f0291">
+					<gml:description>This is Colour Yellow (FRONT) for Zone Boundary LoD2-3</gml:description>
+					<gml:name>Colour Yellow (FRONT) Zone Boundary LoD2-3</gml:name>
+					<app:isFront>true</app:isFront>
 					<app:diffuseColor>1 1 0</app:diffuseColor>
 					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_1</app:target>
-					<app:target>#Polygon_UUID_9454055e-f9f2-46c6-8c3d-f1de8e5b54ce</app:target>
-					<app:target>#id_building_1_polygon_2</app:target>
-					<app:target>#Polygon_UUID_e8e3d62c-1bb4-48d2-8415-346cb2dff634</app:target>
-					<app:target>#Polygon_42d94bb9-b8ea-439c-852d-7ba10730ac71</app:target>
-					<app:target>#Polygon_eada86ec-df7b-492c-a0e1-1502c9e87f45</app:target>
-					<app:target>#Polygon_eb4507a6-d056-48d7-a559-5c968525d91b</app:target>
-					<app:target>#Polygon_55262181-33de-4d78-8aa7-d26a0cdf3e6b</app:target>
-					<app:target>#id_building_3_polygon_1</app:target>
-					<app:target>#Polygon_UUID_4a31d7c7-8875-4541-95e0-644f811ebf13</app:target>
-					<app:target>#id_building_3_polygon_2</app:target>
-					<app:target>#Polygon_UUID_8b27877f-6fd8-4936-8a3e-568ee7b034d1</app:target>
-					<app:target>#id_building_4_polygon_1</app:target>
-					<app:target>#Polygon_UUID_111e47ae-ba84-4040-8564-c9e0dafe79e7</app:target>
-					<app:target>#id_building_4_polygon_2</app:target>
-					<app:target>#Polygon_UUID_2991ae4b-dafb-4627-b0a8-96ce71ecb4f5</app:target>
-					<app:target>#id_building_5_polygon_1</app:target>
-					<app:target>#Polygon_UUID_fb0040c8-237b-4e98-a9ad-356b6486f224</app:target>
-					<app:target>#id_building_5_polygon_2</app:target>
-					<app:target>#Polygon_UUID_a09d1c36-18b5-4d66-8015-26b7c5441d61</app:target>
-					<app:target>#id_building_6_polygon_1</app:target>
-					<app:target>#Polygon_UUID_671241a4-cdc0-4728-8c14-58e40405f7ba</app:target>
-					<app:target>#id_building_6_polygon_2</app:target>
-					<app:target>#Polygon_UUID_5bd1afcd-3dff-4b7b-8fda-a38514f3b38b</app:target>
-					<app:target>#id_building_7_polygon_1</app:target>
-					<app:target>#Polygon_UUID_dcd56740-10b8-49cb-bd82-3ab5f74b4c74</app:target>
-					<app:target>#id_building_7_polygon_2</app:target>
-					<app:target>#Polygon_UUID_e5e90518-4a89-468f-bb92-8a42e811a470</app:target>
-					<app:target>#id_building_8_polygon_1</app:target>
-					<app:target>#Polygon_UUID_51f2b129-4a1e-4f64-9a2f-90acd09f4c20</app:target>
-					<app:target>#id_building_8_polygon_2</app:target>
-					<app:target>#Polygon_UUID_2f2e6c09-ea22-416f-acc5-d2b3415a9471</app:target>
-					<app:target>#id_buildingpart_9_polygon_1</app:target>
-					<app:target>#Polygon_UUID_00e67ccf-0da7-4b59-9c7d-bdd2b8d7995e</app:target>
-					<app:target>#id_buildingpart_9_polygon_2</app:target>
-					<app:target>#Polygon_UUID_86637b83-7766-4ab0-8f81-c31750bdfd4b</app:target>
-					<app:target>#id_buildingpart_10_polygon_1</app:target>
-					<app:target>#Polygon_UUID_c1c0b625-20b8-4299-a422-a22bbec40fee</app:target>
-					<app:target>#id_buildingpart_10_polygon_2</app:target>
-					<app:target>#Polygon_UUID_078ce242-66ef-488d-9259-8bc3ebdaee52</app:target>
-					<app:target>#Polygon_UUID_3ff93a29-6e1e-4891-8220-907e83537dd1</app:target>
-					<app:target>#Polygon_UUID_27293208-de43-4e33-8ae5-2caa7508087f</app:target>
-					<app:target>#Polygon_UUID_f304ea85-ba43-4966-ba37-0fcbef85248c</app:target>
-					<app:target>#Polygon_UUID_1759fb24-f269-4a2e-a843-9906ffb1df60</app:target>
-					<app:target>#id_building_12_polygon_1</app:target>
-					<app:target>#Polygon_UUID_e7dab2a0-c4de-46f8-acb2-e166a4850bc7</app:target>
-					<app:target>#id_building_12_polygon_2</app:target>
-					<app:target>#Polygon_UUID_f202a922-5240-4500-beee-4bfe5e146e9f</app:target>
-				</app:X3DMaterial>
-			</app:surfaceDataMember>
-			<app:surfaceDataMember>
-				<app:X3DMaterial>
-					<app:diffuseColor>1 1 0</app:diffuseColor>
-					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_5</app:target>
-					<app:target>#Polygon_UUID_2240fbcc-7699-48dd-93b4-1668ac44224f</app:target>
-					<app:target>#id_building_1_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_5931fe6f-0875-464c-a020-17addd8f9fe5</app:target>
-					<app:target>#id_building_1_polygon_4</app:target>
-					<app:target>#Polygon_UUID_1a85715e-a92d-405b-adf8-1e402415cc90</app:target>
-					<app:target>#id_building_1_polygon_7</app:target>
-					<app:target>#Polygon_UUID_148e7131-25d1-4de1-9092-c89d73a2b927</app:target>
-					<app:target>#Polygon_fd921190-6eb0-4f7e-a9bd-e8dc7d9580f8</app:target>
-					<app:target>#Polygon_a1129803-4dbe-466a-a969-d30519de5d04</app:target>
-					<app:target>#Polygon_0c1cc863-d675-47e9-b499-f84b5331bd7d</app:target>
-					<app:target>#Polygon_1d050015-cf5b-468e-b84d-27ce32cf2e46</app:target>
-					<app:target>#Polygon_120c20da-d5e9-4a72-bcd0-abed7f7e20fa</app:target>
-					<app:target>#Polygon_eb032174-9ad4-4ad0-9e2b-f00679155e9a</app:target>
-					<app:target>#Polygon_e9a57486-0001-46e7-95d6-24a234a3e525</app:target>
-					<app:target>#Polygon_1c5a3737-0d35-485e-bac9-3579e9394108</app:target>
-					<app:target>#Polygon_cfedd1d9-7507-47f1-ba4e-f67c8281c0e0</app:target>
-					<app:target>#Polygon_aea09bc0-627b-40fa-9d0a-62e9589b3cd0</app:target>
-					<app:target>#Polygon_9f127bbf-fad2-482e-9378-39defdc6d9b7</app:target>
-					<app:target>#Polygon_b2def432-da2e-492e-8629-061970997a37</app:target>
-					<app:target>#Polygon_b5aead5f-66ff-4ad7-9b12-a505c4f50c6a</app:target>
-					<app:target>#Polygon_19377c38-d150-4d73-b4af-aa983306d62b</app:target>
-					<app:target>#Polygon_75cdad99-7639-4672-8bdb-6e1301115b35</app:target>
-					<app:target>#Polygon_72a22c54-248f-4a82-91c1-bdb53f6f59a5</app:target>
-					<app:target>#Polygon_4b8441f3-50b7-47ea-9481-b2095cc5870d</app:target>
-					<app:target>#Polygon_7c4c2bf3-c921-4f64-bc5c-be0db1d55827</app:target>
-					<app:target>#Polygon_b685022c-530f-4f42-b7c2-2e16730b0cf5</app:target>
-					<app:target>#Polygon_fb5b6277-98c8-4d3b-acd4-120936b71cd0</app:target>
-					<app:target>#Polygon_91316cb1-5e9c-473b-8f9f-4999469c2f1e</app:target>
-					<app:target>#Polygon_d31e6c0c-b0f6-4297-b076-f1e74963995a</app:target>
-					<app:target>#Polygon_d9b13830-8815-4fa3-9b38-a76bfc0b3a19</app:target>
-					<app:target>#Polygon_f7bc2cb3-2515-4afd-9a3e-1b142e9dbde5</app:target>
-					<app:target>#Polygon_d9b13830-5515-4fa3-9b38-a76bfc0b3a19</app:target>
-					<app:target>#Polygon_f7bc2cb3-2515-4a55-9a3e-1b142e9dbde5</app:target>
-					<app:target>#Polygon_91316cb1-5e66-473b-8f9f-4999469c2f1e</app:target>
-					<app:target>#Polygon_d31e6c0c-b0f6-6697-b076-f1e74963995a</app:target>
-					<app:target>#id_building_3_polygon_5</app:target>
-					<app:target>#Polygon_UUID_8cc1a1a1-88b1-4c1a-b7be-6e8e3037d5cb</app:target>
-					<app:target>#id_building_3_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_b2467493-b0c6-4e24-98d1-fa1ab1757d98</app:target>
-					<app:target>#id_building_3_polygon_4</app:target>
-					<app:target>#Polygon_UUID_ab624f83-6b4a-40f1-b140-7ee5a42e0fde</app:target>
-					<app:target>#id_building_3_polygon_cs2</app:target>
-					<app:target>#Polygon_UUID_0dac9b9c-680b-4027-8cb5-2e30043ddce7</app:target>
-					<app:target>#id_building_4_polygon_5</app:target>
-					<app:target>#Polygon_UUID_76b6944e-9c5d-418d-bf98-75506d7a8fd2</app:target>
-					<app:target>#id_building_4_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_1166b21d-8996-4aa1-9220-859eff8f9c0a</app:target>
-					<app:target>#Polygon_UUID_2f5fa401-0cb3-49fd-9531-7ff5be802839</app:target>
-					<app:target>#id_zone_4_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_building_4_polygon_7</app:target>
-					<app:target>#Polygon_UUID_181b9143-cb3c-4c39-8249-19f17777d5e3</app:target>
-					<app:target>#id_building_4_polygon_6</app:target>
-					<app:target>#Polygon_UUID_f5f24fbb-6b42-4457-9490-0aef449cb122</app:target>
-					<app:target>#Polygon_UUID_f04fcb64-39fa-4f7b-8946-166bb0ccd1d5</app:target>
-					<app:target>#id_zone_5_zonewallsurf_1_lod3_polygon</app:target>
-					<app:target>#id_building_5_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_639151a8-9576-47d2-9c02-8ea5f8462aa9</app:target>
-					<app:target>#id_building_5_polygon_4</app:target>
-					<app:target>#Polygon_UUID_a4d0cf89-fb5f-4ddf-ab82-513880066dd7</app:target>
-					<app:target>#id_building_5_polygon_7</app:target>
-					<app:target>#Polygon_UUID_6544640e-f822-4e92-b1a3-ccc9e7e3c085</app:target>
-					<app:target>#id_building_5_polygon_6</app:target>
-					<app:target>#Polygon_UUID_46001dab-37eb-499f-a6c3-7fba34a7b9b1</app:target>
-					<app:target>#id_building_6_polygon_5</app:target>
-					<app:target>#Polygon_UUID_55b6b5cb-b3ad-404c-abde-6e71939124b2</app:target>
-					<app:target>#id_building_6_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_eb57f026-d957-4901-b8fb-c53a2e9d3ea6</app:target>
-					<app:target>#id_building_6_polygon_4</app:target>
-					<app:target>#Polygon_UUID_ec89d8a2-14ae-43b5-90f2-efd6b6a9f0bc</app:target>
-					<app:target>#Polygon_UUID_122cde24-42cb-4e4b-9a2e-de9c99d92a03</app:target>
-					<app:target>#id_zone_6_zonewallsurf_3_lod3_polygon</app:target>
-					<app:target>#id_building_6_polygon_6</app:target>
-					<app:target>#Polygon_UUID_cdc15711-82ad-42ad-acbe-2f9ea9ac87a3</app:target>
-					<app:target>#id_building_7_polygon_5</app:target>
-					<app:target>#Polygon_UUID_282024b9-20ea-41e8-b6b5-32077e56af53</app:target>
-					<app:target>#id_building_7_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_a8c27406-94f8-4170-a353-4d203bf667e8</app:target>
-					<app:target>#id_building_7_polygon_4</app:target>
-					<app:target>#Polygon_UUID_e6e7d9bc-b9da-4ee7-8e6f-376b132b6989</app:target>
-					<app:target>#id_building_7_polygon_7</app:target>
-					<app:target>#Polygon_UUID_26975881-ecc9-46da-a3e4-a877d793640a</app:target>
-					<app:target>#Polygon_UUID_64b01d61-889b-4fbb-8d53-6ff5ee903b62</app:target>
-					<app:target>#id_zone_7_zonewallsurf_4_lod3_polygon</app:target>
-					<app:target>#id_building_8_polygon_5</app:target>
-					<app:target>#Polygon_UUID_6894d9e7-8a15-4302-b288-c1e9eb019e7f</app:target>
-					<app:target>#id_building_8_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_9cfc159b-01f0-43ec-b06e-eb39714ab741</app:target>
-					<app:target>#Polygon_UUID_2d346acb-be04-468d-a859-33614889ece5</app:target>
-					<app:target>#id_zone_8_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_building_8_polygon_7</app:target>
-					<app:target>#Polygon_UUID_473371e6-89fa-4d2a-9b48-96c94db8c8df</app:target>
-					<app:target>#id_building_8_polygon_6</app:target>
-					<app:target>#Polygon_UUID_7a3a241b-ac3e-47a4-ae4b-cffd5abca358</app:target>
-					<app:target>#Polygon_UUID_8483ccec-3dcf-4185-b6d5-646cf4a298c5</app:target>
-					<app:target>#id_zone_9_zonewallsurf_1_lod3_polygon</app:target>
-					<app:target>#id_buildingpart_9_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_e9e8c9f6-272a-4a88-aa0d-169eca4c1328</app:target>
-					<app:target>#id_buildingpart_9_polygon_4</app:target>
-					<app:target>#Polygon_UUID_0980805a-70ec-451e-aa63-59e74f5e62be</app:target>
-					<app:target>#id_buildingpart_9_polygon_7</app:target>
-					<app:target>#Polygon_UUID_2e048c8a-449f-4257-90aa-e1ab39d2230f</app:target>
-					<app:target>#id_buildingpart_9_polygon_6</app:target>
-					<app:target>#Polygon_UUID_f3cba4c9-adaf-441c-9ef7-8f9d0c4387b4</app:target>
-					<app:target>#id_buildingpart_10_polygon_5</app:target>
-					<app:target>#Polygon_UUID_0838cbc3-e447-47f3-90bd-e20872c8c3be</app:target>
-					<app:target>#id_buildingpart_10_polygon_cs1</app:target>
-					<app:target>#Polygon_UUID_cfda710c-460f-4257-8bf1-54f9d56b4100</app:target>
-					<app:target>#Polygon_UUID_ce528f49-db3a-4697-aff3-57174323fc0d</app:target>
-					<app:target>#id_zone_10_zonewallsurf_2_lod3_polygon</app:target>
-					<app:target>#id_buildingpart_10_polygon_7</app:target>
-					<app:target>#Polygon_UUID_3f9a50e5-e219-487c-9e10-c0c703eb3141</app:target>
-					<app:target>#id_buildingpart_10_polygon_6</app:target>
-					<app:target>#Polygon_UUID_750b74fb-001e-417c-8468-8ca5e3afeebf</app:target>
-					<app:target>#Polygon_UUID_02bc067f-143a-48a6-9b30-f204610669a0</app:target>
-					<app:target>#Polygon_UUID_5eb4cb53-5fa7-4831-8e7a-84cd0467ca8a</app:target>
-					<app:target>#Polygon_UUID_8014fd0a-715f-4b39-b05a-0247fd5ea985</app:target>
-					<app:target>#Polygon_UUID_c614b8ae-34e2-41db-b5c9-5c1db9ef29db</app:target>
-					<app:target>#Polygon_UUID_0b30a8f5-d9df-455e-8629-17e33fc55a54</app:target>
-					<app:target>#Polygon_UUID_5bbc40a9-f9c1-4d32-8302-8665270fbb8f</app:target>
-					<app:target>#Polygon_UUID_fce301b7-d1c0-4eff-a0f9-e116a41c9d6a</app:target>
-					<app:target>#Polygon_UUID_4344eb67-b368-4d44-98c6-3cb9af98eb3e</app:target>
-					<app:target>#Polygon_UUID_9420c3ad-46e9-49ff-8ca5-fac81b1f4dfd</app:target>
-					<app:target>#Polygon_UUID_f25d38e4-2e93-47d5-88da-6ca24e2071a6</app:target>
-					<app:target>#Polygon_UUID_1679c6fe-86fa-427a-b844-26c0e9ce90e6</app:target>
-					<app:target>#Polygon_UUID_fe5363ce-890d-4f9a-80ab-c0c830128cb6</app:target>
-					<app:target>#Polygon_UUID_18eff9aa-56a0-4c94-ba01-2338f8a4b6c0</app:target>
-					<app:target>#Polygon_UUID_a548a020-f3fd-48c9-b7b1-5ee3cc64e47f</app:target>
-					<app:target>#Polygon_UUID_66b4b690-9f4b-46e5-bd14-1e54d40fdb82</app:target>
-					<app:target>#Polygon_UUID_a67a0c00-990d-416f-9321-fba585a60f23</app:target>
-					<app:target>#id_building_12_polygon_5</app:target>
-					<app:target>#Polygon_UUID_f1bea6b4-ad11-4e8b-b230-5596226c9ea6</app:target>
-					<app:target>#id_building_12_polygon_4</app:target>
-					<app:target>#Polygon_UUID_32354be5-9027-46da-b00c-dbdca6d857da</app:target>
-					<app:target>#id_building_12_polygon_7</app:target>
-					<app:target>#Polygon_UUID_475e9135-25f1-410a-8723-ce2454b2bedf</app:target>
-					<app:target>#id_building_12_polygon_6</app:target>
-					<app:target>#Polygon_UUID_b49fd700-6b1f-43e4-88a7-637161034ccd</app:target>
-				</app:X3DMaterial>
-			</app:surfaceDataMember>
-			<app:surfaceDataMember>
-				<app:X3DMaterial>
-					<app:isFront>false</app:isFront>
-					<app:diffuseColor>1 1 0</app:diffuseColor>
-					<app:transparency>0.6</app:transparency>
-					<app:target>#id_building_1_polygon_3</app:target>
-					<app:target>#Polygon_UUID_4a5ef73e-04b2-4e8e-81f5-1ddb2838823e</app:target>
-					<app:target>#Polygon_6cf01382-2c71-47ac-aa0f-f455eaaaf49c</app:target>
-					<app:target>#Polygon_20885a07-75e6-4e6d-ae72-421c04f11f28</app:target>
-					<app:target>#id_building_3_polygon_3</app:target>
-					<app:target>#Polygon_UUID_b89310e5-31b1-4ad1-b901-75dc495bd2b2</app:target>
-					<app:target>#id_building_4_polygon_3</app:target>
-					<app:target>#Polygon_UUID_af3ff229-e35f-4e96-a026-49a83b4dccb9</app:target>
-					<app:target>#id_building_5_polygon_3</app:target>
-					<app:target>#Polygon_UUID_2678c740-bdc9-4dcb-80e8-79615fb56de5</app:target>
-					<app:target>#id_building_6_polygon_3</app:target>
-					<app:target>#Polygon_UUID_9a4a99a6-bb03-4e29-a5a8-44e81be8eb2d</app:target>
-					<app:target>#id_building_7_polygon_3</app:target>
-					<app:target>#Polygon_UUID_4f00de5d-6843-4d81-ba06-82705fa6b4cb</app:target>
-					<app:target>#id_building_8_polygon_3</app:target>
-					<app:target>#Polygon_UUID_af58fc65-25f5-46cd-a226-fbde4a9915ad</app:target>
-					<app:target>#id_buildingpart_9_polygon_3</app:target>
-					<app:target>#Polygon_UUID_8a409fdb-73cc-479a-bf20-7b44aee2424b</app:target>
-					<app:target>#id_buildingpart_10_polygon_3</app:target>
-					<app:target>#Polygon_UUID_c1671c17-774b-414b-be39-f510bfbc31c4</app:target>
-					<app:target>#Polygon_UUID_8dd01f3c-2283-4c8f-aa8a-732a50a40f1d</app:target>
-					<app:target>#Polygon_UUID_61567df0-22bc-4675-b8a9-53d743eec952</app:target>
-					<app:target>#id_building_12_polygon_3</app:target>
-					<app:target>#Polygon_UUID_e9f149b3-9407-444a-ad4f-ab6bff3be2ac</app:target>
+					<app:target>#id_zone_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_1_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_1_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_1_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zoneintermediatefloorsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_2_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_lod2_geom</app:target>
+					<app:target>#id_zone_2_3_zonewallsurf_6_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_4_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_6_lod2_geom</app:target>
+					<app:target>#id_zone_4_zonewallsurf_6_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_5_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_5_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_6_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_6_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_7_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_7_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_8_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_8_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_9_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_9_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_10_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_5_lod2_geom</app:target>
+					<app:target>#id_zone_10_zonewallsurf_5_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zonebasementceilingsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zonebasementceilingsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_1_zoneundergroundwallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonebasementceilingsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonebasementceilingsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_2_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneintermediatefloorsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneintermediatefloorsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_11_3_zonewallsurf_4_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonegroundsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonegroundsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_12_zoneroofsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_1_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_2_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_3_lod3_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_lod2_geom</app:target>
+					<app:target>#id_zone_12_zonewallsurf_4_lod3_geom</app:target>
 				</app:X3DMaterial>
 			</app:surfaceDataMember>
 		</app:Appearance>
