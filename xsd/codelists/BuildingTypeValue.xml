@@ -5,50 +5,50 @@
   <gml:name>BuildingTypeValue</gml:name>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2133">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">single-family house</gml:identifier>
-      <gml:name>single-family house</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">singleFamilyHouse</gml:identifier>
+      <gml:name>singleFamilyHouse</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2134">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">terraced house</gml:identifier>
-      <gml:name>terraced house</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">terracedHouse</gml:identifier>
+      <gml:name>terracedHouse</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2135">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">multi-family house</gml:identifier>
-      <gml:name>multi-family house</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">multiFamilyHouse</gml:identifier>
+      <gml:name>multiFamilyHouse</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2136">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">apartment block</gml:identifier>
-      <gml:name>apartment block</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">apartmentBlock</gml:identifier>
+      <gml:name>apartmentBlock</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2137">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">commercial building</gml:identifier>
-      <gml:name>commercial building</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">commercialBuilding</gml:identifier>
+      <gml:name>commercialBuilding</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2138">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">industrial building</gml:identifier>
-      <gml:name>industrial building</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">industrialBuilding</gml:identifier>
+      <gml:name>industrialBuilding</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2139">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">office building</gml:identifier>
-      <gml:name>office building</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">officeBuilding</gml:identifier>
+      <gml:name>officeBuilding</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2140">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">religious building</gml:identifier>
-      <gml:name>religious building</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">religiousBuilding</gml:identifier>
+      <gml:name>religiousBuilding</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
@@ -59,14 +59,20 @@
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2142">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">leisure activity building</gml:identifier>
-      <gml:name>leisure activity building</gml:name>
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">leisureActivityBuilding</gml:identifier>
+      <gml:name>leisureActivityBuilding</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
     <gml:Definition gml:id="_280_2220">
       <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">unknown</gml:identifier>
       <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_280_2506">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>

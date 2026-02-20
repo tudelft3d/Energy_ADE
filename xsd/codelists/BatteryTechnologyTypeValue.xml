@@ -2,4 +2,52 @@
 <gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="BatteryTechnologyTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
   <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">BatteryTechnologyTypeValue</gml:identifier>
   <gml:name>BatteryTechnologyTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2489">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">lithiumIon</gml:identifier>
+      <gml:name>lithiumIon</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2490">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">leadAcid</gml:identifier>
+      <gml:name>leadAcid</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2491">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">nickelMethalHydride</gml:identifier>
+      <gml:name>nickelMethalHydride</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2492">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">sodiumIon</gml:identifier>
+      <gml:name>sodiumIon</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2493">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">lithiumPolymer</gml:identifier>
+      <gml:name>lithiumPolymer</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2495">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">solidState</gml:identifier>
+      <gml:name>solidState</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2496">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1036_2497">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BatteryTechnologyTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

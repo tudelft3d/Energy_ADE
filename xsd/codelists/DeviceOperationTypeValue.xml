@@ -22,6 +22,12 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
+    <gml:Definition gml:id="_315_2508">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DeviceOperationTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
     <gml:Definition gml:id="_315_693">
       <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DeviceOperationTypeValue">cooking</gml:identifier>
       <gml:name>cooking</gml:name>

@@ -26,4 +26,10 @@
       <gml:name>unknown</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1029_2507">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/CellTypeValue">other</gml:identifier>
+      <gml:name>other</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>
