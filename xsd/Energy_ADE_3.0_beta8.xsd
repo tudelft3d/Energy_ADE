@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-19
+Last update: 2026-02-20
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -464,10 +464,10 @@ version="3.0"
       <extension base="nrg3:AbstractADEFeatureType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
-          <element minOccurs="0" name="startTime" type="time"/>
-          <element minOccurs="0" name="startDay" type="integer"/>
-          <element minOccurs="0" name="startMonth" type="integer"/>
-          <element minOccurs="0" name="startYear" type="integer"/>
+          <element minOccurs="0" name="beginTime" type="time"/>
+          <element minOccurs="0" name="beginDay" type="integer"/>
+          <element minOccurs="0" name="beginMonth" type="integer"/>
+          <element minOccurs="0" name="beginYear" type="integer"/>
           <element minOccurs="0" name="temporalExtent" type="gml:TimeIntervalLengthType"/>
         </sequence>
       </extension>
@@ -487,8 +487,8 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractADEFeatureType">
         <sequence>
-          <element name="acquisitionMethod" type="gml:CodeType"/>
-          <element name="interpolationType" type="nrg3:InterpolationTypeValueType"/>
+          <element name="dataAcquisitionMethod" type="gml:CodeType"/>
+          <element minOccurs="0" name="interpolationType" type="nrg3:InterpolationTypeValueType"/>
           <element minOccurs="0" name="source" type="string"/>
         </sequence>
       </extension>
@@ -587,16 +587,16 @@ version="3.0"
         <sequence>
           <element name="status" type="nrg3:ResourceStatusValueType"/>
           <element name="operationType" type="gml:CodeType"/>
-          <element name="amountType" type="gml:CodeType"/>
-          <element minOccurs="0" name="year" type="integer"/>
+          <element minOccurs="0" name="referencePeriod" type="gml:CodeType"/>
           <element minOccurs="0" name="amount" type="gml:MeasureType"/>
+          <element minOccurs="0" name="year" type="integer"/>
+          <element name="dataAcquisitionMethod" type="gml:CodeType"/>
           <element name="isAmountNormalized" type="boolean"/>
           <element minOccurs="0" name="normalizationValue" type="gml:MeasureType"/>
           <element minOccurs="0" name="normalizationParameter" type="string"/>
-          <element minOccurs="0" name="referencePeriod" type="gml:CodeType"/>
+          <element minOccurs="0" name="expense" type="gml:MeasureType"/>
+          <element minOccurs="0" name="revenue" type="gml:MeasureType"/>
           <element minOccurs="0" name="co2Equivalent" type="gml:MeasureType"/>
-          <element minOccurs="0" name="costsMoney" type="gml:MeasureType"/>
-          <element minOccurs="0" name="yieldsMoney" type="gml:MeasureType"/>
           <element minOccurs="0" name="timeDependentAmount" type="nrg3:AbstractTimeSeriesPropertyType">
             <annotation>
               <appinfo>
@@ -604,14 +604,14 @@ version="3.0"
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="timeDependentCosts" type="nrg3:AbstractTimeSeriesPropertyType">
+          <element minOccurs="0" name="timeDependentExpense" type="nrg3:AbstractTimeSeriesPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="timeDependentYields" type="nrg3:AbstractTimeSeriesPropertyType">
+          <element minOccurs="0" name="timeDependentRevenue" type="nrg3:AbstractTimeSeriesPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -665,7 +665,9 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element>
+          <element name="beginTimeStamp" type="dateTime"/>
+          <element name="endTimeStamp" type="dateTime"/>
+          <!-- <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element> -->
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
           <element name="valuesList" type="gml:MeasureListType"></element>
         </sequence>
@@ -686,10 +688,12 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
+          <element name="beginTimeStamp" type="dateTime"/>
+          <element name="endTimeStamp" type="dateTime"/>
+          <!-- <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element> -->
+          <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
           <element name="uom" type="gml:UnitOfMeasureType"></element>
           <element name="fileURI" type="anyURI"></element>
-          <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element>
-          <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
           <element default="0" minOccurs="0" name="numberOfHeaderLines" type="integer"></element>
           <element name="fieldSeparator" type="string"></element>
           <element default="\n" minOccurs="0" name="recordSeparator" type="string"></element>
@@ -713,9 +717,9 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element minOccurs="0" name="startTime" type="time"/>
-          <element minOccurs="0" name="startDay" type="integer"/>
-          <element minOccurs="0" name="startMonth" type="integer"/>
+          <element minOccurs="0" name="beginTime" type="time"/>
+          <element minOccurs="0" name="beginDay" type="integer"/>
+          <element minOccurs="0" name="beginMonth" type="integer"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
           <element name="valuesList" type="gml:MeasureListType"></element>
@@ -737,13 +741,13 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element minOccurs="0" name="startTime" type="time"/>
-          <element minOccurs="0" name="startDay" type="integer"/>
-          <element minOccurs="0" name="startMonth" type="integer"/>
-          <element name="uom" type="gml:UnitOfMeasureType"></element>
-          <element name="fileURI" type="anyURI"></element>
+          <element minOccurs="0" name="beginTime" type="time"/>
+          <element minOccurs="0" name="beginDay" type="integer"/>
+          <element minOccurs="0" name="beginMonth" type="integer"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
+          <element name="uom" type="gml:UnitOfMeasureType"></element>
+          <element name="fileURI" type="anyURI"></element>
           <element default="0" minOccurs="0" name="numberOfHeaderLines" type="integer"></element>
           <element name="fieldSeparator" type="string"></element>
           <element default="\n" minOccurs="0" name="recordSeparator" type="string"></element>
@@ -767,7 +771,9 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element name="temporalExtent" type="gml:TimePeriodPropertyType"/>
+          <element name="beginTimeStamp" type="dateTime"/>
+          <element name="endTimeStamp" type="dateTime"/>
+          <!-- <element name="temporalExtent" type="gml:TimePeriodPropertyType"/> -->
           <element name="valuesList" type="gml:MeasureListType"/>
         </sequence>
       </extension>
@@ -787,9 +793,11 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
+          <element name="beginTimeStamp" type="dateTime"/>
+          <element name="endTimeStamp" type="dateTime"/>
+          <!-- <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element> -->
           <element name="uom" type="gml:UnitOfMeasureType"></element>
           <element name="fileURI" type="anyURI"></element>
-          <element name="temporalExtent" type="gml:TimePeriodPropertyType"></element>
           <element default="0" minOccurs="0" name="numberOfHeaderLines" type="integer"></element>
           <element name="fieldSeparator" type="string"></element>
           <element default="\n" minOccurs="0" name="recordSeparator" type="string"></element>
@@ -813,7 +821,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element minOccurs="0" name="startMonth" type="integer"/>
+          <element minOccurs="0" name="beginMonth" type="integer"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"/>
           <element name="valuesList" type="gml:MeasureListType"/>
         </sequence>
@@ -834,10 +842,10 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element minOccurs="0" name="startMonth" type="integer"/>
+          <element minOccurs="0" name="beginMonth" type="integer"/>
+          <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element name="uom" type="gml:UnitOfMeasureType"></element>
           <element name="fileURI" type="anyURI"></element>
-          <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element default="0" minOccurs="0" name="numberOfHeaderLines" type="integer"></element>
           <element name="fieldSeparator" type="string"></element>
           <element default="\n" minOccurs="0" name="recordSeparator" type="string"></element>
@@ -954,14 +962,14 @@ version="3.0"
 
 
   <!-- DUAL VALUE SCHEDULE -->
-  <element name="DualValueSchedule" substitutionGroup="nrg3:AbstractSchedule" type="nrg3:DualValueScheduleType"/>
+  <element name="DualValueSchedule" substitutionGroup="nrg3:AbstractAtomicSchedule" type="nrg3:DualValueScheduleType"/>
   <complexType name="DualValueScheduleType">
     <complexContent>
-      <extension base="nrg3:AbstractScheduleType">
+      <extension base="nrg3:AbstractAtomicScheduleType">
         <sequence>
           <element name="idleValue" type="gml:MeasureType"/>
           <element name="usageValue" type="gml:MeasureType"/>
-          <element name="startUsageTime" type="time"/>
+          <element name="beginUsageTime" type="time"/>
           <element name="endUsageTime" type="time"/>
         </sequence>
       </extension>
@@ -1362,7 +1370,7 @@ version="3.0"
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element name="status" type="gml:CodeType"/>
-          <element minOccurs="0" name="refurbishmentStartDate" type="date"/>
+          <element minOccurs="0" name="refurbishmentBeginDate" type="date"/>
           <element minOccurs="0" name="refurbishmentEndDate" type="date"/>
 <!--           <element minOccurs="0" maxOccurs="unbounded" name="appliesTo" type="nrg3:AppliesToPropertyType">
             <annotation>
@@ -2301,7 +2309,9 @@ version="3.0"
   <complexType name="GenericStorageDeviceType">
     <complexContent>
       <extension base="nrg3:AbstractDeviceType">
-        <sequence/>
+        <sequence>
+          <element minOccurs="0" name="capacity" type="gml:MeasureType"></element>
+        </sequence>
       </extension>
     </complexContent>
   </complexType>
