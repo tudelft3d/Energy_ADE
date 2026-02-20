@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-02-19
+-- Last update: 2026-02-20
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -203,16 +203,16 @@ CREATE TABLE ng3_time_series (
     id                           BIGINT PRIMARY KEY,
     objectclass_id               INTEGER,
 -- AbstractTimeSeries attributes
-    acquisition_method           VARCHAR,
-    acquisition_method_codespace VARCHAR,
+    data_acq_method              VARCHAR,
+    data_acq_method_codespace    VARCHAR,
     interpolation_type           VARCHAR,
     source                       VARCHAR,
 -- Other attributes
-    period_begin                 TIMESTAMP WITH TIME ZONE,
-    period_end                   TIMESTAMP WITH TIME ZONE,
-    start_time                   TIME WITHOUT TIME ZONE,
-    start_day                    INTEGER,
-    start_month                  INTEGER,	
+    begin_timestamp              TIMESTAMP WITH TIME ZONE,
+    end_timestamp                TIMESTAMP WITH TIME ZONE,
+    begin_time                   TIME WITHOUT TIME ZONE,
+    begin_day                    INTEGER,
+    begin_month                  INTEGER,	
     temporal_extent              NUMERIC,
     temporal_extent_unit         VARCHAR,
 --    temporal_extent_factor       INTEGER,
@@ -258,10 +258,10 @@ CREATE TABLE ng3_schedule (
     library_code_codespace VARCHAR,
     type                   VARCHAR,
     type_codespace         VARCHAR,
-    start_time             TIME WITHOUT TIME ZONE,
-    start_day              INTEGER,
-    start_month            INTEGER,
-    start_year             INTEGER,
+    begin_time             TIME WITHOUT TIME ZONE,
+    begin_day              INTEGER,
+    begin_month            INTEGER,
+    begin_year             INTEGER,
     time_interval          NUMERIC,
     time_interval_unit     VARCHAR,
 --    time_interval_factor   INTEGER, -- used for temporalExtent
@@ -274,7 +274,7 @@ CREATE TABLE ng3_schedule (
     idle_value_uom         VARCHAR,
     usage_value            NUMERIC,
     usage_value_uom        VARCHAR,
-    start_usage_time       TIME WITHOUT TIME ZONE,
+    begin_usage_time       TIME WITHOUT TIME ZONE,
     end_usage_time         TIME WITHOUT TIME ZONE,
 -- FK
 -- TimeSeries Schedule
@@ -397,52 +397,52 @@ CREATE INDEX ng3_utl_ntw_conn_cto_fkx ON ng3_utl_ntw_connection USING btree (cit
 -- ng3_resource 
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_resource (
-    id                       BIGINT PRIMARY KEY,
-    objectclass_id           INTEGER,
-    type                     VARCHAR,
-    type_codespace           VARCHAR,
-    enduse                   VARCHAR,
-    enduse_codespace         VARCHAR,
-    status                   VARCHAR,
-    operation_type           VARCHAR,
-    operation_type_codespace VARCHAR,
-    year                     INTEGER,	
-    amount_type              VARCHAR,
-    amount_type_codespace    VARCHAR,
-    amount                   NUMERIC,
-    amount_uom               VARCHAR,
-    is_amount_normalized     NUMERIC,
-    normalization_param      VARCHAR,
-    normalization_value      NUMERIC,
-    normalization_value_uom  VARCHAR,
-    ref_period               VARCHAR,
-    ref_period_codespace     VARCHAR,
-    co2_equivalent           NUMERIC,
-    co2_equivalent_uom       VARCHAR,
-    costs_money              NUMERIC,
-    costs_money_uom          VARCHAR,
-    yields_money             NUMERIC,
-    yields_money_uom         VARCHAR,
+    id                        BIGINT PRIMARY KEY,
+    objectclass_id            INTEGER,
+    type                      VARCHAR,
+    type_codespace            VARCHAR,
+    enduse                    VARCHAR,
+    enduse_codespace          VARCHAR,
+    status                    VARCHAR,
+    operation_type            VARCHAR,
+    operation_type_codespace  VARCHAR,
+    ref_period                VARCHAR,
+    ref_period_codespace      VARCHAR,
+    data_acq_method           VARCHAR,
+    data_acq_method_codespace VARCHAR,
+    amount                    NUMERIC,
+    amount_uom                VARCHAR,
+    year                      INTEGER,
+    is_amount_normalized      NUMERIC,
+    normalization_param       VARCHAR,
+    normalization_value       NUMERIC,
+    normalization_value_uom   VARCHAR,
+    expense                   NUMERIC,
+    expense_uom               VARCHAR,
+    revenue                   NUMERIC,
+    revenue_uom               VARCHAR,
+    co2_equivalent            NUMERIC,
+    co2_equivalent_uom        VARCHAR,
 -- Attributes for Energy
-    energy_carrier           VARCHAR,
-    energy_carrier_codespace VARCHAR,
-    maximum_load             NUMERIC,
-    maximum_load_uom         VARCHAR,
-    source                   VARCHAR,
-    source_codespace         VARCHAR,
+    energy_carrier            VARCHAR,
+    energy_carrier_codespace  VARCHAR,
+    maximum_load              NUMERIC,
+    maximum_load_uom          VARCHAR,
+    source                    VARCHAR,
+    source_codespace          VARCHAR,
 -- Attributes for Waste
-    is_dangerous             NUMERIC,
-    is_recyclable            NUMERIC,
+    is_dangerous              NUMERIC,
+    is_recyclable             NUMERIC,
 -- FK
-    amount_time_series_id    BIGINT,
-    costs_time_series_id     BIGINT,
-    yields_time_series_id    BIGINT,
-    cityobject_id            BIGINT
+    amount_time_series_id     BIGINT,
+    expense_time_series_id    BIGINT,
+    revenue_time_series_id    BIGINT,
+    cityobject_id             BIGINT
 );
 CREATE INDEX ng3_res_oc_fkx  ON ng3_resource USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 CREATE INDEX ng3_res_ts1_fkx ON ng3_resource USING btree (amount_time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_res_ts2_fkx ON ng3_resource USING btree (costs_time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_res_ts3_fkx ON ng3_resource USING btree (yields_time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_res_ts2_fkx ON ng3_resource USING btree (expense_time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_res_ts3_fkx ON ng3_resource USING btree (revenue_time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 CREATE INDEX ng3_res_cto_fkx ON ng3_resource USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 
@@ -539,8 +539,8 @@ CREATE TABLE ng3_storage_device (
     volume_uom            VARCHAR,
     batt_techn            VARCHAR,
 	batt_techn_codespace  VARCHAR,
-	power_capacity        NUMERIC,
-	power_capacity_uom    VARCHAR
+	capacity              NUMERIC,
+	capacity_uom          VARCHAR
 );
 CREATE INDEX ng3_sto_dev_oc_fkx ON ng3_storage_device USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
@@ -589,7 +589,7 @@ CREATE TABLE ng3_refurbishment_measure (
     type_codespace   VARCHAR,
 	status           VARCHAR,
     status_codespace VARCHAR,
-    start_date       DATE,
+    begin_date       DATE,
     end_date         DATE,	
 -- FK
 	space_id         BIGINT,
@@ -925,8 +925,8 @@ ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_ng3_cto_fk FOREIGN KEY (
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_ts_fk1 FOREIGN KEY (amount_time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_ts_fk2 FOREIGN KEY (costs_time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_ts_fk3 FOREIGN KEY (yields_time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_ts_fk2 FOREIGN KEY (expense_time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_ts_fk3 FOREIGN KEY (revenue_time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
 
 
