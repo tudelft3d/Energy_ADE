@@ -10,7 +10,7 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-20
+Last update: 2026-02-23
 
 This dataset contain several object covering (nearly)
 all classes of the Energy ADE.
@@ -937,7 +937,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -974,7 +974,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 					<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">5</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfThickness uom="mm">250</nrg3:bdgBdrySurfThickness>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -1010,7 +1010,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -1045,7 +1045,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -1080,7 +1080,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -1115,7 +1115,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -1156,7 +1156,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -1793,7 +1793,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -1833,7 +1833,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -1873,7 +1873,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -1919,7 +1919,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -1998,7 +1998,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -2077,7 +2077,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -2168,7 +2168,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -2713,7 +2713,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -2748,7 +2748,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -2783,7 +2783,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -2818,7 +2818,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -2853,7 +2853,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -2888,7 +2888,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -2923,7 +2923,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -2964,7 +2964,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -3005,7 +3005,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -3943,7 +3943,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.4</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -3999,7 +3999,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4064,7 +4064,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">20</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.33</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.33</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4228,7 +4228,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">20</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.33</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.33</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4383,7 +4383,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4439,7 +4439,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4765,7 +4765,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4821,7 +4821,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -4886,7 +4886,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">18</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.4</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.4</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5050,7 +5050,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">18</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.4</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.4</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5205,7 +5205,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5261,7 +5261,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5605,7 +5605,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.2</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5655,7 +5655,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5705,7 +5705,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">1</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5770,7 +5770,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">32</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.2</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.2</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -5934,7 +5934,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">28</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.3</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.3</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -6089,7 +6089,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -6151,7 +6151,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">40</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -6206,7 +6206,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">7</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.64</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.64</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -6294,7 +6294,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">7</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.64</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.64</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.3</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -7112,7 +7112,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -7147,7 +7147,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -7182,7 +7182,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -7217,7 +7217,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -7252,7 +7252,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -7293,7 +7293,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -7334,7 +7334,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -7909,7 +7909,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -7949,7 +7949,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -7989,7 +7989,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -8035,7 +8035,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -8114,7 +8114,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -8205,7 +8205,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -8251,7 +8251,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -8784,7 +8784,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -8819,7 +8819,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -8854,7 +8854,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -8889,7 +8889,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -8924,7 +8924,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -8959,7 +8959,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -8994,7 +8994,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -9035,7 +9035,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -9610,7 +9610,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -9650,7 +9650,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -9690,7 +9690,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -9736,7 +9736,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -9815,7 +9815,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">23.0992</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.08</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.08</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -9894,7 +9894,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -9973,7 +9973,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -10052,7 +10052,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -10588,7 +10588,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -10623,7 +10623,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -10658,7 +10658,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -10693,7 +10693,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -10728,7 +10728,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -10763,7 +10763,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -10798,7 +10798,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -10839,7 +10839,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -11419,7 +11419,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -11459,7 +11459,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -11499,7 +11499,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -11545,7 +11545,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">54.8641</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.27</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.27</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -11624,7 +11624,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -11703,7 +11703,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -11782,7 +11782,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -11861,7 +11861,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -12664,7 +12664,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -12699,7 +12699,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -12734,7 +12734,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -12769,7 +12769,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -12804,7 +12804,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -12839,7 +12839,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -12874,7 +12874,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -12915,7 +12915,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -13495,7 +13495,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -13535,7 +13535,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -13575,7 +13575,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -13621,7 +13621,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -13700,7 +13700,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -13779,7 +13779,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -13858,7 +13858,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -13937,7 +13937,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -14714,7 +14714,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -14749,7 +14749,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -14784,7 +14784,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -14819,7 +14819,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -14854,7 +14854,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -14889,7 +14889,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -14924,7 +14924,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -14965,7 +14965,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -15545,7 +15545,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -15585,7 +15585,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -15625,7 +15625,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -15671,7 +15671,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -15750,7 +15750,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -15829,7 +15829,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -15908,7 +15908,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -15987,7 +15987,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -16535,7 +16535,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -16570,7 +16570,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -16605,7 +16605,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -16640,7 +16640,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -16675,7 +16675,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -16710,7 +16710,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -16745,7 +16745,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -16786,7 +16786,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -17366,7 +17366,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -17406,7 +17406,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -17446,7 +17446,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -17492,7 +17492,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -17571,7 +17571,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">54.8641</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.27</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.27</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -17650,7 +17650,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -17729,7 +17729,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -17808,7 +17808,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
@@ -18480,7 +18480,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:GroundSurface>
@@ -18515,7 +18515,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
@@ -18550,7 +18550,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
@@ -18585,7 +18585,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -18620,7 +18620,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -18655,7 +18655,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -18690,7 +18690,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -18731,7 +18731,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -19309,7 +19309,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneGroundSurface>
@@ -19349,7 +19349,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneRoofSurface>
@@ -19389,7 +19389,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneRoofSurface>
@@ -19435,7 +19435,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">49.6637</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -19514,7 +19514,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -19593,7 +19593,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -19672,7 +19672,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -19751,7 +19751,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneWallSurface>
@@ -20176,7 +20176,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:GroundSurface>
@@ -20211,7 +20211,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
@@ -20246,7 +20246,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:RoofSurface>
@@ -20281,7 +20281,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -20316,7 +20316,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -20351,7 +20351,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -20386,7 +20386,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -20427,7 +20427,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</bldg:WallSurface>
@@ -21005,7 +21005,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneGroundSurface>
@@ -21045,7 +21045,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneRoofSurface>
@@ -21085,7 +21085,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneRoofSurface>
@@ -21131,7 +21131,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -21210,7 +21210,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">49.6637</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">68.75</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -21289,7 +21289,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -21368,7 +21368,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 									<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 									<nrg3:zoneOpening>
@@ -21447,7 +21447,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0</nrg3:bdgBdrySurfGroundViewFactor>
 									<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 									<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
-									<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+									<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 									<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 									<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">56.25</nrg3:bdgBdrySurfTotalSurfaceArea>
 								</nrg3:ZoneWallSurface>
@@ -22048,7 +22048,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -22083,7 +22083,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -22118,7 +22118,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -22153,7 +22153,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -22188,7 +22188,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -22223,7 +22223,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -22258,7 +22258,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -23963,7 +23963,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24013,7 +24013,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24063,7 +24063,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24113,7 +24113,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">30</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24169,7 +24169,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.4</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24219,7 +24219,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24526,7 +24526,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>true</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">25</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24582,7 +24582,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">0</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24637,7 +24637,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24725,7 +24725,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24813,7 +24813,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -24901,7 +24901,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25256,7 +25256,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">0</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25306,7 +25306,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25356,7 +25356,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">17.6777</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25411,7 +25411,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">67.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.09</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.09</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25499,7 +25499,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25587,7 +25587,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">36</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.28</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">50</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -25675,7 +25675,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">67.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.09</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.09</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfThickness uom="m">0.5</nrg3:bdgBdrySurfThickness>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">75</nrg3:bdgBdrySurfTotalSurfaceArea>
@@ -26233,7 +26233,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:GroundSurface>
@@ -26268,7 +26268,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -26303,7 +26303,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:RoofSurface>
@@ -26338,7 +26338,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -26373,7 +26373,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -26408,7 +26408,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -26443,7 +26443,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 					<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 					<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-					<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+					<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 					<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 					<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 				</bldg:WallSurface>
@@ -26992,7 +26992,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">1</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">180</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneGroundSurface>
@@ -27032,7 +27032,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -27072,7 +27072,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfGroundViewFactor uom="unit interval">0.5</nrg3:bdgBdrySurfGroundViewFactor>
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">45</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.25</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">70.7107</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneRoofSurface>
@@ -27118,7 +27118,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -27197,7 +27197,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">97.9706</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.22</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">125</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -27276,7 +27276,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
@@ -27355,7 +27355,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfInclination uom="decimal degree">90</nrg3:bdgBdrySurfInclination>
 							<nrg3:bdgBdrySurfIsShared>false</nrg3:bdgBdrySurfIsShared>
 							<nrg3:bdgBdrySurfOpaqueSurfaceArea uom="m^2">84</nrg3:bdgBdrySurfOpaqueSurfaceArea>
-							<nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio>
+							<!-- <nrg3:bdgBdrySurfOpeningToSurfaceRatio uom="unit interval">0.16</nrg3:bdgBdrySurfOpeningToSurfaceRatio> -->
 							<nrg3:bdgBdrySurfSkyViewFactor uom="unit interval">0.6</nrg3:bdgBdrySurfSkyViewFactor>
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 							<nrg3:zoneOpening>
