@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-20
+Last update: 2026-02-23
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-02-20)</version>
+        <version>3.0 beta 8 (2026-02-23)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -1740,10 +1740,10 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="opaque_surf_area" type="double" path="." schema="ng3"/>
                 <attribute column="opaque_surf_area_uom" type="string" path="@uom" schema="gml"/>
             </complexAttribute>
-            <complexAttribute maxOccurs="1" path="bdgBdrySurfOpeningToSurfaceRatio" schema="ng3">
-                <attribute column="open_to_surf_ration" type="double" path="." schema="ng3"/>
-                <attribute column="open_to_surf_ration_uom" type="string" path="@uom" schema="gml"/>
-            </complexAttribute>
+<!--             <complexAttribute maxOccurs="1" path="bdgBdrySurfOpeningToSurfaceRatio" schema="ng3">
+                <attribute column="open_to_surf_ratio" type="double" path="." schema="ng3"/>
+                <attribute column="open_to_surf_ratio_uom" type="string" path="@uom" schema="gml"/>
+            </complexAttribute> -->
             <complexAttribute maxOccurs="1" path="bdgBdrySurfAzimuth" schema="ng3">
                 <attribute column="azimuth" type="double" path="." schema="ng3"/>
                 <attribute column="azimuth_uom" type="string" path="@uom" schema="gml"/>
