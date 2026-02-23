@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-02-20
+-- Last update: 2026-02-23
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -84,8 +84,8 @@ CREATE TABLE ng3_thematic_surface (
     total_surf_area_uom    VARCHAR,
     opaque_surf_area       NUMERIC,
     opaque_surf_area_uom   VARCHAR,
-    open_to_surf_ratio     NUMERIC,
-    open_to_surf_ratio_uom VARCHAR,
+--    open_to_surf_ratio     NUMERIC,
+--    open_to_surf_ratio_uom VARCHAR,
     thickness              NUMERIC,
     thickness_uom          VARCHAR,
     azimuth                NUMERIC,
