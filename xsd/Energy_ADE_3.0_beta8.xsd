@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-02-20
+Last update: 2026-02-23
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually edited, annotated by means of additional tags, and restructured.
@@ -1941,13 +1941,13 @@ version="3.0"
       </appinfo>
     </annotation>
   </element>
-  <element name="bdgBdrySurfOpeningToSurfaceRatio" substitutionGroup="bldg:_GenericApplicationPropertyOfBoundarySurface" type="gml:ScaleType">
+<!--   <element name="bdgBdrySurfOpeningToSurfaceRatio" substitutionGroup="bldg:_GenericApplicationPropertyOfBoundarySurface" type="gml:ScaleType">
     <annotation>
       <appinfo>
         <taggedValue tag="maxOccurs">1</taggedValue>
       </appinfo>
     </annotation>
-  </element>
+  </element> -->
   <element name="bdgBdrySurfHeatCapacity" substitutionGroup="bldg:_GenericApplicationPropertyOfBoundarySurface" type="gml:MeasureType">
     <annotation>
       <appinfo>
