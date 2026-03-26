@@ -50,4 +50,10 @@
       <gml:name>electicalGrid</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_950_2588">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/NetworkTypeValue">drinkWater</gml:identifier>
+      <gml:name>drinkWater</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

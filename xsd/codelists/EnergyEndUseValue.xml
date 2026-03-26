@@ -68,4 +68,10 @@
       <gml:name>unknown</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_910_2702">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue">mobility</gml:identifier>
+      <gml:name>mobility</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
 </gml:Dictionary>

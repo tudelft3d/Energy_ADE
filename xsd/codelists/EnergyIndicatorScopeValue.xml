@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EnergyIndicatorScopeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">EnergyIndicatorScopeValue</gml:identifier>
+  <gml:name>EnergyIndicatorScopeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2469">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">thermalHullRefurbishment</gml:identifier>
+      <gml:name>thermalHullRefurbishment</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2470">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">solarCollectorInstallation</gml:identifier>
+      <gml:name>solarCollectorInstallation</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2471">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">geothermalPotential</gml:identifier>
+      <gml:name>geothermalPotential</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2472">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">urbanFarming</gml:identifier>
+      <gml:name>urbanFarming</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2473">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">urbanGreening</gml:identifier>
+      <gml:name>urbanGreening</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1124_2474">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyIndicatorScopeValue">districtHeatingConnection</gml:identifier>
+      <gml:name>districtHeatingConnection</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>

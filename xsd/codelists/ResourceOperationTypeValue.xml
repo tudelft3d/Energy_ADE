@@ -15,12 +15,6 @@
     </gml:Definition>
   </gml:dictionaryEntry>
   <gml:dictionaryEntry>
-    <gml:Definition gml:id="_954_1708">
-      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/ResourceOperationTypeValue">hasBalanceOf</gml:identifier>
-      <gml:name>hasBalanceOf</gml:name>
-    </gml:Definition>
-  </gml:dictionaryEntry>
-  <gml:dictionaryEntry>
     <gml:Definition gml:id="_954_1944">
       <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/ResourceOperationTypeValue">stores</gml:identifier>
       <gml:name>stores</gml:name>
@@ -30,6 +24,12 @@
     <gml:Definition gml:id="_954_2185">
       <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/ResourceOperationTypeValue">has</gml:identifier>
       <gml:name>has</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_954_2577">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/ResourceOperationTypeValue">hasBalanceOf</gml:identifier>
+      <gml:name>hasBalanceOf</gml:name>
     </gml:Definition>
   </gml:dictionaryEntry>
 </gml:Dictionary>
