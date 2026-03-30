@@ -10,7 +10,7 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-03-25
+Last update: 2026-03-30
 
 This dataset contain several object covering (nearly)
 all classes of the Energy ADE.
@@ -200,8 +200,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingStationTypeValue.xml">AC</nrg3:type>
 					<nrg3:chargingSpeedLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingSpeedLevelValue.xml">Level 1</nrg3:chargingSpeedLevel>
 					<nrg3:connectorType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingConnectorTypeValue.xml">AC - Mennekes (Type2)</nrg3:connectorType>
-					<nrg3:loadManagement>false</nrg3:loadManagement>
-					<nrg3:access codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:access>
+					<nrg3:hasLoadManagement>false</nrg3:hasLoadManagement>
+					<nrg3:accessType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:accessType>
 				</nrg3:EVChargingStation>
 			</nrg3:device>
 			<nrg3:device>
@@ -852,6 +852,231 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">6</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_1">
+					<gml:description>This is Inspection 1</gml:description>
+					<gml:name>Inspection 1</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 2</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 2</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_1</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_1</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_2">
+					<gml:description>This is Inspection 2</gml:description>
+					<gml:name>Inspection 2</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 5</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 5</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_2</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_2</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_3">
+					<gml:description>This is Inspection 3</gml:description>
+					<gml:name>Inspection 3</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 8</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 8</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_3</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_3</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_1">
+					<gml:description>This is Maintenance 1</gml:description>
+					<gml:name>Maintenance 1</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 3</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 3</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_1</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_1</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_2">
+					<gml:description>This is Maintenance 2</gml:description>
+					<gml:name>Maintenance 2</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 6</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 6</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_2</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_2</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_3">
+					<gml:description>This is Maintenance 3</gml:description>
+					<gml:name>Maintenance 3</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 9</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 9</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_3</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_3</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_1">
+					<gml:description>This is Refurbishment Measure 1</gml:description>
+					<gml:name>Refurbishment Measure 1</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 1</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 1</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_1</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_1</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_2">
+					<gml:description>This is Refurbishment Measure 2</gml:description>
+					<gml:name>Refurbishment Measure 2</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 4</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 4</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_2</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_2</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_3">
+					<gml:description>This is Refurbishment Measure 3</gml:description>
+					<gml:name>Refurbishment Measure 3</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 7</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 7</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_3</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_3</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 1</nrg3:author>
@@ -1858,231 +2083,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_1">
-					<gml:description>This is Inspection 1</gml:description>
-					<gml:name>Inspection 1</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 2</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 2</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_1</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_1</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_2">
-					<gml:description>This is Inspection 2</gml:description>
-					<gml:name>Inspection 2</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 5</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 5</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_2</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_2</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_3">
-					<gml:description>This is Inspection 3</gml:description>
-					<gml:name>Inspection 3</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 8</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 8</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_3</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_3</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_1">
-					<gml:description>This is Maintenance 1</gml:description>
-					<gml:name>Maintenance 1</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 3</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 3</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_1</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_1</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_2">
-					<gml:description>This is Maintenance 2</gml:description>
-					<gml:name>Maintenance 2</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 6</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 6</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_2</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_2</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_3">
-					<gml:description>This is Maintenance 3</gml:description>
-					<gml:name>Maintenance 3</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 9</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 9</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_3</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_3</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_1">
-					<gml:description>This is Refurbishment Measure 1</gml:description>
-					<gml:name>Refurbishment Measure 1</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 1</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 1</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_1</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_1</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_2">
-					<gml:description>This is Refurbishment Measure 2</gml:description>
-					<gml:name>Refurbishment Measure 2</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 4</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 4</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_2</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_2</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_3">
-					<gml:description>This is Refurbishment Measure 3</gml:description>
-					<gml:name>Refurbishment Measure 3</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 7</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 7</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_3</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_3</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_1">
 					<gml:description>This is Zone 1</gml:description>
@@ -2905,7 +2905,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingStationTypeValue.xml">Unknown</nrg3:type>
 					<nrg3:chargingSpeedLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingSpeedLevelValue.xml">Level 2</nrg3:chargingSpeedLevel>
 					<nrg3:connectorType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingConnectorTypeValue.xml">unknown</nrg3:connectorType>
-					<nrg3:access codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:access>
+					<nrg3:accessType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:accessType>
 				</nrg3:EVChargingStation>
 			</nrg3:device>
 			<nrg3:device>
@@ -3286,6 +3286,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">4</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_4">
+					<gml:description>This is Inspection 4</gml:description>
+					<gml:name>Inspection 4</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 20</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 20</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_4</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_4</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_4">
+					<gml:description>This is Maintenance 4</gml:description>
+					<gml:name>Maintenance 4</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 21</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 21</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_4</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_4</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_4">
+					<gml:description>This is Refurbishment Measure 4</gml:description>
+					<gml:name>Refurbishment Measure 4</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 19</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 19</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_4</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_4</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 2</nrg3:author>
@@ -4520,81 +4595,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_4">
-					<gml:description>This is Inspection 4</gml:description>
-					<gml:name>Inspection 4</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 20</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 20</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_4</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_4</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_4">
-					<gml:description>This is Maintenance 4</gml:description>
-					<gml:name>Maintenance 4</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 21</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 21</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_4</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_4</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_4">
-					<gml:description>This is Refurbishment Measure 4</gml:description>
-					<gml:name>Refurbishment Measure 4</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 19</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 19</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_4</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_4</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:occupiedBy>
 				<nrg3:Occupants gml:id="id_occ_16">
 					<gml:description>This is Occupants 16</gml:description>
@@ -7463,8 +7463,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingStationTypeValue.xml">AC</nrg3:type>
 					<nrg3:chargingSpeedLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingSpeedLevelValue.xml">Level 3</nrg3:chargingSpeedLevel>
 					<nrg3:connectorType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingConnectorTypeValue.xml">AC/DC Tesla</nrg3:connectorType>
-					<nrg3:loadManagement>true</nrg3:loadManagement>
-					<nrg3:access codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">public</nrg3:access>
+					<nrg3:hasLoadManagement>true</nrg3:hasLoadManagement>
+					<nrg3:accessType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">public</nrg3:accessType>
 				</nrg3:EVChargingStation>
 			</nrg3:device>
 			<nrg3:device>
@@ -8127,6 +8127,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">9</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_5">
+					<gml:description>This is Inspection 5</gml:description>
+					<gml:name>Inspection 5</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 23</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 23</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_5</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_5</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_5">
+					<gml:description>This is Maintenance 5</gml:description>
+					<gml:name>Maintenance 5</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 24</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 24</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_5</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_5</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_5">
+					<gml:description>This is Refurbishment Measure 5</gml:description>
+					<gml:name>Refurbishment Measure 5</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 22</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 22</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_5</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_5</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 3</nrg3:author>
@@ -8902,81 +8977,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 1</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_5">
-					<gml:description>This is Inspection 5</gml:description>
-					<gml:name>Inspection 5</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 23</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 23</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_5</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_5</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_5">
-					<gml:description>This is Maintenance 5</gml:description>
-					<gml:name>Maintenance 5</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 24</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 24</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_5</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_5</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_5">
-					<gml:description>This is Refurbishment Measure 5</gml:description>
-					<gml:name>Refurbishment Measure 5</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 22</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 22</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_5</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_5</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_3">
 					<gml:description>This is Zone 3</gml:description>
@@ -9770,8 +9770,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingStationTypeValue.xml">DC</nrg3:type>
 					<nrg3:chargingSpeedLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingSpeedLevelValue.xml">Level 3</nrg3:chargingSpeedLevel>
 					<nrg3:connectorType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingConnectorTypeValue.xml">AC/DC Tesla</nrg3:connectorType>
-					<nrg3:loadManagement>true</nrg3:loadManagement>
-					<nrg3:access codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:access>
+					<nrg3:hasLoadManagement>true</nrg3:hasLoadManagement>
+					<nrg3:accessType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/EVChargingAccessValue.xml">private</nrg3:accessType>
 				</nrg3:EVChargingStation>
 			</nrg3:device>
 			<nrg3:device>
@@ -10161,6 +10161,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">4</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_6">
+					<gml:description>This is Inspection 6</gml:description>
+					<gml:name>Inspection 6</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 26</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 26</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_6</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_6</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_6">
+					<gml:description>This is Maintenance 6</gml:description>
+					<gml:name>Maintenance 6</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 27</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 27</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_6</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_6</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_6">
+					<gml:description>This is Refurbishment Measure 6</gml:description>
+					<gml:name>Refurbishment Measure 6</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 25</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 25</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_6</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_6</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 4</nrg3:author>
@@ -10951,81 +11026,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 2</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_6">
-					<gml:description>This is Inspection 6</gml:description>
-					<gml:name>Inspection 6</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 26</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 26</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_6</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_6</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_6">
-					<gml:description>This is Maintenance 6</gml:description>
-					<gml:name>Maintenance 6</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 27</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 27</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_6</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_6</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_6">
-					<gml:description>This is Refurbishment Measure 6</gml:description>
-					<gml:name>Refurbishment Measure 6</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 25</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 25</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_6</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_6</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_4">
 					<gml:description>This is Zone 4</gml:description>
@@ -12193,6 +12193,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">8</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_7">
+					<gml:description>This is Inspection 7</gml:description>
+					<gml:name>Inspection 7</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 29</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 29</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_7</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_7</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_7">
+					<gml:description>This is Maintenance 7</gml:description>
+					<gml:name>Maintenance 7</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 30</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 30</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_7</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_7</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_7">
+					<gml:description>This is Refurbishment Measure 7</gml:description>
+					<gml:name>Refurbishment Measure 7</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 28</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 28</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_7</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_7</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 5</nrg3:author>
@@ -12989,81 +13064,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 3</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_7">
-					<gml:description>This is Inspection 7</gml:description>
-					<gml:name>Inspection 7</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 29</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 29</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_7</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_7</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_7">
-					<gml:description>This is Maintenance 7</gml:description>
-					<gml:name>Maintenance 7</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 30</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 30</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_7</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_7</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_7">
-					<gml:description>This is Refurbishment Measure 7</gml:description>
-					<gml:name>Refurbishment Measure 7</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 28</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 28</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_7</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_7</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_5">
 					<gml:description>This is Zone 5</gml:description>
@@ -14534,6 +14534,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">6</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_8">
+					<gml:description>This is Inspection 8</gml:description>
+					<gml:name>Inspection 8</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 32</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 32</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_8</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_8</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_8">
+					<gml:description>This is Maintenance 8</gml:description>
+					<gml:name>Maintenance 8</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 33</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 33</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_8</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_8</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_8">
+					<gml:description>This is Refurbishment Measure 8</gml:description>
+					<gml:name>Refurbishment Measure 8</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 31</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 31</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_8</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_8</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 6</nrg3:author>
@@ -15351,81 +15426,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 4</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_8">
-					<gml:description>This is Inspection 8</gml:description>
-					<gml:name>Inspection 8</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 32</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 32</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_8</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_8</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_8">
-					<gml:description>This is Maintenance 8</gml:description>
-					<gml:name>Maintenance 8</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 33</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 33</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_8</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_8</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_8">
-					<gml:description>This is Refurbishment Measure 8</gml:description>
-					<gml:name>Refurbishment Measure 8</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 31</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 31</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_8</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_8</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_6">
 					<gml:description>This is Zone 6</gml:description>
@@ -16849,6 +16849,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">5</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_9">
+					<gml:description>This is Inspection 9</gml:description>
+					<gml:name>Inspection 9</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 35</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 35</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_9</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_9</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_9">
+					<gml:description>This is Maintenance 9</gml:description>
+					<gml:name>Maintenance 9</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 36</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 36</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_9</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_9</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_9">
+					<gml:description>This is Refurbishment Measure 9</gml:description>
+					<gml:name>Refurbishment Measure 9</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 34</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 34</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_9</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_9</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 7</nrg3:author>
@@ -17666,81 +17741,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 5</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_9">
-					<gml:description>This is Inspection 9</gml:description>
-					<gml:name>Inspection 9</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 35</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 35</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_9</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_9</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_9">
-					<gml:description>This is Maintenance 9</gml:description>
-					<gml:name>Maintenance 9</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 36</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 36</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_9</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_9</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_9">
-					<gml:description>This is Refurbishment Measure 9</gml:description>
-					<gml:name>Refurbishment Measure 9</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 34</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 34</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_9</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_9</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_7">
 					<gml:description>This is Zone 7</gml:description>
@@ -18899,6 +18899,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">9</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_10">
+					<gml:description>This is Inspection 10</gml:description>
+					<gml:name>Inspection 10</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 38</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 38</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_10</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_10</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_10">
+					<gml:description>This is Maintenance 10</gml:description>
+					<gml:name>Maintenance 10</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 39</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 39</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_10</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_10</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_10">
+					<gml:description>This is Refurbishment Measure 10</gml:description>
+					<gml:name>Refurbishment Measure 10</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 37</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 37</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_10</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_10</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 8</nrg3:author>
@@ -19716,81 +19791,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 6</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_10">
-					<gml:description>This is Inspection 10</gml:description>
-					<gml:name>Inspection 10</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 38</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 38</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_10</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_10</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_10">
-					<gml:description>This is Maintenance 10</gml:description>
-					<gml:name>Maintenance 10</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 39</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 39</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_10</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_10</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_10">
-					<gml:description>This is Refurbishment Measure 10</gml:description>
-					<gml:name>Refurbishment Measure 10</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 37</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 37</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_10</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_10</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_8">
 					<gml:description>This is Zone 8</gml:description>
@@ -20666,6 +20666,81 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:value uom="class">1</nrg3:value>
 				</nrg3:Indicator>
 			</nrg3:indicator>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_inspection_11">
+					<gml:description>This is Inspection 11</gml:description>
+					<gml:name>Inspection 11</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 47</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 47</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_inspection_11</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_11</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_maintenance_11">
+					<gml:description>This is Maintenance 11</gml:description>
+					<gml:name>Maintenance 11</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 48</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 48</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_maintenance_11</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_11</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
+			<nrg3:intervention>
+				<nrg3:Intervention gml:id="id_refurbishment_11">
+					<gml:description>This is Refurbishment Measure 11</gml:description>
+					<gml:name>Refurbishment Measure 11</gml:name>
+					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
+					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
+					<nrg3:metadata>
+						<nrg3:Metadata>
+							<nrg3:author>Person 46</nrg3:author>
+							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
+							<nrg3:owner>Company 46</nrg3:owner>
+							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_refurbishment_11</nrg3:source>
+						</nrg3:Metadata>
+					</nrg3:metadata>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_11</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
+					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
+					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
+					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+				</nrg3:Intervention>
+			</nrg3:intervention>
 			<nrg3:metadata>
 				<nrg3:Metadata>
 					<nrg3:author>Person 9</nrg3:author>
@@ -24526,81 +24601,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>Certification Method 7</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_inspection_11">
-					<gml:description>This is Inspection 11</gml:description>
-					<gml:name>Inspection 11</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 47</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 47</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_inspection_11</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_inspection_11</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">completed</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">inspection</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_maintenance_11">
-					<gml:description>This is Maintenance 11</gml:description>
-					<gml:name>Maintenance 11</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 48</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 48</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_maintenance_11</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_maintenance_11</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">planned</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">maintemamce</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
-			<nrg3:intervention>
-				<nrg3:Intervention gml:id="id_refurbishment_11">
-					<gml:description>This is Refurbishment Measure 11</gml:description>
-					<gml:name>Refurbishment Measure 11</gml:name>
-					<nrg3:creationDate>2026-03-22</nrg3:creationDate>
-					<nrg3:terminationDate>2031-03-22</nrg3:terminationDate>
-					<nrg3:metadata>
-						<nrg3:Metadata>
-							<nrg3:author>Person 46</nrg3:author>
-							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
-							<nrg3:owner>Company 46</nrg3:owner>
-							<nrg3:qualityDescription>quality_description_string</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_refurbishment_11</nrg3:source>
-						</nrg3:Metadata>
-					</nrg3:metadata>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_refurbishment_11</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionStatusValue.xml">suggested</nrg3:status>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionTypeValue.xml">refurbishment</nrg3:type>
-					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/codelists/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
-				</nrg3:Intervention>
-			</nrg3:intervention>
 		</bldg:Building>
 	</core:cityObjectMember>
 	<core:cityObjectMember>
