@@ -7,10 +7,11 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-03-25
+Last update: 2026-03-30
 
 This schema file was first automatically generated using Shapechange 3.10 and
-successively manually edited, annotated by means of additional tags, and restructured.
+successively manually checked, edited, restructured and annotated by means of 
+additional tags.
 
 ****************************************************************************************
 
@@ -23,59 +24,6 @@ The Netherlands
 
 https://3d.bk.tudelft.nl/gagugiaro/
 
-****************************************************************************************
-
-ADDITIONAL NOTES / MEMORANDUM:
-
-After generating the XSD with Shapechange, the types of the properties linking to
-bldg:_BoundarySurface must be edited manually as the name in the CityGML XSD does not 
-follow the standard prefix rules. I.e.:
-          is -> must be changed to:
-_BoundarySurfaceType -> AbstractBoundarySurfaceType
-_OpeningType -> AbstractOpeningType
-
-(not needed)
-_BoundarySurfacePropertyType -> BoundarySurfacePropertyType
-_OpeningPropertyType -> OpeningPropertyType
-
-The additional tagged values are explained here:
-https://3dcitydb-docs.readthedocs.io/en/latest/plugins/ade-manager/tagged-values.html
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="topLevel">true</taggedValue>
-  </appinfo>
-</annotation>
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="relationType">association | aggregation | composition</taggedValue>
-  </appinfo>
-</annotation> 
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="minOccurs">integer</taggedValue>
-  </appinfo>
-</annotation>
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="maxOccurs">integer | unbounded</taggedValue>
-  </appinfo>
-</annotation>
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="lod">0 | 1 | 2 | 3 | 4</taggedValue>
-  </appinfo>
-</annotation>
-
-<annotation>
-  <appinfo>
-    <taggedValue tag="ignore">true | false</taggedValue>
-  </appinfo>
-</annotation>
 ****************************************************************************************
 ****************************************************************************************
 -->
@@ -492,7 +440,7 @@ version="3.0"
     </sequence>
   </complexType>
 
-  <complexType name="ExternalObjectReferenceType">
+  <complexType name="ExternalObjectReferenceType" type="gml:_Object">
     <choice>
 	  <element name="name" type="string"/>
 	  <element name="uri" type="anyURI"/>
@@ -1385,10 +1333,41 @@ version="3.0"
 
 
   <!-- ADE _CITYOBJECT -->
+  <element name="device" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractDevicePropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">aggregation</taggedValue>
+      </appinfo>
+    </annotation>  
+  </element>
   <element name="identifier" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="gml:CodeType">
     <annotation>
       <appinfo>
         <taggedValue tag="maxOccurs">1</taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <element name="indicator" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:IndicatorPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation> 
+  </element>
+  <element name="intervention" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:InterventionPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation> 
+  </element>
+  <element name="layeredConstruction" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractLayeredConstructionPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="maxOccurs">1</taggedValue>
+      </appinfo>
+      <appinfo>
+        <taggedValue tag="relationType">aggregation</taggedValue>
       </appinfo>
     </annotation>
   </element>
@@ -1397,7 +1376,45 @@ version="3.0"
       <appinfo>
         <taggedValue tag="maxOccurs">1</taggedValue>
       </appinfo>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
     </annotation>
+  </element>
+  <element name="relatedTo" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:CityObjectRelationPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <element name="resource" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractResourcePropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation> 
+  </element>
+  <element name="sensorData" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:SensorDataPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation>   
+  </element>
+  <element name="status" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="gml:CodeType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="maxOccurs">1</taggedValue>
+      </appinfo>
+    </annotation>
+  </element>
+  <element name="utilityNetworkConnection" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:UtilityNetworkConnectionPropertyType">
+    <annotation>
+      <appinfo>
+        <taggedValue tag="relationType">composition</taggedValue>
+      </appinfo>
+    </annotation> 
   </element>
   <element name="validFrom" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="dateTime">
     <annotation>
@@ -1412,65 +1429,6 @@ version="3.0"
         <taggedValue tag="maxOccurs">1</taggedValue>
       </appinfo>
     </annotation>
-  </element>
-  <element name="relatedTo" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:CityObjectRelationPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <element name="device" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractDevicePropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">aggregation</taggedValue>
-      </appinfo>
-    </annotation>  
-  </element>
-  <element name="intervention" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:InterventionPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation> 
-  </element>
-  <element name="layeredConstruction" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractLayeredConstructionPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">aggregation</taggedValue>
-      </appinfo>
-      <appinfo>
-        <taggedValue tag="maxOccurs">1</taggedValue>
-      </appinfo>
-    </annotation>
-  </element>
-  <element name="resource" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:AbstractResourcePropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation> 
-  </element>
-  <element name="indicator" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:IndicatorPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation> 
-  </element>
-  <element name="utilityNetworkConnection" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:UtilityNetworkConnectionPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation> 
-  </element>
-  <element name="sensorData" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="nrg3:SensorDataPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">composition</taggedValue>
-      </appinfo>
-    </annotation>   
   </element>
   <element name="referencePoint" substitutionGroup="core:_GenericApplicationPropertyOfCityObject" type="gml:PointPropertyType">
     <annotation>
@@ -2392,7 +2350,7 @@ version="3.0"
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="chargingSpeedLevel" type="gml:CodeType"/>
           <element minOccurs="0" name="connectorType" type="gml:CodeType"/>
-          <element minOccurs="0" name="loadManagement" type="boolean"/>
+          <element minOccurs="0" name="hasLoadManagement" type="boolean"/>
           <element minOccurs="0" name="access" type="gml:CodeType"/>
         </sequence>
       </extension>
