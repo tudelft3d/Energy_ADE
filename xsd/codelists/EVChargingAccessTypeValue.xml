@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gml:Dictionary xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gml:id="EVChargingAccessTypeValue" xsi:schemaLocation="http://www.opengis.net/gml null">
+  <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0">EVChargingAccessTypeValue</gml:identifier>
+  <gml:name>EVChargingAccessTypeValue</gml:name>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1576_2695">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EVChargingAccessTypeValue">private</gml:identifier>
+      <gml:name>private</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1576_2696">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EVChargingAccessTypeValue">public</gml:identifier>
+      <gml:name>public</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+  <gml:dictionaryEntry>
+    <gml:Definition gml:id="_1576_2697">
+      <gml:identifier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EVChargingAccessTypeValue">unknown</gml:identifier>
+      <gml:name>unknown</gml:name>
+    </gml:Definition>
+  </gml:dictionaryEntry>
+</gml:Dictionary>
