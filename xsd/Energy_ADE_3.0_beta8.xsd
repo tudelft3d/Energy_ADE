@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-03-30
+Last update: 2026-04-02
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -417,17 +417,9 @@ version="3.0"
   </complexType>
 
 
-<!--   <complexType name="AppliesToPropertyType">
-    <sequence> -->
-      <!-- <element minOccurs="0" ref="core:_CityObject"></element> -->
-<!--       <element minOccurs="0" ref="gml:_Feature"></element>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-  </complexType> -->
-
-
   <!-- EXTERNAL REFERENCE -->
-  <element name="ExternalReference" type="nrg3:ExternalReferenceType"/>
+  <element name="ExternalReference" substitutionGroup="gml:_Object" type="nrg3:ExternalReferenceType"/>
+  <!-- <element name="ExternalReference" type="nrg3:ExternalReferenceType"/> -->
   <complexType name="ExternalReferenceType">
     <sequence>
       <element minOccurs="0" name="informationSystem" type="anyURI"/>
@@ -440,23 +432,12 @@ version="3.0"
     </sequence>
   </complexType>
 
-  <complexType name="ExternalObjectReferenceType" type="gml:_Object">
+  <complexType name="ExternalObjectReferenceType">
     <choice>
 	  <element name="name" type="string"/>
 	  <element name="uri" type="anyURI"/>
     </choice>
   </complexType>
-
-
-  <!-- EXTERNAL REFERENCE (Manually edited) -->
-<!--   <element name="ExternalReferenceType" type="nrg3:FeatureExternalReferenceType"/>
-  <complexType name="FeatureExternalReferenceType" >
-    <complexContent>
-      <extension base="core:ExternalReferenceType">
-        <sequence/>
-      </extension>
-    </complexContent>
-  </complexType> -->
 
 
   <!-- ****************************************** -->
@@ -472,13 +453,7 @@ version="3.0"
         <sequence>
           <element minOccurs="0" name="creationDate" type="date"/>
           <element minOccurs="0" name="terminationDate" type="date"/>
-		  <!-- BEGIN: Add External Reference via ADE -->
-		  <!-- These two are written by FME, but cause a validation error. It works with the ADE Manager -->
-          <!-- <element minOccurs="0" maxOccurs="unbounded"  name="externalReference" type="core:ExternalReferenceType"/> -->
-          <!-- <element minOccurs="0" maxOccurs="unbounded"  name="externalReference" type="nrg3:ExternalReferenceType"/> -->
-          <!-- This version is compliant with the standard property->object GML encoding -->
           <element minOccurs="0" maxOccurs="unbounded"  name="externalReference" type="nrg3:ExternalReferencePropertyType"/>
-		  <!-- END -->
           <element minOccurs="0" name="metadata" type="nrg3:MetadataPropertyType"/>
         </sequence>
       </extension>
