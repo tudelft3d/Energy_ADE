@@ -102,7 +102,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
     <td align="center" valign="middle"><img src="logos/stuttgart.png" width="100"></td>
     <td align="center" valign="middle"><img src="logos/wien.png" width="100"></td>
     <td align="center" valign="middle"><img src="logos/wroclaw.png" width="100"></td>
-    <td align="center" valign="middle"><img src="" width="100"></td>
+    <td align="center" valign="middle"><img src="logos/sofia.png" width="100"></td>
   </tr>
 </table>
 
