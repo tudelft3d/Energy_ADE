@@ -86,6 +86,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - Municipality of Stuttgart, Germany
 - Municipality of Wien, Austria
 - Municipality of Wrozlaw, Poland
+- Municipality of Sofia, Bulgaria
 
 <table align="center">
   <tr>
@@ -101,6 +102,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
     <td align="center" valign="middle"><img src="logos/stuttgart.png" width="100"></td>
     <td align="center" valign="middle"><img src="logos/wien.png" width="100"></td>
     <td align="center" valign="middle"><img src="logos/wroclaw.png" width="100"></td>
+    <td align="center" valign="middle"><img src="" width="100"></td>
   </tr>
 </table>
 
@@ -150,6 +152,10 @@ Link to [open-access PDF](https://opengeospatialdata.springeropen.com/counter/pd
 
 # Funding
 
-Development of the new Energy ADE has started in spring 2024 within the European [DigiTwins4PEDs](https://digitwins4peds.eu/) project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/funding-opportunities/dut_call_2022/) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
+Development of the new Energy ADE started in spring 2024 within the European **[DigiTwins4PEDs](https://digitwins4peds.eu/)** project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2022](https://dutpartnership.eu/calls/dut-call-2022) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
 
-In addition to the DigiTwins4PEDs consortium members, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
+Development of the Energy ADE is continuing within the European **[FlexPED](https://flexped.eu/)** project. The project is funded by the European Commission under the Horizon Europe Partnership scheme. The [DUT Call 2024](https://dutpartnership.eu/calls/dut-call-2024) also contributes to the Urban Transition Mission of Mission Innovation as part of the MICall 2022 initiative.
+
+In the Netherlands, research work is carried out within the **[RenoDAT](https://3d.bk.tudelft.nl/projects/renodat/)** project, funded by the Dutch Research Council. 
+
+In addition, several other partners have joined on a volunteer basis as enthusiastic contributors, early testers or technology enthusiasts.
