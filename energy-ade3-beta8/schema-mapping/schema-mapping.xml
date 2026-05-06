@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-04-15
+Last update: 2026-05-05
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-04-15)</version>
+        <version>3.0 beta 8 (2026-05-05)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -1542,7 +1542,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="connector_type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
             <attribute column="has_load_management" type="boolean" maxOccurs="1" path="hasLoadManagement" schema="ng3"/>
-            <complexAttribute maxOccurs="1" path="access" schema="ng3">
+            <complexAttribute maxOccurs="1" path="accessType" schema="ng3">
                 <attribute column="access_type" type="string" path="." schema="ng3"/>
                 <attribute column="access_type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
