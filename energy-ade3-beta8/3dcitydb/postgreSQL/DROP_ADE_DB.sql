@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-04-15
+-- Last update: 2026-05-06
 --
 -- This DDL script uninstalls the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -25,7 +25,7 @@
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 -- *********************************** Drop foreign keys ********************************** 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-ALTER TABLE ng3_relation DROP CONSTRAINT ng3_rel_oc_fk;
+--ALTER TABLE ng3_relation DROP CONSTRAINT ng3_rel_oc_fk;
 ALTER TABLE ng3_relation DROP CONSTRAINT ng3_rel_fk1;
 ALTER TABLE ng3_relation DROP CONSTRAINT ng3_rel_fk2;
 ALTER TABLE ng3_optical_property DROP CONSTRAINT ng3_optpty_oc_fk;
