@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-04-02
+Last update: 2026-05-05
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -1141,7 +1141,7 @@ version="3.0"
 
 
   <!-- SCHEDULE COMPONENT -->
-  <element name="ScheduleComponent" substitutionGroup="nrg3:AbstractADEFeature" type="nrg3:ScheduleComponentType"></element>
+  <element name="ScheduleComponent" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:ScheduleComponentType"></element>
   <complexType name="ScheduleComponentType">
     <complexContent>
       <extension base="nrg3:AbstractFeatureWithLifeSpanType">
@@ -2712,7 +2712,7 @@ version="3.0"
 
 
   <!-- ABSTRACT MATERIAL -->
-  <element abstract="true" name="AbstractMaterial" substitutionGroup="nrg3:AbstractADEFeature" type="nrg3:AbstractMaterialType"></element>
+  <element abstract="true" name="AbstractMaterial" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractMaterialType"></element>
   <complexType abstract="true" name="AbstractMaterialType">
     <complexContent>
       <extension base="nrg3:AbstractFeatureWithLifeSpanType">
@@ -2760,7 +2760,7 @@ version="3.0"
 
 
   <!-- LAYER -->
-  <element name="Layer" substitutionGroup="nrg3:AbstractADEFeature" type="nrg3:LayerType"></element>
+  <element name="Layer" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:LayerType"></element>
   <complexType name="LayerType">
     <complexContent>
       <extension base="nrg3:AbstractFeatureWithLifeSpanType">
