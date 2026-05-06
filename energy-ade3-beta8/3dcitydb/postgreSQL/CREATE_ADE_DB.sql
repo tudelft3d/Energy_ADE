@@ -37,6 +37,7 @@ CREATE SEQUENCE ng3_irr_ts_value_seq INCREMENT BY 1 MINVALUE 0 MAXVALUE 92233720
 -- *********************************** Create tables and indices ************************** 
 -- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
+
 -- -------------------------------------------------------------------- 
 -- ng3_relation
 -- -------------------------------------------------------------------- 
@@ -960,13 +961,13 @@ ALTER TABLE ng3_cityobject ADD CONSTRAINT ng3_cto_oc_fk FOREIGN KEY (objectclass
 ALTER TABLE ng3_cityobject ADD CONSTRAINT ng3_cto_ng3_lcns_fk FOREIGN KEY (layered_constr_id) REFERENCES ng3_layered_construction (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_time_series 
+-- ng3_time_series (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_time_series ADD CONSTRAINT ng3_ts_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_time_series ADD CONSTRAINT ng3_ts_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule 
+-- ng3_schedule (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
@@ -974,21 +975,21 @@ ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_ng3_ts_fk FOREIGN KEY (time_se
 ALTER TABLE ng3_schedule ADD CONSTRAINT ng3_sched_ng3_lib_fk FOREIGN KEY (library_id) REFERENCES ng3_library (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_schedule_component 
+-- ng3_schedule_component (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_ng3_sched_fk1 FOREIGN KEY (parent_schedule_id) REFERENCES ng3_schedule (id);
 ALTER TABLE ng3_schedule_component ADD CONSTRAINT ng3_sched_comp_ng3_sched_fk2 FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_device_operation 
+-- ng3_device_operation (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_ng3_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
 ALTER TABLE ng3_device_operation ADD CONSTRAINT ng3_dev_opr_ng3_dev_fk FOREIGN KEY (device_id) REFERENCES ng3_device (id) ON DELETE SET NULL;
 
 -- -------------------------------------------------------------------- 
--- ng3_sensor_data 
+-- ng3_sensor_data (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
@@ -996,7 +997,7 @@ ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_ng3_ts_fk FOREIGN KEY (t
 ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_layered_construction
+-- ng3_layered_construction (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
@@ -1004,13 +1005,13 @@ ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_ng3_lcns_fk FOREIGN
 ALTER TABLE ng3_layered_construction ADD CONSTRAINT ng3_lcns_ng3_lib_fk FOREIGN KEY (library_id) REFERENCES ng3_library (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_utl_ntw_connection 
+-- ng3_utl_ntw_connection (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_utl_ntw_connection ADD CONSTRAINT ng3_utl_ntw_con_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_utl_ntw_connection ADD CONSTRAINT ng3_utl_ntw_con_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_resource 
+-- ng3_resource (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
@@ -1021,7 +1022,7 @@ ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_sched_fk3 FOREIGN KEY (sched
 ALTER TABLE ng3_resource ADD CONSTRAINT ng3_res_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_space
+-- ng3_space (cityobject)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_space ADD CONSTRAINT ng3_spc_fk FOREIGN KEY (id) REFERENCES cityobject (id);
 ALTER TABLE ng3_space ADD CONSTRAINT ng3_spc_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
@@ -1043,14 +1044,14 @@ ALTER TABLE ng3_library ADD CONSTRAINT ng3_lib_fk FOREIGN KEY (id) REFERENCES ci
 ALTER TABLE ng3_library ADD CONSTRAINT ng3_lib_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_energy_perf_cert 
+-- ng3_energy_perf_cert (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_ng3_bdg_fk FOREIGN KEY (building_id) REFERENCES ng3_building (id);
 ALTER TABLE ng3_energy_perf_cert ADD CONSTRAINT ng3_epc_ng3_spc_fk FOREIGN KEY (space_id) REFERENCES ng3_space (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_occupants 
+-- ng3_occupants (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_occupants ADD CONSTRAINT ng3_occ_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_occupants ADD CONSTRAINT ng3_occ_ng3_sched_fk FOREIGN KEY (schedule_id) REFERENCES ng3_schedule (id) ON DELETE SET NULL;
@@ -1126,19 +1127,19 @@ ALTER TABLE ng3_distribution_device ADD CONSTRAINT ng3_dist_dev_fk FOREIGN KEY (
 ALTER TABLE ng3_distribution_device ADD CONSTRAINT ng3_dist_dev_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_urban_function_area
+-- ng3_urban_function_area (cityobjectgroup)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_urban_function_area ADD CONSTRAINT ng3_ufa_fk FOREIGN KEY (id) REFERENCES cityobjectgroup (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_layer
+-- ng3_layer (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_ng3_lcns_fk FOREIGN KEY (layered_constr_id) REFERENCES ng3_layered_construction (id) ON DELETE SET NULL;
 ALTER TABLE ng3_layer ADD CONSTRAINT ng3_lyr_ng3_mat_fk FOREIGN KEY (material_id) REFERENCES ng3_material (id);
 
 -- -------------------------------------------------------------------- 
--- ng3_material 
+-- ng3_material (ade feature with lifespan)
 -- -------------------------------------------------------------------- 
 ALTER TABLE ng3_material ADD CONSTRAINT ng3_mat_fk FOREIGN KEY (id) REFERENCES ng3_cityobject (id);
 ALTER TABLE ng3_material ADD CONSTRAINT ng3_mat_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
