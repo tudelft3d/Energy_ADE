@@ -2326,7 +2326,7 @@ version="3.0"
           <element minOccurs="0" name="chargingSpeedLevel" type="gml:CodeType"/>
           <element minOccurs="0" name="connectorType" type="gml:CodeType"/>
           <element minOccurs="0" name="hasLoadManagement" type="boolean"/>
-          <element minOccurs="0" name="access" type="gml:CodeType"/>
+          <element minOccurs="0" name="accessType" type="gml:CodeType"/>
         </sequence>
       </extension>
     </complexContent>
