@@ -510,8 +510,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 
-		<!-- Typical Values Time Series -->
-        <featureType id="ng3_TypicalValuesTimeSeriesType" table="ng3_time_series" objectClassId="11250" path="TypicalValuesTimeSeries" schema="ng3">
+		<!-- Typical Values Regular Time Series -->
+        <featureType id="ng3_TypicalValuesRegularTimeSeriesType" table="ng3_time_series" objectClassId="11250" path="TypicalValuesRegularTimeSeries" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesType"/>
 			<!-- Note: the following timestamp type should actually be time! -->
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
@@ -536,8 +536,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 
-		<!-- Typical Values Time Series File -->
-        <featureType id="ng3_TypicalValuesTimeSeriesFileType" table="ng3_time_series" objectClassId="11260" path="TypicalValuesTimeSeriesFile" schema="ng3">
+		<!-- Typical Values Regular Time Series File -->
+        <featureType id="ng3_TypicalValuesRegularTimeSeriesFileType" table="ng3_time_series" objectClassId="11260" path="TypicalValuesRegularTimeSeriesFile" schema="ng3">
             <extension base="ng3_AbstractTimeSeriesFileType"/>
 			<!-- Note: the following timestamp type should actually be time! -->
             <attribute maxOccurs="1" column="start_time" type="timestamp" path="startTime" schema="ng3"/>
