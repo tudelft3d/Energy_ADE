@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-05-06
+-- Last update: 2026-05-11
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -160,7 +160,7 @@ CREATE TABLE ng3_irr_time_series_value (
     id             BIGINT NOT NULL DEFAULT nextval('ng3_irr_ts_value_seq'::regclass) NOT NULL,
     objectclass_id INTEGER,
     timestamp      TIMESTAMP WITH TIME ZONE,
-    start_time     TIMESTAMP WITH TIME ZONE,
+    start_time     TIME WITH TIME ZONE,
     start_day      INTEGER,
     start_month    INTEGER,
     value          NUMERIC,
