@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-05
+Last update: 2026-05-06
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -365,27 +365,6 @@ version="3.0"
   </complexType>
 
 
-  <!-- FEATURE RELATION -->
-  <element name="FeatureRelation" substitutionGroup="gml:_Object" type="nrg3:FeatureRelationType"/>
-  <complexType name="FeatureRelationType">
-    <sequence>
-      <element name="relationType" type="gml:CodeType"/>
-      <element name="relatedTo" type="gml:FeaturePropertyType">
-        <annotation>
-          <appinfo>
-            <taggedValue tag="relationType">association</taggedValue>
-          </appinfo>
-        </annotation>
-      </element>
-    </sequence>
-  </complexType>
-  <complexType name="FeatureRelationPropertyType">
-    <sequence>
-      <element minOccurs="0" ref="nrg3:FeatureRelation"/>
-    </sequence>
-  </complexType>
-
-
   <!-- CITYOBJECT RELATION (edited manually) -->
   <element name="CityObjectRelation" substitutionGroup="gml:_Object" type="nrg3:CityObjectRelationType"/>
   <complexType name="CityObjectRelationType">
@@ -408,7 +387,7 @@ version="3.0"
     </sequence>
   </complexType>
 
-  <!-- (Added manually as missing in CityGML base) -->
+  <!-- (Added manually as missing in CityGML base, required by CITYOBJECT RELATION) -->
   <complexType name="AbstractCityObjectPropertyType">
     <sequence>
       <element minOccurs="0" ref="core:_CityObject"></element>
@@ -417,84 +396,16 @@ version="3.0"
   </complexType>
 
 
-  <!-- EXTERNAL REFERENCE -->
-  <element name="ExternalReference" substitutionGroup="gml:_Object" type="nrg3:ExternalReferenceType"/>
-  <!-- <element name="ExternalReference" type="nrg3:ExternalReferenceType"/> -->
-  <complexType name="ExternalReferenceType">
-    <sequence>
-      <element minOccurs="0" name="informationSystem" type="anyURI"/>
-      <element name="externalObject" type="nrg3:ExternalObjectReferenceType"/>
-    </sequence>
-  </complexType>
-  <complexType name="ExternalReferencePropertyType">
-    <sequence>
-      <element minOccurs="0" ref="nrg3:ExternalReference"/>
-    </sequence>
-  </complexType>
-
-  <complexType name="ExternalObjectReferenceType">
-    <choice>
-	  <element name="name" type="string"/>
-	  <element name="uri" type="anyURI"/>
-    </choice>
-  </complexType>
-
-
   <!-- ****************************************** -->
   <!-- Energy ADE Core Module: Abstract ADE Feature  -->
   <!-- ****************************************** -->
 
 
-  <!-- ABSTRACT ADE FEATURE -->
-  <element abstract="true" name="AbstractADEFeature" substitutionGroup="gml:_Feature" type="nrg3:AbstractADEFeatureType"/>
-  <complexType abstract="true" name="AbstractADEFeatureType">
-    <complexContent>
-      <extension base="gml:AbstractFeatureType">
-        <sequence>
-          <element minOccurs="0" name="creationDate" type="date"/>
-          <element minOccurs="0" name="terminationDate" type="date"/>
-          <element minOccurs="0" maxOccurs="unbounded"  name="externalReference" type="nrg3:ExternalReferencePropertyType"/>
-          <element minOccurs="0" name="metadata" type="nrg3:MetadataPropertyType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="AbstractADEFeaturePropertyType">
-    <sequence minOccurs="0">
-      <element ref="nrg3:AbstractADEFeature"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-  </complexType>
-
-
-  <!-- ABSTRACT FEATURE WITH LIFESPAN -->
-  <element abstract="true" name="AbstractFeatureWithLifeSpan" substitutionGroup="nrg3:AbstractADEFeature" type="nrg3:AbstractFeatureWithLifeSpanType"/>
-  <complexType abstract="true" name="AbstractFeatureWithLifeSpanType">
-    <complexContent>
-      <extension base="nrg3:AbstractADEFeatureType">
-        <sequence>
-          <element minOccurs="0" name="identifier" type="gml:CodeType"/>
-          <element minOccurs="0" name="validFrom" type="dateTime"/>
-          <element minOccurs="0" name="validTo" type="dateTime"/>
-          <element minOccurs="0" name="status" type="gml:CodeType"/>
-          <element maxOccurs="unbounded" minOccurs="0" name="relatedTo" type="nrg3:FeatureRelationPropertyType"/>
-        </sequence>
-      </extension>
-    </complexContent>
-  </complexType>
-  <complexType name="AbstractFeatureWithLifeSpanPropertyType">
-    <sequence minOccurs="0">
-      <element ref="nrg3:AbstractFeatureWithLifeSpan"/>
-    </sequence>
-    <attributeGroup ref="gml:AssociationAttributeGroup"/>
-  </complexType>
-
-
   <!-- ABSTRACT LAYERED CONSTRUCTION -->
-  <element abstract="true" name="AbstractLayeredConstruction" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractLayeredConstructionType"/>
+  <element abstract="true" name="AbstractLayeredConstruction" substitutionGroup="core:_CityObject" type="nrg3:AbstractLayeredConstructionType"/>
   <complexType abstract="true" name="AbstractLayeredConstructionType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence/>
       </extension>
     </complexContent>
@@ -508,10 +419,10 @@ version="3.0"
 
 
   <!-- ABSTRACT SCHEDULE -->
-  <element abstract="true" name="AbstractSchedule" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractScheduleType"/>
+  <element abstract="true" name="AbstractSchedule" substitutionGroup="core:_CityObject" type="nrg3:AbstractScheduleType"/>
   <complexType abstract="true" name="AbstractScheduleType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="startTime" type="time"/>
@@ -532,10 +443,10 @@ version="3.0"
 
 
   <!-- ABSTRACT TIME SERIES -->
-  <element abstract="true" name="AbstractTimeSeries" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractTimeSeriesType"></element>
+  <element abstract="true" name="AbstractTimeSeries" substitutionGroup="core:_CityObject" type="nrg3:AbstractTimeSeriesType"></element>
   <complexType abstract="true" name="AbstractTimeSeriesType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element minOccurs="0" name="interpolationType" type="nrg3:InterpolationTypeValueType"/>
         </sequence>
@@ -551,10 +462,10 @@ version="3.0"
 
 
   <!-- DEVICE OPERATION -->
-  <element name="DeviceOperation" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:DeviceOperationType"></element>
+  <element name="DeviceOperation" substitutionGroup="core:_CityObject" type="nrg3:DeviceOperationType"></element>
   <complexType name="DeviceOperationType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element minOccurs="0" name="yearlyGlobalEfficiency" type="double"/>
@@ -578,10 +489,10 @@ version="3.0"
 
 
   <!-- INTERVENTION -->
-  <element name="Intervention" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:InterventionType"></element>
+  <element name="Intervention" substitutionGroup="core:_CityObject" type="nrg3:InterventionType"></element>
   <complexType name="InterventionType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="action" type="gml:CodeType"/>
@@ -600,10 +511,10 @@ version="3.0"
 
 
   <!-- SENSOR DATA -->
-  <element name="SensorData" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:SensorDataType"></element>
+  <element name="SensorData" substitutionGroup="core:_CityObject" type="nrg3:SensorDataType"></element>
   <complexType name="SensorDataType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="valueType" type="gml:CodeType"></element>
@@ -629,10 +540,10 @@ version="3.0"
 
 
   <!-- ABSTRACT RESOURCE -->
-  <element abstract="true" name="AbstractResource" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractResourceType"/>
+  <element abstract="true" name="AbstractResource" substitutionGroup="core:_CityObject" type="nrg3:AbstractResourceType"/>
   <complexType abstract="true" name="AbstractResourceType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="operationType" type="gml:CodeType"/>
           <element minOccurs="0" name="referencePeriod" type="gml:CodeType"/>
@@ -685,10 +596,10 @@ version="3.0"
 
 
   <!-- UTILITY NETWORK CONNECTION -->
-  <element name="UtilityNetworkConnection" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:UtilityNetworkConnectionType"/>
+  <element name="UtilityNetworkConnection" substitutionGroup="core:_CityObject" type="nrg3:UtilityNetworkConnectionType"/>
   <complexType name="UtilityNetworkConnectionType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="networkType" type="gml:CodeType"/>
           <element minOccurs="0" name="functionInNetwork" type="gml:CodeType"/>
@@ -1141,10 +1052,10 @@ version="3.0"
 
 
   <!-- SCHEDULE COMPONENT -->
-  <element name="ScheduleComponent" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:ScheduleComponentType"></element>
+  <element name="ScheduleComponent" substitutionGroup="core:_CityObject" type="nrg3:ScheduleComponentType"></element>
   <complexType name="ScheduleComponentType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element default="1" name="repetitions" type="integer"/>
@@ -1420,10 +1331,10 @@ version="3.0"
 
 
   <!-- ENERGY PERFORMANCE CERTIFICATE -->
-  <element name="EnergyPerformanceCertificate" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:EnergyPerformanceCertificateType"></element>
+  <element name="EnergyPerformanceCertificate" substitutionGroup="core:_CityObject" type="nrg3:EnergyPerformanceCertificateType"></element>
   <complexType name="EnergyPerformanceCertificateType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"></element>
           <element name="label" type="string"></element>
@@ -1442,10 +1353,10 @@ version="3.0"
 
 
   <!-- OCCUPANTS -->
-  <element name="Occupants" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:OccupantsType"></element>
+  <element name="Occupants" substitutionGroup="core:_CityObject" type="nrg3:OccupantsType"></element>
   <complexType name="OccupantsType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="numberOfOccupants" type="integer"/>
@@ -2712,10 +2623,10 @@ version="3.0"
 
 
   <!-- ABSTRACT MATERIAL -->
-  <element abstract="true" name="AbstractMaterial" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:AbstractMaterialType"></element>
+  <element abstract="true" name="AbstractMaterial" substitutionGroup="core:_CityObject" type="nrg3:AbstractMaterialType"></element>
   <complexType abstract="true" name="AbstractMaterialType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence/>
       </extension>
     </complexContent>
@@ -2760,10 +2671,10 @@ version="3.0"
 
 
   <!-- LAYER -->
-  <element name="Layer" substitutionGroup="nrg3:AbstractFeatureWithLifeSpan" type="nrg3:LayerType"></element>
+  <element name="Layer" substitutionGroup="core:_CityObject" type="nrg3:LayerType"></element>
   <complexType name="LayerType">
     <complexContent>
-      <extension base="nrg3:AbstractFeatureWithLifeSpanType">
+      <extension base="core:AbstractCityObjectType">
         <sequence>
           <element name="thickness" type="gml:MeasureType"/>
           <element name="material" type="nrg3:AbstractMaterialPropertyType">
