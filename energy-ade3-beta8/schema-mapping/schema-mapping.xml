@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-06
+Last update: 2026-05-11
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-05-06)</version>
+        <version>3.0 beta 8 (2026-05-11)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -49,7 +49,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </complexType>
 
         <!-- Absorptance-->
-        <complexType id="ng3_AbsorptanceType" table="ng3_optical_property" objectClassId="11001" path="Emissivity" schema="ng3">
+        <complexType id="ng3_AbsorptanceType" table="ng3_optical_property" objectClassId="11001" path="Absorptance" schema="ng3">
             <extension base="ng3_AbstractOpticalProperty_Type"/>
             <attribute minOccurs="1" maxOccurs="1" column="wavelength_range" type="string" path="wavelengthRange" schema="ng3"/>
         </complexType>
