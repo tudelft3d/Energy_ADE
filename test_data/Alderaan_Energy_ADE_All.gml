@@ -10,7 +10,7 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-06
+Last update: 2026-05-14
 
 This dataset contain several object covering (nearly)
 all classes of the Energy ADE.
@@ -4551,27 +4551,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
-			<nrg3:occupiedBy>
-				<nrg3:Occupants gml:id="id_occ_16">
-					<gml:description>This is Occupants 16</gml:description>
-					<gml:name>Occupants 16</gml:name>
-					<core:creationDate>2026-03-22</core:creationDate>
-					<core:terminationDate>2031-03-22</core:terminationDate>
-					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_occ_16</nrg3:identifier>
-					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
-					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
-					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/OccupantsTypeValue.xml">otherOrCombination</nrg3:type>
-					<nrg3:numberOfOccupants>72</nrg3:numberOfOccupants>
-					<nrg3:averageDietType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DietTypeValue.xml">omnivorous</nrg3:averageDietType>
-					<nrg3:averageIncomeLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/IncomeLevelValue.xml">middle</nrg3:averageIncomeLevel>
-					<nrg3:averageInstructionLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InstructionLevelValue.xml">university</nrg3:averageInstructionLevel>
-					<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
-					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
-					<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
-					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
-					<nrg3:occupancySchedule xlink:href="#id_time_series_sched_2"/>
-				</nrg3:Occupants>
-			</nrg3:occupiedBy>
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_2_1">
 					<gml:description>This is Zone 2_1</gml:description>
