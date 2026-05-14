@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-06
+Last update: 2026-05-14
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -1397,7 +1397,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractCityObjectSpaceType">
         <sequence>
-          <element maxOccurs="unbounded" minOccurs="0" name="occupiedBy" type="nrg3:OccupantsPropertyType">
+          <element minOccurs="0" maxOccurs="unbounded" name="occupiedBy" type="nrg3:OccupantsPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">aggregation</taggedValue>
@@ -1514,13 +1514,13 @@ version="3.0"
       </appinfo>
     </annotation>
   </element>
-  <element name="occupiedBy" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:OccupantsPropertyType">
+<!--   <element name="occupiedBy" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:OccupantsPropertyType">
     <annotation>
       <appinfo>
         <taggedValue tag="relationType">aggregation</taggedValue>
       </appinfo>
     </annotation>  
-  </element>
+  </element> -->
   <element name="buildingUnit" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:BuildingUnitPropertyType">
     <annotation>
       <appinfo>
