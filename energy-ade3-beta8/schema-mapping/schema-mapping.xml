@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-11
+Last update: 2026-05-14
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-05-11)</version>
+        <version>3.0 beta 8 (2026-05-14)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -193,7 +193,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- Core Module: Feature          -->
 <!-- ***************************** -->
 
-
 		<!-- Abstract Layered Construction -->
         <featureType abstract="true" id="ng3_AbstractLayeredConstructionType" table="ng3_layered_construction" objectClassId="11110" path="AbstractLayeredConstruction" schema="ng3">
             <extension base="AbstractCityObjectType">
@@ -330,7 +329,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Sensor Data -->
-        <featureType id="ng3_SensorDataType" table="ng3_sensor_data" objectClassId="11170" path="SensorData" schema="ng3">
+        <featureType id="ng3_SensorDataType" table="ng3_sensordata" objectClassId="11170" path="SensorData" schema="ng3">
             <extension base="AbstractCityObjectType">
                 <join table="cityobject" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
@@ -380,7 +379,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- ***************************** -->
 <!-- Core Module: CityObjects      -->
 <!-- ***************************** -->
-
 
 		<!-- Abstract CityObject Space -->
         <featureType abstract="true" id="ng3_AbstractCityObjectSpaceType" table="ng3_space" objectClassId="11190" path="AbstractCityObjectSpace" schema="ng3">
@@ -775,7 +773,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- Resources Module              -->
 <!-- ***************************** -->
 
-
 		<!-- Construction Material -->
         <featureType id="ng3_ConstructionMaterialType" table="ng3_resource" objectClassId="11430" path="ConstructionMaterial" schema="ng3">
             <extension base="ng3_AbstractResourceType"/>
@@ -889,7 +886,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- ******************************** -->
 <!-- Material and Construction Module -->
 <!-- ******************************** -->
-
 
 		<!-- Material Library -->
         <featureType topLevel="true" id="ng3_MaterialLibraryType" table="ng3_library" objectClassId="11500" path="MaterialLibrary" schema="ng3">
@@ -1169,8 +1165,14 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Abstract Building Space -->
         <featureType abstract="true" id="ng3_AbstractBuildingSpaceType" table="ng3_space" objectClassId="11610" path="AbstractBuildingSpace" schema="ng3">
             <extension base="ng3_AbstractCityObjectSpaceType"/>
+            <!-- <featureProperty target="ng3_OccupantsType" path="occupiedBy" schema="ng3" relationType="aggregation"> -->
+                <!-- <join table="ng3_occupants" fromColumn="occupants_id" toColumn="id" toRole="child"/> -->
+            <!-- </featureProperty> -->
             <featureProperty target="ng3_OccupantsType" path="occupiedBy" schema="ng3" relationType="aggregation">
-                <join table="ng3_occupants" fromColumn="id" toColumn="space_id" toRole="child"/>
+                <joinTable table="ng3_occupants_to_space">
+                    <join table="ng3_space" fromColumn="space_id" toColumn="id" toRole="parent"/>
+                    <inverseJoin table="ng3_occupants" fromColumn="occupants_id" toColumn="id" toRole="parent"/>
+                </joinTable>
             </featureProperty>
         </featureType>
 
@@ -1233,12 +1235,12 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 		<!-- Zone Attic Floor Surface -->
-        <featureType id="ng3_AtticFloorSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11661" path="AtticFloorSurface" schema="ng3">
+        <featureType id="ng3_ZoneAtticFloorSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11661" path="ZoneAtticFloorSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>
 		
 		<!-- Zone Basement Ceiling Surface -->
-        <featureType id="ng3_BasementCeilingSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11662" path="BasementCeilingSurface" schema="ng3">
+        <featureType id="ng3_ZoneBasementCeilingSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11662" path="ZoneBasementCeilingSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>
 
@@ -1248,7 +1250,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 		<!-- Zone Wall Surface -->
-        <featureType id="ng3_ZoneWallWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11664" path="ZoneWallWallSurface" schema="ng3">
+        <featureType id="ng3_ZoneWallWallSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11664" path="ZoneWallSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>		
 
@@ -1258,7 +1260,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 		<!-- Zone Intermediate Floor Surface -->
-        <featureType id="ng3_IntermediateFloorSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11666" path="IntermediateFloorSurface" schema="ng3">
+        <featureType id="ng3_ZoneIntermediateFloorSurfaceType" table="ng3_zone_thematic_surface" objectClassId="11666" path="ZoneIntermediateFloorSurface" schema="ng3">
             <extension base="ng3_AbstractZoneBoundarySurfaceType"/>
         </featureType>
 
@@ -1336,7 +1338,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 </join>
             </featureProperty>
             <featureProperty target="ng3_BuildingUnitType" path="buildingUnit" schema="ng3" relationType="association">
-                <join table="ng3_space" fromColumn="id" toColumn="building_unit_id" toRole="child"/>
+                <join table="ng3_space" fromColumn="id" toColumn="space_id" toRole="child">
+                    <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
+                </join>	
             </featureProperty>
             <featureProperty target="ng3_AbstractZoneBoundarySurfaceType" path="zoneBoundary" schema="ng3" relationType="composition">
                 <join table="ng3_zone_thematic_surface" fromColumn="id" toColumn="space_id" toRole="child">
@@ -1348,8 +1352,8 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Zone -->
         <featureType id="ng3_ZoneType" table="ng3_space" objectClassId="11681" path="Zone" schema="ng3">
             <extension base="ng3_AbstractZoneType"/>
-            <featureProperty target="ng3_ZonePartType" path="zonePart" schema="ng3">
-                <join table="ng3_space" fromColumn="id" toColumn="space_id" toRole="child">
+            <featureProperty target="ng3_ZonePartType" path="zonePart" schema="ng3" relationType="composition">
+                <join table="ng3_space" fromColumn="id" toColumn="space_parent_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
@@ -1364,7 +1368,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- ******************************** -->
 <!-- Devices module -->
 <!-- ******************************** -->
-
 
 		<!-- Generic Device -->
         <featureType id="ng3_GenericDeviceType" table="ng3_device" objectClassId="11690" path="GenericDevice" schema="ng3">
@@ -1708,7 +1711,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <join table="ng3_metadata" fromColumn="id" toColumn="cityobject_id" toRole="child"/>
             </complexProperty>
             <featureProperty target="ng3_SensorDataType" path="sensorData" schema="ng3" relationType="composition">
-                <join table="ng3_sensor_data" fromColumn="id" toColumn="cityobject_id" toRole="child">
+                <join table="ng3_sensordata" fromColumn="id" toColumn="cityobject_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
@@ -1762,6 +1765,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
             </complexProperty>
             <featureProperty target="ng3_EnergyPerformanceCertificateType" path="energyPerformanceCertificate" schema="ng3" relationType="composition">
                 <join table="ng3_energy_perf_cert" fromColumn="id" toColumn="building_id" toRole="child"/>
+            </featureProperty>
+            <featureProperty target="ng3_OccupantsType" path="occupiedBy" schema="ng3" relationType="aggregation">
+                <join table="ng3_occupants" fromColumn="occupants_id" toColumn="id" toRole="child"/>
             </featureProperty>
             <featureProperty target="ng3_BuildingUnitType" path="buildingUnit" schema="ng3" relationType="composition">
                 <join table="ng3_space" fromColumn="id" toColumn="building_id" toRole="child">
