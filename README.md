@@ -54,7 +54,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 
 - Giorgio Agugiaro (TU Delft, The Netherlands): **Main developer**
 - Rushikesh Padsala (HFT Stuttgart, Germany): **Main developer**
-- Prabitha Prabhakaran (HFT Stuttgart, Germany): **Ex Main developer**
+- Prabitha Prabhakaran (HFT Stuttgart, Germany): **Ex main developer**
 - Matthias Betz (HFT Stuttgart, Germany): Contributor
 - Volker Coors (HFT Stuttgart, Germany): Contributor
 - Thomas H. Kolbe (TU Munich, Germany): Contributor
