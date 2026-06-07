@@ -10,9 +10,9 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-06
+Last update: 2026-06-07
 
-This dataset contain several object covering (nearly)
+This dataset contains several object covering (nearly)
 all classes of the Energy ADE.
 
 ** CityGML 2.0 **
@@ -179,7 +179,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:12:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:12:00+01:00</nrg3:maximumLoadTime>
 							<nrg3:maximumLoadDay>21</nrg3:maximumLoadDay>
 							<nrg3:maximumLoadMonth>6</nrg3:maximumLoadMonth>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
@@ -2903,7 +2903,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:45:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:45:00+00:00</nrg3:maximumLoadTime>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
 						</nrg3:Energy>
 					</nrg3:resource>
@@ -9736,7 +9736,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:45:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:45:00+00:00</nrg3:maximumLoadTime>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
 						</nrg3:Energy>
 					</nrg3:resource>
