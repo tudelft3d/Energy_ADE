@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-14
+Last update: 2026-08-08
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-05-14)</version>
+        <version>3.0 beta 8 (2026-08-08)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -329,7 +329,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Sensor Data -->
-        <featureType id="ng3_SensorDataType" table="ng3_sensordata" objectClassId="11170" path="SensorData" schema="ng3">
+        <featureType id="ng3_SensorDataType" table="ng3_sensor_data" objectClassId="11170" path="SensorData" schema="ng3">
             <extension base="AbstractCityObjectType">
                 <join table="cityobject" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
@@ -350,7 +350,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
-            <geometryProperty maxOccurs="1" inlineColumn="position" type="Point" path="position" schema="ng3"/>
         </featureType>
 
 
@@ -688,7 +687,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Schedule Library -->
         <featureType topLevel="true" id="ng3_ScheduleLibraryType" table="ng3_library" objectClassId="11360" path="ScheduleLibrary" schema="ng3">
             <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty minOccurs="1" target="ng3_AbstractScheduleType" path="libraryMember" schema="ng3" relationType="composition">
+            <featureProperty minOccurs="0" target="ng3_AbstractScheduleType" path="libraryMember" schema="ng3" relationType="composition">
                 <join table="ng3_schedule" fromColumn="id" toColumn="library_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
@@ -890,7 +889,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Material Library -->
         <featureType topLevel="true" id="ng3_MaterialLibraryType" table="ng3_library" objectClassId="11500" path="MaterialLibrary" schema="ng3">
             <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty minOccurs="1" target="ng3_AbstractMaterialType" path="libraryMember" schema="ng3" relationType="composition">
+            <featureProperty minOccurs="0" target="ng3_AbstractMaterialType" path="libraryMember" schema="ng3" relationType="composition">
                 <join table="ng3_material" fromColumn="id" toColumn="library_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
@@ -901,7 +900,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 		<!-- Layered Construction Library -->
         <featureType topLevel="true" id="ng3_LayeredConstructionLibraryType" table="ng3_library" objectClassId="11510" path="LayeredConstructionLibrary" schema="ng3">
             <extension base="ng3_AbstractLibraryType"/>
-            <featureProperty minOccurs="1" target="ng3_AbstractLayeredConstructionType" path="libraryMember" schema="ng3" relationType="composition">
+            <featureProperty minOccurs="0" target="ng3_AbstractLayeredConstructionType" path="libraryMember" schema="ng3" relationType="composition">
                 <join table="ng3_layered_construction" fromColumn="id" toColumn="library_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
@@ -1582,7 +1581,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 
 
 		<!-- Power Distribution Device -->
-        <featureType id="ng3_PowerDistributionType" table="ng3_distribution_device" objectClassId="11790" path="PowerDistribution" schema="ng3">
+        <featureType id="ng3_PowerDistributionDeviceType" table="ng3_distribution_device" objectClassId="11790" path="PowerDistributionDevice" schema="ng3">
             <extension base="ng3_AbstractDeviceType">
                 <join table="ng3_device" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
@@ -1601,7 +1600,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
         </featureType>
 
 		<!-- Thermal Distribution Device -->
-        <featureType id="ng3_ThermalDistributionType" table="ng3_distribution_device" objectClassId="11800" path="ThermalDistribution" schema="ng3">
+        <featureType id="ng3_ThermalDistributionDeviceType" table="ng3_distribution_device" objectClassId="11800" path="ThermalDistributionDevice" schema="ng3">
             <extension base="ng3_AbstractDeviceType">
                 <join table="ng3_device" fromColumn="id" toColumn="id" toRole="parent"/>
             </extension>
@@ -1662,7 +1661,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <!-- ******************************** -->
 
 		<!-- Weather Data -->
-        <featureType id="ng3_WeatherDataType" table="ng3_sensordata" objectClassId="11820" path="WeatherData" schema="ng3">
+        <featureType id="ng3_WeatherDataType" table="ng3_sensor_data" objectClassId="11820" path="WeatherData" schema="ng3">
             <extension base="ng3_SensorDataType"/>
         </featureType>
 
@@ -1711,7 +1710,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <join table="ng3_metadata" fromColumn="id" toColumn="cityobject_id" toRole="child"/>
             </complexProperty>
             <featureProperty target="ng3_SensorDataType" path="sensorData" schema="ng3" relationType="composition">
-                <join table="ng3_sensordata" fromColumn="id" toColumn="cityobject_id" toRole="child">
+                <join table="ng3_sensor_data" fromColumn="id" toColumn="cityobject_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>
             </featureProperty>
