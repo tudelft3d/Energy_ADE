@@ -10,9 +10,9 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-14
+Last update: 2026-08-08
 
-This dataset contain several object covering (nearly)
+This dataset contains several object covering (nearly)
 all classes of the Energy ADE.
 
 ** CityGML 2.0 **
@@ -179,7 +179,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:12:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:12:00+01:00</nrg3:maximumLoadTime>
 							<nrg3:maximumLoadDay>21</nrg3:maximumLoadDay>
 							<nrg3:maximumLoadMonth>6</nrg3:maximumLoadMonth>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
@@ -1090,21 +1090,21 @@ https://3d.bk.tudelft.nl/gagugiaro/
 				</nrg3:CityObjectRelation>
 			</nrg3:relatedTo>
 			<nrg3:sensorData>
-				<nrg3:SensorData gml:id="id_seonsor_data_1">
+				<nrg3:SensorData gml:id="id_sensor_data_1">
 					<gml:description>This is SensorData 1</gml:description>
 					<gml:name>SensorData 1</gml:name>
 					<core:creationDate>2026-03-22</core:creationDate>
 					<core:terminationDate>2031-03-22</core:terminationDate>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys A of id_seonsor_data_1</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys A of id_sensor_data_1</core:informationSystem>
 							<core:externalObject>
-								<core:name>ExtRef Name A of id_seonsor_data_1</core:name>
+								<core:name>ExtRef Name A of id_sensor_data_1</core:name>
 							</core:externalObject>
 					</core:externalReference>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys B of id_seonsor_data_1</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys B of id_sensor_data_1</core:informationSystem>
 							<core:externalObject>
-								<core:uri>ExtRef Uri B of id_seonsor_data_1</core:uri>
+								<core:uri>ExtRef Uri B of id_sensor_data_1</core:uri>
 							</core:externalObject>
 					</core:externalReference>
 					<nrg3:metadata>
@@ -1112,10 +1112,15 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:author>Person 1</nrg3:author>
 							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
 							<nrg3:owner>Company 1</nrg3:owner>
-							<nrg3:qualityDescription>quality_description of id_seonsor_data_1</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_seonsor_data_1</nrg3:source>
+							<nrg3:qualityDescription>quality_description of id_sensor_data_1</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_sensor_data_1</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 12</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">proximityAndDistance</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">average</nrg3:valueType>
 					<nrg3:yearlyValue uom="m">15</nrg3:yearlyValue>
@@ -1144,29 +1149,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 12</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
 			<nrg3:sensorData>
-				<nrg3:SensorData gml:id="id_seonsor_data_2">
+				<nrg3:SensorData gml:id="id_sensor_data_2">
 					<gml:description>This is SensorData 2</gml:description>
 					<gml:name>SensorData 2</gml:name>
 					<core:creationDate>2026-03-22</core:creationDate>
 					<core:terminationDate>2031-03-22</core:terminationDate>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys A of id_seonsor_data_2</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys A of id_sensor_data_2</core:informationSystem>
 							<core:externalObject>
-								<core:name>ExtRef Name A of id_seonsor_data_2</core:name>
+								<core:name>ExtRef Name A of id_sensor_data_2</core:name>
 							</core:externalObject>
 					</core:externalReference>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys B of id_seonsor_data_2</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys B of id_sensor_data_2</core:informationSystem>
 							<core:externalObject>
-								<core:uri>ExtRef Uri B of id_seonsor_data_2</core:uri>
+								<core:uri>ExtRef Uri B of id_sensor_data_2</core:uri>
 							</core:externalObject>
 					</core:externalReference>
 					<nrg3:metadata>
@@ -1174,10 +1174,15 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:author>Person 2</nrg3:author>
 							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
 							<nrg3:owner>Company 2</nrg3:owner>
-							<nrg3:qualityDescription>quality_description of id_seonsor_data_2</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_seonsor_data_2</nrg3:source>
+							<nrg3:qualityDescription>quality_description of id_sensor_data_2</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_sensor_data_2</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 9</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">chemicalAndGas</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">average</nrg3:valueType>
 					<nrg3:yearlyValue uom="ppm (CO2)">1000</nrg3:yearlyValue>
@@ -1206,29 +1211,24 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 9</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
 			<nrg3:sensorData>
-				<nrg3:SensorData gml:id="id_seonsor_data_3">
+				<nrg3:SensorData gml:id="id_sensor_data_3">
 					<gml:description>This is SensorData 3</gml:description>
 					<gml:name>SensorData 3</gml:name>
 					<core:creationDate>2026-03-22</core:creationDate>
 					<core:terminationDate>2031-03-22</core:terminationDate>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys A of id_seonsor_data_3</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys A of id_sensor_data_3</core:informationSystem>
 							<core:externalObject>
-								<core:name>ExtRef Name A of id_seonsor_data_3</core:name>
+								<core:name>ExtRef Name A of id_sensor_data_3</core:name>
 							</core:externalObject>
 					</core:externalReference>
 					<core:externalReference>
-							<core:informationSystem>ExtRef InfSys B of id_seonsor_data_3</core:informationSystem>
+							<core:informationSystem>ExtRef InfSys B of id_sensor_data_3</core:informationSystem>
 							<core:externalObject>
-								<core:uri>ExtRef Uri B of id_seonsor_data_3</core:uri>
+								<core:uri>ExtRef Uri B of id_sensor_data_3</core:uri>
 							</core:externalObject>
 					</core:externalReference>
 					<nrg3:metadata>
@@ -1236,10 +1236,15 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:author>Person 3</nrg3:author>
 							<nrg3:acquisitionMethod codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DataAcquisitionMethodValue.xml">measurement</nrg3:acquisitionMethod>
 							<nrg3:owner>Company 3</nrg3:owner>
-							<nrg3:qualityDescription>quality_description of id_seonsor_data_3</nrg3:qualityDescription>
-							<nrg3:source>source metadata of id_seonsor_data_3</nrg3:source>
+							<nrg3:qualityDescription>quality_description of id_sensor_data_3</nrg3:qualityDescription>
+							<nrg3:source>source metadata of id_sensor_data_3</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 6</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">motionAndPosition</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">maximum</nrg3:valueType>
 					<nrg3:yearlyValue uom="people">6</nrg3:yearlyValue>
@@ -1268,13 +1273,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 6</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
+			<nrg3:status codeSpace="pippo">pippo</nrg3:status>
 			<nrg3:utilityNetworkConnection>
 				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_1">
 					<gml:description>This is UtilityNetworkConnection 1</gml:description>
@@ -1811,6 +1812,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<nrg3:bdgIsProtected>false</nrg3:bdgIsProtected>
 			<nrg3:bdgOwnerName>Sheev Palpatine</nrg3:bdgOwnerName>
 			<nrg3:bdgOwnershipType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/OwnershipTypeValue.xml">otherOrCombination</nrg3:bdgOwnershipType>
+			<nrg3:bdgNumberOfBuildingUnits>5</nrg3:bdgNumberOfBuildingUnits>
 			<nrg3:bdgType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/BuildingTypeValue.xml">terracedHouse</nrg3:bdgType>
 			<nrg3:bdgVolume>
 				<nrg3:QualifiedVolume>
@@ -1976,6 +1978,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							</gml:exterior>
 						</gml:Solid>
 					</nrg3:lod3Solid>
+
+					<nrg3:occupiedBy xlink:href="#id_occ_1"/>
+					<nrg3:occupiedBy xlink:href="#id_occ_2"/>
+					<nrg3:occupiedBy xlink:href="#id_occ_3"/>
+
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/CurrentUseValue.xml">residential</nrg3:type>
 					<nrg3:floorNumberFrom>1</nrg3:floorNumberFrom>
 					<nrg3:floorNumberTo>1</nrg3:floorNumberTo>
@@ -2760,6 +2767,37 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:bdgBdrySurfTotalSurfaceArea uom="m^2">100</nrg3:bdgBdrySurfTotalSurfaceArea>
 						</nrg3:ZoneWallSurface>
 					</nrg3:zoneBoundary>
+
+					<nrg3:zonePart>
+						<nrg3:ZonePart gml:id="id_zone_part_1_1">
+							<gml:description>This is ZonePart 1 1</gml:description>
+							<gml:name>ZonePart 1 1</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_part_1_1</nrg3:identifier>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/CurrentUseValue.xml">prison</nrg3:type>
+							<nrg3:isCooled>false</nrg3:isCooled>
+							<nrg3:isHeated>false</nrg3:isHeated>
+							<nrg3:isMechanicallyVentilated>false</nrg3:isMechanicallyVentilated>
+							<nrg3:coincidesWithLod2Hull>false</nrg3:coincidesWithLod2Hull>
+							<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+							<nrg3:buildingUnit xlink:href="#id_building_unit_1"/>
+						</nrg3:ZonePart>
+					</nrg3:zonePart>
+
+					<nrg3:zonePart>
+						<nrg3:ZonePart gml:id="id_zone_part_1_2">
+							<gml:description>This is ZonePart 1 2</gml:description>
+							<gml:name>ZonePart 1 2</gml:name>
+							<nrg3:identifier codeSpace="uri_to_ident_code">identifier_zone_part_1_2</nrg3:identifier>
+							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/CurrentUseValue.xml">prison</nrg3:type>
+							<nrg3:isCooled>false</nrg3:isCooled>
+							<nrg3:isHeated>false</nrg3:isHeated>
+							<nrg3:isMechanicallyVentilated>false</nrg3:isMechanicallyVentilated>
+							<nrg3:coincidesWithLod2Hull>false</nrg3:coincidesWithLod2Hull>
+							<nrg3:coincidesWithLod3Hull>false</nrg3:coincidesWithLod3Hull>
+							<nrg3:buildingUnit xlink:href="#id_building_unit_1"/>
+						</nrg3:ZonePart>
+					</nrg3:zonePart>
+
 				</nrg3:Zone>
 			</nrg3:zone>
 		</bldg:Building>
@@ -2863,7 +2901,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:45:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:45:00+00:00</nrg3:maximumLoadTime>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
 						</nrg3:Energy>
 					</nrg3:resource>
@@ -4551,6 +4589,27 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:certificationMethod>CasaClima</nrg3:certificationMethod>
 				</nrg3:EnergyPerformanceCertificate>
 			</nrg3:energyPerformanceCertificate>
+<!-- 			<nrg3:occupiedBy>
+				<nrg3:Occupants gml:id="id_occ_16">
+					<gml:description>This is Occupants 16</gml:description>
+					<gml:name>Occupants 16</gml:name>
+					<core:creationDate>2026-03-22</core:creationDate>
+					<core:terminationDate>2031-03-22</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_occ_16</nrg3:identifier>
+					<nrg3:validFrom>2026-02-06T22:36:08+01:00</nrg3:validFrom>
+					<nrg3:validTo>2056-02-06T22:36:08+01:00</nrg3:validTo>
+					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/OccupantsTypeValue.xml">otherOrCombination</nrg3:type>
+					<nrg3:numberOfOccupants>72</nrg3:numberOfOccupants>
+					<nrg3:averageDietType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DietTypeValue.xml">omnivorous</nrg3:averageDietType>
+					<nrg3:averageIncomeLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/IncomeLevelValue.xml">middle</nrg3:averageIncomeLevel>
+					<nrg3:averageInstructionLevel codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InstructionLevelValue.xml">university</nrg3:averageInstructionLevel>
+					<nrg3:heatDissipation uom="W/m^2">100</nrg3:heatDissipation>
+					<nrg3:heatDissipationConvectiveFraction uom="unit interval">0.3</nrg3:heatDissipationConvectiveFraction>
+					<nrg3:heatDissipationLatentFraction uom="unit interval">0.2</nrg3:heatDissipationLatentFraction>
+					<nrg3:heatDissipationRadiantFraction uom="unit interval">0.5</nrg3:heatDissipationRadiantFraction>
+					<nrg3:occupancySchedule xlink:href="#id_time_series_sched_2"/>
+				</nrg3:Occupants>
+			</nrg3:occupiedBy> -->
 			<nrg3:zone>
 				<nrg3:Zone gml:id="id_zone_2_1">
 					<gml:description>This is Zone 2_1</gml:description>
@@ -9675,7 +9734,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:endUse codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyEndUseValue.xml">mobility</nrg3:endUse>
 							<nrg3:energyCarrier codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergyCarrierValue.xml">electricity</nrg3:energyCarrier>
 							<nrg3:maximumLoad uom="kW">1.5</nrg3:maximumLoad>
-							<nrg3:maximumLoadTime>12:45:00</nrg3:maximumLoadTime>
+							<nrg3:maximumLoadTime>12:45:00+00:00</nrg3:maximumLoadTime>
 							<nrg3:source codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/EnergySourceValue.xml">powerGrid</nrg3:source>
 						</nrg3:Energy>
 					</nrg3:resource>
@@ -28922,6 +28981,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:name>Building 12 (Death Star II)</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
 			<nrg3:device>
+				<nrg3:PowerDistributionDevice gml:id="id_power_distr_device_1">
+					<gml:description>This is Power Distribution Device 1</gml:description>
+					<gml:name>Power Distribution Device 1</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_1</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:current uom="A">100</nrg3:current>
+					<nrg3:voltage uom="V">220</nrg3:voltage>
+				</nrg3:PowerDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PowerDistributionDevice gml:id="id_power_distr_device_2">
+					<gml:description>This is Power Distribution Device 2</gml:description>
+					<gml:name>Power Distribution Device 2</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_2</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:current uom="A">100</nrg3:current>
+					<nrg3:voltage uom="V">220</nrg3:voltage>
+				</nrg3:PowerDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
 				<nrg3:GenericSolarCollector gml:id="id_gen_solar_coll_14">
 					<gml:description>This is GenericSolarCollector 14</gml:description>
 					<gml:name>GenericSolarCollector 14</gml:name>
@@ -29294,6 +29391,52 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
 					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
 				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalDistributionDevice gml:id="id_thermal_distr_device_1">
+					<gml:description>This is Thermal Distribution Device 1</gml:description>
+					<gml:name>Thermal Distribution Device 1</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_1</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:isCirculation>true</nrg3:isCirculation>
+					<nrg3:medium codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/MediumTypeValue.xml">water</nrg3:medium>
+					<nrg3:nominalFlow uom="l/s">10</nrg3:nominalFlow>
+					<nrg3:returnTemperature uom="°C">50</nrg3:returnTemperature>
+					<nrg3:supplyTemperature uom="°C">80</nrg3:supplyTemperature>
+					<nrg3:thermalLossesFactor uom="percentage">0.1</nrg3:thermalLossesFactor>
+				</nrg3:ThermalDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalDistributionDevice gml:id="id_thermal_distr_device_2">
+					<gml:description>This is Thermal Distribution Device 2</gml:description>
+					<gml:name>Thermal Distribution Device 2</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_2</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:isCirculation>true</nrg3:isCirculation>
+					<nrg3:medium codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/MediumTypeValue.xml">water</nrg3:medium>
+					<nrg3:nominalFlow uom="l/s">10</nrg3:nominalFlow>
+					<nrg3:returnTemperature uom="°C">50</nrg3:returnTemperature>
+					<nrg3:supplyTemperature uom="°C">80</nrg3:supplyTemperature>
+					<nrg3:thermalLossesFactor uom="percentage">0.1</nrg3:thermalLossesFactor>
+				</nrg3:ThermalDistributionDevice>
 			</nrg3:device>
 			<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_12</nrg3:identifier>
 			<nrg3:indicator>
