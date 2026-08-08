@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-05-14
+Last update: 2026-08-08
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -526,7 +526,6 @@ version="3.0"
               </appinfo>
             </annotation>
           </element>
-          <element minOccurs="0" name="position" type="gml:PointPropertyType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -1091,7 +1090,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element minOccurs="1" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractSchedulePropertyType">
+          <element minOccurs="0" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractSchedulePropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -1514,13 +1513,6 @@ version="3.0"
       </appinfo>
     </annotation>
   </element>
-<!--   <element name="occupiedBy" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:OccupantsPropertyType">
-    <annotation>
-      <appinfo>
-        <taggedValue tag="relationType">aggregation</taggedValue>
-      </appinfo>
-    </annotation>  
-  </element> -->
   <element name="buildingUnit" substitutionGroup="bldg:_GenericApplicationPropertyOfAbstractBuilding" type="nrg3:BuildingUnitPropertyType">
     <annotation>
       <appinfo>
@@ -2493,11 +2485,11 @@ version="3.0"
 
 
   <!-- ********************************* -->
-  <!-- Energy ADE Devices Module: Energy Distribution   -->
+  <!-- Energy ADE Devices Module: Energy Distribution Device   -->
   <!-- ******************************** -->
 
-  <element name="PowerDistribution" substitutionGroup="nrg3:AbstractDevice" type="nrg3:PowerDistributionType"/>
-  <complexType name="PowerDistributionType">
+  <element name="PowerDistributionDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:PowerDistributionDeviceType"/>
+  <complexType name="PowerDistributionDeviceType">
     <complexContent>
       <extension base="nrg3:AbstractDeviceType">
         <sequence>
@@ -2508,16 +2500,16 @@ version="3.0"
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="PowerDistributionPropertyType">
+  <complexType name="PowerDistributionDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:PowerDistribution"/>
+      <element ref="nrg3:PowerDistributionDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
 
 
-  <element name="ThermalDistribution" substitutionGroup="nrg3:AbstractDevice" type="nrg3:ThermalDistributionType"/>
-  <complexType name="ThermalDistributionType">
+  <element name="ThermalDistributionDevice" substitutionGroup="nrg3:AbstractDevice" type="nrg3:ThermalDistributionDeviceType"/>
+  <complexType name="ThermalDistributionDeviceType">
     <complexContent>
       <extension base="nrg3:AbstractDeviceType">
         <sequence>
@@ -2532,9 +2524,9 @@ version="3.0"
       </extension>
     </complexContent>
   </complexType>
-  <complexType name="ThermalDistributionPropertyType">
+  <complexType name="ThermalDistributionDevicePropertyType">
     <sequence minOccurs="0">
-      <element ref="nrg3:ThermalDistribution"/>
+      <element ref="nrg3:ThermalDistributionDevice"/>
     </sequence>
     <attributeGroup ref="gml:AssociationAttributeGroup"/>
   </complexType>
@@ -2651,7 +2643,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element minOccurs="1" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractLayeredConstructionPropertyType">
+          <element minOccurs="0" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractLayeredConstructionPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
@@ -2743,7 +2735,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractLibraryType">
         <sequence>
-          <element minOccurs="1" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractMaterialPropertyType">
+          <element minOccurs="0" maxOccurs="unbounded" name="libraryMember" type="nrg3:AbstractMaterialPropertyType">
             <annotation>
               <appinfo>
                 <taggedValue tag="relationType">composition</taggedValue>
