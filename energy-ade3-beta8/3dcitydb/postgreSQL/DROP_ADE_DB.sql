@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-05-14
+-- Last update: 2026-08-08
 --
 -- This DDL script uninstalls the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -88,10 +88,10 @@ ALTER TABLE ng3_schedule DROP CONSTRAINT ng3_sched_oc_fk;
 ALTER TABLE ng3_schedule_component DROP CONSTRAINT ng3_sched_comp_fk;
 ALTER TABLE ng3_schedule_component DROP CONSTRAINT ng3_sched_comp_ng3_sched_fk1;
 ALTER TABLE ng3_schedule_component DROP CONSTRAINT ng3_sched_comp_ng3_sched_fk2;
-ALTER TABLE ng3_sensordata DROP CONSTRAINT ng3_sns_data_fk;
-ALTER TABLE ng3_sensordata DROP CONSTRAINT ng3_sns_data_ng3_cto_fk;
-ALTER TABLE ng3_sensordata DROP CONSTRAINT ng3_sns_data_ng3_ts_fk;
-ALTER TABLE ng3_sensordata DROP CONSTRAINT ng3_sns_data_oc_fk;
+ALTER TABLE ng3_sensor_data DROP CONSTRAINT ng3_sns_data_fk;
+ALTER TABLE ng3_sensor_data DROP CONSTRAINT ng3_sns_data_ng3_cto_fk;
+ALTER TABLE ng3_sensor_data DROP CONSTRAINT ng3_sns_data_ng3_ts_fk;
+ALTER TABLE ng3_sensor_data DROP CONSTRAINT ng3_sns_data_oc_fk;
 ALTER TABLE ng3_solar_collector DROP CONSTRAINT ng3_sol_coll_fk;
 ALTER TABLE ng3_solar_collector DROP CONSTRAINT ng3_sol_coll_lod2_fk;
 ALTER TABLE ng3_solar_collector DROP CONSTRAINT ng3_sol_coll_lod3_fk;
@@ -152,7 +152,7 @@ DROP TABLE ng3_relation CASCADE;
 DROP TABLE ng3_resource CASCADE;
 DROP TABLE ng3_schedule CASCADE;
 DROP TABLE ng3_schedule_component CASCADE;
-DROP TABLE ng3_sensordata CASCADE;
+DROP TABLE ng3_sensor_data CASCADE;
 DROP TABLE ng3_solar_collector CASCADE;
 DROP TABLE ng3_space CASCADE;
 DROP TABLE ng3_storage_device CASCADE;
