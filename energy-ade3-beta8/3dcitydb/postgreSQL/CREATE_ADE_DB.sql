@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-05-14
+-- Last update: 2026-08-08
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -597,9 +597,9 @@ CREATE INDEX ng3_sched_comp_sched_fk1x ON ng3_schedule_component USING btree (pa
 CREATE INDEX ng3_sched_comp_sched_fk2x ON ng3_schedule_component USING btree (schedule_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_sensordata 
+-- ng3_sensor_data 
 -- --------------------------------------------------------------------
-CREATE TABLE ng3_sensordata (
+CREATE TABLE ng3_sensor_data (
     id                    BIGINT PRIMARY KEY,
     objectclass_id        INTEGER,
     type                  VARCHAR,
@@ -610,14 +610,12 @@ CREATE TABLE ng3_sensordata (
     yearly_value_uom      VARCHAR,
 -- FK
 	time_series_id        BIGINT,
-    cityobject_id         BIGINT,
---
-    position              geometry(POINTZ)
+    cityobject_id         BIGINT
 );
-CREATE INDEX ng3_sns_data_oc_fkx   ON ng3_sensordata USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sns_data_type_fkx ON ng3_sensordata USING btree (type ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sns_data_ts_fkx   ON ng3_sensordata USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
-CREATE INDEX ng3_sns_data_cto_fkx  ON ng3_sensordata USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_sns_data_oc_fkx   ON ng3_sensor_data USING btree (objectclass_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_sns_data_type_fkx ON ng3_sensor_data USING btree (type ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_sns_data_ts_fkx   ON ng3_sensor_data USING btree (time_series_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
+CREATE INDEX ng3_sns_data_cto_fkx  ON ng3_sensor_data USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
 -- ng3_solar_collector
@@ -1019,12 +1017,12 @@ ALTER TABLE ng3_relation ADD CONSTRAINT ng3_rel_fk1 FOREIGN KEY (from_cityobject
 ALTER TABLE ng3_relation ADD CONSTRAINT ng3_rel_fk2 FOREIGN KEY (to_cityobject_id) REFERENCES cityobject (id) ON DELETE CASCADE;
 
 -- -------------------------------------------------------------------- 
--- ng3_sensordata
+-- ng3_sensor_data
 -- -------------------------------------------------------------------- 
-ALTER TABLE ng3_sensordata ADD CONSTRAINT ng3_sns_data_fk FOREIGN KEY (id) REFERENCES cityobject (id);
-ALTER TABLE ng3_sensordata ADD CONSTRAINT ng3_sns_data_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
-ALTER TABLE ng3_sensordata ADD CONSTRAINT ng3_sns_data_ng3_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
-ALTER TABLE ng3_sensordata ADD CONSTRAINT ng3_sns_data_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
+ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_fk FOREIGN KEY (id) REFERENCES cityobject (id);
+ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_oc_fk FOREIGN KEY (objectclass_id) REFERENCES objectclass (id);
+ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_ng3_ts_fk FOREIGN KEY (time_series_id) REFERENCES ng3_time_series (id) ON DELETE SET NULL;
+ALTER TABLE ng3_sensor_data ADD CONSTRAINT ng3_sns_data_ng3_cto_fk FOREIGN KEY (cityobject_id) REFERENCES ng3_cityobject (id);
 
 -- -------------------------------------------------------------------- 
 -- ng3_space (cityobject)
