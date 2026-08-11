@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> We are organising an **Energy ADE 3.0 Workshop/Event** on **22-23 June 2026** at **TU Delft**, The Netherlands. Please check out the details [here](https://3d.bk.tudelft.nl/events/energy2026/) and do not forget to register if you plan to participate! 😊
+> All the presentations from the recently organized **Energy ADE 3.0 Workshop/Event** is available [here](https://3d.bk.tudelft.nl/events/energy2026/programme.html) 
 
 <p align="center"><br/><br/><br/><img src="logos/energy_ade_3_logo.jpg" width="600"><br/><br/><br/></p>
 
