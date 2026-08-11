@@ -39,7 +39,7 @@ Besides the conceptual model, available as [UML diagrams](https://github.com/tud
 - **Test datasets** that focus on different aspects/modules of the Energy ADE
 - A **set of modelling rules and suggestions** explaining how to use certain classes of the Energy ADE 3.0 (please refer to the documentation)
 - **Java-based libraries** are being developed by HFT Stuttgart to add support to the [citygml4j](https://github.com/citygml4j/citygml4j) APIs and to the CityGML [3D City Database Importer/Exporter](https://github.com/3dcitydb/importer-exporter). For practical reasons, they are currently hosted [here (citygml4j)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-citygml4j) and [here (citydb)](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-3dcitydb). The latest package, including the Energy ADE 3.0 Java libraries for citygml4j, the 3DCityDB Importer/Exporter API, and the DDL scripts with schema mappings for full 3DCityDB Importer/Exporter plugin support, can be downloaded from [here](https://transfer.hft-stuttgart.de/gitlab/energy-ade/energy-ade-3-releases).
-- OGC Web Feature Service (WFS) implementation of Energy ADE 3.0 as a product of Java-based libraries to support 3DCityDB.
+- OGC Web Feature Service (WFS) implementation of Energy ADE 3.0 as a product of Java-based libraries to support 3DCityDB. Installation guide is available [here](https://3dcitydb-docs.readthedocs.io/en/version-2024.0/wfs/installation.html). Make sure to follow Step 5: Install ADE extensions (optional).
 
 # Further resources
 
@@ -119,11 +119,31 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 > [!NOTE]
 > Till September 2025, the internal development version of the updated Energy ADE was called v. 2.0.<br/>
 > Since October 2025, we use v. 3.0.
+
+- Padsala, R., Reber, A., Simon-Philipp, C., Coors, V., 2026<br/>
+**An OGC standards-based Urban Digital Twin platform supporting co-creation of Positive Energy Districts: Case study of the Nordbahnhof district in Stuttgart, Germany**.<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., XI-4-2026, pp. 339-348
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-XI-4-2026-339-2026)<br/>
+
+- Rahmawati, A., Gao, W., Sánchez, C. L., Agugiaro, G., 2026<br/>
+**Scenario-based energy simulation of tree planting strategies to reduce the heating and cooling demand of buildings under 2050 climate conditions**.<br/>
+ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., XLIX-B4-2026, pp. 513-520<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-archives-XLIX-B4-2026-513-2026)<br/>
+
+- Roman, O., Agugiaro, G., Arroyo Ohori, K., Bassier, M., Farella, E. M., Remondino, F., 2026<br/>
+**Automatic 3D Building Model Generation for Energy Digital Twins**.<br/>
+ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., XI-1-2026, pp. 447-454<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-XI-1-2026-447-2026)<br/>
+
+- Roman, O., Bassier, M., Agugiaro, G., Arroyo Ohori, K., Farella, E. M., Remondino, F., 2025<br/>
+**Scan-to-EDTs: Automated Generation of Energy Digital Twins from 3D Point Clouds**.<br/>
+Buildings, 15(22), 4060<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.3390/buildings15224060)<br/>
  
 - Agugiaro, G., Padsala, R., 2025<br/>
 **A proposal to update and enhance the CityGML Energy Application Domain Extension**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., X-4/W6-2025, pp. 1-8<br/>
-Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-annals-X-4-W6-2025-1-2025)<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.3390/buildings15224060)<br/>
 
 - Gao, W., León-Sánchez, C., Agugiaro, G., 2025<br/> 
 **Data-driven energy simulations to evaluate positive energy district potential in Rotterdam**.<br/>
