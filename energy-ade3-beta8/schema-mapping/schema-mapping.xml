@@ -5,7 +5,7 @@
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-08-08
+Last update: 2026-08-25
 
 This schema mapping file was first automatically generated using the ADE Manager
 of the 3DCityDB Importer/Exporter and successively manually edited and restructured.
@@ -27,7 +27,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 <schemaMapping xmlns="http://www.3dcitydb.org/database/schema/1.0">
     <metadata>
         <name>Energy ADE</name>
-        <version>3.0 beta 8 (2026-08-08)</version>
+        <version>3.0 beta 8 (2026-08-25)</version>
         <description>Database schema for the 3DCityDB 4.x</description>
         <dbPrefix>ng3</dbPrefix>
     </metadata>
@@ -961,7 +961,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                 <attribute column="type" type="string" path="." schema="ng3"/>
                 <attribute column="type_codespace" type="string" path="@codespace" schema="gml"/>
             </complexAttribute>
-            <attribute minOccurs="1" maxOccurs="1" column="is_transparent" type="boolean" path="isTransparent" schema="ng3"/>
+            <attribute minOccurs="0" maxOccurs="1" column="is_transparent" type="boolean" path="isTransparent" schema="ng3"/>
             <complexProperty refType="ng3_AbsorptanceType" path="absorptance" schema="ng3">
                 <join table="ng3_optical_property" fromColumn="id" toColumn="material_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
@@ -1773,7 +1773,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>				
             </featureProperty>
-            <featureProperty target="ng3_AbstractZoneType" path="zone" schema="ng3" relationType="composition">
+            <featureProperty target="ng3_ZoneType" path="zone" schema="ng3" relationType="composition">
                 <join table="ng3_space" fromColumn="id" toColumn="building_id" toRole="child">
                     <condition column="objectclass_id" value="${target.objectclass_id}" type="integer"/>
                 </join>				
