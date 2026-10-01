@@ -120,6 +120,16 @@ If you use the Energy ADE in scientific work, please cite one of our papers:
 > Till September 2025, the internal development version of the updated Energy ADE was called v. 2.0.<br/>
 > Since October 2025, we use v. 3.0.
 
+- Agugiaro, G., Padsala, R., 2025<br/>
+**Further development of the CityGML Energy Application Domain Extension 3.0**.<br/>
+ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci., L-4/W2-2026, pp. 1–8<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-archives-L-4-W2-2026-1-2026)<br/>
+
+- Schlosser, D., Doi, H., Stoter, J., Agugiaro, G., 2026,
+**Deriving and benchmarking Building Renovation Passport data requirements against CityGML and the Energy ADE**.
+ISPRS Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci. L-4/W3-2026, pp. 151–158<br/>
+Link to [open-access paper (PDF)](https://doi.org/10.5194/isprs-archives-L-4-W3-2026-151-2026)<br/>
+
 - Padsala, R., Reber, A., Simon-Philipp, C., Coors, V., 2026<br/>
 **An OGC standards-based Urban Digital Twin platform supporting co-creation of Positive Energy Districts: Case study of the Nordbahnhof district in Stuttgart, Germany**.<br/>
 ISPRS Ann. Photogramm. Remote Sens. Spatial Inf. Sci., XI-4-2026, pp. 339-348
