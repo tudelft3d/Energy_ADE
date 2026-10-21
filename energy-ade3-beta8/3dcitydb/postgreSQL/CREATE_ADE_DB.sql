@@ -3,7 +3,7 @@
 --
 -- CityGML Energy ADE 3.0 (beta 8)
 --
--- Last update: 2026-08-08
+-- Last update: 2026-10-16
 --
 -- This DDL script installs the 3DCityDB schema for the Energy ADE. It must be run
 -- from within the ADE Manager plugin of the 3DCityDB Importer/Exporter.
@@ -67,7 +67,7 @@ CREATE TABLE ng3_building (
 );
 
 -- -------------------------------------------------------------------- 
--- ng3_cityobject (also ade feature with lifespan)
+-- ng3_cityobject
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_cityobject (
     id BIGINT            PRIMARY KEY,
@@ -202,13 +202,16 @@ CREATE INDEX ng3_ind_cto_fkx  ON ng3_indicator USING btree (cityobject_id ASC NU
 -- ng3_intervention 
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_intervention (
-    id               BIGINT PRIMARY KEY,
-    type             VARCHAR,
-    type_codespace   VARCHAR,
-    action           VARCHAR,
-    action_codespace VARCHAR,
-    start_date       DATE,
-    end_date         DATE,
+    id                 BIGINT PRIMARY KEY,
+    type               VARCHAR,
+    type_codespace     VARCHAR,
+    action             VARCHAR,
+    action_codespace   VARCHAR,
+	priority_level     VARCHAR,
+    planned_start_date DATE,
+    planned_end_date   DATE,
+    actual_start_date  DATE,
+    actual_end_date    DATE,
 -- FK
     cityobject_id    BIGINT
 );
@@ -216,7 +219,7 @@ CREATE INDEX ng3_int_type_fkx ON ng3_intervention USING btree (type ASC NULLS LA
 CREATE INDEX ng3_int_cto_fkx  ON ng3_intervention USING btree (cityobject_id ASC NULLS LAST) WITH (FILLFACTOR = 90);
 
 -- -------------------------------------------------------------------- 
--- ng3_irr_time_series_value (for TimeStampedValue and GenericTimeValue)
+-- ng3_irr_time_series_value (for both classes TimeStampedValue and GenericTimeValue)
 -- -------------------------------------------------------------------- 
 CREATE TABLE ng3_irr_time_series_value (
     id             BIGINT NOT NULL DEFAULT nextval('ng3_irr_ts_value_seq'::regclass) NOT NULL,
