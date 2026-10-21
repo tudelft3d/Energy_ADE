@@ -7,7 +7,7 @@ XML Schema Definition (XSD) file for the
 
 CityGML Energy ADE 3.0 (beta 8)
 
-Last update: 2026-08-25
+Last update: 2026-10-16
 
 This schema file was first automatically generated using Shapechange 3.10 and
 successively manually checked, edited, restructured and annotated by means of 
@@ -93,6 +93,17 @@ version="3.0"
       <enumeration value="minimumInSucceedingInterval"></enumeration>
       <enumeration value="precedingTotal"></enumeration>
       <enumeration value="succeedingTotal"></enumeration>
+    </restriction>
+  </simpleType>
+
+
+  <!-- PRIORITY LEVEL VALUE -->
+  <simpleType name="PriorityLevelValueType">
+    <restriction base="string">
+      <enumeration value="critical"/>
+      <enumeration value="high"/>
+      <enumeration value="medium"/>
+      <enumeration value="low"/>
     </restriction>
   </simpleType>
 
@@ -496,8 +507,13 @@ version="3.0"
         <sequence>
           <element name="type" type="gml:CodeType"/>
           <element minOccurs="0" name="action" type="gml:CodeType"/>
-          <element minOccurs="0" name="interventionStartDate" type="date"/>
-          <element minOccurs="0" name="interventionEndDate" type="date"/>
+          <element minOccurs="0" name="priorityLevel" type="nrg3:PriorityLevelValueType"/>
+          <element minOccurs="0" name="plannedStartDate" type="date"/>
+          <element minOccurs="0" name="plannedEndDate" type="date"/>
+          <element minOccurs="0" name="actualStartDate" type="date"/>
+          <element minOccurs="0" name="actualEndDate" type="date"/>
+          <!-- <element minOccurs="0" name="estimatedCost" type="MeasureType"/> -->
+          <!-- <element minOccurs="0" name="actualCost" type="MeasureType"/> -->
         </sequence>
       </extension>
     </complexContent>
@@ -658,7 +674,7 @@ version="3.0"
           <element name="startTimestamp" type="dateTime"/>
           <element name="endTimestamp" type="dateTime"/>
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
-          <element name="valuesList" type="gml:MeasureListType"></element>
+          <element name="valuesList" type="gml:MeasureOrNullListType"></element>
         </sequence>
       </extension>
     </complexContent>
@@ -703,7 +719,7 @@ version="3.0"
           <element minOccurs="0" name="startMonth" type="integer"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
           <element name="timeInterval" type="gml:TimeIntervalLengthType"></element>
-          <element name="valuesList" type="gml:MeasureListType"></element>
+          <element name="valuesList" type="gml:MeasureOrNullListType"></element>
         </sequence>
       </extension>
     </complexContent>
@@ -779,7 +795,7 @@ version="3.0"
         <sequence>
           <element name="startDate" type="date"/>
           <element name="endDate" type="date"/>
-          <element name="valuesList" type="gml:MeasureListType"/>
+          <element name="valuesList" type="gml:MeasureOrNullListType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -818,9 +834,9 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesType">
         <sequence>
-          <element minOccurs="0" name="startMonth" type="integer"/>
+          <element name="startMonth" type="integer" default="1"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"/>
-          <element name="valuesList" type="gml:MeasureListType"/>
+          <element name="valuesList" type="gml:MeasureOrNullListType"/>
         </sequence>
       </extension>
     </complexContent>
@@ -839,7 +855,7 @@ version="3.0"
     <complexContent>
       <extension base="nrg3:AbstractTimeSeriesFileType">
         <sequence>
-          <element default="1" minOccurs="0" name="startMonth" type="integer"/>
+          <element name="startMonth" type="integer" default="1"/>
           <element name="temporalExtent" type="gml:TimeIntervalLengthType"></element>
         </sequence>
       </extension>
@@ -2786,7 +2802,7 @@ version="3.0"
       <extension base="nrg3:AbstractMaterialType">
         <sequence>
           <element name="type" type="gml:CodeType"/>
-          <element default="false" minOccurs="0" name="isVentilated" type="boolean"></element>
+          <element minOccurs="0" name="isVentilated" type="boolean"></element>
           <element minOccurs="0" name="rValue" type="gml:MeasureType"></element>
         </sequence>
       </extension>
