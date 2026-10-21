@@ -10,7 +10,7 @@
 CityGML 2.0 Test dataset "Alderaan"
 with Energy ADE 3.0 (beta 8)
 
-Last update: 2026-06-07
+Last update: 2026-10-16
 
 This dataset contains several object covering (nearly)
 all classes of the Energy ADE.
@@ -865,8 +865,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-01</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-01</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2021-02-01</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2021-08-01</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -890,8 +893,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-02</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-02</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-02</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-02</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -915,8 +921,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-03</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-03</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-03</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-03</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -940,8 +949,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-01</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-01</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-01</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-01</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -965,8 +977,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-02</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-02</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-02</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-02</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -990,8 +1005,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-03</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-03</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-03</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-03</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -1015,8 +1033,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-01</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-01</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-01</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-01</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-01</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-01</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -1040,8 +1061,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-02</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-02</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-02</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-02</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-02</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-02</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -1065,8 +1089,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-03</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-03</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-03</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-03</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-03</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-03</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -1116,6 +1143,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:source>source metadata of id_sensor_data_1</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 12</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">proximityAndDistance</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">average</nrg3:valueType>
 					<nrg3:yearlyValue uom="m">15</nrg3:yearlyValue>
@@ -1144,11 +1176,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 12</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
 			<nrg3:sensorData>
@@ -1178,6 +1205,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:source>source metadata of id_sensor_data_2</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 9</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">chemicalAndGas</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">average</nrg3:valueType>
 					<nrg3:yearlyValue uom="ppm (CO2)">1000</nrg3:yearlyValue>
@@ -1206,11 +1238,6 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 9</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
 			<nrg3:sensorData>
@@ -1240,6 +1267,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:source>source metadata of id_sensor_data_3</nrg3:source>
 						</nrg3:Metadata>
 					</nrg3:metadata>
+					<nrg3:referencePoint>
+						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
+							<gml:pos>85855 448705 6</gml:pos>
+						</gml:Point>
+					</nrg3:referencePoint>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataTypeValue.xml">motionAndPosition</nrg3:type>
 					<nrg3:valueType codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/SensorDataValueTypeValue.xml">maximum</nrg3:valueType>
 					<nrg3:yearlyValue uom="people">6</nrg3:yearlyValue>
@@ -1268,16 +1300,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 						</nrg3:TypicalValuesMonthlyTimeSeriesFile>
 					</nrg3:timeDependentValues>
-					<nrg3:position>
-						<gml:Point srsName="urn:ogc:def:crs,crs:EPSG::28992,crs:EPSG::5109" srsDimension="3">
-							<gml:pos>85855 448705 6</gml:pos>
-						</gml:Point>
-					</nrg3:position>
 				</nrg3:SensorData>
 			</nrg3:sensorData>
-
 			<nrg3:status codeSpace="pippo">pippo</nrg3:status>
-
 			<nrg3:utilityNetworkConnection>
 				<nrg3:UtilityNetworkConnection gml:id="id_util_network_conn_1">
 					<gml:description>This is UtilityNetworkConnection 1</gml:description>
@@ -1893,7 +1918,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 									<nrg3:startTimestamp>2009-01-01T00:00:00+01:00</nrg3:startTimestamp>
 									<nrg3:endTimestamp>2010-01-01T00:00:00+01:00</nrg3:endTimestamp>
 									<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
-									<nrg3:valuesList uom="kg/week">1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
+									<nrg3:valuesList uom="kg/week">1 missing 3 missing 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2 3 4 5 6 7 8 9 10 1 2</nrg3:valuesList>
 								</nrg3:RegularTimeSeries>
 							</nrg3:timeDependentExpense>
 							<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/WasteTypeValue.xml">otherOrCombination</nrg3:type>
@@ -3315,8 +3340,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-04</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-04</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-04</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-04</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -3340,8 +3368,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-04</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-04</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-04</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-04</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -3365,8 +3396,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-04</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-04</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-04</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-04</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-04</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-04</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -8136,8 +8170,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-05</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-05</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-05</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-05</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -8161,8 +8198,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-05</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-05</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-05</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-05</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -8186,8 +8226,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-05</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-05</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-05</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-05</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-05</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-05</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -10158,8 +10201,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-06</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-06</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-06</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-06</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -10183,8 +10229,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-06</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-06</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-06</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-06</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -10208,8 +10257,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-06</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-06</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-06</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-06</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-06</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-06</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -12186,8 +12238,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-07</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-07</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-07</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-07</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -12211,8 +12266,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-07</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-07</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-07</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-07</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -12236,8 +12294,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-07</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-07</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-07</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-07</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-07</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-07</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -14523,8 +14584,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-08</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-08</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-08</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-08</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -14548,8 +14612,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-08</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-08</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-08</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-08</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -14573,8 +14640,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-08</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-08</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-08</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-08</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-08</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-08</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -16834,8 +16904,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-09</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-09</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-09</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-09</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -16859,8 +16932,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-09</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-09</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-09</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-09</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -16884,8 +16960,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-09</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-09</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-09</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-09</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-09</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-09</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -18880,8 +18959,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-10</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-10</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-10</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-10</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -18905,8 +18987,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-10</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-10</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-10</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-10</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -18930,8 +19015,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-10</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-10</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-10</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-10</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-10</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-10</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -20643,8 +20731,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">completed</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">inspection</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">other</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-11</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-11</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-11</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-11</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -20668,8 +20759,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">planned</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">maintemamce</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">repairedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-11</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-11</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-11</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-11</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:intervention>
@@ -20693,8 +20787,11 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:status codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionStatusValue.xml">suggested</nrg3:status>
 					<nrg3:type codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionTypeValue.xml">refurbishment</nrg3:type>
 					<nrg3:action codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/InterventionActionValue.xml">changedBoiler</nrg3:action>
-					<nrg3:interventionStartDate>2020-02-11</nrg3:interventionStartDate>
-					<nrg3:interventionEndDate>2020-08-11</nrg3:interventionEndDate>
+					<nrg3:priorityLevel>medium</nrg3:priorityLevel>
+					<nrg3:plannedStartDate>2020-02-11</nrg3:plannedStartDate>
+					<nrg3:plannedEndDate>2020-08-11</nrg3:plannedEndDate>
+					<nrg3:actualStartDate>2020-02-11</nrg3:actualStartDate>
+					<nrg3:actualEndDate>2020-08-11</nrg3:actualEndDate>
 				</nrg3:Intervention>
 			</nrg3:intervention>
 			<nrg3:metadata>
@@ -28983,6 +29080,44 @@ https://3d.bk.tudelft.nl/gagugiaro/
 			<gml:name>Building 12 (Death Star II)</gml:name>
 			<core:creationDate>2024-09-25</core:creationDate>
 			<nrg3:device>
+				<nrg3:PowerDistributionDevice gml:id="id_power_distr_device_1">
+					<gml:description>This is Power Distribution Device 1</gml:description>
+					<gml:name>Power Distribution Device 1</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_1</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:current uom="A">100</nrg3:current>
+					<nrg3:voltage uom="V">220</nrg3:voltage>
+				</nrg3:PowerDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:PowerDistributionDevice gml:id="id_power_distr_device_2">
+					<gml:description>This is Power Distribution Device 2</gml:description>
+					<gml:name>Power Distribution Device 2</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_2</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:current uom="A">100</nrg3:current>
+					<nrg3:voltage uom="V">220</nrg3:voltage>
+				</nrg3:PowerDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
 				<nrg3:GenericSolarCollector gml:id="id_gen_solar_coll_14">
 					<gml:description>This is GenericSolarCollector 14</gml:description>
 					<gml:name>GenericSolarCollector 14</gml:name>
@@ -29355,6 +29490,52 @@ https://3d.bk.tudelft.nl/gagugiaro/
 					<nrg3:linearHeatLossCoefficient>10</nrg3:linearHeatLossCoefficient>
 					<nrg3:quadraticHeatLossCoefficient>0.68</nrg3:quadraticHeatLossCoefficient>
 				</nrg3:PhotovoltaicThermalCollector>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalDistributionDevice gml:id="id_thermal_distr_device_1">
+					<gml:description>This is Thermal Distribution Device 1</gml:description>
+					<gml:name>Thermal Distribution Device 1</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_1</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:isCirculation>true</nrg3:isCirculation>
+					<nrg3:medium codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/MediumTypeValue.xml">water</nrg3:medium>
+					<nrg3:nominalFlow uom="l/s">10</nrg3:nominalFlow>
+					<nrg3:returnTemperature uom="°C">50</nrg3:returnTemperature>
+					<nrg3:supplyTemperature uom="°C">80</nrg3:supplyTemperature>
+					<nrg3:thermalLossesFactor uom="percentage">0.1</nrg3:thermalLossesFactor>
+				</nrg3:ThermalDistributionDevice>
+			</nrg3:device>
+			<nrg3:device>
+				<nrg3:ThermalDistributionDevice gml:id="id_thermal_distr_device_2">
+					<gml:description>This is Thermal Distribution Device 2</gml:description>
+					<gml:name>Thermal Distribution Device 2</gml:name>
+					<core:creationDate>2026-08-08</core:creationDate>
+					<core:terminationDate>2029-08-08</core:terminationDate>
+					<nrg3:identifier codeSpace="uri_to_ident_code">identifier_power_distr_device_2</nrg3:identifier>
+					<nrg3:validFrom>2026-08-08T00:00:01+01:00</nrg3:validFrom>
+					<nrg3:validTo>2028-08-08T00:00:01+01:00</nrg3:validTo>
+					<nrg3:model>Model XYZ</nrg3:model>
+					<nrg3:yearOfInstallation>2026</nrg3:yearOfInstallation>
+					<nrg3:yearOfManufacture>2023</nrg3:yearOfManufacture>
+					<nrg3:numberOfDevices>1</nrg3:numberOfDevices>
+					<nrg3:installedPower uom="kW">1.5</nrg3:installedPower>
+					<nrg3:distributionPerimeter codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/DistributionPerimeterTypeValue.xml">building</nrg3:distributionPerimeter>
+					<nrg3:isCirculation>true</nrg3:isCirculation>
+					<nrg3:medium codeSpace="http://3dcities.bk.tudelft.nl/citygml/2.0/energy/3.0/MediumTypeValue.xml">water</nrg3:medium>
+					<nrg3:nominalFlow uom="l/s">10</nrg3:nominalFlow>
+					<nrg3:returnTemperature uom="°C">50</nrg3:returnTemperature>
+					<nrg3:supplyTemperature uom="°C">80</nrg3:supplyTemperature>
+					<nrg3:thermalLossesFactor uom="percentage">0.1</nrg3:thermalLossesFactor>
+				</nrg3:ThermalDistributionDevice>
 			</nrg3:device>
 			<nrg3:identifier codeSpace="uri_to_ident_code">identifier_building_12</nrg3:identifier>
 			<nrg3:indicator>
@@ -41829,8 +42010,9 @@ https://3d.bk.tudelft.nl/gagugiaro/
 								</nrg3:Metadata>
 							</nrg3:metadata>
 							<nrg3:interpolationType>instantaneousTotal</nrg3:interpolationType>
+							<nrg3:startMonth>1</nrg3:startMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:valuesList uom="unit">101 102 103 104 105 106 107 108 109 110 111 112</nrg3:valuesList>
+							<nrg3:valuesList uom="unit">101 missing 103 missing 105 106 107 108 109 110 111 112</nrg3:valuesList>
 						</nrg3:TypicalValuesMonthlyTimeSeries>
 					</nrg3:timeDependentValues>
 				</nrg3:TimeSeriesSchedule>
@@ -41861,7 +42043,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:interpolationType>maximumInPrecedingInterval</nrg3:interpolationType>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
 							<nrg3:timeInterval unit="day">7</nrg3:timeInterval>
-							<nrg3:valuesList uom="unit">1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg3:valuesList>
+							<nrg3:valuesList uom="unit">1 missing 3 missing 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52</nrg3:valuesList>
 						</nrg3:TypicalValuesRegularTimeSeries>
 					</nrg3:timeDependentValues>
 				</nrg3:TimeSeriesSchedule>
@@ -43845,7 +44027,7 @@ https://3d.bk.tudelft.nl/gagugiaro/
 							<nrg3:interpolationType>averageInSucceedingInterval</nrg3:interpolationType>
 							<nrg3:startMonth>1</nrg3:startMonth>
 							<nrg3:temporalExtent unit="year">1</nrg3:temporalExtent>
-							<nrg3:valuesList uom="Scale">0.5 0.6 0.7 0.8 0.9 1.0 1.0 0.9 0.8 0.7 0.6 0.5</nrg3:valuesList>
+							<nrg3:valuesList uom="Scale">0.5 missing 0.7 missing 0.9 1.0 1.0 0.9 0.8 0.7 0.6 0.5</nrg3:valuesList>
 						</nrg3:TypicalValuesMonthlyTimeSeries>
 					</nrg3:timeDependentValues>
 				</nrg3:WeatherData>
