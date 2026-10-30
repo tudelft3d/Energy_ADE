@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Venue – CityGML Energy ADE Workshop 2026">
+    <title>Venue – CityGML Energy ADE 3.0 Workshop</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/syntax.css" rel="stylesheet">
+    <link href="../../assets/css/mine.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      body { padding-top: 50px; }
+
+      .hero-venue {
+        background: linear-gradient(rgba(26,58,92,0.72), rgba(26,58,92,0.72)),
+                    url('../../img/events/udmv2015/TU_Delft_Campus_0008_.jpg') center center / cover no-repeat;
+        padding: 70px 0 50px 0;
+        color: white;
+      }
+      .hero-venue h1 { font-weight: 700; font-size: 32px; margin-top: 0; }
+      .hero-venue hr { border-color: rgba(255,255,255,0.4); margin: 14px 0; }
+      .hero-venue p { font-size: 16px; color: rgba(255,255,255,0.9); }
+
+      .section-title {
+        color: #1a3a5c;
+        font-weight: 700;
+        border-left: 4px solid #2e6da4;
+        padding-left: 12px;
+        margin-top: 36px;
+        margin-bottom: 18px;
+      }
+
+      .venue-card {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+        margin-bottom: 28px;
+        background: #fff;
+      }
+      .venue-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .venue-card-body {
+        padding: 18px 20px;
+      }
+      .venue-card-body h4 {
+        color: #1a3a5c;
+        font-weight: 700;
+        margin-top: 0;
+      }
+      .venue-card .badge-day {
+        background: #2e6da4;
+        color: white;
+        border-radius: 3px;
+        padding: 3px 9px;
+        font-size: 12px;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .transport-card {
+        background: #f7f9fc;
+        border-radius: 4px;
+        padding: 15px 18px;
+        margin-bottom: 16px;
+      }
+      .transport-card h4 {
+        margin-top: 0;
+        color: #1a3a5c;
+        font-weight: 700;
+        font-size: 15px;
+      }
+      .transport-card p { margin-bottom: 0; font-size: 14px; }
+
+      .hotel-list li {
+        padding: 6px 0;
+        border-bottom: 1px solid #eee;
+        font-size: 14px;
+      }
+      .hotel-list li:last-child { border-bottom: none; }
+
+      .sidebar-box {
+        background: #f0f5fb;
+        border: 1px solid #c8ddf0;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .sidebar-box h4 {
+        color: #1a3a5c;
+        font-weight: 700;
+        margin-top: 0;
+        border-bottom: 2px solid #2e6da4;
+        padding-bottom: 8px;
+        margin-bottom: 14px;
+      }
+      .sidebar-box ul { padding-left: 18px; margin-bottom: 0; font-size: 14px; }
+      .sidebar-box li { margin-bottom: 6px; }
+
+      .map-container {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#1a3a5c; border-color:#1a3a5c;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="color:white;">CityGML Energy ADE 3.0 Workshop 2026</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" style="color:rgba(255,255,255,0.8);">Home</a></li>
+            <li class="active"><a href="venue.html" style="color:white; font-weight:600;">Venue</a></li>
+            <li><a href="programme.html" style="color:rgba(255,255,255,0.8);">Programme</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero-venue">
+      <div class="container">
+        <div class="row" style="display:flex; align-items:center; flex-wrap:wrap;">
+          <div class="col-md-3 col-sm-4 text-center" style="margin-bottom:20px;">
+            <a href="https://3d.bk.tudelft.nl" target="_blank">
+              <img class="img-responsive" src="../../img/logos/tud-3dgeoinfo-white.png" style="max-height:90px; margin:0 auto;">
+            </a>
+            <a href="https://3d.bk.tudelft.nl/urbanrg/" target="_blank">
+              <img class="img-responsive" src="../../urbanrg/images/urbanrg_white.png" onmouseover="this.src='../../urbanrg/images/urbanrg_white_alt.png'" onmouseout="this.src='../../urbanrg/images/urbanrg_white.png'" style="max-height:25px; margin:0 auto;">
+            </a>
+          </div>
+          <div class="col-md-9 col-sm-8">
+            <h1>Venue</h1>
+            <hr>
+            <p>
+              <i class="fa fa-calendar" style="margin-right:7px;"></i><b>June 22–23, 2026</b>
+              &nbsp;|&nbsp;
+              <i class="fa fa-map-marker" style="margin-right:7px;"></i>Delft, the Netherlands
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="container" style="margin-top:36px; margin-bottom:50px;">
+      <div class="row">
+
+        <!-- Left column -->
+        <div class="col-md-8">
+
+          <div class="alert alert-info" style="border-left: 4px solid #2e6da4;">
+            <i class="fa fa-info-circle"></i>&nbsp;
+            The event will take place at TU Delft, Delft, The Netherlands.
+          </div>
+
+          <h3 class="section-title">First day Venue</h3>
+
+          <!-- Day 1 card -->
+          <div class="venue-card">
+            <img src="https://www.jansen.com/fileadmin/_processed_/a/5/csm_Technical-University-Jansen-AG-02-_eab67e7921.jpg" alt="Delft Pulse">
+            <!-- <img src="../../img/events/udmv2015/Delft-Hall.jpg" alt="Delft Pulse"> -->
+            <div class="venue-card-body">
+              <span class="badge-day"></i> &nbsp;Monday 22 June – Afternoon</span>
+              <h4>Public dissemination event</h4>
+              <p style="color:#555; font-size:14px;">Open to a broad audience of cities, users, industry, and researchers. Pulse (Building 33), Room A0.400, Landbergstraat 19, 2628 CE Delft.</p>
+            </div>
+          </div>
+          <h3 class="section-title">Second day Venue</h3>
+          <!-- Day 2 card -->
+          <div class="venue-card">
+            <img src="../../img/events/udmv2015/BK.jpg" alt="TU Delft Faculty of Architecture">
+            <div class="venue-card-body">
+              <span class="badge-day"></i> &nbsp;Tuesday 23 June – Morning</span>
+              <h4>Developers' technical meeting</h4>
+              <p style="color:#555; font-size:14px;">A focused session for developers and technical experts. Faculty of Architecture (Building 8), Room BG.Oost.490, Julianalaan 134, 2628BL Delft.</p>
+            </div>
+          </div>
+
+          <!-- Map -->
+          <h3 class="section-title">Delft – General Location</h3>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9829.57!2d4.3553!3d52.0116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b592b0000001%3A0x6bf0ab3c8dbb9eb8!2sDelft%2C+Netherlands!5e0!3m2!1sen!2snl!4v1"
+              width="100%" height="300" frameborder="0" style="border:0; display:block;" allowfullscreen>
+            </iframe>
+          </div>
+
+          <!-- Getting here -->
+          <h3 class="section-title">Getting to Delft</h3>
+
+          <div class="transport-card">
+            <h4>By Air</h4>
+            <p><b>Amsterdam Schiphol Airport</b> is the nearest major airport, with direct trains to Delft taking approximately <b>40 minutes</b>. <b>Rotterdam-The Hague Airport</b> is also nearby and well connected by bus and train.</p>
+          </div>
+
+          <div class="transport-card">
+            <h4>By Train</h4>
+            <p>Delft is well connected by the Dutch national rail network. Plan your journey at <a href="https://9292.nl/en" target="_blank">9292.nl</a> (English available). Make sure to arrive at <b>Delft station</b> — not Delft-Zuid.</p>
+          </div>
+
+          <div class="transport-card">
+            <h4>By Car</h4>
+            <p>Free parking is available in designated TU Delft parking lots on campus.</p>
+          </div>
+
+          <div class="transport-card">
+            <h4>Local Transport</h4>
+            <p>Bus lines <b>40, 60, 64, 69, and 174</b> connect Delft station to the TU Delft campus. Hotels in the city centre are typically within 10–15 minutes walking distance from campus.</p>
+          </div>
+
+          <!-- Hotels -->
+          <h3 class="section-title">Recommended hotels</h3>
+          <p>The following hotels are conveniently located near Delft city centre and the TU Delft campus:</p>
+          <ul class="hotel-list" style="list-style:none; padding:0;">
+            <li>
+  <i class="fa fa-building-o" style="color:#2e6da4; margin-right:8px;"></i>
+  <a href="https://hoteldelftcentre.nl/en/home-en/" target="_blank"
+     style="color:#2e6da4; text-decoration:underline; cursor:pointer;">
+    Hampshire Hotel
+  </a>
+</li>
+<li>
+  <i class="fa fa-building-o" style="color:#2e6da4; margin-right:8px;"></i>
+  <a href="https://www.leeuwenbrug.nl/" target="_blank"
+     style="color:#2e6da4; text-decoration:underline; cursor:pointer;">
+    Hotel Leeuwenbrug
+  </a>
+</li>
+<li>
+  <i class="fa fa-building-o" style="color:#2e6da4; margin-right:8px;"></i>
+  <a href="https://westcordhotels.com/hotel/hotel-delft/" target="_blank"
+     style="color:#2e6da4; text-decoration:underline; cursor:pointer;">
+    WestCord Hotel
+  </a>
+</li>
+<li>
+  <i class="fa fa-building-o" style="color:#2e6da4; margin-right:8px;"></i>
+  <a href="https://www.hoteldeplataan.nl/en/" target="_blank"
+     style="color:#2e6da4; text-decoration:underline; cursor:pointer;">
+    Hotel De Plataan
+  </a>
+</li>
+<li>
+  <i class="fa fa-building-o" style="color:#2e6da4; margin-right:8px;"></i>
+  <a href="https://www.emauspoort.nl/en/" target="_blank"
+     style="color:#2e6da4; text-decoration:underline; cursor:pointer;">
+    Emauspoort
+  </a>
+</li>
+
+        </div>
+
+        <!-- Right sidebar -->
+        <div class="col-md-4">
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-calendar" style="margin-right:7px;"></i>Event dates</h4>
+            <ul>
+              <li><b>Mon 22 June 2026</b><br><small>Public dissemination event (afternoon)</small></li>
+              <li><b>Tue 23 June 2026</b><br><small>Developers' technical meeting (morning)</small></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-map-marker" style="margin-right:7px;"></i>Location</h4>
+            <ul>
+              <li>Delft, the Netherlands</li>
+              <li>22 June (afternoon): Pulse (Building 22)</li>
+              <li>23 June (morning):Faculty of Architecture (Building 8)</li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-plane" style="margin-right:7px;"></i>Nearest airports</h4>
+            <ul>
+              <li>Amsterdam Schiphol Airport<br><small>~40 min by direct train</small></li>
+              <li>Rotterdam-The Hague Airport<br><small>~30 min by public transport</small></li>
+            </ul>
+          </div>
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-envelope" style="margin-right:7px;"></i>Contacts</h4>
+            <p style="font-size:14px; margin-bottom:0;">For questions, please write to <a href="mailto:g.agugiaro@tudelft.nl">G. Agugiaro</a> or
+			  <a href="mailto:h.doi@tudelft.nl">H. Doi</a>
+            </p>
+          </div>
+
+          <div style="margin-top:10px;">
+            <img src="../../img/events/udmv2015/TUDelft-Library.jpg" class="img-responsive" style="border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.13);" alt="TU Delft Library">
+            <p style="font-size:12px; color:#888; text-align:center; margin-top:5px;">TU Delft Campus, Delft</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+  </body>
+</html>

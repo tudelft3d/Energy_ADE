@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Programme – CityGML Energy ADE Workshop 2026">
+    <title>Programme – CityGML Energy ADE 3.0 Workshop</title>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/syntax.css" rel="stylesheet">
+    <link href="../../assets/css/mine.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+      body { padding-top: 50px; }
+
+      .hero-programme {
+        background: linear-gradient(135deg, #1a3a5c 0%, #2e6da4 60%, #3a8fc7 100%);
+        padding: 50px 0 40px 0;
+        color: white;
+      }
+      .hero-programme h1 { font-weight: 700; font-size: 32px; margin-top: 0; }
+      .hero-programme hr { border-color: rgba(255,255,255,0.4); margin: 14px 0; }
+      .hero-programme p { font-size: 16px; color: rgba(255,255,255,0.9); }
+
+      .day-header {
+        background: linear-gradient(135deg, #1a3a5c, #2e6da4);
+        color: white;
+        border-radius: 7px;
+        padding: 14px 22px;
+        margin: 32px 0 18px 0;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .day-header .day-date {
+        background: rgba(255,255,255,0.18);
+        border-radius: 5px;
+        padding: 4px 14px;
+        font-size: 15px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .day-header .day-title {
+        font-size: 17px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .day-header .day-subtitle {
+        font-size: 13px;
+        color: rgba(255,255,255,0.75);
+        margin: 2px 0 0 0;
+      }
+
+      .session-block {
+        border-left: 3px solid #2e6da4;
+        padding: 0 0 0 16px;
+        margin-bottom: 24px;
+      }
+      .session-title {
+        font-weight: 700;
+        color: #1a3a5c;
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-size: 13px;
+      }
+
+      .programme-row {
+        display: flex;
+        align-items: flex-start;
+        padding: 10px 0;
+        border-bottom: 1px solid #eef1f5;
+        gap: 16px;
+      }
+      .programme-row:last-child { border-bottom: none; }
+
+      .time-slot {
+        min-width: 90px;
+        font-size: 13px;
+        color: #2e6da4;
+        font-weight: 700;
+        padding-top: 1px;
+      }
+      .programme-content { flex: 1; }
+      .programme-content .talk-title {
+        font-size: 14px;
+        color: #333;
+        margin: 0 0 2px 0;
+      }
+      .programme-content .talk-speaker {
+        font-size: 13px;
+        color: #888;
+        margin: 0;
+      }
+
+      .break-row {
+        background: #f7f9fc;
+        border-radius: 4px;
+        padding: 8px 12px;
+        margin: 4px 0;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 13px;
+        color: #888;
+      }
+      .break-row .time-slot { color: #aaa; }
+
+      .tbc-badge {
+        display: inline-block;
+        background: #e8f0fb;
+        color: #2e6da4;
+        border-radius: 3px;
+        padding: 1px 8px;
+        font-size: 11px;
+        font-weight: 600;
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+
+      .sidebar-box {
+        background: #f0f5fb;
+        border: 1px solid #c8ddf0;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+      .sidebar-box h4 {
+        color: #1a3a5c;
+        font-weight: 700;
+        border-bottom: 2px solid #2e6da4;
+        padding-bottom: 8px;
+        margin-top: 0;
+        margin-bottom: 14px;
+      }
+      .sidebar-box ul { padding-left: 18px; margin-bottom: 0; font-size: 14px; }
+      .sidebar-box li { margin-bottom: 6px; }
+    </style>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="background-color:#1a3a5c; border-color:#1a3a5c;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" style="color:white;">CityGML Energy ADE 3.0 Workshop 2026</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-right" id="navbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html" style="color:rgba(255,255,255,0.8);">Home</a></li>
+            <li><a href="venue.html" style="color:rgba(255,255,255,0.8);">Venue</a></li>
+            <li class="active"><a href="programme.html" style="color:white; font-weight:600;">Programme</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero-programme">
+      <div class="container">
+        <div class="row" style="display:flex; align-items:center; flex-wrap:wrap;">
+          <div class="col-md-3 col-sm-4 text-center" style="margin-bottom:20px;">
+            <a href="https://3d.bk.tudelft.nl" target="_blank">
+              <img class="img-responsive" src="../../img/logos/tud-3dgeoinfo-white.png" style="max-height:90px; margin:0 auto;">
+            </a>
+            <a href="https://3d.bk.tudelft.nl/urbanrg/" target="_blank">
+              <img class="img-responsive" src="../../urbanrg/images/urbanrg_white.png" onmouseover="this.src='../../urbanrg/images/urbanrg_white_alt.png'" onmouseout="this.src='../../urbanrg/images/urbanrg_white.png'" style="max-height:25px; margin:0 auto;">
+            </a>
+          </div>
+          <div class="col-md-9 col-sm-8">
+            <h1>Programme</h1>
+            <hr>
+            <p>
+              <i class="fa fa-calendar" style="margin-right:7px;"></i><b>June 22–23, 2026</b>
+              &nbsp;|&nbsp;
+              <i class="fa fa-map-marker" style="margin-right:7px;"></i>Delft, the Netherlands
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="container" style="margin-top:36px; margin-bottom:50px;">
+      <div class="row">
+
+        <!-- Programme column -->
+        <div class="col-md-8">
+
+<!--           <div class="alert alert-info" style="border-left: 4px solid #2e6da4;">
+            <i class="fa fa-info-circle"></i>&nbsp;
+            The programme is still preliminary and may be subject to further updates.
+          </div> -->
+
+          <!-- Day 1 -->
+          <div class="day-header">
+            <div class="day-date"></i>Mon 22 June</div>
+            <div>
+              <p class="day-title">Public dissemination event  <!-- <span class="day-badge" style="background:#008000;"> Places still available </span> --></p>
+              <p class="day-subtitle">Afternoon &nbsp;|&nbsp; Open to all</p>
+            </div>
+          </div>
+
+          <div class="session-block">
+            <div class="session-title"><i class="fa fa-clock-o" style="margin-right:6px;"></i>Afternoon Session</div>
+
+            <div class="break-row">
+              <span class="time-slot">13:30 - 14:00</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Arrival, welcome coffee and registration</span>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">14:00 - 14:15</span>
+              <div class="programme-content">
+                <p class="talk-title">Welcome</p>
+                <p class="talk-speaker">G. Agugiaro (TU Delft)</p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">14:15 - 14:45</span>
+              <div class="programme-content">
+                <p class="talk-title">Investigation of cooling demand in Rotterdam and mitigation strategies for 2050</p>
+                <p class="talk-speaker">M.E. Ingen-Housz (City of Rotterdam), C. León Sánchez (TU Delft)
+                  <a href="Presentation_Pdf/Cooling_demand_Rotterdam_combined.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">14:45 - 15:15</span>
+              <div class="programme-content">
+                <p class="talk-title">Urban Digital Twins for PEDs: Data challenges and citizen co-creation in project DigiTwins4PEDs</p>
+                <p class="talk-speaker">R. Padsala (HFT Stuttgart)
+                  <a href="Presentation_Pdf/DigiTwins4PEDS_EnergyADEWorkshop_Rushi.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="break-row">
+              <span class="time-slot">15:15 - 15:30</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Coffee break</span>
+            </div>
+
+            
+
+            <div class="programme-row">
+              <span class="time-slot">15:30 - 16:00</span>
+              <div class="programme-content">
+                <p class="talk-title">Data integration in Urban Digital Twins: Challenge or key driver?</p>
+                <p class="talk-speaker">I. Jeddoub (Univ. Liege)
+                  <a href="Presentation_Pdf/Energy-ADE_Workshop_2026_IJ.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">16:00 - 16:30</span>
+              <div class="programme-content">
+                <p class="talk-title">Enabling user-friendly interaction and data analysis with 3D city models LLM agents</p>
+                <p class="talk-speaker">K. Kanna (TU München)
+                  <a href="Presentation_Pdf/Kanna_ppt_EnergyADE3_Workshop.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">16:30 - 17:00</span>
+              <div class="programme-content">
+                <p class="talk-title">Some thoughts and first results on Building Renovation Passports from a data point of view</p>
+                <p class="talk-speaker">H. Doi (TU Delft)
+                  <a href="Presentation_Pdf/Building_Renovation_Passports_DataPerspective.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">17:00 - 17:30</span>
+              <div class="programme-content">
+                <p class="talk-title">Discussion and conclusions</p>
+                <p class="talk-speaker">All speakers and G. Agugiaro</p>
+              </div>
+            </div>
+
+            <div class="break-row">
+              <span class="time-slot">17:30 - 18:30</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Drinks, snacks, chats and networking</span>
+            </div>
+
+<!--             <div class="break-row">
+              <span class="time-slot">20:15 - 23:00</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Dinner at <a href="https://maps.app.goo.gl/xLUPReoEDCvo9mgj8" target="_blank">'t PostKantoor</a>, Delft.
+			  Please fill out the <a href="https://rallly.co/invite/UCTCw7OiKjwF" target="_blank"><b>doodle</b></a> if you plan to participate
+			  </span>
+            </div> -->
+
+          </div>
+
+          <!-- Day 2 -->
+          <div class="day-header">
+            <div class="day-date"></i>Tue 23 June</div>
+            <div>
+              <p class="day-title">Developers' technical meeting <!-- <span class="day-badge" style="background:#ff0000;"> Booked out </span> --></p>
+              <p class="day-subtitle">Morning &nbsp;|&nbsp; Targeted at technical audience with prior CityGML knowledge</p>
+            </div>
+          </div>
+
+          <div class="session-block">
+            <div class="session-title"><i class="fa fa-clock-o" style="margin-right:6px;"></i>Morning Session</div>
+
+            <div class="break-row">
+              <span class="time-slot">8:30 - 9:00</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Arrival and coffee</span>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">9:00 - 10:00</span>
+              <div class="programme-content">
+                <p class="talk-title">Opening; A deeper look at the CityGML Energy ADE 3.0</p>
+                <p class="talk-speaker">G. Agugiaro (TU Delft)
+                  <a href="Presentation_Pdf/20260623_Agugiaro_Deeper_Look_at_EnergyADE.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">10:00 - 10:25</span>
+              <div class="programme-content">
+                <p class="talk-title">RenoDAT project: Some suggestions to improve the Energy ADE 3.0</p>
+                <p class="talk-speaker">D. Schlosser (TU Delft)
+                  <a href="Presentation_Pdf/2026-06-23%20Energy%20ADE%20Workshop.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">10:25 - 10:50</span>
+              <div class="programme-content">
+                <p class="talk-title">Automated shared-wall boundary resolution for EnergyPlus simulations at district level</p>
+                <p class="talk-speaker">R.D. Morales (Univ. Antwerp)
+                  <a href="Presentation_Pdf/Automated%20Shared-Wall%20Boundary%20Resolution%20for%20EnergyPlus.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="break-row">
+              <span class="time-slot">10:50 - 11:10</span>
+              <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Coffee break</span>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">11:10 - 11:35</span>
+              <div class="programme-content">
+                <p class="talk-title">A glimpse of the Scenario ADE</p>
+                <p class="talk-speaker">F. Auer (TU Delft)
+                  <a href="Presentation_Pdf/EnergyADE_WorkshopDay2_ScenarioADEPresentation.pdf" target="_blank" style="margin-left:8px; font-size:12px; color:#2e6da4; font-weight:600; white-space:nowrap;"><i class="fa fa-file-pdf-o" style="margin-right:4px;"></i>Slides</a></p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">11:35 - 13:00</span>
+              <div class="programme-content">
+                <p class="talk-title">General discussion and brainstorming, next steps</p>
+                <p class="talk-speaker">All participants</p>
+              </div>
+            </div>
+
+            <div class="programme-row">
+              <span class="time-slot">13:00 - 13:15</span>
+              <div class="programme-content">
+                <p class="talk-title">Conclusions</p>
+                <p class="talk-speaker">Giorgio Agugiaro</p>
+              </div>
+            </div>
+
+			<div class="break-row">
+			  <span class="time-slot">13:15 - 14:00</span>
+			  <span><i class="fa fa-coffee" style="margin-right:6px;"></i>Lunch (on-site sandwiches)</span>
+			</div>
+
+          </div>
+
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-4">
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-calendar" style="margin-right:7px;"></i>Event Dates</h4>
+            <ul>
+              <li><b>Mon 22 June 2026</b><br><small>Public dissemination event (afternoon)</small></li>
+              <li><b>Tue 23 June 2026</b><br><small>Developers' technical meeting (morning)</small></li>
+            </ul>
+          </div>
+
+          <!-- <div class="sidebar-box">
+            <h4><i class="fa fa-envelope" style="margin-right:7px;"></i>Register</h4>
+            <p style="font-size:14px;">Participation is free, but registration is required. <span class="day-badge" style="background:#ff0000;"> Registration is closed </span> </p>
+            <a href="https://forms.gle/781YVepaGaQhadfL7" target="_blank" style="display:block; background:#2e6da4; color:white; font-weight:700; padding:9px 16px; border-radius:5px; text-decoration:none; font-size:14px; text-align:center;">
+              <i class="fa fa-pencil-square-o" style="margin-right:7px;"></i>Register now
+            </a> -->
+          <!-- </div> --> 
+
+          <div class="sidebar-box">
+            <h4><i class="fa fa-map-marker" style="margin-right:7px;"></i>Venue</h4>
+            <p style="font-size:14px;">Delft, the Netherlands.<br></p>
+            <a href="venue.html" style="font-size:14px;">More info &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+  </body>
+</html>
