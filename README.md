@@ -1,5 +1,5 @@
 > [!IMPORTANT]
-> All the presentations from the recently organized **Energy ADE 3.0 Workshop/Event** is available [here](https://tudelft3d.github.io/Energy_ADE/workshop_2026_06/programme.html) 
+> All the presentations from last **Energy ADE 3.0 Workshop/Event** are available [here](https://tudelft3d.github.io/Energy_ADE/workshop_2026_06/programme.html) 
 
 <p align="center"><br/><br/><br/><img src="logos/energy_ade_3_logo.jpg" width="600"><br/><br/><br/></p>
 
